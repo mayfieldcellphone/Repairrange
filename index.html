@@ -3,9 +3,428 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <meta name="description" content="Plain-English phone repair pricing, symptom diagnostics, and shop-vs-DIY guidance. Researched by working technicians. Find what it really costs to fix your phone.">
+    <meta name="author" content="RepairRange">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RepairRange — Phone Repair Costs, Honest & Current">
+    <meta property="og:description" content="Plain-English phone repair pricing, symptom diagnostics, and shop-vs-DIY guidance. Researched by working technicians. Find what it really costs to fix your phone.">
+    <meta property="og:site_name" content="RepairRange">
+
+    <title>RepairRange — Phone Repair Costs, Honest & Current</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Tailwind (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+    <!-- Design tokens + base styles -->
+    <style>
+        :root {
+            /* Brand palette */
+            --rr-teal-900: #0c4a45;
+            --rr-teal-800: #115e59;
+            --rr-teal-700: #0F766E;
+            --rr-teal-600: #0d9488;
+            --rr-teal-50:  #f0fdfa;
+
+            --rr-amber-600: #d97706;
+            --rr-amber-500: #F59E0B;
+            --rr-amber-100: #fef3c7;
+
+            --rr-ink:       #1C1917;
+            --rr-ink-soft:  #44403c;
+            --rr-muted:     #78716C;
+            --rr-line:      #E7E5E4;
+            --rr-paper:     #FAFAF9;
+            --rr-paper-2:   #F5F5F4;
+        }
+
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            color: var(--rr-ink);
+            background: var(--rr-paper);
+            font-feature-settings: 'ss01', 'cv11';
+            -webkit-font-smoothing: antialiased;
+        }
+        .font-serif { font-family: 'Fraunces', 'Iowan Old Style', 'Palatino', serif; font-feature-settings: 'ss01'; }
+        .font-mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+        .text-teal { color: var(--rr-teal-700); }
+        .bg-teal { background-color: var(--rr-teal-700); }
+        .bg-teal-900 { background-color: var(--rr-teal-900); }
+        .text-amber { color: var(--rr-amber-600); }
+        .bg-amber { background-color: var(--rr-amber-500); }
+        .text-ink { color: var(--rr-ink); }
+        .text-muted { color: var(--rr-muted); }
+        .border-line { border-color: var(--rr-line); }
+        .bg-paper { background-color: var(--rr-paper); }
+        .bg-paper-2 { background-color: var(--rr-paper-2); }
+        .display { font-family: 'Fraunces', serif; font-weight: 400; letter-spacing: -0.025em; line-height: 1.05; font-variation-settings: 'opsz' 144; }
+        .eyebrow { font-family: 'Inter', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--rr-teal-700); }
+        .rule { height: 1px; background: var(--rr-line); }
+        .grain { position: relative; }
+        .grain::after {
+            content: ''; position: absolute; inset: 0; pointer-events: none; opacity: 0.5; mix-blend-mode: multiply;
+            background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.06 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+        }
+        .header-sticky { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); background: rgba(250, 250, 249, 0.85); }
+        .ed-link {
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 0 100%; background-repeat: no-repeat; background-size: 0% 1px;
+            transition: background-size 220ms ease;
+        }
+        .ed-link:hover { background-size: 100% 1px; }
+        .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.25rem; font-weight: 600; font-size: 0.9375rem; transition: all 200ms ease; border-radius: 2px; }
+        .btn-primary { background: var(--rr-amber-500); color: var(--rr-ink); box-shadow: 0 1px 0 var(--rr-amber-600); }
+        .btn-primary:hover { background: var(--rr-amber-600); color: white; transform: translateY(-1px); box-shadow: 0 4px 0 var(--rr-amber-600); }
+        .btn-ghost { background: transparent; color: var(--rr-ink); border: 1px solid var(--rr-ink); }
+        .btn-ghost:hover { background: var(--rr-ink); color: var(--rr-paper); }
+        .card { background: white; border: 1px solid var(--rr-line); transition: all 200ms ease; }
+        .card:hover { border-color: var(--rr-ink); transform: translateY(-2px); }
+        .tnum { font-variant-numeric: tabular-nums; }
+        .mobile-menu { transition: all 300ms ease-in-out; }
+        @media (max-width: 768px) {
+            .mobile-menu.hidden { display: none; }
+            .mobile-menu:not(.hidden) { display: block; }
+        }
+        @keyframes rr-rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        .rise { animation: rr-rise 600ms cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+        .rise-1 { animation-delay: 60ms; }
+        .rise-2 { animation-delay: 140ms; }
+        .rise-3 { animation-delay: 220ms; }
+        .ticker-row { display: grid; grid-template-columns: auto 1fr auto; gap: 1.25rem; align-items: baseline; padding: 0.875rem 0; border-bottom: 1px solid var(--rr-line); }
+        .ticker-row:last-child { border-bottom: none; }
+    </style>
 </head>
 <body>
-    <p>hello world</p>
+
+    <!-- Header -->
+    <header class="header-sticky sticky top-0 z-50 border-b border-line">
+        <nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" class="flex-shrink-0">
+                    <rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/>
+                    <path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/>
+                </svg>
+                <span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm">
+                <a href="brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a>
+                <a href="fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a>
+                <a href="calculator.html" class="ed-link font-medium text-ink hover:text-teal">Calculator</a>
+                <a href="locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a>
+                <a href="about.html" class="ed-link font-medium text-ink hover:text-teal">About</a>
+                <a href="calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            </div>
+            <button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </nav>
+        <div class="mobile-menu hidden md:hidden border-t border-line bg-paper">
+            <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
+                <a href="brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a>
+                <a href="fix.html" class="py-2 font-medium text-ink hover:text-teal">Troubleshoot</a>
+                <a href="calculator.html" class="py-2 font-medium text-ink hover:text-teal">Calculator</a>
+                <a href="locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a>
+                <a href="about.html" class="py-2 font-medium text-ink hover:text-teal">About</a>
+                <a href="calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="grain relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6 md:px-8 pt-16 md:pt-24 pb-16 md:pb-24">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+                <div class="lg:col-span-7 rise rise-1">
+                    <p class="eyebrow mb-6">Issue No. 01 &middot; Phone Repair Reference</p>
+                    <h1 class="display text-5xl md:text-7xl lg:text-[5.5rem] text-ink mb-8">
+                        What does it <span class="italic font-serif text-teal">really</span> cost to fix your phone?
+                    </h1>
+                    <p class="text-lg md:text-xl text-muted leading-relaxed max-w-2xl">
+                        Plain-English repair pricing, symptom diagnostics, and shop-vs-DIY guidance — researched and maintained by working technicians. No fluff, no upsells.
+                    </p>
+                </div>
+                <div class="lg:col-span-5 rise rise-3">
+                    <div class="bg-white border border-line p-6 md:p-7">
+                        <p class="eyebrow mb-4">Find your phone</p>
+                        <form onsubmit="event.preventDefault(); handleHeroSearch();" class="flex flex-col gap-3">
+                            <input id="hero-search" type="text" placeholder="iPhone 15 Pro, Galaxy S24, Pixel 8…" class="w-full px-4 py-3.5 text-base border border-line focus:outline-none focus:border-ink transition-colors" autocomplete="off"/>
+                            <button type="submit" class="btn btn-primary w-full justify-center">Show repair costs <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+                        </form>
+                        <p class="text-xs text-muted mt-4">
+                            Or browse by <a href="brands.html" class="ed-link font-medium text-teal">brand</a>, <a href="fix.html" class="ed-link font-medium text-teal">symptom</a>, or <a href="locations.html" class="ed-link font-medium text-teal">city</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-line bg-paper-2">
+            <div class="max-w-6xl mx-auto px-6 md:px-8 py-5">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-sm">
+                    <div><p class="font-mono text-2xl md:text-3xl text-ink tnum">120+</p><p class="text-muted text-xs mt-1">phone models priced</p></div>
+                    <div><p class="font-mono text-2xl md:text-3xl text-ink tnum">9</p><p class="text-muted text-xs mt-1">cities surveyed</p></div>
+                    <div><p class="font-mono text-2xl md:text-3xl text-ink tnum">2026</p><p class="text-muted text-xs mt-1">prices, current</p></div>
+                    <div><p class="font-mono text-2xl md:text-3xl text-ink tnum">$0</p><p class="text-muted text-xs mt-1">to use this site</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POPULAR MODELS -->
+    <section class="bg-paper">
+        <div class="max-w-6xl mx-auto px-6 md:px-8 py-20 md:py-28">
+            <div class="flex items-end justify-between mb-10 md:mb-14">
+                <div class="max-w-xl">
+                    <p class="eyebrow mb-3">Most-searched models</p>
+                    <h2 class="display text-3xl md:text-5xl text-ink">Popular this month</h2>
+                </div>
+                <a href="brands.html" class="hidden md:inline-flex items-center gap-2 text-sm font-medium text-ink ed-link">See all brands <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-line">
+                <a href="repair/iphone-15-pro-max.html" class="card bg-white p-7 group">
+                    <div class="flex items-start justify-between mb-6">
+                        <div><p class="text-xs font-medium text-muted tracking-wide uppercase mb-1">Apple</p><h3 class="font-serif text-2xl text-ink leading-tight">iPhone 15 Pro Max</h3></div>
+                        <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors"></i>
+                    </div>
+                    <div class="space-y-1 text-sm">
+                        <div class="ticker-row"><span class="text-muted">Screen</span><span></span><span class="font-mono tnum">$329–$459</span></div>
+                        <div class="ticker-row"><span class="text-muted">Battery</span><span></span><span class="font-mono tnum">$89–$139</span></div>
+                        <div class="ticker-row"><span class="text-muted">Back glass</span><span></span><span class="font-mono tnum">$199–$349</span></div>
+                    </div>
+                </a>
+                <a href="repair/iphone-15-pro.html" class="card bg-white p-7 group">
+                    <div class="flex items-start justify-between mb-6">
+                        <div><p class="text-xs font-medium text-muted tracking-wide uppercase mb-1">Apple</p><h3 class="font-serif text-2xl text-ink leading-tight">iPhone 15 Pro</h3></div>
+                        <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors"></i>
+                    </div>
+                    <div class="space-y-1 text-sm">
+                        <div class="ticker-row"><span class="text-muted">Screen</span><span></span><span class="font-mono tnum">$289–$399</span></div>
+                        <div class="ticker-row"><span class="text-muted">Battery</span><span></span><span class="font-mono tnum">$89–$129</span></div>
+                        <div class="ticker-row"><span class="text-muted">Back glass</span><span></span><span class="font-mono tnum">$179–$299</span></div>
+                    </div>
+                </a>
+                <a href="repair/samsung-galaxy-s24-ultra.html" class="card bg-white p-7 group">
+                    <div class="flex items-start justify-between mb-6">
+                        <div><p class="text-xs font-medium text-muted tracking-wide uppercase mb-1">Samsung</p><h3 class="font-serif text-2xl text-ink leading-tight">Galaxy S24 Ultra</h3></div>
+                        <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors"></i>
+                    </div>
+                    <div class="space-y-1 text-sm">
+                        <div class="ticker-row"><span class="text-muted">Screen</span><span></span><span class="font-mono tnum">$349–$499</span></div>
+                        <div class="ticker-row"><span class="text-muted">Battery</span><span></span><span class="font-mono tnum">$99–$149</span></div>
+                        <div class="ticker-row"><span class="text-muted">Back glass</span><span></span><span class="font-mono tnum">$179–$299</span></div>
+                    </div>
+                </a>
+                <a href="repair/iphone-14.html" class="card bg-white p-7 group">
+                    <div class="flex items-start justify-between mb-6">
+                        <div><p class="text-xs font-medium text-muted tracking-wide uppercase mb-1">Apple</p><h3 class="font-serif text-2xl text-ink leading-tight">iPhone 14</h3></div>
+                        <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors"></i>
+                    </div>
+                    <div class="space-y-1 text-sm">
+                        <div class="ticker-row"><span class="text-muted">Screen</span><span></span><span class="font-mono tnum">$199–$289</span></div>
+                        <div class="ticker-row"><span class="text-muted">Battery</span><span></span><span class="font-mono tnum">$79–$119</span></div>
+                        <div class="ticker-row"><span class="text-muted">Back glass</span><span></span><span class="font-mono tnum">$149–$249</span></div>
+                    </div>
+                </a>
+                <a href="repair/pixel-8-pro.html" class="card bg-white p-7 group">
+                    <div class="flex items-start justify-between mb-6">
+                        <div><p class="text-xs font-medium text-muted tracking-wide uppercase mb-1">Google</p><h3 class="font-serif text-2xl text-ink leading-tight">Pixel 8 Pro</h3></div>
+                        <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors"></i>
+                    </div>
+                    <div class="space-y-1 text-sm">
+                        <div class="ticker-row"><span class="text-muted">Screen</span><span></span><span class="font-mono tnum">$229–$329</span></div>
+                        <div class="ticker-row"><span class="text-muted">Battery</span><span></span><span class="font-mono tnum">$79–$119</span></div>
+                        <div class="ticker-row"><span class="text-muted">Back glass</span><span></span><span class="font-mono tnum">$149–$229</span></div>
+                    </div>
+                </a>
+                <a href="repair/samsung-galaxy-s23.html" class="card bg-white p-7 group">
+                    <div class="flex items-start justify-between mb-6">
+                        <div><p class="text-xs font-medium text-muted tracking-wide uppercase mb-1">Samsung</p><h3 class="font-serif text-2xl text-ink leading-tight">Galaxy S23</h3></div>
+                        <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors"></i>
+                    </div>
+                    <div class="space-y-1 text-sm">
+                        <div class="ticker-row"><span class="text-muted">Screen</span><span></span><span class="font-mono tnum">$249–$359</span></div>
+                        <div class="ticker-row"><span class="text-muted">Battery</span><span></span><span class="font-mono tnum">$89–$129</span></div>
+                        <div class="ticker-row"><span class="text-muted">Back glass</span><span></span><span class="font-mono tnum">$139–$229</span></div>
+                    </div>
+                </a>
+            </div>
+            <p class="text-xs text-muted mt-6 max-w-2xl">
+                Prices reflect surveyed independent repair shops across surveyed cities, 2026. Authorised service centres (Apple, Samsung) typically charge 20–60% more. Ranges narrower than $50 are uncommon — be wary of any flat-rate quote.
+            </p>
+        </div>
+    </section>
+
+    <!-- COMMON FIXES -->
+    <section class="bg-paper-2 border-t border-line">
+        <div class="max-w-6xl mx-auto px-6 md:px-8 py-20 md:py-28">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-4">
+                    <p class="eyebrow mb-3">Troubleshooting</p>
+                    <h2 class="display text-3xl md:text-5xl text-ink mb-6">Symptom <span class="italic">first</span>, not model first.</h2>
+                    <p class="text-muted leading-relaxed mb-8">
+                        Not sure what's wrong? Start with what your phone is doing — green lines, no power, ghost touches — and we'll narrow the cause and the cost.
+                    </p>
+                    <a href="fix.html" class="btn btn-ghost">All troubleshooting guides <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                </div>
+                <div class="lg:col-span-8">
+                    <div class="space-y-px bg-line">
+                        <a href="fix/black-screen.html" class="bg-paper-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
+                            <div class="flex items-center gap-5">
+                                <span class="font-mono text-sm text-muted tnum w-10">01</span>
+                                <div><h3 class="font-serif text-xl md:text-2xl text-ink leading-tight">Black screen of death</h3><p class="text-sm text-muted mt-1">Phone rings but display stays dark</p></div>
+                            </div>
+                            <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors flex-shrink-0"></i>
+                        </a>
+                        <a href="fix/water-damage.html" class="bg-paper-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
+                            <div class="flex items-center gap-5">
+                                <span class="font-mono text-sm text-muted tnum w-10">02</span>
+                                <div><h3 class="font-serif text-xl md:text-2xl text-ink leading-tight">Water damage</h3><p class="text-sm text-muted mt-1">The first 10 minutes matter most</p></div>
+                            </div>
+                            <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors flex-shrink-0"></i>
+                        </a>
+                        <a href="fix/battery-drains-fast.html" class="bg-paper-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
+                            <div class="flex items-center gap-5">
+                                <span class="font-mono text-sm text-muted tnum w-10">03</span>
+                                <div><h3 class="font-serif text-xl md:text-2xl text-ink leading-tight">Battery drains in hours</h3><p class="text-sm text-muted mt-1">When it's the battery vs. when it's software</p></div>
+                            </div>
+                            <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors flex-shrink-0"></i>
+                        </a>
+                        <a href="fix/ghost-touch.html" class="bg-paper-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
+                            <div class="flex items-center gap-5">
+                                <span class="font-mono text-sm text-muted tnum w-10">04</span>
+                                <div><h3 class="font-serif text-xl md:text-2xl text-ink leading-tight">Ghost touch / phantom taps</h3><p class="text-sm text-muted mt-1">Screen taps itself — almost always the digitiser</p></div>
+                            </div>
+                            <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors flex-shrink-0"></i>
+                        </a>
+                        <a href="fix/charging-port.html" class="bg-paper-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
+                            <div class="flex items-center gap-5">
+                                <span class="font-mono text-sm text-muted tnum w-10">05</span>
+                                <div><h3 class="font-serif text-xl md:text-2xl text-ink leading-tight">Won't charge or charges slowly</h3><p class="text-sm text-muted mt-1">Lint, port damage, cable, battery — diagnose in order</p></div>
+                            </div>
+                            <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors flex-shrink-0"></i>
+                        </a>
+                        <a href="fix/green-lines.html" class="bg-paper-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
+                            <div class="flex items-center gap-5">
+                                <span class="font-mono text-sm text-muted tnum w-10">06</span>
+                                <div><h3 class="font-serif text-xl md:text-2xl text-ink leading-tight">Green or pink vertical lines</h3><p class="text-sm text-muted mt-1">Bad news — full OLED replacement, not just glass</p></div>
+                            </div>
+                            <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors flex-shrink-0"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- METHODOLOGY -->
+    <section class="bg-white border-t border-line">
+        <div class="max-w-6xl mx-auto px-6 md:px-8 py-20 md:py-28">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5">
+                    <p class="eyebrow mb-3">Methodology</p>
+                    <h2 class="display text-3xl md:text-5xl text-ink mb-6">How we get to a number.</h2>
+                    <p class="text-muted leading-relaxed mb-4">Repair prices vary widely by region, part quality, and shop overhead. Rather than publish a single number that's wrong everywhere, we publish ranges that reflect what real shops charge.</p>
+                    <p class="text-muted leading-relaxed">Every model price is sourced from a minimum of nine quotes across surveyed independent shops and authorised service centres. We re-survey quarterly.</p>
+                </div>
+                <div class="lg:col-span-7">
+                    <div class="space-y-px bg-line">
+                        <div class="bg-white flex gap-5 p-6"><span class="font-mono text-sm text-teal tnum flex-shrink-0">01</span><div><h3 class="font-serif text-xl text-ink mb-1">We quote, not parrot</h3><p class="text-sm text-muted leading-relaxed">Prices come from real shop quotes, not press releases or affiliate referral schemes.</p></div></div>
+                        <div class="bg-white flex gap-5 p-6"><span class="font-mono text-sm text-teal tnum flex-shrink-0">02</span><div><h3 class="font-serif text-xl text-ink mb-1">DIY costs are real costs</h3><p class="text-sm text-muted leading-relaxed">The "DIY" price includes the part, the right tools, and the realistic ~25% chance you'll need a second attempt.</p></div></div>
+                        <div class="bg-white flex gap-5 p-6"><span class="font-mono text-sm text-teal tnum flex-shrink-0">03</span><div><h3 class="font-serif text-xl text-ink mb-1">Independent of any one shop</h3><p class="text-sm text-muted leading-relaxed">No shop pays us to be listed. Lead-gen forms route to verified local techs based on proximity.</p></div></div>
+                        <div class="bg-white flex gap-5 p-6"><span class="font-mono text-sm text-teal tnum flex-shrink-0">04</span><div><h3 class="font-serif text-xl text-ink mb-1">Re-priced quarterly</h3><p class="text-sm text-muted leading-relaxed">Phone parts get cheaper as they age. Every model is re-surveyed each quarter.</p></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA STRIP -->
+    <section class="bg-teal-900 text-white">
+        <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+                <div class="md:col-span-8">
+                    <p class="eyebrow text-amber mb-3">Get a verified local quote</p>
+                    <h2 class="display text-3xl md:text-5xl mb-3">Skip the ringaround. Tell us what's broken.</h2>
+                    <p class="text-white/70 max-w-xl">We'll match you with a vetted repair tech in your area — usually with same-day or next-day availability.</p>
+                </div>
+                <div class="md:col-span-4 md:text-right">
+                    <a href="calculator.html" class="btn btn-primary">Start your quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-teal-900 text-white mt-24 border-t border-white/10">
+        <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+                <div class="md:col-span-5">
+                    <div class="flex items-center gap-2 mb-4">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/>
+                            <path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/>
+                        </svg>
+                        <span class="font-serif text-2xl font-medium">RepairRange</span>
+                    </div>
+                    <p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice. Researched by people who actually do this work.</p>
+                </div>
+                <div class="md:col-span-3">
+                    <h3 class="eyebrow text-amber mb-4">Browse</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="brands.html" class="text-white/80 hover:text-amber">Brands</a></li>
+                        <li><a href="fix.html" class="text-white/80 hover:text-amber">Troubleshooting</a></li>
+                        <li><a href="calculator.html" class="text-white/80 hover:text-amber">Cost Calculator</a></li>
+                        <li><a href="locations.html" class="text-white/80 hover:text-amber">Cities</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-4">
+                    <h3 class="eyebrow text-amber mb-4">About</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="text-white/80 hover:text-amber">About RepairRange</a></li>
+                        <li><a href="privacy.html" class="text-white/80 hover:text-amber">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-white/80 hover:text-amber">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/15">
+                <p class="text-white/50 text-xs leading-relaxed mb-3 max-w-3xl"><strong class="text-white/70">Affiliate disclosure:</strong> RepairRange may earn a commission when you click links to retailers (including Amazon) and complete a purchase. This never affects the price you pay or our editorial recommendations.</p>
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                    <p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p>
+                    <p class="text-white/50 text-xs">Not affiliated with Apple, Samsung, Google, or any device manufacturer.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        if (window.lucide) window.lucide.createIcons();
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.querySelector('.mobile-menu-button');
+            const menu = document.querySelector('.mobile-menu');
+            if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+        });
+        function handleHeroSearch() {
+            const input = document.getElementById('hero-search');
+            const q = (input.value || '').trim().toLowerCase();
+            if (!q) return;
+            const slug = q.replace(/\+/g, ' ').replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, '-');
+            const tryHref = 'repair/' + slug + '.html';
+            fetch(tryHref, { method: 'HEAD' }).then(r => {
+                window.location.href = r.ok ? tryHref : 'brands.html?q=' + encodeURIComponent(q);
+            }).catch(() => {
+                window.location.href = 'brands.html?q=' + encodeURIComponent(q);
+            });
+        }
+    </script>
 </body>
 </html>
