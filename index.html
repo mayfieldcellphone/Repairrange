@@ -104,7 +104,29 @@
         .ticker-row { display: grid; grid-template-columns: auto 1fr auto; gap: 1.25rem; align-items: baseline; padding: 0.875rem 0; border-bottom: 1px solid var(--rr-line); }
         .ticker-row:last-child { border-bottom: none; }
     </style>
-</head>
+
+  <script type="application/ld+json">
+  [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "RepairRange",
+    "description": "Plain-English phone repair pricing, symptom diagnostics, and shop-vs-DIY guidance. Researched by working technicians. Find what it really costs to fix your phone.",
+    "url": "https://repairrange.com"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "RepairRange — Phone Repair Costs, Honest & Current",
+    "description": "Plain-English phone repair pricing, symptom diagnostics, and shop-vs-DIY guidance. Researched by working technicians. Find what it really costs to fix your phone.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "RepairRange"
+    }
+  }
+]
+  </script>
+  </head>
 <body>
 
     <!-- Header -->
@@ -391,6 +413,7 @@
                     <h3 class="eyebrow text-amber mb-4">About</h3>
                     <ul class="space-y-2 text-sm">
                         <li><a href="about.html" class="text-white/80 hover:text-amber">About RepairRange</a></li>
+                        <li><a href="tools/software-stack-for-repair-shops.html" class="text-white/80 hover:text-amber">Tools we recommend</a></li>
                         <li><a href="privacy.html" class="text-white/80 hover:text-amber">Privacy Policy</a></li>
                         <li><a href="terms.html" class="text-white/80 hover:text-amber">Terms of Use</a></li>
                     </ul>
