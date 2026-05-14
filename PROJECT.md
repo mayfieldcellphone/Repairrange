@@ -70,6 +70,7 @@ This must NOT read as a PBN (private blog network). Google penalises sites that 
 | `about.html` | About / methodology | Why it exists, how we make money (3 sources, all disclosed) |
 | `privacy.html` | Privacy policy | GDPR + CCPA aware |
 | `terms.html` | Terms of use | Estimate disclaimer, trademark notice, liability limit |
+| `tools/software-stack-for-repair-shops.html` | **Phase 1.5** — first affiliate-content article | SaaS recommendations for repair shop owners. Targets AppSumo / Impact partners. Linked from sitewide footer as "Tools we recommend". |
 
 ### Phase 1 commit shas
 - index: `902e5f2d5f0131f79e65451de9599a1a2ad9c7d9`
@@ -138,6 +139,28 @@ Other city pages: don't push Mayfield (it cheapens the link). Recommend a repres
 - Google Search Console verification + sitemap submission
 - Internal link audit (every page must link to ≥3 other pages naturally)
 - **Backlink audit:** confirm every Newcastle context links to mayfieldphonerepair.com.au at least once
+
+---
+
+## 5a. Affiliate partnerships (Impact.com, AppSumo, Amazon)
+
+A distinct commercial layer from backlinks. Currently in setup:
+
+- **Impact.com** — publisher profile set up May 2026. Application to AppSumo Plus and other SaaS partners in review.
+- **Amazon Associates** — not yet applied; defer until some live traffic exists.
+- **Future direct partnerships** — e.g. RepairDesk, Xero, MailerLite if/when we have meaningful audience.
+
+The `tools/` directory is the canonical home for affiliate content. Each article uses placeholder `href="#"` links until programs are approved, then we swap in live Impact/affiliate URLs. Affiliate disclosure appears on every relevant page and in the sitewide footer.
+
+**Strategic principle:** affiliate revenue is a long-term diversification, NOT the primary purpose of these satellite sites. Backlinks to mayfieldphonerepair.com.au remain the primary commercial purpose.
+
+**Live affiliate articles:**
+- `tools/software-stack-for-repair-shops.html` — covers RepairDesk, SimplyBook.me, NiceJob, MailerLite, Xero, BrightLocal, Canva, Google Workspace, ChatGPT/Claude. ~12 min read.
+
+**Planned next affiliate articles (Phase 6+):**
+- Hardware tools every repair tech buys (Amazon Associates focus)
+- Best phone-buying-back / trade-in services (mixed)
+- Cloud storage & backup tools for repair shops (Impact / direct)
 
 ---
 
