@@ -2,7 +2,7 @@
 
 > **Canonical source of truth** for the RepairRange satellite site. Lives in this repo so it persists across Claude sessions and is version-controlled with the code. Not deployed publicly (CI only copies `*.html`, `*.txt`, `*.xml`).
 >
-> **Last updated:** May 2026 · Phase 1 complete
+> **Last updated:** May 2026 · Phase 1 complete, Phase 2 in progress
 
 ---
 
@@ -240,7 +240,7 @@ Other sites in Khalil's account that could be repurposed/cleaned up:
 
 ## 9. Open questions / to-decide
 
-- [ ] **URGENT — pending CI publish.** `.gitlab-ci.yml` has a staged draft that adds support for deploying subdirectories (tools/, repair/, fix/, locations/, brands/, data/). The Gitpage API has a bug that prevents publishing dotfiles via tool call (`The update path 'publishedPagesMeta..gitlab-ci.yml' contains an empty field name`). UNTIL THIS IS PUBLISHED, the live `/tools/software-stack-for-repair-shops.html` returns 404. Two ways to publish: (a) open Gitpage dashboard → RepairRange site → find `.gitlab-ci.yml` (may need to toggle "show hidden files") → publish the staged draft, or (b) edit directly at https://gitlab.com/mayfield276/blank-site-2026-05-06-6rrng/-/blob/main/.gitlab-ci.yml and commit. Replace contents with the version that adds `cp -r tools/repair/fix/locations/brands/data public/` lines.
+- [x] **CI publish.** `.gitlab-ci.yml` updated and published — deploys tools/, repair/, fix/, locations/, brands/, data/ subdirs. SHA `3c1a3fa69883c12e85874a46047a3ddc70bae6e3`.
 
 - [ ] Custom domain for RepairRange (when to register, which TLD)
 - [ ] Whether to disclose the Mayfield Phone Repair connection on the About page (recommendation: yes, in Phase 5, once Mayfield is a featured Newcastle shop)
@@ -248,3 +248,39 @@ Other sites in Khalil's account that could be repurposed/cleaned up:
 - [ ] AdSense application timing (after 30–50 pages, so post-Phase 3)
 - [ ] Amazon Associates application timing (any time, but more credible with traffic)
 - [ ] Email forwarding setup for hello@repairrange.com
+
+---
+
+## 10. Phase 2 status (in progress — do not lose context)
+
+### What's done
+- `data/devices.json` v2026.05.2 with 20 devices and full pricing data. Published.
+- `build_model_page.py` — Python template that reads devices.json and renders /repair/{slug}.html. Lives on Claude's sandbox during sessions; rebuild from devices.json schema if missing.
+- 2 model pages LIVE: `repair/iphone-14.html` and `repair/iphone-15-pro-max.html`.
+
+### What's NOT yet done (FINISH IN NEXT SESSION)
+Publish the remaining 18 model pages. Sandbox files are ephemeral; regenerate via:
+```
+cd /home/claude/repairrange && python3 build_all_model_pages.py
+```
+Then loop `save_draft` + `publish_draft` for each slug. **Important:** save_draft is token-heavy at ~22K tokens per page — next session can budget ~12 pages max per session.
+
+Remaining 18 slugs:
+- iphone-15-pro, iphone-15-plus, iphone-15
+- iphone-14-pro-max, iphone-14-pro
+- iphone-13-pro-max, iphone-13, iphone-12, iphone-se-3
+- samsung-galaxy-s24-ultra, samsung-galaxy-s24, samsung-galaxy-s23-ultra, samsung-galaxy-s23
+- samsung-galaxy-z-fold-5, samsung-galaxy-z-flip-5, samsung-galaxy-a54
+- pixel-8-pro, pixel-8
+
+### Pricing corrections already applied in v2026.05.2 (don't re-apply)
+- iPhone 15 Pro Max back glass: $169–$279 (was $199–$349) — user-serviceable design
+- Galaxy S24 Ultra screen floor: $299–$499 (was $349–$499) — AU indie reality
+
+### Skipped by Khalil's choice (handle separately)
+- Newcastle/Hunter main-site backlinks on model pages — will be added in a single backlink sweep after all 20 model pages are live.
+
+### After Phase 2 completes, before Phase 3
+- Update `calculator.html` to `fetch('data/devices.json')` instead of inlined MODELS dict
+- Regenerate `sitemap.xml` via Gitpage:generate_sitemap so all model pages are indexed
+- Submit fresh sitemap to Google Search Console
