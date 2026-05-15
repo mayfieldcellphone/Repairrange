@@ -240,6 +240,8 @@ Other sites in Khalil's account that could be repurposed/cleaned up:
 
 ## 9. Open questions / to-decide
 
+- [ ] **URGENT — pending CI publish.** `.gitlab-ci.yml` has a staged draft that adds support for deploying subdirectories (tools/, repair/, fix/, locations/, brands/, data/). The Gitpage API has a bug that prevents publishing dotfiles via tool call (`The update path 'publishedPagesMeta..gitlab-ci.yml' contains an empty field name`). UNTIL THIS IS PUBLISHED, the live `/tools/software-stack-for-repair-shops.html` returns 404. Two ways to publish: (a) open Gitpage dashboard → RepairRange site → find `.gitlab-ci.yml` (may need to toggle "show hidden files") → publish the staged draft, or (b) edit directly at https://gitlab.com/mayfield276/blank-site-2026-05-06-6rrng/-/blob/main/.gitlab-ci.yml and commit. Replace contents with the version that adds `cp -r tools/repair/fix/locations/brands/data public/` lines.
+
 - [ ] Custom domain for RepairRange (when to register, which TLD)
 - [ ] Whether to disclose the Mayfield Phone Repair connection on the About page (recommendation: yes, in Phase 5, once Mayfield is a featured Newcastle shop)
 - [ ] Lead-gen form mechanics (Phase 4) — where do non-Newcastle leads route? Sell to other shops, or just say "we'll match you in 24h" and email Khalil?
