@@ -36,10 +36,10 @@ This must NOT read as a PBN (private blog network). Google penalises sites that 
 |---|---|
 | **Name** | RepairRange |
 | **Tagline** | "Plain-English phone repair costs, fixes, and buying advice. Researched by people who actually do this work." |
-| **Live URL** | https://mayfield276.gitlab.io/blank-site-2026-05-06-6rrng |
+| **Live URL** | https://mayfield276.gitlab.io/blank-site-2026-05-06-6rrng (will move to repairrange.io once DNS is live) |
 | **Gitpage pageId** | `69fb1fc8a84e148d906285c4` |
 | **Repo** | `blank-site-2026-05-06-6rrng` on gitlab.com/mayfield276 |
-| **Future custom domain** | TBD — `repairrange.com` if available, otherwise `.io`, `.co`, or `.guide` |
+| **Custom domain** | **`repairrange.io`** (registered May 2026, 3-year term) |
 | **Contact email (planned)** | hello@repairrange.com |
 
 ### Design system
@@ -238,6 +238,38 @@ Other sites in Khalil's account that could be repurposed/cleaned up:
 
 ---
 
+## 11. Custom domain rollout — repairrange.io (in progress)
+
+### Registrar setup (Khalil's task)
+- [ ] Add A records for apex: `35.185.44.232`, `35.190.65.110`, `35.227.220.34`, `35.232.218.50`
+- [ ] Add CNAME for `www`: `mayfield276.gitlab.io`
+- [ ] Enable WHOIS privacy
+- [ ] Verify auto-renew is off (paid 3 yr upfront)
+
+### GitLab Pages verification (Khalil's task)
+URL: https://gitlab.com/mayfield276/blank-site-2026-05-06-6rrng/-/pages
+- [ ] Add domain `repairrange.io` in GitLab Pages settings
+- [ ] Copy the TXT verification record GitLab provides
+- [ ] Add the TXT record at the registrar
+- [ ] Click "Verify ownership" in GitLab
+- [ ] Repeat for `www.repairrange.io`
+- [ ] Wait for Let's Encrypt SSL cert to auto-issue (5–30 min after verification)
+
+### Site updates after DNS propagates (Claude's task)
+- [ ] Update all internal absolute URLs (none yet — all internal links are relative, no change needed)
+- [ ] Add `<link rel="canonical">` to every published page pointing to `https://repairrange.io/...`
+- [ ] Generate `sitemap.xml` via Gitpage:generate_sitemap with customDomain=`https://repairrange.io` (this also persists the customDomain on the page record)
+- [ ] Generate `robots.txt` via Gitpage:generate_robots_txt
+- [ ] Generate `llms.txt` via Gitpage:generate_llms_txt
+- [ ] Verify ownership of repairrange.io in Google Search Console
+- [ ] Submit sitemap.xml to Google Search Console
+- [ ] Confirm Open Graph URLs match the new domain on every page
+
+### Migration consideration
+The gitlab.io URL will keep working forever (GitLab doesn't shut it down). Once `repairrange.io` is live, the gitlab.io URL stays as a backup but Google should see `repairrange.io` as canonical. No 301 redirects needed at the GitLab side; the canonical tags handle the SEO consolidation.
+
+---
+
 ## 9. Open questions / to-decide
 
 - [x] **CI publish.** `.gitlab-ci.yml` updated and published — deploys tools/, repair/, fix/, locations/, brands/, data/ subdirs. SHA `3c1a3fa69883c12e85874a46047a3ddc70bae6e3`.
@@ -247,7 +279,7 @@ Other sites in Khalil's account that could be repurposed/cleaned up:
 - [ ] Lead-gen form mechanics (Phase 4) — where do non-Newcastle leads route? Sell to other shops, or just say "we'll match you in 24h" and email Khalil?
 - [ ] AdSense application timing (after 30–50 pages, so post-Phase 3)
 - [ ] Amazon Associates application timing (any time, but more credible with traffic)
-- [ ] Email forwarding setup for hello@repairrange.com
+- [ ] Email forwarding setup for hello@repairrange.io (now that the domain is registered)
 
 ---
 
