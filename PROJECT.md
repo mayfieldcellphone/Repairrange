@@ -109,6 +109,8 @@ Build `/repair/{slug}.html` for the 20 most-searched phone models. These are the
 - Samsung Galaxy S24 Ultra, S24, S23 Ultra, S23, Z Fold 5, Z Flip 5, A54
 - Google Pixel 8 Pro, 8
 
+> **⚠️ CURRENT-GENERATION GAP — raised by Khalil May 2026 (DO NOT FORGET).** The Phase 2 list above was scoped against models known at an earlier knowledge cutoff and is now INCOMPLETE. Newer flagships have since released — e.g. the **iPhone 17 series** and **Samsung Galaxy S26 series** (and likely a newer Pixel). The exact model names, configurations (Pro / Pro Max / Ultra / Air / Fold naming may have changed), and — critically — the **2026 AU repair pricing** for these must be confirmed from real current sources, NOT estimated or invented. Fabricated model names or guessed pricing on these would directly contradict the site's "honest, researched by working techs" positioning and is explicitly forbidden. Sourcing options, in order of preference: (1) Khalil's own bench experience / current AU supplier pricing via the Mayfield connection (best — newest models have volatile premium pricing that needs first-hand data); (2) web search for confirmed model lineups + AU repair pricing at build time. **Priority note:** newest-model pages ("iPhone 17 Pro Max screen replacement cost") are the HIGHEST-traffic, highest-intent queries — when built they belong near the FRONT of the publish queue, not appended after older models like iPhone 12/13. Action: at the next Phase 2 session, first confirm the current flagship lineup (search + ask Khalil), add them to devices.json with real ranges, then build them early in the batch.
+
 ### Phase 3 — 10 troubleshooting guides
 Build `/fix/{slug}.html` for the 10 guides linked from `fix.html`:
 - `black-screen.html` · `green-lines.html` · `ghost-touch.html` · `cracked-screen-still-works.html`
@@ -320,6 +322,13 @@ Remaining 18 slugs:
 
 ### Skipped by Khalil's choice (handle separately)
 - Newcastle/Hunter main-site backlinks on model pages — will be added in a single backlink sweep after all 20 model pages are live.
+
+### ⚠️ Current-generation models MISSING from the queue (Khalil flagged, May 2026)
+The original 20-model list predates newer releases. **iPhone 17 series and Samsung Galaxy S26 series (plus likely a newer Pixel) are now out and are NOT in devices.json or the queue.** Without them the site looks dated and misses the highest-value search traffic. Requirements when adding:
+- Confirm exact current lineup + model names via web search AND/OR Khalil (naming conventions may have shifted, e.g. "Air" tiers, Fold/Flip generations).
+- Pricing MUST be real (Khalil's bench / AU supplier data preferred; brand-new models have volatile premium pricing that estimated multipliers get wrong and that goes stale fast).
+- Build these EARLY in the next batch — newest models = highest-intent, highest-traffic queries.
+- Add to devices.json first, then build pages, then they flow into sitemap automatically.
 
 ### After Phase 2 completes, before Phase 3
 - Update `calculator.html` to `fetch('data/devices.json')` instead of inlined MODELS dict
