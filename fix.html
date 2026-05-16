@@ -81,6 +81,36 @@
         </div>
     </section>
 
+    <!-- Symptom Diagnostic Widget -->
+    <section class="bg-white border-b border-line">
+        <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-10">
+                <div class="lg:col-span-4">
+                    <p class="eyebrow mb-3">Instant check</p>
+                    <h2 class="display text-3xl md:text-5xl text-ink">Symptom diagnostic</h2>
+                </div>
+                <div class="lg:col-span-8"><p class="text-muted leading-relaxed">Pick what your device is doing. We'll explain the most common underlying cause in plain technician terms and give you a realistic independent-shop cost range. This is a quick orientation, not a substitute for a hands-on diagnosis.</p></div>
+            </div>
+            <div class="max-w-2xl">
+                <label for="symptom-select" class="eyebrow block mb-2">Select on-screen symptom</label>
+                <div class="relative mb-6">
+                    <select id="symptom-select" onchange="checkSymptom()" class="w-full bg-white px-4 py-3.5 text-base border border-line text-ink appearance-none focus:outline-none focus:border-ink transition-colors cursor-pointer">
+                        <option value="">\u2014 Select what your device is doing \u2014</option>
+                        <option value="green-lines">Vertical green or pink display lines</option>
+                        <option value="no-power">Completely dead / won't power on</option>
+                        <option value="ghost-touch">Screen tapping itself (ghost touch)</option>
+                        <option value="slow-charging">Charging slowly or flaky connection</option>
+                        <option value="bootloop">Stuck on logo (bootloop)</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-muted border-l border-line">
+                        <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    </div>
+                </div>
+                <div id="diagnostic-result" class="hidden"></div>
+            </div>
+        </div>
+    </section>
+
     <section class="bg-paper-2 border-b border-line">
         <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-10">
@@ -202,6 +232,79 @@
             const menu = document.querySelector('.mobile-menu');
             if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
         });
+
+        /* Symptom Diagnostic engine. Costs are 2026 surveyed AU independent-shop ranges.
+           guideHref points to the in-depth /fix/ page (internal SEO link).
+           Affiliate tool-kit button intentionally omitted until Amazon Associates is approved. */
+        function checkSymptom() {
+            const symptomDatabase = {
+                'green-lines': {
+                    title: 'Vertical green or pink lines',
+                    cause: 'Internal OLED layer fracture from physical impact or a localised pressure point. Software updates cannot patch this \u2014 it is hardware degradation, and it tends to spread over days or weeks.',
+                    costRange: '$220 \u2013 $490 AUD',
+                    guideHref: 'fix/green-lines.html'
+                },
+                'no-power': {
+                    cause: 'Deep battery-cell voltage collapse, a power-management IC failure on the logic board, or a charging circuit damaged downstream from a non-compliant third-party cable.',
+                    title: "Completely dead / won't power on",
+                    costRange: '$80 \u2013 $160 AUD',
+                    guideHref: 'fix/wont-turn-on.html'
+                },
+                'ghost-touch': {
+                    title: 'Ghost touch / phantom taps',
+                    cause: 'Micro-cracks in the digitiser grid layer, or tension on the internal display flex cable \u2014 often triggered by a subtle frame warp after a drop.',
+                    costRange: '$150 \u2013 $399 AUD',
+                    guideHref: 'fix/ghost-touch.html'
+                },
+                'slow-charging': {
+                    title: 'Charging slowly or flaky connection',
+                    cause: 'Most often compacted pocket lint inside the USB-C / Lightning port stopping the pins seating fully. Less often, a degraded battery cell with high internal resistance.',
+                    costRange: '$0 (clean it yourself) \u2013 $130 AUD',
+                    guideHref: 'fix/charging-port.html'
+                },
+                'bootloop': {
+                    title: 'Stuck on logo (bootloop)',
+                    cause: 'A corrupt system partition, a battery too depleted to hold boot voltage, or a failing logic-board sensor line shorting during startup.',
+                    costRange: '$90 \u2013 $180 AUD',
+                    guideHref: 'fix/wont-turn-on.html'
+                }
+            };
+
+            const selector = document.getElementById('symptom-select');
+            const wrap = document.getElementById('diagnostic-result');
+            if (!selector || !wrap) return;
+
+            const val = selector.value;
+            if (!val) { wrap.classList.add('hidden'); wrap.innerHTML = ''; return; }
+
+            const d = symptomDatabase[val];
+            if (!d) return;
+
+            wrap.innerHTML =
+                '<div class="p-6 bg-paper-2 border border-line text-ink">' +
+                    '<div class="flex items-center gap-2 mb-4">' +
+                        '<span class="font-mono text-xs text-teal tracking-widest uppercase font-semibold">Diagnostic note</span>' +
+                        '<div class="h-px bg-line flex-1"></div>' +
+                    '</div>' +
+                    '<div class="mb-5">' +
+                        '<h3 class="font-serif text-xl font-medium mb-1.5 text-ink">' + d.title + '</h3>' +
+                        '<p class="text-sm text-muted leading-relaxed">' + d.cause + '</p>' +
+                    '</div>' +
+                    '<div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4 border-t border-line items-center">' +
+                        '<div>' +
+                            '<p class="eyebrow mb-1">Est. independent shop cost</p>' +
+                            '<p class="font-mono text-2xl font-medium text-teal tnum">' + d.costRange + '</p>' +
+                        '</div>' +
+                        '<div class="md:text-right">' +
+                            '<a href="' + d.guideHref + '" class="btn btn-ghost text-sm inline-flex">Read the full guide <i data-lucide="arrow-right" class="w-4 h-4"></i></a>' +
+                        '</div>' +
+                    '</div>' +
+                    '<p class="text-xs text-muted mt-4 leading-relaxed">Ranges are 2026 surveyed Australian metro pricing and depend on model and parts. Treat this as a sanity check, not a quote.</p>' +
+                '</div>';
+
+            wrap.classList.remove('hidden');
+            if (window.lucide) window.lucide.createIcons();
+        }
     </script>
 </body>
 </html>
