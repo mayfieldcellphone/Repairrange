@@ -256,14 +256,23 @@ URL: https://gitlab.com/mayfield276/blank-site-2026-05-06-6rrng/-/pages
 - [ ] Wait for Let's Encrypt SSL cert to auto-issue (5–30 min after verification)
 
 ### Site updates after DNS propagates (Claude's task)
-- [ ] Update all internal absolute URLs (none yet — all internal links are relative, no change needed)
-- [ ] Add `<link rel="canonical">` to every published page pointing to `https://repairrange.io/...`
-- [ ] Generate `sitemap.xml` via Gitpage:generate_sitemap with customDomain=`https://repairrange.io` (this also persists the customDomain on the page record)
-- [ ] Generate `robots.txt` via Gitpage:generate_robots_txt
+- [x] Update all internal absolute URLs (none — all internal links are relative)
+- [x] Add `<link rel="canonical">` to every published page → all 16 live pages done (9 Phase 1 + 7 model pages), all point to https://repairrange.io/...
+- [x] Add `og:url` to every published page → done in same sweep
+- [x] Fixed critical bug: homepage schema.org url was `repairrange.com` (a domain we don't own) → corrected to `repairrange.io`
+- [x] `sitemap.xml` generated via generate_sitemap with customDomain=https://repairrange.io (STAGED AS DRAFT — not yet published; publish once HTTPS confirmed)
+- [ ] Generate `robots.txt` via Gitpage:generate_robots_txt (do after sitemap published)
 - [ ] Generate `llms.txt` via Gitpage:generate_llms_txt
+- [ ] Publish sitemap.xml draft (waiting on HTTPS confirmation so URLs resolve)
 - [ ] Verify ownership of repairrange.io in Google Search Console
 - [ ] Submit sitemap.xml to Google Search Console
-- [ ] Confirm Open Graph URLs match the new domain on every page
+
+### SSL / HTTPS status (as of last session)
+- DNS: confirmed resolving correctly at Hostinger (4 A records + www CNAME)
+- Errors progressed ERR_EMPTY_RESPONSE → 404 → ERR_CONNECTION_CLOSED → (turned Force HTTPS OFF) → http://repairrange.io/index.html now SERVES the site
+- **Root cause of the fluctuating errors:** Let's Encrypt SSL cert still provisioning. Turning Force HTTPS off let the site serve over HTTP, which is what lets Let's Encrypt complete its domain-validation challenge.
+- **NEXT:** Khalil to watch GitLab Pages settings (https://gitlab.com/mayfield276/blank-site-2026-05-06-6rrng/-/settings/pages) for the Certificate status. When it shows Active/Issued → turn Force HTTPS back ON → test https://repairrange.io/ → tell Claude "HTTPS is live" → Claude publishes sitemap.xml, generates robots.txt + llms.txt, guides GSC submission.
+- **Open question to verify:** does http://repairrange.io/ (root, no /index.html) load? If only /index.html works, a default-document fix may be needed in CI.
 
 ### Migration consideration
 The gitlab.io URL will keep working forever (GitLab doesn't shut it down). Once `repairrange.io` is live, the gitlab.io URL stays as a backup but Google should see `repairrange.io` as canonical. No 301 redirects needed at the GitLab side; the canonical tags handle the SEO consolidation.
