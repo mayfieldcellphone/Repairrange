@@ -142,6 +142,33 @@ Other city pages: don't push Mayfield (it cheapens the link). Recommend a repres
 - Internal link audit (every page must link to ≥3 other pages naturally)
 - **Backlink audit:** confirm every Newcastle context links to mayfieldphonerepair.com.au at least once
 
+### Phase 6 — Repair-shop directory (Khalil's idea, May 2026 — post-traffic only)
+
+**Concept:** add a listed-repair-shops section to the non-Newcastle city pages. Shops can list for free; later, an optional paid featured tier (~$5–10) once pages rank and pull traffic. Revenue diversification independent of Amazon/Impact approval timelines.
+
+**Why it fits:** the Sydney/Melbourne/Brisbane/Perth city pages currently have no commercial purpose (by design — we don't push Mayfield there). A directory gives those pages a revenue role AND legitimately enriches them with real local-business content (good for SEO, opposite of doorway-page risk) — *provided each listing has real data, not thin stubs.*
+
+**HARD CONSTRAINTS (do not violate — these protect the core strategy and legal standing):**
+1. **Newcastle is excluded from paid placement, permanently.** Newcastle stays the curated editorial keystone with Mayfield Phone Repair featured. Mayfield's prominence there is the entire reason RepairRange exists; it is never a paid slot and never diluted by a list of competitors. The directory monetises only cities Khalil has no stake in.
+2. **Label as listings, NOT endorsements.** Section heading = "Listed repair shops" / "Repair shops in {city}" — never "recommended", "verified", "vetted", or "trusted" unless each shop is genuinely vetted. Paid placement dressed as editorial endorsement breaches ACCC guidance and destroys the editorial credibility the whole backlink strategy depends on. Any paid/featured listing must be visibly labelled (e.g. "Featured listing").
+3. **Quality bar on free listings.** Accept a listing only with real NAP + hours + at least one specific detail (specialties/brands). This is both the SEO value and the spam defence — fake/SEO-spam shops will attempt to list.
+4. **Disclosure.** Add a line to the affiliate-disclosure / about copy explaining the directory model (free listings; some listings are paid placements; placement does not imply endorsement).
+
+**Phase 6 build steps:**
+- Decide listing data model (likely a small JSON per city, e.g. `data/shops-sydney.json`, mirroring devices.json approach).
+- Add a "Listed repair shops" section to each non-Newcastle city page rendering from that JSON.
+- Build a submission path. Cheapest viable: a simple form (Formspree/Tally/Google Form) emailing Khalil; manual review; manual JSON add. (Full self-serve DB is out of scope for a static Gitpage site.)
+- Light moderation policy written down (what gets rejected).
+
+### Phase 7 — Directory monetisation (only after a city page demonstrably ranks + gets clicks)
+- Introduce optional paid tier: featured/pinned position or enhanced listing (logo, description, link) for ~$5–10 (one-off or annual — decide based on effort to administer).
+- Free tier always remains; never remove a free listing to upsell.
+- Payment: a simple Stripe/PayPal payment link is enough at this scale; no need for billing infrastructure.
+- Featured listings clearly badged. Newcastle still excluded.
+- Revisit pricing once there's real demand data; $5–10 is a hypothesis, not a fixed number.
+
+> **Sequencing rule:** do NOT add the paid tier (Phase 7) until at least one non-Newcastle city page is genuinely ranking and receiving organic clicks (check Search Console). A paid directory with no traffic gets zero signups and looks desperate; a free directory that already ranks is something shops will pay to be featured within. Free-first is non-negotiable.
+
 ---
 
 ## 5a. Affiliate partnerships (Impact.com, AppSumo, Amazon)
@@ -291,6 +318,7 @@ The gitlab.io URL will keep working forever (GitLab doesn't shut it down). Once 
 - [ ] AdSense application timing (after 30–50 pages, so post-Phase 3)
 - [ ] Amazon Associates application timing (any time, but more credible with traffic)
 - [ ] Email forwarding setup for hello@repairrange.io (now that the domain is registered)
+- [ ] Directory model (Phase 6/7): listing data format, submission/moderation mechanism, payment link choice — decide at Phase 6 start, not before (depends on what's cheapest to administer then)
 
 ---
 
