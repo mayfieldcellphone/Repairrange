@@ -242,31 +242,36 @@
                     title: 'Vertical green or pink lines',
                     cause: 'Internal OLED layer fracture from physical impact or a localised pressure point. Software updates cannot patch this \u2014 it is hardware degradation, and it tends to spread over days or weeks.',
                     costRange: '$220 \u2013 $490 AUD',
-                    guideHref: 'calculator.html'
+                    guideHref: 'fix/green-lines.html',
+                    guideReady: true
                 },
                 'no-power': {
                     cause: 'Deep battery-cell voltage collapse, a power-management IC failure on the logic board, or a charging circuit damaged downstream from a non-compliant third-party cable.',
                     title: "Completely dead / won't power on",
                     costRange: '$80 \u2013 $160 AUD',
-                    guideHref: 'calculator.html'
+                    guideHref: 'fix/wont-turn-on.html',
+                    guideReady: true
                 },
                 'ghost-touch': {
                     title: 'Ghost touch / phantom taps',
                     cause: 'Micro-cracks in the digitiser grid layer, or tension on the internal display flex cable \u2014 often triggered by a subtle frame warp after a drop.',
                     costRange: '$150 \u2013 $399 AUD',
-                    guideHref: 'calculator.html'
+                    guideHref: 'calculator.html',
+                    guideReady: false
                 },
                 'slow-charging': {
                     title: 'Charging slowly or flaky connection',
                     cause: 'Most often compacted pocket lint inside the USB-C / Lightning port stopping the pins seating fully. Less often, a degraded battery cell with high internal resistance.',
                     costRange: '$0 (clean it yourself) \u2013 $130 AUD',
-                    guideHref: 'calculator.html'
+                    guideHref: 'fix/charging-port.html',
+                    guideReady: true
                 },
                 'bootloop': {
                     title: 'Stuck on logo (bootloop)',
                     cause: 'A corrupt system partition, a battery too depleted to hold boot voltage, or a failing logic-board sensor line shorting during startup.',
                     costRange: '$90 \u2013 $180 AUD',
-                    guideHref: 'calculator.html'
+                    guideHref: 'fix/wont-turn-on.html',
+                    guideReady: true
                 }
             };
 
@@ -296,7 +301,7 @@
                             '<p class="font-mono text-2xl font-medium text-teal tnum">' + d.costRange + '</p>' +
                         '</div>' +
                         '<div class="md:text-right">' +
-                            '<a href="' + d.guideHref + '" class="btn btn-ghost text-sm inline-flex">Estimate the cost <i data-lucide="arrow-right" class="w-4 h-4"></i></a>' +
+                            '<a href="' + d.guideHref + '" class="btn btn-ghost text-sm inline-flex">' + (d.guideReady ? 'Read the full guide' : 'Estimate the cost') + ' <i data-lucide="arrow-right" class="w-4 h-4"></i></a>' +
                         '</div>' +
                     '</div>' +
                     '<p class="text-xs text-muted mt-4 leading-relaxed">Ranges are 2026 surveyed Australian metro pricing and depend on model and parts. Treat this as a sanity check, not a quote.</p>' +
