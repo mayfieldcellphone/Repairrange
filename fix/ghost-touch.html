@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Phone screen tapping, swiping or typing by itself? That's ghost touch — usually a digitiser or display-flex fault. How to confirm it isn't software and what a 2026 AU fix costs.">
+<meta name="author" content="RepairRange">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://repairrange.io/fix/ghost-touch.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://repairrange.io/fix/ghost-touch.html">
+<meta property="og:title" content="Ghost Touch — Screen Tapping Itself | RepairRange">
+<meta property="og:description" content="Screen taps or types by itself? How to rule out software, why it's usually the digitiser, and what a fix costs in 2026.">
+<meta property="og:site_name" content="RepairRange">
+<title>Ghost Touch — Screen Tapping or Typing Itself | RepairRange</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Ghost Touch: Screen Tapping or Typing Itself",
+  "description": "Diagnosing phantom touch input on a phone — ruling out software vs. a digitiser or display-flex fault — with 2026 Australian repair pricing.",
+  "author": { "@type": "Organization", "name": "RepairRange" },
+  "publisher": { "@type": "Organization", "name": "RepairRange" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Why is my phone screen tapping by itself?","acceptedAnswer":{"@type":"Answer","text":"Phantom input — ghost touch — is usually a hardware fault in the touch digitiser or the display flex cable, often after a drop, pressure, heat or liquid. Less commonly it's a cheap charger injecting electrical noise, or a screen protector issue. Hardware causes are the most common and don't resolve on their own."}},
+    {"@type":"Question","name":"How do I know if ghost touch is software or hardware?","acceptedAnswer":{"@type":"Answer","text":"Remove any screen protector and case, try a different known-good charger, and restart or briefly test in safe mode. If phantom taps continue with no protector, a good charger and a clean software state, it's a hardware digitiser or flex fault."}},
+    {"@type":"Question","name":"Can a cheap charger cause ghost touch?","acceptedAnswer":{"@type":"Answer","text":"Yes. A poor-quality or failing charger can inject electrical noise that makes the touch layer register false taps, typically only while charging. Test with a known-good charger and wall outlet — if the ghost touch only happens on charge and stops with a good charger, that was the cause and it's a free fix."}},
+    {"@type":"Question","name":"How much does it cost to fix ghost touch?","acceptedAnswer":{"@type":"Answer","text":"Because the touch layer is bonded to the screen, the fix is usually a display assembly replacement: roughly $150 to $490 at an Australian independent shop in 2026 by model. Occasionally it's a loose display flex that just needs reseating, which is cheaper — a shop can tell."}}
+  ]
+}
+</script>
+<style>
+:root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#E7E5E4; --rr-paper:#FAFAF9; --rr-paper-2:#F5F5F4; }
+html { scroll-behavior: smooth; }
+body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+.font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+.font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+.text-teal{color:var(--rr-teal-700);} .bg-teal{background:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
+.text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
+.text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
+.bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
+.display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+.eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
+.header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(250,250,249,0.85); }
+.ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
+.ed-link:hover { background-size:100% 1px; }
+.prose-rr { color:var(--rr-ink); }
+.prose-rr p { margin:0 0 1.25rem; line-height:1.75; color:#3f3a36; }
+.prose-rr h2 { font-family:'Fraunces',serif; font-size:1.875rem; letter-spacing:-0.02em; margin:3rem 0 1rem; color:var(--rr-ink); }
+.prose-rr h3 { font-family:'Fraunces',serif; font-size:1.3rem; margin:2rem 0 0.75rem; color:var(--rr-ink); }
+.prose-rr strong { color:var(--rr-ink); font-weight:600; }
+.prose-rr ul { margin:0 0 1.25rem; padding-left:0; list-style:none; }
+.prose-rr li { position:relative; padding-left:1.5rem; margin-bottom:0.65rem; line-height:1.7; color:#3f3a36; }
+.prose-rr li::before { content:''; position:absolute; left:0; top:0.6em; width:6px; height:6px; background:var(--rr-teal-700); }
+.step { display:flex; gap:1.25rem; padding:1.5rem 0; border-bottom:1px solid var(--rr-line); }
+.step:last-child { border-bottom:none; }
+.step-n { font-family:'JetBrains Mono',monospace; font-size:0.875rem; color:var(--rr-teal-700); font-weight:500; flex-shrink:0; width:2rem; }
+.btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
+.btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
+.btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); }
+.btn-ghost { background:transparent; color:var(--rr-ink); border:1px solid var(--rr-ink); }
+.btn-ghost:hover { background:var(--rr-ink); color:var(--rr-paper); }
+.tnum { font-variant-numeric: tabular-nums; }
+.callout { border-left:3px solid var(--rr-teal-700); background:var(--rr-paper-2); padding:1.25rem 1.5rem; margin:2rem 0; }
+.callout-warn { border-left:3px solid var(--rr-amber-500); background:#fffbeb; padding:1.25rem 1.5rem; margin:2rem 0; }
+.mobile-menu { transition:all 300ms ease-in-out; }
+@media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
+details > summary::-webkit-details-marker { display:none; } details > summary::marker { display:none; }
+</style>
+</head>
+<body>
+
+<header class="header-sticky sticky top-0 z-50 border-b border-line">
+<nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
+<a href="../index.html" class="flex items-center gap-2 group">
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" class="flex-shrink-0"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg>
+<span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span>
+</a>
+<div class="hidden md:flex items-center gap-8 text-sm">
+<a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a>
+<a href="../fix.html" class="ed-link font-medium text-teal">Troubleshoot</a>
+<a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Calculator</a>
+<a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a>
+<a href="../about.html" class="ed-link font-medium text-ink hover:text-teal">About</a>
+<a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+</div>
+<button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button>
+</nav>
+<div class="mobile-menu hidden md:hidden border-t border-line bg-paper">
+<div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
+<a href="../brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a>
+<a href="../fix.html" class="py-2 font-medium text-teal">Troubleshoot</a>
+<a href="../calculator.html" class="py-2 font-medium text-ink hover:text-teal">Calculator</a>
+<a href="../locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a>
+<a href="../about.html" class="py-2 font-medium text-ink hover:text-teal">About</a>
+<a href="../calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a>
+</div>
+</div>
+</header>
+
+<article>
+<section class="bg-paper border-b border-line">
+<div class="max-w-3xl mx-auto px-6 md:px-8 py-12 md:py-16">
+<nav class="flex items-center gap-2 text-xs text-muted mb-8">
+<a href="../index.html" class="ed-link hover:text-teal">Home</a><span>/</span>
+<a href="../fix.html" class="ed-link hover:text-teal">Troubleshoot</a><span>/</span>
+<span class="text-ink">Ghost touch</span>
+</nav>
+<p class="eyebrow mb-4">Troubleshooting · Display</p>
+<h1 class="display text-4xl md:text-6xl text-ink mb-6">The screen taps itself.</h1>
+<p class="text-lg md:text-xl text-muted leading-relaxed">Phantom taps, self-typing, the phone "using itself" — that's ghost touch. It's usually hardware, but there are two genuinely free causes worth ruling out first before you spend anything.</p>
+</div>
+</section>
+
+<section class="bg-white">
+<div class="max-w-3xl mx-auto px-6 md:px-8 py-12 md:py-16 prose-rr">
+
+<div class="callout">
+<p style="margin:0;"><strong>Quick triage:</strong> ghost touch is usually a hardware digitiser/flex fault — but a cheap charger or a bad screen protector cause it surprisingly often, and both are free to rule out. Do the three checks below <em>before</em> assuming you need a screen.</p>
+</div>
+
+<h2>What ghost touch actually is</h2>
+<p>Your screen's top functional layer is the digitiser — the grid that senses your finger. Ghost touch happens when that grid registers touches that aren't there: the phone opens apps, types, swipes or "fights" your input on its own. Most often the digitiser or the display flex cable behind it has been damaged — commonly by a drop (even one that didn't crack the glass), pressure, heat, or moisture. But two non-hardware causes are common enough, and free enough to check, that skipping them is how people overspend.</p>
+
+<h2>Rule out the free causes first</h2>
+<div style="margin:1.5rem 0;">
+<div class="step">
+<span class="step-n">01</span>
+<div><h3 style="margin:0 0 0.5rem;">Remove the screen protector and case (free)</h3><p style="margin:0;">A cracked, lifting, bubbled or cheap screen protector is a genuinely common ghost-touch cause — it interferes with the touch grid. So can a too-tight case pressing the screen edges. Take both off and use the phone bare for a while. If the phantom taps stop, you've found it for free.</p></div>
+</div>
+<div class="step">
+<span class="step-n">02</span>
+<div><h3 style="margin:0 0 0.5rem;">Test a different charger (free)</h3><p style="margin:0;">A poor-quality or failing charger can inject electrical noise that makes the touch layer fire false taps — classically <em>only while charging</em>. If the ghost touch happens mostly on charge, try a known-good charger and a different wall outlet. If it stops with a good charger, that was the cause — no repair needed.</p></div>
+</div>
+<div class="step">
+<span class="step-n">03</span>
+<div><h3 style="margin:0 0 0.5rem;">Restart, and check software state (free)</h3><p style="margin:0;">Restart the phone. If it persists, an Android device can be tested briefly in safe mode to rule out a misbehaving app; on iPhone, note whether it started right after an update. This is the limit of what software can do here — if phantom taps survive a clean restart with no protector and a good charger, it's hardware.</p></div>
+</div>
+</div>
+
+<div class="callout-warn">
+<p style="margin:0;"><strong>The avoidable overspend:</strong> the single most common ghost-touch mistake is paying for a screen replacement when a $0 culprit — a lifting protector or a dodgy charger — was the cause. Those two checks take five minutes and resolve a real share of cases. Do them before booking anything.</p>
+</div>
+
+<h2>If it's hardware</h2>
+<p>If a bare screen, a known-good charger and a clean restart still give you phantom input, the digitiser or display flex is at fault. The touch layer is bonded into the screen assembly on modern phones, so the practical fix is a <strong>display assembly replacement</strong> — occasionally it's just a loose display flex that needs reseating, which is cheaper, but you can't tell which from the outside.</p>
+<p><strong>2026 Australian independent-shop guide:</strong> roughly <span class="font-mono tnum">$150–$490</span> depending on model (older/smaller low, curved Samsung flagships high) for an assembly replacement; a flex reseat, if that's all it is, can be considerably less. For your model the <a href="../calculator.html" class="ed-link text-teal font-medium">cost calculator</a> and <a href="../brands.html" class="ed-link text-teal font-medium">model pages</a> have specifics. If you're <em>also</em> seeing coloured lines, the panel itself is involved too — see the <a href="green-lines.html" class="ed-link text-teal">green-lines guide</a>.</p>
+
+<h2>DIY, honestly</h2>
+<p>The free DIY here is the triage above: strip the protector and case, swap the charger, restart. Those genuinely fix the non-hardware cases at no cost — don't skip them.</p>
+<p>For a confirmed hardware fault, we won't walk you through a screen swap. It's the same fragile-panel, adhesive-heat, part-re-pairing job as any display replacement, and telling "needs a new assembly" from "flex just needs reseating" needs the phone opened and tested properly. The usual blind-DIY outcome is a second damaged screen and the ghost touch still there. <strong>Confirmed-hardware ghost touch is a shop job — and the diagnosis is worth it, since a reseat and a full assembly are very different bills.</strong></p>
+
+<div class="callout">
+<p style="margin:0;"><strong>In Newcastle or the Hunter?</strong> Ghost touch is a good example of where a quick in-person check pays for itself — it can separate a free protector/charger fix from a flex reseat from a full screen before you commit. Our <a href="../locations/newcastle.html" class="ed-link text-teal font-medium">Newcastle repair guide</a> has honest local pricing and a workshop we're comfortable pointing people to.</p>
+</div>
+
+<h2>Common questions</h2>
+<div class="space-y-3 mt-6" style="margin-bottom:1rem;">
+<details class="border border-line bg-white group">
+<summary class="cursor-pointer p-5 flex items-start justify-between gap-4 list-none"><span class="font-serif text-lg text-ink">It only does it while charging — is the phone broken?</span><i data-lucide="plus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 group-open:hidden"></i><i data-lucide="minus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 hidden group-open:block"></i></summary>
+<div class="px-5 pb-5 text-sm leading-relaxed" style="color:#3f3a36;">Charging-only ghost touch strongly points to the charger, not the phone. Test a known-good charger and a different outlet. If it stops, the old charger was injecting noise — a free fix, no repair needed.</div>
+</details>
+<details class="border border-line bg-white group">
+<summary class="cursor-pointer p-5 flex items-start justify-between gap-4 list-none"><span class="font-serif text-lg text-ink">Could my screen protector really cause this?</span><i data-lucide="plus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 group-open:hidden"></i><i data-lucide="minus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 hidden group-open:block"></i></summary>
+<div class="px-5 pb-5 text-sm leading-relaxed" style="color:#3f3a36;">Yes, more often than people expect — a cracked, lifting or low-quality protector interferes with the touch grid. Removing it and testing bare is the first thing to try; it's free and resolves a real share of cases.</div>
+</details>
+<details class="border border-line bg-white group">
+<summary class="cursor-pointer p-5 flex items-start justify-between gap-4 list-none"><span class="font-serif text-lg text-ink">It started after a drop with no visible crack — how?</span><i data-lucide="plus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 group-open:hidden"></i><i data-lucide="minus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 hidden group-open:block"></i></summary>
+<div class="px-5 pb-5 text-sm leading-relaxed" style="color:#3f3a36;">Common. The impact can damage the digitiser or knock the display flex loose without breaking the outer glass — the same reason green lines or a black screen can appear with no visible crack. Once the free causes are ruled out, this is the likely hardware cause.</div>
+</details>
+<details class="border border-line bg-white group">
+<summary class="cursor-pointer p-5 flex items-start justify-between gap-4 list-none"><span class="font-serif text-lg text-ink">Will a factory reset fix ghost touch?</span><i data-lucide="plus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 group-open:hidden"></i><i data-lucide="minus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 hidden group-open:block"></i></summary>
+<div class="px-5 pb-5 text-sm leading-relaxed" style="color:#3f3a36;">Only in the rare case it's a software glitch — and a restart or safe-mode test shows that far less drastically. If it's the digitiser or flex (the usual cause), a reset just erases your data without fixing anything. Rule out the free causes, then see a shop rather than resetting.</div>
+</details>
+</div>
+
+</div>
+</section>
+
+<section class="bg-teal-900 text-white">
+<div class="max-w-3xl mx-auto px-6 md:px-8 py-14 md:py-16">
+<p class="eyebrow text-amber mb-3">Next step</p>
+<h2 class="display text-3xl md:text-4xl mb-4">Ruled out the free causes? Get the real number.</h2>
+<p class="text-white/70 mb-8 max-w-xl">Confirmed-hardware ghost touch is a screen-level repair — and a reseat costs far less than a full panel. Check your model first.</p>
+<div class="flex flex-col sm:flex-row gap-3">
+<a href="../calculator.html" class="btn btn-primary">Open the cost calculator <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+<a href="../fix.html" class="btn btn-ghost" style="color:white;border-color:rgba(255,255,255,0.4);">Other symptoms</a>
+</div>
+</div>
+</section>
+</article>
+
+<footer class="bg-teal-900 text-white border-t border-white/10">
+<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+<div class="md:col-span-5">
+<div class="flex items-center gap-2 mb-4">
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg>
+<span class="font-serif text-2xl font-medium">RepairRange</span>
+</div>
+<p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice. Researched by people who actually do this work.</p>
+</div>
+<div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="../fix.html" class="text-white/80 hover:text-amber">Troubleshooting</a></li><li><a href="../calculator.html" class="text-white/80 hover:text-amber">Cost Calculator</a></li><li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li></ul></div>
+<div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="../about.html" class="text-white/80 hover:text-amber">About RepairRange</a></li><li><a href="../tools/software-stack-for-repair-shops.html" class="text-white/80 hover:text-amber">Tools we recommend</a></li><li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy Policy</a></li><li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms of Use</a></li></ul></div>
+</div>
+<div class="pt-8 border-t border-white/15">
+<p class="text-white/50 text-xs leading-relaxed mb-3 max-w-3xl"><strong class="text-white/70">Affiliate disclosure:</strong> RepairRange may earn a commission when you click links to retailers (including Amazon) and complete a purchase. This never affects the price you pay or our editorial recommendations.</p>
+<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p><p class="text-white/50 text-xs">Not affiliated with Apple, Samsung, Google, or any device manufacturer.</p></div>
+</div>
+</div>
+</footer>
+
+<script>
+if (window.lucide) window.lucide.createIcons();
+document.addEventListener('DOMContentLoaded', () => {
+const btn = document.querySelector('.mobile-menu-button');
+const menu = document.querySelector('.mobile-menu');
+if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+});
+</script>
+</body>
+</html>
