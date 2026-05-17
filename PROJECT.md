@@ -2,7 +2,7 @@
 
 > **Canonical source of truth** for the RepairRange satellite site. Lives in this repo so it persists across Claude sessions and is version-controlled with the code. Not deployed publicly (CI only copies `*.html`, `*.txt`, `*.xml`).
 >
-> **Last updated:** May 2026 · Phase 1 complete, Phase 2 in progress
+> **Last updated:** May 2026 · Phase 1 complete · Phase 2 in progress (7/20 model pages) · Phase 3 started (3/10 guides) · Phase 4 Newcastle keystone live
 
 ---
 
@@ -113,13 +113,22 @@ Build `/repair/{slug}.html` for the 20 most-searched phone models. These are the
 
 ### Phase 3 — 10 troubleshooting guides
 Build `/fix/{slug}.html` for the 10 guides linked from `fix.html`:
-- `black-screen.html` · `green-lines.html` · `ghost-touch.html` · `cracked-screen-still-works.html`
-- `battery-drains-fast.html` · `charging-port.html` · `wont-turn-on.html` · `overheating.html`
+- `black-screen.html` · `green-lines.html` ✅ · `ghost-touch.html` · `cracked-screen-still-works.html`
+- `battery-drains-fast.html` · `charging-port.html` ✅ · `wont-turn-on.html` ✅ · `overheating.html`
 - `water-damage.html` · `dropped-and-broken.html`
 
 Each 800–1500 words, written from genuine repair experience (Khalil's actual work). These are the **AdSense + E-E-A-T anchors** — Google looks for real expertise here.
 
-**Backlink opportunity:** every guide should have a "Need this fixed in Newcastle?" callout linking to mayfieldphonerepair.com.au.
+**DECIDED (May 2026):** guides are **diagnosis-and-decision only — NO step-by-step teardowns**. Always recommend a shop for the actual repair. Rationale: (1) RepairRange's value is honest decision-help, not a teardown manual; (2) teardown instructions create liability (battery puncture etc.); (3) "this is a shop job, here's the real cost, here's how to find a good local shop" is what drives referral value to Mayfield — DIY step content competes against the commercial purpose. Maintain this stance for the remaining 7 guides.
+
+**Phase 3 status:**
+- ✅ `fix/green-lines.html` — SHA `59dfb49a2aafe4e451831bacf38e8ea3226ac3c4`. Diagnosis-only, screenshot test, full OLED replacement reality, Newcastle callout.
+- ✅ `fix/charging-port.html` — SHA `744f2c69e4bca67e0434718f0fe9eb11f6c92777`. 4-step diagnostic order (lint→cable→software→repair), free-first, salt-air note, Newcastle callout.
+- ✅ `fix/wont-turn-on.html` — SHA `0d5e256620eeb120c8a178148b94316128ff3feb`. Charge+forced-restart free-first, no-factory-reset data warning, port-vs-battery-vs-board, Newcastle callout. (Symptom widget's no-power AND bootloop both point here.)
+- ⬜ Remaining 7: `black-screen`, `ghost-touch`, `cracked-screen-still-works`, `battery-drains-fast`, `overheating`, `water-damage`, `dropped-and-broken`. Same template/voice — copy structure from green-lines.html (TechArticle + FAQPage JSON-LD, prose-rr styles, callout/callout-warn boxes, dark CTA, Newcastle callout where natural per §5 backlink table).
+- ✅ Symptom widget on `fix.html` upgraded (SHA `33159dac5346fade6a090d35146329e4a7ff5444`): green-lines/no-power/slow-charging/bootloop now link to real guides with "Read the full guide"; ghost-touch still → calculator with "Estimate the cost" (uses a `guideReady` flag — set it true + repoint guideHref when ghost-touch.html is built). The homepage `index.html` "Common fixes" list still points at all 10 /fix/ slugs — 7 still 404 until built (acceptable; they're internal, and the 3 live ones now resolve).
+
+**Backlink opportunity:** every guide should have a "Need this fixed in Newcastle?" callout linking to mayfieldphonerepair.com.au. (Done on the 3 live guides via the Newcastle keystone page link — note these currently link to `locations/newcastle.html` which itself links to the main site, an editorially clean two-hop. A future pass per §5 may add direct main-site links where natural.)
 
 ### Phase 4 — 5 city pages + Newcastle linkage
 Build `/locations/{city}.html` for Sydney, Melbourne, Brisbane, Perth, Newcastle.
