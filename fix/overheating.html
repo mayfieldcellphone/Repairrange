@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Phone running hot and slowing down? How to tell normal heat from a real problem, what causes overheating (apps, battery age, charging, malware), and what a 2026 AU fix costs.">
+<meta name="author" content="RepairRange">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://repairrange.io/fix/overheating.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://repairrange.io/fix/overheating.html">
+<meta property="og:title" content="Phone Runs Hot and Slows Down — Why, and the Fix | RepairRange">
+<meta property="og:description" content="Normal heat vs a real problem, the common causes (apps, battery age, charging), and what a fix costs in 2026.">
+<meta property="og:site_name" content="RepairRange">
+<title>Phone Runs Hot and Slows Down — Why, and the Fix | RepairRange</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Phone Runs Hot and Slows Down: Why, and the Fix",
+  "description": "Distinguishing normal phone heat from a real fault, the common causes of overheating, and 2026 Australian repair pricing.",
+  "author": { "@type": "Organization", "name": "RepairRange" },
+  "publisher": { "@type": "Organization", "name": "RepairRange" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Why is my phone getting so hot and slow?","acceptedAnswer":{"@type":"Answer","text":"Most overheating is software or situational: a heavy app or game, a background app stuck awake, charging while using it, direct sun, or a post-update reindex. Heat makes the phone deliberately slow down (thermal throttling) to protect itself. Genuine hardware causes like an ageing battery are less common but real."}},
+    {"@type":"Question","name":"Is it normal for a phone to get warm?","acceptedAnswer":{"@type":"Answer","text":"Yes — noticeable warmth during gaming, navigation, video, camera use or fast charging is normal. It is a concern when the phone gets hot during light use or idle, gets too hot to hold comfortably, or shows a temperature warning screen."}},
+    {"@type":"Question","name":"Can a bad battery cause overheating?","acceptedAnswer":{"@type":"Answer","text":"Yes. A degraded or swelling battery can run hot and cause shutdowns. If battery health is low, or the back of the phone is bulging, that is a hardware cause that needs professional attention — a swelling battery is a safety issue."}},
+    {"@type":"Question","name":"How much does it cost to fix an overheating phone?","acceptedAnswer":{"@type":"Answer","text":"If it is software, it is free to resolve. If a worn or swollen battery is the cause, a replacement is roughly $69 to $149 at an Australian independent shop in 2026. Logic-board level thermal faults are rarer and need diagnosis to price."}}
+  ]
+}
+</script>
+<style>
+:root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#E7E5E4; --rr-paper:#FAFAF9; --rr-paper-2:#F5F5F4; }
+html { scroll-behavior: smooth; }
+body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+.font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+.font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+.text-teal{color:var(--rr-teal-700);} .bg-teal{background:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
+.text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
+.text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
+.bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
+.display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+.eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
+.header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(250,250,249,0.85); }
+.ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
+.ed-link:hover { background-size:100% 1px; }
+.prose-rr { color:var(--rr-ink); }
+.prose-rr p { margin:0 0 1.25rem; line-height:1.75; color:#3f3a36; }
+.prose-rr h2 { font-family:'Fraunces',serif; font-size:1.875rem; letter-spacing:-0.02em; margin:3rem 0 1rem; color:var(--rr-ink); }
+.prose-rr h3 { font-family:'Fraunces',serif; font-size:1.3rem; margin:2rem 0 0.75rem; color:var(--rr-ink); }
+.prose-rr strong { color:var(--rr-ink); font-weight:600; }
+.prose-rr ul { margin:0 0 1.25rem; padding-left:0; list-style:none; }
+.prose-rr li { position:relative; padding-left:1.5rem; margin-bottom:0.65rem; line-height:1.7; color:#3f3a36; }
+.prose-rr li::before { content:''; position:absolute; left:0; top:0.6em; width:6px; height:6px; background:var(--rr-teal-700); }
+.step { display:flex; gap:1.25rem; padding:1.5rem 0; border-bottom:1px solid var(--rr-line); }
+.step:last-child { border-bottom:none; }
+.step-n { font-family:'JetBrains Mono',monospace; font-size:0.875rem; color:var(--rr-teal-700); font-weight:500; flex-shrink:0; width:2rem; }
+.btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
+.btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
+.btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); }
+.btn-ghost { background:transparent; color:var(--rr-ink); border:1px solid var(--rr-ink); }
+.btn-ghost:hover { background:var(--rr-ink); color:var(--rr-paper); }
+.tnum { font-variant-numeric: tabular-nums; }
+.callout { border-left:3px solid var(--rr-teal-700); background:var(--rr-paper-2); padding:1.25rem 1.5rem; margin:2rem 0; }
+.callout-warn { border-left:3px solid var(--rr-amber-500); background:#fffbeb; padding:1.25rem 1.5rem; margin:2rem 0; }
+.callout-stop { border-left:3px solid #dc2626; background:#fef2f2; padding:1.25rem 1.5rem; margin:2rem 0; }
+.mobile-menu { transition:all 300ms ease-in-out; }
+@media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
+details > summary::-webkit-details-marker { display:none; } details > summary::marker { display:none; }
+</style>
+</head>
+<body>
+
+<header class="header-sticky sticky top-0 z-50 border-b border-line">
+<nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
+<a href="../index.html" class="flex items-center gap-2 group">
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" class="flex-shrink-0"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg>
+<span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span>
+</a>
+<div class="hidden md:flex items-center gap-8 text-sm">
+<a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a>
+<a href="../fix.html" class="ed-link font-medium text-teal">Troubleshoot</a>
+<a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Calculator</a>
+<a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a>
+<a href="../about.html" class="ed-link font-medium text-ink hover:text-teal">About</a>
+<a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+</div>
+<button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button>
+</nav>
+<div class="mobile-menu hidden md:hidden border-t border-line bg-paper">
+<div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
+<a href="../brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a>
+<a href="../fix.html" class="py-2 font-medium text-teal">Troubleshoot</a>
+<a href="../calculator.html" class="py-2 font-medium text-ink hover:text-teal">Calculator</a>
+<a href="../locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a>
+<a href="../about.html" class="py-2 font-medium text-ink hover:text-teal">About</a>
+<a href="../calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a>
+</div>
+</div>
+</header>
+
+<article>
+<section class="bg-paper border-b border-line">
+<div class="max-w-3xl mx-auto px-6 md:px-8 py-12 md:py-16">
+<nav class="flex items-center gap-2 text-xs text-muted mb-8">
+<a href="../index.html" class="ed-link hover:text-teal">Home</a><span>/</span>
+<a href="../fix.html" class="ed-link hover:text-teal">Troubleshoot</a><span>/</span>
+<span class="text-ink">Runs hot &amp; slows down</span>
+</nav>
+<p class="eyebrow mb-4">Troubleshooting · Power</p>
+<h1 class="display text-4xl md:text-6xl text-ink mb-6">It runs hot and slows down.</h1>
+<p class="text-lg md:text-xl text-muted leading-relaxed">Most overheating isn't a broken phone — it's software or situation, and the slowdown is the phone protecting itself on purpose. Here's how to tell ordinary heat from a real fault, and which causes actually cost money.</p>
+</div>
+</section>
+
+<section class="bg-white">
+<div class="max-w-3xl mx-auto px-6 md:px-8 py-12 md:py-16 prose-rr">
+
+<div class="callout">
+<p style="margin:0;"><strong>Key idea:</strong> when a phone gets hot it deliberately slows itself down — that's <em>thermal throttling</em>, a protection feature, not damage. So "hot and slow" is usually one problem (heat) causing the other (slowness). Fix the heat source and the speed comes back. Most heat sources are free to fix.</p>
+</div>
+
+<h2>First: is this even abnormal?</h2>
+<p>Phones are <em>supposed</em> to get warm under load. Before troubleshooting, check this isn't normal heat:</p>
+<ul>
+<li><strong>Normal:</strong> warm during gaming, GPS navigation, video calls, camera/4K recording, fast charging, or for a day or two after a big OS update while it reindexes. Warm but usable = fine.</li>
+<li><strong>Not normal:</strong> hot during light use (messaging, browsing) or while idle in your pocket; too hot to hold comfortably; a temperature-warning screen; or hot <em>and</em> the battery draining unusually fast.</li>
+</ul>
+<p>If it's the "normal" column, there's nothing to fix — the throttling is doing its job. If it's the "not normal" column, work through the causes below.</p>
+
+<h2>The common causes, free ones first</h2>
+<div style="margin:1.5rem 0;">
+<div class="step">
+<span class="step-n">01</span>
+<div><h3 style="margin:0 0 0.5rem;">A heavy or stuck app (free)</h3><p style="margin:0;">The number-one cause. A game, a buggy app, or one stuck awake in the background pegs the processor and heats the phone. Open Settings → Battery and look at what's consuming the most. An app you barely use sitting at the top is the culprit — force-close or uninstall it and see if the phone cools and speeds up. This resolves a large share of cases for nothing.</p></div>
+</div>
+<div class="step">
+<span class="step-n">02</span>
+<div><h3 style="margin:0 0 0.5rem;">Charging + using + environment (free)</h3><p style="margin:0;">Using the phone hard <em>while</em> charging (especially fast charging) compounds heat. So does direct sun, a hot car, or a thick case trapping heat. Take it off charge, out of the sun, off the case, let it rest a few minutes. If it cools fast and stays cool under normal use, that was it.</p></div>
+</div>
+<div class="step">
+<span class="step-n">03</span>
+<div><h3 style="margin:0 0 0.5rem;">A settling update, or a software/malware angle (free)</h3><p style="margin:0;">Heavy heat for 1–3 days after a major update is usually post-update reindexing — let it settle and re-check. Persistent unexplained heat with battery drain can also be a misbehaving or malicious app, especially anything sideloaded on Android: review recently installed apps, remove anything you don't recognise or trust, restart. This is the ceiling of what software can do — if it's still abnormally hot after this, look at hardware.</p></div>
+</div>
+<div class="step">
+<span class="step-n">04</span>
+<div><h3 style="margin:0 0 0.5rem;">The battery (this is the paid one)</h3><p style="margin:0;">A degraded battery runs hotter and can cause heat-related shutdowns. Check battery health (iPhone: Settings → Battery → Battery Health; Android: device care/diagnostics — see our <a href="battery-drains-fast.html" class="ed-link text-teal">battery guide</a>). Low health plus persistent heat points to the battery. This is where it becomes a repair rather than a free fix.</p></div>
+</div>
+</div>
+
+<div class="callout-stop">
+<p style="margin:0;"><strong>Safety — don't ignore this one:</strong> if the back of the phone is bulging or swollen, the phone is hot to the point of being hard to hold, or it smells of chemicals, stop using and charging it and get it to a professional promptly. A swelling lithium battery is a genuine safety hazard, not a "deal with it later" issue.</p>
+</div>
+
+<h2>What it costs to fix</h2>
+<p>It depends which cause you landed on:</p>
+<ul>
+<li><strong>Software / app / environmental:</strong> free — identify and remove the heat source.</li>
+<li><strong>Worn or swollen battery:</strong> roughly <span class="font-mono tnum">$69–$149</span> at a 2026 Australian independent shop for most models — and one of the best-value repairs, since it also restores battery life and stops the throttling.</li>
+<li><strong>Logic-board / thermal hardware fault:</strong> rarer; needs a proper diagnosis to price, and on an older phone may not be economical — a good shop will tell you honestly.</li>
+</ul>
+<p>For your model's battery range, the <a href="../calculator.html" class="ed-link text-teal font-medium">cost calculator</a> and <a href="../brands.html" class="ed-link text-teal font-medium">model pages</a> have specifics.</p>
+
+<h2>DIY, honestly</h2>
+<p>The genuine DIY here is all the free software/environment work above: find the heavy app, stop charging-while-gaming, take the case off, let an update settle, clear out untrusted apps. That fixes the majority of overheating with zero spend — do it before assuming the phone is faulty.</p>
+<p>For a battery-caused case we won't walk through a replacement: modern batteries are glued in behind glued glass and a damaged or swollen lithium cell is a real fire risk to handle. A swelling battery in particular is a safety issue, not a DIY-curiosity repair. <strong>If the cause is the battery, this is a shop job</strong> — quick and cheap for a technician with the right tools, and the safety margin matters.</p>
+
+<div class="callout">
+<p style="margin:0;"><strong>In Newcastle or the Hunter?</strong> If health is low or the battery's swelling, a battery replacement is one of the fastest, best-value repairs a local shop does — often same-day, and it ends the heat-and-throttle cycle. Our <a href="../locations/newcastle.html" class="ed-link text-teal font-medium">Newcastle repair guide</a> has honest local pricing and a workshop we're comfortable pointing people to. A swelling battery is worth getting seen sooner rather than later.</p>
+</div>
+
+<h2>Common questions</h2>
+<div class="space-y-3 mt-6" style="margin-bottom:1rem;">
+<details class="border border-line bg-white group">
+<summary class="cursor-pointer p-5 flex items-start justify-between gap-4 list-none"><span class="font-serif text-lg text-ink">It's hot and slow — did I damage the phone?</span><i data-lucide="plus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 group-open:hidden"></i><i data-lucide="minus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 hidden group-open:block"></i></summary>
+<div class="px-5 pb-5 text-sm leading-relaxed" style="color:#3f3a36;">Usually not. The slowness is deliberate thermal throttling to protect the phone from the heat — remove the heat source (usually an app or charging-while-using) and the speed returns. It's a protection feature doing its job, not damage.</div>
+</details>
+<details class="border border-line bg-white group">
+<summary class="cursor-pointer p-5 flex items-start justify-between gap-4 list-none"><span class="font-serif text-lg text-ink">It got hot right after an update — is that the cause?</span><i data-lucide="plus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 group-open:hidden"></i><i data-lucide="minus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 hidden group-open:block"></i></summary>
+<div class="px-5 pb-5 text-sm leading-relaxed" style="color:#3f3a36;">Often it's post-update reindexing, which runs hot for 1–3 days then settles — give it that long and re-check before worrying. Occasionally an update ships a genuine bug a later patch fixes. Either way, let it settle first.</div>
+</details>
+<details class="border border-line bg-white group">
+<summary class="cursor-pointer p-5 flex items-start justify-between gap-4 list-none"><span class="font-serif text-lg text-ink">Could it be a virus or malware?</span><i data-lucide="plus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 group-open:hidden"></i><i data-lucide="minus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 hidden group-open:block"></i></summary>
+<div class="px-5 pb-5 text-sm leading-relaxed" style="color:#3f3a36;">Possible, particularly with sideloaded Android apps — malicious software can peg the processor and cause heat plus drain. Review recently installed apps, remove anything untrusted or unrecognised, and restart. iPhones are far less prone to this but a misbehaving legitimate app can do the same.</div>
+</details>
+<details class="border border-line bg-white group">
+<summary class="cursor-pointer p-5 flex items-start justify-between gap-4 list-none"><span class="font-serif text-lg text-ink">The back of my phone looks slightly swollen — what do I do?</span><i data-lucide="plus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 group-open:hidden"></i><i data-lucide="minus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 hidden group-open:block"></i></summary>
+<div class="px-5 pb-5 text-sm leading-relaxed" style="color:#3f3a36;">Treat that as urgent. A swelling battery is a safety hazard — stop using and charging the phone and get it to a professional promptly. Don't press on it, puncture it, or leave it charging unattended while you wait.</div>
+</details>
+</div>
+
+</div>
+</section>
+
+<section class="bg-teal-900 text-white">
+<div class="max-w-3xl mx-auto px-6 md:px-8 py-14 md:py-16">
+<p class="eyebrow text-amber mb-3">Next step</p>
+<h2 class="display text-3xl md:text-4xl mb-4">Software ruled out? It's likely the battery.</h2>
+<p class="text-white/70 mb-8 max-w-xl">If health is low or it's swelling, replacement is cheap, fast and ends the heat-and-throttle cycle. Check your model's range.</p>
+<div class="flex flex-col sm:flex-row gap-3">
+<a href="../calculator.html" class="btn btn-primary">Open the cost calculator <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+<a href="../fix.html" class="btn btn-ghost" style="color:white;border-color:rgba(255,255,255,0.4);">Other symptoms</a>
+</div>
+</div>
+</section>
+</article>
+
+<footer class="bg-teal-900 text-white border-t border-white/10">
+<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+<div class="md:col-span-5">
+<div class="flex items-center gap-2 mb-4">
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg>
+<span class="font-serif text-2xl font-medium">RepairRange</span>
+</div>
+<p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice. Researched by people who actually do this work.</p>
+</div>
+<div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="../fix.html" class="text-white/80 hover:text-amber">Troubleshooting</a></li><li><a href="../calculator.html" class="text-white/80 hover:text-amber">Cost Calculator</a></li><li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li></ul></div>
+<div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="../about.html" class="text-white/80 hover:text-amber">About RepairRange</a></li><li><a href="../tools/software-stack-for-repair-shops.html" class="text-white/80 hover:text-amber">Tools we recommend</a></li><li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy Policy</a></li><li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms of Use</a></li></ul></div>
+</div>
+<div class="pt-8 border-t border-white/15">
+<p class="text-white/50 text-xs leading-relaxed mb-3 max-w-3xl"><strong class="text-white/70">Affiliate disclosure:</strong> RepairRange may earn a commission when you click links to retailers (including Amazon) and complete a purchase. This never affects the price you pay or our editorial recommendations.</p>
+<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p><p class="text-white/50 text-xs">Not affiliated with Apple, Samsung, Google, or any device manufacturer.</p></div>
+</div>
+</div>
+</footer>
+
+<script>
+if (window.lucide) window.lucide.createIcons();
+document.addEventListener('DOMContentLoaded', () => {
+const btn = document.querySelector('.mobile-menu-button');
+const menu = document.querySelector('.mobile-menu');
+if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+});
+</script>
+</body>
+</html>
