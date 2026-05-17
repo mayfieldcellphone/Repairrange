@@ -2,7 +2,7 @@
 
 > **Canonical source of truth** for the RepairRange satellite site. Lives in this repo so it persists across Claude sessions and is version-controlled with the code. Not deployed publicly (CI only copies `*.html`, `*.txt`, `*.xml`).
 >
-> **Last updated:** May 2026 · Phase 1 complete · Phase 2 in progress (7/20 model pages) · Phase 3 started (3/10 guides) · Phase 4 Newcastle keystone live
+> **Last updated:** May 2026 · Phase 1 complete · Phase 2 in progress (7/20 model pages) · **Phase 3 COMPLETE (10/10 guides)** · Phase 4 Newcastle keystone live
 
 ---
 
@@ -111,24 +111,26 @@ Build `/repair/{slug}.html` for the 20 most-searched phone models. These are the
 
 > **⚠️ CURRENT-GENERATION GAP — raised by Khalil May 2026 (DO NOT FORGET).** The Phase 2 list above was scoped against models known at an earlier knowledge cutoff and is now INCOMPLETE. Newer flagships have since released — e.g. the **iPhone 17 series** and **Samsung Galaxy S26 series** (and likely a newer Pixel). The exact model names, configurations (Pro / Pro Max / Ultra / Air / Fold naming may have changed), and — critically — the **2026 AU repair pricing** for these must be confirmed from real current sources, NOT estimated or invented. Fabricated model names or guessed pricing on these would directly contradict the site's "honest, researched by working techs" positioning and is explicitly forbidden. Sourcing options, in order of preference: (1) Khalil's own bench experience / current AU supplier pricing via the Mayfield connection (best — newest models have volatile premium pricing that needs first-hand data); (2) web search for confirmed model lineups + AU repair pricing at build time. **Priority note:** newest-model pages ("iPhone 17 Pro Max screen replacement cost") are the HIGHEST-traffic, highest-intent queries — when built they belong near the FRONT of the publish queue, not appended after older models like iPhone 12/13. Action: at the next Phase 2 session, first confirm the current flagship lineup (search + ask Khalil), add them to devices.json with real ranges, then build them early in the batch.
 
-### Phase 3 — 10 troubleshooting guides
-Build `/fix/{slug}.html` for the 10 guides linked from `fix.html`:
-- `black-screen.html` · `green-lines.html` ✅ · `ghost-touch.html` · `cracked-screen-still-works.html`
-- `battery-drains-fast.html` · `charging-port.html` ✅ · `wont-turn-on.html` ✅ · `overheating.html`
-- `water-damage.html` · `dropped-and-broken.html`
+### Phase 3 — 10 troubleshooting guides ✅ COMPLETE (May 2026)
+All 10 `/fix/{slug}.html` guides built, published, and live. Each ~22–23KB, TechArticle + FAQPage JSON-LD, prose-rr template, callout/callout-warn/callout-stop boxes, dark CTA, universal header/footer.
 
-Each 800–1500 words, written from genuine repair experience (Khalil's actual work). These are the **AdSense + E-E-A-T anchors** — Google looks for real expertise here.
+**DECIDED & APPLIED (May 2026):** guides are **diagnosis-and-decision only — NO step-by-step teardowns**. Always recommend a shop for the actual repair. Rationale: (1) RepairRange's value is honest decision-help, not a teardown manual; (2) teardown instructions create liability (battery puncture etc.); (3) "this is a shop job, here's the real cost, here's how to find a good local shop" is what drives referral value to Mayfield — DIY step content competes against the commercial purpose. This stance is consistent across all 10 guides; **maintain it for any future guide edits.**
 
-**DECIDED (May 2026):** guides are **diagnosis-and-decision only — NO step-by-step teardowns**. Always recommend a shop for the actual repair. Rationale: (1) RepairRange's value is honest decision-help, not a teardown manual; (2) teardown instructions create liability (battery puncture etc.); (3) "this is a shop job, here's the real cost, here's how to find a good local shop" is what drives referral value to Mayfield — DIY step content competes against the commercial purpose. Maintain this stance for the remaining 7 guides.
+**Phase 3 — all 10 guides, commit SHAs:**
+- ✅ `fix/green-lines.html` — `59dfb49a2aafe4e451831bacf38e8ea3226ac3c4`. Screenshot test, full-OLED reality, debunks the "update caused it" myth.
+- ✅ `fix/charging-port.html` — `744f2c69e4bca67e0434718f0fe9eb11f6c92777`. 4-step diagnostic order (lint→cable→software→repair), free-first, salt-air note.
+- ✅ `fix/wont-turn-on.html` — `0d5e256620eeb120c8a178148b94316128ff3feb`. Charge+forced-restart free-first, no-factory-reset data warning, port-vs-battery-vs-board.
+- ✅ `fix/battery-drains-fast.html` — `be474b6c20291931f29c7171a93d4ec2e71c006e`. Battery-health-number test, software-vs-hardware split, anti-overspend warning.
+- ✅ `fix/water-damage.html` — `d8f96503e868e85ff7cce3e83f90400b7df9dfe4`. First-10-minutes triage, rice/heat/charge myths, time-critical shop job. CTA + callout link to newcastle.html ("Find a local shop").
+- ✅ `fix/cracked-screen-still-works.html` — `a3bd9ab9ff6236cf797187c02e30e88530c5b03d`. Which-crack triage, when-to-wait vs when-it-costs-more, glass-vs-assembly cost trap.
+- ✅ `fix/black-screen.html` — `e122fe982dc75f0c4b00f7c8c4c6011fff7b434c`. Display-vs-power distinction, ring/plug-in test, panel-vs-flex-vs-backlight.
+- ✅ `fix/ghost-touch.html` — `516a3b43d919d64887b8d472f799b99e09211509`. Protector/charger free-first triage, digitiser-vs-flex hardware.
+- ✅ `fix/dropped-and-broken.html` — `efc372c49e41481c3b31386b3bf9602e45655260`. 90-second triage (glass→display→touch→function), multi-fault diagnosis, battery-swelling safety flag. CTA + callout link to newcastle.html.
+- ✅ `fix/overheating.html` — `5ff519a4f57ab9699686ad4f3aa1b20e64783e82`. Thermal-throttling explained, normal-vs-abnormal heat, free-first causes, battery-swelling safety flag.
 
-**Phase 3 status:**
-- ✅ `fix/green-lines.html` — SHA `59dfb49a2aafe4e451831bacf38e8ea3226ac3c4`. Diagnosis-only, screenshot test, full OLED replacement reality, Newcastle callout.
-- ✅ `fix/charging-port.html` — SHA `744f2c69e4bca67e0434718f0fe9eb11f6c92777`. 4-step diagnostic order (lint→cable→software→repair), free-first, salt-air note, Newcastle callout.
-- ✅ `fix/wont-turn-on.html` — SHA `0d5e256620eeb120c8a178148b94316128ff3feb`. Charge+forced-restart free-first, no-factory-reset data warning, port-vs-battery-vs-board, Newcastle callout. (Symptom widget's no-power AND bootloop both point here.)
-- ⬜ Remaining 7: `black-screen`, `ghost-touch`, `cracked-screen-still-works`, `battery-drains-fast`, `overheating`, `water-damage`, `dropped-and-broken`. Same template/voice — copy structure from green-lines.html (TechArticle + FAQPage JSON-LD, prose-rr styles, callout/callout-warn boxes, dark CTA, Newcastle callout where natural per §5 backlink table).
-- ✅ Symptom widget on `fix.html` upgraded (SHA `33159dac5346fade6a090d35146329e4a7ff5444`): green-lines/no-power/slow-charging/bootloop now link to real guides with "Read the full guide"; ghost-touch still → calculator with "Estimate the cost" (uses a `guideReady` flag — set it true + repoint guideHref when ghost-touch.html is built). The homepage `index.html` "Common fixes" list still points at all 10 /fix/ slugs — 7 still 404 until built (acceptable; they're internal, and the 3 live ones now resolve).
+**Symptom widget on `fix.html` — fully upgraded, all 5 symptoms now resolve to live guides.** Final SHA `9aa15564179c7b8b898e13e8c2bff5f7d2fa73f3`. green-lines→green-lines, no-power→wont-turn-on, ghost-touch→ghost-touch, slow-charging→charging-port, bootloop→wont-turn-on. Uses a `guideReady` flag in the symptom JS (all now `true`, button reads "Read the full guide"). The homepage `index.html` "Common fixes" list links 6 of the 10 slugs — **all now resolve, zero internal 404s from that list.**
 
-**Backlink opportunity:** every guide should have a "Need this fixed in Newcastle?" callout linking to mayfieldphonerepair.com.au. (Done on the 3 live guides via the Newcastle keystone page link — note these currently link to `locations/newcastle.html` which itself links to the main site, an editorially clean two-hop. A future pass per §5 may add direct main-site links where natural.)
+**Backlink status:** every guide carries a Newcastle/Hunter callout linking `../locations/newcastle.html` (the keystone), which itself links to mayfieldphonerepair.com.au — an editorially clean two-hop. water-damage and dropped-and-broken additionally use "Find a local shop" → newcastle.html in the CTA. §5 backlink table notes a *future* pass may add direct main-site links from fix/water-damage, fix/dropped-and-broken, fix/wont-turn-on where natural — NOT yet done, deliberately deferred (two-hop via keystone is cleaner for now; revisit in Phase 5 backlink audit).
 
 ### Phase 4 — 5 city pages + Newcastle linkage
 Build `/locations/{city}.html` for Sydney, Melbourne, Brisbane, Perth, Newcastle.
