@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Phone won't turn on, or stuck on the logo (bootloop)? Work through the real checks — dead battery, forced restart, charging fault, logic board — and what each outcome costs in 2026 AU.">
+<meta name="author" content="RepairRange">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://repairrange.io/fix/wont-turn-on.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://repairrange.io/fix/wont-turn-on.html">
+<meta property="og:title" content="Phone Won't Turn On or Stuck on Logo — What to Check | RepairRange">
+<meta property="og:description" content="Dead phone or bootloop? The real diagnostic order and what each outcome honestly costs to fix in 2026.">
+<meta property="og:site_name" content="RepairRange">
+<title>Phone Won't Turn On or Stuck on the Logo — What to Check | RepairRange</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Phone Won't Turn On or Stuck on the Logo: What to Check",
+  "description": "The correct diagnostic order for a phone that won't power on or is stuck in a bootloop, with 2026 Australian repair pricing and when it's a shop job.",
+  "author": { "@type": "Organization", "name": "RepairRange" },
+  "publisher": { "@type": "Organization", "name": "RepairRange" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"My phone is completely dead — what do I try first?","acceptedAnswer":{"@type":"Answer","text":"Charge it on a known-good cable and wall charger for at least 30 minutes, then do a forced restart (the button combo varies by model). A deeply drained battery can look completely dead and show no charging screen for several minutes. This free step revives a large share of dead phones."}},
+    {"@type":"Question","name":"What is a bootloop and can I fix it myself?","acceptedAnswer":{"@type":"Answer","text":"A bootloop is when the phone keeps restarting at the manufacturer logo and never finishes loading. Sometimes a forced restart or charging clears it. If it persists, it usually means a software/storage fault or a failing component, and recovering data without wiping the phone is best done by a professional."}},
+    {"@type":"Question","name":"How much does it cost to fix a phone that won't turn on?","acceptedAnswer":{"@type":"Answer","text":"It depends entirely on the cause. A battery replacement is roughly $69 to $149 in Australia in 2026. A charging fault is around $90 to $190. A logic-board level fault is the expensive case and may not be economical to repair on an older phone — a shop diagnosis tells you which before you commit."}},
+    {"@type":"Question","name":"Will I lose my data if my phone won't turn on?","acceptedAnswer":{"@type":"Answer","text":"Not necessarily. If the cause is the battery or charging port, data is usually fully recoverable once the phone powers on. Avoid factory-resetting as a first move — it rarely fixes hardware and guarantees data loss. A professional can often recover data even from a phone that won't boot."}}
+  ]
+}
+</script>
+<style>
+:root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#E7E5E4; --rr-paper:#FAFAF9; --rr-paper-2:#F5F5F4; }
+html { scroll-behavior: smooth; }
+body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+.font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+.font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+.text-teal{color:var(--rr-teal-700);} .bg-teal{background:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
+.text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
+.text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
+.bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
+.display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+.eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
+.header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(250,250,249,0.85); }
+.ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
+.ed-link:hover { background-size:100% 1px; }
+.prose-rr { color:var(--rr-ink); }
+.prose-rr p { margin:0 0 1.25rem; line-height:1.75; color:#3f3a36; }
+.prose-rr h2 { font-family:'Fraunces',serif; font-size:1.875rem; letter-spacing:-0.02em; margin:3rem 0 1rem; color:var(--rr-ink); }
+.prose-rr h3 { font-family:'Fraunces',serif; font-size:1.3rem; margin:2rem 0 0.75rem; color:var(--rr-ink); }
+.prose-rr strong { color:var(--rr-ink); font-weight:600; }
+.prose-rr ul { margin:0 0 1.25rem; padding-left:0; list-style:none; }
+.prose-rr li { position:relative; padding-left:1.5rem; margin-bottom:0.65rem; line-height:1.7; color:#3f3a36; }
+.prose-rr li::before { content:''; position:absolute; left:0; top:0.6em; width:6px; height:6px; background:var(--rr-teal-700); }
+.step { display:flex; gap:1.25rem; padding:1.5rem 0; border-bottom:1px solid var(--rr-line); }
+.step:last-child { border-bottom:none; }
+.step-n { font-family:'JetBrains Mono',monospace; font-size:0.875rem; color:var(--rr-teal-700); font-weight:500; flex-shrink:0; width:2rem; }
+.btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
+.btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
+.btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); }
+.btn-ghost { background:transparent; color:var(--rr-ink); border:1px solid var(--rr-ink); }
+.btn-ghost:hover { background:var(--rr-ink); color:var(--rr-paper); }
+.tnum { font-variant-numeric: tabular-nums; }
+.callout { border-left:3px solid var(--rr-teal-700); background:var(--rr-paper-2); padding:1.25rem 1.5rem; margin:2rem 0; }
+.callout-warn { border-left:3px solid var(--rr-amber-500); background:#fffbeb; padding:1.25rem 1.5rem; margin:2rem 0; }
+.mobile-menu { transition:all 300ms ease-in-out; }
+@media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
+details > summary::-webkit-details-marker { display:none; } details > summary::marker { display:none; }
+</style>
+</head>
+<body>
+
+<header class="header-sticky sticky top-0 z-50 border-b border-line">
+<nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
+<a href="../index.html" class="flex items-center gap-2 group">
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" class="flex-shrink-0"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg>
+<span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span>
+</a>
+<div class="hidden md:flex items-center gap-8 text-sm">
+<a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a>
+<a href="../fix.html" class="ed-link font-medium text-teal">Troubleshoot</a>
+<a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Calculator</a>
+<a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a>
+<a href="../about.html" class="ed-link font-medium text-ink hover:text-teal">About</a>
+<a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+</div>
+<button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button>
+</nav>
+<div class="mobile-menu hidden md:hidden border-t border-line bg-paper">
+<div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
+<a href="../brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a>
+<a href="../fix.html" class="py-2 font-medium text-teal">Troubleshoot</a>
+<a href="../calculator.html" class="py-2 font-medium text-ink hover:text-teal">Calculator</a>
+<a href="../locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a>
+<a href="../about.html" class="py-2 font-medium text-ink hover:text-teal">About</a>
+<a href="../calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a>
+</div>
+</div>
+</header>
+
+<article>
+<section class="bg-paper border-b border-line">
+<div class="max-w-3xl mx-auto px-6 md:px-8 py-12 md:py-16">
+<nav class="flex items-center gap-2 text-xs text-muted mb-8">
+<a href="../index.html" class="ed-link hover:text-teal">Home</a><span>/</span>
+<a href="../fix.html" class="ed-link hover:text-teal">Troubleshoot</a><span>/</span>
+<span class="text-ink">Won't turn on / bootloop</span>
+</nav>
+<p class="eyebrow mb-4">Troubleshooting · Power</p>
+<h1 class="display text-4xl md:text-6xl text-ink mb-6">It won't turn on — or it's stuck on the logo.</h1>
+<p class="text-lg md:text-xl text-muted leading-relaxed">A "dead" phone is often not dead. Before you assume the worst (or factory-reset and lose your data), work through these checks in order. Most revive for free; the ones that don't are worth a proper diagnosis before you spend anything.</p>
+</div>
+</section>
+
+<section class="bg-white">
+<div class="max-w-3xl mx-auto px-6 md:px-8 py-12 md:py-16 prose-rr">
+
+<div class="callout-warn">
+<p style="margin:0;"><strong>Do not factory-reset as your first move.</strong> A reset rarely fixes a phone that won't boot and it guarantees data loss. If the cause is a flat battery or a charging fault — which it often is — your data is completely fine and recoverable once it powers on. Work the checks below first.</p>
+</div>
+
+<h2>Work through these in order</h2>
+<p>Two free checks fix the majority of "dead phone" and bootloop cases. Don't pay for anything until you've done both.</p>
+
+<div style="margin:1.5rem 0;">
+<div class="step">
+<span class="step-n">01</span>
+<div>
+<h3 style="margin:0 0 0.5rem;">Charge it properly — and wait (free, fixes the most)</h3>
+<p style="margin:0;">A deeply over-discharged battery can look <em>completely</em> dead: black screen, no charging icon, nothing — sometimes for 5–15 minutes after you plug it in. Use a <strong>known-good cable and a real wall charger</strong> (not a laptop or car port), leave it for at least 30 minutes untouched, then try. If the port is full of lint the charge won't take — see our <a href="charging-port.html" class="ed-link text-teal">charging guide</a> for the safe 60-second clean. This single step revives a large share of "won't turn on" phones at zero cost.</p>
+</div>
+</div>
+<div class="step">
+<span class="step-n">02</span>
+<div>
+<h3 style="margin:0 0 0.5rem;">Forced restart (free, fixes most bootloops &amp; frozen phones)</h3>
+<p style="margin:0;">Different from a normal restart — a forced restart cuts power to a hung system. The button combination varies by model (iPhone: a specific volume-then-side-button sequence; many Androids: hold power + volume-down ~10–20 seconds). Look up the exact combo for your model and hold it firmly for the full duration even if nothing seems to happen at first. This clears a large share of "stuck on the logo" bootloops and frozen black screens with no cost and no data risk.</p>
+</div>
+</div>
+<div class="step">
+<span class="step-n">03</span>
+<div>
+<h3 style="margin:0 0 0.5rem;">Look for signs of life (free — this tells you where you stand)</h3>
+<p style="margin:0;">Plugged in, is there <em>any</em> response? A vibration, a logo flash, a charging screen, heat near the camera, a connection sound on a computer? <strong>Some response</strong> (boots partway, loops at the logo) points to a software/storage or battery issue — often recoverable. <strong>Zero response</strong> after a proper charge and forced restart points to a battery, charging, or board-level fault. Either way, you've now narrowed it — and you've reached the limit of safe DIY.</p>
+</div>
+</div>
+<div class="step">
+<span class="step-n">04</span>
+<div>
+<h3 style="margin:0 0 0.5rem;">This is the diagnosis line — see a shop</h3>
+<p style="margin:0;">If a proper charge and a forced restart haven't brought it back, the remaining causes (failed battery, charging fault, liquid damage, or a logic-board issue) need test gear to tell apart. This is exactly the point to stop — not because you've failed, but because the next step is diagnosis, and guessing means paying for the wrong part or risking your data with a reset. A good shop identifies which it is, usually quickly, and can often recover data even from a phone that won't boot.</p>
+</div>
+</div>
+</div>
+
+<h2>What each outcome costs</h2>
+<p>The honest answer is "it depends on the cause" — which is why the diagnosis matters more than a headline price. A 2026 Australian independent-shop guide by cause:</p>
+<ul>
+<li><strong>Flat/over-discharged battery (just needed charge):</strong> free.</li>
+<li><strong>Forced restart fixed a software bootloop:</strong> free.</li>
+<li><strong>Battery replacement (battery no longer holds/delivers power):</strong> roughly <span class="font-mono tnum">$69–$149</span>.</li>
+<li><strong>Charging fault (port not delivering power to a good battery):</strong> roughly <span class="font-mono tnum">$90–$190</span>.</li>
+<li><strong>Logic-board level fault:</strong> the expensive case. Microsoldering or board work can run well into the hundreds and <em>may not be economical</em> on an older phone — a good shop will tell you honestly when a repair isn't worth it versus replacement.</li>
+</ul>
+<p>For battery and charging-port ranges on your exact model, the <a href="../calculator.html" class="ed-link text-teal font-medium">cost calculator</a> and the <a href="../brands.html" class="ed-link text-teal font-medium">model pages</a> have per-device numbers.</p>
+
+<h2>DIY, honestly</h2>
+<p>The two genuine DIY steps are the free ones above: charge-and-wait, and the forced restart. Do both — they fix the majority of cases and carry no risk.</p>
+<p>Past that, we won't hand you a teardown. A phone that won't power on after those steps is one of the hardest things to diagnose without proper equipment — the same blank screen can be a $0 fix or a board-level fault, and the only way to know is to measure. Opening it blind risks turning a recoverable phone (and recoverable data) into neither. <strong>If charge-and-restart didn't do it, this is a shop job — and the diagnosis is the valuable part.</strong></p>
+
+<div class="callout">
+<p style="margin:0;"><strong>In Newcastle or the Hunter?</strong> A dead phone is the case where an in-person diagnosis genuinely saves money — it sorts a $0 issue from a $120 one from a not-worth-it one before you spend anything, and a good shop can often pull your data off even if the phone won't boot. Our <a href="../locations/newcastle.html" class="ed-link text-teal font-medium">Newcastle repair guide</a> has honest local pricing and a workshop we're comfortable pointing people to.</p>
+</div>
+
+<h2>Common questions</h2>
+<div class="space-y-3 mt-6" style="margin-bottom:1rem;">
+<details class="border border-line bg-white group">
+<summary class="cursor-pointer p-5 flex items-start justify-between gap-4 list-none"><span class="font-serif text-lg text-ink">It's totally dead — no logo, no charging screen. Is it gone?</span><i data-lucide="plus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 group-open:hidden"></i><i data-lucide="minus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 hidden group-open:block"></i></summary>
+<div class="px-5 pb-5 text-sm leading-relaxed" style="color:#3f3a36;">Not necessarily. A deeply drained battery shows nothing at all for several minutes after plugging in. Do step 1 (proper charger, 30+ min, then forced restart) before concluding anything — this alone revives a lot of "dead" phones.</div>
+</details>
+<details class="border border-line bg-white group">
+<summary class="cursor-pointer p-5 flex items-start justify-between gap-4 list-none"><span class="font-serif text-lg text-ink">It keeps restarting at the logo (bootloop). Will I lose my data?</span><i data-lucide="plus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 group-open:hidden"></i><i data-lucide="minus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 hidden group-open:block"></i></summary>
+<div class="px-5 pb-5 text-sm leading-relaxed" style="color:#3f3a36;">Often not. Try a forced restart first. If it persists, resist the urge to factory-reset — that's the one action that does guarantee data loss. A professional can frequently recover data from a bootlooping phone without wiping it.</div>
+</details>
+<details class="border border-line bg-white group">
+<summary class="cursor-pointer p-5 flex items-start justify-between gap-4 list-none"><span class="font-serif text-lg text-ink">Should I just factory-reset it?</span><i data-lucide="plus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 group-open:hidden"></i><i data-lucide="minus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 hidden group-open:block"></i></summary>
+<div class="px-5 pb-5 text-sm leading-relaxed" style="color:#3f3a36;">As a first move, no. It rarely fixes a hardware cause and always erases your data. It's a last resort after a shop has confirmed the cause is software and your data is backed up or recovered — not step one.</div>
+</details>
+<details class="border border-line bg-white group">
+<summary class="cursor-pointer p-5 flex items-start justify-between gap-4 list-none"><span class="font-serif text-lg text-ink">It died right after an update — is the update the cause?</span><i data-lucide="plus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 group-open:hidden"></i><i data-lucide="minus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 hidden group-open:block"></i></summary>
+<div class="px-5 pb-5 text-sm leading-relaxed" style="color:#3f3a36;">A failed update can cause a recoverable bootloop, but a phone that won't power on at all after an update is more often a battery that was already marginal and couldn't survive the update's reboot. The charge-and-restart steps apply either way — start there.</div>
+</details>
+</div>
+
+</div>
+</section>
+
+<section class="bg-teal-900 text-white">
+<div class="max-w-3xl mx-auto px-6 md:px-8 py-14 md:py-16">
+<p class="eyebrow text-amber mb-3">Next step</p>
+<h2 class="display text-3xl md:text-4xl mb-4">Charged it, forced a restart, still nothing?</h2>
+<p class="text-white/70 mb-8 max-w-xl">Then it needs a diagnosis, not a guess. Know the battery and charging ranges for your model before you go in.</p>
+<div class="flex flex-col sm:flex-row gap-3">
+<a href="../calculator.html" class="btn btn-primary">Open the cost calculator <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+<a href="../fix.html" class="btn btn-ghost" style="color:white;border-color:rgba(255,255,255,0.4);">Other symptoms</a>
+</div>
+</div>
+</section>
+</article>
+
+<footer class="bg-teal-900 text-white border-t border-white/10">
+<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+<div class="md:col-span-5">
+<div class="flex items-center gap-2 mb-4">
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg>
+<span class="font-serif text-2xl font-medium">RepairRange</span>
+</div>
+<p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice. Researched by people who actually do this work.</p>
+</div>
+<div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="../fix.html" class="text-white/80 hover:text-amber">Troubleshooting</a></li><li><a href="../calculator.html" class="text-white/80 hover:text-amber">Cost Calculator</a></li><li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li></ul></div>
+<div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="../about.html" class="text-white/80 hover:text-amber">About RepairRange</a></li><li><a href="../tools/software-stack-for-repair-shops.html" class="text-white/80 hover:text-amber">Tools we recommend</a></li><li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy Policy</a></li><li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms of Use</a></li></ul></div>
+</div>
+<div class="pt-8 border-t border-white/15">
+<p class="text-white/50 text-xs leading-relaxed mb-3 max-w-3xl"><strong class="text-white/70">Affiliate disclosure:</strong> RepairRange may earn a commission when you click links to retailers (including Amazon) and complete a purchase. This never affects the price you pay or our editorial recommendations.</p>
+<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p><p class="text-white/50 text-xs">Not affiliated with Apple, Samsung, Google, or any device manufacturer.</p></div>
+</div>
+</div>
+</footer>
+
+<script>
+if (window.lucide) window.lucide.createIcons();
+document.addEventListener('DOMContentLoaded', () => {
+const btn = document.querySelector('.mobile-menu-button');
+const menu = document.querySelector('.mobile-menu');
+if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+});
+</script>
+</body>
+</html>
