@@ -295,12 +295,11 @@ After an extended multi-session battle, the domain is **LIVE and secure** at **`
 - [x] Every published page's `<link rel="canonical">` and `og:url` switched from `https://repairrange.io/...` to `https://www.repairrange.io/...`. All 31 HTML pages: index, brands, fix, locations, calculator, about, privacy, terms, tools/software-stack, brands/{apple,samsung,google}, locations/newcastle, all 10 fix/ guides, all 7 repair/ model pages. Homepage schema.org `url` also updated to www.
 - [x] `blog.html` was an empty "hello world" stub with no canonical (it's what aborted the original 31-file batch). Converted to a `noindex, follow` placeholder that meta-redirects to /index.html — prevents a thin page dragging the site-quality signal. SHA `6e5208f5e375cb81f01722fc513657c19a48cdb3`. (If a real blog is built later, replace it.)
 
-### Launch sequence — STILL TO DO (next session, not blocked by anything now)
-- [ ] Regenerate `sitemap.xml` via Gitpage:generate_sitemap with customDomain=`https://www.repairrange.io` (the OLD staged sitemap draft, if any, uses the wrong apex domain — regenerate fresh, don't publish the stale one). Exclude/prune `blog.html` and any `blog/sample-post.html` stub from it.
-- [ ] Generate `robots.txt` via Gitpage:generate_robots_txt (customDomain=https://www.repairrange.io) — do after sitemap so it references it.
-- [ ] Generate `llms.txt` via Gitpage:generate_llms_txt.
-- [ ] Publish sitemap.xml, robots.txt, llms.txt drafts.
-- [ ] Google Search Console: verify ownership of `https://www.repairrange.io` (use the www property / a domain property), submit sitemap.xml.
+### Launch sequence — mostly DONE (this session)
+- [x] Regenerated `sitemap.xml` with customDomain=`https://www.repairrange.io`, pruned `blog.html` + `blog/sample-post.html` stubs, published. SHA `b9e124b515e78dba150104ba5e073004aef1f6c3`. 30 real pages.
+- [x] Generated + published `robots.txt` (allows crawl, references https://www.repairrange.io/sitemap.xml). SHA `7080d5a5dc0999605665e51ac0d41baed89180f4`.
+- [x] Generated + published `llms.txt` (fixed generator's doubled-https bug, removed blog stub). SHA `473190fcae17fc98cb8b47acf2c82a257aad977e`.
+- [ ] **Google Search Console (Khalil's task — only remaining launch step):** verify ownership of `https://www.repairrange.io` (use the URL-prefix property for `https://www.repairrange.io/`, OR a Domain property for `repairrange.io` which covers both). Then submit `https://www.repairrange.io/sitemap.xml`. This is the last thing standing between the site and being discoverable.
 
 ### Migration consideration
 gitlab.io URL keeps working forever as backup. Google should see `https://www.repairrange.io` as canonical (the canonical tags now correctly say so). No GitLab-side 301s needed; the Hostinger apex→www redirect plus the canonical tags handle SEO consolidation.
