@@ -2,7 +2,7 @@
 
 > **Canonical source of truth** for the RepairRange satellite site. Lives in this repo so it persists across Claude sessions and is version-controlled with the code. Not deployed publicly (CI only copies `*.html`, `*.txt`, `*.xml`).
 >
-> **Last updated:** May 2026 · Phase 1 complete · Phase 2 in progress (7/20 model pages) · **Phase 3 COMPLETE (10/10 guides)** · **Phase 4 COMPLETE (5/5 city pages + locations.html honesty fix)** · Domain www-canonical on https://www.repairrange.io/ (§11) · **⚠️ DEPLOY BUG FOUND & FIXED — see §12 (the CI never copied subdirectories; every fix/locations/repair/brands/tools page 404'd live until this session despite the repo being correct).**
+> **Last updated:** May 2026 · Phase 1 complete · Phase 2 in progress (7/20 model pages) · **Phase 3 COMPLETE (10/10 guides)** · **Phase 4 COMPLETE (5/5 city pages + locations.html honesty fix)** · Domain www-canonical on https://www.repairrange.io/ (§11) · Deploy bug found & fixed (§12) · **Google Search Console VERIFIED via Hostinger DNS TXT (Domain property) — only sitemap *submission* in GSC remains; see §11 launch sequence.**
 
 ---
 
@@ -300,7 +300,8 @@ After an extended multi-session battle, the domain is **LIVE and secure** at **`
 - [x] Regenerated `sitemap.xml` with customDomain=`https://www.repairrange.io`, pruned `blog.html` + `blog/sample-post.html` stubs, published. SHA `b9e124b515e78dba150104ba5e073004aef1f6c3`. 30 real pages.
 - [x] Generated + published `robots.txt` (allows crawl, references https://www.repairrange.io/sitemap.xml). SHA `7080d5a5dc0999605665e51ac0d41baed89180f4`.
 - [x] Generated + published `llms.txt` (fixed generator's doubled-https bug, removed blog stub). SHA `473190fcae17fc98cb8b47acf2c82a257aad977e`.
-- [ ] **Google Search Console (Khalil's task — only remaining launch step):** verify ownership of `https://www.repairrange.io` (use the URL-prefix property for `https://www.repairrange.io/`, OR a Domain property for `repairrange.io` which covers both). Then submit `https://www.repairrange.io/sitemap.xml`. This is the last thing standing between the site and being discoverable.
+- [x] **Google Search Console — VERIFIED (May 2026).** Khalil added a **Domain property** for `repairrange.io` and verified it via a **DNS TXT record at Hostinger** (the HTML meta-tag method failed because the www URL redirects to the bare apex and Google's verifier wouldn't follow the hop — DNS verification sidesteps that entirely and is the robust choice given this domain's redirect layer). A `google-site-verification` meta tag was also added to index.html (SHA `c12a89129c7e9fe1f44cea0d9f916a4636f9d31c`) — now redundant under DNS verification but harmless; leave it.
+- [ ] **Sitemap submission (next Search Console step — Khalil's task):** in Search Console → Sitemaps, submit `sitemap.xml` (or full URL `https://www.repairrange.io/sitemap.xml`). Verification ≠ submission; pages won't be crawled from the sitemap until this is done. After submitting, indexing takes days–weeks (normal, not a fault).
 
 ### Migration consideration
 gitlab.io URL keeps working forever as backup. Google should see `https://www.repairrange.io` as canonical (the canonical tags now correctly say so). No GitLab-side 301s needed; the Hostinger apex→www redirect plus the canonical tags handle SEO consolidation.
