@@ -2,7 +2,7 @@
 
 > **Canonical source of truth** for the RepairRange satellite site. Lives in this repo so it persists across Claude sessions and is version-controlled with the code. Not deployed publicly (CI only copies `*.html`, `*.txt`, `*.xml`).
 >
-> **Last updated:** May 2026 · Phase 1 complete · Phase 2 in progress (7/20 model pages) · **Phase 3 COMPLETE (10/10 guides)** · Phase 4 Newcastle keystone live · **DOMAIN LIVE: site is now www-canonical on https://www.repairrange.io/ (apex abandoned — see §11)**
+> **Last updated:** May 2026 · Phase 1 complete · Phase 2 in progress (7/20 model pages) · **Phase 3 COMPLETE (10/10 guides)** · **Phase 4 COMPLETE (5/5 city pages + locations.html honesty fix)** · Domain www-canonical on https://www.repairrange.io/ (§11) · **⚠️ DEPLOY BUG FOUND & FIXED — see §12 (the CI never copied subdirectories; every fix/locations/repair/brands/tools page 404'd live until this session despite the repo being correct).**
 
 ---
 
@@ -225,7 +225,8 @@ Where RepairRange will link to mayfieldphonerepair.com.au, in order of natural f
 ## 6. Technical reference
 
 ### Gitpage particulars
-- **`.gitlab-ci.yml` deploys what?** Root `*.html`, `blog/` dir, `*.txt`, `*.xml`. Markdown files (like this one) live in repo but don't deploy.
+- **`.gitlab-ci.yml` deploys what?** (CORRECTED — see §12) Root `*.html`, `*.txt`, `*.xml` PLUS the content folders `fix/ locations/ repair/ brands/ tools/ blog/`, all explicitly copied. Markdown files (like this one) live in repo but don't deploy. **The folder list is explicit, not a wildcard — if a NEW top-level content folder is ever added, it MUST be appended to the `cp -r fix locations repair brands tools blog public/` line in `.gitlab-ci.yml` or that folder's pages will 404 live while looking fine in the repo.**
+- **⚠️ `.gitlab-ci.yml` tooling limitation:** the leading-dot filename breaks Gitpage's `discard_draft` and `publish_draft` (internal path error on `'…..gitlab-ci.yml'`). `save_draft` works, but committing this one file reliably may require editing it directly in the GitLab web UI / CI editor on the `main` branch. Budget for that if it needs changing again.
 - **Edit pattern:** `edit_site_file` for tweaks, `save_draft` for new files / wholesale rewrites. Validate before publish.
 - **Draft caching gotcha:** if `edit_site_file` returns EDIT_NOT_FOUND on text you know is there, a stale draft is shadowing the file. `discard_draft` first, then retry. (Learned the hard way on the main site refactor.)
 - **CI is fast — ~2-3 min from commit to live.**
@@ -306,9 +307,48 @@ gitlab.io URL keeps working forever as backup. Google should see `https://www.re
 
 ---
 
+## 12. ⚠️ Deploy bug (CI subdirectory copy) + Phase 4 — May 2026
+
+### The deploy bug (CRITICAL history — do not repeat)
+**Symptom:** every subdirectory page (all 10 `fix/` guides, all 5 `locations/` pages, all 7 `repair/` model pages, 3 `brands/` pages, `tools/`) returned **404 on the live site**, while the repo content was 100% correct and `read_site_file` showed them fine. Root pages (index, brands.html, fix.html, locations.html) worked, masking it.
+
+**Root cause:** `.gitlab-ci.yml` only ran `cp *.html public/` + `cp -r blog public/` + txt/xml. It NEVER copied `fix/ locations/ repair/ brands/ tools/`. Those pages were committed but never deployed. This persisted across MULTIPLE sessions because PROJECT.md §9 had been (incorrectly) marked “CI publish — done, SHA 3c1a3fa6…”, and §6 still described the old broken behaviour — so every session trusted the brief instead of testing a live subdirectory URL.
+
+**Fix:** rewrote the CI script to:
+```yaml
+script:
+  - mkdir -p public
+  - cp -r ./*.html ./*.txt ./*.xml public/ 2>/dev/null || true
+  - cp -r fix locations repair brands tools blog public/ 2>/dev/null || true
+```
+Committed at SHA `abc580c106b8784844696c4da212fca133ad3286`. Pipeline ran; Khalil confirmed `https://www.repairrange.io/locations/sydney.html` and the troubleshooting links now load. **The folder list is explicit on purpose** (a blanket `cp -r *` would drag PROJECT.md and .gitlab-ci.yml into the public site). New top-level content folders must be added to that line.
+
+**Tooling note:** `discard_draft`/`publish_draft` fail on `.gitlab-ci.yml` (leading-dot path bug). It got committed despite a confusing error; if it needs changing again, edit via GitLab web UI / CI editor on `main`.
+
+**Process lesson (apply to all future deploy/infra changes):** a deploy or routing change is NOT done until an actual deep URL (not the root, not the repo, not a preview) is loaded on the live custom domain and confirmed. Never mark such a task complete in PROJECT.md on the basis of a successful commit alone.
+
+### Phase 4 — COMPLETE (May 2026)
+All 5 `/locations/` city pages built, published, and — after the CI fix — verified live.
+- ✅ `locations/newcastle.html` — the backlink keystone (built earlier; features Mayfield Phone Repair). SHA `8eb0b1e3…`.
+- ✅ `locations/sydney.html` — SHA `55b169fa1491424b730c4fbb2539cb27a5f7d0be`. Honest pricing, CBD-vs-suburb context, NO Mayfield push, AggregateOffer schema, calculator CTA.
+- ✅ `locations/melbourne.html` — SHA `ef7ac4acebf6eff17419361c511557721f6d88db`. Inner-north value angle, teaser-rate warning.
+- ✅ `locations/brisbane.html` — SHA `ede871c56b93840ac8f16185d4d605372babf5c5`. Tighter-spread + humidity/charging-port angle.
+- ✅ `locations/perth.html` — SHA `c9f614e3455410ee7573172b8fb366bed102f439`. Parts-lead-time angle, slightly higher floor (freight).
+
+**Newcastle exclusivity preserved:** the 4 non-Newcastle pages deliberately do NOT feature or link Mayfield (per §1 strategy — pushing Mayfield outside the Hunter cheapens the keystone). They point to the calculator instead.
+
+**`locations.html` honesty fix (SHA `a41dc68550e5de785d63960fb22289b1ec7c91cc`):** the index had been making FALSE claims that the new honest city pages contradicted — fake “Verified shops: 18/15/11/8” counts, a hero promising “get matched with a verified local tech” (no such matching exists), and a methodology describing a phone-quote-gathering process that never happened. All rewritten to be truthful: real iPhone-14 ranges per city, “Local guide: Full” instead of fake counts, honest methodology with an explicit disclosure that Newcastle is the editorial exception. **If editing locations.html again, do not reintroduce “verified/vetted/matched” language — it's false and an ACCC risk.**
+
+**Sitemap regenerated + published (SHA `fb52cde389e2a06c43433d0def71bc4fc19f8098`):** now 34 real pages incl. the 4 new city pages; `blog.html` + `blog/sample-post.html` pruned again (generate_sitemap re-adds them every run — always re-prune).
+
+### Open international placeholders (low priority, untouched)
+`locations.html` still has 4 “Coming Q2 2026” cards (London/NY/LA/Toronto) — cosmetic, harmless, no pages behind them. Leave or remove later.
+
+---
+
 ## 9. Open questions / to-decide
 
-- [x] **CI publish.** `.gitlab-ci.yml` updated and published — deploys tools/, repair/, fix/, locations/, brands/, data/ subdirs. SHA `3c1a3fa69883c12e85874a46047a3ddc70bae6e3`.
+- [x] **CI publish — ACTUALLY fixed this session (was falsely marked done before).** See §12. The earlier claim that SHA `3c1a3fa6…` deployed the subdirs was WRONG — that CI still only copied root `*.html` + `blog/`, so every subdirectory page 404'd on the live site for multiple sessions while appearing correct in the repo. Real fix committed at SHA `abc580c106b8784844696c4da212fca133ad3286`; pipeline run confirmed; subdirectory pages verified live by Khalil. Lesson: never mark a deploy fix done without loading an actual subdirectory URL on the live domain.
 
 - [ ] Custom domain for RepairRange (when to register, which TLD)
 - [ ] Whether to disclose the Mayfield Phone Repair connection on the About page (recommendation: yes, in Phase 5, once Mayfield is a featured Newcastle shop)
