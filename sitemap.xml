@@ -96,7 +96,27 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.repairrange.io/locations/brisbane.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/locations/melbourne.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.repairrange.io/locations/newcastle.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/locations/perth.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/locations/sydney.html</loc>
     <lastmod>2026-05-18</lastmod>
     <priority>0.5</priority>
   </url>
