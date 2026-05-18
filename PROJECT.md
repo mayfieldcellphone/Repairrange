@@ -2,7 +2,7 @@
 
 > **Canonical source of truth** for the RepairRange satellite site. Lives in this repo so it persists across Claude sessions and is version-controlled with the code. Not deployed publicly (CI only copies `*.html`, `*.txt`, `*.xml`).
 >
-> **Last updated:** May 2026 · Phase 1 complete · Phase 2 in progress (7/20 model pages) · **Phase 3 COMPLETE (10/10 guides)** · Phase 4 Newcastle keystone live
+> **Last updated:** May 2026 · Phase 1 complete · Phase 2 in progress (7/20 model pages) · **Phase 3 COMPLETE (10/10 guides)** · Phase 4 Newcastle keystone live · **DOMAIN LIVE: site is now www-canonical on https://www.repairrange.io/ (apex abandoned — see §11)**
 
 ---
 
@@ -36,11 +36,11 @@ This must NOT read as a PBN (private blog network). Google penalises sites that 
 |---|---|
 | **Name** | RepairRange |
 | **Tagline** | "Plain-English phone repair costs, fixes, and buying advice. Researched by people who actually do this work." |
-| **Live URL** | https://mayfield276.gitlab.io/blank-site-2026-05-06-6rrng (will move to repairrange.io once DNS is live) |
+| **Live URL** | **https://www.repairrange.io/** (LIVE, secure, www-canonical) — gitlab.io URL still works as fallback |
 | **Gitpage pageId** | `69fb1fc8a84e148d906285c4` |
 | **Repo** | `blank-site-2026-05-06-6rrng` on gitlab.com/mayfield276 |
-| **Custom domain** | **`repairrange.io`** (registered May 2026, 3-year term) |
-| **Contact email (planned)** | hello@repairrange.com |
+| **Custom domain** | **`www.repairrange.io`** is canonical. Bare apex `repairrange.io` redirects to www at Hostinger (apex never got a working cert — see §11). |
+| **Contact email (planned)** | hello@repairrange.io |
 
 ### Design system
 - **Palette:** deep teal `#0F766E` (primary), warm amber `#F59E0B` (accent), dark teal `#0c4a45` (footer), off-white `#FAFAF9` (paper), ink `#1C1917` (text), warm grey `#78716C` (muted), line `#E7E5E4` (borders)
@@ -278,44 +278,32 @@ Other sites in Khalil's account that could be repurposed/cleaned up:
 
 ---
 
-## 11. Custom domain rollout — repairrange.io (in progress)
+## 11. Custom domain — RESOLVED (www-canonical) — May 2026
 
-### Registrar setup (Khalil's task)
-- [ ] Add A records for apex: `35.185.44.232`, `35.190.65.110`, `35.227.220.34`, `35.232.218.50`
-- [ ] Add CNAME for `www`: `mayfield276.gitlab.io`
-- [ ] Enable WHOIS privacy
-- [ ] Verify auto-renew is off (paid 3 yr upfront)
+### FINAL OUTCOME (read this first)
+After an extended multi-session battle, the domain is **LIVE and secure** at **`https://www.repairrange.io/`**. The site is **www-canonical**.
 
-### GitLab Pages verification (Khalil's task)
-URL: https://gitlab.com/mayfield276/blank-site-2026-05-06-6rrng/-/pages
-- [ ] Add domain `repairrange.io` in GitLab Pages settings
-- [ ] Copy the TXT verification record GitLab provides
-- [ ] Add the TXT record at the registrar
-- [ ] Click "Verify ownership" in GitLab
-- [ ] Repeat for `www.repairrange.io`
-- [ ] Wait for Let's Encrypt SSL cert to auto-issue (5–30 min after verification)
+**What happened, short version:** the bare apex `repairrange.io` would never get a working Let's Encrypt cert through GitLab Pages (tried repeatedly — ALIAS-vs-A-record issues, cert wedging, ERR_EMPTY_RESPONSE / ERR_CONNECTION_RESET / ERR_CERT_COMMON_NAME_INVALID through many cycles). The `www.repairrange.io` subdomain (CNAME → mayfield276.gitlab.io) issued its cert cleanly every time. **Decision: stop fighting the apex. Make `www` canonical.** This is a standard, professional setup — not a compromise.
 
-### Site updates after DNS propagates (Claude's task)
-- [x] Update all internal absolute URLs (none — all internal links are relative)
-- [x] Add `<link rel="canonical">` to every published page → all 16 live pages done (9 Phase 1 + 7 model pages), all point to https://repairrange.io/...
-- [x] Add `og:url` to every published page → done in same sweep
-- [x] Fixed critical bug: homepage schema.org url was `repairrange.com` (a domain we don't own) → corrected to `repairrange.io`
-- [x] `sitemap.xml` generated via generate_sitemap with customDomain=https://repairrange.io (STAGED AS DRAFT — not yet published; publish once HTTPS confirmed)
-- [ ] Generate `robots.txt` via Gitpage:generate_robots_txt (do after sitemap published)
-- [ ] Generate `llms.txt` via Gitpage:generate_llms_txt
-- [ ] Publish sitemap.xml draft (waiting on HTTPS confirmation so URLs resolve)
-- [ ] Verify ownership of repairrange.io in Google Search Console
-- [ ] Submit sitemap.xml to Google Search Console
+### Current working configuration (DO NOT "fix" the apex — it's intentional)
+- `www.repairrange.io` → CNAME → `mayfield276.gitlab.io` → valid cert, serves the site. **This is the canonical home.**
+- Bare `repairrange.io` → Hostinger redirect → `https://www.repairrange.io`. The apex is NOT relied on to serve directly and was removed from GitLab Pages. Do not re-add it.
+- gitlab.io URL still works forever as a fallback.
+- **If the apex ever shows a cert error again: that is expected and irrelevant. Everything routes through www. Do not attempt to re-add the apex to GitLab or chase its cert — that path was abandoned deliberately after days of failure.**
 
-### SSL / HTTPS status (as of last session)
-- DNS: confirmed resolving correctly at Hostinger (4 A records + www CNAME)
-- Errors progressed ERR_EMPTY_RESPONSE → 404 → ERR_CONNECTION_CLOSED → (turned Force HTTPS OFF) → http://repairrange.io/index.html now SERVES the site
-- **Root cause of the fluctuating errors:** Let's Encrypt SSL cert still provisioning. Turning Force HTTPS off let the site serve over HTTP, which is what lets Let's Encrypt complete its domain-validation challenge.
-- **NEXT:** Khalil to watch GitLab Pages settings (https://gitlab.com/mayfield276/blank-site-2026-05-06-6rrng/-/settings/pages) for the Certificate status. When it shows Active/Issued → turn Force HTTPS back ON → test https://repairrange.io/ → tell Claude "HTTPS is live" → Claude publishes sitemap.xml, generates robots.txt + llms.txt, guides GSC submission.
-- **Open question to verify:** does http://repairrange.io/ (root, no /index.html) load? If only /index.html works, a default-document fix may be needed in CI.
+### Canonical sweep — DONE (all 31 pages, this session)
+- [x] Every published page's `<link rel="canonical">` and `og:url` switched from `https://repairrange.io/...` to `https://www.repairrange.io/...`. All 31 HTML pages: index, brands, fix, locations, calculator, about, privacy, terms, tools/software-stack, brands/{apple,samsung,google}, locations/newcastle, all 10 fix/ guides, all 7 repair/ model pages. Homepage schema.org `url` also updated to www.
+- [x] `blog.html` was an empty "hello world" stub with no canonical (it's what aborted the original 31-file batch). Converted to a `noindex, follow` placeholder that meta-redirects to /index.html — prevents a thin page dragging the site-quality signal. SHA `6e5208f5e375cb81f01722fc513657c19a48cdb3`. (If a real blog is built later, replace it.)
+
+### Launch sequence — STILL TO DO (next session, not blocked by anything now)
+- [ ] Regenerate `sitemap.xml` via Gitpage:generate_sitemap with customDomain=`https://www.repairrange.io` (the OLD staged sitemap draft, if any, uses the wrong apex domain — regenerate fresh, don't publish the stale one). Exclude/prune `blog.html` and any `blog/sample-post.html` stub from it.
+- [ ] Generate `robots.txt` via Gitpage:generate_robots_txt (customDomain=https://www.repairrange.io) — do after sitemap so it references it.
+- [ ] Generate `llms.txt` via Gitpage:generate_llms_txt.
+- [ ] Publish sitemap.xml, robots.txt, llms.txt drafts.
+- [ ] Google Search Console: verify ownership of `https://www.repairrange.io` (use the www property / a domain property), submit sitemap.xml.
 
 ### Migration consideration
-The gitlab.io URL will keep working forever (GitLab doesn't shut it down). Once `repairrange.io` is live, the gitlab.io URL stays as a backup but Google should see `repairrange.io` as canonical. No 301 redirects needed at the GitLab side; the canonical tags handle the SEO consolidation.
+gitlab.io URL keeps working forever as backup. Google should see `https://www.repairrange.io` as canonical (the canonical tags now correctly say so). No GitLab-side 301s needed; the Hostinger apex→www redirect plus the canonical tags handle SEO consolidation.
 
 ---
 
