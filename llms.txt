@@ -1,0 +1,61 @@
+# RepairRange — Phone Repair Costs, Honest & Current
+
+> Plain-English phone repair pricing, symptom diagnostics, and shop-vs-DIY guidance. Researched by working technicians. Find what it really costs to fix your phone.
+
+This file provides information about this website for Large Language Models (LLMs) and AI assistants.
+
+## About
+
+Plain-English phone repair pricing, symptom diagnostics, and shop-vs-DIY guidance. Researched by working technicians. Find what it really costs to fix your phone.
+
+## Key Sections
+
+- Popular this month
+- iPhone 15 Pro Max
+- iPhone 15 Pro
+- Galaxy S24 Ultra
+- iPhone 14
+- Pixel 8 Pro
+- Galaxy S23
+- Symptom first, not model first.
+
+## Pages
+
+- [Home](https://www.repairrange.io/index.html) - Plain-English phone repair pricing, symptom diagnostics, and shop-vs-DIY guidance. Researched by wor
+- [About RepairRange — Honest Phone Repair Pricing](https://www.repairrange.io/about.html) - RepairRange is built by working phone repair technicians publishing the honest cost ranges, methodol
+- [Phone Brands & Models — RepairRange](https://www.repairrange.io/brands.html) - Browse phone repair costs by brand: Apple iPhone, Samsung Galaxy, Google Pixel, and more. Updated mo
+- [Apple iPhone Repair Costs — RepairRange](https://www.repairrange.io/brands/apple.html) - iPhone repair cost guides: screen, battery, back glass and charging port pricing for current iPhone 
+- [Google Pixel Repair Costs — RepairRange](https://www.repairrange.io/brands/google.html) - Google Pixel repair cost guides: screen, battery and back glass pricing. Pixels are unusually DIY-fr
+- [Samsung Galaxy Repair Costs — RepairRange](https://www.repairrange.io/brands/samsung.html) - Samsung Galaxy repair cost guides: screen, battery and back glass pricing for current Galaxy S, Z Fo
+- [Phone Repair Cost Calculator — RepairRange](https://www.repairrange.io/calculator.html) - Estimate the cost to fix your phone. Pick brand, model, and issue — get an honest price range for in
+- [Troubleshooting Guides — RepairRange](https://www.repairrange.io/fix.html) - Symptom-first phone troubleshooting: black screens, water damage, ghost touch, dead batteries. Pick 
+- [Battery Drains in Hours — Is It the Battery or Software? | RepairRange](https://www.repairrange.io/fix/battery-drains-fast.html) - Phone battery draining in hours? Before you pay for a new battery, learn how to tell a worn battery 
+- [Black Screen but Phone Still Works — What It Means | RepairRange](https://www.repairrange.io/fix/black-screen.html) - Phone screen stays black but it still rings, vibrates or makes sounds? That points to the display, n
+- [Phone Won't Charge or Charges Slowly — Diagnose Before You Pay | RepairRange](https://www.repairrange.io/fix/charging-port.html) - Phone won't charge or charges slowly? Before you pay for a repair, work through the real diagnostic 
+- [Cracked Screen, Still Works — Fix It or Leave It? | RepairRange](https://www.repairrange.io/fix/cracked-screen-still-works.html) - Cracked screen but the phone still works fine? Whether to fix it, when you can safely wait, and when
+- [Dropped Your Phone — Now What? A 90-Second Triage | RepairRange](https://www.repairrange.io/fix/dropped-and-broken.html) - Just dropped your phone? A 90-second triage to work out what's actually damaged — screen, panel, int
+- [Ghost Touch — Screen Tapping or Typing Itself | RepairRange](https://www.repairrange.io/fix/ghost-touch.html) - Phone screen tapping, swiping or typing by itself? That's ghost touch — usually a digitiser or displ
+- [Green Lines on Your Phone Screen — Cause & Repair Cost | RepairRange](https://www.repairrange.io/fix/green-lines.html) - Green or pink vertical lines on your phone screen? It's a fractured OLED panel, not software — no up
+- [Phone Runs Hot and Slows Down — Why, and the Fix | RepairRange](https://www.repairrange.io/fix/overheating.html) - Phone running hot and slowing down? How to tell normal heat from a real problem, what causes overhea
+- [Phone Water Damage — The First 10 Minutes Matter Most | RepairRange](https://www.repairrange.io/fix/water-damage.html) - Dropped your phone in water? The first 10 minutes decide whether it survives. What to do, what to ne
+- [Phone Won't Turn On or Stuck on the Logo — What to Check | RepairRange](https://www.repairrange.io/fix/wont-turn-on.html) - Phone won't turn on, or stuck on the logo (bootloop)? Work through the real checks — dead battery, f
+- [Phone Repair Costs by City — RepairRange](https://www.repairrange.io/locations.html) - Local phone repair pricing for Sydney, Melbourne, Brisbane, Perth, Newcastle and more. Real quotes f
+- [Phone Repair Costs in Newcastle & the Hunter — RepairRange](https://www.repairrange.io/locations/newcastle.html) - What phone screen and battery repairs actually cost in Newcastle and the Hunter in 2026. Honest inde
+- [Privacy Policy — RepairRange](https://www.repairrange.io/privacy.html) - What data RepairRange collects, why, and how to control it.
+- [iPhone 14 Pro repair cost — RepairRange](https://www.repairrange.io/repair/iphone-14-pro.html) - Honest pricing for iPhone 14 Pro repairs in 2026: screen, battery, back glass, charging port. Indepe
+- [iPhone 14 repair cost — RepairRange](https://www.repairrange.io/repair/iphone-14.html) - Honest pricing for iPhone 14 repairs in 2026: screen replacement, battery, back glass, charging port
+- [iPhone 15 Pro Max repair cost — RepairRange](https://www.repairrange.io/repair/iphone-15-pro-max.html) - Honest pricing for iPhone 15 Pro Max repairs in 2026: screen replacement, battery, back glass, charg
+- [iPhone 15 Pro repair cost — RepairRange](https://www.repairrange.io/repair/iphone-15-pro.html) - Honest pricing for iPhone 15 Pro repairs in 2026: screen replacement, battery, back glass, charging 
+- [iPhone 15 repair cost — RepairRange](https://www.repairrange.io/repair/iphone-15.html) - Honest pricing for iPhone 15 repairs in 2026: screen replacement, battery, back glass, charging port
+- [Google Pixel 8 Pro repair cost — RepairRange](https://www.repairrange.io/repair/pixel-8-pro.html) - Honest pricing for Google Pixel 8 Pro repairs in 2026: screen, battery, back glass. One of the most 
+- [Samsung Galaxy S24 Ultra repair cost — RepairRange](https://www.repairrange.io/repair/samsung-galaxy-s24-ultra.html) - Honest pricing for Samsung Galaxy S24 Ultra repairs in 2026: screen, battery, back glass. The pricie
+- [Terms of Use — RepairRange](https://www.repairrange.io/terms.html) - Terms for using the RepairRange website.
+- [The Software Stack for Running a Small Phone Repair Shop in 2026 — RepairRange](https://www.repairrange.io/tools/software-stack-for-repair-shops.html) - The software stack for running a small phone repair shop in 2026 — POS, CRM, scheduling, invoicing, 
+
+## Links
+
+- Website: https://www.repairrange.io
+- Custom Domain: https://www.repairrange.io
+
+---
+Generated by OnePage.guru | Learn more about llms.txt at https://llmstxt.org
