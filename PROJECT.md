@@ -2,7 +2,7 @@
 
 > **Canonical source of truth** for the RepairRange satellite site. Lives in this repo so it persists across Claude sessions and is version-controlled with the code. Not deployed publicly (CI only copies `*.html`, `*.txt`, `*.xml`).
 >
-> **Last updated:** May 2026 · Phase 1 complete · Phase 2 in progress (7/20 model pages) · **Phase 3 COMPLETE** · **Phase 4 COMPLETE** · Domain www-canonical (§11) · Deploy bug fixed (§12) · **🚀 LAUNCH COMPLETE — GSC verified + sitemap submitted; site is fully live, secure, and discoverable. Remaining work is all growth (Phase 2 model pages, Phase 6/7 directory), none of it blocking.**
+> **Last updated:** May 2026 · Phase 1 complete · Phase 2 in progress · **Phase 3 COMPLETE** · **Phase 4 COMPLETE** · Domain www-canonical (§11) · **🔴 CI DEPLOY FIX REGRESSES — re-verify `.gitlab-ci.yml` + a live subdirectory URL at the START of every session and after ANY domain/Pages change. It has silently reverted twice (likely cause: GitLab domain re-add resets the CI). See §12 — this is the project's #1 recurring failure.** · GSC verified + sitemap submitted; site is live & discoverable. Remaining work is growth (Phase 2 model pages, Phase 6/7).
 
 ---
 
@@ -226,7 +226,7 @@ Where RepairRange will link to mayfieldphonerepair.com.au, in order of natural f
 
 ### Gitpage particulars
 - **`.gitlab-ci.yml` deploys what?** (CORRECTED — see §12) Root `*.html`, `*.txt`, `*.xml` PLUS the content folders `fix/ locations/ repair/ brands/ tools/ blog/`, all explicitly copied. Markdown files (like this one) live in repo but don't deploy. **The folder list is explicit, not a wildcard — if a NEW top-level content folder is ever added, it MUST be appended to the `cp -r fix locations repair brands tools blog public/` line in `.gitlab-ci.yml` or that folder's pages will 404 live while looking fine in the repo.**
-- **⚠️ `.gitlab-ci.yml` tooling limitation:** the leading-dot filename breaks Gitpage's `discard_draft` and `publish_draft` (internal path error on `'…..gitlab-ci.yml'`). `save_draft` works, but committing this one file reliably may require editing it directly in the GitLab web UI / CI editor on the `main` branch. Budget for that if it needs changing again.
+- **⚠️ `.gitlab-ci.yml` REGRESSES — re-verify every session (see §12).** The leading-dot filename breaks `discard_draft`/`publish_draft` (path error) but the `save_draft`+`publish_draft(forceOverwrite)` sequence still commits despite the error — always re-read the file to confirm. **More importantly: this file silently reverts to GitLab's broken default Pages template, almost certainly triggered by removing/re-adding the custom domain in GitLab Pages.** It has done this twice. FIRST ACTION every session and after any domain/DNS change: read `.gitlab-ci.yml`, confirm the `cp -r fix locations repair brands tools blog` line is present, re-apply if not, then verify a live subdirectory URL.
 - **Edit pattern:** `edit_site_file` for tweaks, `save_draft` for new files / wholesale rewrites. Validate before publish.
 - **Draft caching gotcha:** if `edit_site_file` returns EDIT_NOT_FOUND on text you know is there, a stale draft is shadowing the file. `discard_draft` first, then retry. (Learned the hard way on the main site refactor.)
 - **CI is fast — ~2-3 min from commit to live.**
@@ -324,9 +324,16 @@ script:
 ```
 Committed at SHA `abc580c106b8784844696c4da212fca133ad3286`. Pipeline ran; Khalil confirmed `https://www.repairrange.io/locations/sydney.html` and the troubleshooting links now load. **The folder list is explicit on purpose** (a blanket `cp -r *` would drag PROJECT.md and .gitlab-ci.yml into the public site). New top-level content folders must be added to that line.
 
-**Tooling note:** `discard_draft`/`publish_draft` fail on `.gitlab-ci.yml` (leading-dot path bug). It got committed despite a confusing error; if it needs changing again, edit via GitLab web UI / CI editor on `main`.
+**Tooling note:** `discard_draft`/`publish_draft` fail on `.gitlab-ci.yml` (leading-dot path bug, error `'publishedPagesMeta..gitlab-ci.yml' contains an empty field name`). Despite that error the `save_draft`+`publish_draft(forceOverwrite:true)` sequence DOES commit — always re-`read_site_file` the .yml afterward to confirm the new SHA + correct content; do not trust the error message either way.
 
-**Process lesson (apply to all future deploy/infra changes):** a deploy or routing change is NOT done until an actual deep URL (not the root, not the repo, not a preview) is loaded on the live custom domain and confirmed. Never mark such a task complete in PROJECT.md on the basis of a successful commit alone.
+**🔴 THIS FIX REGRESSES — IT IS NOT PERMANENT (confirmed twice, May 2026).** The CI was fixed (SHA `abc580c1`), verified live by Khalil, then **silently reverted on its own** to the broken root-only config (mystery SHA `1fdb35f8`), breaking every subdirectory page again mid-session. Re-fixed at SHA `4b4c9382`. **Khalil's hypothesis (high confidence): removing and re-adding the custom domain in GitLab Pages regenerates/resets `.gitlab-ci.yml` to GitLab's default Pages template — which is exactly the broken "copy root *.html + blog/ only" pattern.** This also explains why the broken versions were configs neither of us wrote. The HTTPS-now-working state is the same root event: a domain operation fixed the cert AND clobbered the CI.
+
+**MANDATORY SESSION-START + POST-DOMAIN-CHANGE CHECK (do this before any Phase 2/content work, and immediately after ANY domain/DNS/GitLab-Pages change):**
+1. `read_site_file('.gitlab-ci.yml')` — confirm it contains the `cp -r fix locations repair brands tools blog public/` line. If it shows the short `cp *.html` + `cp -r blog` pattern, it has regressed — re-apply the fix immediately.
+2. After re-applying, confirm the pipeline ran green AND load a real subdirectory URL (`https://www.repairrange.io/locations/sydney.html`) on the live domain. Commit success ≠ deployed.
+3. Treat the brief's "deploy fixed" claims as PROVISIONAL, never settled. This is the single highest-recurrence failure in the project.
+
+**Process lesson (apply to all future deploy/infra changes):** a deploy or routing change is NOT done until an actual deep URL (not the root, not the repo, not a preview) is loaded on the live custom domain and confirmed. Never mark such a task complete on the basis of a successful commit alone. AND: infra fixes here are not durable — re-verify, don't assume.
 
 ### Phase 4 — COMPLETE (May 2026)
 All 5 `/locations/` city pages built, published, and — after the CI fix — verified live.
