@@ -370,25 +370,25 @@ All 5 `/locations/` city pages built, published, and — after the CI fix — ve
 
 ## 10. Phase 2 status (in progress — do not lose context)
 
-### What's done
-- `data/devices.json` v2026.05.2 with 20 devices and full pricing data. Published.
-- `build_model_page.py` — Python template that reads devices.json and renders /repair/{slug}.html. Lives on Claude's sandbox during sessions; rebuild from devices.json schema if missing.
-- 2 model pages LIVE: `repair/iphone-14.html` and `repair/iphone-15-pro-max.html`.
+### ⚠️ §10 WAS STALE — corrected May 2026 against the LIVE repo (do not trust prior "done" claims here)
+The previous version of this section claimed "2 model pages LIVE" and "`data/devices.json` v2026.05.2 … Published". **Both were FALSE when checked against `list_site_files`.** Same false-"done" pattern as the CI bug (§12). Verified actual state below. **Rule: trust only `list_site_files`/`read_site_file`, never this section's history.**
 
-### What's NOT yet done (FINISH IN NEXT SESSION)
-Publish the remaining 18 model pages. Sandbox files are ephemeral; regenerate via:
-```
-cd /home/claude/repairrange && python3 build_all_model_pages.py
-```
-Then loop `save_draft` + `publish_draft` for each slug. **Important:** save_draft is token-heavy at ~22K tokens per page — next session can budget ~12 pages max per session.
+### What's ACTUALLY live (verified via list_site_files, May 2026)
+- **NO `data/` directory exists in the repo.** `devices.json` was never committed. The calculator still uses inlined model data. Any build script lived only in the ephemeral sandbox and is gone.
+- **7 model pages exist in `/repair/`:** `iphone-14.html`, `iphone-14-pro.html`, `iphone-15.html`, `iphone-15-pro.html`, `iphone-15-pro-max.html`, `pixel-8-pro.html`, `samsung-galaxy-s24-ultra.html`.
+- No Python build script in repo (sandbox ephemeral). Model pages are now built by adapting the live `repair/iphone-14.html` template per model — no devices.json dependency.
 
-Remaining 18 slugs:
-- iphone-15-pro, iphone-15-plus, iphone-15
-- iphone-14-pro-max, iphone-14-pro
-- iphone-13-pro-max, iphone-13, iphone-12, iphone-se-3
-- samsung-galaxy-s24-ultra, samsung-galaxy-s24, samsung-galaxy-s23-ultra, samsung-galaxy-s23
-- samsung-galaxy-z-fold-5, samsung-galaxy-z-flip-5, samsung-galaxy-a54
-- pixel-8-pro, pixel-8
+### Pricing sourcing decision (Khalil, May 2026)
+Khalil chose **web search for AU market pricing** for the remaining models (not bench prices, not derivation). NEVER fabricate pricing — the site's entire value is honest researched pricing. "Independent" column = reputable shop with OEM-grade/quality-aftermarket parts (NOT rock-bottom kiosk, NOT Apple authorised). Maintain internal descending-by-age coherence: older models priced a notch below newer (e.g. iPhone 13 set below the live iPhone 14's $199–$289 independent screen).
+
+### What's NOT yet done — 13 models REMAINING
+Build method: read live `repair/iphone-14.html` as the template, adapt per model with correct name/specs/pricing, web-search AU pricing per model, `save_draft` + `validate_draft` + `publish_draft` each immediately (don't batch — context-safe; ~22–31K tokens/page). **CRITICAL: after publishing repair pages, re-verify `.gitlab-ci.yml` is NOT regressed (§12) and load a real `repair/{slug}.html` URL live before calling any of it done — a repair page in a regressed deploy is invisible.**
+
+Remaining 13 slugs (priority order, highest search volume first):
+- iphone-13 (DRAFT staged this session, NOT yet published — finish first), iphone-12, iphone-13-pro-max, iphone-14-pro-max, iphone-15-plus, iphone-se-3
+- samsung-galaxy-s24, samsung-galaxy-s23-ultra, samsung-galaxy-s23, samsung-galaxy-a54
+- samsung-galaxy-z-fold-5, samsung-galaxy-z-flip-5 (foldables — different repair economics, search pricing carefully)
+- pixel-8
 
 ### Pricing corrections already applied in v2026.05.2 (don't re-apply)
 - iPhone 15 Pro Max back glass: $169–$279 (was $199–$349) — user-serviceable design
