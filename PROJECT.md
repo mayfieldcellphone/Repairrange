@@ -390,6 +390,19 @@ Remaining 13 slugs (priority order, highest search volume first):
 - samsung-galaxy-z-fold-5, samsung-galaxy-z-flip-5 (foldables — different repair economics, search pricing carefully)
 - pixel-8
 
+### 🔴 PER-MODEL CHECKLIST — a model page is NOT done until ALL of these are committed (do them as ONE unit, never split)
+The iPhone 13 "Soon" bug (May 2026) happened because the page was published but the two brand-index links still said "Soon", so visitors/Google couldn't find it. For EVERY model built, all of the following must be done together before moving on:
+1. `repair/{slug}.html` — build from the live `repair/iphone-14.html` template, web-searched AU pricing, save_draft + validate_draft + publish_draft.
+2. `brands.html` — in the "Popular models, A–Z" list, change that model's `<a href="calculator.html" class="ed-link text-muted ...">` to `<a href="repair/{slug}.html" class="ed-link text-ink ...">` (muted→ink = greyed→live).
+3. `brands/{brand}.html` (apple.html / samsung.html / google.html) — convert that model's greyed `<div class="bg-white p-6 opacity-55">…Soon…</div>` placeholder card into the live `<a href="../repair/{slug}.html" class="card bg-white p-6 group">…` style with the arrow icon + "Screen from $X · full guide".
+4. Update the brand card's "N guides live" count on `brands.html` if it changed.
+5. After publishing: re-verify `.gitlab-ci.yml` not regressed (§12) and load the live `repair/{slug}.html` URL.
+**"Soon"/greyed labels are accurate for un-built models — do NOT remove a "Soon" label without building the actual page; routing a fake "live" link to the calculator is dishonest and breaks the site's core value.**
+
+### Progress log (update as each ships)
+- ✅ iphone-13 — page SHA `8e509ea0503d27980834e5d49ed073f791aa10db`; brands.html link fixed SHA `efe65d353a9fab2f647b1bdec07869b57c2869c2`; brands/apple.html card fixed SHA `5c8e8a359cb07f8169b2b8b0574a9378bd8965e6`. Screen $179–$269 indie (below iPhone 14, AU-market-sourced). DONE — pending Khalil live-URL confirmation.
+- ⏳ 12 remaining (iphone-12 next).
+
 ### Pricing corrections already applied in v2026.05.2 (don't re-apply)
 - iPhone 15 Pro Max back glass: $169–$279 (was $199–$349) — user-serviceable design
 - Galaxy S24 Ultra screen floor: $299–$499 (was $349–$499) — AU indie reality
