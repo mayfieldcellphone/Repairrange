@@ -411,6 +411,74 @@ Secondary impressions (just scrolling past the listing) are NOT billable — too
 
 ---
 
+## 14. Affiliate revenue strategy (multi-stream, designed May 2026)
+
+### The core principle (read this first)
+Affiliate links MUST match the audience of the page they sit on. Wrong audience = no conversion AND eroded editorial credibility (which kills the backlink strategy in §1, which is the actual primary value). The discipline is: **fewer, better-fitting affiliate placements** over scattershot link-plastering.
+
+RepairRange has two distinct audiences on different pages:
+- **Consumers with broken phones** (all model pages, fix/ guides, location pages, brand pages, calculator) — they want repair pricing, troubleshooting, local shops. They are NOT buying SaaS, hosting, or business software.
+- **Repair-shop owners** (the existing `tools/software-stack-for-repair-shops.html` page only) — they ARE buying business SaaS, tools, POS systems, accounting software.
+
+Mixing affiliates across audiences is the most common mistake. Don't.
+
+### AppSumo — approved May 2026 via Impact Radius
+
+**Where it goes:** ONE place — `tools/software-stack-for-repair-shops.html`. The audience there is repair-shop owners looking for business tools, which is exactly AppSumo's customer profile (small business operators chasing lifetime SaaS deals). Nowhere else on RepairRange.
+
+**Where it must NOT go:** model repair pages, fix/ troubleshooting guides, locations/ city pages, brands pages, calculator, homepage, or the footer of any consumer-facing page. Consumer-side visitors won't convert, and the off-topic links cheapen the editorial credibility that drives the backlink strategy.
+
+**Commission reality (be honest with yourself):** AppSumo typically pays ≈5–10% on first-time-customer purchases, 30-ish-day cookie, AOV around $50–$80. So roughly $3–$10 per successful referral. Not a get-rich link — a slow steady stream that compounds with traffic and only matters if links are genuinely relevant.
+
+**Implementation plan for tools/software-stack-for-repair-shops.html:**
+1. Log in to Impact Radius. Create the AppSumo affiliate campaign link for each specific tool you'll recommend (one link per tool, NOT one generic AppSumo homepage link — specific deals convert much better than generic landing pages).
+2. Pick 3–5 genuinely useful tools a phone repair shop would actually use. Realistic categories: ticketing/CRM for repair tickets, invoicing, scheduling/appointment booking, SMS customer notifications, simple POS, accounting bridges to Xero/MYOB. **Only recommend tools Khalil would or does actually use — anything else gets sniffed out.**
+3. Add an honest review-style block per tool: what it does, who it's best for, what's not great, the AppSumo affiliate link. Disclosure: the existing site-wide "Affiliate disclosure" in the footer already covers it, but add a sentence at the top of the page making the relationship explicit.
+4. Track which links earn from Impact Radius' dashboard. After 60–90 days, drop dead links and double down on what converts.
+
+**What to AVOID with AppSumo:**
+- No banners. No "deal of the week" sidebar widgets. No popups. Just contextual links inside genuine recommendations.
+- No AppSumo links on consumer pages — ever, no matter how tempting the commission.
+- Don't churn out generic "50 best AppSumo deals" listicles. Low effort = low ranking = low revenue + brand damage.
+
+### Higher-fit affiliates for the consumer audience (the bigger revenue opportunity)
+
+RepairRange's real audience is consumers with broken phones, and the right affiliates for THAT audience are very different from AppSumo. Ranked by realistic fit:
+
+**1. Amazon Associates** — The site's footer already includes an affiliate disclosure mentioning Amazon, so this is presumably wired up (verify in Khalil's Amazon Associates dashboard — if not, sign up; AU program is `affiliate-program.amazon.com.au`). Phone repair kits, iFixit toolkits sold via Amazon, screen protectors, cases, USB-C cables, replacement batteries. Commission ~1–4% on electronics, but high conversion because the page audience is already mid-repair-decision. Action: ensure every model page has at least one earnest in-context Amazon link (e.g. "the same toolkit we recommend" inside the DIY note block).
+
+**2. iFixit Affiliate Program** — Highest editorial fit for RepairRange. iFixit sells repair toolkits and replacement parts; their brand IS "researched by working techs." Commission ~5%, higher AOV than Amazon on the same products. Apply at ifixit.com/Info/affiliate. Place links in: the DIY note section of model pages, fix/ guide pages where a specific tool would help, the existing `tools/` article.
+
+**3. eBay Partner Network (EPN)** — Probably the highest-volume affiliate for an AU repair audience specifically; AU repair parts move heavily through eBay. Pays ≈50–70% of eBay's referral fee (effective ≈1–4% to you). Lower per-sale than iFixit, but volume is real. Apply at partnernetwork.ebay.com.au. Useful for "buy this exact replacement part" links on model pages where a specific OEM part is mentioned.
+
+**4. Backblaze / cloud backup** — Pays ~$25/signup, recurring. People about to replace a phone often think about data backup. Worth a contextual placement on a future "before you replace your phone" piece, not on existing pages.
+
+### Affiliates worth dismissing (don't waste time)
+- Generic "high-paying" affiliates (Shopify, Bluehost, generic web hosting) — wrong audience for any of Khalil's sites.
+- VPN affiliates — high payout but no editorial fit; would tank credibility.
+- Anything requiring you to write new content outside your focus (running a content treadmill for an affiliate program is how solo operators burn out).
+
+### The bigger AppSumo opportunity (NOT RepairRange)
+AppSumo's audience is small-business owners and solopreneurs. RepairRange is mostly the wrong site for this. The real AppSumo home is:
+- **Future SaaS-adjacent or small-business-adjacent side projects** Khalil builds or acquires (per the side-hustle direction in memory — a profitable digital asset, especially one with a small-business audience, would be where AppSumo actually earns).
+- **A newsletter or YouTube channel about running a repair shop / small business in AU** — if Khalil ever starts one, that's where AppSumo's pitch ("focus on why a tool is useful and who it's best for") aligns perfectly. Pure speculation; don't build content just to chase affiliate income, that path leads to burnout.
+
+### Rollout sequence (recommended)
+1. **This week:** Set up Impact Radius links for 3–5 specific AppSumo tools. Update `tools/software-stack-for-repair-shops.html` with honest recommendations and links. ~1–2 hours work, immediate revenue potential.
+2. **Next 2 weeks:** Apply to iFixit affiliate program. Verify Amazon Associates AU status. Apply to eBay Partner Network AU.
+3. **As model pages get built:** Add ONE in-context tool/parts link (Amazon or iFixit, whichever pays better at the time) inside the DIY note section of each new model page. Not banners, not lists — a single editorial mention.
+4. **Quarterly:** review Impact Radius / iFixit / Amazon dashboards. Drop dead links, expand what works. Resist the urge to add more programs until existing ones are earning meaningfully — multi-stream becomes multi-clutter very fast.
+
+### Tracking discipline
+Keep a simple spreadsheet (or a private page in this repo) listing every affiliate program with: signup date, dashboard URL, login email, commission rate, where links are placed, last revenue check. Audit quarterly. The reason: it's easy to accidentally let an affiliate disclosure say "Amazon" when you've actually added five other programs — keep the footer disclosure honest and current.
+
+### What this is NOT
+- NOT permission to plaster affiliate links across the site. Specific, in-context, audience-matched only.
+- NOT a replacement for the SEO + backlinks strategy (§1). Affiliate revenue is a secondary stream, not the point of RepairRange.
+- NOT a reason to write listicle-style "best X deals" content — that's the low-quality content path Google penalises.
+
+---
+
 ## 9. Open questions / to-decide
 
 - [x] **CI publish — ACTUALLY fixed this session (was falsely marked done before).** See §12. The earlier claim that SHA `3c1a3fa6…` deployed the subdirs was WRONG — that CI still only copied root `*.html` + `blog/`, so every subdirectory page 404'd on the live site for multiple sessions while appearing correct in the repo. Real fix committed at SHA `abc580c106b8784844696c4da212fca133ad3286`; pipeline run confirmed; subdirectory pages verified live by Khalil. Lesson: never mark a deploy fix done without loading an actual subdirectory URL on the live domain.
