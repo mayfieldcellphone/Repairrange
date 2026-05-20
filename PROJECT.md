@@ -354,6 +354,63 @@ All 5 `/locations/` city pages built, published, and — after the CI fix — ve
 
 ---
 
+## 13. Monetisation — paid-listing directory (designed May 2026, NOT YET BUILT)
+
+### The model
+Paid shop listings on the **non-Newcastle city pages** (Sydney, Melbourne, Brisbane, Perth) under a **prepaid pay-per-click** scheme. Newcastle is OFF-LIMITS to paid slots — it stays the editorial keystone featuring Mayfield Phone Repair (§1). Touching Newcastle's curation kills the rest of the strategy.
+
+**Mechanic:**
+1. Shop creates a listing and prepays $10 (Stripe).
+2. Each billable user action against their listing deducts $1 from their balance.
+3. When balance hits $0, listing auto-pauses until they top up.
+4. Linear scaling: 100 paid clicks across all shops = $100 revenue. No ceiling, no extra ops cost per click once plumbing exists.
+
+**Defensible labelling:** all paid slots labelled **"Listed shops"**, NEVER "verified", "recommended", "endorsed", or "vetted". ACCC + credibility. The page must somewhere visibly disclose that listings are paid placements.
+
+### What counts as a billable click (one event per visitor session, deduped)
+The valuable user actions — a billable click is the FIRST of these to fire in a session:
+- "Call now" tap on mobile (click-to-call link)
+- Phone number reveal on desktop (number hidden until tapped)
+- Quote/booking form submission
+
+Secondary impressions (just scrolling past the listing) are NOT billable — too gameable, too low-signal. Bill only on intent actions.
+
+### Fraud protection (non-negotiable — the system fails on trust without this)
+- Unique-visitor dedupe: same IP within 24h = max 1 billable click per listing.
+- Bot filtering: block known bot UAs, add a basic JS challenge.
+- Daily cap per listing: e.g. max 5–10 billable clicks/day to prevent runaway burn.
+- Self-click exclusion: shop owner's own IP/device range never bills.
+- Dispute window: shop can flag suspicious clicks within 7 days, Khalil reviews.
+
+### Unit economics (honest read)
+- $1/click at ≈20–30% lead-to-sale conversion = $3–$5 customer-acquisition cost on a $200+ screen repair job. Excellent value for the shop. Room to raise to $1.50–$2 once traffic is proven.
+- $10 = only 10 clicks. For a well-ranking listing this depletes fast. **Auto-topup is essential** (Stripe saved card, "refill $50 when balance < $5") — without it, 50%+ of listings will lapse paused. Manual top-up should still be an option for shops who prefer no auto-charge.
+
+### Hard prerequisite
+**Build only AFTER city pages actually rank and pull traffic.** Selling listings on pages that don't rank = no clicks = angry shops = refunds + bad word of mouth in the AU repair-shop community (which is small and talks). Wait for measurable monthly visitors per city page before pitching anyone.
+
+### Phased rollout (recommended — don't skip phases)
+
+**Phase A — manual paid listings (no code).** Once 2–3 city pages rank, email 3–5 shops per city. Quote flat $30/month for a slot, paid via bank transfer. Track clicks in a Google Sheet. Goal: prove shops will pay, refine pitch, learn objections. Revenue: maybe $200–500/month. Build cost: zero. **Skipping this phase is the #1 way directory businesses die — don't.**
+
+**Phase B — prepaid model on minimal infra.** Stripe checkout link for prepay. Cloudflare Worker (or similar) for click tracking + dedupe. Simple admin dashboard for Khalil only — no shop logins yet. Shops email Khalil to top up; he updates balances manually. Crude but proves unit economics with real money. ~1 week build.
+
+**Phase C — full self-service.** Shop login, balance dashboard, auto-topup via saved Stripe card, dispute interface, click breakdown analytics. Build only if Phase B clears ≈$500/month consistently. ~3–4 weeks focused dev.
+
+### Open design questions (decide at Phase B)
+- Stripe vs simpler payment (manual invoice for AU shops who prefer bank transfer)?
+- Refund policy on disputed clicks — case-by-case, or auto-credit any flagged click and trust the shop?
+- Pricing tiers — keep $1 universal, or charge more in Sydney where intent is higher?
+- One slot per city or unlimited (with rotation)? Single slot reduces competition burn rate but caps total revenue.
+- Should shops be able to set their own daily cap (e.g. "max $5/day")? Probably yes — reduces refund disputes.
+
+### What this is NOT
+- NOT a replacement for the satellite-backlink purpose (§1). The primary value of RepairRange is editorial backlinks to mayfieldphonerepair.com.au. Directory revenue is a secondary upside, never the primary lever.
+- NOT a lead-routing system that takes a cut of sales — too complex to track, too disputable, and would require trusting shops to self-report sales. PPC sidesteps all that.
+- NOT to be confused with Mayfield's Newcastle slot, which is editorial and free.
+
+---
+
 ## 9. Open questions / to-decide
 
 - [x] **CI publish — ACTUALLY fixed this session (was falsely marked done before).** See §12. The earlier claim that SHA `3c1a3fa6…` deployed the subdirs was WRONG — that CI still only copied root `*.html` + `blog/`, so every subdirectory page 404'd on the live site for multiple sessions while appearing correct in the repo. Real fix committed at SHA `abc580c106b8784844696c4da212fca133ad3286`; pipeline run confirmed; subdirectory pages verified live by Khalil. Lesson: never mark a deploy fix done without loading an actual subdirectory URL on the live domain.
