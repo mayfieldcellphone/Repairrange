@@ -546,6 +546,33 @@ A fully-checklisted model costs ~80–100K tokens (pricing search + template rea
 ### Skipped by Khalil's choice (handle separately)
 - Newcastle/Hunter main-site backlinks on model pages — will be added in a single backlink sweep after all 20 model pages are live.
 
+### Calculator quote-only brand cards (May 2026 — TEMPORARY, upgrade as flow is built)
+On `calculator.html` step 1, alongside the four working brand cards (Apple/Samsung/Google/Other — full calculator flow into model picker → issue → result), there are now two additional sections of **outbound "quote only" cards** that link directly to Mayfield Phone Repair, with a small secondary `brands.html` fallback line below each grid:
+
+- **"Other phone brands · quote only"** grid (8 cards): Huawei, Motorola, Nokia, Oppo, Vivo, Realme, Sony, Honor.
+- **"Mac & laptop repair · quote only"** grid (2 cards): MacBook, iPad.
+
+Each card is an `<a href="https://mayfieldphonerepair.com.au/">` with an `external-link` lucide icon and a “· quote (Newcastle/Hunter)” clarifier in the copy. Below each grid is a small line directing non-Hunter visitors to `brands.html` / `locations.html`. Calculator commit SHA `a241f2e66d4ab3f1d089bf97792c27a39e90b200`.
+
+**These cards are TEMPORARY** — placeholders that give the page visible brand coverage (good for SEO + visitor expectation-setting) and editorial backlinks to Mayfield (good for §1), while the actual calculator flow for those brands gets built out one at a time. **The intent is to upgrade each card into a full calculator-flow brand** with its own model list and pricing, the same as Apple/Samsung/Google.
+
+**Upgrade mechanics — for each brand graduated from quote-only to full flow:**
+1. Add the brand's models to the `MODELS` object in `calculator.html`'s `<script>` block, e.g. `Huawei: [{ slug: 'huawei-p60-pro', name: 'Huawei P60 Pro' }, …]`.
+2. Add `MODEL_MULT` multipliers for each new model (use existing entries as reference — e.g. flagship ~1.3–1.5×, mid-range ~0.8–1.1×).
+3. Either: replace the outbound `<a>` card with a `<button onclick="pickBrand('Huawei')">` matching the Apple/Samsung style AND move it up into the main 4-card grid or a new 5th-card position (preferred — main grid stays the "working calculator" tier); OR keep it in its current position but swap the link for the `onclick` and drop the external-link icon + Newcastle clarifier copy. Choice depends on how many brands have graduated — if 4+ grad'd, expand main grid; if 1–2 grad'd, leave them in the lower section with upgraded behaviour.
+4. Remove the graduated brand from the "quote only" eyebrow grid.
+5. Verify the calculator flow works for at least one model of the new brand before committing.
+6. If a brand-index page is added (e.g. `brands/huawei.html`), update `brands.html` count + nav.
+
+**Priority order for graduating** (by AU search volume + Mayfield's actual repair throughput — confirm with Khalil before each):
+- MacBook (high AU search; needs its own page architecture since it's a laptop not a phone — biggest lift but biggest payoff)
+- Huawei (still meaningful AU install base via grey-imports)
+- Oppo / Vivo / Realme (real AU youth/budget market presence)
+- iPad (pair with MacBook build — similar architecture)
+- Motorola / Nokia / Sony / Honor (lower priority — keep as quote-only longer)
+
+**Do NOT graduate prematurely.** A quote-only card honestly says "we'll quote you" — a half-built calculator card that 404s in step 2 or shows nonsense pricing breaks trust. Only upgrade when there's real pricing data (Khalil's bench OR confirmed AU market search) AND a complete model list.
+
 ### ⚠️ Current-generation models MISSING from the queue (Khalil flagged, May 2026)
 The original 20-model list predates newer releases. **iPhone 17 series and Samsung Galaxy S26 series (plus likely a newer Pixel) are now out and are NOT in devices.json or the queue.** Without them the site looks dated and misses the highest-value search traffic. Requirements when adding:
 - Confirm exact current lineup + model names via web search AND/OR Khalil (naming conventions may have shifted, e.g. "Air" tiers, Fold/Flip generations).
