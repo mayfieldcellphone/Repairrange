@@ -11,6 +11,16 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.repairrange.io/blog.html</loc>
+    <lastmod>2026-05-21</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/blog/screen-quality-tiers-oem-aftermarket-refurbished-explained.html</loc>
+    <lastmod>2026-05-21</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.repairrange.io/brands.html</loc>
     <lastmod>2026-05-18</lastmod>
     <priority>0.5</priority>
@@ -126,6 +136,26 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://www.repairrange.io/repair/iphone-12.html</loc>
+    <lastmod>2026-05-21</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/repair/iphone-13-pro-max.html</loc>
+    <lastmod>2026-05-21</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/repair/iphone-13.html</loc>
+    <lastmod>2026-05-21</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/repair/iphone-14-pro-max.html</loc>
+    <lastmod>2026-05-21</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.repairrange.io/repair/iphone-14-pro.html</loc>
     <lastmod>2026-05-18</lastmod>
     <priority>0.5</priority>
@@ -133,6 +163,11 @@
   <url>
     <loc>https://www.repairrange.io/repair/iphone-14.html</loc>
     <lastmod>2026-05-18</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/repair/iphone-15-plus.html</loc>
+    <lastmod>2026-05-21</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
