@@ -530,6 +530,23 @@ The iPhone 13 "Soon" bug (May 2026) happened because the page was published but 
 - ✅ iphone-13-pro-max — page SHA `55b8da4db355dbe33da61cb47423e4b517bb33e7`; brands.html link + Apple count 7→8 SHA `20cb445bfcf98923f72412547a41691f93458d0d`; brands/apple.html card SHA `b91e75a38c5b5a249cd248a503559820237e2a0b`. Screen $249–$379 indie (above std 13, 6.7" ProMotion). CI re-verified intact (`4b4c9382`). DONE — pending Khalil live-URL confirmation.
 - ✅ iphone-14-pro-max — page SHA `842fa33a6c6f5736880f1e49678e7ba32bf84bb5`; brands.html link + Apple count 8→9 SHA `e3753842d894af992cbf04b404e41128ce29b740`; brands/apple.html card SHA `2afbe885dde3956ed48ca80abe3d76fcac329a59`. Screen $309–$469 indie (top of 14 line, back-glass-first chassis cheaper than 13PM). CI re-verified intact (`4b4c9382`). DONE — pending Khalil live-URL confirmation.
 - ✅ iphone-15-plus — page SHA `4b0cdbffd240e4ec45bb9d045eea3bdad8fad410`; brands.html link + Apple count 9→10 SHA `154e41bebe80a2691ebed554bb909f36206592e5`; brands/apple.html card SHA `a871e820996345a9996e1843f2b570621209c2bd`. Screen $239–$329 indie (no ProMotion/Dynamic Island = cheaper than 15PM, sits above std 15). **15-series uses USB-C, not Lightning** — page reflects this in the port column header and DIY note. CI re-verified intact (`4b4c9382`). DONE — pending Khalil live-URL confirmation. The iPhone 15 line is now COMPLETE (15, 15+, 15 Pro, 15PM all live).
+
+### ⚠️ UPDATED REGRESSION RULE — May 2026 (CRITICAL)
+**The CI regression trigger is broader than originally documented in §12.** Originally the brief said GitLab domain operations were the only trigger. **FALSE.** Confirmed in this session: publishing `sitemap.xml` via `publish_draft` ALSO triggered the regression — the publish response showed `"ciUpdated": true` and the CI script silently reverted from the correct `4b4c9382` to broken `0cfac0ce` (root + blog/ only). Re-fixed to `15485cf32d78d2f8d344240be6c85791b364c4b3`.
+
+**This is REGRESSION #3 in this project.** Likely the same trigger applies to publishing `robots.txt` and `llms.txt`, and to the `generate_*` tools.
+
+**HARD RULE going forward, do not skip:** After publishing ANY of `sitemap.xml`, `robots.txt`, `llms.txt`, or after running `generate_sitemap` / `generate_robots_txt` / `generate_llms_txt`:
+1. Immediately `read_site_file` on `.gitlab-ci.yml` and check the SHA
+2. If reverted: `save_draft` + `publish_draft` the all-folders fix (publish_draft will error with `'publishedPagesMeta..gitlab-ci.yml'` but the commit still lands — verify by re-reading SHA)
+3. Khalil must MANUALLY trigger a fresh pipeline at https://gitlab.com/mayfield276/blank-site-2026-05-06-6rrng/-/pipelines so the CI fix is the latest commit when deploy runs
+4. Khalil verifies a real subdirectory URL loads live (e.g. /repair/iphone-15-plus.html, /locations/sydney.html)
+
+### Blog — Phase 5 started May 2026
+- ✅ First real post: `blog/screen-quality-tiers-oem-aftermarket-refurbished-explained.html` (SHA `bcc0bde68d6f12b6247af13d2116b2c31cef4825`) — ~2,800 word editorial on OEM/refurb/aftermarket/budget tiers, plain-English working-tech voice, Article JSON-LD, internal links to model pages + calculator + cities + brands. Designed to be link-worthy and to anchor the "confirm part quality" caveat that every model page mentions.
+- ✅ `blog.html` converted from noindex redirect stub → real blog index listing the post (SHA `adcd4e3d32cefe4c8b1867a420cc1dda251b84a7`). "Blog" added to main nav across the post and index. Mentions next 2-3 planned posts honestly without faking dates.
+- ✅ `sitemap.xml` manually edited (NOT via generate_sitemap) to add blog index + post + 5 missing model pages (iphone-12, 13, 13PM, 14PM, 15+) — now 41 URLs (SHA `6d653e9ccb46441ef38ab7340151dd8e704e0d59`). **This is the publish that triggered the CI regression above.**
+- Khalil live-URL check needed: `/blog.html`, `/blog/screen-quality-tiers-oem-aftermarket-refurbished-explained.html` + a subdirectory model page after pipeline re-runs.
 - ⏳ 8 remaining — ALL need pricing research. Priority: iphone-se-3 (⚠️ DIFFERENT FORM FACTOR — 4.7" LCD, Touch ID not Face ID, Lightning, Home button — template needs careful spec adjustment, NOT just pricing swap), then Samsung block (s24, s23-ultra, s23, a54), foldables (z-fold-5, z-flip-5 — search carefully, very different repair economics), pixel-8.
   - Samsung pages go in brands/samsung.html (count currently "1 guide live" — the live s24-ultra). Pixel pages in brands/google.html ("1 guide live" — the live pixel-8-pro).
 
