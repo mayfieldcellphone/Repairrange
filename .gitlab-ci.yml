@@ -2,8 +2,10 @@ pages:
   stage: deploy
   script:
     - mkdir -p public
-    - cp -r ./*.html ./*.txt ./*.xml public/ 2>/dev/null || true
-    - cp -r fix locations repair brands tools blog public/ 2>/dev/null || true
+    - cp *.html public/ 2>/dev/null || true
+    - cp -r blog public/ 2>/dev/null || true
+    - cp *.txt public/ 2>/dev/null || true
+    - cp *.xml public/ 2>/dev/null || true
   artifacts:
     paths:
       - public
