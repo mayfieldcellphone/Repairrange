@@ -479,6 +479,47 @@ Keep a simple spreadsheet (or a private page in this repo) listing every affilia
 
 ---
 
+## 15. Directory strategy — confirmed sequencing (Khalil, May 2026)
+
+This section supersedes any ambiguity in §6 / §7 / §13 about *when* the directory layer activates and *how* it grows. The directory model itself (PPC, hard constraints, fraud protection, unit economics) is fully designed in §13 — don't re-design it. What's recorded here is the **operational sequencing rule** Khalil decided on.
+
+### The confirmed plan
+1. **Editorial layer first, directory layer second.** Build the city pages as pure editorial (real pricing, real local context, no shop listings) until they rank and pull real traffic. This is the current phase and it's working.
+2. **Add real shops one by one, only as they're onboarded.** No scraping. No "verified shops: 18" fake counts (§12 lesson). When a real shop in Sydney/Melbourne/Brisbane/Perth/Adelaide signs up for a listing (per the §13 PPC model), they're added to that city's page. Until then, the page shows zero shops — honestly.
+3. **One shop, then two, then suburb-grouping at density.** The Newcastle page already proves the pattern with one named shop (Mayfield). When a city has ~3+ onboarded shops in the same suburb, that's the trigger to consider a suburb-level page or section. NOT before. **Do not pre-build empty suburb pages — they become thin-content liability.**
+4. **Newcastle remains off-limits to paid placement, permanently** (§13 hard constraint).
+
+### Why this sequencing matters (the trap to avoid)
+The failure mode is building a *visible* directory before it has real shops in it. An empty directory tells visitors and Google: "this site claims to have shop listings but doesn't." That's worse than no directory at all — it actively damages trust. Every other directory site that started small (Yelp, TrueLocal, even Google's own local results) earned its content density before claiming it. Skipping that earns nothing and burns credibility.
+
+### Architectural decision: editorial pages stay static, directory layer can be dynamic
+Reaffirming the May 2026 conversation:
+- **Editorial city pages** (Sydney, Melbourne, Brisbane, Perth, Adelaide, Newcastle) = **static HTML, hand-written content per city.** This is what ranks on Google for "phone repair {city}". Never templatise these. Dynamic content loaded via JS is bad for SEO and would defeat the whole point of the site.
+- **Future directory pages** (`/directory/{city}/{suburb}/` if/when built) = **template-driven, data-driven, dynamic OK.** Listings are data, not editorial. Same way the calculator handles model data inline. This is where Khalil's original instinct to "one template for all" is correct.
+- The two coexist. Editorial doesn't get replaced by directory; directory adds to it.
+
+### Adelaide is the cleanest test case for the next step
+When Adelaide is the first non-Newcastle city to get a real onboarded shop, the implementation pattern is:
+1. On `locations/adelaide.html`, add a small "Listed shops" section (not a card grid yet — just a labelled list) above the calculator CTA. One shop = one line item with name, suburb, phone, real warranty terms.
+2. Update the affiliate disclosure on that page only (not sitewide) to mention paid placement.
+3. As more Adelaide shops are added: grow the section. At 3+ shops in the same suburb, consider a `/locations/adelaide/{suburb}.html` subpage.
+
+### What "only what we can" looks like, honestly
+Khalil flagged this directly: there are 15,000 AU suburbs and 4,000+ phone repair shops nationally. The site is never covering all of them. Realistic 12–18 month scope, if the directory layer launches at all:
+- 6–8 editorial city pages live (we're at 6 now — add Gold Coast and Canberra to round out)
+- 10–20 paying shop listings total across non-Newcastle cities
+- 1–2 suburb pages if any suburb reaches 3+ listings (most likely a Sydney or Melbourne suburb first)
+- Mayfield stays exclusively featured in Newcastle
+
+This is small, real, and defensible. It's not "a directory site." It's "an editorial site with a tightly curated directory layer where there's real demand." That distinction is the entire reason the strategy works.
+
+### What does NOT change
+- The outreach idea is still parked until a real offer exists — see §13 phased rollout. "Phase A: manual paid listings" is the first outreach moment, and it's gated on at least 2–3 city pages actually ranking.
+- The Phase 2 model pages and Phase 5 blog work continue independently of this. Directory work doesn't compete with content work — they reinforce each other.
+- The dynamic-template architectural decision applies only to *future* directory pages. Editorial city pages stay static, hand-written, SEO-first. Don't get tempted to refactor working pages.
+
+---
+
 ## 9. Open questions / to-decide
 
 - [x] **CI publish — ACTUALLY fixed this session (was falsely marked done before).** See §12. The earlier claim that SHA `3c1a3fa6…` deployed the subdirs was WRONG — that CI still only copied root `*.html` + `blog/`, so every subdirectory page 404'd on the live site for multiple sessions while appearing correct in the repo. Real fix committed at SHA `abc580c106b8784844696c4da212fca133ad3286`; pipeline run confirmed; subdirectory pages verified live by Khalil. Lesson: never mark a deploy fix done without loading an actual subdirectory URL on the live domain.
