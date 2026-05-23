@@ -589,22 +589,34 @@ The iPhone 13 "Soon" bug (May 2026) happened because the page was published but 
 - ✅ `blog.html` converted from noindex redirect stub → real blog index listing the post (SHA `adcd4e3d32cefe4c8b1867a420cc1dda251b84a7`). "Blog" added to main nav across the post and index. Mentions next 2-3 planned posts honestly without faking dates.
 - ✅ `sitemap.xml` manually edited (NOT via generate_sitemap) to add blog index + post + 5 missing model pages (iphone-12, 13, 13PM, 14PM, 15+) — now 41 URLs (SHA `6d653e9ccb46441ef38ab7340151dd8e704e0d59`). **This is the publish that triggered the CI regression above.**
 - Khalil live-URL check needed: `/blog.html`, `/blog/screen-quality-tiers-oem-aftermarket-refurbished-explained.html` + a subdirectory model page after pipeline re-runs.
-- ⏳ 7 remaining — ALL need pricing research. Next batch should start with Samsung (different brand-index page — brands/samsung.html, count 1→2).
-  - Samsung block: samsung-galaxy-s24, samsung-galaxy-s23-ultra, samsung-galaxy-s23, samsung-galaxy-a54
-  - Foldables: samsung-galaxy-z-fold-5, samsung-galaxy-z-flip-5 (search carefully, very different repair economics)
-  - Pixel: pixel-8 (brands/google.html, count 1→2)
-  - Apple Soon labels are now ALL clear on brands/apple.html — every Apple model in the Phase 2 scope is live (12 model pages: 14, 14 Pro, 14 Pro Max, 15, 15 Plus, 15 Pro, 15 Pro Max, 13, 13 Pro Max, 12, SE 3 plus the originals)
-  - Outstanding to flag: brands/apple.html footer's "Browse" column does NOT have Blog link (Batch 2 nav sweep still pending across all subdirectory pages); the Apple page header nav also missing Blog; same for ALL ~32 subdirectory pages built before Batch 1.
+- ⏳ 14 remaining — ALL need pricing research (scope expanded May 2026 from 7 → 14 when Khalil added S25 and S26 series). Priority groups:
+  - **S26 series (3, NEW — Khalil approved despite thin repair data; pages will include "early estimate, pricing will sharpen" disclaimer):** samsung-galaxy-s26-ultra, samsung-galaxy-s26-plus, samsung-galaxy-s26. Released Mar 11, 2026 globally. Specs: S26 Ultra 6.9" Dynamic AMOLED, S26+ ~6.7", S26 6.2". Snapdragon 8 Elite Gen 5. S26 Ultra has integrated S Pen + new Privacy Display tech. All have under-display fingerprint. **Pricing will be thin — mostly from Samsung's authorised service rates + small early-shop data. Disclose this on each page.**
+  - **S25 series (4, NEW):** samsung-galaxy-s25-ultra, samsung-galaxy-s25-plus, samsung-galaxy-s25, samsung-galaxy-s25-edge. Released Feb 7, 2025 (S25/+/Ultra) and May 30, 2025 (Edge). Mid-cycle, peak repair demand, real pricing data. S25 Ultra 6.9" curved Dynamic AMOLED, S25+ 6.7", S25 6.2", S25 Edge 6.7" slim titanium 5.8mm thick with 200MP camera. Snapdragon 8 Elite. Edge is the form-factor outlier — treat carefully like SE 3.
+  - **Original Samsung (4):** samsung-galaxy-s24, samsung-galaxy-s23-ultra, samsung-galaxy-s23, samsung-galaxy-a54.
+  - **Foldables (2):** samsung-galaxy-z-fold-5, samsung-galaxy-z-flip-5 — different repair economics, search carefully.
+  - **Pixel (1):** pixel-8 (brands/google.html, count 1→2).
 
-### ⚠️ PRE-RESEARCHED for next session — samsung-galaxy-s24 (use these, don't re-search)
-Researched May 2026 via web_search (iTech, Fixo, iRepair Brisbane, SkyTree). Pricing decision:
-- **samsung-galaxy-s24** — Released January 2024. **6.2" Dynamic AMOLED 2X FLAT (not curved like S24 Ultra)**, 120Hz, USB-C. Sits BELOW S24 Ultra (curved + bigger). Screen indie **$199–$289** / auth **$329–$449** / DIY $109–$169. Battery indie **$79–$119** / auth $129–$169 / DIY $35–$59. Back glass indie **$129–$199** / auth $249–$359 / DIY $59–$109. USB-C port indie **$89–$149** / auth $149–$219 / DIY $45–$79. AggregateOffer low 79 high 289.
-- **CRITICAL Samsung-specific detail** (different from iPhone template): the S24 has an **under-display fingerprint sensor** (ultrasonic). It must recalibrate after screen swap, and budget aftermarket screens often won't work with it at all. This is the Samsung equivalent of the iPhone Face ID warning — feature it prominently in DIY note + FAQ. Replaces "Face ID transfer" language entirely; Samsung has no equivalent of dot-projector transfer (sensor stays on the chassis, not the screen).
-- Specs hero card: "6.2-inch Dynamic AMOLED 2X" + "USB-C". Battery hero "$79–$119".
-- Common issues to feature: cracked flat AMOLED (lower-risk than curved Ultra but still fragile), under-display fingerprint sensor calibration after repair, battery degradation 2+ years in.
-- Related cards in template: keep samsung-galaxy-s24-ultra.html (live), point to samsung-galaxy-s23 and samsung-galaxy-z-flip-5 as upcoming siblings (they're not live yet so cards link but show "Coming soon" or use placeholder — actually safer to use 3 IPHONE cards as placeholders until Samsung block is fuller, then re-link).
-- Brand-index targets: brands.html (Galaxy S24 quick-link, currently goes to calculator.html with text-muted), brands/samsung.html (count 1→2, currently "1 guide live"; need to read this file to find S24 placeholder card if one exists).
-- Template source: /repair/samsung-galaxy-s24-ultra.html is the closest match — already Samsung-styled, USB-C correct, just needs: 6.8" curved → 6.2" flat, pricing tier shifted down, under-display-fingerprint detail added, no S Pen reference.
+### Scope reality check (May 2026)
+At the documented 2-3 model pages per session safe budget, 14 remaining = **5-7 more sessions** of Phase 2 model work. That's months of work, not weeks. Khalil knows this. Pre-research and lock-in pricing data per session so building can start fast.
+
+### Brand-index updates already DONE for new models (May 2026):
+- brands/samsung.html: Soon-placeholder cards added for all 7 new models (S26 Ultra/+/std, S25 Ultra/+/std/Edge) at top of grid — SHA `41bdcb8a8571f6395c394aa96f61e53056e9574e`
+- brands.html: 7 new Samsung entries added to A-Z quick list (greyed, all link to calculator) — SHA `986a2d09bcc1436e9be908facae3608d7a8145cc`
+- These mean: when first S25/S26 page is BUILT, only step 3 of checklist needs the placeholder→live conversion (the Soon card exists; the quick-list entry exists). Don't need to add the placeholder — just convert it.
+
+### Build order recommendation for next session
+Start with **S25 Ultra** — highest search volume of all 14 remaining, real pricing data, mid-cycle peak demand. Then S25/S25+, then S26 Ultra (with thin-data disclaimer). Foldables and S25 Edge are form-factor outliers — do those in dedicated sessions, not bundled with standard slab phones.
+
+### ⚠️ Editorial parity flag
+Khalil approved S25/S26 from web search, not bench data. By the same logic iPhone 17 series (released Sep 2025) should also be added — currently absent from the site, looks editorially uneven. Surface this as a decision point next session.
+
+### Stale Q2 2026 label
+brands.html still has "Coming Q2 2026" on the OnePlus/Xiaomi card. We're past Q2 (current date May 23, 2026). Bump to Q4 2026 or remove the date — minor cleanup.
+
+---
+
+### Old pre-research note (samsung-galaxy-s24) — KEEP for future build:
+Researched May 2026. **samsung-galaxy-s24** — Released January 2024. **6.2" Dynamic AMOLED 2X FLAT (not curved like S24 Ultra)**, 120Hz, USB-C. Sits BELOW S24 Ultra. Screen indie **$199–$289** / auth **$329–$449** / DIY $109–$169. Battery indie **$79–$119** / auth $129–$169 / DIY $35–$59. Back glass indie **$129–$199** / auth $249–$359 / DIY $59–$109. USB-C port indie **$89–$149** / auth $149–$219 / DIY $45–$79. AggregateOffer low 79 high 289. **Samsung-specific detail to feature: under-display ultrasonic fingerprint sensor must recalibrate after screen swap; budget aftermarket often won't work with it.** This is Samsung's equivalent of the iPhone Face ID warning.
 
 ### NOTE: stale .gitlab-ci.yml DRAFT exists (harmless, do not touch)
 A 257-byte unpublished `.gitlab-ci.yml` draft is staged (the correct fixed content, from an earlier save_draft that couldn't be cleared due to the leading-dot discard bug). The LIVE committed CI is correct (`4b4c9382`). Do NOT try to discard it (hits the tooling bug) and do NOT publish it (unnecessary — live is already identical/correct). validate_draft will keep flagging it with spurious HTML errors — ignore. Leave it alone.
