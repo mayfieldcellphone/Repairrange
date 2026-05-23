@@ -596,6 +596,16 @@ The iPhone 13 "Soon" bug (May 2026) happened because the page was published but 
   - Apple Soon labels are now ALL clear on brands/apple.html — every Apple model in the Phase 2 scope is live (12 model pages: 14, 14 Pro, 14 Pro Max, 15, 15 Plus, 15 Pro, 15 Pro Max, 13, 13 Pro Max, 12, SE 3 plus the originals)
   - Outstanding to flag: brands/apple.html footer's "Browse" column does NOT have Blog link (Batch 2 nav sweep still pending across all subdirectory pages); the Apple page header nav also missing Blog; same for ALL ~32 subdirectory pages built before Batch 1.
 
+### ⚠️ PRE-RESEARCHED for next session — samsung-galaxy-s24 (use these, don't re-search)
+Researched May 2026 via web_search (iTech, Fixo, iRepair Brisbane, SkyTree). Pricing decision:
+- **samsung-galaxy-s24** — Released January 2024. **6.2" Dynamic AMOLED 2X FLAT (not curved like S24 Ultra)**, 120Hz, USB-C. Sits BELOW S24 Ultra (curved + bigger). Screen indie **$199–$289** / auth **$329–$449** / DIY $109–$169. Battery indie **$79–$119** / auth $129–$169 / DIY $35–$59. Back glass indie **$129–$199** / auth $249–$359 / DIY $59–$109. USB-C port indie **$89–$149** / auth $149–$219 / DIY $45–$79. AggregateOffer low 79 high 289.
+- **CRITICAL Samsung-specific detail** (different from iPhone template): the S24 has an **under-display fingerprint sensor** (ultrasonic). It must recalibrate after screen swap, and budget aftermarket screens often won't work with it at all. This is the Samsung equivalent of the iPhone Face ID warning — feature it prominently in DIY note + FAQ. Replaces "Face ID transfer" language entirely; Samsung has no equivalent of dot-projector transfer (sensor stays on the chassis, not the screen).
+- Specs hero card: "6.2-inch Dynamic AMOLED 2X" + "USB-C". Battery hero "$79–$119".
+- Common issues to feature: cracked flat AMOLED (lower-risk than curved Ultra but still fragile), under-display fingerprint sensor calibration after repair, battery degradation 2+ years in.
+- Related cards in template: keep samsung-galaxy-s24-ultra.html (live), point to samsung-galaxy-s23 and samsung-galaxy-z-flip-5 as upcoming siblings (they're not live yet so cards link but show "Coming soon" or use placeholder — actually safer to use 3 IPHONE cards as placeholders until Samsung block is fuller, then re-link).
+- Brand-index targets: brands.html (Galaxy S24 quick-link, currently goes to calculator.html with text-muted), brands/samsung.html (count 1→2, currently "1 guide live"; need to read this file to find S24 placeholder card if one exists).
+- Template source: /repair/samsung-galaxy-s24-ultra.html is the closest match — already Samsung-styled, USB-C correct, just needs: 6.8" curved → 6.2" flat, pricing tier shifted down, under-display-fingerprint detail added, no S Pen reference.
+
 ### NOTE: stale .gitlab-ci.yml DRAFT exists (harmless, do not touch)
 A 257-byte unpublished `.gitlab-ci.yml` draft is staged (the correct fixed content, from an earlier save_draft that couldn't be cleared due to the leading-dot discard bug). The LIVE committed CI is correct (`4b4c9382`). Do NOT try to discard it (hits the tooling bug) and do NOT publish it (unnecessary — live is already identical/correct). validate_draft will keep flagging it with spurious HTML errors — ignore. Leave it alone.
 
