@@ -576,6 +576,26 @@ The iPhone 13 "Soon" bug (May 2026) happened because the page was published but 
 - ✅ **samsung-galaxy-s25-plus** — page SHA `45be32dc45ff7a4c2fc9a9e923fc740f6ef8e9e0`; brands.html link `1801191c68b476b48634b954c096ad81cc58717b`; brands/samsung.html card `9d6a7ad23e7e7704720b108f55af6cb2e72db907`. Screen $329–$449 indie (sits between S25 std and S25 Ultra). 6.7" flat Dynamic AMOLED 2X, aluminium frame (not titanium like Ultra), no S Pen. Under-display fingerprint FAQ + DIY note preserved per Samsung template pattern. Related cards: S25 Ultra, S24 Ultra, screen-quality blog post. CI re-verified intact (`15485cf3`). DONE — pending Khalil live-URL confirmation.
 - ✅ **samsung-galaxy-s25** (standard) — page SHA `d044998ae687489a0232c21fde81141a71b374ac`; brands.html link `dfed6a6b1da1bf6fe97b2bb2d3c34729aa8a0c0e`; brands/samsung.html card `1c37a8d952476058720793f815166dc3a2994c0d`. Screen $239–$329 indie (below S25+, the most affordable S25 to repair). 6.2" flat Dynamic AMOLED 2X, 4,000mAh battery (smallest in S25 line). Under-display fingerprint FAQ + DIY note preserved. Related cards: S25+, S25 Ultra, screen-quality blog post. CI re-verified intact (`15485cf3`). DONE — pending Khalil live-URL confirmation. **The S25 line (S25, S25+, S25 Ultra) is now COMPLETE on the site.**
 - ✅ **samsung-galaxy-s26-ultra** — page SHA `d59fd4cfff980044e0dbbd453aaba8a227ce1eb3`; brands.html link `0741144dd6bf03bb164acda41863e7b138893521`; brands/samsung.html card `0ed748468135b1f5d1ee6d2029cbde2ae7320501`. **FIRST page with thin-data disclaimer pattern.** Screen $449–$579 indie (early estimate, above S25 Ultra due to scarce parts). Released Mar 11, 2026 (~10 weeks at write time). **New pattern elements for S26 series**: (1) amber callout box above pricing table titled "Early data — pricing will sharpen"; (2) all pricing labelled (est.); (3) hero eyebrow says "Early-data estimates"; (4) hero starts "Estimated from" not "Starting from"; (5) dedicated FAQ "Should I get my S26 Ultra repaired now or wait?" recommending authorised service for warranty units; (6) DIY note recommends NOT DIYing until parts supply matures Q4 2026; (7) brand-index card uses "Screen est. $449 · early data" instead of "Screen from $449". **Use this pattern for S26+ and S26 standard.** CI re-verified intact (`15485cf3`). DONE — pending Khalil live-URL confirmation.
+- ✅ **samsung-galaxy-s23** (standard) — page SHA `e9dfd412bb73c271756cbb14eb65b1793e86489a`; brands.html link `e8fcc27bdc138e77b6b46df4967b32b0ec5062d6`; brands/samsung.html card `d5e701a079c1b0791e8ebcaef202500730e99c78`. **FIXED BROKEN HOMEPAGE CARD** — the homepage had been linking to this page for months, which 404'd until now. Screen $249–$359 indie (3-year-old phone, mature aftermarket). 6.1" flat Dynamic AMOLED 2X, Feb 2023. Hero pricing aligned with homepage card ($79 battery starting). Under-display fingerprint FAQ preserved. CI re-verified intact (`15485cf3`). DONE.
+- ✅ **samsung-galaxy-s23-ultra** — page SHA `ad5a9368d7e3f14685b76b2158e83e152b44cda1`; brands.html link `22a00ee994df652ec27128cc2cf9a9307cd9612c`; brands/samsung.html card `d799c294aa9ec4c6f9bf1dbdad16fdb2df0153d2`. Screen $329–$469 indie (curved-edge 6.8" QHD+ display — last curved Samsung Ultra). S Pen + under-display fingerprint warnings. DIY note specifically flags curved-display fragility during removal. Related cards: S23, S24 Ultra, screen-quality blog post. CI re-verified intact (`15485cf3`). DONE.
+
+### Now 8 model pages remaining
+**samsung-galaxy-s23-plus is PRE-RESEARCHED for next session** — use these exact numbers, don't re-search:
+- Released Feb 2023. 6.6" flat Dynamic AMOLED 2X (between S23 6.1" and S23 Ultra 6.8"). USB-C, under-display fingerprint. No S Pen, no curved edge.
+- Screen indie **$289–$399** / auth $399–$549 / DIY $129–$199
+- Battery indie **$79–$119** / auth $129–$169 / DIY $35–$59
+- Back glass indie **$149–$239** / auth $239–$369 / DIY $69–$119
+- USB-C port indie **$89–$149** / auth $149–$199 / DIY $45–$79
+- AggregateOffer low 79 high 399
+- **Template source: use samsung-galaxy-s23.html (flat display, no S Pen, no curved-edge), bump pricing and screen size only.** Spec card: "6.6-inch Dynamic AMOLED 2X" + "USB-C". Hero battery price: "$79–$119".
+- brands.html: Galaxy S23+ quick-link currently text-muted/calculator. brands/samsung.html: Galaxy S23+ Soon card exists.
+
+### Other remaining models for future sessions
+- S26 series: samsung-galaxy-s26-plus, samsung-galaxy-s26 (use s26-ultra.html template with thin-data callout pattern, scale down for 6.7" and 6.2")
+- S25 Edge: form-factor outlier (5.8mm titanium, 200MP), own care like SE 3
+- S24, A54: real pricing data
+- Foldables (Z Fold 5, Z Flip 5): own session, different repair economics
+- Pixel 8: different brand-index (brands/google.html)
 
 ### Now 10 model pages remaining
 Next: **samsung-galaxy-s26-plus** and **samsung-galaxy-s26** — same thin-data pattern as S26 Ultra. Use s26-ultra.html as the template (NOT s25-ultra), it has the early-data callout + amber CSS class + Should-I-wait FAQ + tentative labels.
