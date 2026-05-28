@@ -306,6 +306,11 @@ After an extended multi-session battle, the domain is **LIVE and secure** at **`
 ### Migration consideration
 gitlab.io URL keeps working forever as backup. Google should see `https://www.repairrange.io` as canonical (the canonical tags now correctly say so). No GitLab-side 301s needed; the Hostinger apex→www redirect plus the canonical tags handle SEO consolidation.
 
+### Domain ownership re-verification — May 2026 (resolved, settled)
+GitLab Pages periodically requires re-verification of custom domain ownership. In May 2026 this fired for `www.repairrange.io` and the cert went invalid (`ERR_CERT_COMMON_NAME_INVALID`). Fix: Khalil added the verification TXT record GitLab requested at Hostinger DNS (the verification value GitLab displays on the domain settings page), then clicked Verify in GitLab. Cert auto-reissued, site loaded cleanly. **CI config was NOT touched during the fix** — the per-§12 regression risk is on domain remove/re-add, NOT on TXT-record verification. **Hard rule going forward:** for ownership re-verifications, just add the TXT and click Verify on the existing entry. Never remove and re-add the custom domain in GitLab Pages.
+
+**Hosting decision — settled.** The GitLab Pages + Hostinger DNS setup is the chosen and final hosting architecture for RepairRange. Migration to alternative hosting was considered and decided against. Future sessions should not re-open this question on encountering routine infrastructure friction (cert renewals, CI maintenance) — these are operational tasks within the chosen setup, not migration triggers.
+
 ---
 
 ## 12. ⚠️ Deploy bug (CI subdirectory copy) + Phase 4 — May 2026
