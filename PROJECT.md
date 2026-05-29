@@ -357,6 +357,28 @@ All 5 `/locations/` city pages built, published, and — after the CI fix — ve
 ### Open international placeholders (low priority, untouched)
 `locations.html` still has 4 “Coming Q2 2026” cards (London/NY/LA/Toronto) — cosmetic, harmless, no pages behind them. Leave or remove later.
 
+### 🔄 Location-page model refresh — IN PROGRESS (May 2026)
+Khalil asked to update the city-page price tables to current flagships (iPhone 17 series + Galaxy S26, replacing the old iPhone-15-topped tables). **Note: "Galaxy S16" does not exist — Samsung S-series went S10→S20, so the current newest is S26. Used S26 Ultra.**
+
+**iPhone 17 lineup confirmed (web search):** iPhone 17, iPhone 17 Air, iPhone 17 Pro, iPhone 17 Pro Max (Sep 2025) + iPhone 17e (Mar 2026). **AU-researched repair pricing** (Apple's own 17 Pro Max display = $379; iCanFixIt genuine ~$650; full quality spectrum $300–$845) → site "independent" ranges set as:
+- iPhone 17 Pro Max: DIY $200–$300 / indie **$399–$619**
+- iPhone 17 Pro: DIY $180–$270 / indie **$369–$549**
+- iPhone 17: DIY $150–$220 / indie **$289–$429**
+- Galaxy S26 Ultra (est.): DIY $230–$320 / indie **$449–$579** (matches our s26-ultra.html model page; keep the "(est.)" label since S26 pricing is still early-data)
+
+**Pattern applied per city page:** add the 3 iPhone 17 rows at TOP of the table, keep iPhone 15 Pro Max/15 Pro/15 + iPhone 14, swap the Samsung row to show BOTH S26 Ultra (est.) and the existing S24 Ultra. Update the footnote (mention iPhone 17 series + S26 Ultra early-estimate, bump battery range to $69–$169) and bump the AggregateOffer `highPrice` in the JSON-LD to 619 (or city-appropriate high).
+
+**City pages status:**
+- ✅ sydney.html — DONE, SHA `1107088ef22dc407e8cf2858bd02f9f043a51a19`. highPrice 519→619. Table leads iPhone 17 PM/Pro/17.
+- ⏳ melbourne.html — TODO. Inner-north value angle; numbers slightly below Sydney's high end. Read first, its rows/highPrice differ.
+- ⏳ brisbane.html — TODO. Tighter spread + humidity/charging-port angle.
+- ⏳ perth.html — TODO. Higher floor (freight); parts-lead-time angle. Likely highest low-end.
+- ⏳ adelaide.html — TODO. Smaller-market, warranty-quality angle. Built with Blog in nav already.
+- ⏳ newcastle.html — TODO BUT CAREFUL: this is the Mayfield keystone page — its structure differs from the other 5 (featured-shop card, may not have the same 7-row table). Read fully before editing; do NOT disturb the Mayfield featured card or its backlinks.
+**Per-city pricing must stay city-differentiated (don't blind-copy Sydney numbers) — that per-city variance is the whole point of separate pages. Each page's exact current rows + highPrice must be read before editing.** Each is one read-edit-validate-publish cycle; ~2-3 per session safe.
+
+### Open international placeholders — (dup heading below, ignore)
+
 ---
 
 ## 13. Monetisation — paid-listing directory (designed May 2026, NOT YET BUILT)
