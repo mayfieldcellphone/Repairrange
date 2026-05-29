@@ -369,13 +369,13 @@ Khalil asked to update the city-page price tables to current flagships (iPhone 1
 **Pattern applied per city page:** add the 3 iPhone 17 rows at TOP of the table, keep iPhone 15 Pro Max/15 Pro/15 + iPhone 14, swap the Samsung row to show BOTH S26 Ultra (est.) and the existing S24 Ultra. Update the footnote (mention iPhone 17 series + S26 Ultra early-estimate, bump battery range to $69–$169) and bump the AggregateOffer `highPrice` in the JSON-LD to 619 (or city-appropriate high).
 
 **City pages status:**
-- ✅ sydney.html — DONE, SHA `1107088ef22dc407e8cf2858bd02f9f043a51a19`. highPrice 519→619. Table leads iPhone 17 PM/Pro/17.
-- ⏳ melbourne.html — TODO. Inner-north value angle; numbers slightly below Sydney's high end. Read first, its rows/highPrice differ.
-- ⏳ brisbane.html — TODO. Tighter spread + humidity/charging-port angle.
-- ⏳ perth.html — TODO. Higher floor (freight); parts-lead-time angle. Likely highest low-end.
-- ⏳ adelaide.html — TODO. Smaller-market, warranty-quality angle. Built with Blog in nav already.
-- ⏳ newcastle.html — TODO BUT CAREFUL: this is the Mayfield keystone page — its structure differs from the other 5 (featured-shop card, may not have the same 7-row table). Read fully before editing; do NOT disturb the Mayfield featured card or its backlinks.
-**Per-city pricing must stay city-differentiated (don't blind-copy Sydney numbers) — that per-city variance is the whole point of separate pages. Each page's exact current rows + highPrice must be read before editing.** Each is one read-edit-validate-publish cycle; ~2-3 per session safe.
+- ✅ sydney.html — DONE, SHA `1107088ef22dc407e8cf2858bd02f9f043a51a19`. highPrice 519→619.
+- ✅ melbourne.html — DONE, SHA `f62a13692a9826abe5b97ec46c5e0846f3b19e1c`. ~$10-20 below Sydney. highPrice 509→599.
+- ✅ brisbane.html — DONE, SHA `bde6ba694b4dd900d818701dfc7c24385859a47f`. Tighter spread, lower floor. highPrice 499→589.
+- ✅ perth.html — DONE, SHA `92adc989ef30221518a3d0b1a9f03c0cbd852f00`. Higher floor (freight). highPrice 499→609.
+- ✅ adelaide.html — DONE, SHA `521828d4b28050097d82284cc0bd6977d2776cef`. Lowest band (5-10% below east coast). highPrice 489→579.
+- ✅ newcastle.html — DONE, SHA `63db0236bf0249ea3f0e856667668dd9b6eb48a2`. Price table + footnote + WebPage highPrice 499→609 ONLY; Mayfield featured card + LocalBusiness schema + backlinks left untouched.
+**LOCATION REFRESH COMPLETE — all 6 city pages now lead with iPhone 17 series (Pro Max/Pro/17) + show Galaxy S26 Ultra (est.) above S24 Ultra. Per-city pricing differentiated. CI intact `15485cf3`.**
 
 ### Open international placeholders — (dup heading below, ignore)
 
