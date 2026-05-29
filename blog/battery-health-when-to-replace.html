@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="When does a phone battery actually need replacing? A plain-English guide to battery health percentages, degradation curves, and the real cost of waiting too long.">
+<meta name="author" content="RepairRange"><meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.repairrange.io/blog/battery-health-when-to-replace.html">
+<meta property="og:url" content="https://www.repairrange.io/blog/battery-health-when-to-replace.html">
+<meta property="og:type" content="article"><meta property="og:title" content="Battery health explained: when to replace — RepairRange">
+<meta property="og:description" content="When your phone battery actually needs replacing, and when you're fine to wait."><meta property="og:site_name" content="RepairRange">
+<title>Battery health explained: when to replace, when to wait — RepairRange</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Battery health explained: when to replace, when to wait","description":"A plain-English guide to battery health percentages, degradation curves, and the real cost of waiting too long.","author":{"@type":"Organization","name":"RepairRange","url":"https://www.repairrange.io"},"publisher":{"@type":"Organization","name":"RepairRange"},"datePublished":"2026-05-29","mainEntityOfPage":"https://www.repairrange.io/blog/battery-health-when-to-replace.html"}</script>
+<style>
+:root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#E7E5E4; --rr-paper:#FAFAF9; --rr-paper-2:#F5F5F4; }
+html { scroll-behavior: smooth; }
+body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+.font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+.font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+.text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
+.text-amber{color:var(--rr-amber-600);} .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
+.bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
+.display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; }
+.eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
+.header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(250,250,249,0.85); }
+.ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
+.ed-link:hover { background-size:100% 1px; }
+.btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
+.btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
+.btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); }
+.card { background:white; border:1px solid var(--rr-line); transition:all 200ms ease; }
+.card:hover { border-color:var(--rr-ink); transform:translateY(-2px); }
+.prose { max-width:42rem; }
+.prose p { margin-bottom:1.5rem; line-height:1.75; color:var(--rr-ink); }
+.prose h2 { font-family:'Fraunces',serif; font-size:1.75rem; font-weight:400; letter-spacing:-0.025em; margin-top:3rem; margin-bottom:1rem; color:var(--rr-ink); }
+.prose h3 { font-size:1.125rem; font-weight:600; margin-top:2rem; margin-bottom:0.75rem; color:var(--rr-ink); }
+.prose strong { font-weight:600; }
+.prose a { color:var(--rr-teal-700); text-decoration:underline; text-underline-offset:2px; }
+.prose a:hover { color:var(--rr-ink); }
+.prose blockquote { border-left:3px solid var(--rr-teal-700); padding-left:1.5rem; margin:2rem 0; color:var(--rr-muted); font-style:italic; }
+.tier-card { background:white; border:1px solid var(--rr-line); padding:1.5rem; margin-bottom:1rem; }
+.tier-card h3 { margin-top:0; }
+.mobile-menu { transition:all 300ms ease-in-out; }
+@media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
+</style>
+</head>
+<body>
+<header class="header-sticky sticky top-0 z-50 border-b border-line">
+<nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
+<a href="../index.html" class="flex items-center gap-2"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg><span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span></a>
+<div class="hidden md:flex items-center gap-8 text-sm">
+<a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a>
+<a href="../fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a>
+<a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Calculator</a>
+<a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a>
+<a href="../blog.html" class="ed-link font-medium text-teal">Blog</a>
+<a href="../about.html" class="ed-link font-medium text-ink hover:text-teal">About</a>
+<a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+</div>
+<button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button>
+</nav>
+<div class="mobile-menu hidden md:hidden border-t border-line bg-paper">
+<div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
+<a href="../brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a>
+<a href="../fix.html" class="py-2 font-medium text-ink hover:text-teal">Troubleshoot</a>
+<a href="../calculator.html" class="py-2 font-medium text-ink hover:text-teal">Calculator</a>
+<a href="../locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a>
+<a href="../blog.html" class="py-2 font-medium text-teal">Blog</a>
+<a href="../about.html" class="py-2 font-medium text-ink hover:text-teal">About</a>
+<a href="../calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a>
+</div>
+</div>
+</header>
+
+<article class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-24">
+<div class="max-w-3xl">
+<nav class="flex items-center gap-2 text-xs text-muted mb-8"><a href="../index.html" class="ed-link hover:text-teal">Home</a><span>/</span><a href="../blog.html" class="ed-link hover:text-teal">Blog</a><span>/</span><span class="text-ink">Battery health</span></nav>
+<p class="eyebrow mb-4">Decision guide · May 2026</p>
+<h1 class="display text-3xl md:text-5xl lg:text-6xl text-ink mb-6">Battery health explained: when to replace, when to wait.</h1>
+<p class="text-lg text-muted leading-relaxed mb-12">Your phone says 82% battery health. Does that mean replace it now? Next month? Never? Here's the plain-English answer — no jargon, no upselling, just the honest decision framework from people who replace batteries every day.</p>
+</div>
+
+<div class="prose max-w-3xl">
+
+<h2>What "battery health" actually means</h2>
+<p>Every rechargeable lithium-ion battery degrades over time. Each charge cycle (drain to ~20%, charge to ~80%, repeat) causes a tiny, irreversible chemical change inside the cell. After enough cycles, the battery can't hold as much charge as it could when it was new.</p>
+
+<p><strong>Battery health is a percentage of original capacity.</strong> When your iPhone says "Maximum Capacity: 87%", it means the battery can now hold 87% of the charge it held on day one. A phone that lasted 12 hours new now lasts roughly 10.5 hours under the same usage. Samsung shows this in Settings → Battery → Battery Health (or via third-party apps like AccuBattery on older models).</p>
+
+<p>This number only goes down. It never goes back up. There is no software update, no calibration trick, and no "battery conditioning" technique that reverses chemical degradation. Anyone claiming otherwise is selling something.</p>
+
+<h2>The degradation curve — it's not linear</h2>
+<p>This is the part most people get wrong. Battery degradation isn't a straight line from 100% to 0%. It follows a curve:</p>
+
+<p><strong>Year 1 (100% → ~92%):</strong> The steepest single-year drop. New batteries lose capacity fastest in their first year because the initial chemical reactions are the most aggressive. This is normal and not a sign of a defective battery.</p>
+
+<p><strong>Year 2 (92% → ~85%):</strong> The decline slows down. Most phones are still perfectly usable at 85% — you'll notice slightly shorter battery life but it's not disruptive. This is where most 2-year-old phones sit.</p>
+
+<p><strong>Year 3 (85% → ~78%):</strong> This is the decision zone. The difference between 85% and 78% is where most people start actually feeling the degradation — charging mid-afternoon instead of making it to bedtime, or the phone dying during a long call.</p>
+
+<p><strong>Year 4+ (below 75%):</strong> Below 75%, the phone becomes actively annoying. Unexpected shutdowns at 15–20% indicated charge (the battery can't deliver the voltage the processor demands under load), aggressive throttling on iPhones (Apple's performance management kicks in), and "all-day battery" becoming "half-day battery."</p>
+
+<h2>The decision framework — honest and simple</h2>
+
+<div class="tier-card">
+<h3>Above 85%: don't replace</h3>
+<p class="text-muted" style="margin-bottom:0">Your battery is fine. It's degraded — every battery is, from day one — but not enough to justify the cost or risk of a replacement. If you're worried about battery life at this level, the issue is more likely a rogue app, background refresh settings, or screen brightness than the battery itself. Check Settings → Battery → Battery Usage by App before spending money on a replacement.</p>
+</div>
+
+<div class="tier-card">
+<h3>80–85%: watch it, don't panic</h3>
+<p class="text-muted" style="margin-bottom:0">You're in the monitoring zone. The battery is measurably weaker than new but still functional for most people. If you're a light user (calls, messaging, light browsing), you're fine for another 6–12 months. If you're a heavy user (camera, GPS, gaming, always-on display), you're probably already feeling it — and a replacement now is reasonable. At an independent shop, battery replacement runs <strong>$69–$169 AUD</strong> depending on the model (see our <a href="../calculator.html">calculator</a> for your specific phone).</p>
+</div>
+
+<div class="tier-card">
+<h3>75–80%: replace it</h3>
+<p class="text-muted" style="margin-bottom:0">This is the sweet spot for replacement. The battery is degraded enough that you're genuinely losing usable hours every day, but the phone itself is still worth keeping. A $79–$129 battery replacement on a 3-year-old Samsung or a $89–$149 replacement on an iPhone buys you another 18–24 months of full-day battery life. That's dramatically better value than a $1,500 new phone.</p>
+</div>
+
+<div class="tier-card">
+<h3>Below 75%: replace it or replace the phone</h3>
+<p class="text-muted" style="margin-bottom:0">Below 75%, the battery is failing. Unexpected shutdowns, aggressive throttling, and half-day battery life are now normal. A battery replacement still makes sense if the rest of the phone is in good shape — screens, cameras, speakers, charging port all working. If the phone has multiple issues (cracked screen AND degraded battery AND slow charging), the total repair cost may approach the price of a good refurbished replacement, and that changes the equation. See our <a href="repair-vs-replace-decision-guide.html">repair-vs-replace guide</a> for that calculation.</p>
+</div>
+
+<h2>iPhone vs Samsung: the same chemistry, different transparency</h2>
+
+<p><strong>iPhones</strong> show battery health clearly: Settings → Battery → Battery Health & Charging → Maximum Capacity. Apple also shows whether performance management (throttling) has been activated, and gives you the option to disable it (at the risk of unexpected shutdowns). iPhones display a "Service" recommendation when health drops below 80%, but this is a suggestion, not a command — the phone still works.</p>
+
+<p><strong>Samsung phones</strong> added a native battery health indicator in One UI 5 (2023): Settings → Battery → Battery Health. Older Samsung phones need a third-party app like AccuBattery or the hidden diagnostic dialer code (*#0228#). Samsung doesn't throttle as aggressively as Apple — they let the phone run at full speed and accept the risk of shutdowns instead. This means a degraded Samsung battery is more likely to give you unexpected shutdowns than slow performance.</p>
+
+<p><strong>Google Pixel</strong> phones show battery health in Settings → Battery → Battery Health. The Pixel approach is similar to Samsung — less throttling, more shutdown risk.</p>
+
+<h2>What actually kills batteries faster</h2>
+
+<p>Some usage patterns accelerate degradation meaningfully. None of these are catastrophic on their own, but they compound:</p>
+
+<p><strong>Heat is the biggest enemy.</strong> Charging in direct sunlight, using GPS navigation while charging in a hot car mount, or gaming while plugged in — all of these push the battery temperature above 35°C, which accelerates the chemical degradation. A phone that's regularly charged hot will hit 80% health 6–12 months earlier than one charged at room temperature.</p>
+
+<p><strong>Keeping the battery at 100% for long periods.</strong> Lithium-ion cells are most stressed at very high and very low charge states. Overnight charging to 100% and leaving it there for 8 hours isn't ideal. Most modern phones (iPhone 13+, Samsung S21+, Pixel 6+) have "optimised charging" that learns your schedule and holds at 80% until just before you wake up — leave this feature on.</p>
+
+<p><strong>Fast charging isn't as bad as people think.</strong> Modern fast-charging protocols (USB-PD, Samsung Adaptive Fast Charging, Apple's 20W+) manage heat and voltage carefully. The measurable difference in battery degradation between fast charging and slow charging is about 2–3% over two years — real but not worth worrying about unless you're keeping the phone for 4+ years.</p>
+
+<p><strong>Deep discharges (below 10%) are worse than fast charging.</strong> Letting the battery drain to 0% regularly puts more stress on the cell than fast charging does. If you're the type who runs your phone dead every night, that habit is costing you more battery life than the charging speed.</p>
+
+<h2>The real cost of waiting too long</h2>
+
+<p>Here's the thing people miss: a battery replacement at 78% health costs the same as a battery replacement at 65% health. But the phone you get back is dramatically different. Replace at 78% and you get a phone that feels new again — full-day battery, no throttling, no shutdowns. Replace at 65% and you get the same result, but you've spent 6–12 extra months suffering with a dying phone for no reason.</p>
+
+<p>The sweet spot is <strong>75–80%</strong>. Below that, every week you wait is a week of worse battery life that you'll never get back. The replacement cost doesn't go down by waiting — but your quality of life does.</p>
+
+<h2>What a battery replacement actually costs</h2>
+
+<p>At an independent repair shop in Australia (2026 pricing):</p>
+
+<p><strong>iPhones:</strong> $89–$149 AUD depending on model. iPhone SE and iPhone 12 sit at the low end; iPhone 15 Pro Max at the high end. Apple's authorised service runs $129–$179 (battery is one of the few repairs where authorised pricing is close to independent). For specific pricing, see our model pages: <a href="../repair/iphone-15-pro-max.html">iPhone 15 Pro Max</a>, <a href="../repair/iphone-14-pro-max.html">14 Pro Max</a>, <a href="../repair/iphone-13.html">iPhone 13</a>, <a href="../repair/iphone-12.html">iPhone 12</a>, <a href="../repair/iphone-se-3.html">iPhone SE</a>.</p>
+
+<p><strong>Samsung Galaxy S-series:</strong> $69–$159 AUD. The standard S23/S25 sit at the low end (~$69–$109); the S25 Ultra and S26 Ultra at the high end (~$99–$159). Samsung authorised service runs $109–$219. See: <a href="../repair/samsung-galaxy-s25-ultra.html">S25 Ultra</a>, <a href="../repair/samsung-galaxy-s25.html">S25</a>, <a href="../repair/samsung-galaxy-s23.html">S23</a>, <a href="../repair/samsung-galaxy-s26-ultra.html">S26 Ultra</a>.</p>
+
+<p>Independent shop turnaround: 20–45 minutes if the part is in stock. It's one of the fastest, cheapest repairs available — and one of the highest-value in terms of how much usable life it adds to your phone.</p>
+
+<h2>The bottom line</h2>
+
+<p>Battery health is a number, not a crisis. Above 85%, you're fine. Between 80–85%, start paying attention. Below 80%, a $69–$149 battery replacement is one of the best investments you can make in a phone you're otherwise happy with. Below 75%, stop waiting — you're suffering for no reason.</p>
+
+<p>Use the <a href="../calculator.html">cost calculator</a> to see what a battery replacement costs for your specific model, or browse our <a href="../brands.html">brand pages</a> for detailed pricing.</p>
+
+</div>
+</article>
+
+<section class="bg-teal-900 text-white">
+<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+<div class="md:col-span-8"><p class="eyebrow text-amber mb-3">Related reading</p><h2 class="display text-3xl md:text-5xl mb-3">More from the blog</h2></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/10 mt-10">
+<a href="repair-vs-replace-decision-guide.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Decision guide</p><h3 class="font-serif text-xl text-white mb-3">Repair vs replace: the honest calculation</h3><p class="text-white/60 text-sm">When fixing makes sense and when it doesn't — the framework, not the sales pitch.</p></a>
+<a href="samsung-fingerprint-sensor-screen-replacement-guide.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Samsung repair</p><h3 class="font-serif text-xl text-white mb-3">Fingerprint sensors &amp; screen replacement</h3><p class="text-white/60 text-sm">Why Samsung fingerprints die after screen swaps, and how to prevent it.</p></a>
+</div>
+</div>
+</section>
+
+<footer class="bg-teal-900 text-white border-t border-white/10">
+<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+<div class="md:col-span-5"><div class="flex items-center gap-2 mb-4"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg><span class="font-serif text-2xl font-medium">RepairRange</span></div><p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice. Researched by people who actually do this work.</p></div>
+<div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="../fix.html" class="text-white/80 hover:text-amber">Troubleshooting</a></li><li><a href="../calculator.html" class="text-white/80 hover:text-amber">Cost Calculator</a></li><li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="../blog.html" class="text-white/80 hover:text-amber">Blog</a></li></ul></div>
+<div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="../about.html" class="text-white/80 hover:text-amber">About RepairRange</a></li><li><a href="../tools/software-stack-for-repair-shops.html" class="text-white/80 hover:text-amber">Tools we recommend</a></li><li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy Policy</a></li><li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms of Use</a></li></ul></div>
+</div>
+<div class="pt-8 border-t border-white/15"><p class="text-white/50 text-xs leading-relaxed mb-3 max-w-3xl"><strong class="text-white/70">Affiliate disclosure:</strong> RepairRange may earn a commission when you click links to retailers (including Amazon) and complete a purchase. This never affects the price you pay or our editorial recommendations.</p><div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p><p class="text-white/50 text-xs">Not affiliated with Apple, Samsung, Google, or any device manufacturer.</p></div></div>
+</div>
+</footer>
+<script>
+if (window.lucide) window.lucide.createIcons();
+document.addEventListener('DOMContentLoaded', () => { const btn = document.querySelector('.mobile-menu-button'); const menu = document.querySelector('.mobile-menu'); if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden')); });
+</script>
+</body>
+</html>
