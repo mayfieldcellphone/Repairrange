@@ -189,7 +189,7 @@
                             <button type="submit" class="btn btn-primary w-full justify-center">Show repair costs <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
                         </form>
                         <p class="text-xs text-muted mt-4">
-                            Or browse by <a href="brands.html" class="ed-link font-medium text-teal">brand</a>, <a href="fix.html" class="ed-link font-medium text-teal">symptom</a>, or <a href="locations.html" class="ed-link font-medium text-teal">city</a>.
+                            Or browse by <a href="brands.html" class="ed-link font-medium text-teal">brand</a>, <a href="fix.html" class="ed-link font-medium text-teal">symptom</a>, <a href="locations.html" class="ed-link font-medium text-teal">city</a>, or see <a href="repair/phone-repair-costs-australia.html" class="ed-link font-medium text-teal">all 75+ models</a>.
                         </p>
                     </div>
                 </div>
@@ -216,6 +216,10 @@
                     <h2 class="display text-3xl md:text-5xl text-ink">Popular this month</h2>
                 </div>
                 <a href="brands.html" class="hidden md:inline-flex items-center gap-2 text-sm font-medium text-ink ed-link">See all brands <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            </div>
+            <div class="bg-white border border-line p-5 mb-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                <div><p class="font-serif text-lg text-ink">Looking for a different model?</p><p class="text-sm text-muted">75+ phones with screen, battery, and back glass pricing — searchable and filterable.</p></div>
+                <a href="repair/phone-repair-costs-australia.html" class="btn btn-primary whitespace-nowrap">All models &amp; pricing <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-line">
                 <a href="repair/iphone-15-pro-max.html" class="card bg-white p-7 group">
@@ -449,9 +453,9 @@
             const slug = q.replace(/\+/g, ' ').replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, '-');
             const tryHref = 'repair/' + slug + '.html';
             fetch(tryHref, { method: 'HEAD' }).then(r => {
-                window.location.href = r.ok ? tryHref : 'brands.html?q=' + encodeURIComponent(q);
+                window.location.href = r.ok ? tryHref : 'repair/phone-repair-costs-australia.html?q=' + encodeURIComponent(q);
             }).catch(() => {
-                window.location.href = 'brands.html?q=' + encodeURIComponent(q);
+                window.location.href = 'repair/phone-repair-costs-australia.html?q=' + encodeURIComponent(q);
             });
         }
     </script>
