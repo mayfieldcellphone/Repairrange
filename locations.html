@@ -147,8 +147,8 @@
 
     <section class="bg-white border-b border-line">
         <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
-            <div class="flex items-end justify-between mb-10">
-                <div><p class="eyebrow mb-3">More cities</p><h2 class="display text-3xl md:text-5xl text-ink">Regional &amp; suburban</h2></div>
+            <div id="city-spotlight"></div>
+            <div class="flex items-end justify-between mb-10"><h2 class="display text-3xl md:text-5xl text-ink">Regional &amp; suburban</h2></div>
                 <p class="text-sm text-muted hidden md:block">25 cities &middot; estimated from nearest survey</p>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-px bg-line">
@@ -176,6 +176,45 @@
             <p class="text-xs text-muted mt-5">Pricing is estimated from the nearest surveyed metro. For exact model pricing, use the <a href="calculator.html" class="ed-link text-teal">calculator</a> or <a href="repair/phone-repair-costs-australia.html" class="ed-link text-teal">all-models comparison</a>.</p>
         </div>
     </section>
+
+<script>
+const CITY_SPOTLIGHT=[
+{s:'gold-coast',n:'Gold Coast',st:'QLD',tag:'Tourist premium — shop inland for better rates',scr:'$387–$601',bat:'$91–$142',angle:'Surfers Paradise shops charge 10-15% more than Robina or Nerang'},
+{s:'canberra',n:'Canberra',st:'ACT',tag:'Government town — authorised service is popular',scr:'$387–$600',bat:'$86–$145',angle:'Strong authorised-service culture means independents compete harder on price'},
+{s:'hobart',n:'Hobart',st:'TAS',tag:'Island freight premium — parts from Melbourne',scr:'$419–$650',bat:'$93–$156',angle:'2-3 day parts freight from Melbourne adds 5-10% to repair costs'},
+{s:'geelong',n:'Geelong',st:'VIC',tag:'Victoria\'s second city — Melbourne parts, lower rent',scr:'$362–$557',bat:'$83–$129',angle:'Same Melbourne parts supply but 5-10% lower pricing'},
+{s:'wollongong',n:'Wollongong',st:'NSW',tag:'University town — high student demand',scr:'$379–$588',bat:'$85–$142',angle:'UOW student population drives demand for budget repairs'},
+{s:'townsville',n:'Townsville',st:'QLD',tag:'Tropical climate — more humidity repairs',scr:'$398–$618',bat:'$93–$146',angle:'Humidity and heat drive more charging-port corrosion and water damage'},
+{s:'cairns',n:'Cairns',st:'QLD',tag:'Far North QLD — most remote major city',scr:'$409–$635',bat:'$96–$150',angle:'3-5 day parts freight from Brisbane — highest repair costs in QLD'},
+{s:'darwin',n:'Darwin',st:'NT',tag:'Most remote capital — highest freight costs',scr:'$447–$693',bat:'$100–$167',angle:'Longest parts freight in Australia + tropical climate = highest repair costs nationally'},
+{s:'sunshine-coast',n:'Sunshine Coast',st:'QLD',tag:'Brisbane-competitive pricing',scr:'$379–$571',bat:'$86–$135',angle:'Growing metro with Brisbane-level parts access and competitive pricing'},
+{s:'ballarat',n:'Ballarat',st:'VIC',tag:'Regional Victoria — Melbourne supply chain',scr:'$350–$539',bat:'$80–$125',angle:'10-15% below Melbourne CBD with the same parts quality'},
+{s:'launceston',n:'Launceston',st:'TAS',tag:'Northern Tasmania — smaller market',scr:'$425–$660',bat:'$95–$159',angle:'Even smaller than Hobart — fewer shops, slightly higher pricing'},
+{s:'penrith',n:'Penrith',st:'NSW',tag:'Western Sydney value pricing',scr:'$359–$557',bat:'$80–$134',angle:'10-15% below Sydney CBD with the same parts and expertise'},
+];
+const cityWeek=Math.floor((Date.now()-new Date('2026-01-05').getTime())/(7*24*60*60*1000));
+const cs=CITY_SPOTLIGHT[cityWeek%CITY_SPOTLIGHT.length];
+const cSpot=document.getElementById('city-spotlight');
+if(cSpot){
+cSpot.innerHTML=`
+<div style="border:1px solid var(--rr-line);background:white;padding:1.5rem;display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:center;margin-bottom:2rem">
+<div>
+<div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.75rem;flex-wrap:wrap">
+<span class="eyebrow" style="margin:0">✨ City spotlight</span>
+<span style="font-size:0.6875rem;font-weight:600;color:#0F766E;background:#E0F2F1;padding:0.125rem 0.5rem;border-radius:1px;letter-spacing:0.03em">${cs.tag}</span>
+</div>
+<h2 class="font-serif text-2xl md:text-3xl text-ink" style="margin-bottom:0.5rem">${cs.n}, ${cs.st}</h2>
+<p class="text-sm text-muted" style="margin-bottom:0.75rem">${cs.angle}</p>
+<div style="display:flex;gap:1.5rem;flex-wrap:wrap;font-size:0.8125rem">
+<div><span class="text-muted">Screen (17 PM)</span> <span class="font-mono tnum text-ink" style="font-weight:600">${cs.scr}</span></div>
+<div><span class="text-muted">Battery</span> <span class="font-mono tnum text-ink" style="font-weight:600">${cs.bat}</span></div>
+</div>
+</div>
+<a href="locations/city.html?c=${cs.s}" class="btn btn-primary" style="white-space:nowrap">View ${cs.n} pricing \u2192</a>
+</div>
+<p style="font-size:0.6875rem;color:var(--rr-muted);margin-bottom:1.5rem">Spotlight rotates weekly — highlighting cities across Australia. <a href="locations/city.html?c=${cs.s}" class="ed-link text-teal">Full ${cs.n} pricing \u2192</a></p>`;
+}
+</script>
 
     <section class="bg-white border-b border-line">
         <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
