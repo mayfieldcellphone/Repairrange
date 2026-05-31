@@ -2,207 +2,317 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.repairrange.io/index.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.repairrange.io/blog.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.repairrange.io/about.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.repairrange.io/blog.html</loc>
-    <lastmod>2026-05-21</lastmod>
+    <loc>https://www.repairrange.io/blog/battery-health-when-to-replace.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/blog/repair-vs-replace-decision-guide.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/blog/sample-post.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/blog/samsung-fingerprint-sensor-screen-replacement-guide.html</loc>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/blog/screen-quality-tiers-oem-aftermarket-refurbished-explained.html</loc>
-    <lastmod>2026-05-21</lastmod>
-    <priority>0.7</priority>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/brands.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/brands/apple.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/brands/google.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/brands/samsung.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/calculator.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/fix.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/fix/battery-drains-fast.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/fix/black-screen.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/fix/charging-port.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/fix/cracked-screen-still-works.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/fix/dropped-and-broken.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/fix/ghost-touch.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/fix/green-lines.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/fix/overheating.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/fix/water-damage.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/fix/wont-turn-on.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/locations.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/locations/adelaide.html</loc>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/locations/brisbane.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/locations/melbourne.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/locations/newcastle.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/locations/perth.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/locations/sydney.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/privacy.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/repair/iphone-12.html</loc>
-    <lastmod>2026-05-21</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/repair/iphone-13-pro-max.html</loc>
-    <lastmod>2026-05-21</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/repair/iphone-13.html</loc>
-    <lastmod>2026-05-21</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/repair/iphone-14-pro-max.html</loc>
-    <lastmod>2026-05-21</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/repair/iphone-14-pro.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/repair/iphone-14.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/repair/iphone-15-plus.html</loc>
-    <lastmod>2026-05-21</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/repair/iphone-15-pro-max.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/repair/iphone-15-pro.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/repair/iphone-15.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/repair/iphone-17-pro-max.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/repair/iphone-17-pro.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/repair/iphone-17.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/repair/iphone-se-3.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/repair/model.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/repair/phone-repair-costs-australia.html</loc>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/repair/pixel-8-pro.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/repair/samsung-galaxy-s23-plus.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/repair/samsung-galaxy-s23-ultra.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/repair/samsung-galaxy-s23.html</loc>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/repair/samsung-galaxy-s24-ultra.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/repair/samsung-galaxy-s24.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/repair/samsung-galaxy-s25-edge.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/repair/samsung-galaxy-s25-plus.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/repair/samsung-galaxy-s25-ultra.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/repair/samsung-galaxy-s25.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/repair/samsung-galaxy-s26-plus.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/repair/samsung-galaxy-s26-ultra.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.repairrange.io/repair/samsung-galaxy-s26.html</loc>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/terms.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.repairrange.io/tools/software-stack-for-repair-shops.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <priority>0.5</priority>
   </url>
 </urlset>
