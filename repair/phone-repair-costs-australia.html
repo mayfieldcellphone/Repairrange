@@ -74,6 +74,7 @@ html{scroll-behavior:smooth}body{font-family:'Inter',system-ui,sans-serif;color:
 
 <section class="bg-white border-b border-line">
 <div class="max-w-6xl mx-auto px-6 md:px-8 py-8">
+<div id="spotlight" class="mb-8"></div>
 <div class="flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
 <div class="flex flex-wrap gap-2" id="filters">
 <button class="filter-btn active" data-filter="all">All <span class="count-badge" id="count-all"></span></button>
@@ -244,6 +245,45 @@ const MODELS = [
   {b:'other',n:'Motorola Razr 50 Ultra',scr:'$399–$599',bat:'$99–$139',g:null},
   {b:'other',n:'Sony Xperia 1 VI',scr:'$299–$449',bat:'$89–$129',g:null},
 ];
+
+// Spotlight rotation — changes weekly, no manual work needed
+const SPOTLIGHT_MODELS = [
+  {s:'samsung-galaxy-a54',n:'Galaxy A54',b:'samsung',scr:'$139–$209',bat:'$69–$99',bk:'$89–$149',tag:'Most searched budget Samsung'},
+  {s:'samsung-galaxy-z-fold-5',n:'Galaxy Z Fold 5',b:'samsung',scr:'$549–$849',bat:'$109–$159',bk:'$169–$269',tag:'Most expensive screen replacement'},
+  {s:'pixel-9-pro-xl',n:'Pixel 9 Pro XL',b:'google',scr:'$329–$479',bat:'$99–$139',bk:'$149–$239',tag:'Most DIY-friendly flagship'},
+  {s:'iphone-17-air',n:'iPhone 17 Air',b:'apple',scr:'$289–$429',bat:'$89–$139',bk:'$119–$199',tag:'Thinnest iPhone ever'},
+  {s:'samsung-galaxy-z-flip-6',n:'Galaxy Z Flip 6',b:'samsung',scr:'$329–$489',bat:'$99–$139',bk:'$149–$229',tag:'Most popular foldable'},
+  {s:'nothing-phone-2',n:'Nothing Phone (2)',b:'other',scr:'$179–$269',bat:'$79–$109',bk:'$99–$159',tag:'Transparent back — unique repair'},
+  {s:'xiaomi-14-ultra',n:'Xiaomi 14 Ultra',b:'other',scr:'$289–$429',bat:'$89–$129',bk:'$129–$199',tag:'Leica optics — camera module warning'},
+  {s:'oneplus-13',n:'OnePlus 13',b:'other',scr:'$249–$379',bat:'$89–$119',bk:'$119–$189',tag:'Flagship killer pricing'},
+  {s:'samsung-galaxy-a55',n:'Galaxy A55',b:'samsung',scr:'$149–$229',bat:'$69–$99',bk:'$99–$159',tag:'Best value mid-range repair'},
+  {s:'pixel-9',n:'Pixel 9',b:'google',scr:'$249–$369',bat:'$89–$119',bk:'$109–$179',tag:'iFixit genuine parts available'},
+  {s:'motorola-razr-50-ultra',n:'Motorola Razr 50 Ultra',b:'other',scr:'$399–$599',bat:'$99–$139',bk:'$149–$229',tag:'Foldable clamshell — niche repair'},
+  {s:'iphone-17e',n:'iPhone 17e',b:'apple',scr:'$179–$269',bat:'$79–$109',bk:'$99–$159',tag:'Most affordable current-gen iPhone'},
+];
+const weekNum = Math.floor((Date.now() - new Date('2026-01-01').getTime()) / (7*24*60*60*1000));
+const spot = SPOTLIGHT_MODELS[weekNum % SPOTLIGHT_MODELS.length];
+const spotEl = document.getElementById('spotlight');
+if(spotEl){
+  const brandColors={apple:'#1C1917',samsung:'#0F766E',google:'#d97706',other:'#78716C'};
+  spotEl.innerHTML=`
+  <div style="border:1px solid var(--rr-line);background:white;padding:1.5rem;display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:center">
+    <div>
+      <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.75rem;flex-wrap:wrap">
+        <span class="eyebrow" style="margin:0">✨ Model spotlight</span>
+        <span style="font-size:0.6875rem;font-weight:600;color:${brandColors[spot.b]||'#78716C'};background:${spot.b==='samsung'?'#E0F2F1':spot.b==='apple'?'#F5F5F4':spot.b==='google'?'#FEF3C7':'#F5F5F4'};padding:0.125rem 0.5rem;border-radius:1px;letter-spacing:0.03em">${spot.tag}</span>
+      </div>
+      <h2 class="font-serif text-2xl md:text-3xl text-ink" style="margin-bottom:0.5rem">${spot.n}</h2>
+      <div style="display:flex;gap:1.5rem;flex-wrap:wrap;font-size:0.8125rem;margin-top:0.75rem">
+        <div><span class="text-muted">Screen</span> <span class="font-mono tnum text-ink" style="font-weight:600">${spot.scr}</span></div>
+        <div><span class="text-muted">Battery</span> <span class="font-mono tnum text-ink" style="font-weight:600">${spot.bat}</span></div>
+        <div><span class="text-muted">Back glass</span> <span class="font-mono tnum text-ink" style="font-weight:600">${spot.bk}</span></div>
+      </div>
+    </div>
+    <a href="model.html?m=${spot.s}" class="btn btn-primary" style="white-space:nowrap">View details \u2192</a>
+  </div>
+  <p style="font-size:0.6875rem;color:var(--rr-muted);margin-top:0.5rem">Spotlight rotates weekly — highlighting models across brands and price points. <a href="model.html?m=${spot.s}" class="ed-link text-teal">Full ${spot.n} pricing →</a></p>`;
+}
 
 let activeFilter = 'all';
 function slugify(b,n){let s=n.toLowerCase().replace(/[()]/g,'').replace(/\+/g,'plus').replace(/\s+/g,'-').replace(/--+/g,'-').replace(/-$/,'');if(b==='samsung'&&!s.startsWith('samsung'))s='samsung-'+s;if(b==='apple'&&s==='iphone-se-3rd-gen')s='iphone-se-3';return s;}
