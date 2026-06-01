@@ -238,7 +238,7 @@ function submitForm(){
   };
   // For now: mailto fallback. Replace with Google Form or API endpoint later.
   const body=Object.entries(data).map(([k,v])=>k+': '+v).join('\n');
-  window.location.href='mailto:directory@repairrange.io?subject=Listing Application: '+encodeURIComponent(data.shopName)+'&body='+encodeURIComponent(body);
+  window.location.href='mailto:info@repairrange.io?subject=Listing Application: '+encodeURIComponent(data.shopName)+'&body='+encodeURIComponent(body);
   document.getElementById('listing-form').style.display='none';
   document.getElementById('success-msg').style.display='block';
 }
