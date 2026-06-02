@@ -379,6 +379,15 @@
         </div>
     </section>
 
+    <!-- THIS WEEK — AUTO-ROTATING CONTENT -->
+    <section class="bg-paper-2 border-t border-b border-line">
+        <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
+            <p class="eyebrow mb-3">This week on RepairRange</p>
+            <h2 class="display text-3xl md:text-4xl text-ink mb-10">Fresh content, no manual work.</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="hp-spotlights"></div>
+        </div>
+    </section>
+
     <!-- CTA STRIP -->
     <section class="bg-teal-900 text-white">
         <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
@@ -458,6 +467,35 @@
                 window.location.href = 'repair/phone-repair-costs-australia.html?q=' + encodeURIComponent(q);
             });
         }
+        // Homepage spotlights — rotate weekly
+        (function(){
+            const MODELS=[{s:'samsung-galaxy-a54',n:'Galaxy A54',tag:'Most searched budget Samsung',scr:'$139\u2013$209'},{s:'pixel-9-pro-xl',n:'Pixel 9 Pro XL',tag:'Most DIY-friendly flagship',scr:'$329\u2013$479'},{s:'iphone-17-air',n:'iPhone 17 Air',tag:'Thinnest iPhone ever',scr:'$289\u2013$429'},{s:'samsung-galaxy-z-fold-6',n:'Galaxy Z Fold 6',tag:'Most expensive screen repair',scr:'$599\u2013$899'},{s:'nothing-phone-2',n:'Nothing Phone (2)',tag:'Transparent back \u2014 unique repair',scr:'$179\u2013$269'},{s:'xiaomi-14-ultra',n:'Xiaomi 14 Ultra',tag:'Leica optics \u2014 camera module warning',scr:'$289\u2013$429'},{s:'oneplus-13',n:'OnePlus 13',tag:'Flagship killer pricing',scr:'$249\u2013$379'},{s:'iphone-16-pro-max',n:'iPhone 16 Pro Max',tag:'20 months old \u2014 mature parts',scr:'$329\u2013$499'},{s:'samsung-galaxy-a55',n:'Galaxy A55',tag:'Best value mid-range',scr:'$149\u2013$229'},{s:'motorola-razr-50-ultra',n:'Motorola Razr 50 Ultra',tag:'Foldable clamshell',scr:'$399\u2013$599'},{s:'pixel-9',n:'Pixel 9',tag:'iFixit genuine parts',scr:'$249\u2013$369'},{s:'iphone-17e',n:'iPhone 17e',tag:'Most affordable current iPhone',scr:'$179\u2013$269'}];
+            const CITIES=[{s:'gold-coast',n:'Gold Coast, QLD',tag:'Tourist premium \u2014 shop inland'},{s:'hobart',n:'Hobart, TAS',tag:'Island freight premium'},{s:'darwin',n:'Darwin, NT',tag:'Most remote capital'},{s:'geelong',n:'Geelong, VIC',tag:'Melbourne parts, lower rent'},{s:'canberra',n:'Canberra, ACT',tag:'Government town'},{s:'cairns',n:'Cairns, QLD',tag:'Far North QLD'},{s:'wollongong',n:'Wollongong, NSW',tag:'University town'},{s:'townsville',n:'Townsville, QLD',tag:'Tropical climate'},{s:'ballarat',n:'Ballarat, VIC',tag:'Regional Victoria'},{s:'penrith',n:'Penrith, NSW',tag:'Western Sydney value'},{s:'sunshine-coast',n:'Sunshine Coast, QLD',tag:'Brisbane-competitive'},{s:'launceston',n:'Launceston, TAS',tag:'Northern Tasmania'}];
+            const w=Math.floor((Date.now()-new Date('2026-01-01').getTime())/(7*24*60*60*1000));
+            const m=MODELS[w%MODELS.length];
+            const c=CITIES[(w+3)%CITIES.length];
+            const el=document.getElementById('hp-spotlights');
+            if(el)el.innerHTML=`
+            <a href="repair/model.html?m=${m.s}" class="bg-white border border-line p-6 hover:border-ink transition-colors group">
+                <div class="flex items-center gap-2 mb-3"><span class="eyebrow" style="margin:0">\u2728 Model spotlight</span></div>
+                <h3 class="font-serif text-xl text-ink mb-1">${m.n}</h3>
+                <p class="text-xs text-muted mb-3">${m.tag}</p>
+                <p class="font-mono tnum text-sm text-ink">Screen: ${m.scr}</p>
+                <p class="text-xs text-teal font-medium mt-3 group-hover:underline">View pricing \u2192</p>
+            </a>
+            <a href="locations/city.html?c=${c.s}" class="bg-white border border-line p-6 hover:border-ink transition-colors group">
+                <div class="flex items-center gap-2 mb-3"><span class="eyebrow" style="margin:0">\ud83d\udccd City spotlight</span></div>
+                <h3 class="font-serif text-xl text-ink mb-1">${c.n}</h3>
+                <p class="text-xs text-muted mb-3">${c.tag}</p>
+                <p class="text-xs text-teal font-medium mt-3 group-hover:underline">View city pricing \u2192</p>
+            </a>
+            <a href="list-your-shop.html" class="bg-white border border-line p-6 hover:border-ink transition-colors group" style="border-left:3px solid var(--rr-amber-500)">
+                <div class="flex items-center gap-2 mb-3"><span class="eyebrow" style="margin:0;color:var(--rr-amber-600)">For shop owners</span></div>
+                <h3 class="font-serif text-xl text-ink mb-1">List your shop</h3>
+                <p class="text-xs text-muted mb-3">Get found by customers searching for repair costs in your city. Free first month.</p>
+                <p class="text-xs font-medium mt-3 group-hover:underline" style="color:var(--rr-amber-600)">Learn more \u2192</p>
+            </a>`;
+        })();
     </script>
 </body>
 </html>
