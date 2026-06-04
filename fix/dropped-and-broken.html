@@ -1,245 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Just dropped your phone? A 90-second triage to work out what's actually damaged — screen, panel, internals — before you panic or pay. Honest 2026 AU repair costs.">
-<meta name="author" content="RepairRange">
-<meta name="robots" content="index, follow">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Dropped your phone and it's broken? Here's how to assess the damage, what each type of repair costs in Australia, and whether it's worth fixing or time to replace.">
+<meta name="author" content="RepairRange"><meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.repairrange.io/fix/dropped-and-broken.html">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://www.repairrange.io/fix/dropped-and-broken.html">
-<meta property="og:title" content="Dropped Your Phone — Now What? A 90-Second Triage | RepairRange">
-<meta property="og:description" content="A quick triage to work out what a drop actually damaged, and what each outcome costs to fix in 2026.">
-<meta property="og:site_name" content="RepairRange">
-<title>Dropped Your Phone — Now What? A 90-Second Triage | RepairRange</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<title>Dropped and broken phone — assess damage and repair cost — RepairRange</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "Dropped Your Phone: A 90-Second Triage",
-  "description": "A structured triage to identify what a phone drop actually damaged — screen, display, touch, internals — with 2026 Australian repair pricing.",
-  "author": { "@type": "Organization", "name": "RepairRange" },
-  "publisher": { "@type": "Organization", "name": "RepairRange" }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type":"Question","name":"I dropped my phone — what should I check first?","acceptedAnswer":{"@type":"Answer","text":"Work through it in order: outer glass, then the display (lines, blotches, dark areas), then touch (tap across the whole screen), then function (calls, cameras, charging, buttons). This tells you whether it's a cosmetic chip or something that needs repair, and which repair."}},
-    {"@type":"Question","name":"My phone looks fine after a drop — could it still be damaged?","acceptedAnswer":{"@type":"Answer","text":"Yes. Internal damage can exist with no visible crack — the impact can fracture the display panel, loosen a flex cable, or affect the battery. Run the full check (display, touch, cameras, charging) rather than relying on the outside looking okay."}},
-    {"@type":"Question","name":"How much does drop damage cost to fix in Australia?","acceptedAnswer":{"@type":"Answer","text":"It depends entirely on what broke. A screen/display replacement is roughly $150 to $490 in 2026 by model; a battery is $69 to $149; a charging port $90 to $190. A cosmetic glass chip with everything working may not need a repair at all."}},
-    {"@type":"Question","name":"Should I keep using a phone after a bad drop?","acceptedAnswer":{"@type":"Answer","text":"If the only damage is a contained glass chip and display, touch and functions all work, short-term use with a screen protector is reasonable. Stop and get it checked if there are display artifacts, touch problems, lifting glass, sharp edges, or any battery swelling or heat."}}
-  ]
-}
-</script>
-<style>
-:root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#E7E5E4; --rr-paper:#FAFAF9; --rr-paper-2:#F5F5F4; }
-html { scroll-behavior: smooth; }
-body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
-.font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
-.font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
-.text-teal{color:var(--rr-teal-700);} .bg-teal{background:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
-.text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
-.text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
-.bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
-.display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
-.eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
-.header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(250,250,249,0.85); }
-.ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
-.ed-link:hover { background-size:100% 1px; }
-.prose-rr { color:var(--rr-ink); }
-.prose-rr p { margin:0 0 1.25rem; line-height:1.75; color:#3f3a36; }
-.prose-rr h2 { font-family:'Fraunces',serif; font-size:1.875rem; letter-spacing:-0.02em; margin:3rem 0 1rem; color:var(--rr-ink); }
-.prose-rr h3 { font-family:'Fraunces',serif; font-size:1.3rem; margin:2rem 0 0.75rem; color:var(--rr-ink); }
-.prose-rr strong { color:var(--rr-ink); font-weight:600; }
-.prose-rr ul { margin:0 0 1.25rem; padding-left:0; list-style:none; }
-.prose-rr li { position:relative; padding-left:1.5rem; margin-bottom:0.65rem; line-height:1.7; color:#3f3a36; }
-.prose-rr li::before { content:''; position:absolute; left:0; top:0.6em; width:6px; height:6px; background:var(--rr-teal-700); }
-.step { display:flex; gap:1.25rem; padding:1.5rem 0; border-bottom:1px solid var(--rr-line); }
-.step:last-child { border-bottom:none; }
-.step-n { font-family:'JetBrains Mono',monospace; font-size:0.875rem; color:var(--rr-teal-700); font-weight:500; flex-shrink:0; width:2rem; }
-.btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
-.btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
-.btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); }
-.btn-ghost { background:transparent; color:var(--rr-ink); border:1px solid var(--rr-ink); }
-.btn-ghost:hover { background:var(--rr-ink); color:var(--rr-paper); }
-.tnum { font-variant-numeric: tabular-nums; }
-.callout { border-left:3px solid var(--rr-teal-700); background:var(--rr-paper-2); padding:1.25rem 1.5rem; margin:2rem 0; }
-.callout-warn { border-left:3px solid var(--rr-amber-500); background:#fffbeb; padding:1.25rem 1.5rem; margin:2rem 0; }
-.mobile-menu { transition:all 300ms ease-in-out; }
-@media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
-details > summary::-webkit-details-marker { display:none; } details > summary::marker { display:none; }
-</style>
+<script src="https://cdn.tailwindcss.com"></script><script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Dropped and broken phone — assess damage and repair cost","description":"How to assess drop damage, what each repair costs, and whether to fix or replace.","author":{"@type":"Organization","name":"RepairRange"},"publisher":{"@type":"Organization","name":"RepairRange"},"datePublished":"2026-06-04"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does it cost to fix a dropped phone in Australia?","acceptedAnswer":{"@type":"Answer","text":"It depends entirely on what broke. Cracked screen only: $109–$619. Cracked back glass: $89–$259. Screen + back glass: $198–$878 combined. If the phone won't turn on after the drop, it could be a disconnected cable ($0–$39 to reseat), dead screen ($109–$619), or logic board damage ($149–$399). A repair shop diagnostic ($0–$39) identifies exactly what needs fixing before you commit."}},{"@type":"Question","name":"Is it worth repairing a dropped phone?","acceptedAnswer":{"@type":"Answer","text":"Use the 40% rule: if the total repair cost exceeds 40% of what a good refurbished replacement would cost, replacing usually makes more sense. For a 2-year-old flagship with a cracked screen ($249 repair), repair almost always wins. For a 4-year-old mid-range phone with a cracked screen AND dead battery AND broken port ($400+ total), replacing is usually better."}}]}</script>
+<style>:root{--rr-teal-900:#0c4a45;--rr-teal-700:#0F766E;--rr-amber-600:#d97706;--rr-amber-500:#F59E0B;--rr-ink:#1C1917;--rr-muted:#78716C;--rr-line:#E7E5E4;--rr-paper:#FAFAF9;--rr-paper-2:#F5F5F4}html{scroll-behavior:smooth}body{font-family:'Inter',system-ui,sans-serif;color:var(--rr-ink);background:var(--rr-paper);-webkit-font-smoothing:antialiased}.font-serif{font-family:'Fraunces','Iowan Old Style','Palatino',serif;font-feature-settings:'ss01'}.text-teal{color:var(--rr-teal-700)}.bg-teal-900{background:var(--rr-teal-900)}.text-amber{color:var(--rr-amber-600)}.text-ink{color:var(--rr-ink)}.text-muted{color:var(--rr-muted)}.border-line{border-color:var(--rr-line)}.bg-paper{background:var(--rr-paper)}.display{font-family:'Fraunces',serif;font-weight:400;letter-spacing:-0.025em;line-height:1.05}.eyebrow{font-size:0.75rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--rr-teal-700)}.header-sticky{backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);background:rgba(250,250,249,0.85)}.ed-link{background-image:linear-gradient(currentColor,currentColor);background-position:0 100%;background-repeat:no-repeat;background-size:0% 1px;transition:background-size 220ms ease}.ed-link:hover{background-size:100% 1px}.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.75rem 1.25rem;font-weight:600;font-size:0.9375rem;transition:all 200ms ease;border-radius:2px}.btn-primary{background:var(--rr-amber-500);color:var(--rr-ink);box-shadow:0 1px 0 var(--rr-amber-600)}.btn-primary:hover{background:var(--rr-amber-600);color:white}.card{background:white;border:1px solid var(--rr-line);transition:all 200ms ease}.card:hover{border-color:var(--rr-ink);transform:translateY(-2px)}.prose{max-width:42rem}.prose p{margin-bottom:1.5rem;line-height:1.75}.prose h2{font-family:'Fraunces',serif;font-size:1.75rem;font-weight:400;letter-spacing:-0.025em;margin-top:3rem;margin-bottom:1rem}.prose strong{font-weight:600}.prose a{color:var(--rr-teal-700);text-decoration:underline;text-underline-offset:2px}.step-card{background:white;border:1px solid var(--rr-line);padding:1.5rem;margin-bottom:1rem}.step-card h3{margin-top:0;font-size:1.125rem;font-weight:600;margin-bottom:0.75rem}.mobile-menu{transition:all 300ms ease-in-out}@media(max-width:768px){.mobile-menu.hidden{display:none}.mobile-menu:not(.hidden){display:block}}</style>
 </head>
 <body>
+<header class="header-sticky sticky top-0 z-50 border-b border-line"><nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between"><a href="../index.html" class="flex items-center gap-2"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg><span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span></a><div class="hidden md:flex items-center gap-8 text-sm"><a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="ed-link font-medium text-teal">Troubleshoot</a><a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a><a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="ed-link font-medium text-ink hover:text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote</a></div><button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button></nav><div class="mobile-menu hidden md:hidden border-t border-line bg-paper"><div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1"><a href="../brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="py-2 font-medium text-teal">Troubleshoot</a><a href="../calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a><a href="../locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="py-2 font-medium text-ink hover:text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a></div></div></header>
 
-<header class="header-sticky sticky top-0 z-50 border-b border-line">
-<nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
-<a href="../index.html" class="flex items-center gap-2 group">
-<svg width="28" height="28" viewBox="0 0 28 28" fill="none" class="flex-shrink-0"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg>
-<span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span>
-</a>
-<div class="hidden md:flex items-center gap-8 text-sm">
-<a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a>
-<a href="../fix.html" class="ed-link font-medium text-teal">Troubleshoot</a>
-<a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Calculator</a>
-<a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a>
-<a href="../about.html" class="ed-link font-medium text-ink hover:text-teal">About</a>
-<a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-</div>
-<button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button>
-</nav>
-<div class="mobile-menu hidden md:hidden border-t border-line bg-paper">
-<div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
-<a href="../brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a>
-<a href="../fix.html" class="py-2 font-medium text-teal">Troubleshoot</a>
-<a href="../calculator.html" class="py-2 font-medium text-ink hover:text-teal">Calculator</a>
-<a href="../locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a>
-<a href="../about.html" class="py-2 font-medium text-ink hover:text-teal">About</a>
-<a href="../calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a>
-</div>
-</div>
-</header>
-
-<article>
-<section class="bg-paper border-b border-line">
-<div class="max-w-3xl mx-auto px-6 md:px-8 py-12 md:py-16">
-<nav class="flex items-center gap-2 text-xs text-muted mb-8">
-<a href="../index.html" class="ed-link hover:text-teal">Home</a><span>/</span>
-<a href="../fix.html" class="ed-link hover:text-teal">Troubleshoot</a><span>/</span>
-<span class="text-ink">Dropped &amp; broken</span>
-</nav>
-<p class="eyebrow mb-4">Troubleshooting · Impact damage</p>
-<h1 class="display text-4xl md:text-6xl text-ink mb-6">You dropped it. Now what?</h1>
-<p class="text-lg md:text-xl text-muted leading-relaxed">Before you panic or assume the worst, spend 90 seconds finding out what's <em>actually</em> wrong. A drop can mean anything from "no damage" to "new screen" — and knowing which changes everything about what to do next.</p>
-</div>
-</section>
-
-<section class="bg-white">
-<div class="max-w-3xl mx-auto px-6 md:px-8 py-12 md:py-16 prose-rr">
-
-<div class="callout">
-<p style="margin:0;"><strong>Check in this order:</strong> glass → display → touch → functions. Each step rules a category in or out, and together they tell you whether you're looking at nothing, a cosmetic chip, or a specific repair — before you spend anything or assume the phone's gone.</p>
+<article class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-24">
+<div class="max-w-3xl">
+<nav class="flex items-center gap-2 text-xs text-muted mb-8"><a href="../index.html" class="ed-link hover:text-teal">Home</a><span>/</span><a href="../fix.html" class="ed-link hover:text-teal">Troubleshoot</a><span>/</span><span class="text-ink">Dropped &amp; broken</span></nav>
+<p class="eyebrow mb-4">Damage assessment · June 2026</p>
+<h1 class="display text-3xl md:text-5xl lg:text-6xl text-ink mb-6">Dropped your phone — how bad is it?</h1>
+<p class="text-lg text-muted leading-relaxed mb-12">You dropped your phone and something is broken. Maybe the screen cracked, maybe the back glass shattered, maybe it went completely dead. Here's how to assess the damage, figure out what needs fixing, and decide whether it's worth the repair.</p>
 </div>
 
-<h2>The 90-second triage</h2>
-<div style="margin:1.5rem 0;">
-<div class="step">
-<span class="step-n">01</span>
-<div><h3 style="margin:0 0 0.5rem;">The glass (5 seconds)</h3><p style="margin:0;">Look at front and back in good light. Cosmetic chip or hairline? Note it but don't panic — glass damage alone, with everything else working, may not even need a repair. Spider-web shatter or lifting glass with sharp edges is more urgent (cut risk, and it weakens the screen for the next knock).</p></div>
-</div>
-<div class="step">
-<span class="step-n">02</span>
-<div><h3 style="margin:0 0 0.5rem;">The display (15 seconds)</h3><p style="margin:0;">Look <em>past</em> the glass at the image itself. Coloured lines, dark blooms, blotches, flicker, or dead areas mean the OLED panel is damaged — the costliest screen category, and it can be there with <em>no</em> visible crack. If you see coloured lines specifically, the <a href="green-lines.html" class="ed-link text-teal">green-lines guide</a> covers it. Pure black but the phone clearly still works? See the <a href="black-screen.html" class="ed-link text-teal">black-screen guide</a>.</p></div>
-</div>
-<div class="step">
-<span class="step-n">03</span>
-<div><h3 style="margin:0 0 0.5rem;">The touch (20 seconds)</h3><p style="margin:0;">Open the keyboard or notes and tap deliberately across the <em>whole</em> screen, corners included. Dead zones, mis-taps, or the phone tapping itself mean the digitiser is affected — see the <a href="ghost-touch.html" class="ed-link text-teal">ghost-touch guide</a>. Touch problems won't improve on their own and tend to spread.</p></div>
-</div>
-<div class="step">
-<span class="step-n">04</span>
-<div><h3 style="margin:0 0 0.5rem;">The functions (50 seconds)</h3><p style="margin:0;">Quick pass: make a call (earpiece + mic), front and rear cameras (look for blur, spots, won't-focus — a hard drop can knock a camera), plug in to confirm it charges, press every physical button, check Wi-Fi/signal. And feel the phone — any heat or a swelling/bulging back is a battery red flag: stop using it and get it seen promptly.</p></div>
-</div>
+<div class="prose max-w-3xl">
+
+<h2>Step 1: Assess the damage</h2>
+<p>Work through this checklist. Each "yes" is a separate repair that needs pricing:</p>
+
+<div class="step-card">
+<h3>Is the front screen cracked?</h3>
+<p class="text-muted" style="margin-bottom:0"><strong>Glass only (touch and display work fine):</strong> Cosmetic damage. Safe to use with a screen protector. Fix when convenient. Cost: <a href="../repair/phone-repair-costs-australia.html" style="color:#0F766E">$109–$619</a> depending on model. See our <a href="cracked-screen-still-works.html" style="color:#0F766E">cracked screen guide</a>.<br><strong>Glass + display damage (black spots, lines, colour bleeding):</strong> Fix soon — damage spreads. Same cost range.<br><strong>Glass + display + touch dead zones:</strong> Fix now — <a href="ghost-touch.html" style="color:#0F766E">ghost touch</a> is a security risk.</p>
 </div>
 
-<h2>Reading your result</h2>
-<ul>
-<li><strong>Everything works, just a cosmetic chip:</strong> you may not need a repair at all. A screen protector over the chip to contain it and watching for changes is a reasonable call — see <a href="cracked-screen-still-works.html" class="ed-link text-teal">cracked screen, still works</a> for the full decision.</li>
-<li><strong>Display or touch affected:</strong> that's a screen-level repair. The good news is it's a known quantity with a known price, not a mystery.</li>
-<li><strong>A function is out (camera, charging, calls):</strong> that specific part likely took the hit — often repairable on its own, sometimes cheaper than a screen.</li>
-<li><strong>Heat or battery swelling:</strong> the one "don't wait" result. Stop using it and get it checked promptly — a damaged lithium cell is a safety issue, not just a repair.</li>
-</ul>
-
-<h2>What the repairs cost</h2>
-<p>Because "dropped" isn't one fault, the price depends entirely on what the triage found. <strong>2026 Australian independent-shop guide:</strong></p>
-<ul>
-<li><strong>Cosmetic chip, all working:</strong> potentially $0 — a decision, not a mandatory repair.</li>
-<li><strong>Screen / display assembly:</strong> roughly <span class="font-mono tnum">$150–$490</span> by model.</li>
-<li><strong>Battery (if swollen/damaged):</strong> roughly <span class="font-mono tnum">$69–$149</span>.</li>
-<li><strong>Charging port:</strong> roughly <span class="font-mono tnum">$90–$190</span>.</li>
-<li><strong>Camera / other single component:</strong> varies — often less than a screen; a shop diagnosis pins it down.</li>
-</ul>
-<p>For your exact model, the <a href="../calculator.html" class="ed-link text-teal font-medium">cost calculator</a> and <a href="../brands.html" class="ed-link text-teal font-medium">model pages</a> give specific ranges.</p>
-
-<h2>DIY, honestly</h2>
-<p>The triage above is the DIY — and it's the genuinely valuable part, because it turns "I dropped my phone" into a specific, priced problem instead of dread. Knowing exactly what broke is what stops you over-paying or panic-replacing a phone that only has a cosmetic chip.</p>
-<p>The repairs themselves we won't walk through: screen, battery and port jobs are all fragile, adhesive-and-heat work with part re-pairing on modern phones, and a hard drop often damages more than one thing in ways only a proper inspection reveals. <strong>Once the triage tells you what's wrong, the fix is a shop job</strong> — but you'll walk in knowing what you're talking about and what it should cost, which is the whole point of doing the triage first.</p>
-
-<div class="callout">
-<p style="margin:0;"><strong>In Newcastle or the Hunter?</strong> A drop that damaged more than one thing is exactly where an in-person check pays off — a shop can confirm the full picture in one visit rather than you discovering a second fault later. Our <a href="../locations/newcastle.html" class="ed-link text-teal font-medium">Newcastle repair guide</a> has honest local pricing and a workshop we're comfortable pointing people to.</p>
+<div class="step-card">
+<h3>Is the back glass cracked?</h3>
+<p class="text-muted" style="margin-bottom:0">Cosmetic only — doesn't affect phone function. But it compromises water resistance and drops resale value by $200–$400. Cost: $89–$259 at independent shops. Apple's back glass pricing ($119–$159) is competitive on iPhone 12+.</p>
 </div>
 
-<h2>Common questions</h2>
-<div class="space-y-3 mt-6" style="margin-bottom:1rem;">
-<details class="border border-line bg-white group">
-<summary class="cursor-pointer p-5 flex items-start justify-between gap-4 list-none"><span class="font-serif text-lg text-ink">It looks completely fine after the drop — am I in the clear?</span><i data-lucide="plus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 group-open:hidden"></i><i data-lucide="minus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 hidden group-open:block"></i></summary>
-<div class="px-5 pb-5 text-sm leading-relaxed" style="color:#3f3a36;">Probably, but run the full check anyway — internal damage (panel fracture, loose flex, battery, camera) can exist with no visible crack. 90 seconds confirms it rather than finding out the hard way next week.</div>
-</details>
-<details class="border border-line bg-white group">
-<summary class="cursor-pointer p-5 flex items-start justify-between gap-4 list-none"><span class="font-serif text-lg text-ink">The back feels warm / looks slightly bulged since the drop — okay?</span><i data-lucide="plus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 group-open:hidden"></i><i data-lucide="minus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 hidden group-open:block"></i></summary>
-<div class="px-5 pb-5 text-sm leading-relaxed" style="color:#3f3a36;">That's the one result to act on quickly. Heat or a swelling/bulging back points to a damaged battery, which is a safety issue — stop using and charging it and get it looked at promptly rather than waiting.</div>
-</details>
-<details class="border border-line bg-white group">
-<summary class="cursor-pointer p-5 flex items-start justify-between gap-4 list-none"><span class="font-serif text-lg text-ink">Only the camera is blurry now — is that from the drop?</span><i data-lucide="plus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 group-open:hidden"></i><i data-lucide="minus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 hidden group-open:block"></i></summary>
-<div class="px-5 pb-5 text-sm leading-relaxed" style="color:#3f3a36;">Quite possibly — a hard impact can knock a camera module's optical stabilisation or focus. It's often a standalone repair, frequently cheaper than a screen. Note it for the shop so they check the camera specifically.</div>
-</details>
-<details class="border border-line bg-white group">
-<summary class="cursor-pointer p-5 flex items-start justify-between gap-4 list-none"><span class="font-serif text-lg text-ink">Should I claim on insurance or just repair it?</span><i data-lucide="plus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 group-open:hidden"></i><i data-lucide="minus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 hidden group-open:block"></i></summary>
-<div class="px-5 pb-5 text-sm leading-relaxed" style="color:#3f3a36;">Do the maths once the triage tells you the damage: compare a repair quote against your excess plus any premium impact. For a single screen or battery, an out-of-pocket repair is often cheaper than a claim's excess. For multi-part damage, a claim can win. Get the repair number first so you can compare.</div>
-</details>
+<div class="step-card">
+<h3>Is the phone completely dead?</h3>
+<p class="text-muted" style="margin-bottom:0">Try a <a href="wont-turn-on.html" style="color:#0F766E">force restart</a> first (fixes 60–70% of "dead after drop" cases). If it vibrates or makes sounds but the screen is black, see our <a href="black-screen.html" style="color:#0F766E">black screen guide</a> — likely a disconnected display cable ($0–$39 to reseat). If completely unresponsive, it may be a disconnected battery cable (free reseat), dead screen, or logic board damage. A shop diagnostic ($0–$39) will identify which.</p>
 </div>
 
+<div class="step-card">
+<h3>Is the camera cracked or foggy?</h3>
+<p class="text-muted" style="margin-bottom:0">Camera lens replacement: $49–$149. Camera module replacement (if the sensor is damaged): $99–$399 depending on the model and number of cameras. Flagship phones with multi-camera arrays (iPhone Pro, Samsung Ultra) are the most expensive. If only the protective lens glass is cracked (camera still takes clear photos), the lens cover replacement is the cheaper fix.</p>
 </div>
-</section>
 
-<section class="bg-teal-900 text-white">
-<div class="max-w-3xl mx-auto px-6 md:px-8 py-14 md:py-16">
-<p class="eyebrow text-amber mb-3">Next step</p>
-<h2 class="display text-3xl md:text-4xl mb-4">Know what broke? Get the real number.</h2>
-<p class="text-white/70 mb-8 max-w-xl">The triage turned a panic into a priced problem. Check your model's ranges, then a local shop can confirm the full picture in one visit.</p>
-<div class="flex flex-col sm:flex-row gap-3">
-<a href="../calculator.html" class="btn btn-primary">Open the cost calculator <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-<a href="../locations/newcastle.html" class="btn btn-ghost" style="color:white;border-color:rgba(255,255,255,0.4);">Find a local shop</a>
+<div class="step-card">
+<h3>Are buttons or the frame bent?</h3>
+<p class="text-muted" style="margin-bottom:0">Frame damage from a severe impact can bend the chassis, crack internal connections, or shift component alignment. Mild frame bending can sometimes be straightened by a technician. Severe frame damage may not be economically repairable — the repair cost approaches the phone's replacement value.</p>
 </div>
+
+<h2>Step 2: Add up the costs</h2>
+
+<p>Most drops cause one type of damage (usually the screen). But bad drops — off a balcony, out of a car, face-down onto concrete — can cause multiple simultaneous issues. Add up the individual repair costs to get the total:</p>
+
+<p><strong>Example 1 — Corner drop, screen crack only:</strong> Galaxy S24 screen replacement: $199–$289. One repair, straightforward, almost always worth doing.</p>
+
+<p><strong>Example 2 — Face-down drop, screen + back glass:</strong> iPhone 15 Pro Max screen ($329–$479) + back glass ($139–$229) = $468–$708 total. Expensive but still worth it for a phone that was worth $1,200+ new and $700+ refurbished.</p>
+
+<p><strong>Example 3 — Severe drop, screen + camera + frame:</strong> iPhone 14 screen ($269–$389) + camera module ($199–$299) + frame straightening ($50–$100) = $518–$788. At this point, check the <a href="../blog/repair-vs-replace-decision-guide.html">repair vs replace calculation</a>.</p>
+
+<h2>Step 3: Repair or replace?</h2>
+
+<p>Use the <strong>40% rule</strong>: if the total repair cost exceeds 40% of what a good refurbished replacement would cost, replacing often makes more sense. Here's the math:</p>
+
+<p><strong>Phone is 0–2 years old:</strong> Almost always repair. The phone has significant remaining life, and a single repair (even $400+) is cheaper than a new phone ($1,000–$2,000).</p>
+
+<p><strong>Phone is 2–3 years old:</strong> Repair if it's a single issue. Replace if multiple things broke simultaneously (screen + camera + battery = time to upgrade).</p>
+
+<p><strong>Phone is 4+ years old:</strong> Repair only for simple, cheap fixes (battery, port). A $300 screen replacement on a 4-year-old phone that's worth $200 refurbished doesn't make financial sense.</p>
+
+<p>For the detailed decision framework, see our <a href="../blog/repair-vs-replace-decision-guide.html">repair vs replace guide</a>. For pricing on your specific model, use the <a href="../calculator.html">repair calculator</a> or browse <a href="../repair/phone-repair-costs-australia.html">all 75+ models with pricing</a>.</p>
+
+<h2>Before you go to the shop</h2>
+
+<p><strong>Back up your data.</strong> If the phone still works (even with a cracked screen), back up to iCloud/Google Drive immediately. If the screen is dead but the phone is on, connect to a computer via USB to back up. Once the phone is at a repair shop, things can go wrong — always back up before handing it over.</p>
+
+<p><strong>Know your model.</strong> The exact model affects the price significantly. iPhone 15 vs iPhone 15 Pro vs iPhone 15 Pro Max can be a $200 difference in screen replacement cost. Check Settings → About (if the screen works) or the model number engraved on the SIM tray.</p>
+
+<p><strong>Get a quote before committing.</strong> A good shop will diagnose for free or $20–$39 and give you a quote before starting work. Never agree to a repair without knowing the price upfront. If a shop won't quote before starting, find a different shop.</p>
+
+<p><strong>Ask about warranty.</strong> Under <a href="../blog/phone-repair-warranty-australia-consumer-rights.html">Australian Consumer Law</a>, every repair comes with automatic consumer guarantees. A screen that develops dead pixels within weeks of replacement is the shop's responsibility. Ask what warranty they offer — 90 days minimum is the standard for reputable shops.</p>
+
 </div>
-</section>
 </article>
 
-<footer class="bg-teal-900 text-white border-t border-white/10">
-<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
-<div class="md:col-span-5">
-<div class="flex items-center gap-2 mb-4">
-<svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg>
-<span class="font-serif text-2xl font-medium">RepairRange</span>
-</div>
-<p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice. Researched by people who actually do this work.</p>
-</div>
-<div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="../fix.html" class="text-white/80 hover:text-amber">Troubleshooting</a></li><li><a href="../calculator.html" class="text-white/80 hover:text-amber">Cost Calculator</a></li><li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li></ul></div>
-<div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="../about.html" class="text-white/80 hover:text-amber">About RepairRange</a></li><li><a href="../tools/software-stack-for-repair-shops.html" class="text-white/80 hover:text-amber">Tools we recommend</a></li><li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy Policy</a></li><li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms of Use</a></li></ul></div>
-</div>
-<div class="pt-8 border-t border-white/15">
-<p class="text-white/50 text-xs leading-relaxed mb-3 max-w-3xl"><strong class="text-white/70">Affiliate disclosure:</strong> RepairRange may earn a commission when you click links to retailers (including Amazon) and complete a purchase. This never affects the price you pay or our editorial recommendations.</p>
-<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p><p class="text-white/50 text-xs">Not affiliated with Apple, Samsung, Google, or any device manufacturer.</p></div>
-</div>
-</div>
-</footer>
+<section class="bg-teal-900 text-white"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10"><a href="cracked-screen-still-works.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Related</p><h3 class="font-serif text-xl text-white mb-3">Cracked but working</h3><p class="text-white/60 text-sm">Fix now, wait, or live with it?</p></a><a href="wont-turn-on.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Emergency</p><h3 class="font-serif text-xl text-white mb-3">Phone won't turn on</h3><p class="text-white/60 text-sm">Dead after a drop? Try these 6 fixes.</p></a><a href="../blog/repair-vs-replace-decision-guide.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Blog</p><h3 class="font-serif text-xl text-white mb-3">Repair vs replace</h3><p class="text-white/60 text-sm">The 40% rule for the math.</p></a></div></div></section>
 
-<script>
-if (window.lucide) window.lucide.createIcons();
-document.addEventListener('DOMContentLoaded', () => {
-const btn = document.querySelector('.mobile-menu-button');
-const menu = document.querySelector('.mobile-menu');
-if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
-});
-</script>
+<footer class="bg-teal-900 text-white border-t border-white/10"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12"><div class="md:col-span-5"><div class="flex items-center gap-2 mb-4"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg><span class="font-serif text-2xl font-medium">RepairRange</span></div><p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice.</p></div><div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="../repair/phone-repair-costs-australia.html" class="text-white/80 hover:text-amber">All Models</a></li><li><a href="../calculator.html" class="text-white/80 hover:text-amber">Calculator</a></li><li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="../blog.html" class="text-white/80 hover:text-amber">Blog</a></li></ul></div><div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="../about.html" class="text-white/80 hover:text-amber">About</a></li><li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy</a></li><li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms</a></li></ul></div></div><div class="pt-8 border-t border-white/15"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. Not affiliated with Apple, Samsung, Google, or any manufacturer.</p></div></div></footer>
+<script>if(window.lucide)window.lucide.createIcons();document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.mobile-menu-button'),m=document.querySelector('.mobile-menu');if(b&&m)b.addEventListener('click',()=>m.classList.toggle('hidden'))});</script>
 </body>
 </html>
