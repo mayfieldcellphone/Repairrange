@@ -1,242 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Phone screen stays black but it still rings, vibrates or makes sounds? That points to the display, not a dead phone. How to confirm it and what a 2026 AU repair costs.">
-<meta name="author" content="RepairRange">
-<meta name="robots" content="index, follow">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Phone screen is black but the phone is still on? You can hear sounds, feel vibrations, but see nothing. Here's how to tell if it's the screen, the connector, or something worse.">
+<meta name="author" content="RepairRange"><meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.repairrange.io/fix/black-screen.html">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://www.repairrange.io/fix/black-screen.html">
-<meta property="og:title" content="Black Screen but Phone Still Works — What It Means | RepairRange">
-<meta property="og:description" content="Screen black but it still rings? That's a display fault, not a dead phone. How to confirm and what it costs to fix in 2026.">
-<meta property="og:site_name" content="RepairRange">
-<title>Black Screen but Phone Still Works — What It Means | RepairRange</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<title>Phone screen black but still on — diagnosis and fix — RepairRange</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "Black Screen but Phone Still Works: What It Means",
-  "description": "Diagnosing a phone with a black screen that still rings or vibrates — display vs. backlight vs. won't-boot — and 2026 Australian repair pricing.",
-  "author": { "@type": "Organization", "name": "RepairRange" },
-  "publisher": { "@type": "Organization", "name": "RepairRange" }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type":"Question","name":"My phone screen is black but it still rings — what's wrong?","acceptedAnswer":{"@type":"Answer","text":"If it rings, vibrates, makes sounds or your computer detects it, the phone itself is alive and it's a display fault — typically a failed screen, a damaged display flex cable, or a backlight failure. That's a screen repair, not a dead phone."}},
-    {"@type":"Question","name":"How do I tell a black screen from a phone that won't turn on?","acceptedAnswer":{"@type":"Answer","text":"Call the phone from another number, or plug it into a computer. Ringing, vibration, sounds, or the computer recognising it means the phone is on and the display is the problem. Total silence with no response after charging and a forced restart points to a power or boot fault instead."}},
-    {"@type":"Question","name":"How much does it cost to fix a black screen?","acceptedAnswer":{"@type":"Answer","text":"If the display assembly needs replacing, an Australian independent shop in 2026 typically charges roughly $150 to $490 by model. Occasionally it's a cheaper loose-flex-cable reseat — a shop can tell quickly, which is why a diagnosis is worth more than a guess here."}},
-    {"@type":"Question","name":"Will a forced restart fix a black screen?","acceptedAnswer":{"@type":"Answer","text":"It's worth trying and it's free — a frozen system can show a black screen and recover with a forced restart. If the phone still functions (rings, vibrates) but the screen stays dark after a restart, it's a hardware display fault."}}
-  ]
-}
-</script>
+<script src="https://cdn.tailwindcss.com"></script><script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Phone screen black but still on — diagnosis and fix","description":"How to diagnose a black screen when the phone is still running — screen failure, connector issue, or logic board.","author":{"@type":"Organization","name":"RepairRange"},"publisher":{"@type":"Organization","name":"RepairRange"},"datePublished":"2026-06-04"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why is my phone screen black but I can hear it?","acceptedAnswer":{"@type":"Answer","text":"The phone is on but the display has failed. The three most common causes are: a disconnected display cable (from a drop impact — cheapest fix, $0–$39 to reseat), a dead backlight or OLED panel (requires screen replacement, $109–$619), or a logic board display IC failure (requires board-level repair, $149–$399). A force restart fixes the rare software-caused black screen."}},{"@type":"Question","name":"Can I recover data from a phone with a black screen?","acceptedAnswer":{"@type":"Answer","text":"Usually yes. If the phone is on (vibrates, makes sounds), your data is intact — the screen is just not showing it. Connect the phone to a computer via USB. iPhone: iTunes/Finder can back up the phone even with a black screen if you've previously trusted the computer. Android: USB file transfer works if USB debugging was enabled. A repair shop can also connect an external display on some models to access the phone."}}]}</script>
 <style>
-:root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#E7E5E4; --rr-paper:#FAFAF9; --rr-paper-2:#F5F5F4; }
-html { scroll-behavior: smooth; }
-body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
-.font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
-.font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
-.text-teal{color:var(--rr-teal-700);} .bg-teal{background:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
-.text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
-.text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
-.bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
-.display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
-.eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
-.header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(250,250,249,0.85); }
-.ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
-.ed-link:hover { background-size:100% 1px; }
-.prose-rr { color:var(--rr-ink); }
-.prose-rr p { margin:0 0 1.25rem; line-height:1.75; color:#3f3a36; }
-.prose-rr h2 { font-family:'Fraunces',serif; font-size:1.875rem; letter-spacing:-0.02em; margin:3rem 0 1rem; color:var(--rr-ink); }
-.prose-rr h3 { font-family:'Fraunces',serif; font-size:1.3rem; margin:2rem 0 0.75rem; color:var(--rr-ink); }
-.prose-rr strong { color:var(--rr-ink); font-weight:600; }
-.prose-rr ul { margin:0 0 1.25rem; padding-left:0; list-style:none; }
-.prose-rr li { position:relative; padding-left:1.5rem; margin-bottom:0.65rem; line-height:1.7; color:#3f3a36; }
-.prose-rr li::before { content:''; position:absolute; left:0; top:0.6em; width:6px; height:6px; background:var(--rr-teal-700); }
-.step { display:flex; gap:1.25rem; padding:1.5rem 0; border-bottom:1px solid var(--rr-line); }
-.step:last-child { border-bottom:none; }
-.step-n { font-family:'JetBrains Mono',monospace; font-size:0.875rem; color:var(--rr-teal-700); font-weight:500; flex-shrink:0; width:2rem; }
-.btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
-.btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
-.btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); }
-.btn-ghost { background:transparent; color:var(--rr-ink); border:1px solid var(--rr-ink); }
-.btn-ghost:hover { background:var(--rr-ink); color:var(--rr-paper); }
-.tnum { font-variant-numeric: tabular-nums; }
-.callout { border-left:3px solid var(--rr-teal-700); background:var(--rr-paper-2); padding:1.25rem 1.5rem; margin:2rem 0; }
-.callout-warn { border-left:3px solid var(--rr-amber-500); background:#fffbeb; padding:1.25rem 1.5rem; margin:2rem 0; }
-.mobile-menu { transition:all 300ms ease-in-out; }
-@media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
-details > summary::-webkit-details-marker { display:none; } details > summary::marker { display:none; }
+:root{--rr-teal-900:#0c4a45;--rr-teal-700:#0F766E;--rr-amber-600:#d97706;--rr-amber-500:#F59E0B;--rr-ink:#1C1917;--rr-muted:#78716C;--rr-line:#E7E5E4;--rr-paper:#FAFAF9;--rr-paper-2:#F5F5F4}
+html{scroll-behavior:smooth}body{font-family:'Inter',system-ui,sans-serif;color:var(--rr-ink);background:var(--rr-paper);-webkit-font-smoothing:antialiased}.font-serif{font-family:'Fraunces','Iowan Old Style','Palatino',serif;font-feature-settings:'ss01'}.font-mono{font-family:'JetBrains Mono',ui-monospace,monospace}.text-teal{color:var(--rr-teal-700)}.bg-teal-900{background:var(--rr-teal-900)}.text-amber{color:var(--rr-amber-600)}.text-ink{color:var(--rr-ink)}.text-muted{color:var(--rr-muted)}.border-line{border-color:var(--rr-line)}.bg-paper{background:var(--rr-paper)}.bg-paper-2{background:var(--rr-paper-2)}.display{font-family:'Fraunces',serif;font-weight:400;letter-spacing:-0.025em;line-height:1.05}.eyebrow{font-size:0.75rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--rr-teal-700)}.header-sticky{backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);background:rgba(250,250,249,0.85)}.ed-link{background-image:linear-gradient(currentColor,currentColor);background-position:0 100%;background-repeat:no-repeat;background-size:0% 1px;transition:background-size 220ms ease}.ed-link:hover{background-size:100% 1px}.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.75rem 1.25rem;font-weight:600;font-size:0.9375rem;transition:all 200ms ease;border-radius:2px}.btn-primary{background:var(--rr-amber-500);color:var(--rr-ink);box-shadow:0 1px 0 var(--rr-amber-600)}.btn-primary:hover{background:var(--rr-amber-600);color:white}.card{background:white;border:1px solid var(--rr-line);transition:all 200ms ease}.card:hover{border-color:var(--rr-ink);transform:translateY(-2px)}.prose{max-width:42rem}.prose p{margin-bottom:1.5rem;line-height:1.75}.prose h2{font-family:'Fraunces',serif;font-size:1.75rem;font-weight:400;letter-spacing:-0.025em;margin-top:3rem;margin-bottom:1rem}.prose strong{font-weight:600}.prose a{color:var(--rr-teal-700);text-decoration:underline;text-underline-offset:2px}.step-card{background:white;border:1px solid var(--rr-line);padding:1.5rem;margin-bottom:1rem}.step-card h3{margin-top:0;font-size:1.125rem;font-weight:600;margin-bottom:0.75rem}.mobile-menu{transition:all 300ms ease-in-out}@media(max-width:768px){.mobile-menu.hidden{display:none}.mobile-menu:not(.hidden){display:block}}
 </style>
 </head>
 <body>
+<header class="header-sticky sticky top-0 z-50 border-b border-line"><nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between"><a href="../index.html" class="flex items-center gap-2"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg><span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span></a><div class="hidden md:flex items-center gap-8 text-sm"><a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="ed-link font-medium text-teal">Troubleshoot</a><a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a><a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="ed-link font-medium text-ink hover:text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote</a></div><button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button></nav><div class="mobile-menu hidden md:hidden border-t border-line bg-paper"><div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1"><a href="../brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="py-2 font-medium text-teal">Troubleshoot</a><a href="../calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a><a href="../locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="py-2 font-medium text-ink hover:text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a></div></div></header>
 
-<header class="header-sticky sticky top-0 z-50 border-b border-line">
-<nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
-<a href="../index.html" class="flex items-center gap-2 group">
-<svg width="28" height="28" viewBox="0 0 28 28" fill="none" class="flex-shrink-0"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg>
-<span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span>
-</a>
-<div class="hidden md:flex items-center gap-8 text-sm">
-<a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a>
-<a href="../fix.html" class="ed-link font-medium text-teal">Troubleshoot</a>
-<a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Calculator</a>
-<a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a>
-<a href="../about.html" class="ed-link font-medium text-ink hover:text-teal">About</a>
-<a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-</div>
-<button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button>
-</nav>
-<div class="mobile-menu hidden md:hidden border-t border-line bg-paper">
-<div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
-<a href="../brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a>
-<a href="../fix.html" class="py-2 font-medium text-teal">Troubleshoot</a>
-<a href="../calculator.html" class="py-2 font-medium text-ink hover:text-teal">Calculator</a>
-<a href="../locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a>
-<a href="../about.html" class="py-2 font-medium text-ink hover:text-teal">About</a>
-<a href="../calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a>
-</div>
-</div>
-</header>
-
-<article>
-<section class="bg-paper border-b border-line">
-<div class="max-w-3xl mx-auto px-6 md:px-8 py-12 md:py-16">
-<nav class="flex items-center gap-2 text-xs text-muted mb-8">
-<a href="../index.html" class="ed-link hover:text-teal">Home</a><span>/</span>
-<a href="../fix.html" class="ed-link hover:text-teal">Troubleshoot</a><span>/</span>
-<span class="text-ink">Black screen</span>
-</nav>
-<p class="eyebrow mb-4">Troubleshooting · Display</p>
-<h1 class="display text-4xl md:text-6xl text-ink mb-6">Black screen — but the phone still works.</h1>
-<p class="text-lg md:text-xl text-muted leading-relaxed">If it still rings, vibrates or makes sounds, your phone isn't dead — the screen is. That's a much better (and usually cheaper) situation than it feels. Here's how to confirm it and what it takes to fix.</p>
-</div>
-</section>
-
-<section class="bg-white">
-<div class="max-w-3xl mx-auto px-6 md:px-8 py-12 md:py-16 prose-rr">
-
-<div class="callout">
-<p style="margin:0;"><strong>The one test that matters:</strong> call the phone from another number, or plug it into a computer. If it <strong>rings, vibrates, makes sounds, or the computer sees it</strong> — the phone is alive and well, and only the display has failed. That's a screen repair, not a dead phone, and your data is fine.</p>
+<article class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-24">
+<div class="max-w-3xl">
+<nav class="flex items-center gap-2 text-xs text-muted mb-8"><a href="../index.html" class="ed-link hover:text-teal">Home</a><span>/</span><a href="../fix.html" class="ed-link hover:text-teal">Troubleshoot</a><span>/</span><span class="text-ink">Black screen</span></nav>
+<p class="eyebrow mb-4">Common issue · June 2026</p>
+<h1 class="display text-3xl md:text-5xl lg:text-6xl text-ink mb-6">Phone screen is black but the phone is still on.</h1>
+<p class="text-lg text-muted leading-relaxed mb-12">You can hear notifications, feel vibrations, maybe even receive calls — but the screen shows nothing. This is different from a <a href="wont-turn-on.html" class="ed-link text-teal">dead phone</a>. Your phone is alive; the display just isn't working. Here's how to figure out why and what it costs to fix.</p>
 </div>
 
-<h2>Black screen vs. won't turn on — they're different</h2>
-<p>These two get confused constantly, and the fix and cost are very different. The distinction is simple: <strong>is the phone running behind the dark screen?</strong></p>
-<ul>
-<li><strong>Black screen (display fault):</strong> the phone is on — it rings, buzzes on notifications, makes the camera/keyboard sounds, a computer recognises it — you just can't see anything. The screen or its connection has failed.</li>
-<li><strong>Won't turn on (power/boot fault):</strong> total silence. No ring, no vibration, no response after charging and a forced restart. That's a different problem — see our <a href="wont-turn-on.html" class="ed-link text-teal">won't-turn-on guide</a>.</li>
-</ul>
-<p>Sorting which one you have is the whole job here, because it changes both the diagnosis and the price.</p>
+<div class="prose max-w-3xl">
 
-<h2>Confirm it in under a minute</h2>
-<div style="margin:1.5rem 0;">
-<div class="step">
-<span class="step-n">01</span>
-<div><h3 style="margin:0 0 0.5rem;">Try a forced restart first (free)</h3><p style="margin:0;">A frozen system can show a black screen and recover with a forced restart (the button combo varies by model — hold it the full duration even if nothing seems to happen). If the screen comes back, it was a software hang and you're done, at no cost. Worth doing before anything else.</p></div>
-</div>
-<div class="step">
-<span class="step-n">02</span>
-<div><h3 style="margin:0 0 0.5rem;">Call it / plug it in (the proof)</h3><p style="margin:0;">From another phone, ring it. Listen and feel for ring or vibration. Plug it into a computer and see if the device appears. <strong>Any</strong> sign of life with a dark screen confirms a display fault — the phone is running, it just can't show you. This is the definitive test; once you have a "yes" here, stop testing.</p></div>
-</div>
-<div class="step">
-<span class="step-n">03</span>
-<div><h3 style="margin:0 0 0.5rem;">Check for a very faint image (narrows it)</h3><p style="margin:0;">In a dark room, tilt the screen under a bright light. If you can see an extremely dim version of the interface, the display is rendering but the <em>backlight</em> has failed — sometimes a cheaper fix than a full panel. If it's pure black with the phone clearly on, it's typically the panel or its flex cable. Either way, this is the point a shop takes over.</p></div>
-</div>
+<h2>First: try a force restart</h2>
+<p>In rare cases, a software crash can freeze the display while the phone continues running in the background. A force restart clears this. <strong>iPhone:</strong> quick-press Volume Up, quick-press Volume Down, hold Side button 10–15 seconds. <strong>Samsung/Pixel:</strong> hold Power + Volume Down 10–15 seconds. If the screen comes back, it was a one-off crash — no repair needed.</p>
+
+<h2>If the force restart didn't help — diagnosis</h2>
+
+<div class="step-card">
+<h3>Cause 1: Disconnected display cable (cheapest fix)</h3>
+<p class="text-muted" style="margin-bottom:0">A drop can partially dislodge the flat flex cable that connects the screen to the logic board. The screen hardware is fine — it's just not plugged in properly. <strong>Signs:</strong> the phone was dropped recently, the screen was working fine before the drop, there's no visible damage to the glass. <strong>Fix:</strong> a technician opens the phone and reseats the cable. Cost: <strong>$0–$39</strong> (diagnostic fee, often free if you get the repair done at the same shop). Takes 15 minutes.</p>
 </div>
 
-<h2>What's actually failed</h2>
-<p>When the phone runs but the screen is black, it's almost always one of:</p>
-<ul>
-<li><strong>The display assembly</strong> — the panel itself has failed (often after a drop, even one that didn't crack the glass). Most common.</li>
-<li><strong>The display flex cable</strong> — the ribbon connecting screen to board has come loose or been damaged. Occasionally just needs reseating, which is cheaper.</li>
-<li><strong>The backlight</strong> — image renders but isn't lit (the faint-image symptom above). A specific, sometimes-cheaper repair.</li>
-</ul>
-<p>You can't reliably tell these apart from the outside, and they're priced differently — which is exactly why a hands-on diagnosis is worth more than guessing and ordering a part.</p>
-
-<h2>What a repair costs</h2>
-<p>Most black-screen repairs are a display assembly replacement. <strong>2026 Australian independent-shop guide:</strong> roughly <span class="font-mono tnum">$150–$490</span> depending on model — older/smaller phones low, curved Samsung flagships high. If it turns out to be a loose flex cable that just needs reseating, it can be considerably less; a backlight-only repair also varies. That spread is the reason the diagnosis matters: paying full screen-replacement price for what was a reseat is a common avoidable overspend. For your model's screen range, the <a href="../calculator.html" class="ed-link text-teal font-medium">cost calculator</a> and <a href="../brands.html" class="ed-link text-teal font-medium">model pages</a> have specifics.</p>
-
-<h2>DIY, honestly</h2>
-<p>The free DIY steps are the diagnosis above — forced restart, then the call/plug-in test. Do them; the restart alone fixes the software-hang cases for nothing.</p>
-<p>Past that, we won't hand you a teardown. Telling panel-vs-flex-vs-backlight apart needs the phone opened and tested, and the repair itself is a fragile-panel, adhesive-and-heat job with part re-pairing on many models. The most common DIY outcome on a blind screen swap is a second damaged screen plus the original mystery still unsolved. <strong>If a restart didn't bring it back, this is a shop job — and the diagnosis is the valuable part, since it decides whether you're paying for a reseat or a full panel.</strong></p>
-
-<div class="callout">
-<p style="margin:0;"><strong>In Newcastle or the Hunter?</strong> The black-screen diagnosis (loose flex vs. dead panel vs. backlight) is exactly what an in-person check sorts out fast — and it can save you the difference between a minor reseat and a full screen. Our <a href="../locations/newcastle.html" class="ed-link text-teal font-medium">Newcastle repair guide</a> has honest local pricing and a workshop we're comfortable pointing people to.</p>
+<div class="step-card">
+<h3>Cause 2: Dead OLED/LCD panel (most common)</h3>
+<p class="text-muted" style="margin-bottom:0">The display panel itself has failed — either from impact damage (even without a visible crack), pressure damage (sat on the phone, heavy bag), or component failure. <strong>Signs:</strong> no light from the screen at all (hold the phone in a dark room and look for any faint glow), phone vibrates and makes sounds normally. <strong>Fix:</strong> full screen replacement. Cost: <a href="../repair/phone-repair-costs-australia.html" style="color:#0F766E"><strong>$109–$619</strong></a> depending on model.</p>
 </div>
 
-<h2>Common questions</h2>
-<div class="space-y-3 mt-6" style="margin-bottom:1rem;">
-<details class="border border-line bg-white group">
-<summary class="cursor-pointer p-5 flex items-start justify-between gap-4 list-none"><span class="font-serif text-lg text-ink">It rings when I call it but the screen's black — is my data safe?</span><i data-lucide="plus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 group-open:hidden"></i><i data-lucide="minus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 hidden group-open:block"></i></summary>
-<div class="px-5 pb-5 text-sm leading-relaxed" style="color:#3f3a36;">Yes. Ringing means the phone is fully working — only the display can't show it. The data is intact and a screen repair restores normal access. Don't factory-reset; nothing about the storage is wrong.</div>
-</details>
-<details class="border border-line bg-white group">
-<summary class="cursor-pointer p-5 flex items-start justify-between gap-4 list-none"><span class="font-serif text-lg text-ink">Nothing at all happens — no ring, no vibration. Same problem?</span><i data-lucide="plus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 group-open:hidden"></i><i data-lucide="minus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 hidden group-open:block"></i></summary>
-<div class="px-5 pb-5 text-sm leading-relaxed" style="color:#3f3a36;">No — total silence after charging and a forced restart is a power/boot fault, not a display fault, and it's priced differently. Follow our won't-turn-on guide instead; the diagnosis order there is what you need.</div>
-</details>
-<details class="border border-line bg-white group">
-<summary class="cursor-pointer p-5 flex items-start justify-between gap-4 list-none"><span class="font-serif text-lg text-ink">I can see a very faint image if I shine a light on it — meaning?</span><i data-lucide="plus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 group-open:hidden"></i><i data-lucide="minus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 hidden group-open:block"></i></summary>
-<div class="px-5 pb-5 text-sm leading-relaxed" style="color:#3f3a36;">The display is rendering but the backlight has failed. That's a specific repair and sometimes cheaper than a full panel — worth mentioning to the shop so they check it rather than defaulting to a full assembly.</div>
-</details>
-<details class="border border-line bg-white group">
-<summary class="cursor-pointer p-5 flex items-start justify-between gap-4 list-none"><span class="font-serif text-lg text-ink">It went black after a drop but the glass isn't cracked — how?</span><i data-lucide="plus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 group-open:hidden"></i><i data-lucide="minus" class="w-5 h-5 text-muted flex-shrink-0 mt-1 hidden group-open:block"></i></summary>
-<div class="px-5 pb-5 text-sm leading-relaxed" style="color:#3f3a36;">Common. The impact can fracture the internal panel or knock the display flex loose without breaking the outer glass — same reason green lines appear with no visible crack. The phone running fine while the screen is dark fits this exactly.</div>
-</details>
+<div class="step-card">
+<h3>Cause 3: Display IC failure on logic board (expensive)</h3>
+<p class="text-muted" style="margin-bottom:0">The display driver IC (the chip on the logic board that sends image data to the screen) has failed. The screen is fine, the cable is connected, but the board isn't sending a signal. <strong>Signs:</strong> a new screen doesn't fix the problem (the shop tries a known-good screen and it's still black). <strong>Fix:</strong> board-level micro-soldering to replace the display IC. Cost: <strong>$149–$399</strong>. Not all shops offer this.</p>
 </div>
 
+<div class="step-card">
+<h3>Cause 4: Water damage (hidden)</h3>
+<p class="text-muted" style="margin-bottom:0">Moisture corrosion on the display connector or backlight circuit can cause a black screen with no other visible symptoms. <strong>Signs:</strong> the phone was exposed to moisture (even humidity, not just submersion), or there's condensation visible inside the camera lens. <strong>Fix:</strong> ultrasonic cleaning ($49–$99) plus screen replacement if the panel is damaged. See our <a href="water-damage.html" style="color:#0F766E">water damage guide</a>.</p>
 </div>
-</section>
 
-<section class="bg-teal-900 text-white">
-<div class="max-w-3xl mx-auto px-6 md:px-8 py-14 md:py-16">
-<p class="eyebrow text-amber mb-3">Next step</p>
-<h2 class="display text-3xl md:text-4xl mb-4">Confirmed it's the screen? Get the real number.</h2>
-<p class="text-white/70 mb-8 max-w-xl">Reseat, backlight, or full panel are very different prices — a diagnosis is worth the trip. Check your model's screen range first.</p>
-<div class="flex flex-col sm:flex-row gap-3">
-<a href="../calculator.html" class="btn btn-primary">Open the cost calculator <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-<a href="../fix.html" class="btn btn-ghost" style="color:white;border-color:rgba(255,255,255,0.4);">Other symptoms</a>
+<h2>How to save your data first</h2>
+
+<p>If the phone is on but the screen is black, your data is almost certainly intact. Here's how to access it:</p>
+
+<p><strong>iPhone + Mac/PC:</strong> Connect via USB cable. Open iTunes (Windows) or Finder (Mac). If you've previously trusted this computer, it can back up the phone even with a black screen. If you haven't trusted the computer before, you'll need the screen working to tap "Trust" — a repair shop can connect a temporary screen to do this.</p>
+
+<p><strong>Android + PC:</strong> Connect via USB. If USB debugging was enabled, you can access files via ADB or file transfer mode. If not, some Android phones enter file transfer mode automatically when connected — check if the computer recognises a new storage device.</p>
+
+<p><strong>Either platform:</strong> If the phone has wireless backup enabled (iCloud, Google Drive), your data is likely already backed up to the cloud. Check from another device or a browser.</p>
+
+<h2>What the repair costs</h2>
+
+<p><strong>Cable reseat:</strong> $0–$39 (diagnostic fee). The cheapest possible fix — worth checking first before committing to a screen replacement.</p>
+
+<p><strong>Screen replacement:</strong> $109–$619 depending on model. This is the most common fix for a black screen. For your specific model's pricing, use the <a href="../calculator.html">repair calculator</a> or see <a href="../repair/phone-repair-costs-australia.html">all 75+ models with pricing</a>.</p>
+
+<p><strong>Board repair:</strong> $149–$399 for display IC replacement. Only needed if a screen replacement doesn't fix the issue — a good shop will diagnose this before charging you for a screen.</p>
+
+<p><strong>Tip:</strong> Always ask the shop to test with a known-good screen before replacing yours. This takes 5 minutes and confirms whether the problem is the screen or the board. A reputable shop will do this as part of their diagnostic process.</p>
+
 </div>
-</div>
-</section>
 </article>
 
-<footer class="bg-teal-900 text-white border-t border-white/10">
-<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
-<div class="md:col-span-5">
-<div class="flex items-center gap-2 mb-4">
-<svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg>
-<span class="font-serif text-2xl font-medium">RepairRange</span>
-</div>
-<p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice. Researched by people who actually do this work.</p>
-</div>
-<div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="../fix.html" class="text-white/80 hover:text-amber">Troubleshooting</a></li><li><a href="../calculator.html" class="text-white/80 hover:text-amber">Cost Calculator</a></li><li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li></ul></div>
-<div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="../about.html" class="text-white/80 hover:text-amber">About RepairRange</a></li><li><a href="../tools/software-stack-for-repair-shops.html" class="text-white/80 hover:text-amber">Tools we recommend</a></li><li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy Policy</a></li><li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms of Use</a></li></ul></div>
-</div>
-<div class="pt-8 border-t border-white/15">
-<p class="text-white/50 text-xs leading-relaxed mb-3 max-w-3xl"><strong class="text-white/70">Affiliate disclosure:</strong> RepairRange may earn a commission when you click links to retailers (including Amazon) and complete a purchase. This never affects the price you pay or our editorial recommendations.</p>
-<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p><p class="text-white/50 text-xs">Not affiliated with Apple, Samsung, Google, or any device manufacturer.</p></div>
-</div>
-</div>
-</footer>
+<section class="bg-teal-900 text-white"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10"><a href="wont-turn-on.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Related</p><h3 class="font-serif text-xl text-white mb-3">Phone won't turn on</h3><p class="text-white/60 text-sm">Completely dead — different diagnosis.</p></a><a href="cracked-screen-still-works.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Related</p><h3 class="font-serif text-xl text-white mb-3">Cracked but working</h3><p class="text-white/60 text-sm">Screen cracked — should you fix it?</p></a><a href="green-lines.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Related</p><h3 class="font-serif text-xl text-white mb-3">Green lines on screen</h3><p class="text-white/60 text-sm">Display damage — what it means.</p></a></div></div></section>
 
-<script>
-if (window.lucide) window.lucide.createIcons();
-document.addEventListener('DOMContentLoaded', () => {
-const btn = document.querySelector('.mobile-menu-button');
-const menu = document.querySelector('.mobile-menu');
-if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
-});
-</script>
+<footer class="bg-teal-900 text-white border-t border-white/10"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12"><div class="md:col-span-5"><div class="flex items-center gap-2 mb-4"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg><span class="font-serif text-2xl font-medium">RepairRange</span></div><p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice.</p></div><div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="../repair/phone-repair-costs-australia.html" class="text-white/80 hover:text-amber">All Models</a></li><li><a href="../calculator.html" class="text-white/80 hover:text-amber">Calculator</a></li><li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="../blog.html" class="text-white/80 hover:text-amber">Blog</a></li></ul></div><div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="../about.html" class="text-white/80 hover:text-amber">About</a></li><li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy</a></li><li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms</a></li></ul></div></div><div class="pt-8 border-t border-white/15"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. Not affiliated with Apple, Samsung, Google, or any manufacturer.</p></div></div></footer>
+<script>if(window.lucide)window.lucide.createIcons();document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.mobile-menu-button'),m=document.querySelector('.mobile-menu');if(b&&m)b.addEventListener('click',()=>m.classList.toggle('hidden'))});</script>
 </body>
 </html>
