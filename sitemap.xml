@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://repairrange.io/index.html</loc>
@@ -231,27 +231,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://repairrange.io/repair/iphone-17-pro-max.html</loc>
-    <lastmod>2026-06-05</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://repairrange.io/repair/iphone-17-pro.html</loc>
-    <lastmod>2026-06-05</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://repairrange.io/repair/iphone-17.html</loc>
-    <lastmod>2026-06-05</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://repairrange.io/repair/iphone-se-3.html</loc>
-    <lastmod>2026-06-05</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://repairrange.io/repair/model.html</loc>
     <lastmod>2026-06-05</lastmod>
     <priority>0.5</priority>
   </url>
@@ -287,41 +267,6 @@
   </url>
   <url>
     <loc>https://repairrange.io/repair/samsung-galaxy-s24.html</loc>
-    <lastmod>2026-06-05</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://repairrange.io/repair/samsung-galaxy-s25-edge.html</loc>
-    <lastmod>2026-06-05</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://repairrange.io/repair/samsung-galaxy-s25-plus.html</loc>
-    <lastmod>2026-06-05</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://repairrange.io/repair/samsung-galaxy-s25-ultra.html</loc>
-    <lastmod>2026-06-05</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://repairrange.io/repair/samsung-galaxy-s25.html</loc>
-    <lastmod>2026-06-05</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://repairrange.io/repair/samsung-galaxy-s26-plus.html</loc>
-    <lastmod>2026-06-05</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://repairrange.io/repair/samsung-galaxy-s26-ultra.html</loc>
-    <lastmod>2026-06-05</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://repairrange.io/repair/samsung-galaxy-s26.html</loc>
     <lastmod>2026-06-05</lastmod>
     <priority>0.5</priority>
   </url>
