@@ -1,3 +1,15 @@
+stages:
+  - build
+  - deploy
+
+generate_news:
+  stage: build
+  image: python:3.9-slim
+  script:
+    - python generate_tech_news.py
+  only:
+    - schedules
+
 pages:
   stage: deploy
   script:
