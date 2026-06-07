@@ -234,8 +234,86 @@ def build_full_html_page(article_data):
 """
     return template
 
+def generate_or_update_rss_feed(slug, title, summary):
+    """
+    Fetches the existing feed.xml from GitLab (if it exists), adds the new article
+    as an item, and returns a tuple (updated_xml_content, commit_action_type).
+    """
+    from datetime import datetime
+    import re
+    
+    # RFC 822 Date format: Sun, 07 Jun 2026 12:00:00 GMT (GMT/UTC is standard)
+    rfc_date = datetime.now().strftime("%a, %d %b %Y %H:%M:%S GMT")
+    article_link = f"https://repairrange.io/blog/{slug}.html"
+    
+    base_xml = f"""<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RepairRange Tech News</title>
+    <link>https://repairrange.io/blog.html</link>
+    <description>Daily Mobile Phone &amp; Tech Repair Pricing Guides &amp; Australian Industry News</description>
+    <language>en-au</language>
+    <lastBuildDate>{rfc_date}</lastBuildDate>
+    <atom:link href="https://repairrange.io/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>{title}</title>
+      <link>{article_link}</link>
+      <guid isPermaLink="true">{article_link}</guid>
+      <pubDate>{rfc_date}</pubDate>
+      <description>{summary}</description>
+    </item>
+  </channel>
+</rss>"""
+
+    try:
+        raw_feed_url = f"https://gitlab.com/api/v4/projects/{PROJECT_PATH}/repository/files/feed.xml/raw?ref=main"
+        req_get = urllib.request.Request(raw_feed_url)
+        req_get.add_header('PRIVATE-TOKEN', GITLAB_TOKEN)
+        
+        with urllib.request.urlopen(req_get) as resp:
+            existing_xml = resp.read().decode('utf-8')
+            
+        if article_link in existing_xml:
+            print("Article already exists in feed.xml. Skipping feed update.")
+            return existing_xml, "update"
+            
+        item_pattern = r'<item>.*?</item>'
+        existing_items = re.findall(item_pattern, existing_xml, re.DOTALL)
+        
+        new_item = f"""    <item>
+      <title>{title}</title>
+      <link>{article_link}</link>
+      <guid isPermaLink="true">{article_link}</guid>
+      <pubDate>{rfc_date}</pubDate>
+      <description>{summary}</description>
+    </item>"""
+        
+        all_items = [new_item] + existing_items
+        top_items = all_items[:15]
+        
+        items_block = "\n".join(top_items)
+        
+        updated_xml = f"""<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RepairRange Tech News</title>
+    <link>https://repairrange.io/blog.html</link>
+    <description>Daily Mobile Phone &amp; Tech Repair Pricing Guides &amp; Australian Industry News</description>
+    <language>en-au</language>
+    <lastBuildDate>{rfc_date}</lastBuildDate>
+    <atom:link href="https://repairrange.io/feed.xml" rel="self" type="application/rss+xml" />
+{items_block}
+  </channel>
+</rss>"""
+        print("Successfully updated existing feed.xml with the new article.")
+        return updated_xml, "update"
+        
+    except Exception as e:
+        print(f"Could not fetch existing feed.xml ({e}). Creating a new one.")
+        return base_xml, "create"
+
 def commit_article_to_gitlab(slug, html_content, title, summary):
-    """Commits the newly generated article and automatically links it in blog.html."""
+    """Commits the newly generated article, automatically links it in blog.html, and updates feed.xml."""
     file_path = f"blog/{slug}.html"
     print(f"Committing new page to GitLab: {file_path}...")
     
@@ -245,6 +323,15 @@ def commit_article_to_gitlab(slug, html_content, title, summary):
         "content": html_content,
         "encoding": "text"
     }]
+    
+    # Generate and append feed.xml update
+    feed_content, feed_action = generate_or_update_rss_feed(slug, title, summary)
+    actions.append({
+        "action": feed_action,
+        "file_path": "feed.xml",
+        "content": feed_content,
+        "encoding": "text"
+    })
     
     # Fetch live blog.html to auto-link the post
     try:
