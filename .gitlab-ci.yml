@@ -13,7 +13,7 @@ generate_news:
 
 pages:
   stage: deploy
-  image: node:18-alpine
+  image: node:18-slim
   script:
     - npm install -g @tailwindcss/cli
     - mkdir -p css
