@@ -13,9 +13,9 @@ generate_news:
 
 pages:
   stage: deploy
-  image: alpine:latest
+  image: debian:stable-slim
   script:
-    - apk add --no-cache curl
+    - apt-get update && apt-get install -y curl
     - curl -sLO https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-linux-x64
     - chmod +x tailwindcss-linux-x64
     - mkdir -p css
