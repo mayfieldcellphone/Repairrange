@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://repairrange.io/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <style>
         :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#E7E5E4; --rr-paper:#FAFAF9; --rr-paper-2:#F5F5F4; }
@@ -87,41 +87,23 @@
         </div>
     </section>
 
-    <section class="bg-paper-2 border-b border-line">
-        <div class="max-w-6xl mx-auto px-6 md:px-8 py-12 md:py-16">
-            <p class="eyebrow mb-6">Latest Tech News</p>
-            <div id="tech-news-container" class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <a href="blog/galaxy-z-flip8-chipset-shuffle-australia-repair-range.html" class="post-card group">
-                <p class="eyebrow mb-3">News &bull; 5 min read &bull; June 2026</p>
-                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">The Great Flip-Off: Galaxy Z Flip8's Chipset Shuffle and What It Means for Aussie Owners</h2>
-                <p class="text-muted leading-relaxed mb-4">Samsung's Galaxy Z Flip8 is reportedly ditching its predecessor's Exynos-only strategy for a mix of chips, leaving many Aussies wondering what's powering their next foldable and the long-term impact on their hip pocket.</p>
-                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-            </a>
-            <a href="blog/aussie-tech-wwdc-26-ceo-handover-announcement.html" class="post-card group">
-                <p class="eyebrow mb-3">News &bull; 5 min read &bull; June 2026</p>
-                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">Aussie Tech Alert: WWDC 26 Kicks Off with a Shocking CEO Handover Announcement!</h2>
-                <p class="text-muted leading-relaxed mb-4">Apple's highly anticipated WWDC 26 keynote is upon us, but this year's event carries extra weight with the surprise announcement of Tim Cook's impending departure and John Ternus stepping in as the next CEO.</p>
-                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-            </a>
-            <a href="blog/sony-1000x-decade-australian-audio-legacy.html" class="post-card group">
-                <p class="eyebrow mb-3">News &bull; 5 min read &bull; June 2026</p>
-                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">A Decade of Dominance: How Sony's 1000X Series Reshaped Aussie Audio</h2>
-                <p class="text-muted leading-relaxed mb-4">Join us for a deep dive into Sony's iconic 1000X noise-cancelling headphones, celebrating a decade of innovation that forever changed the soundscape for Aussies, from daily commutes to international flights.</p>
-                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-            </a>
-        </div>
-        </div>
-    </section>
-
     <section class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
-        <p class="eyebrow mb-6">Repair & Pricing Guides</p>
+        <p class="eyebrow mb-6">Latest</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
+            <a href="blog/how-long-does-phone-repair-take.html" class="post-card group">
+                <p class="eyebrow mb-3">Quick reference · 8 min read · June 2026</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">How long does phone repair actually take?</h2>
+                <p class="text-muted leading-relaxed mb-4">Screen: 30–90 min. Battery: 20–45 min. Water damage: 24–72 hours. Real turnaround times from the shop floor.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+            </a>
 
-            
-
-
-            
+            <a href="blog/can-you-diy-phone-screen-repair.html" class="post-card group">
+                <p class="eyebrow mb-3">Honest assessment · 10 min read · June 2026</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">Can you fix your own phone screen?</h2>
+                <p class="text-muted leading-relaxed mb-4">Model-by-model DIY difficulty: Pixel 4/10, iPhone 6/10, Samsung 7/10, foldables 9/10. Tools, costs, and risks.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+            </a>
 
             <a href="blog/how-to-find-trustworthy-phone-repair-shop.html" class="post-card group">
                 <p class="eyebrow mb-3">Advice · 10 min read · June 2026</p>
@@ -215,6 +197,5 @@
             if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
         });
     </script>
-    <script> window.addEventListener('load', function() { var widgetElement = document.createElement('charla-widget'); widgetElement.setAttribute("p", "a757e88e-a44b-42de-856d-970a60e0d93b"); document.body.appendChild(widgetElement) ; var widgetCode = document.createElement('script'); widgetCode.src = 'https://app.charla.com/widget/widget.js'; document.body.appendChild(widgetCode); }) </script>
 </body>
 </html>
