@@ -313,7 +313,7 @@ def generate_or_update_rss_feed(slug, title, summary):
         return base_xml, "create"
 
 def commit_article_to_gitlab(slug, html_content, title, summary):
-    """Commits the newly generated article, automatically links it in blog.html, and updates feed.xml."""
+    """Commits the newly generated article, automatically links it in tech-news.html, and updates feed.xml."""
     file_path = f"blog/{slug}.html"
     print(f"Committing new page to GitLab: {file_path}...")
     
@@ -333,9 +333,9 @@ def commit_article_to_gitlab(slug, html_content, title, summary):
         "encoding": "text"
     })
     
-    # Fetch live blog.html to auto-link the post
+    # Fetch live tech-news.html to auto-link the post
     try:
-        raw_blog_url = f"https://gitlab.com/api/v4/projects/{PROJECT_PATH}/repository/files/blog.html/raw?ref=main"
+        raw_blog_url = f"https://gitlab.com/api/v4/projects/{PROJECT_PATH}/repository/files/tech-news.html/raw?ref=main"
         req_get = urllib.request.Request(raw_blog_url)
         req_get.add_header('PRIVATE-TOKEN', GITLAB_TOKEN)
         
@@ -343,9 +343,9 @@ def commit_article_to_gitlab(slug, html_content, title, summary):
             blog_content = resp.read().decode('utf-8')
             
         if f"blog/{slug}.html" in blog_content:
-            print("Article already linked in blog.html. Skipping homepage update.")
+            print("Article already linked in tech-news.html. Skipping homepage update.")
         else:
-            print("Auto-linking the new article inside blog.html...")
+            print("Auto-linking the new article inside tech-news.html...")
             today_month_year = datetime.now().strftime("%B %Y")
             
             # Format post-card layout matching RepairRange standard
@@ -380,21 +380,21 @@ def commit_article_to_gitlab(slug, html_content, title, summary):
                 
                 actions.append({
                     "action": "update",
-                    "file_path": "blog.html",
+                    "file_path": "tech-news.html",
                     "content": updated_blog_content,
                     "encoding": "text"
                 })
-                print("Successfully queued bounded (max 3) blog.html link update.")
+                print("Successfully queued bounded (max 3) tech-news.html link update.")
             else:
-                print("Warning: Could not find the standard #tech-news-container inside blog.html.")
+                print("Warning: Could not find the standard #tech-news-container inside tech-news.html.")
     except Exception as e:
-        print(f"Could not auto-link in blog.html: {e}. Publishing article only.")
+        print(f"Could not auto-link in tech-news.html: {e}. Publishing article only.")
 
     commit_url = f"https://gitlab.com/api/v4/projects/{PROJECT_PATH}/repository/commits"
     
     payload = json.dumps({
         "branch": "main",
-        "commit_message": f"Auto-Publish: Added article '{slug}' & auto-linked in blog.html",
+        "commit_message": f"Auto-Publish: Added article '{slug}' & auto-linked in tech-news.html",
         "actions": actions
     }).encode('utf-8')
     
