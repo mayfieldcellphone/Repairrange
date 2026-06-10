@@ -370,9 +370,9 @@ def commit_article_to_gitlab(slug, html_content, title, summary):
                 # Extract individual cards inside the container
                 cards = re.findall(r'<a[^>]+post-card[^>]*>.*?</a>', container_body, re.DOTALL)
                 
-                # Prepend new card and keep top 3
+                # Prepend new card and keep top 9
                 all_cards = [new_card.strip()] + [c.strip() for c in cards]
-                top_cards = all_cards[:3]
+                top_cards = all_cards[:9]
                 
                 new_container_body = '\n            ' + '\n            '.join(top_cards) + '\n        '
                 new_full_container = f"{header}{new_container_body}{footer}"
@@ -384,7 +384,7 @@ def commit_article_to_gitlab(slug, html_content, title, summary):
                     "content": updated_blog_content,
                     "encoding": "text"
                 })
-                print("Successfully queued bounded (max 3) tech-news.html link update.")
+                print("Successfully queued bounded (max 9) tech-news.html link update.")
             else:
                 print("Warning: Could not find the standard #tech-news-container inside tech-news.html.")
     except Exception as e:
