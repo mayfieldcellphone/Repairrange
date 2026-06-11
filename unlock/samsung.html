@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<title>Samsung Galaxy Unlock Guide: FRP Bypass, Carrier Unlock & Knox MDM Removal — RepairRange</title>
+<meta name="description" content="The ultimate guide to unlocking Samsung Galaxy devices. Step-by-step instructions for Google Lock (FRP) bypass, Telstra/Optus/Vodafone carrier unlocking, and Knox MDM bypass.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script><script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+:root{
+  --rr-teal-900:#0c4a45;
+  --rr-teal-700:#0F766E;
+  --rr-amber-600:#d97706;
+  --rr-amber-500:#F59E0B;
+  --rr-ink:#1C1917;
+  --rr-muted:#78716C;
+  --rr-line:#E7E5E4;
+  --rr-paper:#FAFAF9;
+  --rr-paper-2:#F5F5F4;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  color:var(--rr-ink);
+  background:var(--rr-paper);
+  -webkit-font-smoothing:antialiased;
+}
+.font-serif{
+  font-family:'Fraunces','Iowan Old Style','Palatino',serif;
+  font-feature-settings:'ss01';
+}
+.font-mono{
+  font-family:'JetBrains Mono',ui-monospace,monospace;
+}
+.text-teal{color:var(--rr-teal-700)}
+.bg-teal-900{background:var(--rr-teal-900)}
+.text-amber{color:var(--rr-amber-600)}
+.text-ink{color:var(--rr-ink)}
+.text-muted{color:var(--rr-muted)}
+.border-line{border-color:var(--rr-line)}
+.bg-paper{background:var(--rr-paper)}
+.bg-paper-2{background:var(--rr-paper-2)}
+.display{
+  font-family:'Fraunces',serif;
+  font-weight:400;
+  letter-spacing:-0.025em;
+  line-height:1.05;
+}
+.eyebrow{
+  font-size:0.75rem;
+  font-weight:600;
+  letter-spacing:0.18em;
+  text-transform:uppercase;
+  color:var(--rr-teal-700);
+}
+.header-sticky{
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  background:rgba(250,250,249,0.85);
+}
+.ed-link{
+  background-image:linear-gradient(currentColor,currentColor);
+  background-position:0 100%;
+  background-repeat:no-repeat;
+  background-size:0% 1px;
+  transition:background-size 220ms ease;
+}
+.ed-link:hover{background-size:100% 1px}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:0.5rem;
+  padding:0.75rem 1.25rem;
+  font-weight:600;
+  font-size:0.9375rem;
+  transition:all 200ms ease;
+  border-radius:2px;
+}
+.btn-primary{
+  background:var(--rr-amber-500);
+  color:var(--rr-ink);
+  box-shadow:0 1px 0 var(--rr-amber-600);
+}
+.btn-primary:hover{
+  background:var(--rr-amber-600);
+  color:white;
+  transform:translateY(-1px);
+}
+.btn-ghost{
+  background:transparent;
+  color:var(--rr-ink);
+  border:1px solid var(--rr-line);
+}
+.btn-ghost:hover{border-color:var(--rr-ink)}
+.card{
+  background:white;
+  border:1px solid var(--rr-line);
+  transition:all 200ms ease;
+}
+.card:hover{
+  border-color:var(--rr-ink);
+}
+.step-box{
+  background:white;
+  border:1px solid var(--rr-line);
+  padding:1.5rem;
+  margin-bottom:0.75rem;
+}
+.step-box h3{
+  margin:0 0 0.5rem 0;
+  font-size:1rem;
+  font-weight:600;
+}
+.step-box p{
+  margin:0;
+  color:var(--rr-muted);
+  font-size:0.875rem;
+  line-height:1.6;
+}
+.warn-box{
+  background:#FEF2F2;
+  border:1px solid #FECACA;
+  padding:1.25rem;
+  margin:1.5rem 0;
+}
+.warn-box p{
+  margin:0;
+  color:#991B1B;
+  font-size:0.875rem;
+  line-height:1.6;
+}
+.tip-box{
+  background:#F0FDF4;
+  border:1px solid #BBF7D0;
+  padding:1.25rem;
+  margin:1.5rem 0;
+}
+.tip-box p{
+  margin:0;
+  color:#166534;
+  font-size:0.875rem;
+  line-height:1.6;
+}
+.mobile-menu{transition:all 300ms ease-in-out}
+@media(max-width:768px){
+  .mobile-menu.hidden{display:none}
+  .mobile-menu:not(.hidden){display:block}
+}
+</style>
+</head>
+<body>
+<header class="header-sticky sticky top-0 z-50 border-b border-line">
+  <nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
+    <a href="../index.html" class="flex items-center gap-2">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+        <rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/>
+        <path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/>
+      </svg>
+      <span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span>
+    </a>
+    <div class="hidden md:flex items-center gap-8 text-sm">
+      <a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a>
+      <a href="../repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a>
+      <a href="../fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a>
+      <a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a>
+      <a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a>
+      <a href="../blog.html" class="ed-link font-medium text-ink hover:text-teal">Blog</a>
+      <a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote</a>
+    </div>
+    <button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu">
+      <i data-lucide="menu" class="w-6 h-6"></i>
+    </button>
+  </nav>
+  <div class="mobile-menu hidden md:hidden border-t border-line bg-paper">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
+      <a href="../brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a>
+      <a href="../repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a>
+      <a href="../fix.html" class="py-2 font-medium text-ink hover:text-teal">Troubleshoot</a>
+      <a href="../calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a>
+      <a href="../locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a>
+      <a href="../blog.html" class="py-2 font-medium text-ink hover:text-teal">Blog</a>
+    </div>
+  </div>
+</header>
+
+<div class="max-w-6xl mx-auto px-6 md:px-8 py-12 md:py-20">
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+    <!-- Main Content Area -->
+    <main class="lg:col-span-8">
+      <nav class="flex items-center gap-2 text-xs text-muted mb-8">
+        <a href="../index.html" class="ed-link hover:text-teal">Home</a>
+        <span>/</span>
+        <a href="reset.html" class="ed-link hover:text-teal">Unlock</a>
+        <span>/</span>
+        <span class="text-ink">Samsung Unlock Guide</span>
+      </nav>
+
+      <p class="eyebrow mb-4">Ultimate Sourcing & Technical Guides</p>
+      <h1 class="display text-3xl md:text-5xl text-ink mb-6">Samsung Galaxy Unlock Guide: FRP, Carrier, & MDM.</h1>
+      
+      <p class="text-lg text-muted leading-relaxed mb-8">
+        Are you locked out of your Samsung Galaxy phone? This comprehensive, step-by-step master guide covers bypassing Google Lock (FRP), carrier network unlocking (Telstra, Optus, Vodafone), and removing corporate Knox MDM software.
+      </p>
+
+      <!-- Quick Jump Menu -->
+      <div class="card p-6 bg-paper-2 mb-12">
+        <h2 class="font-serif text-lg font-semibold text-ink mb-4">Jump directly to your lock type:</h2>
+        <ul class="space-y-2 text-sm text-teal font-medium">
+          <li><a href="#frp-bypass" class="hover:underline flex items-center gap-2">👉 1. Google Account Lock (FRP) Bypass Methods</a></li>
+          <li><a href="#carrier-unlock" class="hover:underline flex items-center gap-2">👉 2. Australian Carrier Network Unlocking (Telstra/Optus)</a></li>
+          <li><a href="#knox-mdm" class="hover:underline flex items-center gap-2">👉 3. Samsung Knox & MDM Corporate Removal</a></li>
+        </ul>
+      </div>
+
+      <!-- SECTION 1: FRP BYPASS -->
+      <section id="frp-bypass" class="mb-16 scroll-mt-24">
+        <h2 class="font-serif text-2xl md:text-3xl text-ink mb-4">1. Google Account Lock (FRP) Bypass Methods</h2>
+        <p class="text-muted leading-relaxed mb-6">
+          Factory Reset Protection (FRP) is an automated security protocol introduced by Google. When you hard reset a Samsung Galaxy without first logging out of your Google account, the device triggers FRP. Upon booting up, it will ask for the <strong>previously synced Google email and password</strong>.
+        </p>
+
+        <div class="warn-box">
+          <p>
+            <strong>⚠️ Warning:</strong> Avoid downloading random "FRP unlock programs" or paying sketchy websites claiming to unlock your phone. The vast majority of these downloadable zip archives contain banking trojans and keyloggers designed to steal your credentials. Stick only to proven methods.
+          </p>
+        </div>
+
+        <h3 class="font-serif text-xl text-ink mt-8 mb-4">Method A: The Emergency Dialer Test Mode Method (Requires PC)</h3>
+        <p class="text-muted leading-relaxed mb-4">
+          This is the fastest, safest, and most modern method used by actual electronics repair shops globally. It works on the majority of Samsung devices running Android 10, 11, 12, 13, and 14 by utilizing Samsung's internal diagnostic test mode to trigger USB Debugging.
+        </p>
+
+        <div class="step-box">
+          <h3><span class="font-mono text-teal text-sm mr-2">Step 1</span>Open the Emergency Dialer</h3>
+          <p>Turn on the locked Samsung device. On the initial "Welcome" setup screen, click on <strong>Emergency Call</strong> or <strong>Emergency Dialer</strong> at the bottom.</p>
+        </div>
+        
+        <div class="step-box">
+          <h3><span class="font-mono text-teal text-sm mr-2">Step 2</span>Enter the Diagnostic Code</h3>
+          <p>Dial <strong><code>*#0*#</code></strong> on the keypad. Within a second, the phone's screen will change to a white diagnostic hardware test menu with options like "Red", "Green", "Blue", "Receiver", etc. Leave this screen open.</p>
+        </div>
+
+        <div class="step-box">
+          <h3><span class="font-mono text-teal text-sm mr-2">Step 3</span>Connect to a Windows PC</h3>
+          <p>Connect your phone to a Windows PC using a high-quality USB-C cable. Ensure you use a direct motherboard USB port, not an external hub.</p>
+        </div>
+
+        <div class="step-box">
+          <h3><span class="font-mono text-teal text-sm mr-2">Step 4</span>Launch SamFw Tool</h3>
+          <p>Download and launch <strong>SamFw Tool</strong> (a trusted, free utility utilized by technicians). In the application, click on the <strong>Samsung</strong> tab, and select <strong>Remove FRP</strong>. Choose the option corresponding to your security patch (usually "New Method" or "August 2022 onwards").</p>
+        </div>
+
+        <div class="step-box">
+          <h3><span class="font-mono text-teal text-sm mr-2">Step 5</span>Allow USB Debugging</h3>
+          <p>Watch your Samsung phone screen. A prompt will appear asking to <strong>"Allow USB Debugging"</strong>. Check the box for "Always allow from this computer" and click <strong>Allow</strong>. The tool will then send an ADB command to wipe the FRP partition, and the phone will reboot directly to the home screen.</p>
+        </div>
+
+        <h3 class="font-serif text-xl text-ink mt-10 mb-4">Method B: TalkBack Manual Settings Bypass (No PC / Legacy Patch)</h3>
+        <p class="text-muted leading-relaxed mb-4">
+          If your device does not enter the <code>*#0*#</code> diagnostic menu (common on some carrier-locked models or old security patches), you must bypass it manually using accessibility shortcuts.
+        </p>
+
+        <div class="step-box">
+          <h3><span class="font-mono text-teal text-sm mr-2">Step 1</span>Enable TalkBack</h3>
+          <p>From the welcome screen, hold down both the <strong>Volume Up</strong> and <strong>Volume Down</strong> buttons simultaneously for 3 seconds. Tap "Use" if prompted, then hold them again to toggle TalkBack on.</p>
+        </div>
+
+        <div class="step-box">
+          <h3><span class="font-mono text-teal text-sm mr-2">Step 2</span>Draw a Reverse "L"</h3>
+          <p>Swipe up and right in a single motion on the screen to draw a reverse "L". This triggers Voice Commands. Tap "While using the app" then double-tap it. Tap "Use Voice Commands" then double-tap it.</p>
+        </div>
+
+        <div class="step-box">
+          <h3><span class="font-mono text-teal text-sm mr-2">Step 3</span>Open Google Assistant</h3>
+          <p>Speak clearly: <strong>"Open Google Assistant"</strong>. Once the assistant interface pops up, say <strong>"Open YouTube"</strong>. TalkBack can now be turned off by holding Volume Up + Volume Down again to make navigation easier.</p>
+        </div>
+
+        <div class="step-box">
+          <h3><span class="font-mono text-teal text-sm mr-2">Step 4</span>Navigate to Chrome Settings</h3>
+          <p>Inside YouTube, tap the Profile/User icon in the top right -> <strong>Settings</strong> -> <strong>About</strong> -> <strong>YouTube Terms of Service</strong>. This will force-launch the Google Chrome browser.</p>
+        </div>
+
+        <div class="step-box">
+          <h3><span class="font-mono text-teal text-sm mr-2">Step 5</span>Access Shortcut Portals</h3>
+          <p>Go to an online utility page like <strong><code>addrom.com/bypass</code></strong> or <strong><code>vnrom.net/bypass</code></strong>. Click on the link for <strong>"Open Settings"</strong>. This launches the phone's native Settings app, allowing you to register a new lock screen PIN or set up a secure Smart Switch restore to bypass the Google prompt.</p>
+        </div>
+
+        <!-- B2C Call to Action -->
+        <div class="card p-6 border-line bg-paper-2 rounded-sm mt-8">
+          <h4 class="font-serif text-lg text-ink font-semibold mb-2">DIY Too Complex? Let us help!</h4>
+          <p class="text-sm text-muted mb-4">
+            Bypassing Google lock requires technical patience. One wrong firmware flash can brick your phone's mainboard. Our certified expert stores remove FRP locks safely in under 30 minutes.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="../locations/newcastle.html" class="btn btn-primary text-xs">Book at Mayfield Phone Repair</a>
+            <a href="../locations.html" class="btn btn-ghost text-xs bg-white">Find a Local Shop Near You</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: CARRIER UNLOCK -->
+      <section id="carrier-unlock" class="mb-16 scroll-mt-24">
+        <h2 class="font-serif text-2xl md:text-3xl text-ink mb-4">2. Australian Carrier Network Unlocking (Telstra / Optus / Vodafone)</h2>
+        <p class="text-muted leading-relaxed mb-6">
+          If your Samsung Galaxy was purchased on a prepaid or postpaid plan in Australia, it may be network-locked. When you insert a different SIM card, the screen will prompt you with <strong>"SIM Network Unlock PIN"</strong> or <strong>"Enter Network Lock Code"</strong>.
+        </p>
+
+        <h3 class="font-serif text-xl text-ink mt-8 mb-4">Carrier Requirements & Costs</h3>
+        <p class="text-muted leading-relaxed mb-4">
+          Under Australian Consumer Law, postpaid devices cannot remain locked permanently. Most contract models are sold unlocked out of the box. However, prepaid phones (especially cheaper Telstra Essential or Optus X-series models) remain locked to offset their subsidized purchase price.
+        </p>
+
+        <!-- Carrier Pricing Table -->
+        <div class="overflow-x-auto mb-8 border border-line rounded-sm">
+          <table class="w-full text-left border-collapse text-sm">
+            <thead>
+              <tr class="bg-paper-2 text-ink border-b border-line">
+                <th class="p-4 font-semibold">Carrier</th>
+                <th class="p-4 font-semibold">Prepaid Active Period</th>
+                <th class="p-4 font-semibold">Unlocking Fee (AUD)</th>
+                <th class="p-4 font-semibold">Postpaid contract</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-line text-muted">
+              <tr>
+                <td class="p-4 font-semibold text-ink">Telstra</td>
+                <td class="p-4">Under 6 months<br>6 months to 2 years<br>Over 2 years</td>
+                <td class="p-4 font-mono">$80.00<br>$25.00<br>FREE</td>
+                <td class="p-4">Always FREE</td>
+              </tr>
+              <tr>
+                <td class="p-4 font-semibold text-ink">Optus</td>
+                <td class="p-4">Under 6 months<br>Over 6 months</td>
+                <td class="p-4 font-mono">$80.00<br>$25.00</td>
+                <td class="p-4">Always FREE</td>
+              </tr>
+              <tr>
+                <td class="p-4 font-semibold text-ink">Vodafone</td>
+                <td class="p-4">Under 6 months<br>Over 6 months</td>
+                <td class="p-4 font-mono">$50.00<br>FREE</td>
+                <td class="p-4">Always FREE</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="font-serif text-xl text-ink mt-8 mb-4">How to Request Your Free Official Unlock Code</h3>
+        
+        <div class="step-box">
+          <h3><span class="font-mono text-teal text-sm mr-2">1</span>Find your Samsung IMEI</h3>
+          <p>Open the phone dialer and press <strong><code>*#06#</code></strong>. Write down the 15-digit IMEI number that appears on the screen.</p>
+        </div>
+
+        <div class="step-box">
+          <h3><span class="font-mono text-teal text-sm mr-2">2</span>Submit Carrier Requests</h3>
+          <p>
+            Go to the official unlocking portal for your carrier and enter your IMEI and phone number:
+          </p>
+          <ul class="list-disc pl-6 mt-2 space-y-1 text-xs text-muted">
+            <li><strong>Telstra:</strong> Visit <a href="https://www.telstra.com.au/support/category/mobiles-tablets/user-guides-help/unlock-your-prepaid-device" target="_blank" rel="noopener" class="text-teal underline">Telstra Prepaid Device Unlocking</a> or call 125 8881.</li>
+            <li><strong>Optus:</strong> Visit <a href="https://www.optus.com.au/unloop" target="_blank" rel="noopener" class="text-teal underline">Optus Network Unlocking Portal</a> or use the My Optus App.</li>
+            <li><strong>Vodafone:</strong> Visit <a href="https://unlock.vodafone.com.au" target="_blank" rel="noopener" class="text-teal underline">Vodafone Network Unlock</a>.</li>
+          </ul>
+        </div>
+
+        <div class="step-box">
+          <h3><span class="font-mono text-teal text-sm mr-2">3</span>Insert New SIM and Enter Code</h3>
+          <p>Once you receive the 8-digit or 16-digit unlock PIN via SMS or email, power off the phone. Insert a SIM card from a different network, boot it up, and enter the PIN when prompted. Your Samsung is now permanently factory-unlocked.</p>
+        </div>
+      </section>
+
+      <!-- SECTION 3: KNOX MDM -->
+      <section id="knox-mdm" class="mb-16 scroll-mt-24">
+        <h2 class="font-serif text-2xl md:text-3xl text-ink mb-4">3. Samsung Knox & MDM Corporate Removal</h2>
+        <p class="text-muted leading-relaxed mb-6">
+          Samsung Knox is an enterprise-grade security architecture embedded directly into Galaxy processors. It powers Mobile Device Management (MDM) profiles. If you purchased a refurbished, liquidating corporate surplus, or ex-lease device, it may boot up showing a company enrollment screen block, stating <strong>"This device is managed by..."</strong>.
+        </p>
+
+        <div class="warn-box">
+          <p>
+            <strong>⚠️ Corporate Locks:</strong> Unlike regular software locks, Knox locks cannot be removed by basic factory resets because the configuration is fetched directly from Samsung cloud enrollment servers on boot.
+          </p>
+        </div>
+
+        <h3 class="font-serif text-xl text-ink mt-8 mb-4">How Technicians Bypass Knox MDM Profiles</h3>
+        <p class="text-muted leading-relaxed mb-4">
+          While the official way is having the original corporate IT administrator unregister the IMEI from their Samsung Knox Portal, technicians use hardware flash tools to bypass local Knox enrollment checkers:
+        </p>
+
+        <div class="step-box">
+          <h3><span class="font-mono text-teal text-sm mr-2">Step 1</span>MDM Token Disabling</h3>
+          <p>Using a specialized box suite like <strong>Chimera Tool</strong>, <strong>Octoplus Pro</strong>, or <strong>SamKey</strong>, technicians connect the device via USB in download mode to edit the system props partition.</p>
+        </div>
+
+        <div class="step-box">
+          <h3><span class="font-mono text-teal text-sm mr-2">Step 2</span>Wiping the Knox Enrollment Client</h3>
+          <p>The specialized software runs custom commands to disable `com.sec.knox.kcs` and enterprise billing agents. This prevents the phone from sending its enrollment request to Samsung's validation servers during setup.</p>
+        </div>
+
+        <div class="tip-box">
+          <p>
+            <strong>✅ Good to know:</strong> Once bypassed, Knox MDM locks will generally not re-trigger unless you perform a hard factory reset. Regular over-the-air Android OS updates are safe and will keep the lock disabled.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Sidebar / CTA Widgets -->
+    <aside class="lg:col-span-4 space-y-8">
+      <!-- B2B Tech SaaS CTA -->
+      <div class="card p-6 bg-teal-900 text-white rounded-sm shadow-sm">
+        <h3 class="font-serif text-xl mb-4">Are you a Phone Repair Tech?</h3>
+        <p class="text-sm text-white/70 leading-relaxed mb-6">
+          Stop wasting hours hunting for test point schemas, working recovery button combos, and updated FRP files on sketchy forums.
+        </p>
+        <p class="text-xs text-amber font-mono mb-6">
+          🔒 Unlock our comprehensive, master diagnostic and unlock database inside your ticketing software.
+        </p>
+        <a href="https://repairbill.shop" target="_blank" class="btn btn-primary text-xs w-full justify-center">
+          Try RepairBill.shop Free for 14 Days
+        </a>
+      </div>
+
+      <!-- Nearby Shops Widget -->
+      <div class="card p-6 bg-white rounded-sm border-line">
+        <h3 class="font-serif text-lg text-ink mb-4">Get Professional Unlock</h3>
+        <p class="text-xs text-muted leading-relaxed mb-4">
+          Can't bypass the lock? Our verified local phone repair network handles FRP bypass, network unlocks, and broken screens.
+        </p>
+        <ul class="space-y-3 text-xs text-ink">
+          <li class="flex justify-between items-center pb-2 border-b border-line">
+            <span>Mayfield Cell Phone Repairs</span>
+            <a href="../locations/newcastle.html" class="text-teal font-medium hover:underline">Book NSW &rarr;</a>
+          </li>
+          <li class="flex justify-between items-center pb-2 border-b border-line">
+            <span>Sydney CBD Phone Unlocking</span>
+            <a href="../locations/sydney.html" class="text-teal font-medium hover:underline">Details &rarr;</a>
+          </li>
+          <li class="flex justify-between items-center pb-2 border-b border-line">
+            <span>Melbourne Central Repairs</span>
+            <a href="../locations/melbourne.html" class="text-teal font-medium hover:underline">Details &rarr;</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer class="bg-teal-900 text-white border-t border-white/10">
+  <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+      <div class="md:col-span-5">
+        <div class="flex items-center gap-2 mb-4">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/>
+            <path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/>
+          </svg>
+          <span class="font-serif text-2xl font-medium">RepairRange</span>
+        </div>
+        <p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice.</p>
+      </div>
+      <div class="md:col-span-3">
+        <h3 class="eyebrow text-amber mb-4">Browse</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li>
+          <li><a href="../repair/phone-repair-costs-australia.html" class="text-white/80 hover:text-amber">All Models</a></li>
+          <li><a href="../calculator.html" class="text-white/80 hover:text-amber">Calculator</a></li>
+          <li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li>
+          <li><a href="../blog.html" class="text-white/80 hover:text-amber">Blog</a></li>
+          <li><a href="../unlock.html" class="text-white/80 hover:text-amber">Unlock Guides</a></li>
+        </ul>
+      </div>
+      <div class="md:col-span-4">
+        <h3 class="eyebrow text-amber mb-4">About</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="../about.html" class="text-white/80 hover:text-amber">About</a></li>
+          <li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy</a></li>
+          <li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-white/15">
+      <p class="text-white/50 text-xs">&copy; 2026 RepairRange. Not affiliated with Apple, Samsung, Google, or any manufacturer.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const b=document.querySelector('.mobile-menu-button'), m=document.querySelector('.mobile-menu');
+  if(b&&m) b.addEventListener('click',()=>m.classList.toggle('hidden'));
+});
+</script>
+</body>
+</html>
