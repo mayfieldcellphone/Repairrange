@@ -24,7 +24,7 @@ pages:
     - ./tailwindcss-linux-x64 -i css/input.css -o css/style.css --minify
     - mkdir -p public
     - cp -r ./*.html ./*.txt ./*.xml public/ 2>/dev/null || true
-    - cp -r fix locations repair brands tools blog css public/ 2>/dev/null || true
+    - cp -r fix locations repair brands tools blog unlock css public/ 2>/dev/null || true
   artifacts:
     paths:
       - public
