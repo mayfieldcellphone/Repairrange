@@ -5,9 +5,16 @@
     <link>https://repairrange.io/blog.html</link>
     <description>Daily Mobile Phone &amp; Tech Repair Pricing Guides &amp; Australian Industry News</description>
     <language>en-au</language>
-    <lastBuildDate>Fri, 12 Jun 2026 08:49:42 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jun 2026 09:55:38 GMT</lastBuildDate>
     <atom:link href="https://repairrange.io/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Unlocking Cheap Enterprise Storage: A Comprehensive Guide to HBA Cards for Your NAS</title>
+      <link>https://repairrange.io/blog/unlocking-cheap-enterprise-storage-hba-cards-guide.html</link>
+      <guid isPermaLink="true">https://repairrange.io/blog/unlocking-cheap-enterprise-storage-hba-cards-guide.html</guid>
+      <pubDate>Fri, 12 Jun 2026 09:55:38 GMT</pubDate>
+      <description>This detailed tutorial provides insights into leveraging HBA cards for affordable enterprise-level storage in your NAS while addressing potential challenges and offering local Australian support.</description>
+    </item>
+<item>
       <title>Revolutionising Chip Technology: TSMC's Game-Changing CoPoS Innovation</title>
       <link>https://repairrange.io/blog/revolutionising-chip-technology-tsmcs-copos-innovation.html</link>
       <guid isPermaLink="true">https://repairrange.io/blog/revolutionising-chip-technology-tsmcs-copos-innovation.html</guid>
@@ -104,13 +111,6 @@
       <guid isPermaLink="true">https://repairrange.io/blog/apple-iphone-ultra-ios27-september-launch.html</guid>
       <pubDate>Tue, 09 Jun 2026 20:47:56 GMT</pubDate>
       <description>Aussie tech experts have dived deep into the iOS 27 beta, uncovering tantalising clues about Apple's highly anticipated 'iPhone Ultra' and confirming its September debut, raising critical questions for future owners.</description>
-    </item>
-<item>
-      <title>Aussie Tech Exclusive: iOS 27 Beta Hints Strongly at Apple's Foldable 'iPhone Ultra' – And Why Repair Costs Will Matter!</title>
-      <link>https://repairrange.io/blog/apple-iphone-ultra-foldable-ios27-leak-repair-range-australia.html</link>
-      <guid isPermaLink="true">https://repairrange.io/blog/apple-iphone-ultra-foldable-ios27-leak-repair-range-australia.html</guid>
-      <pubDate>Tue, 09 Jun 2026 20:46:39 GMT</pubDate>
-      <description>Fresh revelations from the iOS 27 beta source code suggest Apple's long-rumoured 'iPhone Ultra' is indeed a foldable device, with a September launch looking likely. We delve into the leaks and what this means for Aussie tech enthusiasts and their wallets.</description>
     </item>
   </channel>
 </rss>
