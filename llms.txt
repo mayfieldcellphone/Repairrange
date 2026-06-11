@@ -19,6 +19,201 @@ Plain-English phone repair pricing, symptom diagnostics, and shop-vs-DIY guidanc
 - Galaxy S23
 - Symptom first, not model first.
 
+## Phone Unlocking & Reset Guides
+
+- [Phone Unlock Gateway Landing Page](https://repairrange.io/unlock/index.html) - Central searchable directory containing 149 static model reset guides, software reviews, and carrier unlocking portal links.
+- [Samsung Master Unlock Guide](https://repairrange.io/unlock/samsung.html) - Technical tutorial for bypassing Samsung Google FRP lock, Telstra/Optus/Vodafone carrier unlocking, and Knox MDM removal.
+- [Phone Unlock Tools Review Matrix](https://repairrange.io/unlock/tools.html) - In-depth performance and cost evaluation comparing Wondershare Dr.Fone, Chimera Tool, iMyFone LockWiper, and Tenorshare 4uKey.
+
+### Alcatel Reset Manuals
+- [How to reset Alcatel 1V (2021)](https://repairrange.io/unlock/reset-alcatel-1v-2021.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Alcatel 1V (2021).
+- [How to reset Alcatel 3L (2021)](https://repairrange.io/unlock/reset-alcatel-3l-2021.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Alcatel 3L (2021).
+
+### Apple Reset Manuals
+- [How to reset iPhone 11](https://repairrange.io/unlock/reset-iphone-11.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on iPhone 11.
+- [How to reset iPhone 12](https://repairrange.io/unlock/reset-iphone-12.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on iPhone 12.
+- [How to reset iPhone 13](https://repairrange.io/unlock/reset-iphone-13.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on iPhone 13.
+- [How to reset iPhone 13 Pro Max](https://repairrange.io/unlock/reset-iphone-13-pro-max.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on iPhone 13 Pro Max.
+- [How to reset iPhone 14](https://repairrange.io/unlock/reset-iphone-14.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on iPhone 14.
+- [How to reset iPhone 14 Pro](https://repairrange.io/unlock/reset-iphone-14-pro.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on iPhone 14 Pro.
+- [How to reset iPhone 14 Pro Max](https://repairrange.io/unlock/reset-iphone-14-pro-max.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on iPhone 14 Pro Max.
+- [How to reset iPhone 15](https://repairrange.io/unlock/reset-iphone-15.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on iPhone 15.
+- [How to reset iPhone 15 Plus](https://repairrange.io/unlock/reset-iphone-15-plus.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on iPhone 15 Plus.
+- [How to reset iPhone 15 Pro](https://repairrange.io/unlock/reset-iphone-15-pro.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on iPhone 15 Pro.
+- [How to reset iPhone 15 Pro Max](https://repairrange.io/unlock/reset-iphone-15-pro-max.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on iPhone 15 Pro Max.
+- [How to reset iPhone 16](https://repairrange.io/unlock/reset-iphone-16.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on iPhone 16.
+- [How to reset iPhone 16 Plus](https://repairrange.io/unlock/reset-iphone-16-plus.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on iPhone 16 Plus.
+- [How to reset iPhone 16 Pro](https://repairrange.io/unlock/reset-iphone-16-pro.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on iPhone 16 Pro.
+- [How to reset iPhone 16 Pro Max](https://repairrange.io/unlock/reset-iphone-16-pro-max.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on iPhone 16 Pro Max.
+- [How to reset iPhone 17](https://repairrange.io/unlock/reset-iphone-17.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on iPhone 17.
+- [How to reset iPhone 17 Air](https://repairrange.io/unlock/reset-iphone-17-air.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on iPhone 17 Air.
+- [How to reset iPhone 17 Pro](https://repairrange.io/unlock/reset-iphone-17-pro.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on iPhone 17 Pro.
+- [How to reset iPhone 17 Pro Max](https://repairrange.io/unlock/reset-iphone-17-pro-max.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on iPhone 17 Pro Max.
+- [How to reset iPhone 17e](https://repairrange.io/unlock/reset-iphone-17e.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on iPhone 17e.
+- [How to reset iPhone 8](https://repairrange.io/unlock/reset-iphone-8.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on iPhone 8.
+- [How to reset iPhone SE (2nd gen)](https://repairrange.io/unlock/reset-iphone-se-2.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on iPhone SE (2nd gen).
+- [How to reset iPhone SE (3rd gen)](https://repairrange.io/unlock/reset-iphone-se-3.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on iPhone SE (3rd gen).
+- [How to reset iPhone X](https://repairrange.io/unlock/reset-iphone-x.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on iPhone X.
+
+### Google Reset Manuals
+- [How to reset Pixel 6](https://repairrange.io/unlock/reset-pixel-6.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Pixel 6.
+- [How to reset Pixel 6 Pro](https://repairrange.io/unlock/reset-pixel-6-pro.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Pixel 6 Pro.
+- [How to reset Pixel 6a](https://repairrange.io/unlock/reset-pixel-6a.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Pixel 6a.
+- [How to reset Pixel 7](https://repairrange.io/unlock/reset-pixel-7.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Pixel 7.
+- [How to reset Pixel 7 Pro](https://repairrange.io/unlock/reset-pixel-7-pro.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Pixel 7 Pro.
+- [How to reset Pixel 7a](https://repairrange.io/unlock/reset-pixel-7a.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Pixel 7a.
+- [How to reset Pixel 8](https://repairrange.io/unlock/reset-pixel-8.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Pixel 8.
+- [How to reset Pixel 8 Pro](https://repairrange.io/unlock/reset-pixel-8-pro.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Pixel 8 Pro.
+- [How to reset Pixel 8a](https://repairrange.io/unlock/reset-pixel-8a.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Pixel 8a.
+- [How to reset Pixel 9](https://repairrange.io/unlock/reset-pixel-9.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Pixel 9.
+- [How to reset Pixel 9 Pro](https://repairrange.io/unlock/reset-pixel-9-pro.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Pixel 9 Pro.
+- [How to reset Pixel 9 Pro XL](https://repairrange.io/unlock/reset-pixel-9-pro-xl.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Pixel 9 Pro XL.
+
+### Honor Reset Manuals
+- [How to reset Honor Magic6 Pro](https://repairrange.io/unlock/reset-honor-magic6-pro.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Honor Magic6 Pro.
+- [How to reset Honor X7b](https://repairrange.io/unlock/reset-honor-x7b.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Honor X7b.
+- [How to reset Honor X8b](https://repairrange.io/unlock/reset-honor-x8b.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Honor X8b.
+
+### Huawei Reset Manuals
+- [How to reset Huawei Nova 11i](https://repairrange.io/unlock/reset-huawei-nova-11i.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Huawei Nova 11i.
+- [How to reset Huawei Nova 12](https://repairrange.io/unlock/reset-huawei-nova-12.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Huawei Nova 12.
+- [How to reset Huawei P60 Pro](https://repairrange.io/unlock/reset-huawei-p60-pro.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Huawei P60 Pro.
+
+### Motorola Reset Manuals
+- [How to reset Motorola Edge 50 Pro](https://repairrange.io/unlock/reset-motorola-edge-50-pro.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Motorola Edge 50 Pro.
+- [How to reset Motorola Moto G34](https://repairrange.io/unlock/reset-motorola-moto-g34.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Motorola Moto G34.
+- [How to reset Motorola Moto G54](https://repairrange.io/unlock/reset-motorola-moto-g54.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Motorola Moto G54.
+- [How to reset Motorola Moto G84](https://repairrange.io/unlock/reset-motorola-moto-g84.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Motorola Moto G84.
+- [How to reset Motorola Razr 50 Ultra](https://repairrange.io/unlock/reset-motorola-razr-50-ultra.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Motorola Razr 50 Ultra.
+
+### Nokia Reset Manuals
+- [How to reset Nokia G21](https://repairrange.io/unlock/reset-nokia-g21.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Nokia G21.
+- [How to reset Nokia G22](https://repairrange.io/unlock/reset-nokia-g22.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Nokia G22.
+- [How to reset Nokia G42](https://repairrange.io/unlock/reset-nokia-g42.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Nokia G42.
+- [How to reset Nokia G60](https://repairrange.io/unlock/reset-nokia-g60.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Nokia G60.
+- [How to reset Nokia X30](https://repairrange.io/unlock/reset-nokia-x30.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Nokia X30.
+
+### Nothing Reset Manuals
+- [How to reset Nothing Phone (1)](https://repairrange.io/unlock/reset-nothing-phone-1.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Nothing Phone (1).
+- [How to reset Nothing Phone (2)](https://repairrange.io/unlock/reset-nothing-phone-2.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Nothing Phone (2).
+- [How to reset Nothing Phone (2a)](https://repairrange.io/unlock/reset-nothing-phone-2a.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Nothing Phone (2a).
+
+### OPPO Reset Manuals
+- [How to reset OPPO A18](https://repairrange.io/unlock/reset-oppo-a18.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on OPPO A18.
+- [How to reset OPPO A38](https://repairrange.io/unlock/reset-oppo-a38.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on OPPO A38.
+- [How to reset OPPO A58](https://repairrange.io/unlock/reset-oppo-a58.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on OPPO A58.
+- [How to reset OPPO A78](https://repairrange.io/unlock/reset-oppo-a78.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on OPPO A78.
+- [How to reset OPPO A98](https://repairrange.io/unlock/reset-oppo-a98.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on OPPO A98.
+- [How to reset OPPO Find X8](https://repairrange.io/unlock/reset-oppo-find-x8.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on OPPO Find X8.
+- [How to reset OPPO Find X8 Pro](https://repairrange.io/unlock/reset-oppo-find-x8-pro.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on OPPO Find X8 Pro.
+- [How to reset OPPO Reno 12](https://repairrange.io/unlock/reset-oppo-reno-12.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on OPPO Reno 12.
+- [How to reset OPPO Reno 12 Pro](https://repairrange.io/unlock/reset-oppo-reno-12-pro.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on OPPO Reno 12 Pro.
+
+### OnePlus Reset Manuals
+- [How to reset OnePlus 12](https://repairrange.io/unlock/reset-oneplus-12.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on OnePlus 12.
+- [How to reset OnePlus 13](https://repairrange.io/unlock/reset-oneplus-13.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on OnePlus 13.
+- [How to reset OnePlus Nord 4](https://repairrange.io/unlock/reset-oneplus-nord-4.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on OnePlus Nord 4.
+- [How to reset OnePlus Nord CE 4](https://repairrange.io/unlock/reset-oneplus-nord-ce-4.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on OnePlus Nord CE 4.
+
+### Optus Reset Manuals
+- [How to reset Optus X Play](https://repairrange.io/unlock/reset-optus-x-play.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Optus X Play.
+- [How to reset Optus X Power](https://repairrange.io/unlock/reset-optus-x-power.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Optus X Power.
+- [How to reset Optus X Sight](https://repairrange.io/unlock/reset-optus-x-sight.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Optus X Sight.
+- [How to reset Optus X Start 3](https://repairrange.io/unlock/reset-optus-x-start-3.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Optus X Start 3.
+- [How to reset Optus X Swift](https://repairrange.io/unlock/reset-optus-x-swift.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Optus X Swift.
+- [How to reset Optus X Tap](https://repairrange.io/unlock/reset-optus-x-tap.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Optus X Tap.
+
+### Realme Reset Manuals
+- [How to reset Realme 12 Pro+](https://repairrange.io/unlock/reset-realme-12-pro-plus.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Realme 12 Pro+.
+- [How to reset Realme C55](https://repairrange.io/unlock/reset-realme-c55.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Realme C55.
+- [How to reset Realme C67](https://repairrange.io/unlock/reset-realme-c67.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Realme C67.
+- [How to reset Realme GT 6](https://repairrange.io/unlock/reset-realme-gt-6.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Realme GT 6.
+- [How to reset Realme Narzo 70 Pro](https://repairrange.io/unlock/reset-realme-narzo-70-pro.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Realme Narzo 70 Pro.
+
+### Samsung Reset Manuals
+- [How to reset Galaxy A05](https://repairrange.io/unlock/reset-samsung-galaxy-a05.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy A05.
+- [How to reset Galaxy A06](https://repairrange.io/unlock/reset-samsung-galaxy-a06.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy A06.
+- [How to reset Galaxy A13](https://repairrange.io/unlock/reset-samsung-galaxy-a13.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy A13.
+- [How to reset Galaxy A14](https://repairrange.io/unlock/reset-samsung-galaxy-a14.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy A14.
+- [How to reset Galaxy A15](https://repairrange.io/unlock/reset-samsung-galaxy-a15.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy A15.
+- [How to reset Galaxy A16](https://repairrange.io/unlock/reset-samsung-galaxy-a16.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy A16.
+- [How to reset Galaxy A25](https://repairrange.io/unlock/reset-samsung-galaxy-a25.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy A25.
+- [How to reset Galaxy A33](https://repairrange.io/unlock/reset-samsung-galaxy-a33.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy A33.
+- [How to reset Galaxy A34](https://repairrange.io/unlock/reset-samsung-galaxy-a34.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy A34.
+- [How to reset Galaxy A35](https://repairrange.io/unlock/reset-samsung-galaxy-a35.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy A35.
+- [How to reset Galaxy A52](https://repairrange.io/unlock/reset-samsung-galaxy-a52.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy A52.
+- [How to reset Galaxy A53](https://repairrange.io/unlock/reset-samsung-galaxy-a53.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy A53.
+- [How to reset Galaxy A54](https://repairrange.io/unlock/reset-samsung-galaxy-a54.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy A54.
+- [How to reset Galaxy A55](https://repairrange.io/unlock/reset-samsung-galaxy-a55.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy A55.
+- [How to reset Galaxy S20](https://repairrange.io/unlock/reset-samsung-galaxy-s20.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy S20.
+- [How to reset Galaxy S21](https://repairrange.io/unlock/reset-samsung-galaxy-s21.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy S21.
+- [How to reset Galaxy S21 Ultra](https://repairrange.io/unlock/reset-samsung-galaxy-s21-ultra.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy S21 Ultra.
+- [How to reset Galaxy S22](https://repairrange.io/unlock/reset-samsung-galaxy-s22.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy S22.
+- [How to reset Galaxy S22 Ultra](https://repairrange.io/unlock/reset-samsung-galaxy-s22-ultra.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy S22 Ultra.
+- [How to reset Galaxy S23](https://repairrange.io/unlock/reset-samsung-galaxy-s23.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy S23.
+- [How to reset Galaxy S23 Ultra](https://repairrange.io/unlock/reset-samsung-galaxy-s23-ultra.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy S23 Ultra.
+- [How to reset Galaxy S24](https://repairrange.io/unlock/reset-samsung-galaxy-s24.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy S24.
+- [How to reset Galaxy S24 Ultra](https://repairrange.io/unlock/reset-samsung-galaxy-s24-ultra.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy S24 Ultra.
+- [How to reset Galaxy S25](https://repairrange.io/unlock/reset-samsung-galaxy-s25.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy S25.
+- [How to reset Galaxy S25 Edge](https://repairrange.io/unlock/reset-samsung-galaxy-s25-edge.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy S25 Edge.
+- [How to reset Galaxy S25 Ultra](https://repairrange.io/unlock/reset-samsung-galaxy-s25-ultra.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy S25 Ultra.
+- [How to reset Galaxy S26](https://repairrange.io/unlock/reset-samsung-galaxy-s26.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy S26.
+- [How to reset Galaxy S26 Ultra](https://repairrange.io/unlock/reset-samsung-galaxy-s26-ultra.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy S26 Ultra.
+- [How to reset Galaxy Z Flip 4](https://repairrange.io/unlock/reset-samsung-galaxy-z-flip-4.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy Z Flip 4.
+- [How to reset Galaxy Z Flip 5](https://repairrange.io/unlock/reset-samsung-galaxy-z-flip-5.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy Z Flip 5.
+- [How to reset Galaxy Z Flip 6](https://repairrange.io/unlock/reset-samsung-galaxy-z-flip-6.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy Z Flip 6.
+- [How to reset Galaxy Z Fold 4](https://repairrange.io/unlock/reset-samsung-galaxy-z-fold-4.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy Z Fold 4.
+- [How to reset Galaxy Z Fold 5](https://repairrange.io/unlock/reset-samsung-galaxy-z-fold-5.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy Z Fold 5.
+- [How to reset Galaxy Z Fold 6](https://repairrange.io/unlock/reset-samsung-galaxy-z-fold-6.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Galaxy Z Fold 6.
+
+### Sony Reset Manuals
+- [How to reset Sony Xperia 1 VI](https://repairrange.io/unlock/reset-sony-xperia-1-vi.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Sony Xperia 1 VI.
+- [How to reset Sony Xperia 10 VI](https://repairrange.io/unlock/reset-sony-xperia-10-vi.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Sony Xperia 10 VI.
+- [How to reset Sony Xperia 5 V](https://repairrange.io/unlock/reset-sony-xperia-5-v.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Sony Xperia 5 V.
+
+### TCL Reset Manuals
+- [How to reset TCL 30 SE](https://repairrange.io/unlock/reset-tcl-30-se.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on TCL 30 SE.
+- [How to reset TCL 40 NxtPaper](https://repairrange.io/unlock/reset-tcl-40-nxtpaper.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on TCL 40 NxtPaper.
+- [How to reset TCL 40 SE](https://repairrange.io/unlock/reset-tcl-40-se.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on TCL 40 SE.
+- [How to reset TCL 403](https://repairrange.io/unlock/reset-tcl-403.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on TCL 403.
+
+### Telstra Reset Manuals
+- [How to reset Telstra Essential Plus 3](https://repairrange.io/unlock/reset-telstra-essential-plus-3.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Telstra Essential Plus 3.
+- [How to reset Telstra Essential Pro 2](https://repairrange.io/unlock/reset-telstra-essential-pro-2.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Telstra Essential Pro 2.
+- [How to reset Telstra Essential Smart 2](https://repairrange.io/unlock/reset-telstra-essential-smart-2.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Telstra Essential Smart 2.
+- [How to reset Telstra Essential Smart 3](https://repairrange.io/unlock/reset-telstra-essential-smart-3.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Telstra Essential Smart 3.
+- [How to reset Telstra Essential Smart 4](https://repairrange.io/unlock/reset-telstra-essential-smart-4.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Telstra Essential Smart 4.
+- [How to reset Telstra Evoke Plus 2](https://repairrange.io/unlock/reset-telstra-evoke-plus-2.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Telstra Evoke Plus 2.
+- [How to reset Telstra Evoke Pro 2](https://repairrange.io/unlock/reset-telstra-evoke-pro-2.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Telstra Evoke Pro 2.
+- [How to reset Telstra Smart Senior](https://repairrange.io/unlock/reset-telstra-smart-senior.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Telstra Smart Senior.
+
+### Vivo Reset Manuals
+- [How to reset Vivo V30](https://repairrange.io/unlock/reset-vivo-v30.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Vivo V30.
+- [How to reset Vivo V40](https://repairrange.io/unlock/reset-vivo-v40.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Vivo V40.
+- [How to reset Vivo Y17s](https://repairrange.io/unlock/reset-vivo-y17s.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Vivo Y17s.
+- [How to reset Vivo Y27](https://repairrange.io/unlock/reset-vivo-y27.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Vivo Y27.
+- [How to reset Vivo Y36](https://repairrange.io/unlock/reset-vivo-y36.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Vivo Y36.
+
+### Xiaomi Reset Manuals
+- [How to reset POCO F6](https://repairrange.io/unlock/reset-xiaomi-poco-f6.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on POCO F6.
+- [How to reset POCO M6 Pro](https://repairrange.io/unlock/reset-xiaomi-poco-m6-pro.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on POCO M6 Pro.
+- [How to reset POCO X6 Pro](https://repairrange.io/unlock/reset-xiaomi-poco-x6-pro.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on POCO X6 Pro.
+- [How to reset Redmi 13C](https://repairrange.io/unlock/reset-xiaomi-redmi-13c.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Redmi 13C.
+- [How to reset Redmi Note 12](https://repairrange.io/unlock/reset-xiaomi-redmi-note-12.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Redmi Note 12.
+- [How to reset Redmi Note 13](https://repairrange.io/unlock/reset-xiaomi-redmi-note-13.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Redmi Note 13.
+- [How to reset Redmi Note 13 Pro](https://repairrange.io/unlock/reset-xiaomi-redmi-note-13-pro.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Redmi Note 13 Pro.
+- [How to reset Xiaomi 13T](https://repairrange.io/unlock/reset-xiaomi-13t.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Xiaomi 13T.
+- [How to reset Xiaomi 13T Pro](https://repairrange.io/unlock/reset-xiaomi-13t-pro.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Xiaomi 13T Pro.
+- [How to reset Xiaomi 14](https://repairrange.io/unlock/reset-xiaomi-14.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Xiaomi 14.
+- [How to reset Xiaomi 14 Ultra](https://repairrange.io/unlock/reset-xiaomi-14-ultra.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on Xiaomi 14 Ultra.
+
+### ZTE Reset Manuals
+- [How to reset ZTE Blade A53 Pro](https://repairrange.io/unlock/reset-zte-blade-a53-pro.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on ZTE Blade A53 Pro.
+
+### ZTE (Telstra) Reset Manuals
+- [How to reset ZTE Blade A73](https://repairrange.io/unlock/reset-zte-blade-a73.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on ZTE Blade A73.
+- [How to reset ZTE Blade V50](https://repairrange.io/unlock/reset-zte-blade-v50.html) - Pre-rendered static step-by-step instructions for soft, factory, and recovery resets on ZTE Blade V50.
+
 ## Pages
 
 - [Home](https://repairrange.io/index.html) - Plain-English phone repair pricing, symptom diagnostics, and shop-vs-DIY guidance. Researched by wor
