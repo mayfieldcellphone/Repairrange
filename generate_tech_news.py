@@ -17,10 +17,13 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "AIzaSyAhSJXdqCwOGd0o5laOQkU1Y
 GITLAB_TOKEN = os.environ.get("GITLAB_TOKEN", "glpat-hRoTs91bL94GiUsNmHljCmM6MQpvOjEKdTpsdG44dQ8.01.1709y1suj")
 PROJECT_PATH = "mayfield276%2Fblank-site-2026-05-06-6rrng"
 
-# 3. RSS Feeds to Source News From (Tech & Repair related)
+# 3. RSS Feeds to Source News From (Tech, Repair & Unlock related)
 RSS_FEEDS = [
     "https://www.gsmarena.com/rss-news-reviews.php3",
-    "https://techcrunch.com/category/gadgets/feed/"
+    "https://techcrunch.com/category/gadgets/feed/",
+    "https://www.xda-developers.com/feed/",
+    "https://www.androidpolice.com/feed/",
+    "https://www.macrumors.com/macrumors.xml"
 ]
 
 def fetch_rss_articles():
@@ -67,7 +70,35 @@ def ask_gemini_to_rewrite(article):
     
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={GEMINI_API_KEY}"
     
-    prompt = f"""
+    # Dynamic check if the article is about unlocking, FRP, iCloud, or bypass
+    combined_text = (article['title'] + " " + article['summary']).lower()
+    is_unlock = any(kw in combined_text for kw in ["unlock", "bypass", "frp", "icloud", "activation lock", "google lock", "bootloader", "passcode", "reset", "firmware", "patch", "recovery", "password"])
+    
+    if is_unlock:
+        prompt = f"""
+    You are an expert Australian tech journalist, mobile security specialist, and phone repair expert writing for RepairRange.io (an independent Australian phone repair price directory).
+    
+    Take this tech news or mobile security/unlocking article and rewrite it into a highly detailed, comprehensive tutorial or technical guide.
+    
+    Original Title: {article['title']}
+    Original Summary: {article['summary']}
+    Source Link: {article['link']}
+    
+    Constraints:
+    1. Write in a professional, engaging, localized Australian tone (use spelling like 'centre' instead of 'center', 'colour' instead of 'color', referencing 'Australia', 'Aussie tech', or 'AUD' where relevant).
+    2. Rewrite the content 100% in your own words so that it is completely unique and passes Google's duplicate/scraped content checks.
+    3. Structure the article into 3-4 clear, logical sections. Each section MUST start with an engaging, localized sub-heading wrapped in <h2> tags.
+    4. For any safety warnings (such as avoiding malicious or sketchy executable download sites), wrap the entire block inside a `<div class="warn-box"><p><strong>⚠️ Warning:</strong> ...</p></div>` container. Wrap helpful tips inside `<div class="tip-box"><p><strong>✅ Good to know:</strong> ...</p></div>`.
+    5. For monetization, dynamically include high-converting callout buttons wrapping affiliate programs:
+       - If iOS/iCloud: Highlight 'Wondershare Dr.Fone (Screen Unlock)' [https://partner.wondershare.com/affiliate-program.html] or 'iMyFone LockWiper' [https://www.imyfone.com/join-affiliate/].
+       - If Android/FRP: Highlight 'Tenorshare 4uKey for Android' [https://www.tenorshare.com/affiliate.html] or 'Wondershare Dr.Fone'.
+    6. Include a clear call-to-action for walk-in services: "If bypassing this lock is too technical, bring it to Mayfield Phone Repair in Newcastle or find a certified workshop on RepairRange.io to get it unlocked safely for $49 AUD."
+    7. Provide the output in clean JSON format with exactly four fields: 'title', 'slug', 'summary', and 'html_body' (body of article in clean HTML using <h2>, <h3>, <p>, <strong>, <ul>, and <li> tags, but NO <html>, <body>, or <head> tags).
+    
+    Output EXACTLY the JSON object, nothing else. Do not wrap it in markdown code blocks.
+    """
+    else:
+        prompt = f"""
     You are an expert Australian tech journalist and mobile phone repair specialist writing for RepairRange.io (an independent Australian phone repair price directory).
     
     Take this tech news article and rewrite it completely into a unique, highly engaging blog post.
@@ -426,9 +457,20 @@ def main():
         print("No articles found in RSS feeds. Exiting.")
         return
         
-    # 2. Grab the top article to process today (you can loop for more, but 1/day keeps it neat!)
-    selected_article = raw_articles[0]
-    print(f"Selected Article: {selected_article['title']}")
+    # 2. Prioritize unlock/bypass/reset articles first to dominate this niche, fallback to top gadget news
+    unlock_keywords = ["unlock", "bypass", "frp", "icloud", "activation lock", "google lock", "bootloader", "passcode", "reset", "firmware", "patch", "recovery", "password"]
+    selected_article = None
+    
+    for art in raw_articles:
+        combined_text = (art['title'] + " " + art['summary']).lower()
+        if any(kw in combined_text for kw in unlock_keywords):
+            selected_article = art
+            print(f"Selected High-Target Unlock/Bypass Article: '{art['title']}'")
+            break
+            
+    if not selected_article:
+        selected_article = raw_articles[0]
+        print(f"Selected Fallback Tech News Article: '{selected_article['title']}'")
     
     # 3. Ask Gemini Free API to localize, expand and rewrite
     ai_content = ask_gemini_to_rewrite(selected_article)
