@@ -6,4 +6,30 @@
   gtag('js', new Date());
 
   gtag('config', 'G-CWRGPBDWZD');
+
+  // AUTO-TRACKING: $49/6mo Offer Clicks
+  document.addEventListener('DOMContentLoaded', function() {
+    document.body.addEventListener('click', function(e) {
+      var target = e.target.closest('a, button');
+      if (!target) return;
+      
+      var text = target.innerText.toLowerCase();
+      var href = target.getAttribute('href') || '';
+      
+      if (text.includes('verify my shop') || href.includes('list-your-shop.html')) {
+        gtag('event', 'click_49_offer', {
+          'event_category': 'monetization',
+          'event_label': 'Verify My Shop Button',
+          'value': 49
+        });
+      }
+      
+      if (href.includes('repairbill.shop')) {
+        gtag('event', 'click_repairbill_saas', {
+          'event_category': 'monetization',
+          'event_label': 'RepairBill Link'
+        });
+      }
+    });
+  });
 </script>
