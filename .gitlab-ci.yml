@@ -24,10 +24,10 @@ pages:
     - rm -f sitemap.xml
     - python3 generate_sitemap.py
     - mkdir -p public
-    # Create the redirect file directly in the public folder
     - echo "https://www.repairrange.io/* https://repairrange.io/:splat 301!" > public/_redirects
     - cp -r ./*.html ./*.txt ./*.xml public/ 2>/dev/null || true
     - cp -r fix locations repair brands tools blog unlock css public/ 2>/dev/null || true
+    - python3 inject_google_tag.py
   artifacts:
     paths:
       - public
