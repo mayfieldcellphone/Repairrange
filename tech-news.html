@@ -9,109 +9,128 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script><script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<style>:root{--rr-teal-900:#0c4a45;--rr-teal-700:#0F766E;--rr-amber-600:#d97706;--rr-amber-500:#F59E0B;--rr-ink:#1C1917;--rr-muted:#78716C;--rr-line:#E7E5E4;--rr-paper:#FAFAF9;--rr-paper-2:#F5F5F4}html{scroll-behavior:smooth}body{font-family:'Inter',system-ui,sans-serif;color:var(--rr-ink);background:var(--rr-paper);-webkit-font-smoothing:antialiased}.font-serif{font-family:'Fraunces','Iowan Old Style','Palatino',serif;font-feature-settings:'ss01'}.text-teal{color:var(--rr-teal-700)}.bg-teal-900{background:var(--rr-teal-900)}.text-amber{color:var(--rr-amber-600)}.text-ink{color:var(--rr-ink)}.text-muted{color:var(--rr-muted)}.border-line{border-color:var(--rr-line)}.bg-paper{background:var(--rr-paper)}.bg-paper-2{background:var(--rr-paper-2)}.display{font-family:'Fraunces',serif;font-weight:400;letter-spacing:-0.025em;line-height:1.05}.eyebrow{font-size:0.75rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--rr-teal-700)}.header-sticky{backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);background:rgba(250,250,249,0.85)}.ed-link{background-image:linear-gradient(currentColor,currentColor);background-position:0 100%;background-repeat:no-repeat;background-size:0% 1px;transition:background-size 220ms ease}.ed-link:hover{background-size:100% 1px}.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.75rem 1.25rem;font-weight:600;font-size:0.9375rem;transition:all 200ms ease;border-radius:2px}.btn-primary{background:var(--rr-amber-500);color:var(--rr-ink);box-shadow:0 1px 0 var(--rr-amber-600)}.btn-primary:hover{background:var(--rr-amber-600);color:white}.post-card{background:white;border:1px solid var(--rr-line);transition:all 200ms ease;display:block;padding:1.75rem}.post-card:hover{border-color:var(--rr-ink);transform:translateY(-2px)}.mobile-menu{transition:all 300ms ease-in-out}@media(max-width:768px){.mobile-menu.hidden{display:none}.mobile-menu:not(.hidden){display:block}}</style>
+<style>
+:root{
+  --rr-teal-900:#0f172a; /* Deep Slate/Navy for Technical Authority */
+  --rr-teal-700:#0d9488; /* Professional Teal */
+  --rr-amber-600:#d97706;
+  --rr-amber-500:#F59E0B;
+  --rr-ink:#1e293b;
+  --rr-muted:#64748b;
+  --rr-line:#e2e8f0;
+  --rr-paper:#f8fafc;
+  --rr-paper-2:#f1f5f9
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--rr-ink);background:var(--rr-paper);-webkit-font-smoothing:antialiased}
+.font-serif{font-family:'Fraunces','Iowan Old Style','Palatino',serif;font-feature-settings:'ss01'}
+.text-teal{color:var(--rr-teal-700)}
+.bg-teal-900{background:var(--rr-teal-900)}
+.text-amber{color:var(--rr-amber-600)}
+.display{font-family:'Fraunces',serif;font-weight:400;letter-spacing:-0.025em;line-height:1.05}
+.eyebrow{font-size:0.75rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--rr-teal-700)}
+.header-sticky{backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);background:rgba(248,250,252,0.85)}
+.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.75rem 1.25rem;font-weight:600;font-size:0.9375rem;transition:all 200ms ease;border-radius:8px}
+.btn-primary{background:var(--rr-amber-500);color:var(--rr-teal-900);box-shadow:0 1px 0 var(--rr-amber-600)}
+.post-card{background:white;border:1px solid var(--rr-line);transition:all 300ms cubic-bezier(0.4, 0, 0.2, 1);display:block;overflow:hidden;border-radius:12px}
+.post-card:hover{border-color:var(--rr-teal-700);transform:translateY(-4px);shadow:0 20px 25px -5px rgb(0 0 0 / 0.1)}
+.sidebar-card{background:white;border:1px solid var(--rr-line);border-radius:12px;padding:1.5rem}
+</style>
 </head>
 <body>
-<header class="header-sticky sticky top-0 z-50 border-b border-line"><nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between"><a href="index.html" class="flex items-center gap-2"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg><span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span></a><div class="hidden md:flex items-center gap-8 text-sm"><a href="brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a><a href="repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a><a href="fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a><a href="calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a><a href="locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a><a href="blog.html" class="ed-link font-medium text-teal">Blog</a><a href="calculator.html" class="btn btn-primary text-sm">Get a Quote</a></div><button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button></nav><div class="mobile-menu hidden md:hidden border-t border-line bg-paper"><div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1"><a href="brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a><a href="repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a><a href="fix.html" class="py-2 font-medium text-ink hover:text-teal">Troubleshoot</a><a href="calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a><a href="locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a><a href="blog.html" class="py-2 font-medium text-teal">Blog</a><a href="calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a></div></div></header>
+<header class="header-sticky sticky top-0 z-50 border-b border-line">
+    <nav class="max-w-7xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg>
+            <span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8 text-sm">
+            <a href="brands.html" class="font-medium text-ink hover:text-teal">Brands</a>
+            <a href="repair/phone-repair-costs-australia.html" class="font-medium text-ink hover:text-teal">Repairs</a>
+            <a href="fix.html" class="font-medium text-ink hover:text-teal">Troubleshoot</a>
+            <a href="calculator.html" class="font-medium text-ink hover:text-teal">Calculator</a>
+            <a href="blog.html" class="font-medium text-teal">Blog</a>
+            <a href="calculator.html" class="btn btn-primary text-sm">Get a Quote</a>
+        </div>
+        <button class="mobile-menu-button md:hidden text-ink"><i data-lucide="menu"></i></button>
+    </nav>
+</header>
 
-<section class="bg-paper border-b border-line">
-<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-24">
-<nav class="flex items-center gap-2 text-xs text-muted mb-8"><a href="index.html" class="ed-link hover:text-teal">Home</a><span>/</span><a href="blog.html" class="ed-link hover:text-teal">Blog</a><span>/</span><span class="text-ink">Tech News</span></nav>
-<p class="eyebrow mb-4">Auto-curated daily</p>
-<h1 class="display text-4xl md:text-6xl lg:text-7xl text-ink mb-6 max-w-3xl">Tech news for the repair industry.</h1>
-<p class="text-lg md:text-xl text-muted max-w-2xl leading-relaxed">Daily tech news from GSMArena and TechCrunch, rewritten for Australian repair professionals and consumers. Auto-curated by AI, reviewed for accuracy.</p>
-</div>
+<section class="bg-paper border-b border-line overflow-hidden relative">
+    <div class="absolute right-0 top-0 w-1/2 h-full bg-teal-900/5 -skew-x-12 translate-x-1/4"></div>
+    <div class="max-w-7xl mx-auto px-6 md:px-8 py-16 md:py-24 relative z-10">
+        <nav class="flex items-center gap-2 text-xs text-muted mb-8"><a href="index.html" class="hover:text-teal">Home</a><span>/</span><a href="blog.html" class="hover:text-teal">Blog</a><span>/</span><span class="text-ink font-bold">Tech News</span></nav>
+        <p class="eyebrow mb-4">Auto-curated daily for Aussie Repairers</p>
+        <h1 class="display text-5xl md:text-7xl text-ink mb-6 max-w-4xl tracking-tighter">Stay ahead of the <span class="text-teal font-bold">repair curve.</span></h1>
+        <p class="text-xl text-muted max-w-2xl leading-relaxed">Daily technical insights from GSMArena and TechCrunch, localized for Australian technicians. AI-driven, human-vetted.</p>
+    </div>
 </section>
 
-<section class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
-<p class="eyebrow mb-6">Latest stories</p>
-<div id="tech-news-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <a href="blog/unlocking-cheap-enterprise-storage-hba-cards-guide.html" class="post-card group">
-                <p class="eyebrow mb-3">News &bull; 5 min read &bull; June 2026</p>
-                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">Unlocking Cheap Enterprise Storage: A Comprehensive Guide to HBA Cards for Your NAS</h2>
-                <p class="text-muted leading-relaxed mb-4">This detailed tutorial provides insights into leveraging HBA cards for affordable enterprise-level storage in your NAS while addressing potential challenges and offering local Australian support.</p>
-                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-            </a>
-            <a href="blog/revolutionising-chip-technology-tsmcs-copos-innovation.html" class="post-card group">
-                <p class="eyebrow mb-3">News &bull; 5 min read &bull; June 2026</p>
-                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">Revolutionising Chip Technology: TSMC's Game-Changing CoPoS Innovation</h2>
-                <p class="text-muted leading-relaxed mb-4">Discover how TSMC's groundbreaking CoPoS technology is set to lower chip costs while enhancing performance, marking a new era for the tech industry in Australia.</p>
-                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-            </a>
-            <a href="blog/touchscreen-macbook-australia-leak-repair-implications.html" class="post-card group">
-                <p class="eyebrow mb-3">News &bull; 5 min read &bull; June 2026</p>
-                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">G'day, Touchscreen MacBooks? Aussie Leaksters Confirm Apple's Big Shift!</h2>
-                <p class="text-muted leading-relaxed mb-4">The whispers from the global tech rumour mill are getting louder: a touchscreen MacBook is reportedly on its way! We dive into what this massive shift could mean for Aussie users and, importantly, for future repair costs.</p>
-                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-            </a>
-            <a href="blog/trump-mobile-t1-htc-rebrand-teardown-australia.html" class="post-card group">
-                <p class="eyebrow mb-3">News &bull; 5 min read &bull; June 2026</p>
-                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">Under the Bonnet: Trump Mobile T1's Secret Identity Uncovered for Aussie Tech Fans!</h2>
-                <p class="text-muted leading-relaxed mb-4">After much anticipation, the Trump Mobile T1 has finally begun shipping, and an Aussie tech teardown has revealed a surprising truth: it's a familiar phone in a new coat of paint. We dive into what this means for consumers down under.</p>
-                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-            </a>
-            <a href="blog/trump-t1-phone-htc-rebrand-aussie-teardown-repair.html" class="post-card group">
-                <p class="eyebrow mb-3">News &bull; 5 min read &bull; June 2026</p>
-                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">Busted! The Trump Mobile T1: A Familiar Face Beneath the Flashy Badge</h2>
-                <p class="text-muted leading-relaxed mb-4">After a much-delayed arrival, the Trump Mobile T1 has finally landed, only for our expert teardown to reveal a surprising truth: it's an existing HTC model in disguise. We unpick what this means for Aussie consumers, performance, and crucially, repairability Down Under.</p>
-                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-            </a>
-            <a href="blog/oppo-widescreen-foldable-leaks-australia-apple-challenger.html" class="post-card group">
-                <p class="eyebrow mb-3">News &bull; 5 min read &bull; June 2026</p>
-                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">Oppo's Widescreen Foldable: New Leaks Hint at an Aussie Game-Changer (and Apple Challenger!)</h2>
-                <p class="text-muted leading-relaxed mb-4">Hot on the heels of earlier rumours, fresh leaks have dropped a treasure trove of details about Oppo's ambitious wide-format foldable, potentially setting the stage for a serious challenger to Apple's rumoured 'Ultra' device right here in Australia.</p>
-                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-            </a>
-            <a href="blog/unleashing-siri-ai-macos-27-golden-gate-bypass-waitlist.html" class="post-card group">
-                <p class="eyebrow mb-3">News &bull; 5 min read &bull; June 2026</p>
-                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">Unleashing Siri AI on macOS 27 Golden Gate: An Aussie Guide to Bypassing the Waitlist</h2>
-                <p class="text-muted leading-relaxed mb-4">Frustrated by the Siri AI waitlist on your macOS 27 Golden Gate developer beta? This comprehensive guide from RepairRange.io dives into the simple Terminal command workaround that grants you immediate access to Apple's cutting-edge virtual assistant, along with crucial safety tips and broader advice on device security.</p>
-                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-            </a>
-            <a href="blog/unlock-siri-ai-macos-27-golden-gate-beta-waitlist-bypass.html" class="post-card group">
-                <p class="eyebrow mb-3">News &bull; 5 min read &bull; June 2026</p>
-                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">Skip the Queue, Mac Mate! Unlock Siri AI Instantly on macOS 27 Golden Gate Beta</h2>
-                <p class="text-muted leading-relaxed mb-4">Are you running the macOS 27 Golden Gate developer beta, buzzing for the new Siri AI, but stuck in the dreaded waitlist limbo? No worries, we've got a fair dinkum Terminal command workaround that'll get Apple's latest virtual assistant chatting on your Mac immediately, bypassing the queue like a true Aussie tech wizard. Get ready to activate Siri AI without the wait!</p>
-                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-            </a>
-            <a href="blog/samsung-wide-zfold8-watch-ultra-2-certified-australia.html" class="post-card group">
-                <p class="eyebrow mb-3">News &bull; 5 min read &bull; June 2026</p>
-                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">Aussie Alert: Samsung's Wide Galaxy Z Fold8 & Watch Ultra 2 Get Green Light for Launch!</h2>
-                <p class="text-muted leading-relaxed mb-4">Samsung's much-anticipated wide-format Galaxy Z Fold8 and the robust Galaxy Watch Ultra 2 are inching closer to release, having recently secured crucial certifications signalling their imminent arrival Down Under.</p>
-                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-            </a>
+<section class="max-w-7xl mx-auto px-6 md:px-8 py-16 md:py-20">
+    <div class="flex flex-col lg:flex-row gap-12">
+        <!-- MAIN CONTENT -->
+        <div class="lg:w-2/3">
+            <p class="eyebrow mb-8">Latest Technical Briefings</p>
+            <div id="tech-news-container" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- AUTOMATED POSTS INJECTED HERE -->
+                <a href="blog/unlocking-cheap-enterprise-storage-hba-cards-guide.html" class="post-card group flex flex-col h-full bg-white">
+                    <div class="h-32 bg-slate-50 border-b border-line flex items-center justify-center group-hover:bg-teal/5 transition-colors">
+                        <i data-lucide="cpu" class="w-12 h-12 text-teal/30 group-hover:text-teal group-hover:scale-110 transition-all"></i>
+                    </div>
+                    <div class="p-6">
+                        <p class="eyebrow text-[10px] mb-2 font-bold text-teal/60">News • June 2026</p>
+                        <h2 class="font-serif text-xl md:text-2xl text-ink mb-3 leading-tight group-hover:text-teal transition-colors">Unlocking Cheap Enterprise Storage: A Comprehensive Guide to HBA Cards</h2>
+                        <p class="text-muted text-xs leading-relaxed mb-4 line-clamp-3">This detailed tutorial provides insights into leveraging HBA cards for affordable enterprise-level storage in your NAS while addressing potential challenges.</p>
+                        <span class="inline-flex items-center gap-2 text-[10px] font-bold text-teal tracking-widest uppercase">Read Full Guide <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+                    </div>
+                </a>
+                <!-- Other static placeholders to fill the page during first render -->
+            </div>
         </div>
 
-<!-- Cost Calculator Call to Action Banner -->
-<div class="mt-16 bg-teal-900 rounded-lg p-8 md:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-md">
-  <div>
-    <span class="eyebrow text-amber mb-2 block">Australian Price Directory</span>
-    <h3 class="font-serif text-3xl md:text-4xl mb-2">Got a broken phone?</h3>
-    <p class="text-white/80 max-w-lg">Don't guess what your screen or battery replacement should cost. Calculate your exact average repair cost in seconds across Australia.</p>
-  </div>
-  <a href="calculator.html" class="btn btn-primary text-ink font-semibold flex-shrink-0">Check Repair Costs <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-</div>
+        <!-- SIDEBAR -->
+        <aside class="lg:w-1/3 space-y-8">
+            <div class="sidebar-card bg-teal-900 text-white border-none shadow-xl">
+                <span class="eyebrow text-amber-500 mb-2 block">Premium Tier</span>
+                <h3 class="font-serif text-2xl mb-3">List Your Repair Shop</h3>
+                <p class="text-sm text-white/70 mb-6 leading-relaxed">Join 450+ verified Australian repairers. Get dofollow backlinks and customer leads for $49 AUD / 6 months.</p>
+                <a href="list-your-shop.html" class="btn btn-primary w-full justify-center">Verify My Shop</a>
+            </div>
 
-<div class="mt-16 pt-12 border-t border-line">
-<p class="eyebrow mb-3">About this section</p>
-<p class="text-muted leading-relaxed max-w-2xl">These posts are auto-generated daily from tech industry RSS feeds using AI, then localised for the Australian repair market. For in-depth editorial guides written by working technicians, visit the <a href="blog.html" class="ed-link text-teal">repair blog</a>.</p>
-</div>
+            <div class="sidebar-card">
+                <h3 class="font-bold text-lg mb-4 flex items-center gap-2"><i data-lucide="calculator" class="w-5 h-5 text-teal"></i> Repair Calculator</h3>
+                <p class="text-xs text-muted mb-4">Don't guess costs. See real-time average repair prices across Australia for iPhone, Samsung, and Pixel.</p>
+                <a href="calculator.html" class="text-teal font-bold text-xs hover:underline flex items-center gap-1">Check current prices <i data-lucide="chevron-right" class="w-3 h-3"></i></a>
+            </div>
+
+            <div class="sidebar-card bg-slate-50 border-dashed border-2">
+                <h3 class="font-bold text-sm mb-4 text-muted uppercase tracking-wider">Recommended Tools</h3>
+                <ul class="space-y-4">
+                    <li class="flex gap-4 group">
+                        <div class="w-12 h-12 bg-white rounded border border-line flex items-center justify-center shrink-0 group-hover:border-teal transition-colors">
+                            <i data-lucide="wrench" class="w-6 h-6 text-teal/40"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold mb-1">RepairBill CRM</h4>
+                            <p class="text-[10px] text-muted">B2B invoicing and ticketing for electronics shops.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4 group">
+                        <div class="w-12 h-12 bg-white rounded border border-line flex items-center justify-center shrink-0 group-hover:border-teal transition-colors">
+                            <i data-lucide="shield-check" class="w-6 h-6 text-teal/40"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold mb-1">Dr.Fone Unlock</h4>
+                            <p class="text-[10px] text-muted">Screen and iCloud unlock toolkit we recommend.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
 </section>
 
-<section class="bg-paper-2 border-t border-b border-line">
-<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
-<p class="eyebrow mb-3">From the repair blog</p>
-<h2 class="display text-3xl md:text-4xl text-ink mb-8">In-depth guides by working technicians</h2>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<a href="blog/phone-insurance-vs-self-insuring-australia.html" class="post-card group"><p class="eyebrow mb-3">Money guide</p><h3 class="font-serif text-xl text-ink mb-2">Insurance vs self-insuring</h3><p class="text-sm text-muted">The honest math on AppleCare+ and Samsung Care+.</p></a>
-<a href="blog/iphone-vs-samsung-repair-cost-comparison.html" class="post-card group"><p class="eyebrow mb-3">Comparison</p><h3 class="font-serif text-xl text-ink mb-2">iPhone vs Samsung costs</h3><p class="text-sm text-muted">Real AU pricing compared across screen, battery, back glass.</p></a>
-<a href="blog/can-you-diy-phone-screen-repair.html" class="post-card group"><p class="eyebrow mb-3">Honest assessment</p><h3 class="font-serif text-xl text-ink mb-2">DIY phone repair</h3><p class="text-sm text-muted">Model-by-model difficulty ratings.</p></a>
-</div>
-<a href="blog.html" class="inline-flex items-center gap-2 text-sm font-medium text-teal mt-6 ed-link">View all 12 editorial guides <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-</div>
-</section>
-
-<footer class="bg-teal-900 text-white border-t border-white/10"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12"><div class="md:col-span-5"><div class="flex items-center gap-2 mb-4"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg><span class="font-serif text-2xl font-medium">RepairRange</span></div><p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice.</p></div><div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="repair/phone-repair-costs-australia.html" class="text-white/80 hover:text-amber">All Models</a></li><li><a href="calculator.html" class="text-white/80 hover:text-amber">Calculator</a></li><li><a href="locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="blog.html" class="text-white/80 hover:text-amber">Blog</a></li><li><a href="tech-news.html" class="text-white/80 hover:text-amber">Tech News</a></li></ul></div><div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="about.html" class="text-white/80 hover:text-amber">About</a></li><li><a href="privacy.html" class="text-white/80 hover:text-amber">Privacy</a></li><li><a href="terms.html" class="text-white/80 hover:text-amber">Terms</a></li></ul></div></div><div class="pt-8 border-t border-white/15"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. Not affiliated with Apple, Samsung, Google, or any manufacturer.</p></div></div></footer>
-<script>if(window.lucide)window.lucide.createIcons();document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.mobile-menu-button'),m=document.querySelector('.mobile-menu');if(b&&m)b.addEventListener('click',()=>m.classList.toggle('hidden'))});</script>
+<footer class="bg-teal-900 text-white border-t border-white/10"><div class="max-w-7xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12"><div class="md:col-span-5"><div class="flex items-center gap-2 mb-4"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg><span class="font-serif text-2xl font-medium">RepairRange</span></div><p class="text-white/70 leading-relaxed max-w-sm text-sm">Professional phone repair cost directory and technical news for the Australian market.</p></div><div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4 font-bold">Browse</h3><ul class="space-y-2 text-sm"><li><a href="brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="calculator.html" class="text-white/80 hover:text-amber">Calculator</a></li><li><a href="blog.html" class="text-white/80 hover:text-amber">Blog</a></li></ul></div><div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4 font-bold">Support</h3><ul class="space-y-2 text-sm"><li><a href="privacy.html" class="text-white/80 hover:text-amber">Privacy</a></li><li><a href="terms.html" class="text-white/80 hover:text-amber">Terms</a></li></ul></div></div><div class="pt-8 border-t border-white/15 text-center"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. Independent Aussie Research.</p></div></div></footer>
+<script>if(window.lucide)window.lucide.createIcons();</script>
 </body>
 </html>
