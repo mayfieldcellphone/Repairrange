@@ -5,9 +5,16 @@
     <link>https://repairrange.io/blog.html</link>
     <description>Daily Mobile Phone &amp; Tech Repair Pricing Guides &amp; Australian Industry News</description>
     <language>en-au</language>
-    <lastBuildDate>Tue, 16 Jun 2026 06:54:27 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 09:30:32 GMT</lastBuildDate>
     <atom:link href="https://repairrange.io/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Apple's Privacy Power-Up: A Deep Dive into Unified Email Domains and What It Means for Aussie Users</title>
+      <link>https://repairrange.io/blog/apple-unified-private-icloud-email-domain-guide.html</link>
+      <guid isPermaLink="true">https://repairrange.io/blog/apple-unified-private-icloud-email-domain-guide.html</guid>
+      <pubDate>Tue, 16 Jun 2026 09:30:32 GMT</pubDate>
+      <description>Apple is set to streamline its privacy services, unifying email domains for 'Sign in with Apple' and 'Hide My Email' under a single, robust `private.icloud.com` address. This comprehensive guide from RepairRange.io breaks down what this technical shift means for your digital privacy, how it enhances security, and practical tips for managing your online identity with Apple's powerful tools, including what to do if you ever find yourself locked out.</description>
+    </item>
+<item>
       <title>Celebrating 26 Years of GSMArena: A Milestone in Mobile Tech</title>
       <link>https://repairrange.io/blog/celebrating-26-years-gsmarena-milestone-mobile-tech.html</link>
       <guid isPermaLink="true">https://repairrange.io/blog/celebrating-26-years-gsmarena-milestone-mobile-tech.html</guid>
@@ -104,13 +111,6 @@
       <guid isPermaLink="true">https://repairrange.io/blog/unleashing-siri-ai-macos-27-golden-gate-bypass-waitlist.html</guid>
       <pubDate>Thu, 11 Jun 2026 21:37:50 GMT</pubDate>
       <description>Frustrated by the Siri AI waitlist on your macOS 27 Golden Gate developer beta? This comprehensive guide from RepairRange.io dives into the simple Terminal command workaround that grants you immediate access to Apple's cutting-edge virtual assistant, along with crucial safety tips and broader advice on device security.</description>
-    </item>
-<item>
-      <title>Skip the Queue, Mac Mate! Unlock Siri AI Instantly on macOS 27 Golden Gate Beta</title>
-      <link>https://repairrange.io/blog/unlock-siri-ai-macos-27-golden-gate-beta-waitlist-bypass.html</link>
-      <guid isPermaLink="true">https://repairrange.io/blog/unlock-siri-ai-macos-27-golden-gate-beta-waitlist-bypass.html</guid>
-      <pubDate>Thu, 11 Jun 2026 21:07:11 GMT</pubDate>
-      <description>Are you running the macOS 27 Golden Gate developer beta, buzzing for the new Siri AI, but stuck in the dreaded waitlist limbo? No worries, we've got a fair dinkum Terminal command workaround that'll get Apple's latest virtual assistant chatting on your Mac immediately, bypassing the queue like a true Aussie tech wizard. Get ready to activate Siri AI without the wait!</description>
     </item>
   </channel>
 </rss>
