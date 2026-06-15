@@ -174,5 +174,72 @@
             <p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p>
         </div>
     </footer>
+<script>if(window.lucide)window.lucide.createIcons();</script>
+<script>
+(function(){
+var g=[
+{t:'10 repair myths debunked',u:'phone-repair-myths-debunked.html'},
+{t:'Phone repair checklist',u:'phone-repair-checklist-before-during-after.html'},
+{t:'Your warranty rights (ACL)',u:'phone-repair-warranty-australia-consumer-rights.html'},
+{t:'Finding a trustworthy shop',u:'how-to-find-trustworthy-phone-repair-shop.html'},
+{t:'iPhone vs Samsung costs',u:'iphone-vs-samsung-repair-cost-comparison.html'},
+{t:'How long repairs take',u:'how-long-does-phone-repair-take.html'},
+{t:'DIY screen repair?',u:'can-you-diy-phone-screen-repair.html'},
+{t:'Screen quality tiers',u:'screen-quality-tiers-oem-aftermarket-refurbished-explained.html'},
+{t:'Samsung fingerprint trap',u:'samsung-fingerprint-sensor-screen-replacement-guide.html'},
+{t:'Is your screen genuine?',u:'how-to-tell-genuine-vs-aftermarket-screen.html'},
+{t:'Battery health guide',u:'battery-health-when-to-replace.html'},
+{t:'eSIM and phone repair',u:'esim-phone-repair-what-happens.html'},
+{t:'Foldable phone repair costs',u:'foldable-phone-repair-cost-guide.html'},
+{t:'iPad repair costs',u:'ipad-repair-cost-guide-australia.html'},
+{t:'MacBook & laptop costs',u:'macbook-laptop-repair-cost-guide-australia.html'},
+{t:'Lenovo tablet repair',u:'lenovo-tablet-repair-cost-guide-australia.html'},
+{t:'S26 Ultra repair guide',u:'samsung-galaxy-s26-ultra-repair-guide.html'},
+{t:'iPhone 17 PM guide',u:'iphone-17-pro-max-repair-guide.html'}
+];
+var m=[
+{t:'iPhone 17 Pro Max',u:'../repair/iphone-17-pro-max.html'},
+{t:'iPhone 16 Pro Max',u:'../repair/iphone-16-pro-max.html'},
+{t:'iPhone 15 Pro Max',u:'../repair/iphone-15-pro-max.html'},
+{t:'iPhone 15',u:'../repair/iphone-15.html'},
+{t:'iPhone 13',u:'../repair/iphone-13.html'},
+{t:'Galaxy S26 Ultra',u:'../repair/samsung-galaxy-s26-ultra.html'},
+{t:'Galaxy S25 Ultra',u:'../repair/samsung-galaxy-s25-ultra.html'},
+{t:'Galaxy S24 Ultra',u:'../repair/samsung-galaxy-s24-ultra.html'},
+{t:'Pixel 9 Pro',u:'../repair/pixel-9-pro.html'},
+{t:'Pixel 8 Pro',u:'../repair/pixel-8-pro.html'}
+];
+var f=[
+{t:'Water damage emergency',u:'../fix/water-damage.html'},
+{t:'Phone won\'t turn on',u:'../fix/wont-turn-on.html'},
+{t:'Cracked screen',u:'../fix/cracked-screen-still-works.html'},
+{t:'Battery draining fast',u:'../fix/battery-drains-fast.html'},
+{t:'Ghost touch issues',u:'../fix/ghost-touch.html'},
+{t:'Charging problems',u:'../fix/charging-port.html'},
+{t:'Green lines on screen',u:'../fix/green-lines.html'},
+{t:'Black screen fix',u:'../fix/black-screen.html'},
+{t:'Phone overheating',u:'../fix/overheating.html'},
+{t:'Dropped and broken',u:'../fix/dropped-and-broken.html'}
+];
+var s=[
+{t:'Insurance vs self-insuring',u:'phone-insurance-vs-self-insuring-australia.html'},
+{t:'Fix before selling?',u:'should-you-fix-phone-before-selling.html'},
+{t:'Repair vs replace guide',u:'repair-vs-replace-decision-guide.html'},
+{t:'Phone plans for newcomers',u:'australian-phone-plan-guide-for-immigrants-and-students.html'}
+];
+function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+function render(id,arr,n,allLink,allText){
+var el=document.getElementById(id);if(!el)return;
+var items=shuffle(arr.slice()).slice(0,n);
+var h='';
+for(var i=0;i<items.length;i++){h+='<a href="'+items[i].u+'" class="sidebar-link">'+items[i].t+'</a>';}
+if(allLink)h+='<a href="'+allLink+'" class="sidebar-link" style="color:var(--rr-teal-700);font-weight:600">'+allText+'</a>';
+el.innerHTML=el.innerHTML+h;}
+render('sb-guides',g,6,'../repair/phone-repair-costs-australia.html','Browse all guides \u2192');
+render('sb-models',m,5,'../repair/phone-repair-costs-australia.html','All 75+ models \u2192');
+render('sb-fix',f,5,'../fix.html','All 10 guides \u2192');
+render('sb-money',s,3,null,null);
+})();
+</script>
 </body>
 </html>
