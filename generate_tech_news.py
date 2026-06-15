@@ -44,7 +44,8 @@ def fetch_rss_articles():
 
 def ask_gemini_to_rewrite(article):
     print(f"Asking Gemini to rewrite and localize: '{article['title']}'...")
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={GEMINI_API_KEY}"
+    # FIXED: Using stable gemini-1.5-flash
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}"
     
     prompt = f"""
     You are an expert Australian tech journalist writing for RepairRange.io.
@@ -123,13 +124,13 @@ def commit_article_to_gitlab(slug, html_content, title, summary, icon="zap"):
         new_card = f"""
         <a href="blog/{slug}.html" class="post-card group flex flex-col h-full bg-white border border-line hover:border-teal hover:shadow-xl transition-all rounded-xl overflow-hidden shadow-sm">
             <div class="h-32 bg-slate-50 border-b border-line flex items-center justify-center group-hover:bg-teal/5 transition-colors">
-                <i data-lucide="{icon}" class="w-12 h-12 text-teal/30 group-hover:text-teal group-hover:scale-110 transition-all"></i>
+                <i data-lucide=\"{icon}\" class=\"w-12 h-12 text-teal/30 group-hover:text-teal group-hover:scale-110 transition-all\"></i>
             </div>
             <div class="p-6">
                 <p class="eyebrow text-[10px] mb-2 font-bold text-teal/60">News \u2022 {datetime.now().strftime("%B %Y")}</p>
                 <h2 class="font-serif text-xl md:text-2xl text-ink mb-3 leading-tight group-hover:text-teal transition-colors">{title}</h2>
                 <p class="text-muted text-xs leading-relaxed mb-4 line-clamp-3">{summary}</p>
-                <span class="inline-flex items-center gap-2 text-[10px] font-bold text-teal tracking-widest uppercase">Read Full Guide <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+                <span class=\"inline-flex items-center gap-2 text-[10px] font-bold text-teal tracking-widest uppercase\">Read Full Guide <i data-lucide=\"arrow-right\" class=\"w-4 h-4\"></i></span>
             </div>
         </a>
         """
@@ -147,7 +148,7 @@ def commit_article_to_gitlab(slug, html_content, title, summary, icon="zap"):
         print(f"Error updating tech-news: {e}")
 
     commit_url = f"https://gitlab.com/api/v4/projects/{PROJECT_PATH}/repository/commits"
-    payload = json.dumps({"branch": "main", "commit_message": f"Publish: {title}", "actions": actions}).encode("utf-8")
+    payload = json.dumps({"branch": "main", "commit_message": f"Stability Fix: Correct Gemini Model ID for automated news", "actions": actions}).encode("utf-8")
     req = urllib.request.Request(commit_url, data=payload, method="POST")
     req.add_header("Content-Type", "application/json")
     req.add_header("PRIVATE-TOKEN", GITLAB_TOKEN)
