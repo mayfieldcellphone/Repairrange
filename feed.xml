@@ -5,9 +5,16 @@
     <link>https://repairrange.io/blog.html</link>
     <description>Daily Mobile Phone &amp; Tech Repair Pricing Guides &amp; Australian Industry News</description>
     <language>en-au</language>
-    <lastBuildDate>Tue, 16 Jun 2026 16:17:56 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 18:11:35 GMT</lastBuildDate>
     <atom:link href="https://repairrange.io/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>A Comprehensive Guide to Samsung's One UI 9 Testing on the Galaxy A16 5G</title>
+      <link>https://repairrange.io/blog/samsung-one-ui-9-testing-galaxy-a16-5g.html</link>
+      <guid isPermaLink="true">https://repairrange.io/blog/samsung-one-ui-9-testing-galaxy-a16-5g.html</guid>
+      <pubDate>Tue, 16 Jun 2026 18:11:35 GMT</pubDate>
+      <description>Explore the details of Samsung's testing phase for One UI 9 on the Galaxy A16 5G, including firmware specifics and how it impacts Aussie users.</description>
+    </item>
+<item>
       <title>Streamlining Privacy: Apple Unifies Sign in With Apple and Hide My Email</title>
       <link>https://repairrange.io/blog/apple-unifies-sign-in-with-apple-hide-my-email.html</link>
       <guid isPermaLink="true">https://repairrange.io/blog/apple-unifies-sign-in-with-apple-hide-my-email.html</guid>
@@ -104,13 +111,6 @@
       <guid isPermaLink="true">https://repairrange.io/blog/trump-mobile-t1-htc-rebrand-teardown-australia.html</guid>
       <pubDate>Fri, 12 Jun 2026 05:26:07 GMT</pubDate>
       <description>After much anticipation, the Trump Mobile T1 has finally begun shipping, and an Aussie tech teardown has revealed a surprising truth: it's a familiar phone in a new coat of paint. We dive into what this means for consumers down under.</description>
-    </item>
-<item>
-      <title>Busted! The Trump Mobile T1: A Familiar Face Beneath the Flashy Badge</title>
-      <link>https://repairrange.io/blog/trump-t1-phone-htc-rebrand-aussie-teardown-repair.html</link>
-      <guid isPermaLink="true">https://repairrange.io/blog/trump-t1-phone-htc-rebrand-aussie-teardown-repair.html</guid>
-      <pubDate>Fri, 12 Jun 2026 05:13:05 GMT</pubDate>
-      <description>After a much-delayed arrival, the Trump Mobile T1 has finally landed, only for our expert teardown to reveal a surprising truth: it's an existing HTC model in disguise. We unpick what this means for Aussie consumers, performance, and crucially, repairability Down Under.</description>
     </item>
   </channel>
 </rss>
