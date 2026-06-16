@@ -7,10 +7,8 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-CWRGPBDWZD');
 </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Symptom-first phone troubleshooting: black screens, water damage, ghost touch, dead batteries. Pick the symptom; get the cause and cost.">
@@ -26,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://repairrange.io/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <style>
         :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#E7E5E4; --rr-paper:#FAFAF9; --rr-paper-2:#F5F5F4; }
@@ -66,7 +64,6 @@
                 <a href="repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a>
                 <a href="fix.html" class="ed-link font-medium text-teal">Troubleshoot</a>
                 <a href="calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a>
-                <a href="unlock/index.html" class="ed-link font-medium text-ink hover:text-teal">Phone Unlock</a>
                 <a href="locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a>
                 <a href="blog.html" class="ed-link font-medium text-ink hover:text-teal">Blog</a>
                 <a href="calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
@@ -79,7 +76,6 @@
                 <a href="repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a>
                 <a href="fix.html" class="py-2 font-medium text-teal">Troubleshoot</a>
                 <a href="calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a>
-                <a href="unlock/index.html" class="py-2 font-medium text-ink hover:text-teal">Phone Unlock</a>
                 <a href="locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a>
                 <a href="blog.html" class="py-2 font-medium text-ink hover:text-teal">Blog</a>
                 <a href="calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a>
@@ -95,7 +91,6 @@
         </div>
     </section>
 
-    <!-- Symptom Diagnostic Widget -->
     <section class="bg-white border-b border-line">
         <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-10">
@@ -109,7 +104,7 @@
                 <label for="symptom-select" class="eyebrow block mb-2">Select on-screen symptom</label>
                 <div class="relative mb-6">
                     <select id="symptom-select" onchange="checkSymptom()" class="w-full bg-white px-4 py-3.5 text-base border border-line text-ink appearance-none focus:outline-none focus:border-ink transition-colors cursor-pointer">
-                        <option value="">\u2014 Select what your device is doing \u2014</option>
+                        <option value="">&#x2014; Select what your device is doing &#x2014;</option>
                         <option value="green-lines">Vertical green or pink display lines</option>
                         <option value="no-power">Completely dead / won't power on</option>
                         <option value="ghost-touch">Screen tapping itself (ghost touch)</option>
@@ -132,7 +127,7 @@
                     <p class="eyebrow mb-3">Category One</p>
                     <h2 class="display text-3xl md:text-5xl text-ink">Display &amp; touch</h2>
                 </div>
-                <div class="lg:col-span-8"><p class="text-muted leading-relaxed">Modern phone screens combine three layers — outer glass, digitiser, and OLED panel. Knowing which layer is broken determines whether you're looking at a $40 part or a $400 one.</p></div>
+                <div class="lg:col-span-8"><p class="text-muted leading-relaxed">Modern phone screens combine three layers &#x2014; outer glass, digitiser, and OLED panel. Knowing which layer is broken determines whether you're looking at a $40 part or a $400 one.</p></div>
             </div>
             <div class="space-y-px bg-line">
                 <a href="fix/black-screen.html" class="bg-paper-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
@@ -144,7 +139,7 @@
                     <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors flex-shrink-0"></i>
                 </a>
                 <a href="fix/ghost-touch.html" class="bg-paper-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
-                    <div class="flex items-center gap-5"><span class="font-mono text-sm text-muted tnum w-10">03</span><div><h3 class="font-serif text-xl md:text-2xl text-ink leading-tight">Ghost touch / phantom taps</h3><p class="text-sm text-muted mt-1">Screen taps itself — digitiser failure</p></div></div>
+                    <div class="flex items-center gap-5"><span class="font-mono text-sm text-muted tnum w-10">03</span><div><h3 class="font-serif text-xl md:text-2xl text-ink leading-tight">Ghost touch / phantom taps</h3><p class="text-sm text-muted mt-1">Screen taps itself &#x2014; digitiser failure</p></div></div>
                     <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors flex-shrink-0"></i>
                 </a>
                 <a href="fix/cracked-screen-still-works.html" class="bg-paper-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
@@ -162,7 +157,7 @@
                     <p class="eyebrow mb-3">Category Two</p>
                     <h2 class="display text-3xl md:text-5xl text-ink">Power &amp; charging</h2>
                 </div>
-                <div class="lg:col-span-8"><p class="text-muted leading-relaxed">80% of "battery problems" are software, cable, or charging-port lint. The other 20% need a new battery — but here's how to tell which before you spend.</p></div>
+                <div class="lg:col-span-8"><p class="text-muted leading-relaxed">80% of "battery problems" are software, cable, or charging-port lint. The other 20% need a new battery &#x2014; but here's how to tell which before you spend.</p></div>
             </div>
             <div class="space-y-px bg-line">
                 <a href="fix/battery-drains-fast.html" class="bg-paper-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
@@ -170,7 +165,7 @@
                     <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors flex-shrink-0"></i>
                 </a>
                 <a href="fix/charging-port.html" class="bg-paper-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
-                    <div class="flex items-center gap-5"><span class="font-mono text-sm text-muted tnum w-10">06</span><div><h3 class="font-serif text-xl md:text-2xl text-ink leading-tight">Won't charge or charges slowly</h3><p class="text-sm text-muted mt-1">Lint, port damage, cable, battery — in that order</p></div></div>
+                    <div class="flex items-center gap-5"><span class="font-mono text-sm text-muted tnum w-10">06</span><div><h3 class="font-serif text-xl md:text-2xl text-ink leading-tight">Won't charge or charges slowly</h3><p class="text-sm text-muted mt-1">Lint, port damage, cable, battery &#x2014; in that order</p></div></div>
                     <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors flex-shrink-0"></i>
                 </a>
                 <a href="fix/wont-turn-on.html" class="bg-paper-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
@@ -192,15 +187,15 @@
                     <p class="eyebrow mb-3">Category Three</p>
                     <h2 class="display text-3xl md:text-5xl text-ink">Liquid &amp; impact damage</h2>
                 </div>
-                <div class="lg:col-span-8"><p class="text-muted leading-relaxed">First aid for dropped or dunked phones. The first ten minutes are decisive — and most "fixes" you'll read online actually make things worse.</p></div>
+                <div class="lg:col-span-8"><p class="text-muted leading-relaxed">First aid for dropped or dunked phones. The first ten minutes are decisive &#x2014; and most "fixes" you'll read online actually make things worse.</p></div>
             </div>
             <div class="space-y-px bg-line">
                 <a href="fix/water-damage.html" class="bg-paper-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
-                    <div class="flex items-center gap-5"><span class="font-mono text-sm text-muted tnum w-10">09</span><div><h3 class="font-serif text-xl md:text-2xl text-ink leading-tight">Water damage — first 10 minutes</h3><p class="text-sm text-muted mt-1">What to do, what to skip, when to give up</p></div></div>
+                    <div class="flex items-center gap-5"><span class="font-mono text-sm text-muted tnum w-10">09</span><div><h3 class="font-serif text-xl md:text-2xl text-ink leading-tight">Water damage &#x2014; first 10 minutes</h3><p class="text-sm text-muted mt-1">What to do, what to skip, when to give up</p></div></div>
                     <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors flex-shrink-0"></i>
                 </a>
                 <a href="fix/dropped-and-broken.html" class="bg-paper-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
-                    <div class="flex items-center gap-5"><span class="font-mono text-sm text-muted tnum w-10">10</span><div><h3 class="font-serif text-xl md:text-2xl text-ink leading-tight">Dropped your phone — now what?</h3><p class="text-sm text-muted mt-1">A 90-second triage to know what you're dealing with</p></div></div>
+                    <div class="flex items-center gap-5"><span class="font-mono text-sm text-muted tnum w-10">10</span><div><h3 class="font-serif text-xl md:text-2xl text-ink leading-tight">Dropped your phone &#x2014; now what?</h3><p class="text-sm text-muted mt-1">A 90-second triage to know what you're dealing with</p></div></div>
                     <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors flex-shrink-0"></i>
                 </a>
             </div>
@@ -227,15 +222,13 @@
                         <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg>
                         <span class="font-serif text-2xl font-medium">RepairRange</span>
                     </div>
-                    <p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice. Researched by people who actually do this work.</p>
+                    <p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice.</p>
                 </div>
-                <div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="fix.html" class="text-white/80 hover:text-amber">Troubleshooting</a></li><li><a href="calculator.html" class="text-white/80 hover:text-amber">Cost Calculator</a></li><li><a href="locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="blog.html" class="text-white/80 hover:text-amber">Blog</a></li>
-          <li><a href="unlock/index.html" class="text-white/80 hover:text-amber">Unlock Guides</a></li></ul></div>
-                <div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="about.html" class="text-white/80 hover:text-amber">About RepairRange</a></li><li><a href="tools/software-stack-for-repair-shops.html" class="text-white/80 hover:text-amber">Tools we recommend</a></li><li><a href="privacy.html" class="text-white/80 hover:text-amber">Privacy Policy</a></li><li><a href="terms.html" class="text-white/80 hover:text-amber">Terms of Use</a></li></ul></div>
+                <div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="repair/phone-repair-costs-australia.html" class="text-white/80 hover:text-amber">All Models</a></li><li><a href="calculator.html" class="text-white/80 hover:text-amber">Calculator</a></li><li><a href="locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="blog.html" class="text-white/80 hover:text-amber">Blog</a></li></ul></div>
+                <div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="about.html" class="text-white/80 hover:text-amber">About</a></li><li><a href="privacy.html" class="text-white/80 hover:text-amber">Privacy</a></li><li><a href="terms.html" class="text-white/80 hover:text-amber">Terms</a></li></ul></div>
             </div>
             <div class="pt-8 border-t border-white/15">
-                <p class="text-white/50 text-xs leading-relaxed mb-3 max-w-3xl"><strong class="text-white/70">Affiliate disclosure:</strong> RepairRange may earn a commission when you click links to retailers (including Amazon) and complete a purchase. This never affects the price you pay or our editorial recommendations.</p>
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p><p class="text-white/50 text-xs">Not affiliated with Apple, Samsung, Google, or any device manufacturer.</p></div>
+                <p class="text-white/50 text-xs">&copy; 2026 RepairRange. Not affiliated with Apple, Samsung, Google, or any manufacturer.</p>
             </div>
         </div>
     </footer>
@@ -248,9 +241,6 @@
             if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
         });
 
-        /* Symptom Diagnostic engine. Costs are 2026 surveyed AU independent-shop ranges.
-           guideHref points to the in-depth /fix/ page (internal SEO link).
-           Affiliate tool-kit button intentionally omitted until Amazon Associates is approved. */
         function checkSymptom() {
             const symptomDatabase = {
                 'green-lines': {
