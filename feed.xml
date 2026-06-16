@@ -5,9 +5,16 @@
     <link>https://repairrange.io/blog.html</link>
     <description>Daily Mobile Phone &amp; Tech Repair Pricing Guides &amp; Australian Industry News</description>
     <language>en-au</language>
-    <lastBuildDate>Tue, 16 Jun 2026 09:30:32 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 16:06:20 GMT</lastBuildDate>
     <atom:link href="https://repairrange.io/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Apple to Merge Sign In With Apple and Hide My Email Under One Domain</title>
+      <link>https://repairrange.io/blog/apple-merge-sign-in-hide-my-email.html</link>
+      <guid isPermaLink="true">https://repairrange.io/blog/apple-merge-sign-in-hide-my-email.html</guid>
+      <pubDate>Tue, 16 Jun 2026 16:06:20 GMT</pubDate>
+      <description>Apple is set to unify its email services by consolidating the domains for Sign In With Apple and iCloud+ Hide My Email, enhancing both privacy and user experience.</description>
+    </item>
+<item>
       <title>Apple's Privacy Power-Up: A Deep Dive into Unified Email Domains and What It Means for Aussie Users</title>
       <link>https://repairrange.io/blog/apple-unified-private-icloud-email-domain-guide.html</link>
       <guid isPermaLink="true">https://repairrange.io/blog/apple-unified-private-icloud-email-domain-guide.html</guid>
@@ -104,13 +111,6 @@
       <guid isPermaLink="true">https://repairrange.io/blog/oppo-widescreen-foldable-leaks-australia-apple-challenger.html</guid>
       <pubDate>Thu, 11 Jun 2026 14:08:54 GMT</pubDate>
       <description>Hot on the heels of earlier rumours, fresh leaks have dropped a treasure trove of details about Oppo's ambitious wide-format foldable, potentially setting the stage for a serious challenger to Apple's rumoured 'Ultra' device right here in Australia.</description>
-    </item>
-<item>
-      <title>Unleashing Siri AI on macOS 27 Golden Gate: An Aussie Guide to Bypassing the Waitlist</title>
-      <link>https://repairrange.io/blog/unleashing-siri-ai-macos-27-golden-gate-bypass-waitlist.html</link>
-      <guid isPermaLink="true">https://repairrange.io/blog/unleashing-siri-ai-macos-27-golden-gate-bypass-waitlist.html</guid>
-      <pubDate>Thu, 11 Jun 2026 21:37:50 GMT</pubDate>
-      <description>Frustrated by the Siri AI waitlist on your macOS 27 Golden Gate developer beta? This comprehensive guide from RepairRange.io dives into the simple Terminal command workaround that grants you immediate access to Apple's cutting-edge virtual assistant, along with crucial safety tips and broader advice on device security.</description>
     </item>
   </channel>
 </rss>
