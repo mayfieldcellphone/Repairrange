@@ -16,7 +16,7 @@ pages:
   script:
     - mkdir -p public
     - cp -r ./*.html ./*.txt ./*.xml public/ 2>/dev/null || true
-    - cp -r fix locations repair brands tools blog unlock news public/ 2>/dev/null || true
+    - cp -r fix locations repair brands tools blog unlock news css public/ 2>/dev/null || true
   artifacts:
     paths:
       - public
