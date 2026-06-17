@@ -34,31 +34,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     
-    <link rel="stylesheet" href="https://www.repairrange.io/css/style.css">
     
-    <style>
-        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-teal-50:#f0fdfa; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-amber-50:#fffbeb; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#E7E5E4; --rr-paper:#FAFAF9; --rr-paper-2:#F5F5F4; }
-        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
-        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
-        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
-        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
-        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(250,250,249,0.85); }
-        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
-        .ed-link:hover { background-size:100% 1px; }
-        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
-        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
-        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
-        .rich-text p { margin-bottom: 1.5rem; line-height: 1.75; font-size: 1.0625rem; }
-        .rich-text h2 { font-family: 'Fraunces', serif; font-size: 1.875rem; margin-top: 2.5rem; margin-bottom: 1.25rem; color: var(--rr-ink); }
-        .rich-text h3 { font-family: 'Fraunces', serif; font-size: 1.375rem; margin-top: 2rem; margin-bottom: 0.75rem; color: var(--rr-ink); }
-        .rich-text ul { margin-bottom: 1.5rem; padding-left: 1.5rem; list-style-type: disc; }
-        .rich-text li { margin-bottom: 0.5rem; line-height: 1.625; font-size: 1.0625rem; }
-        .info-card { background: var(--rr-teal-50); border-left: 4px solid var(--rr-teal-700); padding: 1.5rem; margin: 2rem 0; }
-        table { width: 100%; border-collapse: collapse; margin: 2rem 0; }
-        th, td { text-align: left; padding: 1rem; border-bottom: 1px solid var(--rr-line); }
-        th { background: var(--rr-paper-2); font-weight: 600; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em; }
-        .sidebar-card{background:white;border:1px solid var(--rr-line);padding:1.25rem;margin-bottom:1rem}.sidebar-card h4{font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--rr-teal-700);margin-bottom:0.75rem}.sidebar-link{display:block;padding:0.5rem 0;font-size:0.875rem;color:var(--rr-ink);border-bottom:1px solid var(--rr-line);transition:color 150ms}.sidebar-link:last-child{border-bottom:none}.sidebar-link:hover{color:var(--rr-teal-700)}
-    </style>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--rr-teal-900:#0f172a;--rr-teal-700:#0d9488;--rr-amber-600:#d97706;--rr-amber-500:#f59e0b;--rr-ink:#1e293b;--rr-muted:#64748b;--rr-line:#e2e8f0;--rr-paper:#f8fafc;--rr-paper-2:#f1f5f9}
+html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;color:var(--rr-ink);background:var(--rr-paper);-webkit-font-smoothing:antialiased}
+.font-serif{font-family:'Fraunces',serif}.display{font-family:'Fraunces',serif;font-weight:400;letter-spacing:-0.025em;line-height:1.05}
+.eyebrow{font-size:0.75rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--rr-teal-700)}
+.header-sticky{backdrop-filter:blur(12px);background:rgba(248,250,252,0.85)}
+.card{background:white;border:1px solid var(--rr-line);border-radius:12px;transition:all 300ms ease;overflow:hidden}
+.card:hover{border-color:var(--rr-teal-700);transform:translateY(-4px);box-shadow:0 10px 15px -3px rgba(0,0,0,0.1)}
+</style>
 
     <script type="application/ld+json">
     {
