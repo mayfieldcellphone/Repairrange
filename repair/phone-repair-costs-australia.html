@@ -24,34 +24,17 @@
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Phone Repair Costs Australia 2026","description":"Comprehensive phone repair pricing for every major model — iPhone, Samsung Galaxy, Google Pixel. Independent shop ranges, authorised service, and DIY estimates.","publisher":{"@type":"Organization","name":"RepairRange","url":"https://repairrange.io"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does phone screen repair cost in Australia?","acceptedAnswer":{"@type":"Answer","text":"In 2026, phone screen replacement at an independent repair shop in Australia typically costs $109–$619 AUD depending on the model. Budget models like the iPhone SE start around $109; current flagships like the iPhone 17 Pro Max or Samsung Galaxy S26 Ultra can cost $449–$619. Apple authorised and Samsung authorised service run 30–50% higher."}},{"@type":"Question","name":"How much does phone battery replacement cost in Australia?","acceptedAnswer":{"@type":"Answer","text":"Battery replacement at an independent shop in Australia costs $69–$159 AUD for most models. iPhones range from $79–$149; Samsung Galaxy S-series from $69–$159; Google Pixels from $79–$129. Apple charges $109–$119 for battery replacement. Battery replacement is one of the cheapest and highest-value phone repairs available."}},{"@type":"Question","name":"Is it cheaper to repair a phone at an independent shop or authorised service?","acceptedAnswer":{"@type":"Answer","text":"Independent shops are typically 30–50% cheaper than authorised service for the same repair. The exception is Apple's screen and back glass pricing on newer iPhones (iPhone 15+), where Apple's own pricing is surprisingly competitive. Choose authorised if your phone is under warranty or if biometric preservation (Face ID, fingerprint sensor) is critical."}}]}</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#E7E5E4; --rr-paper:#FAFAF9; --rr-paper-2:#F5F5F4; }
-html{scroll-behavior:smooth}body{font-family:'Inter',system-ui,sans-serif;color:var(--rr-ink);background:var(--rr-paper);-webkit-font-smoothing:antialiased}
-.font-serif{font-family:'Fraunces','Iowan Old Style','Palatino',serif;font-feature-settings:'ss01'}.font-mono{font-family:'JetBrains Mono',ui-monospace,monospace}
-.text-teal{color:var(--rr-teal-700)}.bg-teal-900{background:var(--rr-teal-900)}.text-amber{color:var(--rr-amber-600)}.text-ink{color:var(--rr-ink)}.text-muted{color:var(--rr-muted)}.border-line{border-color:var(--rr-line)}.bg-paper{background:var(--rr-paper)}.bg-paper-2{background:var(--rr-paper-2)}
-.display{font-family:'Fraunces',serif;font-weight:400;letter-spacing:-0.025em;line-height:1.05}.eyebrow{font-size:0.75rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--rr-teal-700)}
-.header-sticky{backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);background:rgba(250,250,249,0.85)}
-.ed-link{background-image:linear-gradient(currentColor,currentColor);background-position:0 100%;background-repeat:no-repeat;background-size:0% 1px;transition:background-size 220ms ease}.ed-link:hover{background-size:100% 1px}
-.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.75rem 1.25rem;font-weight:600;font-size:0.9375rem;transition:all 200ms ease;border-radius:2px}
-.btn-primary{background:var(--rr-amber-500);color:var(--rr-ink);box-shadow:0 1px 0 var(--rr-amber-600)}.btn-primary:hover{background:var(--rr-amber-600);color:white;transform:translateY(-1px)}
-.tnum{font-variant-numeric:tabular-nums}
-.mobile-menu{transition:all 300ms ease-in-out}@media(max-width:768px){.mobile-menu.hidden{display:none}.mobile-menu:not(.hidden){display:block}}
-.filter-btn{padding:0.5rem 1rem;font-size:0.8125rem;font-weight:600;border:1px solid var(--rr-line);background:white;color:var(--rr-muted);transition:all 150ms ease;cursor:pointer;border-radius:2px}
-.filter-btn.active{background:var(--rr-teal-700);color:white;border-color:var(--rr-teal-700)}
-.filter-btn:hover:not(.active){border-color:var(--rr-ink);color:var(--rr-ink)}
-.model-row{display:grid;grid-template-columns:1fr auto auto auto;gap:0.5rem;align-items:center;padding:0.875rem 1.25rem;border-bottom:1px solid var(--rr-line);transition:background 120ms ease}
-.model-row:hover{background:var(--rr-paper-2)}
-.model-row.has-guide{border-left:3px solid var(--rr-teal-700)}
-@media(max-width:768px){.model-row{grid-template-columns:1fr auto auto;gap:0.25rem}.model-row .auth-col{display:none}}
-.search-input{width:100%;padding:0.75rem 1rem 0.75rem 2.75rem;border:1px solid var(--rr-line);background:white;font-size:0.9375rem;color:var(--rr-ink);outline:none;border-radius:2px;transition:border-color 150ms}
-.search-input:focus{border-color:var(--rr-teal-700)}
-.guide-badge{display:inline-flex;align-items:center;gap:0.25rem;font-size:0.6875rem;font-weight:600;color:var(--rr-teal-700);background:#E0F2F1;padding:0.125rem 0.5rem;border-radius:1px;letter-spacing:0.05em;text-transform:uppercase;text-decoration:none}
-.guide-badge:hover{background:var(--rr-teal-700);color:white}
-.est-badge{display:inline-flex;align-items:center;gap:0.25rem;font-size:0.6875rem;font-weight:500;color:var(--rr-muted);background:var(--rr-paper-2);padding:0.125rem 0.5rem;border-radius:1px;text-decoration:none}
-.est-badge:hover{color:var(--rr-ink);background:var(--rr-line)}
-.brand-header{padding:1rem 1.25rem;background:var(--rr-paper-2);font-weight:600;font-size:0.8125rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--rr-teal-700);border-bottom:1px solid var(--rr-line)}
-.count-badge{display:inline-flex;align-items:center;justify-content:center;min-width:1.25rem;height:1.25rem;font-size:0.6875rem;font-weight:700;color:white;background:var(--rr-teal-700);border-radius:100px;padding:0 0.375rem}
-.no-results{padding:3rem 1.25rem;text-align:center;color:var(--rr-muted)}
+:root{--rr-teal-900:#0f172a;--rr-teal-700:#0d9488;--rr-amber-600:#d97706;--rr-amber-500:#f59e0b;--rr-ink:#1e293b;--rr-muted:#64748b;--rr-line:#e2e8f0;--rr-paper:#f8fafc;--rr-paper-2:#f1f5f9}
+html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;color:var(--rr-ink);background:var(--rr-paper);-webkit-font-smoothing:antialiased}
+.font-serif{font-family:'Fraunces',serif}.display{font-family:'Fraunces',serif;font-weight:400;letter-spacing:-0.025em;line-height:1.05}
+.eyebrow{font-size:0.75rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--rr-teal-700)}
+.header-sticky{backdrop-filter:blur(12px);background:rgba(248,250,252,0.85)}
+.card{background:white;border:1px solid var(--rr-line);border-radius:12px;transition:all 300ms ease;overflow:hidden}
+.card:hover{border-color:var(--rr-teal-700);transform:translateY(-4px);box-shadow:0 10px 15px -3px rgba(0,0,0,0.1)}
 </style>
 </head>
 <body>
