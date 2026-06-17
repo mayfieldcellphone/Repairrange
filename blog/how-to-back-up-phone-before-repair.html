@@ -40,7 +40,10 @@ html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;color:var(--rr-i
 <body>
 <header class="header-sticky sticky top-0 z-50 border-b border-line"><nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between"><a href="../index.html" class="flex items-center gap-2"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg><span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span></a><div class="hidden md:flex items-center gap-8 text-sm"><a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a><a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a><a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="ed-link font-medium text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote</a></div><button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button></nav><div class="mobile-menu hidden md:hidden border-t border-line bg-paper"><div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1"><a href="../brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="py-2 font-medium text-ink hover:text-teal">Troubleshoot</a><a href="../calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a><a href="../locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="py-2 font-medium text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a></div></div></header>
 
-<article class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-24">
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 max-w-7xl mx-auto px-6 py-12">
+                <div class="lg:col-span-8 prose max-w-none">
+                    
 <div class="max-w-3xl">
 <nav class="flex items-center gap-2 text-xs text-muted mb-8"><a href="../index.html" class="ed-link hover:text-teal">Home</a><span>/</span><a href="../blog.html" class="ed-link hover:text-teal">Blog</a><span>/</span><span class="text-ink">Back up before repair</span></nav>
 <p class="eyebrow mb-4">Essential guide · June 2026</p>
@@ -48,7 +51,7 @@ html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;color:var(--rr-i
 <p class="text-lg text-muted leading-relaxed mb-12">Taking your phone to a repair shop? Back it up first. It takes 5 minutes and protects irreplaceable photos, messages, and data. Here's how — for iPhone and Android, including what to do if your screen is broken.</p>
 </div>
 
-<div class="prose max-w-3xl">
+<div>
 
 <h2>Why you should always back up before a repair</h2>
 <p>Most repairs (screen replacement, battery swap, charging port) don't touch your data. But you should still back up because things can go wrong during any repair — a disconnected cable, a diagnostic factory reset, or a complication that requires the logic board to be reflowed. The 5 minutes it takes to back up is the cheapest insurance you'll ever get against losing years of photos and messages.</p>
@@ -114,7 +117,41 @@ html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;color:var(--rr-i
 <p>For pricing on any repair, use the <a href="../calculator.html">repair calculator</a> or browse <a href="../repair/phone-repair-costs-australia.html">all 75+ models with pricing</a>.</p>
 
 </div>
-</article>
+
+                </div>
+                
+    <!-- DYNAMIC SIDEBAR -->
+    <aside class="lg:col-span-4">
+        <div class="lg:sticky lg:top-24 space-y-6">
+            <!-- PROMOTION: SELF REPAIR KIT -->
+            <div class="sidebar-card bg-teal-900 text-white border-none shadow-xl" style="background: #0f172a; border-radius: 12px; padding: 1.5rem;">
+                <span style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #f59e0b; margin-bottom: 0.5rem; display: block;">Premium Option</span>
+                <h3 style="font-family: 'Fraunces', serif; font-size: 1.5rem; margin-bottom: 0.75rem;">Self-Repair Kits</h3>
+                <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.5rem;">Fix it yourself with engineer-approved parts and professional toolsets. Save 65% on retail repair costs.</p>
+                <a href="https://selfrepairkit.com.au" style="background: #f59e0b; color: #0f172a; padding: 0.75rem 1.25rem; font-weight: 600; border-radius: 8px; display: inline-flex; align-items: center; gap: 0.5rem; width: 100%; justify-content: center;">Browse Kits</a>
+            </div>
+
+            <!-- PROMOTION: REPAIRBILL -->
+            <div class="sidebar-card" style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 12px; padding: 1.5rem;">
+                <h4 style="font-weight: 700; font-size: 0.875rem; color: #1e293b; margin-bottom: 0.75rem; text-transform: uppercase;">Repair Shop Owner?</h4>
+                <p style="color: #64748b; font-size: 0.75rem; line-height: 1.6; margin-bottom: 1rem;">Manage your shop with **RepairBill SaaS**. Professional invoicing, parts tracking, and tech management.</p>
+                <a href="https://repairbill.shop" style="color: #0d9488; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; display: inline-flex; align-items: center; gap: 0.25rem;">Start Free Trial &rarr;</a>
+            </div>
+
+            <!-- DIRECTORY -->
+            <div class="sidebar-card" style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem;">
+                <h4 style="font-weight: 700; font-size: 0.75rem; color: #0d9488; margin-bottom: 0.75rem; text-transform: uppercase;">Local Repair Hubs</h4>
+                <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.875rem;">
+                    <li style="border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;"><a href="../locations/sydney.html" style="color: #1e293b; text-decoration: none; display: flex; justify-content: space-between;">Sydney <span>&rarr;</span></a></li>
+                    <li style="border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;"><a href="../locations/melbourne.html" style="color: #1e293b; text-decoration: none; display: flex; justify-content: space-between;">Melbourne <span>&rarr;</span></a></li>
+                    <li style="border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;"><a href="../locations/brisbane.html" style="color: #1e293b; text-decoration: none; display: flex; justify-content: space-between;">Brisbane <span>&rarr;</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+            </div>
+            
 
 <section class="bg-teal-900 text-white"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10 mt-4"><a href="how-to-find-trustworthy-phone-repair-shop.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Before you go</p><h3 class="font-serif text-xl text-white mb-3">Finding a good shop</h3><p class="text-white/60 text-sm">7 green flags, 5 red flags.</p></a><a href="how-long-does-phone-repair-take.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Timing</p><h3 class="font-serif text-xl text-white mb-3">How long does repair take?</h3><p class="text-white/60 text-sm">Real turnaround times.</p></a><a href="phone-repair-warranty-australia-consumer-rights.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Rights</p><h3 class="font-serif text-xl text-white mb-3">Your warranty rights</h3><p class="text-white/60 text-sm">What the law guarantees.</p></a></div></div></section>
 

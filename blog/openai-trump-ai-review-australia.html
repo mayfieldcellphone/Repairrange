@@ -62,14 +62,17 @@ html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;color:var(--rr-i
             </a>
         </div>
         
-        <article class="bg-white border border-line rounded-lg p-8 md:p-12 shadow-sm">
+        
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 max-w-7xl mx-auto px-6 py-12">
+                <div class="lg:col-span-8 prose max-w-none">
+                    
             <header class="mb-8">
                 <span class="eyebrow">Tech & Repair Editorial</span>
                 <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-ink mt-2 mb-4">OpenAI's Big Nod: What Trump's AI Review Means for Our Digital Future Down Under</h1>
                 <p class="text-muted text-sm">Published on June 06, 2026 • Written by RepairRange Editorial</p>
             </header>
             
-            <div class="prose max-w-none text-ink leading-relaxed space-y-6">
+            <div>
                 <h2>The AI Revolution: A Voluntary Sneak Peek for Uncle Sam</h2>
 <p>G'day, fellow tech enthusiasts! We've all been watching the artificial intelligence space explode, haven't we? From helping us write emails to designing entire cities, AI is rapidly reshaping our world. But with great power comes… well, a whole lot of questions about safety, ethics, and control. That's where a recent development from the US has caught the attention of the global tech community, and certainly piqued our interest here at RepairRange.io.</p>
 <p>In a move that could set a significant precedent, <strong>OpenAI</strong>, one of the leading names in advanced AI development, has agreed to voluntarily comply with a new executive order from former US President Donald Trump. Specifically, George Osborne, OpenAI's head of countries, stated their intention to cooperate. This order isn't a hard-and-fast demand, but rather a request for access to their latest AI models a full <strong>30 days before public release</strong>. It’s a fascinating pivot from an earlier draft that reportedly sought to *mandate* such access, highlighting a shift towards cooperative governance in the rapidly evolving AI landscape.</p>
@@ -92,7 +95,41 @@ html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;color:var(--rr-i
 <p>The more intelligent and indispensable these devices become, the more valuable they are to us. Losing one, or having it break down, means not just a financial hit but a potential disruption to our increasingly AI-driven daily lives. As the cost of replacing these incredibly sophisticated pieces of kit continues to climb (sometimes reaching well over a thousand AUD for a flagship model!), knowing your options for repair becomes absolutely critical.</p>
 <p>Whether it's a cracked screen after a minor mishap or a battery struggling to hold charge, understanding the cost of a professional repair can save you a bundle and keep your valuable, AI-powered tech humming along. That's precisely why <strong>RepairRange.io</strong> is here – to empower Aussie device owners with transparent, easy-to-find information on screen and battery repair costs. Don't let the advancements of AI make you forget the practicalities of keeping your personal tech in top shape. Check in with us to ensure you're always getting the best deal down under!</p>
             </div>
-        </article>
+        
+                </div>
+                
+    <!-- DYNAMIC SIDEBAR -->
+    <aside class="lg:col-span-4">
+        <div class="lg:sticky lg:top-24 space-y-6">
+            <!-- PROMOTION: SELF REPAIR KIT -->
+            <div class="sidebar-card bg-teal-900 text-white border-none shadow-xl" style="background: #0f172a; border-radius: 12px; padding: 1.5rem;">
+                <span style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #f59e0b; margin-bottom: 0.5rem; display: block;">Premium Option</span>
+                <h3 style="font-family: 'Fraunces', serif; font-size: 1.5rem; margin-bottom: 0.75rem;">Self-Repair Kits</h3>
+                <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.5rem;">Fix it yourself with engineer-approved parts and professional toolsets. Save 65% on retail repair costs.</p>
+                <a href="https://selfrepairkit.com.au" style="background: #f59e0b; color: #0f172a; padding: 0.75rem 1.25rem; font-weight: 600; border-radius: 8px; display: inline-flex; align-items: center; gap: 0.5rem; width: 100%; justify-content: center;">Browse Kits</a>
+            </div>
+
+            <!-- PROMOTION: REPAIRBILL -->
+            <div class="sidebar-card" style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 12px; padding: 1.5rem;">
+                <h4 style="font-weight: 700; font-size: 0.875rem; color: #1e293b; margin-bottom: 0.75rem; text-transform: uppercase;">Repair Shop Owner?</h4>
+                <p style="color: #64748b; font-size: 0.75rem; line-height: 1.6; margin-bottom: 1rem;">Manage your shop with **RepairBill SaaS**. Professional invoicing, parts tracking, and tech management.</p>
+                <a href="https://repairbill.shop" style="color: #0d9488; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; display: inline-flex; align-items: center; gap: 0.25rem;">Start Free Trial &rarr;</a>
+            </div>
+
+            <!-- DIRECTORY -->
+            <div class="sidebar-card" style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem;">
+                <h4 style="font-weight: 700; font-size: 0.75rem; color: #0d9488; margin-bottom: 0.75rem; text-transform: uppercase;">Local Repair Hubs</h4>
+                <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.875rem;">
+                    <li style="border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;"><a href="../locations/sydney.html" style="color: #1e293b; text-decoration: none; display: flex; justify-content: space-between;">Sydney <span>&rarr;</span></a></li>
+                    <li style="border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;"><a href="../locations/melbourne.html" style="color: #1e293b; text-decoration: none; display: flex; justify-content: space-between;">Melbourne <span>&rarr;</span></a></li>
+                    <li style="border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;"><a href="../locations/brisbane.html" style="color: #1e293b; text-decoration: none; display: flex; justify-content: space-between;">Brisbane <span>&rarr;</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+            </div>
+            
     </main>
 
     <footer class="bg-teal-900 text-white border-t border-white/10">
