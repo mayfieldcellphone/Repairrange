@@ -32,21 +32,62 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--rr-teal-900:#0f172a;--rr-teal-700:#0d9488;--rr-amber-600:#d97706;--rr-amber-500:#f59e0b;--rr-ink:#1e293b;--rr-muted:#64748b;--rr-line:#e2e8f0;--rr-paper:#f8fafc;--rr-paper-2:#f1f5f9}
-html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;color:var(--rr-ink);background:var(--rr-paper);-webkit-font-smoothing:antialiased}
-.font-serif{font-family:'Fraunces',serif}.display{font-family:'Fraunces',serif;font-weight:400;letter-spacing:-0.025em;line-height:1.05}
+:root{
+  --rr-teal-900:#0f172a; --rr-teal-700:#14b8a6; --rr-amber-500:#f59e0b; --rr-amber-600:#d97706; 
+  --rr-ink:#1e293b; --rr-muted:#64748b; --rr-line:#e2e8f0; --rr-paper:#f8fafc; --rr-paper-2:#f1f5f9;
+  --rr-accent:#3b82f6;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--rr-ink);background:var(--rr-paper);-webkit-font-smoothing:antialiased}
+.font-serif{font-family:'Fraunces',serif}
+.display{font-family:'Fraunces',serif;font-weight:400;letter-spacing:-0.01em;line-height:1.05}
 .eyebrow{font-size:0.75rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--rr-teal-700)}
-.header-sticky{backdrop-filter:blur(12px);background:rgba(248,250,252,0.85)}
-.card{background:white;border:1px solid var(--rr-line);border-radius:12px;transition:all 300ms ease;overflow:hidden}
-.card:hover{border-color:var(--rr-teal-700);transform:translateY(-4px);box-shadow:0 10px 15px -3px rgba(0,0,0,0.1)}
-.price-table{width:100%;border-collapse:collapse;background:white;border-radius:12px;overflow:hidden;border:1px solid var(--rr-line)}
-.price-table th{background:var(--rr-paper);text-align:left;padding:1rem;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--rr-muted);border-bottom:1px solid var(--rr-line)}
-.price-table td{padding:1.25rem 1rem;border-bottom:1px solid var(--rr-line)}
-.model-row{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;align-items:center;padding:1rem 1.25rem;border-bottom:1px solid var(--rr-line);background:white;transition:background 200ms}
-.model-row:hover{background:var(--rr-paper-2)}.model-row.has-guide{border-left:3px solid var(--rr-teal-700)}
-.sidebar-card{background:white;border:1px solid var(--rr-line);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem}
-@media(max-width:768px){.model-row{grid-template-columns:1fr 1fr;gap:0.5rem}.model-row span:first-child{grid-column:span 2;font-size:1rem}.auth-col{display:none}}
+
+/* INTERACTIVE ELEMENTS */
+.card{
+  background:white; border:1px solid var(--rr-line); border-radius:16px;
+  transition:all 400ms cubic-bezier(0.4, 0, 0.2, 1); overflow:hidden;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+}
+.card:hover{
+  border-color:var(--rr-teal-700); 
+  transform:translateY(-6px) scale(1.01);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+.btn{
+  display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.5rem; 
+  font-weight:700; font-size:0.9375rem; transition:all 200ms ease; border-radius:12px;
+}
+.btn-primary{
+  background:var(--rr-amber-500); color:var(--rr-teal-900); 
+  box-shadow: 0 4px 14px 0 rgba(245, 158, 11, 0.39);
+}
+.btn-primary:hover{
+  background:var(--rr-amber-600); transform:translateY(-1px);
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.23);
+}
+
+/* TECHNICAL TEXTURE */
+.bg-mesh{
+  background-color: var(--rr-paper);
+  background-image: radial-gradient(var(--rr-line) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+.header-sticky{
+  backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px);
+  background:rgba(255,255,255,0.8);
+}
+.price-table{width:100%; border-collapse:separate; border-spacing:0; background:white; border-radius:16px; overflow:hidden; border:1px solid var(--rr-line); box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);}
+.price-table th{background:var(--rr-paper-2); text-align:left; padding:1.25rem 1.5rem; font-size:0.75rem; font-weight:800; text-transform:uppercase; letter-spacing:0.1em; color:var(--rr-muted); border-bottom:1px solid var(--rr-line)}
+.price-table td{padding:1.5rem; border-bottom:1px solid var(--rr-line); transition: background 200ms;}
+.price-table tr:hover td{background:var(--rr-paper-2)/50;}
+
+.sidebar-card{background:white; border:1px solid var(--rr-line); border-radius:16px; padding:1.75rem; position:relative; overflow:hidden;}
+.sidebar-card::after{content:''; position:absolute; top:0; left:0; width:4px; height:100%; background:var(--rr-teal-700);}
 </style>
 </head>
 <body>
@@ -81,7 +122,7 @@ html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;color:var(--rr-i
         </div>
     </header>
 
-    <section class="bg-paper border-b border-line">
+    <section class="bg-mesh border-b border-line">
         <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-24">
             <p class="eyebrow mb-4">Troubleshooting Library</p>
             <h1 class="display text-5xl md:text-7xl text-ink mb-6 max-w-3xl">Start with what your <span class="italic">phone</span> is doing.</h1>
@@ -118,7 +159,7 @@ html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;color:var(--rr-i
         </div>
     </section>
 
-    <section class="bg-paper-2 border-b border-line">
+    <section class="bg-mesh-2 border-b border-line">
         <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-10">
                 <div class="lg:col-span-4">
@@ -128,19 +169,19 @@ html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;color:var(--rr-i
                 <div class="lg:col-span-8"><p class="text-muted leading-relaxed">Modern phone screens combine three layers &#x2014; outer glass, digitiser, and OLED panel. Knowing which layer is broken determines whether you're looking at a $40 part or a $400 one.</p></div>
             </div>
             <div class="space-y-px bg-line">
-                <a href="fix/black-screen.html" class="bg-paper-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
+                <a href="fix/black-screen.html" class="bg-mesh-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
                     <div class="flex items-center gap-5"><span class="font-mono text-sm text-muted tnum w-10">01</span><div><h3 class="font-serif text-xl md:text-2xl text-ink leading-tight">Black screen of death</h3><p class="text-sm text-muted mt-1">Phone rings but display stays dark</p></div></div>
                     <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors flex-shrink-0"></i>
                 </a>
-                <a href="fix/green-lines.html" class="bg-paper-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
+                <a href="fix/green-lines.html" class="bg-mesh-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
                     <div class="flex items-center gap-5"><span class="font-mono text-sm text-muted tnum w-10">02</span><div><h3 class="font-serif text-xl md:text-2xl text-ink leading-tight">Green or pink vertical lines</h3><p class="text-sm text-muted mt-1">Almost always full OLED replacement</p></div></div>
                     <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors flex-shrink-0"></i>
                 </a>
-                <a href="fix/ghost-touch.html" class="bg-paper-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
+                <a href="fix/ghost-touch.html" class="bg-mesh-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
                     <div class="flex items-center gap-5"><span class="font-mono text-sm text-muted tnum w-10">03</span><div><h3 class="font-serif text-xl md:text-2xl text-ink leading-tight">Ghost touch / phantom taps</h3><p class="text-sm text-muted mt-1">Screen taps itself &#x2014; digitiser failure</p></div></div>
                     <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors flex-shrink-0"></i>
                 </a>
-                <a href="fix/cracked-screen-still-works.html" class="bg-paper-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
+                <a href="fix/cracked-screen-still-works.html" class="bg-mesh-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
                     <div class="flex items-center gap-5"><span class="font-mono text-sm text-muted tnum w-10">04</span><div><h3 class="font-serif text-xl md:text-2xl text-ink leading-tight">Cracked screen, still works</h3><p class="text-sm text-muted mt-1">When is it worth fixing vs. leaving alone?</p></div></div>
                     <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors flex-shrink-0"></i>
                 </a>
@@ -158,19 +199,19 @@ html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;color:var(--rr-i
                 <div class="lg:col-span-8"><p class="text-muted leading-relaxed">80% of "battery problems" are software, cable, or charging-port lint. The other 20% need a new battery &#x2014; but here's how to tell which before you spend.</p></div>
             </div>
             <div class="space-y-px bg-line">
-                <a href="fix/battery-drains-fast.html" class="bg-paper-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
+                <a href="fix/battery-drains-fast.html" class="bg-mesh-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
                     <div class="flex items-center gap-5"><span class="font-mono text-sm text-muted tnum w-10">05</span><div><h3 class="font-serif text-xl md:text-2xl text-ink leading-tight">Battery drains in hours</h3><p class="text-sm text-muted mt-1">When it's the battery vs. when it's software</p></div></div>
                     <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors flex-shrink-0"></i>
                 </a>
-                <a href="fix/charging-port.html" class="bg-paper-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
+                <a href="fix/charging-port.html" class="bg-mesh-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
                     <div class="flex items-center gap-5"><span class="font-mono text-sm text-muted tnum w-10">06</span><div><h3 class="font-serif text-xl md:text-2xl text-ink leading-tight">Won't charge or charges slowly</h3><p class="text-sm text-muted mt-1">Lint, port damage, cable, battery &#x2014; in that order</p></div></div>
                     <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors flex-shrink-0"></i>
                 </a>
-                <a href="fix/wont-turn-on.html" class="bg-paper-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
+                <a href="fix/wont-turn-on.html" class="bg-mesh-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
                     <div class="flex items-center gap-5"><span class="font-mono text-sm text-muted tnum w-10">07</span><div><h3 class="font-serif text-xl md:text-2xl text-ink leading-tight">Phone won't turn on at all</h3><p class="text-sm text-muted mt-1">Battery, board, or display? Diagnose without disassembly</p></div></div>
                     <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors flex-shrink-0"></i>
                 </a>
-                <a href="fix/overheating.html" class="bg-paper-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
+                <a href="fix/overheating.html" class="bg-mesh-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
                     <div class="flex items-center gap-5"><span class="font-mono text-sm text-muted tnum w-10">08</span><div><h3 class="font-serif text-xl md:text-2xl text-ink leading-tight">Phone runs hot and slows down</h3><p class="text-sm text-muted mt-1">Throttling, battery age, and the malware angle</p></div></div>
                     <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors flex-shrink-0"></i>
                 </a>
@@ -178,7 +219,7 @@ html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;color:var(--rr-i
         </div>
     </section>
 
-    <section class="bg-paper-2 border-b border-line">
+    <section class="bg-mesh-2 border-b border-line">
         <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-10">
                 <div class="lg:col-span-4">
@@ -188,11 +229,11 @@ html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;color:var(--rr-i
                 <div class="lg:col-span-8"><p class="text-muted leading-relaxed">First aid for dropped or dunked phones. The first ten minutes are decisive &#x2014; and most "fixes" you'll read online actually make things worse.</p></div>
             </div>
             <div class="space-y-px bg-line">
-                <a href="fix/water-damage.html" class="bg-paper-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
+                <a href="fix/water-damage.html" class="bg-mesh-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
                     <div class="flex items-center gap-5"><span class="font-mono text-sm text-muted tnum w-10">09</span><div><h3 class="font-serif text-xl md:text-2xl text-ink leading-tight">Water damage &#x2014; first 10 minutes</h3><p class="text-sm text-muted mt-1">What to do, what to skip, when to give up</p></div></div>
                     <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors flex-shrink-0"></i>
                 </a>
-                <a href="fix/dropped-and-broken.html" class="bg-paper-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
+                <a href="fix/dropped-and-broken.html" class="bg-mesh-2 hover:bg-white flex items-center justify-between p-6 group transition-colors">
                     <div class="flex items-center gap-5"><span class="font-mono text-sm text-muted tnum w-10">10</span><div><h3 class="font-serif text-xl md:text-2xl text-ink leading-tight">Dropped your phone &#x2014; now what?</h3><p class="text-sm text-muted mt-1">A 90-second triage to know what you're dealing with</p></div></div>
                     <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors flex-shrink-0"></i>
                 </a>
