@@ -27,24 +27,65 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--rr-teal-900:#0f172a;--rr-teal-700:#0d9488;--rr-amber-600:#d97706;--rr-amber-500:#f59e0b;--rr-ink:#1e293b;--rr-muted:#64748b;--rr-line:#e2e8f0;--rr-paper:#f8fafc;--rr-paper-2:#f1f5f9}
-html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;color:var(--rr-ink);background:var(--rr-paper);-webkit-font-smoothing:antialiased}
-.font-serif{font-family:'Fraunces',serif}.display{font-family:'Fraunces',serif;font-weight:400;letter-spacing:-0.025em;line-height:1.05}
+:root{
+  --rr-teal-900:#0f172a; --rr-teal-700:#14b8a6; --rr-amber-500:#f59e0b; --rr-amber-600:#d97706; 
+  --rr-ink:#1e293b; --rr-muted:#64748b; --rr-line:#e2e8f0; --rr-paper:#f8fafc; --rr-paper-2:#f1f5f9;
+  --rr-accent:#3b82f6;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--rr-ink);background:var(--rr-paper);-webkit-font-smoothing:antialiased}
+.font-serif{font-family:'Fraunces',serif}
+.display{font-family:'Fraunces',serif;font-weight:400;letter-spacing:-0.01em;line-height:1.05}
 .eyebrow{font-size:0.75rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--rr-teal-700)}
-.header-sticky{backdrop-filter:blur(12px);background:rgba(248,250,252,0.85)}
-.card{background:white;border:1px solid var(--rr-line);border-radius:12px;transition:all 300ms ease;overflow:hidden}
-.card:hover{border-color:var(--rr-teal-700);transform:translateY(-4px);box-shadow:0 10px 15px -3px rgba(0,0,0,0.1)}
-.price-table{width:100%;border-collapse:collapse;background:white;border-radius:12px;overflow:hidden;border:1px solid var(--rr-line)}
-.price-table th{background:var(--rr-paper);text-align:left;padding:1rem;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--rr-muted);border-bottom:1px solid var(--rr-line)}
-.price-table td{padding:1.25rem 1rem;border-bottom:1px solid var(--rr-line)}
-.model-row{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;align-items:center;padding:1rem 1.25rem;border-bottom:1px solid var(--rr-line);background:white;transition:background 200ms}
-.model-row:hover{background:var(--rr-paper-2)}.model-row.has-guide{border-left:3px solid var(--rr-teal-700)}
-.sidebar-card{background:white;border:1px solid var(--rr-line);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem}
-@media(max-width:768px){.model-row{grid-template-columns:1fr 1fr;gap:0.5rem}.model-row span:first-child{grid-column:span 2;font-size:1rem}.auth-col{display:none}}
+
+/* INTERACTIVE ELEMENTS */
+.card{
+  background:white; border:1px solid var(--rr-line); border-radius:16px;
+  transition:all 400ms cubic-bezier(0.4, 0, 0.2, 1); overflow:hidden;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+}
+.card:hover{
+  border-color:var(--rr-teal-700); 
+  transform:translateY(-6px) scale(1.01);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+.btn{
+  display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.5rem; 
+  font-weight:700; font-size:0.9375rem; transition:all 200ms ease; border-radius:12px;
+}
+.btn-primary{
+  background:var(--rr-amber-500); color:var(--rr-teal-900); 
+  box-shadow: 0 4px 14px 0 rgba(245, 158, 11, 0.39);
+}
+.btn-primary:hover{
+  background:var(--rr-amber-600); transform:translateY(-1px);
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.23);
+}
+
+/* TECHNICAL TEXTURE */
+.bg-mesh{
+  background-color: var(--rr-paper);
+  background-image: radial-gradient(var(--rr-line) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+.header-sticky{
+  backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px);
+  background:rgba(255,255,255,0.8);
+}
+.price-table{width:100%; border-collapse:separate; border-spacing:0; background:white; border-radius:16px; overflow:hidden; border:1px solid var(--rr-line); box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);}
+.price-table th{background:var(--rr-paper-2); text-align:left; padding:1.25rem 1.5rem; font-size:0.75rem; font-weight:800; text-transform:uppercase; letter-spacing:0.1em; color:var(--rr-muted); border-bottom:1px solid var(--rr-line)}
+.price-table td{padding:1.5rem; border-bottom:1px solid var(--rr-line); transition: background 200ms;}
+.price-table tr:hover td{background:var(--rr-paper-2)/50;}
+
+.sidebar-card{background:white; border:1px solid var(--rr-line); border-radius:16px; padding:1.75rem; position:relative; overflow:hidden;}
+.sidebar-card::after{content:''; position:absolute; top:0; left:0; width:4px; height:100%; background:var(--rr-teal-700);}
 </style>
 </head>
-<body class="bg-paper text-ink antialiased">
+<body class="bg-mesh bg-paper text-ink antialiased">
     <header class="header-sticky sticky top-0 z-50 border-b border-line">
         <nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
             <a href="/index.html" class="flex items-center gap-2">
