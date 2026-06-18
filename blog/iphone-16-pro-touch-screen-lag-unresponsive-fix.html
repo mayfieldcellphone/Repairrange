@@ -1,327 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Is your iPhone 16 Pro touch screen laggy or unresponsive? Follow our expert guide to fix accidental touch protection bugs and hardware digitizer issues in 2026.">
     <meta name="author" content="RepairRange">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.repairrange.io/blog/iphone-16-pro-touch-screen-lag-unresponsive-fix.html">
-    
-    <!-- Open Graph -->
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://www.repairrange.io/blog/iphone-16-pro-touch-screen-lag-unresponsive-fix.html">
-    <meta property="og:title" content="How to Fix iPhone 16 Pro Touch Screen Lag and Unresponsive Display Issues">
-    <meta property="og:description" content="Struggling with a delayed touch response on your new iPhone 16? Learn the difference between software accidental touch bugs and hardware failures with our 2026 guide.">
-    <meta property="og:image" content="https://www.repairrange.io/images/blog/iphone-16-touch-fix.jpg">
-    <meta property="og:site_name" content="RepairRange">
-    
-    <title>How to Fix iPhone 16 Pro Touch Screen Lag and Unresponsive Display Issues — RepairRange</title>
-    
-    <!-- Fonts & Icons -->
+    <title>How to Fix iPhone 16 Pro Touch Screen Lag and Unresponsive Display Issues | RepairRange Blog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-    
-    <!-- Static Production Stylesheet -->
-    <link rel="stylesheet" href="https://www.repairrange.io/css/style.css">
-    
     <style>
-        :root { 
-            --rr-teal-900:#0c4a45; 
-            --rr-teal-700:#0F766E; 
-            --rr-teal-50:#f0fdfa;
-            --rr-amber-600:#d97706; 
-            --rr-amber-500:#F59E0B; 
-            --rr-amber-50:#fffbeb;
-            --rr-ink:#1C1917; 
-            --rr-muted:#78716C; 
-            --rr-line:#E7E5E4; 
-            --rr-paper:#FAFAF9; 
-            --rr-paper-2:#F5F5F4; 
-        }
-        body { 
-            font-family:'Inter',system-ui,sans-serif; 
-            color:var(--rr-ink); 
-            background:var(--rr-paper); 
-            -webkit-font-smoothing:antialiased; 
-        }
-        .font-serif { 
-            font-family:'Fraunces','Iowan Old Style','Palatino',serif; 
-            font-feature-settings:'ss01'; 
-        }
-        .font-mono { 
-            font-family:'JetBrains Mono',ui-monospace,monospace; 
-        }
-        .display { 
-            font-family:'Fraunces',serif; 
-            font-weight:400; 
-            letter-spacing:-0.025em; 
-            line-height:1.05; 
-            font-variation-settings:'opsz' 144; 
-        }
-        .eyebrow { 
-            font-size:0.75rem; 
-            font-weight:600; 
-            letter-spacing:0.18em; 
-            text-transform:uppercase; 
-            color:var(--rr-teal-700); 
-        }
-        .header-sticky { 
-            backdrop-filter:blur(12px); 
-            -webkit-backdrop-filter:blur(12px); 
-            background:rgba(250,250,249,0.85); 
-        }
-        .ed-link { 
-            background-image:linear-gradient(currentColor,currentColor); 
-            background-position:0 100%; 
-            background-repeat:no-repeat; 
-            background-size:0% 1px; 
-            transition:background-size 220ms ease; 
-        }
-        .ed-link:hover { 
-            background-size:100% 1px; 
-        }
-        .btn { 
-            display:inline-flex; 
-            align-items:center; 
-            gap:0.5rem; 
-            padding:0.75rem 1.25rem; 
-            font-weight:600; 
-            font-size:0.9375rem; 
-            transition:all 200ms ease; 
-            border-radius:2px; 
-        }
-        .btn-primary { 
-            background:var(--rr-amber-500); 
-            color:var(--rr-ink); 
-            box-shadow:0 1px 0 var(--rr-amber-600); 
-        }
-        .btn-primary:hover { 
-            background:var(--rr-amber-600); 
-            color:white; 
-            transform:translateY(-1px); 
-            box-shadow:0 4px 0 var(--rr-amber-600); 
-        }
-        .btn-teal {
-            background:var(--rr-teal-700);
-            color:white;
-        }
-        .btn-teal:hover {
-            background:var(--rr-teal-900);
-            transform:translateY(-1px);
-        }
-        .rich-text p {
-            margin-bottom: 1.5rem;
-            line-height: 1.75;
-            font-size: 1.0625rem;
-        }
-        .rich-text h2 {
-            font-family: 'Fraunces', serif;
-            font-size: 1.875rem;
-            margin-top: 2.5rem;
-            margin-bottom: 1.25rem;
-            color: var(--rr-ink);
-        }
-        .rich-text h3 {
-            font-family: 'Fraunces', serif;
-            font-size: 1.375rem;
-            margin-top: 2rem;
-            margin-bottom: 0.75rem;
-            color: var(--rr-ink);
-        }
-        .rich-text ol, .rich-text ul {
-            margin-bottom: 1.5rem;
-            padding-left: 1.5rem;
-        }
-        .rich-text ol { list-style-type: decimal; }
-        .rich-text ul { list-style-type: disc; }
-        .rich-text li {
-            margin-bottom: 0.5rem;
-            line-height: 1.625;
-            font-size: 1.0625rem;
-        }
-        .warning-card {
-            background: var(--rr-amber-50);
-            border-left: 4px solid var(--rr-amber-600);
-            padding: 1.5rem;
-            margin: 2rem 0;
-        }
-        .info-card {
-            background: var(--rr-teal-50);
-            border-left: 4px solid var(--rr-teal-700);
-            padding: 1.5rem;
-            margin: 2rem 0;
-        }
-    </style>
-    
-    <!-- JSON-LD BlogPosting Schema for Rich Snippets -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://www.repairrange.io/blog/iphone-16-pro-touch-screen-lag-unresponsive-fix.html"
-      },
-      "headline": "How to Fix iPhone 16 Pro Touch Screen Lag and Unresponsive Display Issues",
-      "description": "Is your iPhone 16 Pro touch screen not responding? Learn how to troubleshoot accidental touch software bugs vs hardware digitizer failures.",
-      "image": "https://www.repairrange.io/images/blog/iphone-16-touch-fix.jpg",  
-      "author": {
-        "@type": "Organization",
-        "name": "RepairRange",
-        "url": "https://www.repairrange.io"
-      },  
-      "publisher": {
-        "@type": "Organization",
-        "name": "RepairRange",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.repairrange.io/images/logo.png"
-        }
-      },
-      "datePublished": "2026-06-12T09:00:00+10:00",
-      "dateModified": "2026-06-12T09:00:00+10:00"
-    }
-    </script>
-</head>
-<body>
+        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#E7E5E4; --rr-paper:#FAFAF9; --rr-paper-2:#F5F5F4; }
+        html { scroll-behavior: smooth; }
+        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
+        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
+        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
+        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
+        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
+        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(250,250,249,0.85); }
+        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
+        .ed-link:hover { background-size:100% 1px; }
+        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
+        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
+        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
+        .mobile-menu { transition:all 300ms ease-in-out; }
+        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
+        
+        /* Prose style overrides for beautiful article typography */
+        .prose h2 { font-family:'Fraunces',serif; font-size: 1.625rem; font-weight: 500; color: var(--rr-teal-700); margin-top: 2.25rem; margin-bottom: 1rem; border-bottom: 1px solid var(--rr-line); padding-bottom: 0.5rem; }
+        .prose h3 { font-family:'Inter',sans-serif; font-size: 1.25rem; font-weight: 600; color: var(--rr-ink); margin-top: 1.75rem; margin-bottom: 0.75rem; }
+        .prose p { margin-bottom: 1.25rem; line-height: 1.75; font-size: 1.0625rem; color: #292524; }
+        .prose strong { color: var(--rr-ink); font-weight: 600; }
+        .prose ul, .prose ol { margin-bottom: 1.25rem; padding-left: 1.5rem; }
+        .prose ul { list-style-type: disc; }
+        .prose ol { list-style-type: decimal; }
+        .prose li { margin-bottom: 0.5rem; line-height: 1.6; font-size: 1.0625rem; }
 
-    <!-- Header Navigation -->
+        /* Custom UI Components for Blogs */
+        .warning-card { background: #fffbeb; border-left: 4px solid var(--rr-amber-600); padding: 1.5rem; margin: 2rem 0; }
+        .info-card { background: #f0fdfa; border-left: 4px solid var(--rr-teal-700); padding: 1.5rem; margin: 2rem 0; }
+        .btn-teal { background: var(--rr-teal-700); color: white; }
+        .btn-teal:hover { background: var(--rr-teal-900); transform: translateY(-1px); }
+    </style>
+</head>
+<body class="bg-paper text-ink antialiased">
     <header class="header-sticky sticky top-0 z-50 border-b border-line">
         <nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
-            <a href="../index.html" class="flex items-center gap-2 group">
-                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" class="flex-shrink-0"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" style="color: var(--rr-teal-700);"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" style="color: var(--rr-teal-700);" fill="none"/></svg>
+            <a href="/index.html" class="flex items-center gap-2 group">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" class="flex-shrink-0"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg>
                 <span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span>
             </a>
             <div class="hidden md:flex items-center gap-8 text-sm">
-                <a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a>
-                <a href="../repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a>
-                <a href="../fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a>
-                <a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a>
-                <a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a>
-                <a href="../blog.html" class="ed-link font-medium text-teal" style="color: var(--rr-teal-700);">Blog</a>
-                <a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                <a href="/brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a>
+                <a href="/repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a>
+                <a href="/fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a>
+                <a href="/calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a>
+                <a href="/locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a>
+                <a href="/blog.html" class="ed-link font-medium text-teal">Blog</a>
+                <a href="/calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
             </div>
             <button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button>
         </nav>
     </header>
 
-    <!-- Main Content Area -->
-    <main class="max-w-4xl mx-auto px-6 md:px-8 py-12">
+    <main class="max-w-3xl mx-auto px-6 py-12 md:py-16">
+        <div class="mb-6">
+            <a href="/blog.html" class="inline-flex items-center gap-2 text-sm font-medium text-teal hover:underline">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Blog
+            </a>
+        </div>
         
-        <!-- Breadcrumbs -->
-        <nav class="flex items-center gap-2 text-xs text-muted mb-6">
-            <a href="../index.html" class="ed-link hover:text-teal">Home</a>
-            <span>/</span>
-            <a href="../blog.html" class="ed-link hover:text-teal">Blog</a>
-            <span>/</span>
-            <span class="text-ink">iPhone 16 Touch Fix</span>
-        </nav>
-
-        <!-- Article Metadata -->
-        <header class="mb-10">
-            <p class="eyebrow mb-3">Repair Guide &bull; 7 min read &bull; June 2026</p>
-            <h1 class="display text-4xl md:text-5xl lg:text-6xl text-ink mb-6">How to Fix iPhone 16 Pro Touch Screen Lag and Unresponsive Display Issues</h1>
-            <p class="text-lg md:text-xl text-muted leading-relaxed">Is your new iPhone 16 Pro ignoring your swipes or lagging during typing? Our 2026 technical deep dive explains the "Accidental Touch" software bug and how to identify permanent hardware digitizer failure.</p>
-        </header>
-
-        <!-- Structured Article Body -->
-        <article class="rich-text text-ink">
+        <article class="bg-white border border-line rounded-lg p-8 md:p-12 shadow-sm">
+            <header class="mb-8">
+                <span class="eyebrow">Repair Guide</span>
+                <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-ink mt-2 mb-4">How to Fix iPhone 16 Pro Touch Screen Lag and Unresponsive Display Issues</h1>
+                <p class="text-muted text-sm">Published on June 12, 2026 • Written by RepairRange Editorial</p>
+            </header>
             
-            <p>The iPhone 16 Pro and 16 Pro Max feature some of the thinnest bezels in smartphone history. While this makes for a stunning visual experience, it has introduced a frustrating side effect for thousands of users: <strong>unresponsive touch zones and significant input lag.</strong></p>
+            <div class="prose max-w-none text-ink leading-relaxed space-y-6">
+                <p>The iPhone 16 Pro and 16 Pro Max feature some of the thinnest bezels in smartphone history. While this makes for a stunning visual experience, it has introduced a frustrating side effect for thousands of users: <strong>unresponsive touch zones and significant input lag.</strong></p>
             
-            <p>If your device feels "stuck" or misses touch inputs, especially near the edges or while using the keyboard, you are likely encountering a conflict between your grip and iOS's <strong>Accidental Touch Rejection algorithm.</strong> However, in some cases, this lag can be a symptom of a failing digitizer or a loose internal flex cable. Here is the technician-approved checklist to diagnose and fix the issue.</p>
+                <p>If your device feels "stuck" or misses touch inputs, especially near the edges or while using the keyboard, you are likely encountering a conflict between your grip and iOS's <strong>Accidental Touch Rejection algorithm.</strong> However, in some cases, this lag can be a symptom of a failing digitizer or a loose internal flex cable. Here is the technician-approved checklist to diagnose and fix the issue.</p>
 
-            <!-- B2C Conversion Block -->
-            <div class="warning-card">
-                <h3 class="font-serif text-xl font-bold mb-2" style="margin-top: 0;">Is your screen physically cracked or showing vertical lines?</h3>
-                <p class="text-sm text-muted mb-4">Software fixes won't solve hardware damage. If your iPhone has been dropped, your digitizer may be permanently broken. Get a verified local repair price instantly.</p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="../calculator.html" class="btn btn-primary text-xs">Check iPhone 16 Repair Costs</a>
-                    <a href="../locations.html" class="btn btn-teal text-xs" style="background-color: var(--rr-teal-700); color: white;">Find a Newcastle Tech</a>
+                <div class="warning-card">
+                    <h3 class="font-serif text-xl font-bold mb-2" style="margin-top: 0;">Is your screen physically cracked or showing vertical lines?</h3>
+                    <p class="text-sm text-muted mb-4">Software fixes won't solve hardware damage. If your iPhone has been dropped, your digitizer may be permanently broken. Get a verified local repair price instantly.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="/calculator.html" class="btn btn-primary text-xs">Check iPhone 16 Repair Costs</a>
+                        <a href="/locations.html" class="btn btn-teal text-xs">Find a Local Tech</a>
+                    </div>
+                </div>
+
+                <h2>1. The Direct Answer: Why is my iPhone 16 lagging?</h2>
+                <p>For most users, the iPhone 16 touch lag is <strong>not a hardware defect.</strong> It is caused by the ultra-thin bezels. When your palm or fingers slightly overlap the edge of the screen, iOS ignores all subsequent touches to prevent "accidental" inputs. This often happens near the new Camera Control button or the bottom corners during one-handed use.</p>
+
+                <h2>2. The Software Fix Checklist (Try these first)</h2>
+                <ul>
+                    <li><strong>Force Restart (The "Hard Reset"):</strong> Quickly press and release Volume Up, then Volume Down, then hold the Side Button until the Apple logo appears. This clears the system cache and reinitializes the touch driver.</li>
+                    <li><strong>Update to the Latest iOS:</strong> Apple frequently patches the touch rejection algorithm. Check <em>Settings > General > Software Update</em> for any stability patches.</li>
+                    <li><strong>Disable 'Touch Accommodations':</strong> Go to <em>Settings > Accessibility > Touch > Touch Accommodations</em>. Ensure this is OFF.</li>
+                    <li><strong>Remove the Screen Protector:</strong> High-density tempered glass can sometimes interfere with capacitive sensors. Test the phone "bare" to rule this out.</li>
+                </ul>
+
+                <h2>3. Hardware vs. Software: How to tell the difference</h2>
+                <p>If the lag persists even when the phone is sitting flat on a table (no palm contact), you may have a hardware issue. Use this table to differentiate:</p>
+
+                <div class="my-8 overflow-x-auto">
+                    <table class="w-full border-collapse border border-line text-sm">
+                        <thead class="bg-paper-2">
+                            <tr>
+                                <th class="border border-line p-3 text-left">Symptom</th>
+                                <th class="border border-line p-3 text-left">Likely Cause</th>
+                                <th class="border border-line p-3 text-left">Solution</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border border-line p-3">Lag only when holding the phone</td>
+                                <td class="border border-line p-3">Software Grip Rejection</td>
+                                <td class="border border-line p-3">Use a case with a lip</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-line p-3">Ghost touching (phone clicks by itself)</td>
+                                <td class="border border-line p-3">Hardware Digitizer Failure</td>
+                                <td class="border border-line p-3">Screen Replacement</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-line p-3">Lag occurs only in certain apps</td>
+                                <td class="border border-line p-3">App Optimization Bug</td>
+                                <td class="border border-line p-3">Update the specific App</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-line p-3">Dead zones (specific spots don't work)</td>
+                                <td class="border border-line p-3">Damaged Flex Cable</td>
+                                <td class="border border-line p-3">Professional Repair</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2>Considering a DIY Fix?</h2>
+                <p>If you've determined your screen is physically faulty, you have two choices: professional repair or a DIY kit. Replacing an iPhone 16 screen requires specialized tools due to the IP68 waterproof adhesive seal.</p>
+                
+                <div class="info-card">
+                    <h3 class="font-serif text-xl font-bold mb-2" style="margin-top: 0; color: var(--rr-teal-700);">Do it yourself with a Self-Fix Kit</h3>
+                    <p class="text-sm text-muted mb-4">Don't have $400 for a retail repair? Our upcoming **All-in-One iPhone Repair Kits** include an OEM-spec screen and tools to restore your device at home.</p>
+                    <a href="/blog.html" class="btn btn-teal text-xs">Coming Soon: View DIY Kit Pre-Orders</a>
+                </div>
+
+                <h2>Internal Screen Diagnostics Reference</h2>
+                <div class="my-8">
+                    <iframe src="https://www.ifixit.com/Document/embed/84931" width="100%" height="500" class="border border-line"></iframe>
                 </div>
             </div>
-
-            <h2>1. The Direct Answer: Why is my iPhone 16 lagging?</h2>
-            <p>For most users, the iPhone 16 touch lag is <strong>not a hardware defect.</strong> It is caused by the ultra-thin bezels. When your palm or fingers slightly overlap the edge of the screen, iOS ignores all subsequent touches to prevent "accidental" inputs. This often happens near the new Camera Control button or the bottom corners during one-handed use.</p>
-
-            <h2>2. The Software Fix Checklist (Try these first)</h2>
-            <ul>
-                <li><strong>Force Restart (The "Hard Reset"):</strong> Quickly press and release Volume Up, then Volume Down, then hold the Side Button until the Apple logo appears. This clears the system cache and reinitializes the touch driver.</li>
-                <li><strong>Update to the Latest iOS:</strong> Apple frequently patches the touch rejection algorithm. Check <em>Settings > General > Software Update</em> for any stability patches.</li>
-                <li><strong>Disable 'Touch Accommodations':</strong> Go to <em>Settings > Accessibility > Touch > Touch Accommodations</em>. Ensure this is OFF, as it can intentionally introduce a delay to touch inputs.</li>
-                <li><strong>Remove the Screen Protector:</strong> High-density tempered glass can sometimes interfere with the capacitive sensors on the iPhone 16 Pro's high-refresh-rate display. Test the phone "bare" to rule this out.</li>
-            </ul>
-
-            <h2>3. Hardware vs. Software: How to tell the difference</h2>
-            <p>If the lag persists even when the phone is sitting flat on a table (no palm contact), you may have a hardware issue. Use this table to differentiate:</p>
-
-            <div class="my-8 overflow-x-auto">
-                <table class="w-full border-collapse border border-line text-sm">
-                    <thead class="bg-paper-2">
-                        <tr>
-                            <th class="border border-line p-3 text-left">Symptom</th>
-                            <th class="border border-line p-3 text-left">Likely Cause</th>
-                            <th class="border border-line p-3 text-left">Solution</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="border border-line p-3">Lag only when holding the phone</td>
-                            <td class="border border-line p-3">Software Grip Rejection</td>
-                            <td class="border border-line p-3">Use a case with a lip</td>
-                        </tr>
-                        <tr>
-                            <td class="border border-line p-3">Ghost touching (phone clicks by itself)</td>
-                            <td class="border border-line p-3">Hardware Digitizer Failure</td>
-                            <td class="border border-line p-3">Screen Replacement</td>
-                        </tr>
-                        <tr>
-                            <td class="border border-line p-3">Lag occurs only in certain apps</td>
-                            <td class="border border-line p-3">App Optimization Bug</td>
-                            <td class="border border-line p-3">Update the specific App</td>
-                        </tr>
-                        <tr>
-                            <td class="border border-line p-3">Dead zones (specific spots don't work)</td>
-                            <td class="border border-line p-3">Damaged Flex Cable</td>
-                            <td class="border border-line p-3">Professional Repair</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <!-- DIY Kit Upsell Strategy -->
-            <h2>Considering a DIY Fix?</h2>
-            <p>If you've determined your screen is physically faulty, you have two choices: professional repair or a DIY kit. Replacing an iPhone 16 screen requires specialized "heat-and-suction" opening tools due to the IP68 waterproof adhesive seal.</p>
-            
-            <div class="info-card">
-                <h3 class="font-serif text-xl font-bold mb-2" style="margin-top: 0; color: var(--rr-teal-700);">Do it yourself with a Self-Fix Kit</h3>
-                <p class="text-sm text-muted mb-4">Don't have $400 for a retail repair? Our upcoming **All-in-One iPhone Repair Kits** include an OEM-spec screen, precision magnetic drivers, and the necessary waterproof seals to restore your device at home for a fraction of the cost.</p>
-                <a href="../blog.html" class="btn btn-teal text-xs" style="background-color: var(--rr-teal-700); color: white;">Coming Soon: View DIY Kit Pre-Orders</a>
-            </div>
-
-            <!-- Technical iFixit Iframe Embed Strategy -->
-            <h2>Internal Screen Diagnostics Reference</h2>
-            <p>To understand the complexity of the iPhone 16 Pro display assembly and the proximity of the touch flex cables, you can review this official diagnostic structure:</p>
-            
-            <div class="my-8">
-                <iframe src="https://www.ifixit.com/Document/embed/84931" width="100%" height="500" class="border border-line" style="border: 1px solid var(--rr-line);"></iframe>
-            </div>
-
         </article>
-
-        <!-- Footer Editorial Disclaimer -->
-        <hr class="border-line my-12" />
-        <footer class="text-xs text-muted leading-relaxed">
-            <p><strong>Editorial Disclaimer:</strong> This guide is for educational and diagnostic purposes. Bypassing lag or attempting hardware repairs carries risks. RepairRange.io recommends seeking professional assistance for all internal hardware operations on flagship devices.</p>
-        </footer>
-
     </main>
 
-    <!-- Footer Navigation -->
-    <footer class="bg-teal-900 text-white border-t border-white/10" style="background-color: var(--rr-teal-900);">
+    <footer class="bg-teal-900 text-white border-t border-white/10">
         <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
                 <div class="md:col-span-5">
@@ -331,42 +172,18 @@
                     </div>
                     <p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice. Researched by people who actually do this work.</p>
                 </div>
-                <div class="md:col-span-3">
-                    <h3 class="eyebrow text-amber mb-4" style="color: var(--rr-amber-500);">Browse</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li>
-                        <li><a href="../fix.html" class="text-white/80 hover:text-amber">Troubleshooting</a></li>
-                        <li><a href="../calculator.html" class="text-white/80 hover:text-amber">Cost Calculator</a></li>
-                        <li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li>
-                        <li><a href="../blog.html" class="text-white/80 hover:text-amber">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="md:col-span-4">
-                    <h3 class="eyebrow text-amber mb-4" style="color: var(--rr-amber-500);">About</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="../about.html" class="text-white/80 hover:text-amber">About RepairRange</a></li>
-                        <li><a href="../tools/software-stack-for-repair-shops.html" class="text-white/80 hover:text-amber">Tools we recommend</a></li>
-                        <li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy Policy</a></li>
-                        <li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms of Use</a></li>
-                    </ul>
-                </div>
+                <div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="/brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="/fix.html" class="text-white/80 hover:text-amber">Troubleshooting</a></li><li><a href="/calculator.html" class="text-white/80 hover:text-amber">Cost Calculator</a></li><li><a href="/locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="/blog.html" class="text-white/80 hover:text-amber">Blog</a></li></ul></div>
+                <div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="/about.html" class="text-white/80 hover:text-amber">About RepairRange</a></li><li><a href="/tools/software-stack-for-repair-shops.html" class="text-white/80 hover:text-amber">Tools we recommend</a></li><li><a href="/privacy.html" class="text-white/80 hover:text-amber">Privacy Policy</a></li><li><a href="/terms.html" class="text-white/80 hover:text-amber">Terms of Use</a></li></ul></div>
             </div>
-            <div class="pt-8 border-t border-white/15" style="border-top: 1px solid rgba(255,255,255,0.15);">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-                    <p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p>
-                    <p class="text-white/50 text-xs">Not affiliated with Apple, Samsung, Google, or any device manufacturer.</p>
-                </div>
+            <div class="pt-8 border-t border-white/15">
+                <p class="text-white/50 text-xs leading-relaxed mb-3 max-w-3xl"><strong class="text-white/70">Affiliate disclosure:</strong> RepairRange may earn a commission when you click links to retailers (including Amazon) and complete a purchase. This never affects the price you pay or our editorial recommendations.</p>
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p><p class="text-white/50 text-xs">Not affiliated with Apple, Samsung, Google, or any device manufacturer.</p></div>
             </div>
         </div>
     </footer>
 
     <script>
-        if (window.lucide) window.lucide.createIcons();
-        document.addEventListener('DOMContentLoaded', () => {
-            const btn = document.querySelector('.mobile-menu-button');
-            const menu = document.querySelector('.mobile-menu');
-            if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
-        });
+        lucide.createIcons();
     </script>
 </body>
 </html>

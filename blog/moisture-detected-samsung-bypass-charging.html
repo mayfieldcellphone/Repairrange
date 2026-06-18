@@ -1,217 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stuck with a Samsung phone that refuses to charge? Learn the safest ways to bypass the 'Moisture Detected' warning, clean your USB-C port, and charge your device.">
+    <meta name="author" content="RepairRange">
+    <title>How to Bypass Samsung 'Moisture Detected' Charging Error | RepairRange Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <style>
+        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#E7E5E4; --rr-paper:#FAFAF9; --rr-paper-2:#F5F5F4; }
+        html { scroll-behavior: smooth; }
+        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
+        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
+        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
+        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
+        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
+        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(250,250,249,0.85); }
+        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
+        .ed-link:hover { background-size:100% 1px; }
+        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
+        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
+        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
+        .mobile-menu { transition:all 300ms ease-in-out; }
+        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
+        
+        .prose h2 { font-family:'Fraunces',serif; font-size: 1.625rem; font-weight: 500; color: var(--rr-teal-700); margin-top: 2.25rem; margin-bottom: 1rem; border-bottom: 1px solid var(--rr-line); padding-bottom: 0.5rem; }
+        .prose h3 { font-family:'Inter',sans-serif; font-size: 1.25rem; font-weight: 600; color: var(--rr-ink); margin-top: 1.75rem; margin-bottom: 0.75rem; }
+        .prose p { margin-bottom: 1.25rem; line-height: 1.75; font-size: 1.0625rem; color: #292524; }
+        .prose strong { color: var(--rr-ink); font-weight: 600; }
+        .prose ul, .prose ol { margin-bottom: 1.25rem; padding-left: 1.5rem; }
+        .prose ul { list-style-type: disc; }
+        .prose ol { list-style-type: decimal; }
+        .prose li { margin-bottom: 0.5rem; line-height: 1.6; font-size: 1.0625rem; }
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-CWRGPBDWZD');
-</script>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<style>
-:root{
-  --rr-teal-900:#0f172a; --rr-teal-700:#14b8a6; --rr-amber-500:#f59e0b; --rr-amber-600:#d97706; 
-  --rr-ink:#1e293b; --rr-muted:#64748b; --rr-line:#e2e8f0; --rr-paper:#f8fafc; --rr-paper-2:#f1f5f9;
-}
-html{scroll-behavior:smooth}
-body{font-family:'Inter',sans-serif;color:var(--rr-ink);background:var(--rr-paper);-webkit-font-smoothing:antialiased}
-.font-serif{font-family:'Fraunces',serif}
-.display{font-family:'Fraunces',serif;font-weight:400;letter-spacing:-0.01em;line-height:1.05}
-.eyebrow{font-size:0.75rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--rr-teal-700)}
-.card{background:white; border:1px solid var(--rr-line); border-radius:16px; transition:all 400ms cubic-bezier(0.4, 0, 0.2, 1); overflow:hidden; box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);}
-.card:hover{border-color:var(--rr-teal-700); transform:translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);}
-.btn{display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.5rem; font-weight:700; font-size:0.9375rem; transition:all 200ms ease; border-radius:12px;}
-.btn-primary{background:var(--rr-amber-500); color:var(--rr-teal-900); box-shadow: 0 4px 14px 0 rgba(245, 158, 11, 0.3); border:none;}
-.btn-primary:hover{background:var(--rr-amber-600); transform:translateY(-1px);}
-.bg-mesh{background-color: var(--rr-paper); background-image: radial-gradient(var(--rr-line) 1px, transparent 0); background-size: 24px 24px;}
-.header-sticky{backdrop-filter:blur(16px); background:rgba(255,255,255,0.8);}
-.price-table{width:100%; border-collapse:separate; border-spacing:0; background:white; border-radius:16px; overflow:hidden; border:1px solid var(--rr-line);}
-.price-table th{background:var(--rr-paper-2); text-align:left; padding:1.25rem 1.5rem; font-size:0.75rem; font-weight:800; text-transform:uppercase; color:var(--rr-muted); border-bottom:1px solid var(--rr-line)}
-.price-table td{padding:1.5rem; border-bottom:1px solid var(--rr-line);}
-.sidebar-card{background:white; border:1px solid var(--rr-line); border-radius:16px; padding:1.75rem; position:relative; overflow:hidden;}
-.sidebar-card::after{content:''; position:absolute; top:0; left:0; width:4px; height:100%; background:var(--rr-teal-700);}
-</style>
-
-<title>How to Bypass Samsung 'Moisture Detected' Charging Error: Safe, Working Hacks — RepairRange</title>
-<meta name="description" content="Stuck with a Samsung phone that refuses to charge? Learn the safest ways to bypass the 'Moisture Detected' warning, clean your USB-C port, and charge your device.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.repairrange.io/blog/moisture-detected-samsung-bypass-charging.html">
+        .warning-card { background: #fffbeb; border-left: 4px solid var(--rr-amber-600); padding: 1.5rem; margin: 2rem 0; }
+        .info-card { background: #f0fdfa; border-left: 4px solid var(--rr-teal-700); padding: 1.5rem; margin: 2rem 0; }
+        .btn-teal { background: var(--rr-teal-700); color: white; }
+        .btn-teal:hover { background: var(--rr-teal-900); transform: translateY(-1px); }
+    </style>
 </head>
-<body class="bg-mesh">
-
-    <!-- Header Navigation -->
+<body class="bg-paper text-ink antialiased">
     <header class="header-sticky sticky top-0 z-50 border-b border-line">
         <nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
-            <a href="../index.html" class="flex items-center gap-2 group">
-                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" class="flex-shrink-0"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" style="color: var(--rr-teal-700);"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" style="color: var(--rr-teal-700);" fill="none"/></svg>
+            <a href="/index.html" class="flex items-center gap-2 group">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" class="flex-shrink-0"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg>
                 <span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span>
             </a>
             <div class="hidden md:flex items-center gap-8 text-sm">
-                <a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a>
-                <a href="../repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a>
-                <a href="../fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a>
-                <a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a>
-                <a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a>
-                <a href="../blog.html" class="ed-link font-medium text-teal" style="color: var(--rr-teal-700);">Blog</a>
-                <a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                <a href="/brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a>
+                <a href="/repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a>
+                <a href="/fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a>
+                <a href="/calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a>
+                <a href="/locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a>
+                <a href="/blog.html" class="ed-link font-medium text-teal">Blog</a>
+                <a href="/calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
             </div>
             <button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button>
         </nav>
     </header>
 
-    <!-- Main Content Area -->
-    <main class="max-w-4xl mx-auto px-6 md:px-8 py-12">
-        
-        <!-- Breadcrumbs -->
-        <nav class="flex items-center gap-2 text-xs text-muted mb-6">
-            <a href="../index.html" class="ed-link hover:text-teal">Home</a>
-            <span>/</span>
-            <a href="../blog.html" class="ed-link hover:text-teal">Blog</a>
-            <span>/</span>
-            <span class="text-ink">Samsung Moisture Detected Bypass</span>
-        </nav>
-
-        <!-- Article Metadata -->
-        <header class="mb-10">
-            <p class="eyebrow mb-3">Repair Guide &bull; 10 min read &bull; June 2026</p>
-            <h1 class="display text-4xl md:text-5xl lg:text-6xl text-ink mb-6">How to Bypass Samsung 'Moisture Detected' Charging Error: Safe, Working Hacks</h1>
-            <p class="text-lg md:text-xl text-muted leading-relaxed">Is your phone displaying a water drop icon and refusing to take a charge? Learn why this protective sensor triggers and explore step-by-step physical and software solutions to bypass it safely.</p>
-        </header>
-
-        <!-- Structured Article Body -->
-        
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 max-w-7xl mx-auto px-6 py-12">
-                <div class="lg:col-span-8 prose max-w-none">
-                    
-            
-            <p>You plug your Samsung Galaxy device into its charger, and instead of the reassuring chime of power flowing, your screen lights up with a red warning triangle, a water drop icon, and a message reading: <strong>"Moisture detected. To charge your device, make sure your charger/USB port is dry."</strong></p>
-            
-            <p>This safety protocol is built into modern Samsung flagships (from the Galaxy S8 up to the S24 series) to prevent <strong>galvanic corrosion</strong>. When electrical current passes through a port containing moisture or conductive debris, it can short-circuit the connections, destroying the charger cable and permanently frying the phone's sub-board.</p>
-            
-            <p>However, this highly sensitive sensor is prone to misfires. Pocket lint, sea air humidity, static charges, or a corrupted software cache can trap your device in a "moisture loop" even when the port is bone-dry. Here is a bench-tested walkthrough of the safest ways to diagnose, clean, and bypass the error.</p>
-
-            <!-- B2C Conversion Block (DIY limitations & local booking fallback) -->
-            <div class="warning-card">
-                <h3 class="font-serif text-xl font-bold mb-2" style="margin-top: 0;">Is your charging port loose, damaged, or permanently showing this error?</h3>
-                <p class="text-sm text-muted mb-4">If moisture or physical dirt has permanently corroded your USB-C pins, software hacks won't solve the underlying problem. Let our expert partners replace your port in under 45 minutes.</p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="https://www.mayfieldphonerepair.com.au" target="_blank" class="btn btn-primary text-xs">Book Charging Port Repair in Newcastle (Mayfield)</a>
-                    <a href="../locations.html" class="btn btn-teal text-xs" style="background-color: var(--rr-teal-700); color: white;">Look Up Repair Rates on RepairRange</a>
-                </div>
-            </div>
-
-            <h2>Why is the Moisture Warning Displayed?</h2>
-            <p>Before bypassing the warning, it is critical to understand what triggers the sensor:</p>
-            <ul>
-                <li><strong>Liquid Exposure:</strong> Direct contact with rain, sweat, splashes, or dropping the phone in water.</li>
-                <li><strong>Condensation:</strong> Moving from a cold air-conditioned room to hot, humid outside air.</li>
-                <li><strong>Conductive Debris:</strong> Wet pocket lint, metallic dust, or salty residue inside the port bridging the internal copper contacts.</li>
-                <li><strong>System Cache Glitch:</strong> A software bug in Samsung’s "USBSettings" system application telling the operating system a connection is wet when it is completely clean.</li>
-            </ul>
-
-            <h2>Method 1: Safe Physical Drying and Lint Cleaning (The Hardware Approach)</h2>
-            <p>First, we must rule out actual physical moisture or dust bridging the pins. Follow this safe diagnostic protocol:</p>
-            <ol>
-                <li><strong>Do Not Use Heat:</strong> Never blow-dry your USB port with hot air or place the phone in an oven. High temperatures melt the waterproofing gaskets and screen adhesives.</li>
-                <li><strong>Avoid Raw Rice:</strong> Putting your phone in raw rice is a myth. Fine starch powder and rice husks enter the port, mixing with existing moisture to form a concrete-like paste that permanently ruins the charging port pins.</li>
-                <li><strong>The Cold Air Trick:</strong> Gently tap your phone against your hand with the USB-C port facing downward to dislodge droplets. Then, place the phone in front of a fan or use a hair dryer on a strictly **cold air** setting for 15 minutes.</li>
-                <li><strong>The Lint Extraction:</strong> Pocket lint acts like a sponge, holding humidity inside the USB-C cavity. Power off your phone and use a wooden toothpick, plastic dental flosser, or an ESD-safe brush to gently sweep the edges of the port. You will be amazed at the amount of compressed felt that comes out.</li>
-            </ol>
-
-            <h2>Method 2: The Soft-Reset Boot Bypass (Emergency Charging Method)</h2>
-            <p>If you are in an emergency and need to force your device to charge immediately, you can bypass the sensor check during the bootloader sequence. This works because the moisture detection daemon loads late in the Android OS booting phase.</p>
-            <ol>
-                <li>Power off your Samsung device completely.</li>
-                <li>Plug your charging cable into a live wall socket, but do not plug it into the phone yet.</li>
-                <li>Plug the cable into your phone. The water drop icon and warning chime will likely trigger.</li>
-                <li>Immediately press and hold the <strong>Power Button + Volume Down Button</strong> simultaneously for 10-15 seconds to force a hard reboot.</li>
-                <li>Keep holding the keys until the Samsung logo appears on the screen.</li>
-                <li>The device will boot past the initial charge check, allowing the battery to charge directly. Keep the cable plugged in—if you unplug it, you must repeat the sequence.</li>
-            </ol>
-
-            <h2>Method 3: Clearing the 'USBSettings' System Cache (The Software Hack)</h2>
-            <p>If your port is completely dry and clean but the moisture warning persists, a software bug in the USB controller cache is the primary culprit. Clearing this system cache resets the sensor state.</p>
-            <ol>
-                <li>Go to <strong>Settings > Apps</strong>.</li>
-                <li>Tap on the **Filter and Sort** icon next to the "Your Apps" list, toggle on <strong>"Show system apps"</strong>, and tap OK.</li>
-                <li>Scroll down or use the search bar to locate the app named <strong>USBSettings</strong>.</li>
-                <li>Tap on <strong>Storage</strong>.</li>
-                <li>Tap on <strong>Clear Cache</strong>, and then tap <strong>Clear Data</strong>. Confirm the action.</li>
-                <li>Unplug your charger, wait 10 seconds, plug it back in, and test if the warning is dismissed.</li>
-            </ol>
-
-            <h2>The Wireless Charging Workaround</h2>
-            <p>The moisture sensor strictly monitors the physical copper contacts inside the USB-C port. It does **not** affect the induction coils on the back of the device. If your phone supports wireless charging (Qi standard), you can place it on a wireless charging pad to top up your battery to 100%, completely bypassing the port lockout while you wait for the moisture sensor cache to clear or for your replacement port to arrive.</p>
-
-            <!-- Technical iFixit Iframe Embed Strategy -->
-            <h2>Interactive Charging Port Replacement Reference</h2>
-            <p>If the internal copper contacts have turned green or black from water corrosion, the port is physically ruined and must be desoldered or replaced. You can review the exact internal board structure and replacement complexity using this official iFixit reference guide:</p>
-            
-            <div class="my-8">
-                <iframe src="https://www.ifixit.com/Document/embed/84931" width="100%" height="500" class="border border-line" style="border: 1px solid var(--rr-line);"></iframe>
-            </div>
-
-            <!-- B2B Tech SaaS Hook Card -->
-            <div class="info-card">
-                <h3 class="font-serif text-xl font-bold mb-2" style="margin-top: 0; color: var(--rr-teal-700);">Are you a professional repair technician?</h3>
-                <p class="text-sm text-muted mb-4">Dealing with dozens of corroded Samsung sub-boards and charging ports every week? Keep your diagnostics sharp and your repair workflow fully optimized.</p>
-                <p class="text-sm text-muted mb-4">Manage ticketing, inventory parts, and customer estimates seamlessly. Sign up for a free 14-day trial of **RepairBill.shop**—the ultimate shop management SaaS tailored for the electronics repair industry.</p>
-                <a href="https://repairbill.shop" target="_blank" class="btn btn-teal text-xs" style="background-color: var(--rr-teal-700); color: white;">Try RepairBill.shop Free for 14 Days</a>
-            </div>
-
-        
-                </div>
-                
-    <!-- DYNAMIC SIDEBAR -->
-    <aside class="lg:col-span-4">
-        <div class="lg:sticky lg:top-24 space-y-6">
-            <!-- PROMOTION: SELF REPAIR KIT -->
-            <div class="sidebar-card bg-teal-900 text-white border-none shadow-xl" style="background: #0f172a; border-radius: 12px; padding: 1.5rem;">
-                <span style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #f59e0b; margin-bottom: 0.5rem; display: block;">Premium Option</span>
-                <h3 style="font-family: 'Fraunces', serif; font-size: 1.5rem; margin-bottom: 0.75rem;">Self-Repair Kits</h3>
-                <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.5rem;">Fix it yourself with engineer-approved parts and professional toolsets. Save 65% on retail repair costs.</p>
-                <a href="https://selfrepairkit.com.au" style="background: #f59e0b; color: #0f172a; padding: 0.75rem 1.25rem; font-weight: 600; border-radius: 8px; display: inline-flex; align-items: center; gap: 0.5rem; width: 100%; justify-content: center;">Browse Kits</a>
-            </div>
-
-            <!-- PROMOTION: REPAIRBILL -->
-            <div class="sidebar-card" style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 12px; padding: 1.5rem;">
-                <h4 style="font-weight: 700; font-size: 0.875rem; color: #1e293b; margin-bottom: 0.75rem; text-transform: uppercase;">Repair Shop Owner?</h4>
-                <p style="color: #64748b; font-size: 0.75rem; line-height: 1.6; margin-bottom: 1rem;">Manage your shop with **RepairBill SaaS**. Professional invoicing, parts tracking, and tech management.</p>
-                <a href="https://repairbill.shop" style="color: #0d9488; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; display: inline-flex; align-items: center; gap: 0.25rem;">Start Free Trial &rarr;</a>
-            </div>
-
-            <!-- DIRECTORY -->
-            <div class="sidebar-card" style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem;">
-                <h4 style="font-weight: 700; font-size: 0.75rem; color: #0d9488; margin-bottom: 0.75rem; text-transform: uppercase;">Local Repair Hubs</h4>
-                <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.875rem;">
-                    <li style="border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;"><a href="../locations/sydney.html" style="color: #1e293b; text-decoration: none; display: flex; justify-content: space-between;">Sydney <span>&rarr;</span></a></li>
-                    <li style="border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;"><a href="../locations/melbourne.html" style="color: #1e293b; text-decoration: none; display: flex; justify-content: space-between;">Melbourne <span>&rarr;</span></a></li>
-                    <li style="border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;"><a href="../locations/brisbane.html" style="color: #1e293b; text-decoration: none; display: flex; justify-content: space-between;">Brisbane <span>&rarr;</span></a></li>
-                </ul>
-            </div>
+    <main class="max-w-3xl mx-auto px-6 py-12 md:py-16">
+        <div class="mb-6">
+            <a href="/blog.html" class="inline-flex items-center gap-2 text-sm font-medium text-teal hover:underline">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Blog
+            </a>
         </div>
-    </aside>
-
-            </div>
+        
+        <article class="bg-white border border-line rounded-lg p-8 md:p-12 shadow-sm">
+            <header class="mb-8">
+                <span class="eyebrow">Repair Guide</span>
+                <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-ink mt-2 mb-4">How to Bypass Samsung 'Moisture Detected' Charging Error</h1>
+                <p class="text-muted text-sm">Published on June 16, 2026 • Written by RepairRange Editorial</p>
+            </header>
             
+            <div class="prose max-w-none text-ink leading-relaxed space-y-6">
+                <p>You plug your Samsung Galaxy device into its charger, and instead of power flowing, your screen lights up with a red warning: <strong>"Moisture detected. To charge your device, make sure your charger/USB port is dry."</strong></p>
+            
+                <p>This safety protocol is built into flagships (from Galaxy S8 to S24) to prevent <strong>galvanic corrosion</strong>. However, the sensor is prone to misfires caused by pocket lint, sea air, or software glitches. Here is the safest way to diagnose and bypass the error.</p>
 
-        <!-- Footer Editorial Disclaimer -->
-        <hr class="border-line my-12" />
-        <footer class="text-xs text-muted leading-relaxed">
-            <p><strong>Editorial Disclaimer:</strong> This troubleshooting guide is provided for educational and utility reference purposes. While our methods are technician-tested, always exercise extreme caution when cleaning phone contacts or bypassing hardware warnings. RepairRange is not liable for device damage resulting from improper cleaning or overriding charging safeties on physically wet boards.</p>
-        </footer>
+                <div class="warning-card">
+                    <h3 class="font-serif text-xl font-bold mb-2" style="margin-top: 0;">Is your charging port permanently damaged?</h3>
+                    <p class="text-sm text-muted mb-4">If physical dirt has corroded your USB-C pins, software hacks won't solve the problem. Let our partners replace your port in under 45 minutes.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://www.mayfieldphonerepair.com.au" target="_blank" class="btn btn-primary text-xs">Book Repair in Newcastle</a>
+                        <a href="/locations.html" class="btn btn-teal text-xs">Look Up Repair Rates</a>
+                    </div>
+                </div>
 
+                <h2>Method 1: Safe Physical Drying and Cleaning</h2>
+                <ol>
+                    <li><strong>Do Not Use Heat:</strong> High temperatures melt gaskets and adhesives.</li>
+                    <li><strong>Avoid Raw Rice:</strong> Rice dust enters the port and forms a concrete-like paste.</li>
+                    <li><strong>The Cold Air Trick:</strong> Place the phone in front of a fan or cold hair dryer for 15 minutes.</li>
+                    <li><strong>Lint Extraction:</strong> Use a wooden toothpick to gently sweep debris out of the port.</li>
+                </ol>
+
+                <h2>Method 2: Soft-Reset Boot Bypass</h2>
+                <p>You can bypass the sensor check during the boot sequence as the detection daemon loads late.</p>
+                <ol>
+                    <li>Power off the device.</li>
+                    <li>Plug the cable into the phone.</li>
+                    <li>Immediately hold <strong>Power + Volume Down</strong> for 15 seconds to force a reboot.</li>
+                    <li>The device will boot past the initial check and continue charging.</li>
+                </ol>
+
+                <h2>Method 3: Clearing the 'USBSettings' Cache</h2>
+                <ol>
+                    <li>Go to <strong>Settings > Apps</strong>.</li>
+                    <li>Enable <strong>"Show system apps"</strong> in the filter.</li>
+                    <li>Find <strong>USBSettings</strong>.</li>
+                    <li>Tap <strong>Storage > Clear Data</strong>.</li>
+                </ol>
+
+                <div class="info-card">
+                    <h3 class="font-serif text-xl font-bold mb-2" style="margin-top: 0; color: var(--rr-teal-700);">Professional Technician?</h3>
+                    <p class="text-sm text-muted mb-4">Stop wasting time on forums. Manage your ticketing and inventory with **RepairBill.shop**.</p>
+                    <a href="https://repairbill.shop" target="_blank" class="btn btn-teal text-xs">Try RepairBill.shop Free</a>
+                </div>
+
+                <h2>Interactive Charging Port Replacement Reference</h2>
+                <div class="my-8">
+                    <iframe src="https://www.ifixit.com/Document/embed/84931" width="100%" height="500" class="border border-line"></iframe>
+                </div>
+            </div>
+        </article>
     </main>
 
-    <!-- Footer Navigation -->
-    <footer class="bg-teal-900 text-white border-t border-white/10" style="background-color: var(--rr-teal-900);">
+    <footer class="bg-teal-900 text-white border-t border-white/10">
         <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
                 <div class="md:col-span-5">
@@ -221,42 +144,18 @@ body{font-family:'Inter',sans-serif;color:var(--rr-ink);background:var(--rr-pape
                     </div>
                     <p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice. Researched by people who actually do this work.</p>
                 </div>
-                <div class="md:col-span-3">
-                    <h3 class="eyebrow text-amber mb-4" style="color: var(--rr-amber-500);">Browse</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li>
-                        <li><a href="../fix.html" class="text-white/80 hover:text-amber">Troubleshooting</a></li>
-                        <li><a href="../calculator.html" class="text-white/80 hover:text-amber">Cost Calculator</a></li>
-                        <li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li>
-                        <li><a href="../blog.html" class="text-white/80 hover:text-amber">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="md:col-span-4">
-                    <h3 class="eyebrow text-amber mb-4" style="color: var(--rr-amber-500);">About</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="../about.html" class="text-white/80 hover:text-amber">About RepairRange</a></li>
-                        <li><a href="../tools/software-stack-for-repair-shops.html" class="text-white/80 hover:text-amber">Tools we recommend</a></li>
-                        <li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy Policy</a></li>
-                        <li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms of Use</a></li>
-                    </ul>
-                </div>
+                <div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="/brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="/fix.html" class="text-white/80 hover:text-amber">Troubleshooting</a></li><li><a href="/calculator.html" class="text-white/80 hover:text-amber">Cost Calculator</a></li><li><a href="/locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="/blog.html" class="text-white/80 hover:text-amber">Blog</a></li></ul></div>
+                <div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="/about.html" class="text-white/80 hover:text-amber">About RepairRange</a></li><li><a href="/tools/software-stack-for-repair-shops.html" class="text-white/80 hover:text-amber">Tools we recommend</a></li><li><a href="/privacy.html" class="text-white/80 hover:text-amber">Privacy Policy</a></li><li><a href="/terms.html" class="text-white/80 hover:text-amber">Terms of Use</a></li></ul></div>
             </div>
-            <div class="pt-8 border-t border-white/15" style="border-top: 1px solid rgba(255,255,255,0.15);">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-                    <p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p>
-                    <p class="text-white/50 text-xs">Not affiliated with Apple, Samsung, Google, or any device manufacturer.</p>
-                </div>
+            <div class="pt-8 border-t border-white/15">
+                <p class="text-white/50 text-xs leading-relaxed mb-3 max-w-3xl"><strong class="text-white/70">Affiliate disclosure:</strong> RepairRange may earn a commission when you click links to retailers and complete a purchase.</p>
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p><p class="text-white/50 text-xs">Not affiliated with Apple, Samsung, Google, or any device manufacturer.</p></div>
             </div>
         </div>
     </footer>
 
     <script>
-        if (window.lucide) window.lucide.createIcons();
-        document.addEventListener('DOMContentLoaded', () => {
-            const btn = document.querySelector('.mobile-menu-button');
-            const menu = document.querySelector('.mobile-menu');
-            if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
-        });
+        lucide.createIcons();
     </script>
 </body>
 </html>
