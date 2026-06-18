@@ -133,7 +133,7 @@ body{{font-family:'Inter',system-ui,sans-serif;color:var(--rr-ink);background:va
 </nav>
 </header>
 
-<main class="max-w-7xl mx-auto px-6 md:px-8 py-16 md:py-24">
+<main class="max-w-full">
 <div class="max-w-4xl mb-16">
 <nav class="flex items-center gap-2 text-xs text-muted mb-8"><a href="../index.html" class="hover:text-teal">Home</a><span>/</span><a href="../blog.html" class="hover:text-teal">Blog</a><span>/</span><span class="text-ink font-bold">Tech News</span></nav>
 <p class="eyebrow mb-4">Briefing · {today_str}</p>
@@ -155,7 +155,7 @@ body{{font-family:'Inter',system-ui,sans-serif;color:var(--rr-ink);background:va
     </div>
 
     <!-- DYNAMIC SIDEBAR -->
-    <aside class="lg:col-span-4">
+    <aside class="lg:col-span-4 w-full">
         <div class="lg:sticky lg:top-24 space-y-6">
             
             <!-- PROMOTION: SELF REPAIR KIT -->
