@@ -5,9 +5,16 @@
     <link>https://repairrange.io/blog.html</link>
     <description>Daily Mobile Phone &amp; Tech Repair Pricing Guides &amp; Australian Industry News</description>
     <language>en-au</language>
-    <lastBuildDate>Wed, 17 Jun 2026 20:07:32 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2026 20:16:46 GMT</lastBuildDate>
     <atom:link href="https://repairrange.io/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Poco X8 Pro vs. Poco X8 Pro Max: Which Model is Right for You?</title>
+      <link>https://repairrange.io/blog/poco-x8-pro-vs-poco-x8-pro-max-comparison.html</link>
+      <guid isPermaLink="true">https://repairrange.io/blog/poco-x8-pro-vs-poco-x8-pro-max-comparison.html</guid>
+      <pubDate>Thu, 18 Jun 2026 20:16:46 GMT</pubDate>
+      <description>Dive into our detailed comparison of the Xiaomi Poco X8 Pro and Poco X8 Pro Max to find out which smartphone suits your needs and budget in Australia.</description>
+    </item>
+<item>
       <title>Aussie Tech Alert: Enhanced Parental Controls Roll Out with Android 17</title>
       <link>https://repairrange.io/blog/aussie-android-parental-controls-upgrade.html</link>
       <guid isPermaLink="true">https://repairrange.io/blog/aussie-android-parental-controls-upgrade.html</guid>
@@ -104,13 +111,6 @@
       <guid isPermaLink="true">https://repairrange.io/blog/unlocking-cheap-enterprise-storage-hba-cards-guide.html</guid>
       <pubDate>Fri, 12 Jun 2026 09:55:38 GMT</pubDate>
       <description>This detailed tutorial provides insights into leveraging HBA cards for affordable enterprise-level storage in your NAS while addressing potential challenges and offering local Australian support.</description>
-    </item>
-<item>
-      <title>Revolutionising Chip Technology: TSMC's Game-Changing CoPoS Innovation</title>
-      <link>https://repairrange.io/blog/revolutionising-chip-technology-tsmcs-copos-innovation.html</link>
-      <guid isPermaLink="true">https://repairrange.io/blog/revolutionising-chip-technology-tsmcs-copos-innovation.html</guid>
-      <pubDate>Fri, 12 Jun 2026 08:49:42 GMT</pubDate>
-      <description>Discover how TSMC's groundbreaking CoPoS technology is set to lower chip costs while enhancing performance, marking a new era for the tech industry in Australia.</description>
     </item>
   </channel>
 </rss>
