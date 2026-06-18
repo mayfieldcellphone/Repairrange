@@ -24,6 +24,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--rr-teal-900:#0f172a;--rr-teal-700:#0d9488;--rr-amber-600:#d97706;--rr-amber-500:#f59e0b;--rr-ink:#1e293b;--rr-muted:#64748b;--rr-line:#e2e8f0;--rr-paper:#f8fafc;--rr-paper-2:#f1f5f9}
 html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;color:var(--rr-ink);background:var(--rr-paper);-webkit-font-smoothing:antialiased}
@@ -32,6 +35,13 @@ html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;color:var(--rr-i
 .header-sticky{backdrop-filter:blur(12px);background:rgba(248,250,252,0.85)}
 .card{background:white;border:1px solid var(--rr-line);border-radius:12px;transition:all 300ms ease;overflow:hidden}
 .card:hover{border-color:var(--rr-teal-700);transform:translateY(-4px);box-shadow:0 10px 15px -3px rgba(0,0,0,0.1)}
+.price-table{width:100%;border-collapse:collapse;background:white;border-radius:12px;overflow:hidden;border:1px solid var(--rr-line)}
+.price-table th{background:var(--rr-paper);text-align:left;padding:1rem;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--rr-muted);border-bottom:1px solid var(--rr-line)}
+.price-table td{padding:1.25rem 1rem;border-bottom:1px solid var(--rr-line)}
+.model-row{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;align-items:center;padding:1rem 1.25rem;border-bottom:1px solid var(--rr-line);background:white;transition:background 200ms}
+.model-row:hover{background:var(--rr-paper-2)}.model-row.has-guide{border-left:3px solid var(--rr-teal-700)}
+.sidebar-card{background:white;border:1px solid var(--rr-line);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem}
+@media(max-width:768px){.model-row{grid-template-columns:1fr 1fr;gap:0.5rem}.model-row span:first-child{grid-column:span 2;font-size:1rem}.auth-col{display:none}}
 </style>
     <link rel="canonical" href="https://repairrange.io/blog/openai-ai-oversight-australia-tech-implications.html">
 </head>
