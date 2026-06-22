@@ -1,22 +1,11 @@
-stages:
-  - build
-  - deploy
-
-generate_news:
-  stage: build
-  image: python:3.11-slim
-  script:
-    - pip install requests
-    - python generate_tech_news.py
-  only:
-    - schedules
-
 pages:
   stage: deploy
   script:
     - mkdir -p public
-    - cp -r ./*.html ./*.txt ./*.xml public/ 2>/dev/null || true
-    - cp -r fix locations repair brands tools blog unlock news css public/ 2>/dev/null || true
+    - cp *.html public/ 2>/dev/null || true
+    - cp -r blog public/ 2>/dev/null || true
+    - cp *.txt public/ 2>/dev/null || true
+    - cp *.xml public/ 2>/dev/null || true
   artifacts:
     paths:
       - public
