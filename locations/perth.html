@@ -36,10 +36,13 @@ body{font-family:'Inter',sans-serif;color:var(--rr-ink);background:var(--rr-pape
 .price-table td{padding:1.25rem 1.5rem; border-bottom:1px solid var(--rr-line); vertical-align: middle;}
 .price-table tr:last-child td{border-bottom:none;}
 .price-table .model-name{font-weight: 600; color: var(--rr-ink);}
-.price-table .price-diy{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; color: var(--rr-muted); font-size: 0.875rem;}
-.price-table .price-indie{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; color: var(--rr-teal-700); font-weight: 700; font-size: 1rem;}
-.sidebar-card{background:white; border:1px solid var(--rr-line); border-radius:16px; padding:1.75rem; position:relative; overflow:hidden;}
-.sidebar-card::after{content:''; position:absolute; top:0; left:0; width:4px; height:100%; background:var(--rr-teal-700);}</style>
+.price-table .price-diy{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; color: var(--rr-amber-600); font-weight: 700; font-size: 0.9375rem;}
+.price-table .price-indie{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; color: var(--rr-teal-700); font-weight: 600; font-size: 1rem;}
+.sidebar-card{background:white; border:1px solid var(--rr-line); border-radius:20px; padding:2rem; position:relative; overflow:hidden; box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);}
+.sidebar-card::after{content:''; position:absolute; top:0; left:0; width:100%; height:4px; background:linear-gradient(to right, var(--rr-amber-500), var(--rr-teal-700));}
+.sidebar-sticky{position: sticky; top: 100px;}
+.content-grid{display: grid; grid-template-columns: 1fr; gap: 3rem;}
+@media (min-width: 1024px) { .content-grid { grid-template-columns: 2fr 1fr; } }</style>
 
 <title>Phone Repair Costs in Perth — RepairRange</title>
 <meta name="description" content="What phone screen and battery repairs actually cost in Perth in 2026. Honest independent-shop pricing for iPhone, Samsung and Pixel, plus the parts-lead-time reality.">
@@ -90,6 +93,8 @@ body{font-family:'Inter',sans-serif;color:var(--rr-ink);background:var(--rr-pape
 </section>
 
 <section class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
+<div class="content-grid">
+<div class="main-column">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-10">
 <div class="lg:col-span-4">
 <p class="eyebrow mb-3">Local price benchmarks</p>
@@ -102,63 +107,63 @@ body{font-family:'Inter',sans-serif;color:var(--rr-ink);background:var(--rr-pape
 <thead>
 <tr>
 <th>Model</th>
-<th>DIY (parts+tools)</th>
-<th class="text-right">Independent shop</th>
+<th>Independent shop</th>
+<th class="text-right">DIY (parts+tools)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="model-name">iPhone 17 Pro Max</td>
-<td class="price-diy">$210–$310</td>
-<td class="text-right"><span class="price-indie">$399–$609</span></td>
+<td class="price-indie">$399–$609</td>
+<td class="text-right"><span class="price-diy">$210–$310</span></td>
 </tr>
 <tr>
 <td class="model-name">iPhone 17 Pro</td>
-<td class="price-diy">$190–$280</td>
-<td class="text-right"><span class="price-indie">$369–$539</span></td>
+<td class="price-indie">$369–$539</td>
+<td class="text-right"><span class="price-diy">$190–$280</span></td>
 </tr>
 <tr>
 <td class="model-name">iPhone 17</td>
-<td class="price-diy">$160–$230</td>
-<td class="text-right"><span class="price-indie">$289–$419</span></td>
+<td class="price-indie">$289–$419</td>
+<td class="text-right"><span class="price-diy">$160–$230</span></td>
 </tr>
 <tr>
 <td class="model-name">iPhone 15 Pro Max</td>
-<td class="price-diy">$190–$260</td>
-<td class="text-right"><span class="price-indie">$339–$469</span></td>
+<td class="price-indie">$339–$469</td>
+<td class="text-right"><span class="price-diy">$190–$260</span></td>
 </tr>
 <tr>
 <td class="model-name">iPhone 15 Pro</td>
-<td class="price-diy">$170–$240</td>
-<td class="text-right"><span class="price-indie">$299–$409</span></td>
+<td class="price-indie">$299–$409</td>
+<td class="text-right"><span class="price-diy">$170–$240</span></td>
 </tr>
 <tr>
 <td class="model-name">iPhone 15</td>
-<td class="price-diy">$139–$199</td>
-<td class="text-right"><span class="price-indie">$229–$329</span></td>
+<td class="price-indie">$229–$329</td>
+<td class="text-right"><span class="price-diy">$139–$199</span></td>
 </tr>
 <tr>
 <td class="model-name">iPhone 14</td>
-<td class="price-diy">$109–$169</td>
-<td class="text-right"><span class="price-indie">$219–$309</span></td>
+<td class="price-indie">$219–$309</td>
+<td class="text-right"><span class="price-diy">$109–$169</span></td>
 </tr>
 <tr>
 <td class="model-name">Samsung Galaxy S26 Ultra (est.)</td>
-<td class="price-diy">$240–$330</td>
-<td class="text-right"><span class="price-indie">$449–$579</span></td>
+<td class="price-indie">$449–$579</td>
+<td class="text-right"><span class="price-diy">$240–$330</span></td>
 </tr>
 <tr>
 <td class="model-name">Samsung Galaxy S24 Ultra</td>
-<td class="price-diy">$209–$289</td>
-<td class="text-right"><span class="price-indie">$309–$499</span></td>
+<td class="price-indie">$309–$499</td>
+<td class="text-right"><span class="price-diy">$209–$289</span></td>
 </tr>
 </tbody>
 </table>
 </div>
 <p class="text-xs text-muted mt-4">Ranges are 2026 Perth independent-shop pricing and align with our per-model pages (slightly higher floor than the east coast reflects freight and lower competition). The iPhone 17 series (released Sep 2025) sits at the top of the iPhone range; the Galaxy S26 Ultra (released Mar 2026) is an early estimate that will sharpen as aftermarket parts supply matures. Battery replacements generally run $79–$169. Curved-screen Samsungs sit at the top of every range. Use the <a href="../calculator.html" class="ed-link text-teal">cost calculator</a> for other models.</p>
-</section>
+</div>
 
-<section class="bg-white border-t border-b border-line">
+<div class="mt-16 pt-16 border-t border-line">
 <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
 <div class="lg:col-span-4">
@@ -171,6 +176,33 @@ body{font-family:'Inter',sans-serif;color:var(--rr-ink);background:var(--rr-pape
 <p>Authorised Apple and Samsung service from Perth almost always means posting the device east, which adds days on top of the already-longer parts situation. For an out-of-warranty phone a local independent with the part in stock is by far the fastest and cheapest route. If you're not sure what's actually wrong, our <a href="../fix.html" class="ed-link text-teal">troubleshooting guides</a> can narrow it before you commit.</p>
 </div>
 </div>
+</div>
+</div></div>
+
+<aside class="sidebar-sticky">
+    <div class="sidebar-card">
+        <p class="eyebrow mb-4 text-amber-600">Save with DIY</p>
+        <h3 class="display text-2xl text-ink mb-4 font-bold">Repair it yourself?</h3>
+        <p class="text-muted text-sm leading-relaxed mb-6">
+            Don't pay $150+ in labor fees. Our curated repair kits include the <strong>exact same OEM-grade parts</strong> and professional tools used by local technicians.
+        </p>
+        <ul class="space-y-3 mb-8">
+            <li class="flex items-center gap-2 text-xs font-bold text-ink"><i data-lucide="check-circle-2" class="w-4 h-4 text-teal-600"></i> Free Express AU Shipping</li>
+            <li class="flex items-center gap-2 text-xs font-bold text-ink"><i data-lucide="check-circle-2" class="w-4 h-4 text-teal-600"></i> Step-by-Step Video Guides</li>
+            <li class="flex items-center gap-2 text-xs font-bold text-ink"><i data-lucide="check-circle-2" class="w-4 h-4 text-teal-600"></i> 12-Month Warranty</li>
+        </ul>
+        <a href="https://selfrepairkit.com.au" target="_blank" class="btn btn-primary w-full justify-center py-4">Shop Repair Kits <i data-lucide="external-link" class="w-4 h-4"></i></a>
+        <p class="text-[10px] text-muted mt-4 text-center">Trusted by 2,000+ Aussie DIYers this year.</p>
+    </div>
+    
+    <div class="mt-8 p-6 bg-teal-900/5 rounded-2xl border border-teal-900/10">
+        <h4 class="font-bold text-ink text-sm mb-2">Technician's Tip</h4>
+        <p class="text-xs text-muted leading-relaxed">
+            DIY is best for screen and battery swaps. For complex logic board issues or data recovery, we always recommend visiting a <a href="#shops" class="text-teal-700 font-bold hover:underline">verified local shop</a> below.
+        </p>
+    </div>
+</aside>
+
 </div>
 </section>
 
