@@ -1,46 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-CWRGPBDWZD');</script>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script><script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<style>:root{--rr-teal-900:#0f172a;--rr-teal-700:#14b8a6;--rr-amber-500:#f59e0b;--rr-amber-600:#d97706;--rr-ink:#1e293b;--rr-muted:#64748b;--rr-line:#e2e8f0;--rr-paper:#f8fafc;--rr-paper-2:#f1f5f9}html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;color:var(--rr-ink);background:var(--rr-paper);-webkit-font-smoothing:antialiased}.font-serif{font-family:'Fraunces',serif}.display{font-family:'Fraunces',serif;font-weight:400;letter-spacing:-0.01em;line-height:1.05}.eyebrow{font-size:0.75rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--rr-teal-700)}.card{background:white;border:1px solid var(--rr-line);border-radius:16px;transition:all 400ms cubic-bezier(0.4,0,0.2,1);overflow:hidden;box-shadow:0 1px 3px 0 rgb(0 0 0/0.1)}.card:hover{border-color:var(--rr-teal-700);transform:translateY(-6px);box-shadow:0 20px 25px -5px rgb(0 0 0/0.1)}.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.75rem 1.5rem;font-weight:700;font-size:0.9375rem;transition:all 200ms ease;border-radius:12px}.btn-primary{background:var(--rr-amber-500);color:var(--rr-teal-900);box-shadow:0 4px 14px 0 rgba(245,158,11,0.3);border:none}.btn-primary:hover{background:var(--rr-amber-600);transform:translateY(-1px)}.bg-mesh{background-color:var(--rr-paper);background-image:radial-gradient(var(--rr-line) 1px,transparent 0);background-size:24px 24px}.header-sticky{backdrop-filter:blur(16px);background:rgba(255,255,255,0.8)}.sidebar-card{background:white;border:1px solid var(--rr-line);border-radius:16px;padding:1.75rem;position:relative;overflow:hidden}.sidebar-card::after{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--rr-teal-700)}</style>
-<title>Blog — RepairRange</title>
-<meta name="description" content="Plain-English editorial from the RepairRange team: explainers, decision guides, and bench notes on phone repair. Written by working technicians.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://repairrange.io/blog.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plain-English editorial from the RepairRange team: explainers, decision guides, and bench notes on phone repair. Written by working technicians.">
+    <meta name="author" content="RepairRange">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://repairrange.io/blog.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://repairrange.io/blog.html">
+    <meta property="og:title" content="Blog — RepairRange">
+    <meta property="og:description" content="Plain-English editorial from working repair technicians: screen quality explainers, decision guides, and honest bench notes.">
+    <meta property="og:site_name" content="RepairRange">
+    <title>Blog — RepairRange</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <style>
+        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#E7E5E4; --rr-paper:#FAFAF9; --rr-paper-2:#F5F5F4; }
+        html { scroll-behavior: smooth; }
+        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
+        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
+        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
+        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
+        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
+        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(250,250,249,0.85); }
+        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
+        .ed-link:hover { background-size:100% 1px; }
+        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
+        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
+        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
+        .post-card { background:white; border:1px solid var(--rr-line); transition:all 200ms ease; display:block; padding:1.75rem; }
+        .post-card:hover { border-color:var(--rr-ink); transform:translateY(-2px); }
+        .mobile-menu { transition:all 300ms ease-in-out; }
+        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
+    </style>
 </head>
-<body class="bg-mesh">
-<header class="header-sticky sticky top-0 z-50 border-b border-line"><nav class="max-w-7xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between"><a href="index.html" class="flex items-center gap-2"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg><span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span></a><div class="hidden md:flex items-center gap-8 text-sm"><a href="brands.html" class="font-medium text-ink hover:text-teal">Brands</a><a href="repair/phone-repair-costs-australia.html" class="font-medium text-ink hover:text-teal">Repairs</a><a href="fix.html" class="font-medium text-ink hover:text-teal">Troubleshoot</a><a href="calculator.html" class="font-medium text-ink hover:text-teal">Calculator</a><a href="blog.html" class="font-medium text-teal font-bold border-b-2 border-teal">Blog</a><a href="calculator.html" class="btn btn-primary text-sm">Get a Quote</a></div></nav></header>
+<body>
 
-<section class="bg-mesh border-b border-line overflow-hidden relative"><div class="absolute right-0 top-0 w-1/2 h-full bg-teal-900/5 -skew-x-12 translate-x-1/4"></div><div class="max-w-7xl mx-auto px-6 md:px-8 py-16 md:py-24 relative z-10"><nav class="flex items-center gap-2 text-xs text-muted mb-8"><a href="index.html" class="hover:text-teal">Home</a><span>/</span><span class="text-ink font-bold">Blog</span></nav><p class="eyebrow mb-4">Editorial &amp; Bench Notes</p><h1 class="display text-5xl md:text-7xl text-ink mb-6 max-w-4xl tracking-tighter">Honest advice from the <span class="text-teal font-bold">repair bench.</span></h1><p class="text-xl text-muted max-w-2xl leading-relaxed">Plain-English explainers, decision guides, and bench notes on phone repair — written by working technicians in Australia.</p></div></section>
+    <header class="header-sticky sticky top-0 z-50 border-b border-line">
+        <nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" class="flex-shrink-0"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg>
+                <span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm">
+                <a href="brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a>
+                <a href="repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a>
+                <a href="fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a>
+                <a href="calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a>
+                <a href="unlock/index.html" class="ed-link font-medium text-ink hover:text-teal">Phone Unlock</a>
+                <a href="locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a>
+                <a href="phone-plans.html" class="ed-link font-medium text-ink hover:text-teal">Phone Plans</a>
+                <a href="blog.html" class="ed-link font-medium text-teal">Blog</a>
+                <a href="calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            </div>
+            <button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button>
+        </nav>
+        <div class="mobile-menu hidden md:hidden border-t border-line bg-paper">
+            <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
+                <a href="brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a>
+                <a href="repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a>
+                <a href="fix.html" class="py-2 font-medium text-ink hover:text-teal">Troubleshoot</a>
+                <a href="calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a>
+                <a href="unlock/index.html" class="py-2 font-medium text-ink hover:text-teal">Phone Unlock</a>
+                <a href="locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a>
+                <a href="blog.html" class="py-2 font-medium text-teal">Blog</a>
+                <a href="calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a>
+            </div>
+        </div>
+    </header>
 
-<section class="max-w-7xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="flex flex-col lg:flex-row gap-12"><div class="lg:w-2/3"><p class="eyebrow mb-8">Latest Editorial Guides</p><div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <section class="bg-paper border-b border-line">
+        <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-24">
+            <nav class="flex items-center gap-2 text-xs text-muted mb-8">
+                <a href="index.html" class="ed-link hover:text-teal">Home</a>
+                <span>/</span>
+                <span class="text-ink">Blog</span>
+            </nav>
+            <p class="eyebrow mb-4">Editorial</p>
+            <h1 class="display text-4xl md:text-6xl lg:text-7xl text-ink mb-6 max-w-3xl">Notes from the bench.</h1>
+            <p class="text-lg md:text-xl text-muted max-w-2xl leading-relaxed">Plain-English explainers, decision guides, and honest opinions on phone repair — written by working technicians. New posts as we have something worth saying.</p>
+        </div>
+    </section>
 
-<a href="blog/water-damaged-phone-what-to-do.html" class="post-card group flex flex-col"><div class="h-32 bg-slate-50 border-b border-line flex items-center justify-center group-hover:bg-teal/5 transition-colors"><i data-lucide="droplets" class="w-12 h-12 text-teal/30 group-hover:text-teal group-hover:scale-110 transition-all"></i></div><div class="p-6 flex flex-col grow"><p class="eyebrow text-[10px] mb-2 font-bold text-teal/60">Emergency Guide &bull; June 2026</p><h2 class="font-serif text-xl md:text-2xl text-ink mb-3 leading-tight group-hover:text-teal transition-colors">Water Damaged Phone &mdash; What to Do in the First 60 Minutes</h2><p class="text-muted text-xs leading-relaxed mb-4 line-clamp-3">Your phone just got wet. The next hour is critical. Step-by-step emergency guide plus what NOT to do (rice doesn't work).</p><span class="mt-auto inline-flex items-center gap-2 text-[10px] font-bold text-teal tracking-widest uppercase">Read Full Guide <i data-lucide="arrow-right" class="w-4 h-4"></i></span></div></a>
+    <section class="bg-paper-2 border-b border-line">
+        <div class="max-w-6xl mx-auto px-6 md:px-8 py-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div><p class="eyebrow mb-1">Auto-curated daily</p><p class="text-ink font-medium">Looking for the latest tech news? We publish daily updates from the repair industry.</p></div>
+            <a href="tech-news.html" class="btn btn-primary flex-shrink-0">Read Tech News <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+        </div>
+    </section>
 
-<a href="blog/right-to-repair-australia-phone-owners.html" class="post-card group flex flex-col"><div class="h-32 bg-slate-50 border-b border-line flex items-center justify-center group-hover:bg-teal/5 transition-colors"><i data-lucide="scale" class="w-12 h-12 text-teal/30 group-hover:text-teal group-hover:scale-110 transition-all"></i></div><div class="p-6 flex flex-col grow"><p class="eyebrow text-[10px] mb-2 font-bold text-teal/60">Consumer Rights &bull; June 2026</p><h2 class="font-serif text-xl md:text-2xl text-ink mb-3 leading-tight group-hover:text-teal transition-colors">Right to Repair Australia &mdash; What It Means for Phone Owners</h2><p class="text-muted text-xs leading-relaxed mb-4 line-clamp-3">Your warranty rights under Australian Consumer Law, why third-party repair doesn't void your warranty, and the 2026 reform push.</p><span class="mt-auto inline-flex items-center gap-2 text-[10px] font-bold text-teal tracking-widest uppercase">Read Full Guide <i data-lucide="arrow-right" class="w-4 h-4"></i></span></div></a>
+    <section class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
+        <p class="eyebrow mb-6">Repair &amp; pricing guides</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-<a href="blog/australian-phone-plan-guide-for-immigrants-and-students.html" class="post-card group flex flex-col"><div class="h-32 bg-slate-50 border-b border-line flex items-center justify-center group-hover:bg-teal/5 transition-colors"><i data-lucide="help-circle" class="w-12 h-12 text-teal/30 group-hover:text-teal group-hover:scale-110 transition-all"></i></div><div class="p-6 flex flex-col grow"><p class="eyebrow text-[10px] mb-2 font-bold text-teal/60">Newcomer Guide &bull; June 2026</p><h2 class="font-serif text-xl md:text-2xl text-ink mb-3 leading-tight group-hover:text-teal transition-colors">Welcome to Australia: The Newcomer's Guide to Phone Plans</h2><p class="text-muted text-xs leading-relaxed mb-4 line-clamp-3">Don't get overcharged. Here is how to find the best phone plans for students and immigrants without a local credit history.</p><span class="mt-auto inline-flex items-center gap-2 text-[10px] font-bold text-teal tracking-widest uppercase">Read Full Guide <i data-lucide="arrow-right" class="w-4 h-4"></i></span></div></a>
+            <a href="blog/australian-phone-plan-guide-for-immigrants-and-students.html" class="post-card group">
+                <p class="eyebrow mb-3">Immigrant & Student Guide &bull; 9 min read &bull; June 2026</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">Welcome to Australia: The Newcomer's Guide to Phone Plans</h2>
+                <p class="text-muted leading-relaxed mb-4">Moving to Australia? Don't get overcharged. Here is how to find the best phone plans for students and immigrants without a local credit history.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+            </a>
 
-<a href="blog/best-telstra-network-phone-plans.html" class="post-card group flex flex-col"><div class="h-32 bg-slate-50 border-b border-line flex items-center justify-center group-hover:bg-teal/5 transition-colors"><i data-lucide="zap" class="w-12 h-12 text-teal/30 group-hover:text-teal group-hover:scale-110 transition-all"></i></div><div class="p-6 flex flex-col grow"><p class="eyebrow text-[10px] mb-2 font-bold text-teal/60">Consumer Guide &bull; June 2026</p><h2 class="font-serif text-xl md:text-2xl text-ink mb-3 leading-tight group-hover:text-teal transition-colors">Best Mobile Plans on the Full Telstra Network 2026</h2><p class="text-muted text-xs leading-relaxed mb-4 line-clamp-3">Stop paying the 'Telstra Tax'. Find out which providers give you 100% Telstra Retail coverage for half the cost.</p><span class="mt-auto inline-flex items-center gap-2 text-[10px] font-bold text-teal tracking-widest uppercase">Read Full Guide <i data-lucide="arrow-right" class="w-4 h-4"></i></span></div></a>
+            <a href="blog/best-telstra-network-phone-plans.html" class="post-card group">
+                <p class="eyebrow mb-3">Consumer Guide &bull; 7 min read &bull; June 2026</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">Best Mobile Plans on the Full Telstra Network 2026: Coverage Without the Premium Price</h2>
+                <p class="text-muted leading-relaxed mb-4">Stop paying the 'Telstra Tax'. Find out which providers give you 100% Telstra Retail coverage for half the cost.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+            </a>
 
-<a href="blog/what-happens-if-you-dont-fix-cracked-screen.html" class="post-card group flex flex-col"><div class="h-32 bg-slate-50 border-b border-line flex items-center justify-center group-hover:bg-teal/5 transition-colors"><i data-lucide="alert-triangle" class="w-12 h-12 text-teal/30 group-hover:text-teal group-hover:scale-110 transition-all"></i></div><div class="p-6 flex flex-col grow"><p class="eyebrow text-[10px] mb-2 font-bold text-teal/60">Reality Check &bull; June 2026</p><h2 class="font-serif text-xl md:text-2xl text-ink mb-3 leading-tight group-hover:text-teal transition-colors">What happens if you don't fix a cracked screen?</h2><p class="text-muted text-xs leading-relaxed mb-4 line-clamp-3">The timeline from "it's fine" to moisture damage, ghost touch, and a repair bill that's doubled.</p><span class="mt-auto inline-flex items-center gap-2 text-[10px] font-bold text-teal tracking-widest uppercase">Read Full Guide <i data-lucide="arrow-right" class="w-4 h-4"></i></span></div></a>
+            <a href="blog/starlink-direct-to-cell-australia-guide.html" class="post-card group">
+                <p class="eyebrow mb-3">Tech Guide &bull; 10 min read &bull; June 2026</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">Starlink Direct to Cell in Australia: Everything You Need to Know</h2>
+                <p class="text-muted leading-relaxed mb-4">No signal? No problem. SpaceX and Telstra are bringing satellite connectivity to standard phones. Everything you need to know about the 2026 rollout.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+            </a>
 
-<a href="blog/phone-insurance-vs-self-insuring-australia.html" class="post-card group flex flex-col"><div class="h-32 bg-slate-50 border-b border-line flex items-center justify-center group-hover:bg-teal/5 transition-colors"><i data-lucide="calculator" class="w-12 h-12 text-teal/30 group-hover:text-teal group-hover:scale-110 transition-all"></i></div><div class="p-6 flex flex-col grow"><p class="eyebrow text-[10px] mb-2 font-bold text-teal/60">Money Guide &bull; June 2026</p><h2 class="font-serif text-xl md:text-2xl text-ink mb-3 leading-tight group-hover:text-teal transition-colors">Phone insurance vs self-insuring — the honest math.</h2><p class="text-muted text-xs leading-relaxed mb-4 line-clamp-3">AppleCare+, Samsung Care+, and carrier insurance vs paying for repairs yourself. The numbers favour skipping insurance.</p><span class="mt-auto inline-flex items-center gap-2 text-[10px] font-bold text-teal tracking-widest uppercase">Read Full Guide <i data-lucide="arrow-right" class="w-4 h-4"></i></span></div></a>
+            <a href="blog/spacex-starlink-ipo-investor-guide.html" class="post-card group">
+                <p class="eyebrow mb-3">Finance & Tech &bull; 8 min read &bull; June 2026</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">SpaceX Starlink IPO: How to Invest in the Future of Connectivity</h2>
+                <p class="text-muted leading-relaxed mb-4">Elon Musk's SpaceX is eyeing a blockbuster IPO. Here is how Australians can participate and why this matters for the future of mobile connectivity.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+            </a>
 
-<a href="blog/can-you-diy-phone-screen-repair.html" class="post-card group flex flex-col"><div class="h-32 bg-slate-50 border-b border-line flex items-center justify-center group-hover:bg-teal/5 transition-colors"><i data-lucide="wrench" class="w-12 h-12 text-teal/30 group-hover:text-teal group-hover:scale-110 transition-all"></i></div><div class="p-6 flex flex-col grow"><p class="eyebrow text-[10px] mb-2 font-bold text-teal/60">Honest Assessment &bull; June 2026</p><h2 class="font-serif text-xl md:text-2xl text-ink mb-3 leading-tight group-hover:text-teal transition-colors">Can you fix your own phone screen?</h2><p class="text-muted text-xs leading-relaxed mb-4 line-clamp-3">Model-by-model DIY difficulty ratings, tools required, and the risks you need to know before opening your phone.</p><span class="mt-auto inline-flex items-center gap-2 text-[10px] font-bold text-teal tracking-widest uppercase">Read Full Guide <i data-lucide="arrow-right" class="w-4 h-4"></i></span></div></a>
+            <a href="blog/what-happens-if-you-dont-fix-cracked-screen.html" class="post-card group">
+                <p class="eyebrow mb-3">Reality check · 8 min read · June 2026</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">What happens if you don’t fix a cracked screen.</h2>
+                <p class="text-muted leading-relaxed mb-4">The timeline from “it’s fine” to moisture damage, ghost touch, and a repair bill that’s doubled. Week by week.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+            </a>
 
-<a href="blog/iphone-vs-samsung-repair-cost-comparison.html" class="post-card group flex flex-col"><div class="h-32 bg-slate-50 border-b border-line flex items-center justify-center group-hover:bg-teal/5 transition-colors"><i data-lucide="smartphone" class="w-12 h-12 text-teal/30 group-hover:text-teal group-hover:scale-110 transition-all"></i></div><div class="p-6 flex flex-col grow"><p class="eyebrow text-[10px] mb-2 font-bold text-teal/60">Comparison &bull; June 2026</p><h2 class="font-serif text-xl md:text-2xl text-ink mb-3 leading-tight group-hover:text-teal transition-colors">iPhone vs Samsung — which is cheaper to repair?</h2><p class="text-muted text-xs leading-relaxed mb-4 line-clamp-3">Screen, battery, and back glass costs compared with real Australian pricing. The answer isn't what you'd expect.</p><span class="mt-auto inline-flex items-center gap-2 text-[10px] font-bold text-teal tracking-widest uppercase">Read Full Guide <i data-lucide="arrow-right" class="w-4 h-4"></i></span></div></a>
+            <a href="blog/phone-insurance-vs-self-insuring-australia.html" class="post-card group">
+                <p class="eyebrow mb-3">Money guide · 10 min read · June 2026</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">Phone insurance vs self-insuring — the honest math.</h2>
+                <p class="text-muted leading-relaxed mb-4">AppleCare+, Samsung Care+, and carrier insurance vs paying for repairs yourself. The numbers favour skipping insurance.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+            </a>
 
-</div></div>
+            <a href="blog/how-long-does-phone-repair-take.html" class="post-card group">
+                <p class="eyebrow mb-3">Quick reference · 8 min read · June 2026</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">How long does phone repair actually take?</h2>
+                <p class="text-muted leading-relaxed mb-4">Screen: 30–90 min. Battery: 20–45 min. Water damage: 24–72 hours. Real turnaround times from the shop floor.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+            </a>
 
-<aside class="lg:w-1/3 space-y-8"><div class="sidebar-card bg-teal-900 text-white border-none shadow-xl"><span class="eyebrow text-amber-500 mb-2 block">Premium Tier</span><h3 class="font-serif text-2xl mb-3">List Your Repair Shop</h3><p class="text-sm text-white/70 mb-6 leading-relaxed">Join 450+ verified Australian repairers. Get dofollow backlinks and customer leads for $49 AUD / 6 months.</p><a href="list-your-shop.html" class="btn btn-primary w-full justify-center">Verify My Shop</a></div><div class="sidebar-card"><h3 class="font-bold text-lg mb-4 flex items-center gap-2"><i data-lucide="newspaper" class="w-5 h-5 text-teal"></i> Tech News</h3><p class="text-xs text-muted mb-4">Auto-curated daily briefings on device security, iCloud bypasses, and industry shifts rewritten for Aussie technicians.</p><a href="tech-news.html" class="text-teal font-bold text-xs hover:underline flex items-center gap-1">Read latest news <i data-lucide="chevron-right" class="w-3 h-3"></i></a></div><div class="sidebar-card"><h3 class="font-bold text-lg mb-4 flex items-center gap-2"><i data-lucide="wrench" class="w-5 h-5 text-teal"></i> DIY Kits</h3><p class="text-xs text-muted mb-4">Fix it yourself with SelfRepairKit — screen and battery kits from $22 AUD with tools, adhesive, and QR video guides.</p><a href="https://selfrepairkit.com.au/shop.html" class="text-teal font-bold text-xs hover:underline flex items-center gap-1">Browse DIY Kits <i data-lucide="chevron-right" class="w-3 h-3"></i></a></div></aside></div></section>
+            <a href="blog/can-you-diy-phone-screen-repair.html" class="post-card group">
+                <p class="eyebrow mb-3">Honest assessment · 10 min read · June 2026</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">Can you fix your own phone screen?</h2>
+                <p class="text-muted leading-relaxed mb-4">Model-by-model DIY difficulty: Pixel 4/10, iPhone 6/10, Samsung 7/10, foldables 9/10. Tools, costs, and risks.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+            </a>
 
-<footer class="bg-teal-900 text-white border-t border-white/10"><div class="max-w-7xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12"><div class="md:col-span-5"><div class="flex items-center gap-2 mb-4"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg><span class="font-serif text-2xl font-medium">RepairRange</span></div><p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice. Researched by people who actually do this work.</p></div><div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="calculator.html" class="text-white/80 hover:text-amber">Calculator</a></li><li><a href="tech-news.html" class="text-white/80 hover:text-amber">Tech News</a></li></ul></div><div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">Ecosystem</h3><ul class="space-y-2 text-sm"><li><a href="https://selfrepairkit.com.au" class="text-white/80 hover:text-amber">SelfRepairKit — DIY Kits</a></li><li><a href="https://repairbill.shop" class="text-white/80 hover:text-amber">RepairBill — Shop Software</a></li><li><a href="https://www.mayfieldphonerepair.com.au" class="text-white/80 hover:text-amber">Mayfield Phone Repair</a></li></ul></div></div><div class="pt-8 border-t border-white/15 text-center"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. Independent Aussie Research.</p></div></div></footer>
-<script>if(window.lucide)window.lucide.createIcons();</script>
+            <a href="blog/how-to-find-trustworthy-phone-repair-shop.html" class="post-card group">
+                <p class="eyebrow mb-3">Advice · 10 min read · June 2026</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">How to find a trustworthy phone repair shop.</h2>
+                <p class="text-muted leading-relaxed mb-4">7 green flags, 5 red flags, and the three questions to ask before handing over your phone. From a shop owner who’s seen it all.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+            </a>
+
+            <a href="blog/iphone-vs-samsung-repair-cost-comparison.html" class="post-card group">
+                <p class="eyebrow mb-3">Comparison · 8 min read · June 2026</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">iPhone vs Samsung — which is cheaper to repair?</h2>
+                <p class="text-muted leading-relaxed mb-4">Screen, battery, and back glass costs compared with real Australian pricing. The answer isn’t what you’d expect.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+            </a>
+
+            <a href="blog/phone-repair-warranty-australia-consumer-rights.html" class="post-card group">
+                <p class="eyebrow mb-3">Consumer rights · 12 min read · June 2026</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">Phone repair warranty in Australia: your actual rights.</h2>
+                <p class="text-muted leading-relaxed mb-4">What Australian Consumer Law says about faulty repairs, warranty on parts, and what shops legally can't refuse. Plain English, not legalese.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+            </a>
+
+            <a href="blog/how-to-tell-genuine-vs-aftermarket-screen.html" class="post-card group">
+                <p class="eyebrow mb-3">Repair guide · 10 min read · June 2026</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">How to tell if your phone screen is genuine after a repair.</h2>
+                <p class="text-muted leading-relaxed mb-4">Five real tests from a working technician — brightness, colour shift, True Tone, touch, and biometrics. No apps needed.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+            </a>
+
+            <a href="blog/repair-vs-replace-decision-guide.html" class="post-card group">
+                <p class="eyebrow mb-3">Decision guide · 10 min read · May 2026</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">Should you repair your phone or replace it?</h2>
+                <p class="text-muted leading-relaxed mb-4">The 40% rule, the age factor, and the honest calculation — from a repair site that will still tell you when replacing makes more sense.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+            </a>
+
+            <a href="blog/battery-health-when-to-replace.html" class="post-card group">
+                <p class="eyebrow mb-3">Decision guide · 10 min read · May 2026</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">Battery health explained: when to replace, when to wait.</h2>
+                <p class="text-muted leading-relaxed mb-4">Your phone says 82% battery health. Does that mean replace it now? The degradation curve, the sweet spot, and what actually kills batteries faster.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+            </a>
+
+            <a href="blog/samsung-fingerprint-sensor-screen-replacement-guide.html" class="post-card group">
+                <p class="eyebrow mb-3">Samsung repair · 10 min read · May 2026</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">Why Samsung fingerprint sensors break after screen replacement.</h2>
+                <p class="text-muted leading-relaxed mb-4">Every Samsung flagship since the S10 uses an under-display ultrasonic sensor. Replace the screen with the wrong part and that sensor stops working — sometimes permanently.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+            </a>
+
+            <a href="blog/screen-quality-tiers-oem-aftermarket-refurbished-explained.html" class="post-card group">
+                <p class="eyebrow mb-3">Repair guide · 12 min read · May 2026</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">OEM, aftermarket, refurbished: what those screen-quality words actually mean.</h2>
+                <p class="text-muted leading-relaxed mb-4">A working-tech's explainer of the four quality tiers, what you'll actually see day-to-day, and which one is the right answer for your phone — not just the most expensive.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+            </a>
+
+        </div>
+
+        <div class="mt-16 pt-12 border-t border-line">
+            <p class="eyebrow mb-3">More coming</p>
+            <p class="text-muted leading-relaxed max-w-2xl">We publish when we have something worth saying. New posts weekly — subscribe via the blog for updates.</p>
+        </div>
+    </section>
+
+    <footer class="bg-teal-900 text-white border-t border-white/10">
+        <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+                <div class="md:col-span-5">
+                    <div class="flex items-center gap-2 mb-4">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg>
+                        <span class="font-serif text-2xl font-medium">RepairRange</span>
+                    </div>
+                    <p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice. Researched by people who actually do this work.</p>
+                </div>
+                <div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="fix.html" class="text-white/80 hover:text-amber">Troubleshooting</a></li><li><a href="calculator.html" class="text-white/80 hover:text-amber">Cost Calculator</a></li><li><a href="locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="blog.html" class="text-white/80 hover:text-amber">Blog</a></li>
+          <li><a href="unlock/index.html" class="text-white/80 hover:text-amber">Unlock Guides</a></li></ul></div>
+                <div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="about.html" class="text-white/80 hover:text-amber">About RepairRange</a></li><li><a href="tools/software-stack-for-repair-shops.html" class="text-white/80 hover:text-amber">Tools we recommend</a></li><li><a href="privacy.html" class="text-white/80 hover:text-amber">Privacy Policy</a></li><li><a href="terms.html" class="text-white/80 hover:text-amber">Terms of Use</a></li></ul></div>
+            </div>
+            <div class="pt-8 border-t border-white/15">
+                <p class="text-white/50 text-xs leading-relaxed mb-3 max-w-3xl"><strong class="text-white/70">Affiliate disclosure:</strong> RepairRange may earn a commission when you click links to retailers (including Amazon) and complete a purchase. This never affects the price you pay or our editorial recommendations.</p>
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p><p class="text-white/50 text-xs">Not affiliated with Apple, Samsung, Google, or any device manufacturer.</p></div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        if (window.lucide) window.lucide.createIcons();
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.querySelector('.mobile-menu-button');
+            const menu = document.querySelector('.mobile-menu');
+            if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+        });
+    </script>
 </body>
 </html>
