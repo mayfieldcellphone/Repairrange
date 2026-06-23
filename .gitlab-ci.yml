@@ -6,7 +6,6 @@ pages:
     - cp *.txt public/ 2>/dev/null || true
     - cp *.xml public/ 2>/dev/null || true
     - cp _redirects public/ 2>/dev/null || true
-    - # Copy all content directories
     - cp -r blog/ brands/ css/ fix/ locations/ news/ repair/ tools/ unlock/ public/ 2>/dev/null || true
   artifacts:
     paths:
