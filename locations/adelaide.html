@@ -32,7 +32,13 @@ body{font-family:'Inter',sans-serif;color:var(--rr-ink);background:var(--rr-pape
 .btn-primary:hover{background:var(--rr-amber-600); transform:translateY(-1px);}
 .bg-mesh{background-color: var(--rr-paper); background-image: radial-gradient(var(--rr-line) 1px, transparent 0); background-size: 24px 24px;}
 .header-sticky{backdrop-filter:blur(16px); background:rgba(255,255,255,0.8);}
-.price-table{width:100%; border-collapse:separate; border-spacing:0; background:white; border-radius:16px; overflow:hidden; border:1px solid var(--rr-line);}
+.price-table{width:100%; border-collapse:separate; border-spacing:0; background:white; border-radius:16px; overflow:hidden; border:1px solid var(--rr-line); box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);}
+.price-table th{background:var(--rr-paper-2); text-align:left; padding:1.25rem 1.5rem; font-size:0.75rem; font-weight:800; text-transform:uppercase; color:var(--rr-muted); border-bottom:1px solid var(--rr-line); letter-spacing: 0.05em;}
+.price-table td{padding:1.25rem 1.5rem; border-bottom:1px solid var(--rr-line); vertical-align: middle;}
+.price-table tr:last-child td{border-bottom:none;}
+.price-table .model-name{font-weight: 600; color: var(--rr-ink);}
+.price-table .price-diy{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; color: var(--rr-muted); font-size: 0.875rem;}
+.price-table .price-indie{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; color: var(--rr-teal-700); font-weight: 700; font-size: 1rem;}
 .price-table th{background:var(--rr-paper-2); text-align:left; padding:1.25rem 1.5rem; font-size:0.75rem; font-weight:800; text-transform:uppercase; color:var(--rr-muted); border-bottom:1px solid var(--rr-line)}
 .price-table td{padding:1.5rem; border-bottom:1px solid var(--rr-line);}
 .sidebar-card{background:white; border:1px solid var(--rr-line); border-radius:16px; padding:1.75rem; position:relative; overflow:hidden;}
@@ -98,62 +104,62 @@ body{font-family:'Inter',sans-serif;color:var(--rr-ink);background:var(--rr-pape
 <div class="lg:col-span-8"><p class="text-muted leading-relaxed">Adelaide is the smallest of the mainland capitals and it shows in two ways at once. Pricing is slightly under Sydney and Melbourne — typically 5–10% below — because rent is lower and the market is keenly competitive among a small number of shops. But the spread between cheapest and dearest is narrower than the east coast, because there's less of a "premium location" effect across the metro. The ranges below reflect Adelaide's whole independent market, with the CBD trending to the upper end and inner suburbs (Norwood, Unley, Prospect) trending lower.</p></div>
 </div>
 
-<div class="bg-white border border-line">
-<div class="p-6 md:p-8">
-<div class="ticker-row font-mono text-xs uppercase text-muted tracking-wider" style="border-bottom:1px solid var(--rr-line);">
-<span>Model</span><span class="text-right">DIY (parts+tools)</span><span class="text-right w-28">Independent shop</span>
-</div>
-<div class="ticker-row text-sm">
-<span class="font-medium text-ink">iPhone 17 Pro Max</span>
-<span class="font-mono text-muted text-right">$200–$300</span>
-<span class="font-mono text-teal font-semibold text-right w-28">$369–$579</span>
-</div>
-<div class="ticker-row text-sm">
-<span class="font-medium text-ink">iPhone 17 Pro</span>
-<span class="font-mono text-muted text-right">$180–$270</span>
-<span class="font-mono text-teal font-semibold text-right w-28">$339–$509</span>
-</div>
-<div class="ticker-row text-sm">
-<span class="font-medium text-ink">iPhone 17</span>
-<span class="font-mono text-muted text-right">$150–$220</span>
-<span class="font-mono text-teal font-semibold text-right w-28">$259–$389</span>
-</div>
-<div class="ticker-row text-sm">
-<span class="font-medium text-ink">iPhone 15 Pro Max</span>
-<span class="font-mono text-muted text-right">$180–$250</span>
-<span class="font-mono text-teal font-semibold text-right w-28">$319–$439</span>
-</div>
-<div class="ticker-row text-sm">
-<span class="font-medium text-ink">iPhone 15 Pro</span>
-<span class="font-mono text-muted text-right">$160–$230</span>
-<span class="font-mono text-teal font-semibold text-right w-28">$279–$389</span>
-</div>
-<div class="ticker-row text-sm">
-<span class="font-medium text-ink">iPhone 15</span>
-<span class="font-mono text-muted text-right">$129–$189</span>
-<span class="font-mono text-teal font-semibold text-right w-28">$209–$299</span>
-</div>
-<div class="ticker-row text-sm">
-<span class="font-medium text-ink">iPhone 14</span>
-<span class="font-mono text-muted text-right">$99–$159</span>
-<span class="font-mono text-teal font-semibold text-right w-28">$189–$279</span>
-</div>
-<div class="ticker-row text-sm">
-<span class="font-medium text-ink">Samsung Galaxy S26 Ultra <span class="text-muted font-normal">(est.)</span></span>
-<span class="font-mono text-muted text-right">$230–$320</span>
-<span class="font-mono text-teal font-semibold text-right w-28">$449–$579</span>
-</div>
-<div class="ticker-row text-sm">
-<span class="font-medium text-ink">Samsung Galaxy S24 Ultra</span>
-<span class="font-mono text-muted text-right">$199–$279</span>
-<span class="font-mono text-teal font-semibold text-right w-28">$289–$489</span>
-</div>
-<div class="ticker-row text-sm">
-<span class="font-medium text-ink">Google Pixel 8 Pro</span>
-<span class="font-mono text-muted text-right">$119–$179</span>
-<span class="font-mono text-teal font-semibold text-right w-28">$219–$319</span>
-</div>
-</div>
+<table class="price-table">
+<thead>
+<tr>
+<th>Model</th>
+<th>DIY (parts+tools)</th>
+<th class="text-right">Independent shop</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="model-name">iPhone 17 Pro Max</td>
+<td class="price-diy">$200–$300</td>
+<td class="text-right"><span class="price-indie">$369–$579</span></td>
+</tr>
+<tr>
+<td class="model-name">iPhone 17 Pro</td>
+<td class="price-diy">$180–$270</td>
+<td class="text-right"><span class="price-indie">$339–$509</span></td>
+</tr>
+<tr>
+<td class="model-name">iPhone 17</td>
+<td class="price-diy">$150–$220</td>
+<td class="text-right"><span class="price-indie">$259–$389</span></td>
+</tr>
+<tr>
+<td class="model-name">iPhone 15 Pro Max</td>
+<td class="price-diy">$180–$250</td>
+<td class="text-right"><span class="price-indie">$319–$439</span></td>
+</tr>
+<tr>
+<td class="model-name">iPhone 15 Pro</td>
+<td class="price-diy">$160–$230</td>
+<td class="text-right"><span class="price-indie">$279–$389</span></td>
+</tr>
+<tr>
+<td class="model-name">iPhone 15</td>
+<td class="price-diy">$129–$189</td>
+<td class="text-right"><span class="price-indie">$209–$299</span></td>
+</tr>
+<tr>
+<td class="model-name">iPhone 14</td>
+<td class="price-diy">$99–$159</td>
+<td class="text-right"><span class="price-indie">$189–$279</span></td>
+</tr>
+<tr>
+<td class="model-name">Samsung Galaxy S26 Ultra <span class="text-muted font-normal">(est.)</td>
+<td class="price-diy">$230–$320</td>
+<td class="text-right"><span class="price-indie">$449–$579</span></td>
+</tr>
+<tr>
+<td class="model-name">Samsung Galaxy S24 Ultra</td>
+<td class="price-diy">$199–$279</td>
+<td class="text-right"><span class="price-indie">$289–$489</span></td>
+</tr>
+</tbody>
+</table>
 </div>
 <p class="text-xs text-muted mt-4">Ranges are 2026 Adelaide independent-shop pricing and align with our per-model pages. The iPhone 17 series (released Sep 2025) sits at the top of the iPhone range; the Galaxy S26 Ultra (released Mar 2026) is an early estimate that will sharpen as aftermarket parts supply matures. Battery replacements generally run $69–$169 across these models. Curved-screen Samsungs sit at the top of every range. CBD shops trend to the high end; inner-suburb workshops to the low end. Use the <a href="../calculator.html" class="ed-link text-teal">cost calculator</a> for other models.</p>
 </section>
