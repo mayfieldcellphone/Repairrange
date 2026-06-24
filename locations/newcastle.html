@@ -24,27 +24,25 @@ body{font-family:'Inter',sans-serif;color:var(--rr-ink);background:var(--rr-pape
 .font-serif{font-family:'Fraunces',serif}
 .display{font-family:'Fraunces',serif;font-weight:400;letter-spacing:-0.01em;line-height:1.05}
 .eyebrow{font-size:0.75rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--rr-teal-700)}
-.btn{display:inline-flex; align-items:center; gap:0.5rem; padding:0.6rem 1rem; font-weight:700; font-size:0.8rem; transition:all 200ms ease; border-radius:8px;}
-.btn-primary{background:var(--rr-amber-500); color:var(--rr-teal-900); border:none; box-shadow: 0 2px 8px 0 rgba(245, 158, 11, 0.2);}
+.btn{display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:700; font-size:0.85rem; transition:all 200ms ease; border-radius:12px;}
+.btn-primary{background:var(--rr-amber-500); color:var(--rr-teal-900); border:none; box-shadow: 0 4px 12px 0 rgba(245, 158, 11, 0.3);}
 .btn-primary:hover{background:var(--rr-amber-600); transform:translateY(-1px);}
-.btn-outline{border:1px solid var(--rr-line); background:white; color:var(--rr-ink);}
-.btn-outline:hover{border-color:var(--rr-teal-700); color:var(--rr-teal-700);}
 .bg-mesh{background-color: var(--rr-paper); background-image: radial-gradient(var(--rr-line) 1px, transparent 0); background-size: 24px 24px;}
 .header-sticky{backdrop-filter:blur(16px); background:rgba(255,255,255,0.8);}
-.price-table{width:100%; border-collapse:separate; border-spacing:0; background:white; border-radius:12px; overflow:hidden; border:1px solid var(--rr-line); table-layout: fixed;}
-.price-table th{background:var(--rr-paper-2); text-align:left; padding:1rem 1.25rem; font-size:0.7rem; font-weight:800; text-transform:uppercase; color:var(--rr-muted); border-bottom:1px solid var(--rr-line); letter-spacing: 0.05em;}
-.price-table td{padding:1.25rem; border-bottom:1px solid var(--rr-line); vertical-align: middle; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.price-table{width:100%; border-collapse:separate; border-spacing:0; background:white; border-radius:16px; overflow:hidden; border:1px solid var(--rr-line); box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);}
+.price-table th{background:var(--rr-paper-2); text-align:left; padding:1.25rem 1.5rem; font-size:0.75rem; font-weight:800; text-transform:uppercase; color:var(--rr-muted); border-bottom:1px solid var(--rr-line); letter-spacing: 0.05em;}
+.price-table td{padding:1.5rem; border-bottom:1px solid var(--rr-line); vertical-align: middle;}
 .price-table tr:last-child td{border-bottom:none;}
-.price-table .model-name{font-weight: 700; color: var(--rr-ink); font-size: 0.9rem; width: 35%;}
-.price-table .price-indie{font-family: ui-monospace, monospace; color: var(--rr-ink); font-weight: 500; font-size: 0.85rem; width: 20%;}
-.price-table .price-diy{font-family: ui-monospace, monospace; color: var(--rr-teal-700); font-weight: 800; font-size: 0.95rem; width: 20%;}
-.price-table .col-action{width: 25%; text-align: right;}
-.save-badge{background: #F0FDF4; color: #166534; font-size: 0.6rem; font-weight: 800; padding: 0.15rem 0.4rem; border-radius: 4px; margin-left: 0.5rem; vertical-align: middle;}
-.sidebar-sticky{position: sticky; top: 100px;}
-.content-grid{display: grid; grid-template-columns: 1fr; gap: 2rem;}
-@media (min-width: 1024px) { .content-grid { grid-template-columns: 2.2fr 1fr; } }
-.conversion-card{background:var(--rr-teal-900); color:white; border-radius:16px; padding:2rem; position:relative; overflow:hidden;}
-.conversion-card .eyebrow{color:var(--rr-amber-500);}</style>
+.price-table .model-name{font-weight: 700; color: var(--rr-ink); font-size: 1rem;}
+.price-table .price-indie{font-family: ui-monospace, monospace; color: var(--rr-ink); font-weight: 500;}
+.price-table .price-diy{font-family: ui-monospace, monospace; color: var(--rr-teal-700); font-weight: 800; font-size: 1.1rem;}
+.save-badge{background: #F0FDF4; color: #166534; font-size: 0.65rem; font-weight: 800; padding: 0.2rem 0.5rem; border-radius: 4px; display: inline-block; margin-left: 0.75rem; vertical-align: middle;}
+.sidebar-sticky{position: sticky; top: 110px;}
+.content-grid{display: grid; grid-template-columns: 1fr; gap: 3rem;}
+@media (min-width: 1024px) { .content-grid { grid-template-columns: 1.8fr 1fr; } }
+.sidebar-card{background:white; border:1px solid var(--rr-line); border-radius:16px; padding:1.75rem; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05); position:relative; overflow:hidden;}
+.sidebar-card.accent{border-left:4px solid var(--rr-amber-500);}
+.sidebar-card.dark{background:var(--rr-teal-900); color:white; border:none;}</style>
 
 <title>Phone Repair Costs in Newcastle &amp; the Hunter — RepairRange</title>
 <meta name="description" content="What phone screen and battery repairs actually cost in Newcastle and the Hunter in 2026. Honest independent-shop pricing ranges for iPhone, Samsung and Pixel, plus a recommended local workshop.">
@@ -95,174 +93,104 @@ body{font-family:'Inter',sans-serif;color:var(--rr-ink);background:var(--rr-pape
 </section>
 
 <section class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
+
 <div class="content-grid">
-<div class="main-column">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-10">
-<div class="lg:col-span-4">
-<p class="eyebrow mb-3">Local price benchmarks</p>
-<h2 class="display text-3xl md:text-5xl text-ink">Screen replacement, Newcastle</h2>
-</div>
-<div class="lg:col-span-8"><p class="text-muted leading-relaxed">Newcastle independent pricing tracks close to Sydney metro, sometimes slightly under because commercial rents off Maitland Road and through Hamilton are lower than the Sydney CBD. The ranges below are what a reputable Hunter workshop charges using OEM-grade or quality aftermarket parts. Authorised Apple and Samsung service typically runs 30–55% above the top of these ranges, and usually means posting the device away.</p></div>
+    <div class="main-column">
+        
+<div class="mb-12 max-w-2xl">
+    <p class="eyebrow mb-3">Local price benchmarks</p>
+    <h2 class="display text-4xl md:text-5xl text-ink mb-6">Screen replacement costs</h2>
+    <p class="text-muted leading-relaxed">
+        Sydney prices vary by suburb. CBD shops charge a premium for speed; outer suburbs like Parramatta or Bankstown are routinely 20-30% cheaper. Compare these rates against our DIY kits to see your total savings.
+    </p>
 </div>
 
-<table class="price-table">
+        <table class="price-table">
 <thead>
 <tr>
 <th>Model</th>
 <th>Pro Repair</th>
-<th>DIY Kit</th>
-<th class="col-action">Action</th>
+<th class="text-right">DIY Kit Price</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="model-name">iPhone 17 Pro Max</td>
 <td class="price-indie">$389–$609</td>
-<td class="price-diy">$200–$300
-    Save $329+
-    Get Kit<span class="save-badge">Save $329+</span></td>
-<td class="col-action"><a href="https://selfrepairkit.com.au" target="_blank" class="btn btn-primary">Get Kit <i data-lucide="shopping-cart" class="w-3 h-3"></i></a></td>
+<td class="text-right"><span class="price-diy">$200–$300</span><span class="save-badge">Save $329+</span></td>
 </tr>
 <tr>
 <td class="model-name">iPhone 17 Pro</td>
 <td class="price-indie">$359–$539</td>
-<td class="price-diy">$180–$270
-    Save $299+
-    Get Kit<span class="save-badge">Save $299+</span></td>
-<td class="col-action"><a href="https://selfrepairkit.com.au" target="_blank" class="btn btn-primary">Get Kit <i data-lucide="shopping-cart" class="w-3 h-3"></i></a></td>
+<td class="text-right"><span class="price-diy">$180–$270</span><span class="save-badge">Save $299+</span></td>
 </tr>
 <tr>
 <td class="model-name">iPhone 17</td>
 <td class="price-indie">$279–$409</td>
-<td class="price-diy">$150–$220
-    Save $219+
-    Get Kit<span class="save-badge">Save $219+</span></td>
-<td class="col-action"><a href="https://selfrepairkit.com.au" target="_blank" class="btn btn-primary">Get Kit <i data-lucide="shopping-cart" class="w-3 h-3"></i></a></td>
+<td class="text-right"><span class="price-diy">$150–$220</span><span class="save-badge">Save $219+</span></td>
 </tr>
 <tr>
 <td class="model-name">iPhone 15 Pro Max</td>
 <td class="price-indie">$329–$459</td>
-<td class="price-diy">$180–$250
-    Save $269+
-    Get Kit<span class="save-badge">Save $269+</span></td>
-<td class="col-action"><a href="https://selfrepairkit.com.au" target="_blank" class="btn btn-primary">Get Kit <i data-lucide="shopping-cart" class="w-3 h-3"></i></a></td>
+<td class="text-right"><span class="price-diy">$180–$250</span><span class="save-badge">Save $269+</span></td>
 </tr>
 <tr>
 <td class="model-name">iPhone 15 Pro</td>
 <td class="price-indie">$289–$399</td>
-<td class="price-diy">$160–$230
-    Save $229+
-    Get Kit<span class="save-badge">Save $229+</span></td>
-<td class="col-action"><a href="https://selfrepairkit.com.au" target="_blank" class="btn btn-primary">Get Kit <i data-lucide="shopping-cart" class="w-3 h-3"></i></a></td>
+<td class="text-right"><span class="price-diy">$160–$230</span><span class="save-badge">Save $229+</span></td>
 </tr>
 <tr>
 <td class="model-name">iPhone 15</td>
 <td class="price-indie">$219–$319</td>
-<td class="price-diy">$129–$189
-    Save $159+
-    Get Kit<span class="save-badge">Save $159+</span></td>
-<td class="col-action"><a href="https://selfrepairkit.com.au" target="_blank" class="btn btn-primary">Get Kit <i data-lucide="shopping-cart" class="w-3 h-3"></i></a></td>
+<td class="text-right"><span class="price-diy">$129–$189</span><span class="save-badge">Save $159+</span></td>
 </tr>
 <tr>
 <td class="model-name">iPhone 14</td>
 <td class="price-indie">$199–$289</td>
-<td class="price-diy">$99–$159
-    Save $139+
-    Get Kit<span class="save-badge">Save $139+</span></td>
-<td class="col-action"><a href="https://selfrepairkit.com.au" target="_blank" class="btn btn-primary">Get Kit <i data-lucide="shopping-cart" class="w-3 h-3"></i></a></td>
+<td class="text-right"><span class="price-diy">$99–$159</span><span class="save-badge">Save $139+</span></td>
 </tr>
 <tr>
 <td class="model-name">Samsung Galaxy S26 Ultra (est.)</td>
 <td class="price-indie">$449–$579</td>
-<td class="price-diy">$230–$320
-    Save $389+
-    Get Kit<span class="save-badge">Save $389+</span></td>
-<td class="col-action"><a href="https://selfrepairkit.com.au" target="_blank" class="btn btn-primary">Get Kit <i data-lucide="shopping-cart" class="w-3 h-3"></i></a></td>
+<td class="text-right"><span class="price-diy">$230–$320</span><span class="save-badge">Save $389+</span></td>
 </tr>
 <tr>
 <td class="model-name">Samsung Galaxy S24 Ultra</td>
 <td class="price-indie">$299–$499</td>
-<td class="price-diy">$199–$279
-    Save $239+
-    Get Kit<span class="save-badge">Save $239+</span></td>
-<td class="col-action"><a href="https://selfrepairkit.com.au" target="_blank" class="btn btn-primary">Get Kit <i data-lucide="shopping-cart" class="w-3 h-3"></i></a></td>
+<td class="text-right"><span class="price-diy">$199–$279</span><span class="save-badge">Save $239+</span></td>
 </tr>
 </tbody>
 </table>
-</div>
-<p class="text-xs text-muted mt-4">Ranges are 2026 independent-shop pricing and match our per-model pages. The iPhone 17 series (released Sep 2025) sits at the top of the iPhone range; the Galaxy S26 Ultra (released Mar 2026) is an early estimate that will sharpen as aftermarket parts supply matures. Battery replacements across these models generally run $69–$169 at a Newcastle shop. Curved-screen Samsungs sit at the top of every range because the part and the labour are both harder. Use the <a href="../calculator.html" class="ed-link text-teal">cost calculator</a> for other models.</p>
-</div>
-
-<div class="mt-16 pt-16 border-t border-line">
-<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-24">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-<div class="lg:col-span-5">
-<p class="eyebrow mb-3">A local workshop we rate</p>
-<h2 class="display text-3xl md:text-5xl text-ink leading-tight">If you're in the Hunter, this is where we'd send a friend.</h2>
-<p class="text-muted leading-relaxed mt-6">We keep most of RepairRange brand-neutral and we don't take payment for placement. Newcastle is the exception worth being specific about, because our own pricing research is informed by people who do this work on the bench every day — including the team at <a href="https://mayfieldphonerepair.com.au" class="ed-link text-teal font-medium">Mayfield Phone Repair</a> on Maitland Road. If you want a real quote rather than a range, they're a sensible first call.</p>
-</div>
-<div class="lg:col-span-7">
-<div class="border border-line bg-paper-2 p-8 md:p-10">
-<div class="flex items-start justify-between gap-4 mb-6 flex-wrap">
-<div>
-<p class="eyebrow mb-2">Featured · Newcastle</p>
-<h3 class="font-serif text-2xl md:text-3xl text-ink">Mayfield Phone Repair</h3>
-</div>
-<div class="text-right">
-<p class="font-mono text-2xl text-ink tnum">4.7<span class="text-amber">★</span></p>
-<p class="text-xs text-muted">363+ Google reviews</p>
-</div>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-5 text-sm border-t border-line pt-6">
-<div><p class="text-xs text-muted mb-1">Address</p><p class="text-ink">276 Maitland Rd, Mayfield NSW 2304</p><p class="text-xs text-muted mt-1">Parking at the back</p></div>
-<div><p class="text-xs text-muted mb-1">Phone</p><p class="text-ink">(02) 4049 1735</p></div>
-<div><p class="text-xs text-muted mb-1">Hours</p><p class="text-ink">Mon–Fri 9–5 · Sat 10–3 · Sun 10–2</p></div>
-<div><p class="text-xs text-muted mb-1">Warranty</p><p class="text-ink">90-day repair warranty</p></div>
-</div>
-<div class="mt-7 flex flex-col sm:flex-row gap-3">
-<a href="https://mayfieldphonerepair.com.au" class="btn btn-primary">Get a quote from the workshop <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-<a href="https://mayfieldphonerepair.com.au" class="btn btn-ghost">Visit the website</a>
-</div>
-<p class="text-[11px] text-muted mt-5 leading-relaxed">RepairRange is editorially independent. We highlight Mayfield Phone Repair because our Hunter pricing research draws on their hands-on repair experience; we don't earn a commission on repairs booked there.</p>
-</div>
-</div>
-</div>
-</div>
-</div></div>
-
-
-
-<aside class="sidebar-sticky">
-    <div class="conversion-card shadow-xl">
-        <p class="eyebrow mb-2">Self Repair Kit</p>
-        <h3 class="display text-xl mb-4 font-bold">The Technician's Choice</h3>
-        <p class="text-white/70 text-xs leading-relaxed mb-6">
-            We supply the same OEM-grade parts and professional tools used by Australia's top repair shops. Skip the labor fees and fix it yourself.
-        </p>
-        <div class="space-y-3 mb-6">
-            <div class="flex items-center gap-3 p-2 bg-white/5 rounded-lg border border-white/10">
-                <i data-lucide="truck" class="text-amber-500 w-4 h-4"></i>
-                <p class="text-[10px] font-bold">Free Express AU Shipping</p>
-            </div>
-            <div class="flex items-center gap-3 p-2 bg-white/5 rounded-lg border border-white/10">
-                <i data-lucide="play-circle" class="text-amber-500 w-4 h-4"></i>
-                <p class="text-[10px] font-bold">Step-by-Step Video Guides</p>
-            </div>
-        </div>
-        <a href="https://selfrepairkit.com.au" target="_blank" class="btn btn-primary w-full justify-center text-[10px] uppercase tracking-widest">Shop All Kits <i data-lucide="external-link" class="w-3 h-3"></i></a>
     </div>
     
-    <div class="mt-6 p-5 bg-white border border-line rounded-2xl">
-        <h4 class="font-bold text-ink text-xs mb-2 flex items-center gap-2"><i data-lucide="info" class="w-3 h-3 text-teal-600"></i> Why DIY?</h4>
-        <p class="text-[10px] text-muted leading-relaxed">
-            Professional labor in Australia averages $80-$120 per hour. Most screen and battery repairs take 30-45 minutes. By using our kits, you're effectively paying yourself $150/hr for your own time.
+<aside class="sidebar-sticky">
+    <div class="sidebar-card dark mb-6 shadow-2xl">
+        <p class="eyebrow mb-3 text-amber-500">The Savings Choice</p>
+        <h3 class="display text-2xl mb-4 font-bold">Fix it yourself.</h3>
+        <p class="text-white/70 text-sm leading-relaxed mb-8">
+            Don't pay for labor. Our kits include the exact same OEM-grade parts used by top Aussie shops.
         </p>
+        <a href="https://selfrepairkit.com.au" target="_blank" class="btn btn-primary w-full justify-center py-4">Shop Repair Kits <i data-lucide="external-link" class="w-4 h-4"></i></a>
+    </div>
+
+    <div class="sidebar-card accent mb-6">
+        <h4 class="font-bold text-ink text-sm mb-3">What's in the kit?</h4>
+        <ul class="space-y-2">
+            <li class="flex items-center gap-2 text-[11px] text-muted"><i data-lucide="check" class="text-teal-600 w-3 h-3"></i> Premium Replacement Part</li>
+            <li class="flex items-center gap-2 text-[11px] text-muted"><i data-lucide="check" class="text-teal-600 w-3 h-3"></i> Precision Tool Set</li>
+            <li class="flex items-center gap-2 text-[11px] text-muted"><i data-lucide="check" class="text-teal-600 w-3 h-3"></i> Model-Specific Gaskets</li>
+        </ul>
+    </div>
+
+    <div class="sidebar-card">
+        <h4 class="font-bold text-ink text-sm mb-2">Aussie Support</h4>
+        <p class="text-[11px] text-muted leading-relaxed mb-4">Express shipping from our Sydney warehouse. Video guides for every model included.</p>
+        <div class="flex items-center gap-2"><i data-lucide="truck" class="text-teal-600 w-4 h-4"></i><span class="text-[10px] font-bold uppercase tracking-wider">Free AU Shipping</span></div>
     </div>
 </aside>
 
-
-
 </div>
+
 </section>
 
 <section class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
