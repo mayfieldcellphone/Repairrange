@@ -2,7 +2,23 @@
 
 > **Canonical source of truth** for the RepairRange satellite site. Lives in this repo so it persists across Claude sessions and is version-controlled with the code. Not deployed publicly (CI only copies `*.html`, `*.txt`, `*.xml`).
 >
-> **Last updated:** May 2026 · Phase 1 complete · Phase 2 in progress · **Phase 3 COMPLETE** · **Phase 4 COMPLETE** · Domain www-canonical (§11) · **🔴 CI DEPLOY FIX REGRESSES — re-verify `.gitlab-ci.yml` + a live subdirectory URL at the START of every session and after ANY domain/Pages change. It has silently reverted twice (likely cause: GitLab domain re-add resets the CI). See §12 — this is the project's #1 recurring failure.** · GSC verified + sitemap submitted; site is live & discoverable. Remaining work is growth (Phase 2 model pages, Phase 6/7).
+> **Last updated:** June 2026 · Phase 1 complete · Phase 2 in progress · **Phase 3 COMPLETE** · **Phase 4 COMPLETE** · **Lead Capture Flow COMPLETE** · Domain www-canonical (§11) · **🔴 CI DEPLOY FIX REGRESSES — re-verify `.gitlab-ci.yml` + a live subdirectory URL at the START of every session and after ANY domain/Pages change. It has silently reverted twice (likely cause: GitLab domain re-add resets the CI). See §12 — this is the project's #1 recurring failure.** · GSC verified + sitemap submitted; site is live & discoverable. Remaining work is growth (Phase 2 model pages, Phase 6/7).
+
+---
+
+## 16. Lead Capture Flow — COMPLETE (June 2026)
+
+Added a "List your shop" flow to capture leads from interested repair shop owners in cities Khalil does not personally cover.
+
+### Implementation details
+- **Page:** `list-your-shop.html` added to repo root. Served at `/list-your-shop.html`.
+- **Backend:** Configured for Google Apps Script Web App. 
+- **CTA Panels:** Added high-conversion teal panels with amber buttons to all city pages (Sydney, Melbourne, Brisbane, Perth, Adelaide) and the dynamic `locations/city.html` template.
+- **Exclusivity Guard:** Explicitly suppressed the CTA on `locations/newcastle.html` and the `newcastle-surrounds` dynamic slug to preserve Mayfield Phone Repair's exclusive recommendation in the Hunter region.
+- **Styling:** Built using Tailwind utility classes for instant, reliable rendering without needing external CSS build steps.
+
+### To-do
+- [ ] Khalil to deploy Google Apps Script and paste the Web App URL into the `ENDPOINT` constant in `list-your-shop.html`.
 
 ---
 
