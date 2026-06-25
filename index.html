@@ -299,4 +299,18 @@ body{font-family:'Inter',sans-serif;color:var(--rr-ink);background:var(--rr-pape
         }
     </script>
 </body>
+   <script>
+          (function() {
+                 const button = document.createElement('div');
+                        button.id = 'repairrange-chat-btn';
+                               button.innerHTML = '💬 RepairRange Chat';
+                                      button.style = 'position:fixed;bottom:20px;right:20px;padding:15px 25px;background:#ff9800;color:white;border-radius:30px;cursor:pointer;font-weight:bold;box-shadow: 0 4px 10px rgba(0,0,0,0.2);z-index:9999;';
+                                             button.onclick = function() {
+                                                        const phone = "15556634858";
+                                                                   const encodedText = encodeURIComponent("[RepairRange Lead] Hi! I am interested in the RepairRange CRM.");
+                                                                              window.open("https://wa.me/" + phone + "?text=" + encodedText, "_blank");
+                                                                                     };
+                                                                                            document.body.appendChild(button);
+                                                                                               })();
+                                                                                                  </script>
 </html>
