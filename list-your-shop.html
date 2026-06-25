@@ -1,317 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>List Your Repair Shop — RepairRange</title>
+  <meta name="description" content="Get your phone repair shop in front of local customers searching for repairs in your area. List on RepairRange from $29." />
+  <link rel="canonical" href="https://repairrange.io/list-your-shop.html" />
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-CWRGPBDWZD');
-</script>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<style>
-:root{
-  --rr-teal-900:#0f172a; --rr-teal-700:#14b8a6; --rr-amber-500:#f59e0b; --rr-amber-600:#d97706; 
-  --rr-ink:#1e293b; --rr-muted:#64748b; --rr-line:#e2e8f0; --rr-paper:#f8fafc; --rr-paper-2:#f1f5f9;
-}
-html{scroll-behavior:smooth}
-body{font-family:'Inter',sans-serif;color:var(--rr-ink);background:var(--rr-paper);-webkit-font-smoothing:antialiased}
-.font-serif{font-family:'Fraunces',serif}
-.display{font-family:'Fraunces',serif;font-weight:400;letter-spacing:-0.01em;line-height:1.05}
-.eyebrow{font-size:0.75rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--rr-teal-700)}
-.card{background:white; border:1px solid var(--rr-line); border-radius:16px; transition:all 400ms cubic-bezier(0.4, 0, 0.2, 1); overflow:hidden; box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);}
-.card:hover{border-color:var(--rr-teal-700); transform:translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);}
-.btn{display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.5rem; font-weight:700; font-size:0.9375rem; transition:all 200ms ease; border-radius:12px;}
-.btn-primary{background:var(--rr-amber-500); color:var(--rr-teal-900); box-shadow: 0 4px 14px 0 rgba(245, 158, 11, 0.3); border:none;}
-.btn-primary:hover{background:var(--rr-amber-600); transform:translateY(-1px);}
-.bg-mesh{background-color: var(--rr-paper); background-image: radial-gradient(var(--rr-line) 1px, transparent 0); background-size: 24px 24px;}
-.header-sticky{backdrop-filter:blur(16px); background:rgba(255,255,255,0.8);}
-.price-table{width:100%; border-collapse:separate; border-spacing:0; background:white; border-radius:16px; overflow:hidden; border:1px solid var(--rr-line);}
-.price-table th{background:var(--rr-paper-2); text-align:left; padding:1.25rem 1.5rem; font-size:0.75rem; font-weight:800; text-transform:uppercase; color:var(--rr-muted); border-bottom:1px solid var(--rr-line)}
-.price-table td{padding:1.5rem; border-bottom:1px solid var(--rr-line);}
-.sidebar-card{background:white; border:1px solid var(--rr-line); border-radius:16px; padding:1.75rem; position:relative; overflow:hidden;}
-.sidebar-card::after{content:''; position:absolute; top:0; left:0; width:4px; height:100%; background:var(--rr-teal-700);}
-</style>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
-<title>List Your Repair Shop — RepairRange</title>
-<meta name="description" content="List your phone repair shop on RepairRange — Australia's independent repair pricing guide. Get found by customers searching for repair costs in your city.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://repairrange.io/list-your-shop.html">
-</head>
-<body class="bg-mesh">
-<header class="header-sticky sticky top-0 z-50 border-b border-line">
-<nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
-<a href="index.html" class="flex items-center gap-2"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg><span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span></a>
-<div class="hidden md:flex items-center gap-8 text-sm">
-<a href="brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a>
-<a href="repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a>
-<a href="fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a>
-<a href="calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a>
-                <a href="unlock/index.html" class="ed-link font-medium text-ink hover:text-teal">Phone Unlock</a>
-<a href="locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a>
-<a href="blog.html" class="ed-link font-medium text-ink hover:text-teal">Blog</a>
-<a href="calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-</div>
-<button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button>
-</nav>
-<div class="mobile-menu hidden md:hidden border-t border-line bg-paper"><div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1"><a href="brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a><a href="repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a><a href="fix.html" class="py-2 font-medium text-ink hover:text-teal">Troubleshoot</a><a href="calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a>
-                <a href="unlock/index.html" class="py-2 font-medium text-ink hover:text-teal">Phone Unlock</a><a href="locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a><a href="blog.html" class="py-2 font-medium text-ink hover:text-teal">Blog</a><a href="calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a></div></div>
-</header>
-
-<!-- HERO -->
-<section class="bg-mesh border-b border-line">
-<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-24">
-<p class="eyebrow mb-4">For repair shop owners</p>
-<h1 class="display text-4xl md:text-6xl lg:text-7xl text-ink mb-6 max-w-4xl">Get your shop in front of customers already looking for repairs.</h1>
-<p class="text-lg md:text-xl text-muted max-w-2xl leading-relaxed mb-8">RepairRange is an independent phone repair pricing guide covering 30+ Australian cities. Thousands of people search for repair costs every month — and our city pages are where they land. Your shop listing puts you directly in front of these customers.</p>
-<div class="flex flex-wrap gap-4">
-<a href="#pricing" class="btn btn-primary">See pricing <i data-lucide="arrow-down" class="w-4 h-4"></i></a>
-<a href="#apply" class="btn btn-ghost">Apply now <i data-lucide="arrow-down" class="w-4 h-4"></i></a>
-</div>
-</div>
-</section>
-
-<!-- WHY LIST -->
-<section class="bg-white border-b border-line">
-<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
-<p class="eyebrow mb-3">Why list on RepairRange</p>
-<h2 class="display text-3xl md:text-5xl text-ink mb-12">Customers find you at the exact moment they need a repair.</h2>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="p-6 border border-line">
-<p class="font-serif text-xl text-ink mb-3">Right intent, right time</p>
-<p class="text-sm text-muted leading-relaxed">People on our city pages are actively searching "phone repair cost [city]." They've decided to repair — they just need a shop. Your listing catches them at the decision point, not the research stage.</p>
-</div>
-<div class="p-6 border border-line">
-<p class="font-serif text-xl text-ink mb-3">Flat fee, no commissions</p>
-<p class="text-sm text-muted leading-relaxed">We charge a flat listing fee — not a percentage of your repairs, not per-click, not per-lead. You know exactly what you're paying, and every customer who calls is 100% yours.</p>
-</div>
-<div class="p-6 border border-line">
-<p class="font-serif text-xl text-ink mb-3">Built by a repair shop owner</p>
-<p class="text-sm text-muted leading-relaxed">RepairRange is built by the owner of Mayfield Phone Repair in Newcastle — a working technician who understands the business. This isn't a generic directory. It's built for shops like yours.</p>
-</div>
-</div>
-</div>
-</section>
-
-<!-- PRICING TIERS -->
-<section class="bg-mesh-2 border-b border-line" id="pricing">
-<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
-<p class="eyebrow mb-3">Pricing</p>
-<h2 class="display text-3xl md:text-5xl text-ink mb-4">Simple, flat pricing. No surprises.</h2>
-<p class="text-muted mb-12 max-w-xl">All plans include your shop on the relevant city page. No setup fees. No contracts. Cancel anytime by simply not renewing.</p>
-
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-<div class="tier-card">
-<p class="eyebrow mb-3">Starter</p>
-<p class="display text-4xl text-ink tnum mb-1">$29</p>
-<p class="text-sm text-muted mb-6">per 3 months</p>
-<div class="space-y-3 text-sm">
-<div class="flex items-start gap-2"><svg class="w-4 h-4 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>Shop name on city page</span></div>
-<div class="flex items-start gap-2"><svg class="w-4 h-4 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>Suburb / address displayed</span></div>
-<div class="flex items-start gap-2"><svg class="w-4 h-4 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>Phone number (click-to-call)</span></div>
-<div class="flex items-start gap-2 text-muted"><svg class="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg><span>No website link</span></div>
-<div class="flex items-start gap-2 text-muted"><svg class="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg><span>No verified badge</span></div>
-</div>
-<a href="#apply" class="btn btn-ghost w-full justify-center mt-6">Get started</a>
-</div>
-
-<div class="tier-card featured">
-<div class="flex items-center justify-between mb-3"><p class="eyebrow" style="color:var(--rr-amber-600)">Verified</p><span style="font-size:0.625rem;font-weight:700;color:var(--rr-amber-600);background:#FEF3C7;padding:0.25rem 0.625rem;border-radius:1px;letter-spacing:0.05em;text-transform:uppercase">Most popular</span></div>
-<p class="display text-4xl text-ink tnum mb-1">$49</p>
-<p class="text-sm text-muted mb-6">per 6 months</p>
-<div class="space-y-3 text-sm">
-<div class="flex items-start gap-2"><svg class="w-4 h-4 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>Everything in Starter</span></div>
-<div class="flex items-start gap-2"><svg class="w-4 h-4 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Website link</strong> (dofollow backlink)</span></div>
-<div class="flex items-start gap-2"><svg class="w-4 h-4 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span><strong>"Verified" badge</strong> on your listing</span></div>
-<div class="flex items-start gap-2 text-muted"><svg class="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg><span>Not featured position</span></div>
-</div>
-<a href="#apply" class="btn btn-primary w-full justify-center mt-6">Get started</a>
-</div>
-
-<div class="tier-card">
-<p class="eyebrow mb-3">Featured</p>
-<p class="display text-4xl text-ink tnum mb-1">$89</p>
-<p class="text-sm text-muted mb-6">per year</p>
-<div class="space-y-3 text-sm">
-<div class="flex items-start gap-2"><svg class="w-4 h-4 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>Everything in Verified</span></div>
-<div class="flex items-start gap-2"><svg class="w-4 h-4 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Top position</strong> on city page</span></div>
-<div class="flex items-start gap-2"><svg class="w-4 h-4 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span><strong>"Featured" badge</strong> (gold accent)</span></div>
-<div class="flex items-start gap-2"><svg class="w-4 h-4 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Custom tagline</strong> on your card</span></div>
-<div class="flex items-start gap-2"><svg class="w-4 h-4 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>Best value — $1.70/week</span></div>
-</div>
-<a href="#apply" class="btn btn-ghost w-full justify-center mt-6">Get started</a>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- APPLICATION FORM -->
-<section class="bg-white border-b border-line" id="apply">
-<div class="max-w-3xl mx-auto px-6 md:px-8 py-16 md:py-20">
-<p class="eyebrow mb-3">Apply</p>
-<h2 class="display text-3xl md:text-5xl text-ink mb-4">List your shop</h2>
-<p class="text-muted mb-10">Fill in your details below. We'll review and have your listing live within 48 hours. Your first month is free — no payment required upfront.</p>
-
-<div class="space-y-6" id="listing-form">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div><label for="shop-name">Shop name *</label><input type="text" id="shop-name" placeholder="e.g. FixIt Pro Repairs" required></div>
-<div><label for="contact-name">Your name *</label><input type="text" id="contact-name" placeholder="e.g. John Smith" required></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div><label for="email">Email *</label><input type="email" id="email" placeholder="e.g. john@fixitpro.com.au" required></div>
-<div><label for="phone">Shop phone number *</label><input type="tel" id="phone" placeholder="e.g. (02) 9876 5432" required></div>
-</div>
-<div><label for="address">Shop address *</label><input type="text" id="address" placeholder="e.g. 42 King Street, Sydney CBD NSW 2000" required></div>
-<div><label for="website">Website (optional)</label><input type="url" id="website" placeholder="e.g. https://fixitpro.com.au"></div>
-<div><label for="city">Which city page? *</label>
-<select id="city" required>
-<option value="">Select your city...</option>
-<option value="sydney">Sydney</option><option value="melbourne">Melbourne</option><option value="brisbane">Brisbane</option><option value="perth">Perth</option><option value="adelaide">Adelaide</option>
-<option value="gold-coast">Gold Coast</option><option value="canberra">Canberra</option><option value="hobart">Hobart</option><option value="geelong">Geelong</option><option value="wollongong">Wollongong</option>
-<option value="townsville">Townsville</option><option value="cairns">Cairns</option><option value="darwin">Darwin</option><option value="sunshine-coast">Sunshine Coast</option><option value="toowoomba">Toowoomba</option>
-<option value="ballarat">Ballarat</option><option value="bendigo">Bendigo</option><option value="penrith">Penrith</option><option value="parramatta">Parramatta</option><option value="frankston">Frankston</option>
-<option value="ipswich">Ipswich</option><option value="logan">Logan</option><option value="launceston">Launceston</option><option value="central-coast">Central Coast</option><option value="mandurah">Mandurah</option>
-<option value="other">Other — tell us below</option>
-</select>
-</div>
-<div><label for="tier">Preferred plan</label>
-<select id="tier">
-<option value="free-trial">Free month trial (no commitment)</option>
-<option value="starter">Starter — $29 / 3 months</option>
-<option value="verified">Verified — $49 / 6 months (most popular)</option>
-<option value="featured">Featured — $89 / year (best value)</option>
-</select>
-</div>
-<div><label for="tagline">Shop tagline (optional — shown on Featured tier)</label><input type="text" id="tagline" placeholder="e.g. Samsung specialist with laser back glass removal" maxlength="80"></div>
-<div><label for="hours">Opening hours</label><textarea id="hours" rows="2" placeholder="e.g. Mon–Fri 9–5, Sat 10–3, Sun closed"></textarea></div>
-<div><label for="notes">Anything else?</label><textarea id="notes" rows="3" placeholder="e.g. We specialise in iPad repairs, we offer student discounts, etc."></textarea></div>
-
-<button type="button" id="submit-btn" class="btn btn-primary w-full justify-center" onclick="submitForm()">Submit application <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
-<p class="text-xs text-muted text-center">Your first month is free. We'll email you within 48 hours to confirm your listing is live.</p>
-</div>
-
-<div id="success-msg" style="display:none" class="text-center py-12">
-<div style="font-size:3rem;margin-bottom:1rem">✓</div>
-<h3 class="font-serif text-2xl text-ink mb-3">Application received!</h3>
-<p class="text-muted mb-6">We'll review your details and have your listing live within 48 hours. Check your email for confirmation.</p>
-<a href="locations.html" class="btn btn-ghost">Browse city pages</a>
-</div>
-</div>
-</section>
-
-<!-- FAQ -->
-<section class="bg-mesh-2 border-b border-line">
-<div class="max-w-3xl mx-auto px-6 md:px-8 py-16 md:py-20">
-<p class="eyebrow mb-3">Questions</p>
-<h2 class="display text-3xl md:text-4xl text-ink mb-10">Common questions from shop owners</h2>
-<div class="space-y-6 text-sm">
-<div class="bg-white border border-line p-5"><p class="font-medium text-ink mb-2">What happens after the free month?</p><p class="text-muted leading-relaxed">We'll email you before it ends. If you'd like to continue, you choose a plan and pay via a simple payment link. If not, your listing is removed. No auto-billing, no surprises.</p></div>
-<div class="bg-white border border-line p-5"><p class="font-medium text-ink mb-2">Do you take a commission on my repairs?</p><p class="text-muted leading-relaxed">No. The listing fee is flat — $29, $49, or $89 depending on the plan. Every customer who contacts you through the listing is 100% yours. We don't track calls, take commissions, or insert ourselves between you and your customers.</p></div>
-<div class="bg-white border border-line p-5"><p class="font-medium text-ink mb-2">Can I change or cancel my listing?</p><p class="text-muted leading-relaxed">Yes — email us anytime to update your details or remove your listing. No contracts, no cancellation fees. Plans simply don't auto-renew; you choose to renew when the period ends.</p></div>
-<div class="bg-white border border-line p-5"><p class="font-medium text-ink mb-2">Who runs RepairRange?</p><p class="text-muted leading-relaxed">RepairRange is built and maintained by Khalil, the owner of <a href="https://mayfieldphonerepair.com.au" class="ed-link text-teal" target="_blank" rel="noopener">Mayfield Phone Repair</a> in Newcastle. He's a working phone repair technician — not a marketing company. The site is built on real bench experience.</p></div>
-<div class="bg-white border border-line p-5"><p class="font-medium text-ink mb-2">Is the listing a "dofollow" backlink?</p><p class="text-muted leading-relaxed">On the Verified and Featured plans, yes — your website link is a dofollow backlink from repairrange.io. This provides genuine SEO value for your own site's Google rankings.</p></div>
-
-<div class="bg-white border border-line p-5" style="border-left:3px solid var(--rr-teal-700)">
-<p class="font-medium text-ink mb-2">Need shop management software too?</p>
-<p class="text-muted leading-relaxed"><a href="https://repairbill.shop" class="ed-link text-teal font-medium" target="_blank" rel="noopener">RepairBill</a> handles POS, invoicing, AI-assisted ticketing, and customer communication — built specifically for repair shops. Pair it with your RepairRange listing to get found AND get organised.</p>
-</div>
-</div>
-</div>
-</section>
-
-<footer class="bg-teal-900 text-white border-t border-white/10">
-<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
-<div class="md:col-span-5"><div class="flex items-center gap-2 mb-4"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg><span class="font-serif text-2xl font-medium">RepairRange</span></div><p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice. Researched by people who actually do this work.</p></div>
-<div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="repair/phone-repair-costs-australia.html" class="text-white/80 hover:text-amber">All Models & Pricing</a></li><li><a href="calculator.html" class="text-white/80 hover:text-amber">Repair Calculator</a></li><li><a href="locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="blog.html" class="text-white/80 hover:text-amber">Blog</a></li>
-          <li><a href="unlock/index.html" class="text-white/80 hover:text-amber">Unlock Guides</a></li></ul></div>
-<div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="about.html" class="text-white/80 hover:text-amber">About RepairRange</a></li><li><a href="tools/software-stack-for-repair-shops.html" class="text-white/80 hover:text-amber">Tools we recommend</a></li><li><a href="privacy.html" class="text-white/80 hover:text-amber">Privacy Policy</a></li><li><a href="terms.html" class="text-white/80 hover:text-amber">Terms of Use</a></li></ul></div>
-</div>
-<div class="pt-8 border-t border-white/15"><div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p><p class="text-white/50 text-xs">Not affiliated with Apple, Samsung, Google, or any device manufacturer.</p></div></div>
-</div>
-</footer>
-
-<script>
-function submitForm(){
-  const fields=['shop-name','contact-name','email','phone','address','city'];
-  let valid=true;
-  fields.forEach(id=>{const el=document.getElementById(id);if(!el.value.trim()){el.style.borderColor='#EF4444';valid=false;}else{el.style.borderColor='';}});
-  if(!valid){alert('Please fill in all required fields.');return;}
-  const data={
-    shopName:document.getElementById('shop-name').value,
-    contactName:document.getElementById('contact-name').value,
-    email:document.getElementById('email').value,
-    phone:document.getElementById('phone').value,
-    address:document.getElementById('address').value,
-    website:document.getElementById('website').value,
-    city:document.getElementById('city').value,
-    tier:document.getElementById('tier').value,
-    tagline:document.getElementById('tagline').value,
-    hours:document.getElementById('hours').value,
-    notes:document.getElementById('notes').value
-  };
-  // For now: mailto fallback. Replace with Google Form or API endpoint later.
-  const body=Object.entries(data).map(([k,v])=>k+': '+v).join('\n');
-  window.location.href='mailto:info@repairrange.io?subject=Listing Application: '+encodeURIComponent(data.shopName)+'&body='+encodeURIComponent(body);
-  document.getElementById('listing-form').style.display='none';
-  document.getElementById('success-msg').style.display='block';
-}
-if(window.lucide)window.lucide.createIcons();
-document.addEventListener('DOMContentLoaded',()=>{const btn=document.querySelector('.mobile-menu-button');const menu=document.querySelector('.mobile-menu');if(btn&&menu)btn.addEventListener('click',()=>menu.classList.toggle('hidden'));});
-</script>
-    <!-- Chatbot Embedding Code -->
-<script>
-  window.chatbotSettings = {
-  "chatModelId": "cmq83wmfi01qw1yqng73sbw2k",
-  "buttonType": "minimal",
-  "buttonText": "Chat",
-  "lang": "en",
-  "chatSize": "medium",
-  "initialColorMode": "auto",
-  "position": "bottom-right",
-  "enableAttachment": true,
-  "enableFeedback": true,
-  "enableVoiceInput": false,
-  "enableVoiceMode": false,
-  "enableAutoLogin": false,
-  "borderRadius": "rounded",
-  "buttonBorderRadius": "slightly-rounded",
-  "sessionDurationHours": 168,
-  "gdprConsent": {
-    "enabled": true,
-    "privacyPolicyUrl": "https://aismarttalk.tech/api/en/privacy-policy"
-  },
-  "suggestionSettings": {
-    "mode": "auto",
-    "customSuggestionsLang": "en",
-    "customSuggestions": []
-  },
-  "apiUrl": "https://aismarttalk.tech/api",
-  "wsUrl": "https://ws.223.io.aismarttalk.tech",
-  "cdnUrl": "https://cdn.aismarttalk.tech",
-  "avatarName": "Repair Range",
-  "theme": {
-    "colors": {
-      "brand": {
-        "200": "#ECC94B",
-        "500": "#4A5568"
-      },
-      "background": {
-        "light": "#f7fafc",
-        "dark": "#1a202c"
-      }
+  <style>
+    :root {
+      --teal-900: #0c4a45;
+      --teal-700: #11625b;
+      --amber-500: #F59E0B;
+      --amber-600: #d98908;
+      --ink: #112523;
+      --muted: #5b6c69;
+      --line: #dfe6e4;
+      --surface: #f6f4ee;
+      --card: #ffffff;
+      --ok-bg: #ecf7f0;
+      --ok-ink: #1f6b43;
+      --err-bg: #fbecec;
+      --err-ink: #a23a3a;
     }
-  }
-};
-</script>
-<script src="https://cdn.aismarttalk.tech/universal-chatbot.js"></script>
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      color: var(--ink);
+      background: var(--surface);
+      line-height: 1.55;
+      font-size: 16px;
+    }
+    a { color: var(--teal-700); }
+
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+
+    /* Header */
+    header {
+      background: var(--teal-900);
+      color: #fff;
+    }
+    .bar {
+      max-width: 760px; margin: 0 auto; padding: 16px 20px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .brand {
+      font-family: "Fraunces", serif; font-weight: 600; font-size: 1.25rem;
+      color: #fff; text-decoration: none; letter-spacing: -0.01em;
+    }
+    .brand span { color: var(--amber-500); }
+    .back { color: #cfe2df; text-decoration: none; font-size: 0.9rem; }
+    .back:hover { color: #fff; }
+
+    /* Hero */
+    .hero { padding: 48px 0 28px; }
+    .eyebrow {
+      font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--amber-600); margin: 0 0 12px;
+    }
+    h1 {
+      font-family: "Fraunces", serif; font-weight: 600;
+      font-size: clamp(1.9rem, 5vw, 2.7rem); line-height: 1.08;
+      margin: 0 0 14px; letter-spacing: -0.015em; color: var(--teal-900);
+    }
+    .lede { font-size: 1.08rem; color: var(--muted); margin: 0 0 4px; max-width: 56ch; }
+
+    /* Tiers */
+    .tiers {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+      margin: 28px 0 8px;
+    }
+    .tier {
+      background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+      padding: 16px 16px 18px;
+    }
+    .tier h3 {
+      margin: 0 0 2px; font-family: "Fraunces", serif; font-size: 1.05rem;
+      font-weight: 600; color: var(--teal-900);
+    }
+    .tier .price { font-size: 1.45rem; font-weight: 600; color: var(--ink); }
+    .tier .price small { font-size: 0.8rem; font-weight: 500; color: var(--muted); }
+    .tier p { margin: 8px 0 0; font-size: 0.88rem; color: var(--muted); }
+
+    /* Form card */
+    .card {
+      background: var(--card); border: 1px solid var(--line); border-radius: 18px;
+      padding: 28px 26px 30px; margin: 26px 0 60px;
+      box-shadow: 0 1px 2px rgba(12,74,69,0.04);
+    }
+    .card h2 {
+      font-family: "Fraunces", serif; font-weight: 600; font-size: 1.4rem;
+      margin: 0 0 4px; color: var(--teal-900);
+    }
+    .card .sub { color: var(--muted); margin: 0 0 22px; font-size: 0.95rem; }
+
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .field { display: flex; flex-direction: column; }
+    .field.full { grid-column: 1 / -1; }
+    label { font-size: 0.86rem; font-weight: 600; margin-bottom: 6px; color: var(--ink); }
+    label .req { color: var(--amber-600); }
+    input, select, textarea {
+      font-family: inherit; font-size: 0.98rem; color: var(--ink);
+      padding: 11px 13px; border: 1px solid var(--line); border-radius: 10px;
+      background: #fff; width: 100%; transition: border-color .15s, box-shadow .15s;
+    }
+    input:focus, select:focus, textarea:focus {
+      outline: none; border-color: var(--teal-700);
+      box-shadow: 0 0 0 3px rgba(17,98,91,0.12);
+    }
+    textarea { resize: vertical; min-height: 84px; }
+
+    /* honeypot — hidden from humans */
+    .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+    .submit {
+      margin-top: 22px; width: 100%;
+      background: var(--amber-500); color: #1a1205; border: none;
+      font-family: inherit; font-size: 1.02rem; font-weight: 600;
+      padding: 14px 18px; border-radius: 12px; cursor: pointer;
+      transition: background .15s, transform .05s;
+    }
+    .submit:hover { background: var(--amber-600); }
+    .submit:active { transform: translateY(1px); }
+    .submit:disabled { opacity: 0.6; cursor: default; }
+
+    .note { font-size: 0.82rem; color: var(--muted); margin: 12px 2px 0; }
+
+    .msg { padding: 14px 16px; border-radius: 12px; font-size: 0.95rem; margin-top: 18px; display: none; }
+    .msg.ok  { background: var(--ok-bg);  color: var(--ok-ink);  display: block; }
+    .msg.err { background: var(--err-bg); color: var(--err-ink); display: block; }
+
+    footer { border-top: 1px solid var(--line); padding: 26px 0; color: var(--muted); font-size: 0.85rem; }
+    footer a { color: var(--teal-700); }
+
+    @media (max-width: 620px) {
+      .grid { grid-template-columns: 1fr; }
+      .tiers { grid-template-columns: 1fr; }
+      .hero { padding: 34px 0 18px; }
+    }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <a class="brand" href="/">Repair<span>Range</span></a>
+      <a class="back" href="/">&larr; Back to site</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">For repair shop owners</p>
+      <h1>Get your repair shop in front of local customers.</h1>
+      <p class="lede">People search RepairRange for repairs in their area every day. List your shop and be the one they find, call, and book.</p>
+
+      <div class="tiers">
+        <div class="tier">
+          <h3>Basic</h3>
+          <div class="price">$29 <small>/ 3 months</small></div>
+          <p>Your shop on the city page with name, area, and contact details.</p>
+        </div>
+        <div class="tier">
+          <h3>Verified</h3>
+          <div class="price">$49 <small>/ 6 months</small></div>
+          <p>Everything in Basic, plus a verified badge and a link to your website.</p>
+        </div>
+        <div class="tier">
+          <h3>Featured</h3>
+          <div class="price">$89 <small>/ year</small></div>
+          <p>Top placement on your city page for a full year. Best value.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Request your listing</h2>
+      <p class="sub">Fill this in and we'll be in touch within one business day to get you live. No payment needed yet.</p>
+
+      <form id="listingForm" novalidate>
+        <!-- honeypot: real people never see or fill this -->
+        <div class="hp" aria-hidden="true">
+          <label>Leave this empty
+            <input type="text" name="company_website" tabindex="-1" autocomplete="off" />
+          </label>
+        </div>
+
+        <div class="grid">
+          <div class="field full">
+            <label for="business">Shop name <span class="req">*</span></label>
+            <input id="business" name="business" type="text" required autocomplete="organization" />
+          </div>
+
+          <div class="field">
+            <label for="suburb">Suburb / town <span class="req">*</span></label>
+            <input id="suburb" name="suburb" type="text" required autocomplete="address-level2" />
+          </div>
+          <div class="field">
+            <label for="name">Your name <span class="req">*</span></label>
+            <input id="name" name="name" type="text" required autocomplete="name" />
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone <span class="req">*</span></label>
+            <input id="phone" name="phone" type="tel" required autocomplete="tel" />
+          </div>
+          <div class="field">
+            <label for="email">Email <span class="req">*</span></label>
+            <input id="email" name="email" type="email" required autocomplete="email" />
+          </div>
+
+          <div class="field">
+            <label for="website">Website (optional)</label>
+            <input id="website" name="website" type="text" placeholder="yourshop.com.au" />
+          </div>
+          <div class="field">
+            <label for="tier">Listing you're interested in</label>
+            <select id="tier" name="tier">
+              <option value="Not sure yet">Not sure yet — recommend one</option>
+              <option value="Basic $29/3mo">Basic — $29 / 3 months</option>
+              <option value="Verified $49/6mo">Verified — $49 / 6 months</option>
+              <option value="Featured $89/yr">Featured — $89 / year</option>
+            </select>
+          </div>
+
+          <div class="field full">
+            <label for="services">What do you repair / anything to add? (optional)</label>
+            <textarea id="services" name="services" placeholder="e.g. phones, tablets, laptops — same-day screen repairs, 12-month warranty"></textarea>
+          </div>
+        </div>
+
+        <button class="submit" type="submit" id="submitBtn">Request my listing</button>
+        <p class="note">We only use these details to set up your listing and contact you about it.</p>
+        <div class="msg" id="msg" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      RepairRange &middot; <a href="mailto:info@repairrange.io">info@repairrange.io</a>
+    </div>
+  </footer>
+
+  <script>
+    // ===== CONFIG: paste your deployed Apps Script Web App URL here =====
+    const ENDPOINT = "PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE";
+    // ===================================================================
+
+    // Pre-fill suburb + capture which city page the lead came from (?city=newcastle)
+    const params = new URLSearchParams(location.search);
+    const cityParam = params.get("city") || "";
+    if (cityParam) {
+      const pretty = cityParam.replace(/[-+]/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+      const suburb = document.getElementById("suburb");
+      if (!suburb.value) suburb.value = pretty;
+    }
+
+    const form = document.getElementById("listingForm");
+    const btn = document.getElementById("submitBtn");
+    const msg = document.getElementById("msg");
+
+    function show(type, text) {
+      msg.className = "msg " + type;
+      msg.textContent = text;
+    }
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      msg.className = "msg"; // hide
+
+      // Honeypot: silently stop bots
+      if (form.company_website.value.trim() !== "") return;
+
+      // Basic required-field check
+      const required = ["business", "suburb", "name", "phone", "email"];
+      for (const id of required) {
+        if (!form[id].value.trim()) {
+          show("err", "Please fill in all the required fields marked with *.");
+          form[id].focus();
+          return;
+        }
+      }
+      if (ENDPOINT.startsWith("PASTE_")) {
+        show("err", "Form isn't connected yet — add your Apps Script URL in the page settings.");
+        return;
+      }
+
+      btn.disabled = true;
+      btn.textContent = "Sending…";
+
+      const fd = new FormData(form);
+      fd.append("source_city", cityParam);
+      fd.append("page", location.href);
+
+      try {
+        await fetch(ENDPOINT, { method: "POST", body: fd });
+        // Apps Script redirects on POST, so we treat a completed request as success.
+        form.reset();
+        show("ok", "Thanks — your request is in. We'll be in touch within one business day to get your shop live.");
+        btn.textContent = "Request received ✓";
+      } catch (err) {
+        show("err", "Something went wrong sending that. Please email info@repairrange.io and we'll sort it out.");
+        btn.disabled = false;
+        btn.textContent = "Request my listing";
+      }
+    });
+  </script>
 </body>
 </html>
