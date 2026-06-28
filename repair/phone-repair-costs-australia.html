@@ -55,7 +55,7 @@
     .table-container { border: 1px solid var(--rr-line); background: white; border-radius: 4px; overflow: hidden; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
     .model-row { 
         display: grid; 
-        grid-template-columns: 2fr 1fr 1fr 1.2fr; 
+        grid-template-columns: 2.2fr 1fr 1fr 1.2fr; 
         align-items: center; 
         padding: 1rem 1.5rem; 
         border-bottom: 1px solid var(--rr-line); 
@@ -113,7 +113,6 @@
 
 <section class="bg-white border-b border-line">
 <div class="max-w-6xl mx-auto px-6 md:px-8 py-8">
-<div id="spotlight" class="mb-8"></div>
 <div class="flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
 <div class="flex flex-wrap gap-2" id="filters">
 <button class="filter-btn active" data-filter="all">All <span class="count-badge" id="count-all"></span></button>
@@ -129,7 +128,7 @@
 </div>
 
 <div class="max-w-6xl mx-auto px-6 md:px-8 pb-16">
-<div class="table-container">
+<div class="table-container shadow-box">
     <div class="model-row bg-paper-2 font-bold" style="font-size:0.75rem; text-transform:uppercase; color:var(--rr-muted); border-bottom:2px solid var(--rr-line)">
         <span>Model</span>
         <span class="text-right">Screen (indie)</span>
@@ -149,7 +148,7 @@
 </footer>
 
 <script>
-const MODELS=[{b:'apple',n:'iPhone 17 Pro Max',scr:'$349–$549',bat:'$89–$149',g:'iphone-17-pro-max'},{b:'apple',n:'iPhone 17 Pro',scr:'$319–$489',bat:'$89–$139',g:'iphone-17-pro'},{b:'apple',n:'iPhone 17',scr:'$259–$389',bat:'$79–$119',g:'iphone-17'},{b:'apple',n:'iPhone 16 Pro Max',scr:'$329–$499',bat:'$89–$149',g:null},{b:'apple',n:'iPhone 16',scr:'$239–$359',bat:'$79–$119',g:null},{b:'apple',n:'iPhone 15 Pro Max',scr:'$329–$479',bat:'$99–$149',g:'iphone-15-pro-max'},{b:'apple',n:'iPhone 15 Pro',scr:'$289–$419',bat:'$99–$139',g:'iphone-15-pro'},{b:'apple',n:'iPhone 15',scr:'$219–$339',bat:'$89–$119',g:'iphone-15'},{b:'apple',n:'iPhone 14 Pro Max',scr:'$309–$449',bat:'$99–$139',g:'iphone-14-pro-max'},{b:'apple',n:'iPhone 13 Pro Max',scr:'$249–$379',bat:'$89–$129',g:'iphone-13-pro-max'},{b:'samsung',n:'Galaxy S26 Ultra',scr:'$489–$619',bat:'$99–$149',g:'samsung-galaxy-s26-ultra'},{b:'samsung',n:'Galaxy S25 Ultra',scr:'$449–$589',bat:'$99–$139',g:'samsung-galaxy-s25-ultra'},{b:'google',n:'Pixel 9 Pro XL',scr:'$329–$479',bat:'$99–$139',g:'pixel-9-pro-xl'},{b:'google',n:'Pixel 8 Pro',scr:'$289–$429',bat:'$89–$129',g:'pixel-8-pro'}];
+const MODELS=[{b:'apple',n:'iPhone 17 Pro Max',scr:'$349–$549',bat:'$89–$149',g:'iphone-17-pro-max'},{b:'apple',n:'iPhone 17 Pro',scr:'$319–$489',bat:'$89–$139',g:'iphone-17-pro'},{b:'apple',n:'iPhone 17',scr:'$259–$389',bat:'$79–$119',g:'iphone-17'},{b:'apple',n:'iPhone 16 Pro Max',scr:'$329–$499',bat:'$89–$149',g:null},{b:'apple',n:'iPhone 16',scr:'$239–$359',bat:'$79–$119',g:null},{b:'apple',n:'iPhone 15 Pro Max',scr:'$329–$479',bat:'$99–$149',g:'iphone-15-pro-max'},{b:'apple',n:'iPhone 15 Pro',scr:'$289–$419',bat:'$99–$139',g:'iphone-15-pro'},{b:'apple',n:'iPhone 15 Plus',scr:'$239–$349',bat:'$89–$129',g:'iphone-15-plus'},{b:'apple',n:'iPhone 15',scr:'$219–$339',bat:'$89–$119',g:'iphone-15'},{b:'apple',n:'iPhone 14 Pro Max',scr:'$309–$449',bat:'$99–$139',g:'iphone-14-pro-max'},{b:'apple',n:'iPhone 13 Pro Max',scr:'$249–$379',bat:'$89–$129',g:'iphone-13-pro-max'},{b:'samsung',n:'Galaxy S26 Ultra',scr:'$489–$619',bat:'$99–$149',g:'samsung-galaxy-s26-ultra'},{b:'samsung',n:'Galaxy S25 Ultra',scr:'$449–$589',bat:'$99–$139',g:'samsung-galaxy-s25-ultra'},{b:'google',n:'Pixel 9 Pro XL',scr:'$329–$479',bat:'$99–$139',g:'pixel-9-pro-xl'},{b:'google',n:'Pixel 8 Pro',scr:'$289–$429',bat:'$89–$129',g:'pixel-8-pro'}];
 
 const list=document.getElementById('model-list');
 const searchInput=document.getElementById('search');
@@ -163,6 +162,17 @@ function render(){
         return true;
     });
     
+    // UPDATE COUNTS
+    const counts={all:0,apple:0,samsung:0,google:0};
+    MODELS.forEach(m=>{
+        const mq=!q||m.n.toLowerCase().includes(q);
+        if(mq){counts.all++;counts[m.b]++;}
+    });
+    Object.keys(counts).forEach(k=>{
+        const el=document.getElementById('count-'+k);
+        if(el)el.textContent=counts[k];
+    });
+
     let html='';
     filtered.forEach(m=>{
         const link = m.g ? `<a href="${m.g}.html" style="color:var(--rr-teal-700); font-weight:700;">Full guide &rarr;</a>` : `<span style="color:var(--rr-muted); font-size:0.75rem;">Price only</span>`;
