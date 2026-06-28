@@ -1,3 +1,10 @@
 # Redirect www.repairrange.io to repairrange.io (HTTP and HTTPS)
 http://www.repairrange.io/* https://repairrange.io/:splat 301
 https://www.repairrange.io/* https://repairrange.io/:splat 301
+
+# Fix 404s identified in GSC
+/unlock/* /repair/phone-repair-costs-australia.html 301
+/news/* /tech-news.html 301
+/tools.html /tools/software-stack-for-repair-shops.html 301
+/blog /blog.html 301
+/repair /repair/phone-repair-costs-australia.html 301

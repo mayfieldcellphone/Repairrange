@@ -1,0 +1,17 @@
+[
+  {
+    "context": "mayfieldphonerepair.com.au (Shop Lead)",
+    "customer": "How much for iPhone 13 screen fix?",
+    "ai_perfect_reply": "Hi! For the iPhone 13, prices depend on whether we use an OEM or aftermarket screen. I'll have a technician check our current stock and send you a custom quote right here in a few minutes. May I have your name, please?"
+  },
+  {
+    "context": "selfrepairkit.com.au (Sales Closer)",
+    "customer": "Is the kit hard to use?",
+    "ai_perfect_reply": "Not at all! Our kits are designed specifically for first-timers. We include a step-by-step video guide and all the tools you need. You can definitely do this yourself and save $100+ on labor! Check out the kit here: [Link]"
+  },
+  {
+    "context": "repairbill.shop (Support)",
+    "customer": "I can't open my invoice.",
+    "ai_perfect_reply": "I'm sorry to hear that. For security, our invoices are SSL-encrypted. Please ensure you are clicking the secure link sent to your WhatsApp. If it still won't open, I can trigger a fresh secure link for you now. Would you like me to do that?"
+  }
+]

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Hub | SelfRepairKit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
+        html { scroll-behavior: smooth; }
+        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
+        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
+        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
+        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
+        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
+        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
+        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
+        .ed-link:hover { background-size:100% 1px; }
+        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
+        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
+        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
+        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
+        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
+        .mobile-menu { transition:all 300ms ease-in-out; }
+        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
+    </style>
+
+<script type="text/javascript">
+        window.omnisend = window.omnisend || [];
+        omnisend.push(["brandID", "6a07b78503b27b7a8c5c774d"]);
+        omnisend.push(["track", "$pageViewed"]);
+        !function(){var e=document.createElement("script");
+        e.type="text/javascript",e.async=!0,
+        e.src="https://omnisnippet1.com/inshop/launcher-v2.js";
+        var t=document.getElementsByTagName("script")[0];
+        t.parentNode.insertBefore(e,t)}();
+</script>
+
+</head>
+<body class="antialiased p-8 md:p-20">
+
+    <!-- TICKER -->
+    <div class="ticker-wrap border-b border-lab-teal/20">
+        <div class="ticker">
+            <span class="px-8 text-white font-bold">FREE AU POST ON ORDERS OVER $99</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">IN STOCK: IPHONE 17 SERIES KITS</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">SAME DAY DISPATCH FROM NEWCASTLE</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">DIAGNOSABLE BATTERIES AVAILABLE</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">90-DAY WARRANTY ON ALL PARTS</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">FREE AU POST ON ORDERS OVER $99</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">IN STOCK: IPHONE 17 SERIES KITS</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">SAME DAY DISPATCH FROM NEWCASTLE</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">DIAGNOSABLE BATTERIES AVAILABLE</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">90-DAY WARRANTY ON ALL PARTS</span><span class="px-8">&bull;</span>
+        </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto">
+        <a href="index.html" class="text-[#00C2A8] hover:underline mb-12 inline-block font-bold tracking-widest uppercase text-xs">&larr; <nav class="border-b border-white/10 sticky top-0 z-50 bg-[#212629] backdrop-blur-md shadow-lg"><div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"><a href="index.html" class="flex flex-col items-center"><img src="https://sc04.alicdn.com/kf/A8f37323522424136aed4c8f39c13d07dV.png?v=2" alt="SelfRepairKit" class="h-16 w-auto"><span class="text-[8px] font-bold uppercase tracking-[0.2em] text-lab-teal mt-1">Repair with confidence</span></a><div class="hidden md:flex items-center gap-6 text-xs font-bold uppercase tracking-widest text-white"><a href="shop.html?brand=apple" class="px-3 py-2 rounded-lg hover:bg-lab-teal/10 hover:text-lab-teal transition-all">iPhone Kit</a><a href="shop.html?brand=samsung" class="px-3 py-2 rounded-lg hover:bg-lab-teal/10 hover:text-lab-teal transition-all">Samsung Kit</a><a href="shop.html?brand=oppo" class="px-3 py-2 rounded-lg hover:bg-lab-teal/10 hover:text-lab-teal transition-all">OPPO Kit</a><a href="shop.html?brand=google" class="px-3 py-2 rounded-lg hover:bg-lab-teal/10 hover:text-lab-teal transition-all flex items-center gap-1.5"><i data-lucide="chrome" class="w-3.5 h-3.5"></i>Pixel Kit</a><a href="guides.html" class="px-3 py-2 rounded-lg hover:bg-lab-teal/10 hover:text-lab-teal transition-all">Guides</a><a href="blog.html" class="px-3 py-2 rounded-lg hover:bg-lab-teal/10 hover:text-lab-teal transition-all">Blog</a></div></div></nav>
+        <h1 class="text-5xl font-bold mb-12 text-white tracking-tighter">Technical <span class="text-[#00C2A8]">Support.</span></h1>
+        
+        <div class="space-y-8">
+            <div class="glass-card p-8 rounded-[32px]">
+                <h2 class="text-xl font-bold mb-4 text-white">Contact Our Technicians</h2>
+                <p class="leading-relaxed text-slate-300 mb-6">Stuck during a repair? Our team at Mayfield Phone Repair is here to help. We don't use AI for support—you talk to a human technician.</p>
+                <a href="mailto:support@selfrepairkit.com.au" class="text-[#00C2A8] font-bold">support@selfrepairkit.com.au</a>
+            </div>
+
+            <div class="glass-card p-8 rounded-[32px]">
+                <h2 class="text-xl font-bold mb-4 text-white">Warranty Protocol</h2>
+                <p class="leading-relaxed text-slate-300">Every part is backed by our 90-Day Engineering Warranty. If the hardware is defective (and not damaged during installation), we will replace it immediately.</p>
+            </div>
+
+            <div class="glass-card p-8 rounded-[32px]">
+                <h2 class="text-xl font-bold mb-6 text-white">Common Repair Questions</h2>
+
+                <div style="border-bottom:1px solid rgba(255,255,255,0.1);padding:16px 0">
+                    <h3 style="font-weight:700;color:#00C2A8;font-size:0.95rem;margin-bottom:8px">My screen doesn't respond to touch after installation</h3>
+                    <p class="leading-relaxed text-slate-300" style="font-size:0.875rem">The display flex cable is likely not fully seated. Power off, reopen the phone, disconnect the screen cables, and reconnect them firmly — you should feel a gentle click. Also check that the battery connector is properly seated. If touch works only on part of the screen, the cable may be damaged.</p>
+                </div>
+
+                <div style="border-bottom:1px solid rgba(255,255,255,0.1);padding:16px 0">
+                    <h3 style="font-weight:700;color:#00C2A8;font-size:0.95rem;margin-bottom:8px">Face ID stopped working after screen replacement</h3>
+                    <p class="leading-relaxed text-slate-300" style="font-size:0.875rem">The Face ID module (earpiece/proximity sensor assembly) must be carefully transferred from your old screen to the new one. If it was damaged or not transferred, Face ID cannot be restored. If you transferred it but Face ID still fails, check the flex cable connection at the top of the screen — it may not be fully seated. See our <a href="blog/how-to-fix-cracked-phone-screen-at-home.html" style="color:#00C2A8">screen repair guide</a> for details.</p>
+                </div>
+
+                <div style="border-bottom:1px solid rgba(255,255,255,0.1);padding:16px 0">
+                    <h3 style="font-weight:700;color:#00C2A8;font-size:0.95rem;margin-bottom:8px">Battery Health shows "Unknown" after battery replacement</h3>
+                    <p class="leading-relaxed text-slate-300" style="font-size:0.875rem">This is normal for all non-Apple-installed batteries. Your battery works perfectly — iOS just can't verify the serial. If you have a diagnosable battery (included in SelfRepairKit kits), you can pair it using Apple's System Configuration tool to restore the Battery Health reading. See our <a href="blog/fix-non-genuine-part-warning-iphone.html" style="color:#00C2A8">non-genuine part warning guide</a>.</p>
+                </div>
+
+                <div style="border-bottom:1px solid rgba(255,255,255,0.1);padding:16px 0">
+                    <h3 style="font-weight:700;color:#00C2A8;font-size:0.95rem;margin-bottom:8px">Samsung fingerprint stopped working after screen replacement</h3>
+                    <p class="leading-relaxed text-slate-300" style="font-size:0.875rem">If you installed an INCELL (Budget) screen on a Galaxy S-series phone, the ultrasonic fingerprint sensor is permanently disabled — it requires an OLED panel to function. You'll need to replace the screen with an OLED or OEM tier. See our <a href="blog/incell-vs-oled-vs-oem-screen-replacement-guide.html" style="color:#00C2A8">INCELL vs OLED guide</a>.</p>
+                </div>
+
+                <div style="border-bottom:1px solid rgba(255,255,255,0.1);padding:16px 0">
+                    <h3 style="font-weight:700;color:#00C2A8;font-size:0.95rem;margin-bottom:8px">My screen has a yellow tint / True Tone is missing</h3>
+                    <p class="leading-relaxed text-slate-300" style="font-size:0.875rem">True Tone requires the display calibration data to be transferred from the old screen or paired via Apple's System Configuration tool. INCELL screens do not support True Tone at all. OLED and OEM screens can have True Tone restored using a pairing tool or by visiting an Apple Authorised Service Provider ($20-$50 pairing fee).</p>
+                </div>
+
+                <div style="border-bottom:1px solid rgba(255,255,255,0.1);padding:16px 0">
+                    <h3 style="font-weight:700;color:#00C2A8;font-size:0.95rem;margin-bottom:8px">Phone won't turn on after battery replacement</h3>
+                    <p class="leading-relaxed text-slate-300" style="font-size:0.875rem">First, check the battery connector — it may not be fully seated. Reopen the phone and press the connector firmly until it clicks. If the phone still won't turn on, try a force restart (hold Power + Volume Down for 10 seconds). If nothing works, the battery may have arrived with zero charge — connect to a charger for 15 minutes, then try again.</p>
+                </div>
+
+                <div style="padding:16px 0">
+                    <h3 style="font-weight:700;color:#00C2A8;font-size:0.95rem;margin-bottom:8px">I received the wrong part / my kit is missing tools</h3>
+                    <p class="leading-relaxed text-slate-300" style="font-size:0.875rem">Contact us at <a href="mailto:support@selfrepairkit.com.au" style="color:#00C2A8">support@selfrepairkit.com.au</a> with your order details and a photo. We'll ship the correct part or missing tools within 24 hours at no cost. Our 90-day warranty covers all manufacturing defects and incorrect shipments.</p>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-[32px]">
+                <h2 class="text-xl font-bold mb-4 text-white">Repair Guides</h2>
+                <p class="leading-relaxed text-slate-300 mb-4">Having trouble? Check our detailed step-by-step guides:</p>
+                <div style="display:flex;flex-direction:column;gap:8px">
+                    <a href="guides.html" style="color:#00C2A8;font-weight:700;font-size:0.875rem">→ Video repair guides (iPhone / Samsung / OPPO)</a>
+                    <a href="blog/how-to-fix-cracked-phone-screen-at-home.html" style="color:#00C2A8;font-weight:700;font-size:0.875rem">→ How to fix a cracked screen at home</a>
+                    <a href="blog/change-iphone-battery-yourself.html" style="color:#00C2A8;font-weight:700;font-size:0.875rem">→ Can I change my iPhone battery myself?</a>
+                    <a href="blog/fix-non-genuine-part-warning-iphone.html" style="color:#00C2A8;font-weight:700;font-size:0.875rem">→ Fix non-genuine part warning</a>
+                    <a href="blog/incell-vs-oled-vs-oem-screen-replacement-guide.html" style="color:#00C2A8;font-weight:700;font-size:0.875rem">→ INCELL vs OLED vs OEM explained</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-20 pt-8 border-t border-white/10 text-slate-200 text-[10px] uppercase tracking-[0.3em]">
+            &copy; 2026 SelfRepairKit Australia. Engineering-First Support.
+        
+            <div class="mt-4 flex justify-center gap-6">
+                <a href="https://www.facebook.com/profile.php?id=61590825874077" target="_blank" class="hover:text-[#00C2A8]">Facebook</a>
+                <a href="https://www.youtube.com/@SelfRepairKitAU" target="_blank" class="hover:text-[#00C2A8]">YouTube</a>
+            </div></footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guides & Insights | SelfRepairKit™</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
+        html { scroll-behavior: smooth; }
+        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
+        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
+        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
+        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
+        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
+        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
+        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
+        .ed-link:hover { background-size:100% 1px; }
+        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
+        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
+        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
+        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
+        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
+        .mobile-menu { transition:all 300ms ease-in-out; }
+        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
+    </style>
+</head>
+<body class="antialiased bg-black text-slate-100">
+    
+    <article class="max-w-4xl mx-auto px-6 py-20">
+        <header class="text-center mb-16">
+            <p class="text-[#00C2A8] font-mono text-xs uppercase tracking-widest mb-4">// DIY_SERIES_002</p>
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">iPhone 15 Pro Max Screen Replacement: Australia’s DIY Guide</h1>
+            <p class="text-slate-200 text-sm">Published by SRK Engineering Team • June 21, 2026</p>
+        </header>
+
+        <section class="prose prose-invert max-w-none space-y-8 text-lg text-slate-300 leading-relaxed text-left">
+            <p>The iPhone 15 Pro Max represents the peak of smartphone engineering, but even its titanium frame cannot defy gravity. If your screen is shattered, you likely face a $600+ repair bill. Today, we show you the professional alternative.</p>
+            
+            <h2 class="text-2xl font-bold text-white mt-12">Why Fix It Yourself?</h2>
+            <p>In Australia, waiting times for official repair slots can be weeks. With a SelfRepairKit, you get high-quality hardware and professional tools delivered to your door in Newcastle or nationwide, allowing you to restore your device in under 60 minutes.</p>
+
+            <div class="bg-gradient-to-br from-[#00C2A8]/20 to-transparent border border-[#00C2A8]/30 p-10 rounded-3xl text-center my-12">
+                <h3 class="text-2xl font-bold text-white mb-4">Engineer-Approved 15 Pro Max Kits</h3>
+                <p class="mb-8">Includes 120Hz Soft OLED, waterproof adhesive, and precision bit set.</p>
+                <a href="../shop.html?brand=apple" class="inline-block bg-black text-black font-bold px-10 py-4 rounded-xl hover:scale-105 transition-transform">Order Your Kit Now</a>
+            </div>
+
+            <h2 class="text-2xl font-bold text-white mt-12">Strategic Local Support</h2>
+            <p>If you're in the Hunter region and feel overwhelmed, our partners at <a href="https://mayfieldphonerepair.com.au" class="text-lab-teal underline">Mayfield Phone Repair</a> are available for physical assistance. For pricing benchmarks across all models, visit <a href="https://repairrange.io" class="text-lab-teal underline">RepairRange.io</a>.</p>
+        </section>
+    </article>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

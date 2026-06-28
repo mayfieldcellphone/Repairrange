@@ -1,0 +1,882 @@
+[
+  {
+    "title": "iPhone 13 Screen Kit",
+    "price": 139.0,
+    "sku": "SRK-SCR-IPHONE13-BQ7",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "BQ7 Diagnosable Soft OLED"
+  },
+  {
+    "title": "iPhone 13 Pro Max Screen Kit",
+    "price": 119.0,
+    "sku": "SRK-SCR-IPHONE13-HD+",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "HD+ Display Incell LCD"
+  },
+  {
+    "title": "iPhone 13 Pro Max Battery Kit",
+    "price": 99.0,
+    "sku": "SRK-BAT-IPHONE13-GRE",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "Greencell Diagnosable"
+  },
+  {
+    "title": "iPhone 14 Pro Max Screen Kit",
+    "price": 129.0,
+    "sku": "SRK-SCR-IPHONE14-HD+",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "HD+ Display Incell LCD"
+  },
+  {
+    "title": "iPhone 14 Pro Max Screen Kit",
+    "price": 149.0,
+    "sku": "SRK-SCR-IPHONE14-BQ7",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "BQ7 Diagnosable Hard OLED"
+  },
+  {
+    "title": "iPhone 14 Pro Max Battery Kit",
+    "price": 119.0,
+    "sku": "SRK-BAT-IPHONE14-GRE",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "Greencell Diagnosable"
+  },
+  {
+    "title": "iPhone 15 Pro Screen Kit",
+    "price": 149.0,
+    "sku": "SRK-SCR-IPHONE15-HD+",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "HD+ Display Incell LCD"
+  },
+  {
+    "title": "iPhone 15 Pro Max Screen Kit",
+    "price": 159.0,
+    "sku": "SRK-SCR-IPHONE15-BQ7",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "BQ7 Hard OLED"
+  },
+  {
+    "title": "iPhone 15 Pro Max Battery Kit",
+    "price": 139.0,
+    "sku": "SRK-BAT-IPHONE15-GRE",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "Greencell Diagnosable"
+  },
+  {
+    "title": "iPhone 16 Pro Max Screen Kit",
+    "price": 249.0,
+    "sku": "SRK-SCR-IPHONE16-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "AMPLUS Diagnosable Soft OLED"
+  },
+  {
+    "title": "iPhone 16 Pro Max Screen Kit",
+    "price": 319.0,
+    "sku": "SRK-SCR-IPHONE16-ASS",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "ASSEMBLED OLED"
+  },
+  {
+    "title": "iPhone 16E Battery Kit",
+    "price": 199.0,
+    "sku": "SRK-BAT-IPHONE16-SER",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "Service Pack"
+  },
+  {
+    "title": "iPhone 16E Battery Kit",
+    "price": 129.0,
+    "sku": "SRK-BAT-IPHONE16-GRE",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "Greencell PRO series"
+  },
+  {
+    "title": "iPhone 16E Battery Kit",
+    "price": 99.0,
+    "sku": "SRK-BAT-IPHONE16-CRA",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "Crazy Improved Quality"
+  },
+  {
+    "title": "iPhone 16e Screen Kit",
+    "price": 159.0,
+    "sku": "SRK-SCR-IPHONE16-BQ7",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "BQ7 Hard OLED"
+  },
+  {
+    "title": "iPhone 17 Air Screen Kit",
+    "price": 399.0,
+    "sku": "SRK-SCR-IPHONE17-ASS",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "ASSEMBLED OLED"
+  },
+  {
+    "title": "iPhone 17 Pro Max Screen Kit",
+    "price": 259.0,
+    "sku": "SRK-SCR-IPHONE17-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "AMPLUS Diagnosable Soft OLED"
+  },
+  {
+    "title": "iPhone 17 Pro Max Battery Kit",
+    "price": 225.0,
+    "sku": "SRK-BAT-IPHONE17-SER",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "Service Pack"
+  },
+  {
+    "title": "iPhone 17E Battery Kit",
+    "price": 99.0,
+    "sku": "SRK-BAT-IPHONE17-GRE",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "Greencell PRO series"
+  },
+  {
+    "title": "iPhone 17E Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-IPHONE17-CRA",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "Crazy Improved Quality"
+  },
+  {
+    "title": "iPhone 17e Screen Kit",
+    "price": 199.0,
+    "sku": "SRK-SCR-IPHONE17-BQ7",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "BQ7 Hard OLED"
+  },
+  {
+    "title": "iPhone 7 Screen Kit",
+    "price": 99.0,
+    "sku": "AMP-i7-BLK",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "Premium"
+  },
+  {
+    "title": "iPhone 7 Battery Kit",
+    "price": 89.0,
+    "sku": "CTBR-i7+Strip",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "Service Pack"
+  },
+  {
+    "title": "iPhone 8 Screen Kit",
+    "price": 99.0,
+    "sku": "AMP-i8/SE2ND-BLK",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "Premium"
+  },
+  {
+    "title": "iPhone 8 Battery Kit",
+    "price": 99.0,
+    "sku": "TWBR-i8+Strip",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "Service Pack"
+  },
+  {
+    "title": "iPhone SE3 (2022) Battery Kit",
+    "price": 99.0,
+    "sku": "SRK-BAT-IPHONESE-GRE",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "Greencell Diagnosable"
+  },
+  {
+    "title": "iPhone X Screen Kit",
+    "price": 159.0,
+    "sku": "OEM-X-BLK",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Original Screens",
+    "description": "Original"
+  },
+  {
+    "title": "iPhone X Battery Kit",
+    "price": 99.0,
+    "sku": "TWBR-iX+Strip",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "Service Pack"
+  },
+  {
+    "title": "iPhone XR Screen Kit",
+    "price": 109.0,
+    "sku": "HD+Incell-XR",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "Incell"
+  },
+  {
+    "title": "iPhone XR Battery Kit",
+    "price": 89.0,
+    "sku": "TWBR-XR+Strip",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "Service Pack"
+  },
+  {
+    "title": "1+ Nord CE4 Battery Kit",
+    "price": 49.8,
+    "sku": "SRK-BAT-1+NORDCE-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "A1 Battery Kit",
+    "price": 32.09,
+    "sku": "SRK-BAT-A1-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "A15 Screen Kit",
+    "price": 99.0,
+    "sku": "SRK-SCR-A15-BQ7",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "BQ7 LCD"
+  },
+  {
+    "title": "A15s Screen Kit",
+    "price": 99.0,
+    "sku": "SRK-SCR-A15S-BQ7",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "BQ7 LCD"
+  },
+  {
+    "title": "A17 Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-A17-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "A2 5G Battery Kit",
+    "price": 38.71,
+    "sku": "SRK-BAT-A25G-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "A3 4G (A40) Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-A34G(A40-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "A3 5G Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-A35G-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "A32 4G Screen Kit",
+    "price": 89.0,
+    "sku": "SRK-SCR-A324G-BQ7",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "BQ7 LCD"
+  },
+  {
+    "title": "A35 Screen Kit",
+    "price": 89.0,
+    "sku": "SRK-SCR-A35-BQ7",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "BQ7 LCD"
+  },
+  {
+    "title": "A38 Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-A38-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "A3X 4G Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-A3X4G-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "A52 4G Screen Kit",
+    "price": 89.0,
+    "sku": "SRK-SCR-A524G-BQ7",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "BQ7 LCD"
+  },
+  {
+    "title": "A53 4G Screen Kit",
+    "price": 99.0,
+    "sku": "SRK-SCR-A534G-BQ7",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "BQ7 LCD"
+  },
+  {
+    "title": "A53s 4G Screen Kit",
+    "price": 99.0,
+    "sku": "SRK-SCR-A53S4G-BQ7",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "BQ7 LCD"
+  },
+  {
+    "title": "A54 5G Screen Kit",
+    "price": 99.0,
+    "sku": "SRK-SCR-A545G-BQ7",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "BQ7 LCD"
+  },
+  {
+    "title": "A57 5G Battery Kit",
+    "price": 99.0,
+    "sku": "SRK-BAT-A575G-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "A58 4G Battery Kit",
+    "price": 38.71,
+    "sku": "SRK-BAT-A584G-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "A6 GT Screen Kit",
+    "price": 229.0,
+    "sku": "SRK-SCR-A6GT-REF",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Original Screens",
+    "description": "REFURB OLED"
+  },
+  {
+    "title": "A6 Max Screen Kit",
+    "price": 229.0,
+    "sku": "SRK-SCR-A6MAX-REF",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Original Screens",
+    "description": "REFURB OLED"
+  },
+  {
+    "title": "A6x 4G Screen Kit",
+    "price": 61.5,
+    "sku": "SRK-SCR-A6X4G-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "AMPLUS LCD"
+  },
+  {
+    "title": "A72 4G Screen Kit",
+    "price": 99.0,
+    "sku": "SRK-SCR-A724G-BQ7",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "BQ7 LCD"
+  },
+  {
+    "title": "A74 5G Screen Kit",
+    "price": 99.0,
+    "sku": "SRK-SCR-A745G-BQ7",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "BQ7 LCD"
+  },
+  {
+    "title": "A76 Battery Kit",
+    "price": 99.0,
+    "sku": "SRK-BAT-A76-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "A78 4G Battery Kit",
+    "price": 99.0,
+    "sku": "SRK-BAT-A784G-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "A79 5G Battery Kit",
+    "price": 99.0,
+    "sku": "SRK-BAT-A795G-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "A83 Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-A83-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "A92 4G Screen Kit",
+    "price": 99.0,
+    "sku": "SRK-SCR-A924G-BQ7",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "BQ7 LCD"
+  },
+  {
+    "title": "A93 5G Screen Kit",
+    "price": 99.0,
+    "sku": "SRK-SCR-A935G-BQ7",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "BQ7 LCD"
+  },
+  {
+    "title": "A98 Battery Kit",
+    "price": 99.0,
+    "sku": "SRK-BAT-A98-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "F23 Battery Kit",
+    "price": 99.0,
+    "sku": "SRK-BAT-F23-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "F25 Pro Screen Kit",
+    "price": 125.0,
+    "sku": "SRK-SCR-F25PRO-PUL",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Original Screens",
+    "description": "PULL-A OLED"
+  },
+  {
+    "title": "F29 Screen Kit",
+    "price": 129.0,
+    "sku": "SRK-SCR-F29-REF",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Original Screens",
+    "description": "REFURB OLED"
+  },
+  {
+    "title": "F29 Pro Screen Kit",
+    "price": 129.0,
+    "sku": "SRK-SCR-F29PRO-REF",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Original Screens",
+    "description": "REFURB OLED"
+  },
+  {
+    "title": "F31 Screen Kit",
+    "price": 149.13,
+    "sku": "SRK-SCR-F31-PUL",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Original Screens",
+    "description": "PULL-A OLED"
+  },
+  {
+    "title": "F31 Pro Screen Kit",
+    "price": 149.0,
+    "sku": "SRK-SCR-F31PRO-REF",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Original Screens",
+    "description": "REFURB OLED"
+  },
+  {
+    "title": "Find X5 Screen Kit",
+    "price": 129.0,
+    "sku": "SRK-SCR-FINDX5-BQ7",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "BQ7 OLED"
+  },
+  {
+    "title": "Find X6 Battery Kit",
+    "price": 99.0,
+    "sku": "SRK-BAT-FINDX6-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "Find X7 Screen Kit",
+    "price": 220.0,
+    "sku": "SRK-SCR-FINDX7-PUL",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Original Screens",
+    "description": "PULL-A OLED"
+  },
+  {
+    "title": "Find X7 Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-FINDX7-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "Find X7 Ultra Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-FINDX7UL-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "Find X8 Pro Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-FINDX8PR-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "Find X8 Ultra Screen Kit",
+    "price": 250.0,
+    "sku": "SRK-SCR-FINDX8UL-REF",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Original Screens",
+    "description": "REFURB OLED"
+  },
+  {
+    "title": "Find X8S Screen Kit",
+    "price": 135.0,
+    "sku": "SRK-SCR-FINDX8S-BQ7",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "BQ7 OLED"
+  },
+  {
+    "title": "Find X8S Plus Screen Kit",
+    "price": 135.0,
+    "sku": "SRK-SCR-FINDX8SP-BQ7",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "BQ7 OLED"
+  },
+  {
+    "title": "Find X9 Screen Kit",
+    "price": 149.0,
+    "sku": "SRK-SCR-FINDX9-BQ7",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "BQ7 OLED"
+  },
+  {
+    "title": "Find X9 Pro Screen Kit",
+    "price": 159.0,
+    "sku": "SRK-SCR-FINDX9PR-BQ7",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "BQ7 OLED"
+  },
+  {
+    "title": "K11 Screen Kit",
+    "price": 110.0,
+    "sku": "SRK-SCR-K11-PUL",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Original Screens",
+    "description": "PULL-A OLED"
+  },
+  {
+    "title": "K12 Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-K12-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "K13 Turbo Screen Kit",
+    "price": 189.0,
+    "sku": "SRK-SCR-K13TURBO-REF",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Original Screens",
+    "description": "REFURB OLED"
+  },
+  {
+    "title": "Reno 10x zoom Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-RENO10XZ-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "Reno Z Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-RENOZ-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "Reno10 5G Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-RENO105G-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "Reno11 Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-RENO11-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "Reno11 F 5G Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-RENO11F5-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "Reno11F Screen Kit",
+    "price": 125.0,
+    "sku": "SRK-SCR-RENO11F-PUL",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Original Screens",
+    "description": "PULL-A OLED"
+  },
+  {
+    "title": "Reno12 F Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-RENO12F-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "Reno13 Pro 5G Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-RENO13PR-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "Reno15 Screen Kit",
+    "price": 259.0,
+    "sku": "SRK-SCR-RENO15-REF",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Original Screens",
+    "description": "REFURB OLED"
+  },
+  {
+    "title": "Reno3 Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-RENO3-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "Reno4 Pro 5G Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-RENO4PRO-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "Reno4 Z 5G Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-RENO4Z5G-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "Reno5 K Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-RENO5K-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "Reno5 Lite Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-RENO5LIT-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "Reno6 Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-RENO6-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "Reno6 Pro Plus 5G Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-RENO6PRO-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "Reno9 Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-RENO9-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "Galaxy A35 5G Screen Kit",
+    "price": 189.0,
+    "sku": "SRK-SCR-GALAXYA3-AS ",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Original Screens",
+    "description": "AS NEW Service Pack"
+  },
+  {
+    "title": "Galaxy A35 5G Screen Kit",
+    "price": 189.0,
+    "sku": "SRK-SCR-GALAXYA3-ASS",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "ASSEMBLED OLED"
+  },
+  {
+    "title": "Galaxy A36 5G Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-GALAXYA3-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "Galaxy A57 5G Screen Kit",
+    "price": 259.0,
+    "sku": "SRK-SCR-GALAXYA5-AS ",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Original Screens",
+    "description": "AS NEW Service Pack"
+  },
+  {
+    "title": "Galaxy S22 Ultra Battery Kit",
+    "price": 99.0,
+    "sku": "SRK-BAT-GALAXYS2-GRE",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "Greencell"
+  },
+  {
+    "title": "Galaxy S23 Ultra 5G Screen Kit",
+    "price": 289.0,
+    "sku": "SRK-SCR-GALAXYS2-BQ7",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "BQ7 OLED with Frame"
+  },
+  {
+    "title": "Galaxy S25 Edge Battery Kit",
+    "price": 89.0,
+    "sku": "SRK-BAT-GALAXYS2-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "Galaxy S26 Plus Screen Kit",
+    "price": 399.0,
+    "sku": "SRK-SCR-GALAXYS2-ASS",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Aftermarket Screens",
+    "description": "ASSEMBLED OLED with Frame"
+  },
+  {
+    "title": "Galaxy S26 Ultra Battery Kit",
+    "price": 129.0,
+    "sku": "SRK-BAT-GALAXYS2-SER",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "Service Pack"
+  },
+  {
+    "title": "Galaxy Tab S10 Ultra Battery Kit",
+    "price": 105.39,
+    "sku": "SRK-BAT-GALAXYTA-SER",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "Service Pack"
+  },
+  {
+    "title": "Galaxy Z Flip3 5G Battery Kit",
+    "price": 129.0,
+    "sku": "SRK-BAT-GALAXYZF-SER",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "Service Pack"
+  },
+  {
+    "title": "Galaxy Z Fold 6 5G Battery Kit",
+    "price": 129.0,
+    "sku": "SRK-BAT-GALAXYZF-AMP",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Batteries",
+    "description": "AMPLUS"
+  },
+  {
+    "title": "Galaxy S26 FE Repair Kit Kit",
+    "price": 89.0,
+    "sku": "SCRAPED",
+    "image": "https://sc04.alicdn.com/kf/A69508164b415474396352c1ea0581a4ad.png",
+    "category": "Standby",
+    "description": "Aftermarket"
+  }
+]

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How to fix the 'non-genuine part' warning after replacing your iPhone screen or battery. What Parts and Service History means, which parts are diagnosable, and what actually stops working.">
+    <meta name="robots" content="index, follow">
+    <title>How to Fix Non-Genuine Part Warning After Screen or Battery Replacement | SelfRepairKit Australia</title>
+    <link rel="icon" type="image/png" href="https://sc04.alicdn.com/kf/Afe45504972c24eb692e65234b2a212046.png?v=2">
+    <script src="https://cdn.tailwindcss.com"></script><script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=DM+Mono&display=swap" rel="stylesheet">
+    <script>tailwind.config={theme:{extend:{colors:{'lab-teal':'#00C2A8','lab-dark':'#3a5a78','lab-header': '#212629'},fontFamily:{sans:['Space Grotesk','sans-serif'],mono:['DM Mono','monospace']}}}}</script>
+    <style>
+        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
+        html { scroll-behavior: smooth; }
+        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
+        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
+        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
+        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
+        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
+        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
+        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
+        .ed-link:hover { background-size:100% 1px; }
+        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
+        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
+        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
+        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
+        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
+        .mobile-menu { transition:all 300ms ease-in-out; }
+        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
+    </style>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How to Fix Non-Genuine Part Warning After Screen or Battery Replacement","description":"Complete guide to iPhone Parts and Service History, diagnosable parts, and what the non-genuine notification actually means for your phone.","author":{"@type":"Organization","name":"SelfRepairKit Australia"},"datePublished":"2026-06-20"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does 'Unable to verify' or 'Unknown Part' mean on iPhone?","acceptedAnswer":{"@type":"Answer","text":"After replacing an iPhone screen or battery with a non-Apple part, iOS shows a notification saying 'Unable to verify this iPhone has a genuine Apple [display/battery].' In Settings > General > About > Parts and Service History, the part shows as 'Unknown Part.' This means Apple's system cannot verify the part's serial number. It does NOT mean the part is defective or dangerous. Your phone works normally — the warning is informational only."}},{"@type":"Question","name":"Does the non-genuine part warning affect my phone's functionality?","acceptedAnswer":{"@type":"Answer","text":"For screens: the phone works fully. Touch, brightness, and display quality are unaffected. True Tone may be disabled (shows as unavailable in Display settings) unless the part is diagnosable and True Tone data is transferred. Face ID continues working if the Face ID module was transferred correctly. For batteries: the phone works fully but Battery Health shows 'Unknown' — you cannot see the maximum capacity percentage. The battery itself charges and performs normally."}},{"@type":"Question","name":"What is a diagnosable part and why does it matter?","acceptedAnswer":{"@type":"Answer","text":"A diagnosable part has a microchip that communicates with Apple's software pairing system. When installed with Apple's Self Service Repair tools or by an authorised technician, iOS can verify and register the part — removing the 'Unknown Part' warning and restoring features like True Tone and Battery Health percentage. Non-diagnosable parts lack this chip and will always show 'Unknown Part' regardless of how they are installed. SelfRepairKit's Pro (OLED) and Elite (OEM) tiers include diagnosable screens where available."}},{"@type":"Question","name":"Can I remove the non-genuine part warning?","acceptedAnswer":{"@type":"Answer","text":"Yes, if the replacement part is diagnosable. You need Apple's System Configuration tool (available through Apple Self Service Repair) to pair the new part with your iPhone's logic board. Once paired, the warning disappears and Parts and Service History shows the part as verified. If the part is non-diagnosable (most budget INCELL screens), the warning cannot be removed — but your phone still works normally. The warning disappears from your lock screen after about 15 days but remains visible in Settings."}}]}</script>
+</head>
+<body class="bg-black text-slate-100 antialiased font-sans">
+    <nav class="border-b border-white/10 sticky top-0 z-50 bg-[#212629] backdrop-blur-md shadow-lg"><div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"><a href="../index.html" class="flex flex-col items-center"><img src="https://sc04.alicdn.com/kf/A8f37323522424136aed4c8f39c13d07dV.png?v=2" alt="SelfRepairKit" class="h-16 w-auto"><span class="text-[8px] font-bold uppercase tracking-[0.2em] text-lab-teal mt-1">Repair with confidence</span></a><div class="hidden md:flex items-center gap-6 text-xs font-bold uppercase tracking-widest text-white"><a href="../shop.html?brand=apple" class="px-3 py-2 hover:text-lab-teal">iPhone Kit</a><a href="../shop.html?brand=samsung" class="px-3 py-2 hover:text-lab-teal">Samsung Kit</a><a href="../shop.html?brand=oppo" class="px-3 py-2 hover:text-lab-teal">OPPO Kit</a><a href="../shop.html?brand=google" class="px-3 py-2 rounded-lg hover:bg-lab-teal/10 hover:text-lab-teal transition-all flex items-center gap-1.5"><i data-lucide="chrome" class="w-3.5 h-3.5"></i>Pixel Kit</a><a href="../guides.html" class="px-3 py-2 hover:text-lab-teal">Guides</a><a href="../blog.html" class="px-3 py-2 text-lab-teal">Blog</a><a href="../shop.html?category=accessories" class="px-3 py-2 text-amber-500">Accessories</a></div></div></nav>
+
+    <article class="max-w-3xl mx-auto px-6 py-16">
+        <nav class="flex items-center gap-2 text-xs text-slate-300 mb-10"><a href="../index.html" class="hover:text-lab-teal">Home</a><span>/</span><a href="../blog.html" class="hover:text-lab-teal">Blog</a><span>/</span><span class="text-white">Non-genuine part warning</span></nav>
+        <header class="mb-12">
+            <p class="font-mono text-lab-teal text-xs mb-4 uppercase tracking-[0.3em]">// DIAGNOSTIC_GUIDE · June 2026</p>
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tighter text-white mb-6 leading-tight">How to Fix the "Non-Genuine Part" Warning After Replacing Your Screen or Battery</h1>
+            <p class="text-xl text-slate-300 leading-relaxed">You replaced your iPhone screen or battery. Now your phone says "Unable to verify this iPhone has a genuine Apple display." Here's what that actually means, what still works, what breaks, and how diagnosable parts fix everything.</p>
+        </header>
+
+        <div class="prose-dark">
+            <div class="glass-card rounded-[24px] p-6 mb-10">
+                <p class="text-[10px] font-bold uppercase tracking-widest text-lab-teal mb-3"><i data-lucide="info" class="w-3.5 h-3.5 inline mr-1"></i>The short version</p>
+                <p class="text-white" style="margin-bottom:0">The "non-genuine part" warning is <strong>informational, not functional</strong>. Your phone works normally. The notification disappears from your lock screen after ~15 days. It stays visible in Settings → General → About → Parts and Service History. If you want it gone completely, you need a <strong>diagnosable part</strong> paired with Apple's System Configuration tool.</p>
+            </div>
+
+            <h2>What you'll see after a DIY repair</h2>
+
+            <p>After replacing the screen or battery on an iPhone 12 or newer, iOS triggers two things:</p>
+
+            <ol>
+                <li><strong>Lock screen notification</strong> — a popup saying "Unable to verify this iPhone has a genuine Apple [display/battery]." This appears for approximately 4 days on the lock screen, then moves to Settings for another 11 days, then disappears from notifications entirely.</li>
+                <li><strong>Parts and Service History entry</strong> — a permanent record in Settings → General → About → Parts and Service History. This shows each replaced component and its verification status.</li>
+            </ol>
+
+            <h2>How to check: Settings → General → About → Parts and Service History</h2>
+
+            <p>Go to <strong>Settings → General → About</strong> and scroll down. If any parts have been replaced, you'll see a <strong>"Parts and Service History"</strong> section. Each component shows one of these statuses:</p>
+
+            <div class="status-card" style="background:rgba(16,185,129,0.08);border-color:rgba(16,185,129,0.2)">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-green-500/20 rounded-lg flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i></div>
+                    <div><p class="font-bold text-green-400 text-sm" style="margin-bottom:0">Genuine Apple Part</p><p class="text-xs text-slate-300" style="margin-bottom:0">Apple-original part, installed and paired by Apple or authorised service.</p></div>
+                </div>
+            </div>
+
+            <div class="status-card" style="background:rgba(0,194,168,0.08);border-color:rgba(0,194,168,0.2)">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-lab-teal/20 rounded-lg flex items-center justify-center"><i data-lucide="shield-check" class="w-5 h-5 text-lab-teal"></i></div>
+                    <div><p class="font-bold text-lab-teal text-sm" style="margin-bottom:0">Replaced with Genuine Apple Part ✓</p><p class="text-xs text-slate-300" style="margin-bottom:0">Genuine or diagnosable part, successfully paired using Apple's System Configuration tool. Full functionality restored.</p></div>
+                </div>
+            </div>
+
+            <div class="status-card" style="background:rgba(245,158,11,0.08);border-color:rgba(245,158,11,0.2)">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-amber-500/20 rounded-lg flex items-center justify-center"><i data-lucide="alert-circle" class="w-5 h-5 text-amber-400"></i></div>
+                    <div><p class="font-bold text-amber-400 text-sm" style="margin-bottom:0">Unknown Part</p><p class="text-xs text-slate-300" style="margin-bottom:0">Part could not be verified. Either non-diagnosable aftermarket, or diagnosable but not yet paired. Phone works normally.</p></div>
+                </div>
+            </div>
+
+            <div class="status-card" style="background:rgba(239,68,68,0.08);border-color:rgba(239,68,68,0.2)">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-red-500/20 rounded-lg flex items-center justify-center"><i data-lucide="x-circle" class="w-5 h-5 text-red-400"></i></div>
+                    <div><p class="font-bold text-red-400 text-sm" style="margin-bottom:0">Important Display/Battery Message</p><p class="text-xs text-slate-300" style="margin-bottom:0">Part has a compatibility issue or installation error. Some features may be limited. Re-check cable connections.</p></div>
+                </div>
+            </div>
+
+            <h2>What actually breaks (and what doesn't)</h2>
+
+            <h3>Screen replacement — what's affected</h3>
+            <div class="overflow-x-auto my-6">
+                <table class="w-full text-sm" style="border-collapse:collapse">
+                    <thead><tr class="text-left text-[10px] font-bold uppercase tracking-widest text-lab-teal border-b border-white/10"><th class="py-3 pr-4">Feature</th><th class="py-3 pr-4">Non-diagnosable</th><th class="py-3 pr-4">Diagnosable (unpaired)</th><th class="py-3">Diagnosable (paired)</th></tr></thead>
+                    <tbody class="text-slate-300">
+                        <tr class="border-b border-white/5"><td class="py-2 pr-4 text-white font-bold">Touch & display</td><td class="py-2 pr-4 text-green-400">✓ Works</td><td class="py-2 pr-4 text-green-400">✓ Works</td><td class="py-2 text-green-400">✓ Works</td></tr>
+                        <tr class="border-b border-white/5"><td class="py-2 pr-4 text-white font-bold">Face ID</td><td class="py-2 pr-4 text-green-400">✓ Works*</td><td class="py-2 pr-4 text-green-400">✓ Works*</td><td class="py-2 text-green-400">✓ Works</td></tr>
+                        <tr class="border-b border-white/5"><td class="py-2 pr-4 text-white font-bold">True Tone</td><td class="py-2 pr-4 text-red-400">✗ Disabled</td><td class="py-2 pr-4 text-amber-400">⚠ Disabled until paired</td><td class="py-2 text-green-400">✓ Restored</td></tr>
+                        <tr class="border-b border-white/5"><td class="py-2 pr-4 text-white font-bold">Auto-brightness</td><td class="py-2 pr-4 text-green-400">✓ Works</td><td class="py-2 pr-4 text-green-400">✓ Works</td><td class="py-2 text-green-400">✓ Works</td></tr>
+                        <tr><td class="py-2 pr-4 text-white font-bold">Parts & Service warning</td><td class="py-2 pr-4 text-amber-400">⚠ Permanent</td><td class="py-2 pr-4 text-amber-400">⚠ Until paired</td><td class="py-2 text-green-400">✓ Cleared</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-xs text-slate-300">*Face ID works if the Face ID flex cable module was transferred correctly from the old screen. If the cable was damaged during transfer, Face ID is permanently lost regardless of part type.</p>
+
+            <h3>Battery replacement — what's affected</h3>
+            <div class="overflow-x-auto my-6">
+                <table class="w-full text-sm" style="border-collapse:collapse">
+                    <thead><tr class="text-left text-[10px] font-bold uppercase tracking-widest text-lab-teal border-b border-white/10"><th class="py-3 pr-4">Feature</th><th class="py-3 pr-4">Non-diagnosable</th><th class="py-3 pr-4">Diagnosable (unpaired)</th><th class="py-3">Diagnosable (paired)</th></tr></thead>
+                    <tbody class="text-slate-300">
+                        <tr class="border-b border-white/5"><td class="py-2 pr-4 text-white font-bold">Charging & power</td><td class="py-2 pr-4 text-green-400">✓ Works</td><td class="py-2 pr-4 text-green-400">✓ Works</td><td class="py-2 text-green-400">✓ Works</td></tr>
+                        <tr class="border-b border-white/5"><td class="py-2 pr-4 text-white font-bold">Battery Health %</td><td class="py-2 pr-4 text-red-400">✗ Shows "Unknown"</td><td class="py-2 pr-4 text-amber-400">⚠ Unknown until paired</td><td class="py-2 text-green-400">✓ Shows percentage</td></tr>
+                        <tr class="border-b border-white/5"><td class="py-2 pr-4 text-white font-bold">Optimised Charging</td><td class="py-2 pr-4 text-amber-400">⚠ May not work</td><td class="py-2 pr-4 text-amber-400">⚠ Until paired</td><td class="py-2 text-green-400">✓ Works</td></tr>
+                        <tr><td class="py-2 pr-4 text-white font-bold">Parts & Service warning</td><td class="py-2 pr-4 text-amber-400">⚠ Permanent</td><td class="py-2 pr-4 text-amber-400">⚠ Until paired</td><td class="py-2 text-green-400">✓ Cleared</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tip-box">
+                <p class="text-lab-teal text-sm"><i data-lucide="lightbulb" class="w-4 h-4 inline mr-1"></i><strong>Key takeaway:</strong> The phone works fully in all cases. The only features you lose are cosmetic — True Tone colour calibration (screen) and Battery Health percentage (battery). No performance, no security, no core functionality is affected.</p>
+            </div>
+
+            <h2>What is a "diagnosable" part?</h2>
+
+            <p>A diagnosable part has an embedded microchip that can communicate with Apple's <strong>System Configuration</strong> pairing software. When a diagnosable part is installed and then paired, iOS registers it as a verified replacement and clears all warnings.</p>
+
+            <p>Here's how it works:</p>
+
+            <ol>
+                <li><strong>Part has a serial chip</strong> — the replacement screen or battery contains a small IC that stores a unique serial number, compatible with Apple's verification system.</li>
+                <li><strong>System Configuration tool runs</strong> — after physical installation, Apple's software (available through Self Service Repair or authorised providers) reads the new part's serial and writes it to the iPhone's logic board.</li>
+                <li><strong>iOS verifies the pairing</strong> — on next boot, iOS checks the logic board records and confirms the part is registered. The "Unknown Part" status changes to verified. True Tone data transfers. Battery Health calibration begins.</li>
+            </ol>
+
+            <h3>Which parts are diagnosable?</h3>
+
+            <div class="overflow-x-auto my-6">
+                <table class="w-full text-sm" style="border-collapse:collapse">
+                    <thead><tr class="text-left text-[10px] font-bold uppercase tracking-widest text-lab-teal border-b border-white/10"><th class="py-3 pr-4">Quality Tier</th><th class="py-3 pr-4">Diagnosable?</th><th class="py-3">Notes</th></tr></thead>
+                    <tbody class="text-slate-300">
+                        <tr class="border-b border-white/5"><td class="py-2.5 pr-4 text-white font-bold">INCELL (Budget)</td><td class="py-2.5 pr-4 text-red-400">✗ No</td><td class="py-2.5">LCD technology, no Apple-compatible serial chip. Will always show "Unknown Part."</td></tr>
+                        <tr class="border-b border-white/5"><td class="py-2.5 pr-4 text-white font-bold">Aftermarket OLED (Pro)</td><td class="py-2.5 pr-4 text-lab-teal">✓ Yes (most models)</td><td class="py-2.5">Quality aftermarket OLED screens increasingly include diagnosable chips. Our Pro tier includes diagnosable screens where available.</td></tr>
+                        <tr class="border-b border-white/5"><td class="py-2.5 pr-4 text-white font-bold">Refurbished OEM</td><td class="py-2.5 pr-4 text-lab-teal">✓ Yes</td><td class="py-2.5">Original panel retains Apple's serial chip from the donor screen. Diagnosable in most cases.</td></tr>
+                        <tr><td class="py-2.5 pr-4 text-white font-bold">OEM Service Pack (Elite)</td><td class="py-2.5 pr-4 text-green-400">✓ Always</td><td class="py-2.5">Factory-sealed original. Full serial chip. Always diagnosable and pairable.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>How to pair a diagnosable part (remove the warning)</h2>
+
+            <p>If you've installed a diagnosable screen or battery, here's how to pair it and clear the warning:</p>
+
+            <h3>Option 1: Apple Self Service Repair (DIY)</h3>
+            <ol>
+                <li>Go to <strong>support.apple.com/self-service-repair</strong></li>
+                <li>Start a repair session for your iPhone model</li>
+                <li>After physically installing the part, use the <strong>System Configuration</strong> tool (runs on a Mac connected to your iPhone via USB-C)</li>
+                <li>The tool reads the new part's serial, pairs it with the logic board, and clears the warning</li>
+                <li>Restart iPhone — Parts and Service History now shows verified status</li>
+            </ol>
+
+            <h3>Option 2: Take it to an Apple Authorised Service Provider</h3>
+            <p>Any Apple Authorised Service Provider (AASP) can run System Configuration on your iPhone — even if you did the physical repair yourself. They charge a small pairing fee (typically $20–$50) without needing to re-do the repair. Call ahead and ask if they offer "third-party part pairing."</p>
+
+            <h3>Option 3: Third-party pairing tools</h3>
+            <p>Some independent repair shops have third-party tools that can transfer True Tone data and serial information between screens. These tools are widely used in the repair industry but are not officially authorised by Apple. They work well for True Tone restoration but may not clear the Parts and Service History entry on newer iOS versions.</p>
+
+            <div class="warn-box">
+                <p class="text-amber-400 text-sm"><i data-lucide="alert-triangle" class="w-4 h-4 inline mr-1"></i><strong>iPhone 15 and newer:</strong> Apple has tightened software pairing on iPhone 15+. Battery Health now requires Apple's System Configuration to display the percentage — third-party pairing tools cannot restore this on iPhone 15/16/17. The battery works fine; you just can't see the health percentage without Apple's official pairing.</p>
+            </div>
+
+            <h2>Can I just ignore the warning?</h2>
+
+            <p><strong>Yes.</strong> Most people do. Here's what happens if you ignore it entirely:</p>
+
+            <ul>
+                <li>Lock screen notification disappears after ~15 days</li>
+                <li>The "Unknown Part" entry stays in Settings → About → Parts and Service History permanently — but nobody looks there</li>
+                <li>Your phone works 100% normally for calls, apps, camera, everything</li>
+                <li>True Tone stays disabled (minor colour warmth difference — most people don't notice)</li>
+                <li>Battery Health shows "Unknown" (battery works fine, you just can't see the percentage)</li>
+                <li>No security implications, no performance throttling, no data at risk</li>
+            </ul>
+
+            <p>The warning exists because Apple wants you to use their authorised service. It's a business decision, not a safety feature. Your aftermarket screen or battery is functionally identical.</p>
+
+            <h2>Samsung and OPPO — do they have the same issue?</h2>
+
+            <p><strong>Samsung:</strong> Yes, but less aggressive. Samsung shows a warning notification after screen replacement on Galaxy S21 and newer. It disappears after a few days. There's no "Parts and Service History" equivalent. The main functional issue is that <strong>budget INCELL screens disable the ultrasonic fingerprint sensor</strong> on Galaxy S-series — this is a hardware limitation, not a software warning. OLED and OEM screens preserve fingerprint. See the <a href="https://repairrange.io/blog/samsung-fingerprint-sensor-screen-replacement-guide.html">Samsung fingerprint guide</a>.</p>
+
+            <p><strong>OPPO:</strong> Minimal restrictions. OPPO phones generally don't show part verification warnings after screen or battery replacement. Some newer ColorOS versions show a brief notification that disappears within a day. No features are disabled.</p>
+
+            <h2>Which SelfRepairKit tier should I buy?</h2>
+
+            <div class="glass-card rounded-2xl p-6 my-8">
+                <h3 style="margin-top:0"><i data-lucide="target" class="w-5 h-5 inline mr-1"></i> Choose based on what matters to you</h3>
+                <div class="space-y-4 mt-4">
+                    <div class="flex items-start gap-3">
+                        <div class="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0"><i data-lucide="coins" class="w-4 h-4 text-slate-300"></i></div>
+                        <div><p class="font-bold text-white text-sm" style="margin-bottom:2px">Budget (INCELL) — "I don't care about the warning"</p><p class="text-xs text-slate-300" style="margin-bottom:0">Cheapest option. Phone works perfectly. Warning stays permanently. True Tone disabled. Best for older iPhones (7–11) or budget-first repairs.</p></div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-8 h-8 bg-lab-teal/10 rounded-lg flex items-center justify-center flex-shrink-0"><i data-lucide="sparkles" class="w-4 h-4 text-lab-teal"></i></div>
+                        <div><p class="font-bold text-white text-sm" style="margin-bottom:2px">Pro (OLED) — "I want the option to clear it later" ⭐</p><p class="text-xs text-slate-300" style="margin-bottom:0">Diagnosable on most models. Can be paired to clear warning and restore True Tone. Best price-to-quality ratio. Our best seller.</p></div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-8 h-8 bg-purple-500/10 rounded-lg flex items-center justify-center flex-shrink-0"><i data-lucide="gem" class="w-4 h-4 text-purple-400"></i></div>
+                        <div><p class="font-bold text-white text-sm" style="margin-bottom:2px">Elite (OEM) — "I want zero warnings, zero compromise"</p><p class="text-xs text-slate-300" style="margin-bottom:0">Always diagnosable. Pairs perfectly. True Tone, Battery Health, everything restored. Identical to Apple's own service result.</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-[24px] p-8 my-10 text-center" style="border-color:rgba(0,194,168,0.3)">
+                <p class="font-mono text-lab-teal text-xs mb-3 uppercase tracking-widest">Choose your quality</p>
+                <h3 class="text-2xl font-bold text-white mb-4" style="margin-top:0">Get a repair kit with the right tier for you</h3>
+                <p class="text-slate-300 text-sm mb-6">Budget if you don't care about warnings. Pro if you want the option. Elite for zero compromise.</p>
+                <div class="flex justify-center gap-3 flex-wrap">
+                    <a href="../shop.html?brand=apple" class="bg-lab-teal text-lab-dark px-6 py-3 rounded-xl font-bold text-sm hover:scale-105 transition-transform">iPhone Kits</a>
+                    <a href="../shop.html?brand=samsung" class="bg-lab-teal text-lab-dark px-6 py-3 rounded-xl font-bold text-sm hover:scale-105 transition-transform">Samsung Kits</a>
+                    <a href="../shop.html?brand=oppo" class="bg-lab-teal text-lab-dark px-6 py-3 rounded-xl font-bold text-sm hover:scale-105 transition-transform">OPPO Kits</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="py-20 border-t border-white/5 bg-[#212629] text-center">
+        <img src="https://sc04.alicdn.com/kf/A8f37323522424136aed4c8f39c13d07dV.png?v=2" class="h-32 mx-auto mb-8 opacity-50">
+        <div class="flex justify-center gap-10 text-[10px] font-bold uppercase tracking-[0.3em] text-slate-300 mb-6"><a href="../index.html" class="hover:text-lab-teal">Home</a><a href="../shop.html" class="hover:text-lab-teal">Shop</a><a href="../blog.html" class="text-lab-teal">Blog</a><a href="../guides.html" class="hover:text-lab-teal">Guides</a></div>
+        <div class="flex justify-center gap-8 text-[10px] uppercase tracking-[0.15em] text-slate-300"><a href="https://repairrange.io" class="hover:text-lab-teal">RepairRange</a><a href="https://www.mayfieldphonerepair.com.au" class="hover:text-lab-teal">Mayfield Phone Repair</a></div>
+    </footer>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

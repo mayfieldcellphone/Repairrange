@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Technical lab notes and DIY phone repair guides. Learn how to fix your iPhone, Samsung, or OPPO at home with expert technician advice.">
+    <meta name="google-site-verification" content="gBw3D4AGaqCG99inkMwiZIpwwdxDLGyrz3-7KrV1cas">
+    <title>Technical Lab Notes | DIY Phone Repair Blog | SelfRepairKit</title>
+    <link rel="icon" type="image/png" href="https://sc04.alicdn.com/kf/Afe45504972c24eb692e65234b2a212046.png?v=2">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=DM+Mono&display=swap" rel="stylesheet">
+    <script>tailwind.config={theme:{extend:{colors:{'lab-teal':'#00C2A8','lab-dark':'#3a5a78','lab-header': '#212629'},fontFamily:{sans:['Space Grotesk','sans-serif'],mono:['DM Mono','monospace']}}}}</script>
+    <style>
+        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
+        html { scroll-behavior: smooth; }
+        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
+        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
+        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
+        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
+        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
+        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
+        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
+        .ed-link:hover { background-size:100% 1px; }
+        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
+        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
+        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
+        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
+        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
+        .mobile-menu { transition:all 300ms ease-in-out; }
+        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-CWRGPBDWZD');</script>
+    <!-- Meta Pixel Code -->
+    <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','2007947063181918');fbq('track','PageView');</script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2007947063181918&ev=PageView&noscript=1"/></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body class="bg-lab-dark text-slate-100 antialiased font-sans">
+
+    <!-- TICKER -->
+    <div class="ticker-wrap border-b border-lab-teal/20">
+        <div class="ticker">
+            <span class="px-8 text-white font-bold">FREE AU POST ON ORDERS OVER $99</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">IN STOCK: IPHONE 17 SERIES KITS</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">SAME DAY DISPATCH FROM NEWCASTLE</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">DIAGNOSABLE BATTERIES AVAILABLE</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">90-DAY WARRANTY ON ALL PARTS</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">FREE AU POST ON ORDERS OVER $99</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">IN STOCK: IPHONE 17 SERIES KITS</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">SAME DAY DISPATCH FROM NEWCASTLE</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">DIAGNOSABLE BATTERIES AVAILABLE</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">90-DAY WARRANTY ON ALL PARTS</span><span class="px-8">&bull;</span>
+        </div>
+    </div>
+
+
+    <!-- STANDARD NAV — same as landing page -->
+    <nav class="border-b border-white/10 sticky top-0 z-50 bg-[#212629] backdrop-blur-md shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex flex-col items-center">
+                <img src="https://sc04.alicdn.com/kf/A8f37323522424136aed4c8f39c13d07dV.png?v=2" alt="SelfRepairKit" class="h-16 w-auto">
+                <span class="text-[8px] font-bold uppercase tracking-[0.2em] text-lab-teal mt-1">Repair with confidence</span>
+            </a>
+            <div class="hidden md:flex items-center gap-6 text-xs font-bold uppercase tracking-widest text-white">
+                <a href="shop.html?brand=apple" class="px-3 py-2 rounded-lg hover:bg-lab-teal/10 hover:text-lab-teal transition-all flex items-center gap-1.5"><i data-lucide="smartphone" class="w-3.5 h-3.5"></i>iPhone Kit</a>
+                <a href="shop.html?brand=samsung" class="px-3 py-2 rounded-lg hover:bg-lab-teal/10 hover:text-lab-teal transition-all flex items-center gap-1.5"><i data-lucide="tablet-smartphone" class="w-3.5 h-3.5"></i>Samsung Kit</a>
+                <a href="shop.html?brand=oppo" class="px-3 py-2 rounded-lg hover:bg-lab-teal/10 hover:text-lab-teal transition-all flex items-center gap-1.5"><i data-lucide="monitor-smartphone" class="w-3.5 h-3.5"></i>OPPO Kit</a>
+                <a href="shop.html?brand=google" class="px-3 py-2 rounded-lg hover:bg-lab-teal/10 hover:text-lab-teal transition-all flex items-center gap-1.5"><i data-lucide="chrome" class="w-3.5 h-3.5"></i>Pixel Kit</a>
+                <a href="guides.html" class="px-3 py-2 rounded-lg hover:bg-lab-teal/10 hover:text-lab-teal transition-all flex items-center gap-1.5"><i data-lucide="play-circle" class="w-3.5 h-3.5"></i>Guides</a>
+                <a href="blog.html" class="px-3 py-2 rounded-lg bg-lab-teal/10 text-lab-teal flex items-center gap-1.5"><i data-lucide="file-text" class="w-3.5 h-3.5"></i>Blog</a>
+                <a href="shop.html?category=accessories" class="px-3 py-2 rounded-lg hover:bg-amber-500/10 text-amber-500 transition-all flex items-center gap-1.5"><i data-lucide="wrench" class="w-3.5 h-3.5"></i>Accessories</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 py-20 lg:py-28 flex flex-col lg:flex-row gap-16">
+        <div class="flex-grow">
+            <p class="font-mono text-lab-teal text-xs uppercase tracking-[0.4em] mb-4">// REPAIR_DOCUMENTATION</p>
+            <h1 class="text-5xl md:text-6xl font-bold text-white tracking-tighter mb-16">Technical Lab Notes.</h1>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <a href="blog/phone-water-damage-what-to-do.html" class="glass-card p-8 rounded-[32px] group">
+                    <span class="text-[10px] font-bold text-lab-teal uppercase tracking-widest block mb-4">Troubleshoot</span>
+                    <h2 class="text-xl font-bold text-white mb-3 group-hover:text-lab-teal transition-colors leading-tight">Phone got wet? What to do (and the rice myth)</h2>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-6">The first ten minutes decide if it survives. What to do, what to avoid, why rice doesn't work, and which water-damage faults you can fix yourself.</p>
+                    <span class="text-lab-teal text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">Read Lab Note <i data-lucide="arrow-right" class="w-3 h-3"></i></span>
+                </a>
+                <a href="blog/samsung-galaxy-screen-replacement-diy-guide.html" class="glass-card p-8 rounded-[32px] group">
+                    <span class="text-[10px] font-bold text-lab-teal uppercase tracking-widest block mb-4">Hardware Guide</span>
+                    <h2 class="text-xl font-bold text-white mb-3 group-hover:text-lab-teal transition-colors leading-tight">Samsung Galaxy screen replacement: a DIY guide</h2>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-6">Why flat A-series screens are easy and curved S-series flagships need a service pack &mdash; plus the step-by-step and the fingerprint-sensor catch.</p>
+                    <span class="text-lab-teal text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">Read Lab Note <i data-lucide="arrow-right" class="w-3 h-3"></i></span>
+                </a>
+                <a href="blog/oppo-screen-replacement-diy-guide.html" class="glass-card p-8 rounded-[32px] group">
+                    <span class="text-[10px] font-bold text-lab-teal uppercase tracking-widest block mb-4">Hardware Guide</span>
+                    <h2 class="text-xl font-bold text-white mb-3 group-hover:text-lab-teal transition-colors leading-tight">OPPO screen replacement: a DIY guide</h2>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-6">LCD or AMOLED? How to tell, why it changes the job, the step-by-step, and which OPPO models are the beginner-friendly ones.</p>
+                    <span class="text-lab-teal text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">Read Lab Note <i data-lucide="arrow-right" class="w-3 h-3"></i></span>
+                </a>
+                <a href="blog/why-wont-my-phone-charge-charging-port-fix.html" class="glass-card p-8 rounded-[32px] group">
+                    <span class="text-[10px] font-bold text-lab-teal uppercase tracking-widest block mb-4">Troubleshoot</span>
+                    <h2 class="text-xl font-bold text-white mb-3 group-hover:text-lab-teal transition-colors leading-tight">Why won't my phone charge? Charging port faults explained</h2>
+                    <p class="text-slate-300 text-xs leading-relaxed mb-6">Rule out the cable, clean the port, then tell a worn charging port from a tired battery &mdash; plus the DIY port swap. Samsung's modular board makes it the beginner-friendly one.</p>
+                    <span class="text-lab-teal text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">Read Lab Note <i data-lucide="arrow-right" class="w-3 h-3"></i></span>
+                </a>
+                <a href="blog/google-pixel-screen-replacement-diy-guide.html" class="glass-card p-8 rounded-[32px] group">
+                    <span class="text-[10px] font-bold text-lab-teal uppercase tracking-widest block mb-4">Hardware Guide</span>
+                    <h2 class="text-xl font-bold text-white mb-3 group-hover:text-lab-teal transition-colors leading-tight">Google Pixel screen replacement: a beginner's DIY guide</h2>
+                    <p class="text-slate-300 text-xs leading-relaxed mb-6">Why OEM matters on Pixel, how the under-display fingerprint sensor changes the job, the step-by-step, and which Pixels are safe to DIY yourself.</p>
+                    <span class="text-lab-teal text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">Read Lab Note <i data-lucide="arrow-right" class="w-3 h-3"></i></span>
+                </a>
+                <a href="blog/how-to-apply-screen-protector-without-bubbles.html" class="glass-card p-8 rounded-[32px] group">
+                    <span class="text-[10px] font-bold text-amber-500 uppercase tracking-widest block mb-4">Accessory Guide</span>
+                    <h2 class="text-xl font-bold text-white mb-3 group-hover:text-lab-teal transition-colors leading-tight">How to apply a screen protector without bubbles</h2>
+                    <p class="text-slate-300 text-xs leading-relaxed mb-6">The 6-step bubble-free method &mdash; beat dust, align before you peel, and rescue a protector that's already gone on wrong.</p>
+                    <span class="text-lab-teal text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">Read Lab Note <i data-lucide="arrow-right" class="w-3 h-3"></i></span>
+                </a>
+                <a href="blog/usb-c-vs-lightning-vs-micro-usb-cable-guide.html" class="glass-card p-8 rounded-[32px] group">
+                    <span class="text-[10px] font-bold text-amber-500 uppercase tracking-widest block mb-4">Accessory Guide</span>
+                    <h2 class="text-xl font-bold text-white mb-3 group-hover:text-lab-teal transition-colors leading-tight">USB-C vs Lightning vs Micro-USB: which cable do you need?</h2>
+                    <p class="text-slate-300 text-xs leading-relaxed mb-6">Identify your connector, match the other end to your charger, fast-charging wattage, and why braided cables last longer.</p>
+                    <span class="text-lab-teal text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">Read Lab Note <i data-lucide="arrow-right" class="w-3 h-3"></i></span>
+                </a>
+                <a href="blog/why-is-my-phone-charging-slowly-fixes.html" class="glass-card p-8 rounded-[32px] group">
+                    <span class="text-[10px] font-bold text-lab-teal uppercase tracking-widest block mb-4">Troubleshoot</span>
+                    <h2 class="text-xl font-bold text-white mb-3 group-hover:text-lab-teal transition-colors leading-tight">Why is my phone charging so slowly? 9 fixes</h2>
+                    <p class="text-slate-300 text-xs leading-relaxed mb-6">Cheapest-first fixes &mdash; clogged port, worn cable, weak adapter &mdash; before you replace anything. Plus how to tell port from battery.</p>
+                    <span class="text-lab-teal text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">Read Lab Note <i data-lucide="arrow-right" class="w-3 h-3"></i></span>
+                </a>
+                <a href="blog/how-to-fix-cracked-phone-screen-at-home.html" class="glass-card p-8 rounded-[32px] group">
+                    <span class="text-[10px] font-bold text-lab-teal uppercase tracking-widest block mb-4">Hardware Guide</span>
+                    <h2 class="text-xl font-bold text-white mb-3 group-hover:text-lab-teal transition-colors leading-tight">How to fix a cracked phone screen at home</h2>
+                    <p class="text-slate-300 text-xs leading-relaxed mb-6">Step-by-step DIY screen replacement for iPhone, Samsung, OPPO. Tools, tiers, cost comparison.</p>
+                    <span class="text-lab-teal text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">Read Lab Note <i data-lucide="arrow-right" class="w-3 h-3"></i></span>
+                </a>
+                <a href="blog/change-iphone-battery-yourself.html" class="glass-card p-8 rounded-[32px] group">
+                    <span class="text-[10px] font-bold text-lab-teal uppercase tracking-widest block mb-4">Maintenance Guide</span>
+                    <h2 class="text-xl font-bold text-white mb-3 group-hover:text-lab-teal transition-colors leading-tight">Can I change my iPhone battery myself?</h2>
+                    <p class="text-slate-300 text-xs leading-relaxed mb-6">DIY battery replacement for every iPhone. Cost comparison, 6-step process, calibration info.</p>
+                    <span class="text-lab-teal text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">Read Lab Note <i data-lucide="arrow-right" class="w-3 h-3"></i></span>
+                </a>
+                <a href="blog/safely-replace-samsung-battery.html" class="glass-card p-8 rounded-[32px] group">
+                    <span class="text-[10px] font-bold text-lab-teal uppercase tracking-widest block mb-4">Step by Step</span>
+                    <h2 class="text-xl font-bold text-white mb-3 group-hover:text-lab-teal transition-colors leading-tight">How to safely replace Samsung phone battery</h2>
+                    <p class="text-slate-300 text-xs leading-relaxed mb-6">Back-panel entry, adhesive dissolution, bloating signs, water resistance after DIY.</p>
+                    <span class="text-lab-teal text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">Read Lab Note <i data-lucide="arrow-right" class="w-3 h-3"></i></span>
+                </a>
+                <a href="blog/what-tools-to-open-iphone.html" class="glass-card p-8 rounded-[32px] group">
+                    <span class="text-[10px] font-bold text-lab-teal uppercase tracking-widest block mb-4">Tool Guide</span>
+                    <h2 class="text-xl font-bold text-white mb-3 group-hover:text-lab-teal transition-colors leading-tight">What tools do I need to open an iPhone?</h2>
+                    <p class="text-slate-300 text-xs leading-relaxed mb-6">The 7 essential tools explained — pentalobe, tri-point, suction cup, spudgers.</p>
+                    <span class="text-lab-teal text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">Read Lab Note <i data-lucide="arrow-right" class="w-3 h-3"></i></span>
+                </a>
+                <a href="blog/phone-battery-draining-fast-fix.html" class="glass-card p-8 rounded-[32px] group">
+                    <span class="text-[10px] font-bold text-lab-teal uppercase tracking-widest block mb-4">Troubleshoot</span>
+                    <h2 class="text-xl font-bold text-white mb-3 group-hover:text-lab-teal transition-colors leading-tight">Phone battery draining fast? How to fix it.</h2>
+                    <p class="text-slate-300 text-xs leading-relaxed mb-6">8 software fixes before replacing. Battery health check for iPhone, Samsung, OPPO.</p>
+                    <span class="text-lab-teal text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">Read Lab Note <i data-lucide="arrow-right" class="w-3 h-3"></i></span>
+                </a>
+                <a href="blog/fix-non-genuine-part-warning-iphone.html" class="glass-card p-8 rounded-[32px] group">
+                    <span class="text-[10px] font-bold text-lab-teal uppercase tracking-widest block mb-4">Diagnostic Guide</span>
+                    <h2 class="text-xl font-bold text-white mb-3 group-hover:text-lab-teal transition-colors leading-tight">Fix the "non-genuine part" warning</h2>
+                    <p class="text-slate-300 text-xs leading-relaxed mb-6">Parts and Service History explained. Diagnosable parts, pairing methods, what actually breaks.</p>
+                    <span class="text-lab-teal text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">Read Lab Note <i data-lucide="arrow-right" class="w-3 h-3"></i></span>
+                </a>
+                <a href="blog/incell-vs-oled-vs-oem-screen-replacement-guide.html" class="glass-card p-8 rounded-[32px] group">
+                    <span class="text-[10px] font-bold text-lab-teal uppercase tracking-widest block mb-4">Hardware Deep Dive</span>
+                    <h2 class="text-xl font-bold text-white mb-3 group-hover:text-lab-teal transition-colors leading-tight">INCELL vs OLED vs OEM: Will my replacement screen work fine?</h2>
+                    <p class="text-slate-300 text-xs leading-relaxed mb-6">Why INCELL screens bulge, break easier, and drain battery. The real engineering difference.</p>
+                    <span class="text-lab-teal text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">Read Lab Note <i data-lucide="arrow-right" class="w-3 h-3"></i></span>
+                </a>
+                <a href="blog/can-you-replace-phone-battery-guide.html" class="glass-card p-8 rounded-[32px] group">
+                    <span class="text-[10px] font-bold text-lab-teal uppercase tracking-widest block mb-4">Essential Guide</span>
+                    <h2 class="text-xl font-bold text-white mb-3 group-hover:text-lab-teal transition-colors leading-tight">Can you replace a phone battery? Everything you need to know.</h2>
+                    <p class="text-slate-300 text-xs leading-relaxed mb-6">Myth-busting, diagnosable batteries, non-genuine warnings, battery lifespan, repair vs replace.</p>
+                    <span class="text-lab-teal text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">Read Lab Note <i data-lucide="arrow-right" class="w-3 h-3"></i></span>
+                </a>
+            </div>
+        </div>
+
+        <aside class="w-full lg:w-80 flex-shrink-0">
+            <div class="sticky top-28 space-y-6">
+                <div class="glass-card p-6 rounded-[24px]">
+                    <h3 class="text-white text-[10px] font-bold uppercase tracking-widest mb-4 flex items-center gap-1.5"><i data-lucide="trending-up" class="w-3.5 h-3.5 text-lab-teal"></i>Quick Links</h3>
+                    <div class="space-y-3">
+                        <a href="shop.html" class="block text-slate-300 hover:text-lab-teal text-xs font-bold transition-colors">→ Shop All Kits</a>
+                        <a href="guides.html" class="block text-slate-300 hover:text-lab-teal text-xs font-bold transition-colors">→ Video Repair Guides</a>
+                        <a href="https://repairrange.io/calculator.html" class="block text-slate-300 hover:text-lab-teal text-xs font-bold transition-colors">→ Repair Cost Calculator</a>
+                        <a href="https://repairrange.io" class="block text-slate-300 hover:text-lab-teal text-xs font-bold transition-colors">→ RepairRange.io</a>
+                        <a href="https://www.mayfieldphonerepair.com.au" class="block text-slate-300 hover:text-lab-teal text-xs font-bold transition-colors">→ Mayfield Phone Repair</a>
+                    </div>
+                </div>
+                <div class="bg-lab-teal/10 border border-lab-teal/20 p-6 rounded-[24px]">
+                    <h3 class="text-lab-teal text-[10px] font-bold uppercase tracking-widest mb-3">Same-Day Dispatch</h3>
+                    <p class="text-slate-300 text-xs leading-relaxed mb-4">Orders placed before 2pm AEST ship same day from Newcastle.</p>
+                    <a href="shop.html" class="inline-block bg-lab-teal text-lab-dark text-[10px] font-bold uppercase tracking-widest px-5 py-2.5 rounded-xl hover:scale-105 transition-transform">Shop Now →</a>
+                </div>
+                <div class="glass-card p-6 rounded-[24px]">
+                    <h3 class="text-white text-[10px] font-bold uppercase tracking-widest mb-3 flex items-center gap-1.5"><i data-lucide="book-open" class="w-3.5 h-3.5 text-lab-teal"></i>From RepairRange</h3>
+                    <div id="rr-links" class="space-y-3"></div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="py-16 border-t border-white/5 bg-[#212629] text-center">
+        <div class="flex justify-center gap-8 text-[10px] uppercase tracking-[0.2em] mb-4 flex-wrap">
+            <a href="index.html" class="text-slate-300 hover:text-lab-teal">Home</a>
+            <a href="shop.html" class="text-slate-300 hover:text-lab-teal">Shop</a>
+            <a href="guides.html" class="text-slate-300 hover:text-lab-teal">Guides</a>
+            <a href="support.html" class="text-slate-300 hover:text-lab-teal">Support</a>
+            <a href="privacy.html" class="text-slate-300 hover:text-lab-teal">Privacy</a>
+            <a href="terms.html" class="text-slate-300 hover:text-lab-teal">Terms</a>
+        </div>
+        <div class="flex justify-center gap-8 text-[10px] uppercase tracking-[0.15em] flex-wrap">
+            <a href="https://repairrange.io" class="text-slate-300 hover:text-lab-teal">RepairRange</a>
+            <a href="https://www.mayfieldphonerepair.com.au" class="text-slate-300 hover:text-lab-teal">Mayfield Phone Repair</a>
+        </div>
+        <p class="text-slate-200 text-[10px] mt-6">© 2026 SelfRepairKit Australia.</p>
+    </footer>
+
+    <script>
+    lucide.createIcons();
+    const rrLinks=[
+        {t:'Phone Repair Costs Australia',u:'https://repairrange.io/repair/phone-repair-costs-australia.html'},
+        {t:'Repair Cost Calculator',u:'https://repairrange.io/calculator.html'},
+        {t:'Find a Repair Shop',u:'https://repairrange.io/locations.html'},
+        {t:'Screen Quality Tiers Guide',u:'https://repairrange.io/blog/screen-quality-tiers-oem-aftermarket-refurbished-explained.html'},
+        {t:'Samsung FRP Bypass Guide',u:'https://repairrange.io/blog/samsung-frp-bypass-google-lock-methods.html'},
+        {t:'Moisture Detected Fix',u:'https://repairrange.io/blog/samsung-moisture-detected-bypass.html'}
+    ];
+    function rotateRR(){const c=document.getElementById('rr-links');const s=rrLinks.sort(()=>0.5-Math.random()).slice(0,3);c.innerHTML=s.map(l=>`<a href="${l.u}" target="_blank" class="block text-slate-300 hover:text-lab-teal text-xs transition-colors flex items-center justify-between group">${l.t} <i data-lucide="external-link" class="w-3 h-3 opacity-0 group-hover:opacity-100"></i></a>`).join('');lucide.createIcons()}
+    rotateRR();setInterval(rotateRR,12000);
+    </script>
+</body>
+</html>

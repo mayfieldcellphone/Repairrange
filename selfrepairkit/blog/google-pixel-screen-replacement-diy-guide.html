@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A beginner's DIY guide to replacing a cracked Google Pixel screen. Why OEM matters on Pixel, how the under-display fingerprint sensor affects the job, the step-by-step, and which Pixel models are safe to attempt yourself. Pixel 3 to Pixel 10.">
+    <meta name="robots" content="index, follow">
+    <title>Google Pixel Screen Replacement: A Beginner's DIY Guide (2026) | SelfRepairKit Australia</title>
+    <link rel="icon" type="image/png" href="https://sc04.alicdn.com/kf/Afe45504972c24eb692e65234b2a212046.png?v=2">
+    <script src="https://cdn.tailwindcss.com"></script><script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=DM+Mono&display=swap" rel="stylesheet">
+    <script>tailwind.config={theme:{extend:{colors:{'lab-teal':'#00C2A8','lab-dark':'#3a5a78','lab-header': '#212629'},fontFamily:{sans:['Space Grotesk','sans-serif'],mono:['DM Mono','monospace']}}}}</script>
+    <style>
+        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
+        html { scroll-behavior: smooth; }
+        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
+        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
+        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
+        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
+        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
+        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
+        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
+        .ed-link:hover { background-size:100% 1px; }
+        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
+        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
+        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
+        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
+        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
+        .mobile-menu { transition:all 300ms ease-in-out; }
+        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
+    </style>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to replace a Google Pixel screen yourself","description":"A step-by-step overview of replacing a cracked Google Pixel OLED screen at home using an OEM replacement assembly.","totalTime":"PT60M","supply":[{"@type":"HowToSupply","name":"OEM Google Pixel screen assembly"},{"@type":"HowToSupply","name":"Opening picks and suction cup"},{"@type":"HowToSupply","name":"Heat pad or hairdryer"},{"@type":"HowToSupply","name":"Precision screwdriver set and spudger"},{"@type":"HowToSupply","name":"Replacement display adhesive"}],"step":[{"@type":"HowToStep","name":"Back up and power off","text":"Back up your data and switch the Pixel off completely before starting."},{"@type":"HowToStep","name":"Soften the adhesive","text":"Apply gentle, even heat around the edge of the screen to soften the adhesive holding it down."},{"@type":"HowToStep","name":"Open from the front","text":"Most Pixel models open at the screen. Work a suction cup and picks around the edge slowly, mindful of the display ribbon along one side."},{"@type":"HowToStep","name":"Disconnect the battery first","text":"Remove any shields and unplug the battery connector before disconnecting the display cable."},{"@type":"HowToStep","name":"Fit the OEM screen","text":"Connect the new OEM display assembly, which includes the under-display fingerprint sensor, and seat its connector."},{"@type":"HowToStep","name":"Test, then seal","text":"Power on and test touch, display and fingerprint before re-adhering. Then re-enrol your fingerprint and confirm Smooth Display is working."}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I replace a Google Pixel screen myself?","acceptedAnswer":{"@type":"Answer","text":"Yes. With a genuine (OEM) replacement screen and a basic tool kit, replacing a Pixel screen is a realistic home repair that usually takes around 45 to 90 minutes. It's a moderate-difficulty job: it involves applying heat to soften adhesive, opening the phone carefully, disconnecting the battery, and re-adhering the new panel. The Pixel 3 through Pixel 10 are all DIY-friendly. The foldable models, the Pixel 9 Pro Fold and 10 Pro Fold, are advanced and not a good first project."}},{"@type":"Question","name":"Will my fingerprint sensor still work after replacing a Pixel screen?","acceptedAnswer":{"@type":"Answer","text":"On the Pixel 6 and every Pixel since, the fingerprint reader is built into the display itself rather than being a separate part. If you fit a genuine OEM screen assembly, the sensor comes with it and continues to work — you simply re-enrol your fingerprint in settings afterward. With cheap aftermarket panels the under-display sensor often will not pair or stops working entirely, which is the main reason OEM is strongly recommended for Pixel screens. The Pixel 5 and earlier use a rear-mounted fingerprint sensor that isn't affected by a screen swap."}},{"@type":"Question","name":"Are aftermarket Pixel screens any good?","acceptedAnswer":{"@type":"Answer","text":"They are the main cause of disappointing Pixel repairs. Because the under-display fingerprint sensor, the high refresh rate Smooth Display, and the auto-brightness behaviour are all tuned to the original panel, bargain aftermarket OLEDs frequently break the fingerprint reader, show inaccurate colours, or run at a lower refresh rate. For a Pixel specifically, a genuine OEM screen is worth the difference because it preserves all of those features."}},{"@type":"Question","name":"Is the Pixel screen glued down?","acceptedAnswer":{"@type":"Answer","text":"Yes. Like almost all modern phones, the Pixel screen is held in place with a strip of adhesive around the edge, so you need to soften it with gentle heat before the screen will lift. When you fit the new screen you apply fresh adhesive to seal it back down. This is why a heat pad or hairdryer and replacement adhesive are part of a proper screen kit."}},{"@type":"Question","name":"How much does a Pixel screen replacement cost?","acceptedAnswer":{"@type":"Answer","text":"A DIY OEM screen kit costs a fraction of a walk-in repair, and the exact figure depends on which Pixel you have — the larger Pro and Pro XL panels cost more than the standard and a-series models. Choose your model in the shop to see the current price for your phone, and compare it against a shop quote on the RepairRange cost calculator before you decide."}}]}</script>
+</head>
+<body class="bg-black text-slate-100 antialiased font-sans">
+    <nav class="border-b border-white/10 sticky top-0 z-50 bg-[#212629] backdrop-blur-md shadow-lg"><div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"><a href="../index.html" class="flex flex-col items-center"><img src="https://sc04.alicdn.com/kf/A8f37323522424136aed4c8f39c13d07dV.png?v=2" alt="SelfRepairKit" class="h-16 w-auto"><span class="text-[8px] font-bold uppercase tracking-[0.2em] text-lab-teal mt-1">Repair with confidence</span></a><div class="hidden md:flex items-center gap-6 text-xs font-bold uppercase tracking-widest text-white"><a href="../shop.html?brand=apple" class="px-3 py-2 hover:text-lab-teal">iPhone Kit</a><a href="../shop.html?brand=samsung" class="px-3 py-2 hover:text-lab-teal">Samsung Kit</a><a href="../shop.html?brand=oppo" class="px-3 py-2 hover:text-lab-teal">OPPO Kit</a><a href="../shop.html?brand=google" class="px-3 py-2 rounded-lg hover:bg-lab-teal/10 hover:text-lab-teal transition-all flex items-center gap-1.5"><i data-lucide="chrome" class="w-3.5 h-3.5"></i>Pixel Kit</a><a href="../guides.html" class="px-3 py-2 hover:text-lab-teal">Guides</a><a href="../blog.html" class="px-3 py-2 text-lab-teal">Blog</a><a href="../shop.html?category=accessories" class="px-3 py-2 text-amber-500">Accessories</a></div></div></nav>
+
+    <article class="max-w-3xl mx-auto px-6 py-16">
+        <nav class="flex items-center gap-2 text-xs text-slate-300 mb-10"><a href="../index.html" class="hover:text-lab-teal">Home</a><span>/</span><a href="../blog.html" class="hover:text-lab-teal">Blog</a><span>/</span><span class="text-white">Pixel screen replacement</span></nav>
+        <header class="mb-12">
+            <p class="font-mono text-lab-teal text-xs mb-4 uppercase tracking-[0.3em]">// REPAIR_GUIDE · June 2026</p>
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tighter text-white mb-6 leading-tight">Google Pixel Screen Replacement: A DIY Guide.</h1>
+            <p class="text-xl text-slate-300 leading-relaxed">Cracked the screen on your Pixel? It's a very doable home repair — but Pixels have one quirk that decides whether it goes smoothly: the fingerprint reader lives under the glass. Here's what that means, why the screen you choose matters more than the technique, and how the job actually goes.</p>
+        </header>
+
+        <div class="prose-dark">
+            <div class="glass-card rounded-[24px] p-6 mb-10">
+                <p class="text-[10px] font-bold uppercase tracking-widest text-lab-teal mb-3"><i data-lucide="chrome" class="w-3.5 h-3.5 inline mr-1"></i>The short answer</p>
+                <p class="text-white" style="margin-bottom:0">Yes, you can replace a Pixel screen yourself. From the <strong>Pixel 6 onward</strong> the fingerprint reader is built <strong>into the display</strong>, so the single biggest factor in success isn't your skill — it's using a <strong>genuine OEM screen</strong>. Fit an OEM assembly and the fingerprint sensor, Smooth Display and colours all keep working (you just re-enrol your fingerprint afterward). Fit a cheap aftermarket panel and the fingerprint reader often dies. That's why our Pixel kits are OEM only.</p>
+            </div>
+
+            <h2>Can you replace a Pixel screen yourself?</h2>
+            <p>Comfortably, yes — it's a <strong>moderate-difficulty</strong> repair that takes most people <strong>45 to 90 minutes</strong> the first time. The work itself is the same family of steps as any modern phone: heat to soften the adhesive, open carefully, disconnect the battery, swap the panel, re-seal. What sets the Pixel apart is the fingerprint sensor under the glass, which is entirely manageable as long as you use the right screen.</p>
+
+            <h2>Why the screen you choose matters more on a Pixel</h2>
+            <p>On most phones a cheaper screen just means slightly different colours. On a Pixel it can mean lost features, because three things are tuned to the original OLED panel:</p>
+            <ul>
+                <li><strong>The under-display fingerprint sensor</strong> (Pixel 6 and newer) — bonded to the display and paired to it.</li>
+                <li><strong>Smooth Display</strong> — the 90Hz or 120Hz high refresh rate on Pro models.</li>
+                <li><strong>Adaptive brightness and colour accuracy</strong> — calibrated to the panel.</li>
+            </ul>
+            <p>Bargain aftermarket Pixel panels routinely break the fingerprint reader, drop to 60Hz, or show washed-out colours. A genuine <strong>OEM</strong> assembly keeps all of it. For a Pixel specifically, OEM isn't a luxury — it's the difference between a phone that works properly afterward and one that doesn't.</p>
+
+            <div class="warn-box">
+                <p class="text-amber-400 text-sm" style="margin-bottom:0"><i data-lucide="fingerprint" class="w-4 h-4 inline mr-1"></i><strong>The under-display fingerprint sensor:</strong> On the Pixel 6 and every Pixel since, the reader is part of the screen, not a separate component. With an OEM screen the sensor comes attached and works after you re-enrol your fingerprint in Settings. With a low-cost aftermarket screen it may never pair. (The Pixel 5 and earlier use a rear fingerprint sensor, so they're unaffected by a screen swap.)</p>
+            </div>
+
+            <h2>What the job needs</h2>
+            <p>A proper Pixel screen kit includes everything below — if you're sourcing parts separately, make sure you have:</p>
+            <ul>
+                <li>An <strong>OEM screen assembly</strong> for your exact Pixel model</li>
+                <li>A heat source (heat pad or hairdryer) to soften the adhesive</li>
+                <li>Opening picks and a suction cup</li>
+                <li>A precision screwdriver set and a spudger</li>
+                <li>Fresh display adhesive to re-seal</li>
+            </ul>
+
+            <h2>How a Pixel screen replacement goes</h2>
+
+            <div class="step-card"><p class="font-bold text-white text-sm" style="margin-bottom:4px">1. Back up and power off</p><p class="text-xs text-slate-300" style="margin-bottom:0">Back up your phone and shut it down fully. Never open a phone that's still on.</p></div>
+            <div class="step-card"><p class="font-bold text-white text-sm" style="margin-bottom:4px">2. Soften the adhesive</p><p class="text-xs text-slate-300" style="margin-bottom:0">Warm the edges of the screen evenly with a heat pad or hairdryer until the adhesive loosens. Warm, not hot — you're softening glue, not cooking the phone.</p></div>
+            <div class="step-card"><p class="font-bold text-white text-sm" style="margin-bottom:4px">3. Open from the front</p><p class="text-xs text-slate-300" style="margin-bottom:0">Most Pixels open at the screen. Get a suction cup on the glass, slip a pick into the seam, and work slowly around the edge. The display ribbon runs along one side — go gently there so you don't tear it.</p></div>
+            <div class="step-card"><p class="font-bold text-white text-sm" style="margin-bottom:4px">4. Disconnect the battery first</p><p class="text-xs text-slate-300" style="margin-bottom:0">Remove any metal shields, then unplug the battery connector before you disconnect the display cable. Battery first, always.</p></div>
+            <div class="step-card"><p class="font-bold text-white text-sm" style="margin-bottom:4px">5. Fit the OEM screen</p><p class="text-xs text-slate-300" style="margin-bottom:0">Connect the new OEM display assembly — the fingerprint sensor comes with it — and seat the connector firmly. Reconnect the battery.</p></div>
+            <div class="step-card" style="margin-bottom:1.5rem"><p class="font-bold text-white text-sm" style="margin-bottom:4px">6. Test, then seal and re-enrol</p><p class="text-xs text-slate-300" style="margin-bottom:0">Power on and check touch, display, and the fingerprint reader <strong>before</strong> you glue anything. Then apply fresh adhesive, seal the screen, re-enrol your fingerprint, and confirm Smooth Display is running.</p></div>
+
+            <div class="tip-box">
+                <p class="text-lab-teal text-sm" style="margin-bottom:0"><i data-lucide="lightbulb" class="w-4 h-4 inline mr-1"></i><strong>Pro tip:</strong> Always do a full test — touch across the whole screen, brightness, and a fingerprint enrolment — <em>before</em> you re-adhere the panel. It's a two-minute check that saves you peeling a freshly glued screen back off.</p>
+            </div>
+
+            <h2>Which Pixels are DIY-friendly?</h2>
+            <p>The whole mainstream line is approachable: <strong>Pixel 3 through Pixel 10</strong>, including the a-series and the Pro and Pro XL models. The two to leave to a professional are the foldables — the <strong>Pixel 9 Pro Fold</strong> and <strong>10 Pro Fold</strong> — whose flexible inner displays and hinges make them an expert-level repair, not a first one.</p>
+
+            <div class="glass-card rounded-[24px] p-8 my-10 text-center" style="border-color:rgba(0,194,168,0.3)">
+                <p class="font-mono text-lab-teal text-xs mb-3 uppercase tracking-widest"><i data-lucide="chrome" class="w-4 h-4 inline mr-1"></i>Google Pixel screen kits</p>
+                <h3 class="text-2xl font-bold text-white mb-4" style="margin-top:0">OEM Pixel screens for Pixel 3 to Pixel 10</h3>
+                <p class="text-slate-300 text-sm mb-6">Genuine OEM display assemblies with the under-display fingerprint sensor intact, plus the tools and adhesive to fit them. Pick your exact Pixel to see live pricing. Same-day dispatch from Newcastle, 90-day warranty.</p>
+                <a href="../shop.html?brand=google" class="inline-block bg-lab-teal text-lab-dark px-8 py-3 rounded-xl font-bold text-sm hover:scale-105 transition-transform">Shop Pixel Kits →</a>
+            </div>
+
+            <p>Still weighing up screen grades? Our <a href="incell-vs-oled-vs-oem-screen-replacement-guide.html">INCELL vs OLED vs OEM guide</a> explains why OEM matters on OLED phones like the Pixel. If the glass is cracked but the display still works perfectly, read <a href="how-to-fix-cracked-phone-screen-at-home.html">how to fix a cracked phone screen at home</a> first — though on a bonded OLED you usually replace the whole assembly. And to sanity-check the cost against a walk-in repair, use the <a href="https://repairrange.io/calculator.html">RepairRange cost calculator</a>.</p>
+        </div>
+    </article>
+
+    <footer class="py-20 border-t border-white/5 bg-[#212629] text-center">
+        <img src="https://sc04.alicdn.com/kf/A8f37323522424136aed4c8f39c13d07dV.png?v=2" class="h-32 mx-auto mb-8 opacity-50" alt="SelfRepairKit">
+        <div class="flex justify-center gap-10 text-[10px] font-bold uppercase tracking-[0.3em] text-slate-300 mb-6"><a href="../index.html" class="hover:text-lab-teal">Home</a><a href="../shop.html" class="hover:text-lab-teal">Shop</a><a href="../blog.html" class="text-lab-teal">Blog</a><a href="../guides.html" class="hover:text-lab-teal">Guides</a></div>
+        <div class="flex justify-center gap-8 text-[10px] uppercase tracking-[0.15em] text-slate-300"><a href="https://repairrange.io" class="hover:text-lab-teal">RepairRange</a><a href="https://www.mayfieldphonerepair.com.au" class="hover:text-lab-teal">Mayfield Phone Repair</a></div>
+    </footer>
+    <script>window.addEventListener('load',function(){if(window.lucide)lucide.createIcons();});</script>
+</body>
+</html>

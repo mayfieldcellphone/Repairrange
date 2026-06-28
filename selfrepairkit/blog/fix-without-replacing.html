@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guides & Insights | SelfRepairKit™</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
+        html { scroll-behavior: smooth; }
+        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
+        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
+        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
+        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
+        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
+        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
+        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
+        .ed-link:hover { background-size:100% 1px; }
+        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
+        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
+        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
+        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
+        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
+        .mobile-menu { transition:all 300ms ease-in-out; }
+        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
+    </style>
+</head>
+<body class="antialiased bg-black text-slate-100">
+    
+    <article class="max-w-4xl mx-auto px-6 py-20">
+        <header class="text-center mb-16">
+            <p class="text-[#00C2A8] font-mono text-xs uppercase tracking-widest mb-4">// ENGINEER_INSIGHTS_001</p>
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">Can You Fix a Phone Screen Without Replacing It?</h1>
+            <div class="flex justify-center gap-4 text-slate-200 text-sm">
+                <span>By SRK Engineering Team</span>
+                <span>•</span>
+                <span>June 21, 2026</span>
+            </div>
+        </header>
+
+        <section class="prose prose-invert max-w-none space-y-8 text-lg text-slate-300 leading-relaxed">
+            <p>It starts with a small drop. Then, a single hairline crack across your beautiful $1,500 display. The first instinct for many Australians is to search for a way to <strong>fix a phone screen without replacing it</strong>. But can it actually be done?</p>
+            
+            <h2 class="text-2xl font-bold text-white mt-12">The Myths: Toothpaste, Baking Soda, and Magic Liquids</h2>
+            <p>You may have seen "hacks" on social media suggesting that toothpaste or a paste made of baking soda can buff out a crack. As engineers, we can tell you plainly: <strong>this does not work.</strong> Modern smartphone screens are made of chemically strengthened glass. These household items might smooth out microscopic surface scratches, but they cannot repair a structural crack.</p>
+
+            <div class="bg-black border-l-4 border-[#00C2A8] p-8 my-10 rounded-r-2xl">
+                <p class="text-white font-bold mb-2">💡 Pro Tip:</p>
+                <p>Using liquid glass "gap fillers" often seeps into the digitizer layer, causing permanent touch-unresponsiveness. Don't risk your phone's motherboard for a $10 temporary fix.</p>
+            </div>
+
+            <h2 class="text-2xl font-bold text-white mt-12">The Reality: Why Replacement is the Only Safe Path</h2>
+            <p>Once the glass is cracked, the structural integrity of the display is gone. Moisture, dust, and pressure from your thumb will eventually damage the OLED or LCD panel beneath. The most cost-effective and permanent solution is a full screen replacement using an <strong>engineer-approved kit</strong>.</p>
+        </section>
+
+        <!-- CTA Section -->
+        <div class="mt-20 p-10 bg-gradient-to-br from-[#00C2A8]/20 to-transparent border border-[#00C2A8]/30 rounded-3xl text-center">
+            <h3 class="text-2xl font-bold text-white mb-4">Fix it properly, once and for all.</h3>
+            <p class="text-slate-300 mb-8">Get the exact same hardware and precision tools used by pro technicians.</p>
+            <a href="../shop.html" class="inline-block bg-black text-black font-bold px-10 py-4 rounded-xl hover:scale-105 transition-transform">Browse Repair Kits</a>
+        </div>
+
+        <!-- SEO Footer Links -->
+        <footer class="mt-20 pt-10 border-t border-white/10 text-xs text-slate-200">
+            <p>Keywords: fix screen without replacing, phone repair Newcastle, DIY repair kits Australia</p>
+            <p class="mt-4">Proudly supported by <a href="https://repairrange.io" class="underline">RepairRange.io</a> and <a href="https://mayfieldphonerepair.com.au" class="underline">Mayfield Phone Repair</a>.</p>
+        </footer>
+    </article>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Can you fix a cracked phone screen without replacing it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Technically, no. Surface-level scratches can be buffed, but structural cracks require a full display replacement to prevent moisture damage and touch sensor failure."
+        }
+      }]
+    }
+    </script>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmed | SelfRepairKit Australia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=DM+Mono&display=swap" rel="stylesheet">
+    <script>tailwind.config={theme:{extend:{colors:{'lab-teal':'#00C2A8','lab-dark':'#3a5a78','lab-header': '#212629'},fontFamily:{sans:['Space Grotesk','sans-serif'],mono:['DM Mono','monospace']}}}}</script>
+</head>
+<body class="bg-lab-dark text-slate-100 antialiased font-sans flex items-center justify-center min-h-screen">
+    <div class="max-w-md w-full px-6 text-center">
+        <div class="mb-8">
+            <div class="w-20 h-20 bg-lab-teal/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <i data-lucide="check-circle" class="w-10 h-10 text-lab-teal"></i>
+            </div>
+            <h1 class="text-4xl font-bold text-white tracking-tighter mb-4">Order Received!</h1>
+            <p class="text-slate-300 mb-8">Thank you for your order. We are preparing your repair kit for same-day dispatch from Newcastle.</p>
+        </div>
+        
+        <div class="bg-white/5 border border-white/10 rounded-[32px] p-8 mb-8">
+            <h3 class="text-lab-teal font-mono text-xs uppercase tracking-widest mb-4">What's Next?</h3>
+            <ul class="text-left space-y-4 text-sm">
+                <li class="flex gap-3"><i data-lucide="mail" class="w-5 h-5 text-lab-teal shrink-0"></i> <span>Check your email for a receipt and tracking number.</span></li>
+                <li class="flex gap-3"><i data-lucide="play-circle" class="w-5 h-5 text-lab-teal shrink-0"></i> <span>Watch the <a href="guides.html" class="text-lab-teal underline">Video Repair Guide</a> while you wait.</span></li>
+                <li class="flex gap-3"><i data-lucide="wrench" class="w-5 h-5 text-lab-teal shrink-0"></i> <span>Clear a clean, well-lit workspace for your repair.</span></li>
+            </ul>
+        </div>
+
+        <a href="index.html" class="inline-block bg-lab-teal text-lab-dark px-10 py-4 rounded-2xl font-bold hover:scale-105 transition-transform">Return to Home</a>
+    </div>
+
+    <script>
+        lucide.createIcons();
+        // Clear cart on success
+        localStorage.removeItem('srk_cart');
+    </script>
+</body>
+</html>

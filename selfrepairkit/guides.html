@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free DIY phone repair video guides. Step-by-step screen replacement and battery replacement tutorials for iPhone, Samsung Galaxy, and OPPO. Watch, follow along, fix your phone.">
+    <meta name="robots" content="index, follow">
+    <title>DIY Phone Repair Guides — Free Video Tutorials | SelfRepairKit Australia</title>
+    <link rel="icon" type="image/png" href="https://sc04.alicdn.com/kf/Afe45504972c24eb692e65234b2a212046.png?v=2">
+    <script src="https://cdn.tailwindcss.com"></script><script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=DM+Mono&display=swap" rel="stylesheet">
+    <script>tailwind.config={theme:{extend:{colors:{'lab-teal':'#00C2A8','lab-dark':'#3a5a78','lab-header': '#212629'},fontFamily:{sans:['Space Grotesk','sans-serif'],mono:['DM Mono','monospace']}}}}</script>
+    <style>
+        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
+        html { scroll-behavior: smooth; }
+        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
+        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
+        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
+        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
+        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
+        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
+        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
+        .ed-link:hover { background-size:100% 1px; }
+        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
+        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
+        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
+        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
+        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
+        .mobile-menu { transition:all 300ms ease-in-out; }
+        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
+    </style>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to Replace a Phone Screen at Home","description":"Step-by-step DIY phone screen replacement guide for iPhone, Samsung, and OPPO","step":[{"@type":"HowToStep","name":"Power Off & Remove Screws","text":"Power off completely. Remove SIM tray. Remove bottom screws using the pentalobe (iPhone) or Phillips (Samsung/OPPO) screwdriver from your kit."},{"@type":"HowToStep","name":"Heat & Separate Screen","text":"Apply heat to edges for 60-90 seconds. Attach suction cup, pull gently, slide pry tool into gap. Work around all edges slowly."},{"@type":"HowToStep","name":"Disconnect Battery","text":"Remove battery connector bracket screws. Pop battery connector up with plastic spudger. This de-powers the phone — essential before touching display cables."},{"@type":"HowToStep","name":"Remove Old Screen","text":"Remove display cable bracket. Disconnect 2-3 display flex cables by lifting straight up. Transfer components (earpiece, camera, sensors) from old screen to new."},{"@type":"HowToStep","name":"Install New Screen","text":"Connect new screen cables. Reconnect battery. Apply adhesive strips. Lower screen into position, press around all edges."},{"@type":"HowToStep","name":"Test Everything","text":"Power on. Test touch, Face ID/fingerprint, proximity sensor, front camera, brightness, True Tone. If all good, replace bottom screws."}]}</script>
+</head>
+<body class="bg-black text-slate-100 antialiased font-sans">
+
+    <!-- TICKER -->
+    <div class="ticker-wrap border-b border-lab-teal/20">
+        <div class="ticker">
+            <span class="px-8 text-white font-bold">FREE AU POST ON ORDERS OVER $99</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">IN STOCK: IPHONE 17 SERIES KITS</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">SAME DAY DISPATCH FROM NEWCASTLE</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">DIAGNOSABLE BATTERIES AVAILABLE</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">90-DAY WARRANTY ON ALL PARTS</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">FREE AU POST ON ORDERS OVER $99</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">IN STOCK: IPHONE 17 SERIES KITS</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">SAME DAY DISPATCH FROM NEWCASTLE</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">DIAGNOSABLE BATTERIES AVAILABLE</span><span class="px-8">&bull;</span>
+            <span class="px-8 text-white font-bold">90-DAY WARRANTY ON ALL PARTS</span><span class="px-8">&bull;</span>
+        </div>
+    </div>
+
+    <nav class="border-b border-white/10 sticky top-0 z-50 bg-[#212629] backdrop-blur-md shadow-lg"><div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"><a href="index.html" class="flex flex-col items-center"><img src="https://sc04.alicdn.com/kf/A8f37323522424136aed4c8f39c13d07dV.png?v=2" alt="SelfRepairKit" class="h-16 w-auto"><span class="text-[8px] font-bold uppercase tracking-[0.2em] text-lab-teal mt-1">Repair with confidence</span></a><div class="hidden md:flex items-center gap-6 text-xs font-bold uppercase tracking-widest text-white"><a href="shop.html?brand=apple" class="px-3 py-2 rounded-lg hover:bg-lab-teal/10 hover:text-lab-teal transition-all flex items-center gap-1.5"><i data-lucide="smartphone" class="w-3.5 h-3.5"></i>iPhone Kit</a><a href="shop.html?brand=samsung" class="px-3 py-2 rounded-lg hover:bg-lab-teal/10 hover:text-lab-teal transition-all flex items-center gap-1.5"><i data-lucide="tablet-smartphone" class="w-3.5 h-3.5"></i>Samsung Kit</a><a href="shop.html?brand=oppo" class="px-3 py-2 rounded-lg hover:bg-lab-teal/10 hover:text-lab-teal transition-all flex items-center gap-1.5"><i data-lucide="monitor-smartphone" class="w-3.5 h-3.5"></i>OPPO Kit</a><a href="shop.html?brand=google" class="px-3 py-2 rounded-lg hover:bg-lab-teal/10 hover:text-lab-teal transition-all flex items-center gap-1.5"><i data-lucide="chrome" class="w-3.5 h-3.5"></i>Pixel Kit</a><a href="guides.html" class="px-3 py-2 rounded-lg bg-lab-teal/10 text-lab-teal flex items-center gap-1.5"><i data-lucide="play-circle" class="w-3.5 h-3.5"></i>Guides</a><a href="blog.html" class="px-3 py-2 rounded-lg hover:bg-lab-teal/10 hover:text-lab-teal transition-all flex items-center gap-1.5"><i data-lucide="file-text" class="w-3.5 h-3.5"></i>Blog</a><a href="shop.html?category=accessories" class="px-3 py-2 rounded-lg hover:bg-amber-500/10 text-amber-500 transition-all flex items-center gap-1.5"><i data-lucide="wrench" class="w-3.5 h-3.5"></i>Accessories</a></div></div></nav>
+
+    <!-- HERO -->
+    <section class="py-20 border-b border-white/5 bg-black/30">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="font-mono text-lab-teal text-xs uppercase tracking-[0.4em] mb-4">// REPAIR_ACADEMY</p>
+            <h1 class="text-5xl md:text-6xl font-bold tracking-tighter text-white mb-6">Free Repair Guides</h1>
+            <p class="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">Watch the video. Follow the steps. Fix your phone. Every SelfRepairKit includes a QR code that links directly to your model's guide.</p>
+            <div class="flex justify-center gap-4 mt-8 flex-wrap">
+                <span class="bg-white/5 border border-white/10 px-4 py-2 rounded-full text-[10px] font-bold uppercase text-slate-100 flex items-center gap-1.5"><i data-lucide="play-circle" class="w-3.5 h-3.5 text-lab-teal"></i>Video Tutorials</span>
+                <span class="bg-white/5 border border-white/10 px-4 py-2 rounded-full text-[10px] font-bold uppercase text-slate-100 flex items-center gap-1.5"><i data-lucide="list-checks" class="w-3.5 h-3.5 text-lab-teal"></i>Written Steps</span>
+                <span class="bg-white/5 border border-white/10 px-4 py-2 rounded-full text-[10px] font-bold uppercase text-slate-100 flex items-center gap-1.5"><i data-lucide="qr-code" class="w-3.5 h-3.5 text-lab-teal"></i>QR on Every Kit</span>
+                <span class="bg-white/5 border border-white/10 px-4 py-2 rounded-full text-[10px] font-bold uppercase text-slate-100 flex items-center gap-1.5"><i data-lucide="badge-check" class="w-3.5 h-3.5 text-lab-teal"></i>Technician Verified</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- GUIDE TABS -->
+    <div class="max-w-4xl mx-auto px-6 pt-12">
+        <div class="flex gap-2 border-b border-white/10 overflow-x-auto" id="guide-tabs">
+            <button class="guide-tab active" onclick="showGuide('iphone')"><i data-lucide="smartphone" class="w-4 h-4 inline mr-1"></i>iPhone</button>
+            <button class="guide-tab" onclick="showGuide('samsung')"><i data-lucide="tablet-smartphone" class="w-4 h-4 inline mr-1"></i>Samsung</button>
+            <button class="guide-tab" onclick="showGuide('oppo')"><i data-lucide="monitor-smartphone" class="w-4 h-4 inline mr-1"></i>OPPO</button>
+        </div>
+    </div>
+
+    <!-- IPHONE GUIDE -->
+    <section id="guide-iphone" class="guide-section max-w-4xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-10">
+            <div class="lg:col-span-3">
+                <h2 class="text-3xl font-bold tracking-tighter mb-2">iPhone Screen & Battery Replacement</h2>
+                <p class="text-slate-300 text-sm mb-6">Covers all iPhones from iPhone 7 to iPhone 17 Pro Max. Front-entry method.</p>
+
+                <!-- VIDEO EMBED -->
+                <div id="video-iphone" class="video-placeholder mb-8" onclick="this.innerHTML='<p class=\'text-lab-teal text-sm\'>Video coming soon — subscribe to be notified</p>'">
+                    <i data-lucide="play-circle" class="w-16 h-16 text-lab-teal mb-4"></i>
+                    <p class="text-white font-bold text-lg">iPhone Repair Guide</p>
+                    <p class="text-slate-300 text-xs mt-1">4-5 min · Screen & Battery · All Models</p>
+                    <p class="text-lab-teal text-[10px] mt-3 uppercase tracking-widest font-bold">Click to play</p>
+                </div>
+                <!-- Replace placeholder with real YouTube embed:
+                <iframe class="w-full aspect-video rounded-2xl" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                -->
+
+                <h3 class="text-lg font-bold text-lab-teal mb-4 flex items-center gap-2"><i data-lucide="list-ordered" class="w-5 h-5"></i>Written Steps</h3>
+
+                <div class="step-row"><div class="step-circle">1</div><div><p class="font-bold text-white text-sm">Power off & remove bottom screws</p><p class="text-slate-300 text-xs mt-1">Two pentalobe screws beside the charging port. Use the magnetic screwdriver from your kit. Place screws on the magnetic mat — they're tiny.</p></div></div>
+
+                <div class="step-row"><div class="step-circle">2</div><div><p class="font-bold text-white text-sm">Heat edges & suction cup open</p><p class="text-slate-300 text-xs mt-1">Hair dryer on low for 60-90 seconds around all edges. Attach suction cup near bottom, pull up gently, slide pry tool into gap. iPhone 7-SE3: opens left like a book. iPhone 12-17: opens from bottom upward.</p><div class="warn-card"><p class="text-amber-400 text-xs"><i data-lucide="alert-triangle" class="w-3 h-3 inline mr-1"></i><strong>Face ID warning:</strong> Don't insert pry tools more than 2mm on the top edge — the Face ID cable is right there.</p></div></div></div>
+
+                <div class="step-row"><div class="step-circle">3</div><div><p class="font-bold text-white text-sm">Disconnect battery first</p><p class="text-slate-300 text-xs mt-1">Remove the metal bracket (2-3 Phillips screws). Pop battery connector up with plastic spudger. This de-powers the phone — essential before touching any other cable.</p></div></div>
+
+                <div class="step-row"><div class="step-circle">4</div><div><p class="font-bold text-white text-sm">Disconnect display cables</p><p class="text-slate-300 text-xs mt-1">Remove the display cable bracket (3-4 tiny screws). Lift each connector straight up — don't slide or twist. There are typically 2-3 flex cables.</p><div class="tip-card"><p class="text-lab-teal text-xs"><i data-lucide="info" class="w-3 h-3 inline mr-1"></i><strong>Screen repair:</strong> Transfer the earpiece speaker, front camera, and Face ID module from old screen to new. <strong>Battery repair:</strong> Skip this — just remove battery using pull tabs.</p></div></div></div>
+
+                <div class="step-row"><div class="step-circle">5</div><div><p class="font-bold text-white text-sm">Install new part</p><p class="text-slate-300 text-xs mt-1"><strong>Screen:</strong> Connect new screen cables (push until click). <strong>Battery:</strong> Apply new adhesive strips, lower battery into well, connect. Reconnect battery connector in both cases.</p></div></div>
+
+                <div class="step-row"><div class="step-circle">6</div><div><p class="font-bold text-white text-sm">Seal & test everything</p><p class="text-slate-300 text-xs mt-1">Apply adhesive strips around frame. Lower screen, press all edges. Replace bottom screws. Power on and test: touch response, Face ID, proximity sensor (make a call), front camera, True Tone, brightness.</p><div class="tip-card"><p class="text-lab-teal text-xs"><i data-lucide="check-circle" class="w-3 h-3 inline mr-1"></i><strong>Always test BEFORE final seal.</strong> If something doesn't work, it's much easier to re-open before the adhesive sets.</p></div></div></div>
+            </div>
+
+            <div class="lg:col-span-2">
+                <div class="glass-card rounded-2xl p-6 sticky top-28 space-y-6">
+                    <h4 class="text-[10px] font-bold uppercase tracking-widest text-lab-teal flex items-center gap-1.5"><i data-lucide="smartphone" class="w-3.5 h-3.5"></i>Model-Specific Notes</h4>
+
+                    <div class="space-y-3 text-xs">
+                        <div class="border-l-2 border-lab-teal pl-3"><p class="font-bold text-white">iPhone 17 / 17 Pro / Air</p><p class="text-slate-300">USB-C port. Titanium frame. Same front-entry process. Face ID cable on left side.</p></div>
+                        <div class="border-l-2 border-white/10 pl-3"><p class="font-bold text-white">iPhone 15 / 16 series</p><p class="text-slate-300">USB-C port. Software battery pairing (health shows "Unknown" after DIY). Repair works fine.</p></div>
+                        <div class="border-l-2 border-white/10 pl-3"><p class="font-bold text-white">iPhone 12 / 13 / 14 series</p><p class="text-slate-300">Lightning port. MagSafe magnet ring — don't displace during repair. Standard process.</p></div>
+                        <div class="border-l-2 border-white/10 pl-3"><p class="font-bold text-white">iPhone 7 / 8 / SE / X / 11</p><p class="text-slate-300">Older models — cheapest kits, easiest repairs. No MagSafe. Lightning connector.</p></div>
+                    </div>
+
+                    <div class="border-t border-white/10 pt-4">
+                        <h4 class="text-[10px] font-bold uppercase tracking-widest text-lab-teal mb-3 flex items-center gap-1.5"><i data-lucide="package" class="w-3.5 h-3.5"></i>Get Your Kit</h4>
+                        <a href="shop.html?brand=apple" class="block w-full bg-lab-teal text-lab-dark py-3 rounded-xl font-bold text-sm text-center hover:scale-[1.02] transition-transform">iPhone Kits from $22 →</a>
+                    </div>
+
+                    <div class="border-t border-white/10 pt-4">
+                        <h4 class="text-[10px] font-bold uppercase tracking-widest text-slate-300 mb-3 flex items-center gap-1.5"><i data-lucide="book-open" class="w-3.5 h-3.5"></i>Related Guides</h4>
+                        <div class="space-y-2 text-xs">
+                            <a href="blog/change-iphone-battery-yourself.html" class="block text-slate-300 hover:text-lab-teal">→ Can I change my iPhone battery myself?</a>
+                            <a href="blog/how-to-fix-cracked-phone-screen-at-home.html" class="block text-slate-300 hover:text-lab-teal">→ How to fix a cracked screen at home</a>
+                            <a href="https://repairrange.io/blog/screen-quality-tiers-oem-aftermarket-refurbished-explained.html" class="block text-slate-300 hover:text-lab-teal">→ Screen quality tiers explained</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SAMSUNG GUIDE -->
+    <section id="guide-samsung" class="guide-section hidden max-w-4xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-10">
+            <div class="lg:col-span-3">
+                <h2 class="text-3xl font-bold tracking-tighter mb-2">Samsung Galaxy Screen & Battery Replacement</h2>
+                <p class="text-slate-300 text-sm mb-6">Galaxy S21–S26 Ultra and A-series. Back-panel entry method.</p>
+
+                <div id="video-samsung" class="video-placeholder mb-8" onclick="this.innerHTML='<p class=\'text-lab-teal text-sm\'>Video coming soon — subscribe to be notified</p>'">
+                    <i data-lucide="play-circle" class="w-16 h-16 text-lab-teal mb-4"></i>
+                    <p class="text-white font-bold text-lg">Samsung Repair Guide</p>
+                    <p class="text-slate-300 text-xs mt-1">4-5 min · Screen & Battery · S & A Series</p>
+                    <p class="text-lab-teal text-[10px] mt-3 uppercase tracking-widest font-bold">Click to play</p>
+                </div>
+
+                <h3 class="text-lg font-bold text-lab-teal mb-4 flex items-center gap-2"><i data-lucide="list-ordered" class="w-5 h-5"></i>Written Steps</h3>
+
+                <div class="step-row"><div class="step-circle">1</div><div><p class="font-bold text-white text-sm">Power off & heat back glass</p><p class="text-slate-300 text-xs mt-1">Samsung opens from the BACK — not the front. Heat the back panel for 2-3 minutes with a hair dryer on high. Focus on edges where adhesive is strongest.</p></div></div>
+
+                <div class="step-row"><div class="step-circle">2</div><div><p class="font-bold text-white text-sm">Pry off back glass</p><p class="text-slate-300 text-xs mt-1">Suction cup on back, pull up, slide pry tool around all edges. Go slowly — back glass is thin and cracks easily. Re-heat if adhesive resists.</p><div class="warn-card"><p class="text-amber-400 text-xs"><i data-lucide="alert-triangle" class="w-3 h-3 inline mr-1"></i><strong>Water resistance:</strong> Opening the back breaks the IP68 seal. Re-seal with adhesive strips, but avoid submerging phone after.</p></div></div></div>
+
+                <div class="step-row"><div class="step-circle">3</div><div><p class="font-bold text-white text-sm">Remove midframe & disconnect battery</p><p class="text-slate-300 text-xs mt-1">Remove 8-12 Phillips screws holding the plastic midframe. Lift midframe off. Disconnect battery connector with plastic spudger.</p></div></div>
+
+                <div class="step-row"><div class="step-circle">4</div><div><p class="font-bold text-white text-sm">Remove old part</p><p class="text-slate-300 text-xs mt-1"><strong>Battery:</strong> Apply isopropyl alcohol (90%+) around edges, wait 60s, slide plastic card underneath. No pull tabs on Samsung — adhesive must be dissolved. <strong>Screen:</strong> Disconnect display cable, heat front screen edges, separate from frame.</p><div class="warn-card"><p class="text-amber-400 text-xs"><i data-lucide="alert-triangle" class="w-3 h-3 inline mr-1"></i><strong>Never pry battery with metal tools.</strong> Lithium cells can puncture and catch fire.</p></div></div></div>
+
+                <div class="step-row"><div class="step-circle">5</div><div><p class="font-bold text-white text-sm">Install new part & reassemble</p><p class="text-slate-300 text-xs mt-1">Place new part, connect cables, reconnect battery, replace midframe and all screws. Apply new back panel adhesive. Press back glass into position firmly around all edges.</p></div></div>
+
+                <div class="step-row"><div class="step-circle">6</div><div><p class="font-bold text-white text-sm">Test everything</p><p class="text-slate-300 text-xs mt-1">Power on. Test: touch response, fingerprint sensor (OLED/OEM only), charging, wireless charging, NFC, camera autofocus.</p><div class="tip-card"><p class="text-lab-teal text-xs"><i data-lucide="fingerprint" class="w-3 h-3 inline mr-1"></i><strong>Samsung fingerprint:</strong> Budget INCELL screens don't support the ultrasonic sensor. Only OLED and OEM screens preserve fingerprint unlock.</p></div></div></div>
+            </div>
+
+            <div class="lg:col-span-2">
+                <div class="glass-card rounded-2xl p-6 sticky top-28 space-y-6">
+                    <h4 class="text-[10px] font-bold uppercase tracking-widest text-lab-teal flex items-center gap-1.5"><i data-lucide="tablet-smartphone" class="w-3.5 h-3.5"></i>Model-Specific Notes</h4>
+                    <div class="space-y-3 text-xs">
+                        <div class="border-l-2 border-lab-teal pl-3"><p class="font-bold text-white">Galaxy S24–S26 Ultra</p><p class="text-slate-300">Titanium frame (S24U+). Strong adhesive. Fingerprint sensor requires OLED or OEM screen.</p></div>
+                        <div class="border-l-2 border-white/10 pl-3"><p class="font-bold text-white">Galaxy S21–S23 series</p><p class="text-slate-300">Standard aluminium frame. Slightly easier adhesive. Same fingerprint requirement.</p></div>
+                        <div class="border-l-2 border-white/10 pl-3"><p class="font-bold text-white">Galaxy A55 / A54 / A35 / A25 / A15</p><p class="text-slate-300">Easiest Samsung repairs. Weaker adhesive. A15 can use INCELL (no fingerprint in screen).</p></div>
+                        <div class="border-l-2 border-red-400/50 pl-3"><p class="font-bold text-red-400">Z Fold / Z Flip — DO NOT DIY</p><p class="text-slate-300">Folding mechanism too complex. Take to a professional.</p></div>
+                    </div>
+                    <div class="border-t border-white/10 pt-4">
+                        <a href="shop.html?brand=samsung" class="block w-full bg-lab-teal text-lab-dark py-3 rounded-xl font-bold text-sm text-center hover:scale-[1.02] transition-transform">Samsung Kits from $22 →</a>
+                    </div>
+                    <div class="border-t border-white/10 pt-4">
+                        <h4 class="text-[10px] font-bold uppercase tracking-widest text-slate-300 mb-3 flex items-center gap-1.5"><i data-lucide="book-open" class="w-3.5 h-3.5"></i>Related</h4>
+                        <div class="space-y-2 text-xs">
+                            <a href="blog/safely-replace-samsung-battery.html" class="block text-slate-300 hover:text-lab-teal">→ How to safely replace Samsung battery</a>
+                            <a href="https://repairrange.io/blog/samsung-fingerprint-sensor-screen-replacement-guide.html" class="block text-slate-300 hover:text-lab-teal">→ Samsung fingerprint sensor guide</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OPPO GUIDE -->
+    <section id="guide-oppo" class="guide-section hidden max-w-4xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-10">
+            <div class="lg:col-span-3">
+                <h2 class="text-3xl font-bold tracking-tighter mb-2">OPPO Screen & Battery Replacement</h2>
+                <p class="text-slate-300 text-sm mb-6">Find, Reno, and A-series. Back-panel entry — similar to Samsung.</p>
+
+                <div id="video-oppo" class="video-placeholder mb-8" onclick="this.innerHTML='<p class=\'text-lab-teal text-sm\'>Video coming soon — subscribe to be notified</p>'">
+                    <i data-lucide="play-circle" class="w-16 h-16 text-lab-teal mb-4"></i>
+                    <p class="text-white font-bold text-lg">OPPO Repair Guide</p>
+                    <p class="text-slate-300 text-xs mt-1">3-4 min · Screen & Battery · All Models</p>
+                    <p class="text-lab-teal text-[10px] mt-3 uppercase tracking-widest font-bold">Click to play</p>
+                </div>
+
+                <h3 class="text-lg font-bold text-lab-teal mb-4 flex items-center gap-2"><i data-lucide="list-ordered" class="w-5 h-5"></i>Written Steps</h3>
+
+                <div class="step-row"><div class="step-circle">1</div><div><p class="font-bold text-white text-sm">Power off & heat back panel</p><p class="text-slate-300 text-xs mt-1">OPPO uses the same back-entry method as Samsung. Heat the back for 2-3 minutes. OPPO adhesive is generally weaker than Samsung — slightly easier to open.</p></div></div>
+
+                <div class="step-row"><div class="step-circle">2</div><div><p class="font-bold text-white text-sm">Remove back panel & midframe</p><p class="text-slate-300 text-xs mt-1">Suction cup, pry around edges, lift back off. Remove midframe screws (Phillips). OPPO typically uses 6-10 screws depending on model.</p></div></div>
+
+                <div class="step-row"><div class="step-circle">3</div><div><p class="font-bold text-white text-sm">Disconnect battery & remove part</p><p class="text-slate-300 text-xs mt-1">Pop battery connector. For battery: dissolve adhesive with isopropyl, slide plastic card under. For screen: disconnect display cable from board, heat front edges, separate screen from frame.</p></div></div>
+
+                <div class="step-row"><div class="step-circle">4</div><div><p class="font-bold text-white text-sm">Install, reassemble & test</p><p class="text-slate-300 text-xs mt-1">Place new part, reconnect cables, reassemble midframe, re-seal back panel. Test: touch, fingerprint (if applicable), charging, camera.</p></div></div>
+            </div>
+
+            <div class="lg:col-span-2">
+                <div class="glass-card rounded-2xl p-6 sticky top-28 space-y-6">
+                    <h4 class="text-[10px] font-bold uppercase tracking-widest text-lab-teal flex items-center gap-1.5"><i data-lucide="monitor-smartphone" class="w-3.5 h-3.5"></i>Model Notes</h4>
+                    <div class="space-y-3 text-xs">
+                        <div class="border-l-2 border-lab-teal pl-3"><p class="font-bold text-white">Find X8 / X7 / X6 / X5</p><p class="text-slate-300">Flagship. Curved screens on some models — more adhesive, more care needed.</p></div>
+                        <div class="border-l-2 border-white/10 pl-3"><p class="font-bold text-white">Reno 10-12 series</p><p class="text-slate-300">Mid-range. Flat screens. Standard difficulty. Most popular OPPO repair.</p></div>
+                        <div class="border-l-2 border-white/10 pl-3"><p class="font-bold text-white">A57 / A77 / A78 / A96 / A98</p><p class="text-slate-300">Budget. Easiest OPPO repairs. INCELL screens available. Cheapest kits.</p></div>
+                    </div>
+                    <div class="border-t border-white/10 pt-4">
+                        <a href="shop.html?brand=oppo" class="block w-full bg-lab-teal text-lab-dark py-3 rounded-xl font-bold text-sm text-center hover:scale-[1.02] transition-transform">OPPO Kits from $22 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QR CODE SECTION -->
+    <section class="py-16 border-t border-white/5 bg-black/50">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="font-mono text-lab-teal text-xs uppercase tracking-[0.3em] mb-4"><i data-lucide="qr-code" class="w-4 h-4 inline mr-1"></i>QR_CODE_SYSTEM</p>
+            <h2 class="text-3xl font-bold tracking-tighter text-white mb-4">Every Kit Includes a QR Code</h2>
+            <p class="text-slate-300 max-w-xl mx-auto mb-8">Scan the QR code on your kit packaging and it takes you directly to this guide page — ready to follow along while you repair. No searching, no ads, no distractions.</p>
+            <div class="glass-card rounded-2xl p-8 inline-block">
+                <div class="qr-box mb-4">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://selfrepairkit.com.au/guides.html&color=0c4a45" alt="QR code to repair guides" class="w-44 h-44">
+                </div>
+                <p class="text-[10px] text-slate-300 uppercase tracking-widest font-bold">selfrepairkit.com.au/guides</p>
+            </div>
+            <p class="text-xs text-slate-200 mt-6">QR codes are printed on every kit box, adhesive strip envelope, and included card.</p>
+        </div>
+    </section>
+
+    <!-- BOTTOM CTA -->
+    <section class="py-16 border-t border-white/5">
+        <div class="max-w-2xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold tracking-tighter text-white mb-4">Ready to fix your phone?</h2>
+            <p class="text-slate-300 mb-8">Every kit includes the part, precision tools, adhesive, and a link to this guide. 90-day warranty. Ships from Newcastle.</p>
+            <div class="flex justify-center gap-3 flex-wrap">
+                <a href="shop.html?brand=apple" class="bg-lab-teal text-lab-dark px-8 py-3 rounded-xl font-bold text-sm hover:scale-105 transition-transform">iPhone Kits</a>
+                <a href="shop.html?brand=samsung" class="bg-lab-teal text-lab-dark px-8 py-3 rounded-xl font-bold text-sm hover:scale-105 transition-transform">Samsung Kits</a>
+                <a href="shop.html?brand=oppo" class="bg-lab-teal text-lab-dark px-8 py-3 rounded-xl font-bold text-sm hover:scale-105 transition-transform">OPPO Kits</a>
+            </div>
+            <p class="text-xs text-slate-200 mt-6">Not confident? <a href="https://repairrange.io/blog/can-you-diy-phone-screen-repair.html" class="text-lab-teal hover:underline">Check DIY difficulty</a> · <a href="https://www.mayfieldphonerepair.com.au" class="text-lab-teal hover:underline">Find a pro near you</a></p>
+        </div>
+    </section>
+
+    <footer class="py-16 border-t border-white/5 bg-[#212629] text-center">
+        <img src="https://sc04.alicdn.com/kf/A8f37323522424136aed4c8f39c13d07dV.png?v=2" class="h-24 mx-auto mb-6 opacity-50">
+        <div class="flex justify-center gap-8 text-[10px] uppercase tracking-[0.2em] mb-4">
+            <a href="index.html" class="text-slate-300 hover:text-lab-teal flex items-center gap-1"><i data-lucide="home" class="w-3 h-3"></i>Home</a>
+            <a href="shop.html" class="text-slate-300 hover:text-lab-teal flex items-center gap-1"><i data-lucide="shopping-bag" class="w-3 h-3"></i>Shop</a>
+            <a href="blog.html" class="text-slate-300 hover:text-lab-teal flex items-center gap-1"><i data-lucide="file-text" class="w-3 h-3"></i>Blog</a>
+            <a href="guides.html" class="text-lab-teal flex items-center gap-1"><i data-lucide="play-circle" class="w-3 h-3"></i>Guides</a>
+        </div>
+        <div class="flex justify-center gap-8 text-[10px] uppercase tracking-[0.15em]">
+            <a href="https://repairrange.io" class="text-slate-300 hover:text-lab-teal">RepairRange</a>
+            <a href="https://repairrange.io/calculator.html" class="text-slate-300 hover:text-lab-teal">Cost Calculator</a>
+            <a href="https://www.mayfieldphonerepair.com.au" class="text-slate-300 hover:text-lab-teal">Mayfield Phone Repair</a>
+        </div>
+    </footer>
+
+    <script>
+    function showGuide(brand) {
+        document.querySelectorAll('.guide-section').forEach(s => s.classList.add('hidden'));
+        document.getElementById('guide-' + brand).classList.remove('hidden');
+        document.querySelectorAll('.guide-tab').forEach(t => t.classList.remove('active'));
+        event.target.closest('.guide-tab').classList.add('active');
+        lucide.createIcons();
+    }
+    // Auto-select brand from URL param
+    const params = new URLSearchParams(window.location.search);
+    const brand = params.get('brand');
+    if (brand && ['iphone','samsung','oppo'].includes(brand)) {
+        document.querySelectorAll('.guide-section').forEach(s => s.classList.add('hidden'));
+        document.getElementById('guide-' + brand).classList.remove('hidden');
+        document.querySelectorAll('.guide-tab').forEach(t => {
+            t.classList.remove('active');
+            if (t.textContent.toLowerCase().includes(brand === 'iphone' ? 'iphone' : brand)) t.classList.add('active');
+        });
+    }
+    lucide.createIcons();
+    </script>
+</body>
+</html>

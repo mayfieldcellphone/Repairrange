@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Phone won't charge? Most of the time it's the cable or lint in the port, not a dead phone. How to diagnose charging faults, clean the port safely, tell the port from the battery, and replace a worn charging port yourself. iPhone, Samsung, Pixel, OPPO.">
+    <meta name="robots" content="index, follow">
+    <title>Why Won't My Phone Charge? Charging Port Faults Explained (2026) | SelfRepairKit Australia</title>
+    <link rel="icon" type="image/png" href="https://sc04.alicdn.com/kf/Afe45504972c24eb692e65234b2a212046.png?v=2">
+    <script src="https://cdn.tailwindcss.com"></script><script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=DM+Mono&display=swap" rel="stylesheet">
+    <script>tailwind.config={theme:{extend:{colors:{'lab-teal':'#00C2A8','lab-dark':'#3a5a78','lab-header': '#212629'},fontFamily:{sans:['Space Grotesk','sans-serif'],mono:['DM Mono','monospace']}}}}</script>
+    <style>
+        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
+        html { scroll-behavior: smooth; }
+        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
+        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
+        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
+        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
+        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
+        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
+        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
+        .ed-link:hover { background-size:100% 1px; }
+        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
+        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
+        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
+        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
+        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
+        .mobile-menu { transition:all 300ms ease-in-out; }
+        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
+    </style>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to replace a phone charging port yourself","description":"Diagnose a phone that won't charge, clean the port, and replace a worn charging port without specialist tools.","totalTime":"PT40M","supply":[{"@type":"HowToSupply","name":"Replacement charging port or charging sub-board"},{"@type":"HowToSupply","name":"Opening picks and suction cup"},{"@type":"HowToSupply","name":"Precision screwdriver set"},{"@type":"HowToSupply","name":"Spudger and tweezers"},{"@type":"HowToSupply","name":"Replacement adhesive"}],"step":[{"@type":"HowToStep","name":"Rule out the cable and charger","text":"Try a different known-good cable and charger in a different outlet before opening anything. A faulty cable mimics a dead charging port."},{"@type":"HowToStep","name":"Clean the port","text":"Power the phone off and gently remove compacted lint from the port with a wooden toothpick or dry anti-static brush. Never use metal or anything wet."},{"@type":"HowToStep","name":"Power down and open the phone","text":"Switch the phone off, then soften the adhesive with gentle heat and open the housing with picks and a suction cup."},{"@type":"HowToStep","name":"Disconnect the battery first","text":"Always unplug the battery connector before touching any other component to avoid shorts."},{"@type":"HowToStep","name":"Swap the charging port","text":"On many phones the USB-C port sits on a separate charging sub-board joined by a ribbon cable; unclip the old one and fit the new one. Reconnect the battery."},{"@type":"HowToStep","name":"Test before sealing","text":"Power on and confirm the phone charges and transfers data in both cable orientations, then reseal with fresh adhesive."}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why does my phone only charge when I hold the cable a certain way?","acceptedAnswer":{"@type":"Answer","text":"That symptom points to the charging port, not the phone. Either lint is packed into the bottom of the port stopping the cable seating fully, or the contacts inside the port are worn or bent so they only touch when the cable is held at an angle. Clean the port first with a wooden toothpick while the phone is off. If it still only charges at an angle, or only in one USB-C orientation, the port is worn and needs replacing. A healthy USB-C port charges the same in both orientations."}},{"@type":"Question","name":"Can I replace a charging port without soldering?","acceptedAnswer":{"@type":"Answer","text":"On many phones, yes. A large number of Samsung Galaxy models and some others put the USB-C port on a separate charging sub-board that connects to the mainboard with a ribbon cable, so you simply unclip the old board and plug in the new one with no soldering. On most iPhones and some other phones the port is a flex cable that runs into the device, which is also a no-solder swap on many models. Ports that are soldered directly to the mainboard do require microsoldering and are best left to a repair shop."}},{"@type":"Question","name":"How do I know if it's the charging port or the battery?","acceptedAnswer":{"@type":"Answer","text":"Look at what the phone does once it is charging. If the cable will not hold a connection, you have to wiggle it, or it only charges in one orientation, that is the charging port. If the phone charges fine but the percentage falls quickly, dies suddenly at 20 to 40 percent, or the back is swelling, that is the battery. If the phone charges wirelessly but not over the cable, the port or cable is the problem, not the battery. If another cable works when yours does not, it was just the cable all along."}},{"@type":"Question","name":"Does cleaning the charging port actually fix it?","acceptedAnswer":{"@type":"Answer","text":"Very often, yes. Lint and pocket fluff compact into a hard plug at the bottom of the port over months of use, stopping the cable from seating against the contacts. Removing that plug restores a solid connection in a large share of phones that suddenly will not charge or only charge intermittently. It costs nothing and should always be your first step before assuming the port is broken."}},{"@type":"Question","name":"Is it safe to clean my own charging port?","acceptedAnswer":{"@type":"Answer","text":"Yes, if you follow three rules. Power the phone off first, use only a non-metal tool such as a wooden toothpick or a dry anti-static brush, and never use water, alcohol inside the port, or compressed air held too close. Metal tools can bridge the contacts and cause a short, and moisture can corrode them. Worked gently with the phone off, cleaning the port is completely safe."}}]}</script>
+</head>
+<body class="bg-black text-slate-100 antialiased font-sans">
+    <nav class="border-b border-white/10 sticky top-0 z-50 bg-[#212629] backdrop-blur-md shadow-lg"><div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"><a href="../index.html" class="flex flex-col items-center"><img src="https://sc04.alicdn.com/kf/A8f37323522424136aed4c8f39c13d07dV.png?v=2" alt="SelfRepairKit" class="h-16 w-auto"><span class="text-[8px] font-bold uppercase tracking-[0.2em] text-lab-teal mt-1">Repair with confidence</span></a><div class="hidden md:flex items-center gap-6 text-xs font-bold uppercase tracking-widest text-white"><a href="../shop.html?brand=apple" class="px-3 py-2 hover:text-lab-teal">iPhone Kit</a><a href="../shop.html?brand=samsung" class="px-3 py-2 hover:text-lab-teal">Samsung Kit</a><a href="../shop.html?brand=oppo" class="px-3 py-2 hover:text-lab-teal">OPPO Kit</a><a href="../shop.html?brand=google" class="px-3 py-2 rounded-lg hover:bg-lab-teal/10 hover:text-lab-teal transition-all flex items-center gap-1.5"><i data-lucide="chrome" class="w-3.5 h-3.5"></i>Pixel Kit</a><a href="../guides.html" class="px-3 py-2 hover:text-lab-teal">Guides</a><a href="../blog.html" class="px-3 py-2 text-lab-teal">Blog</a><a href="../shop.html?category=accessories" class="px-3 py-2 text-amber-500">Accessories</a></div></div></nav>
+
+    <article class="max-w-3xl mx-auto px-6 py-16">
+        <nav class="flex items-center gap-2 text-xs text-slate-300 mb-10"><a href="../index.html" class="hover:text-lab-teal">Home</a><span>/</span><a href="../blog.html" class="hover:text-lab-teal">Blog</a><span>/</span><span class="text-white">Why won't my phone charge</span></nav>
+        <header class="mb-12">
+            <p class="font-mono text-lab-teal text-xs mb-4 uppercase tracking-[0.3em]">// REPAIR_GUIDE · June 2026</p>
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tighter text-white mb-6 leading-tight">Why Won't My Phone Charge?</h1>
+            <p class="text-xl text-slate-300 leading-relaxed">Nine times out of ten a phone that "won't charge" isn't broken — it's the cable, the charger, or a plug of lint jammed in the port. Here's how to work through the free fixes first, tell a worn charging port from a tired battery, and replace the port yourself if it comes to that.</p>
+        </header>
+
+        <div class="prose-dark">
+            <div class="glass-card rounded-[24px] p-6 mb-10">
+                <p class="text-[10px] font-bold uppercase tracking-widest text-lab-teal mb-3"><i data-lucide="zap" class="w-3.5 h-3.5 inline mr-1"></i>The short answer</p>
+                <p class="text-white" style="margin-bottom:0">Before you replace anything, do three things: try a <strong>different cable and charger</strong>, then <strong>clean the port</strong> (compacted lint is the single most common cause), then check whether it <strong>charges wirelessly</strong>. Only if the phone still won't charge with a known-good cable in a clean port are you looking at a <strong>worn charging port</strong> or a <strong>failing battery</strong> — and those tell themselves apart by how the phone behaves once it is charging.</p>
+            </div>
+
+            <h2>First, rule out the easy stuff</h2>
+            <p>The charger and cable fail far more often than the phone. Spend two minutes here before you reach for a screwdriver:</p>
+            <ul>
+                <li><strong>Swap the cable.</strong> Cables fail internally where they flex near the connector, with no visible damage. Try a different known-good cable.</li>
+                <li><strong>Swap the charger and the outlet.</strong> Try a different wall plug, a different power point, or a car charger. A dead brick looks exactly like a dead phone.</li>
+                <li><strong>Try wireless charging</strong> (if your phone supports it). If it charges on a pad but not by cable, the problem is the cable or the port — never the battery.</li>
+                <li><strong>Watch for a brief charge icon.</strong> If you get a flicker of the charging symbol when you jiggle the cable, the port contacts are the suspect.</li>
+            </ul>
+
+            <h2>The free fix almost everyone skips: clean the port</h2>
+            <p>Over months, pocket lint packs into a hard felt-like plug at the very bottom of the charging port. The cable then can't seat all the way onto the contacts, so it charges intermittently, only at an angle, or not at all. This is the number one cause of a sudden "won't charge" — and it costs nothing to fix.</p>
+            <div class="tip-box">
+                <p class="text-lab-teal text-sm" style="margin-bottom:0"><i data-lucide="lightbulb" class="w-4 h-4 inline mr-1"></i><strong>How to do it safely:</strong> Power the phone <strong>off</strong>. Shine a light into the port — if you see grey fluff packed at the end, gently hook it out with a <strong>wooden or plastic toothpick</strong>, or loosen it with a dry anti-static brush. Never use a metal pin (it can short the contacts), and never anything wet. You'll often pull out a surprising amount of compacted lint.</p>
+            </div>
+
+            <h2>Port, battery, or cable? How to tell them apart</h2>
+            <p>Once you've cleaned the port and ruled out the cable, the phone's behaviour points to the culprit:</p>
+            <ul>
+                <li><strong>Only charges when you wiggle, push, or hold the cable — or only one way up on USB-C</strong> → the charging port. A healthy USB-C port charges identically in both orientations.</li>
+                <li><strong>Charges fine but the battery drops fast, dies suddenly around 20–40%, or the back is swelling</strong> → the battery, not the port.</li>
+                <li><strong>One cable works and another doesn't</strong> → it was simply the cable.</li>
+                <li><strong>Charges on a wireless pad but not by cable</strong> → port or cable, never the battery.</li>
+                <li><strong>Won't transfer files to a computer either</strong> → the port (data and power share the same connector).</li>
+            </ul>
+
+            <h2>Signs the charging port itself needs replacing</h2>
+            <p>If you've cleaned it and swapped cables and it still misbehaves, replace the port when you see:</p>
+            <ul>
+                <li>You have to wiggle or prop the cable to keep it charging</li>
+                <li>It only charges in one USB-C orientation</li>
+                <li>Visibly bent, pushed-in, or corroded pins inside the port</li>
+                <li>Charging cuts in and out even with a brand-new cable</li>
+                <li>No data connection to a PC at all</li>
+            </ul>
+
+            <h2>Replacing a charging port yourself</h2>
+            <p>This is a more involved repair than a battery or screen, but on many phones it needs <strong>no soldering</strong> — the port is a modular part. Here's the shape of the job:</p>
+
+            <div class="step-card"><p class="font-bold text-white text-sm" style="margin-bottom:4px">1. Power off completely</p><p class="text-xs text-slate-300" style="margin-bottom:0">Shut the phone down fully before opening it — never work on a live device.</p></div>
+            <div class="step-card"><p class="font-bold text-white text-sm" style="margin-bottom:4px">2. Open the housing with heat</p><p class="text-xs text-slate-300" style="margin-bottom:0">Soften the adhesive around the edges with a heat pad or hairdryer, then work in opening picks with a suction cup. Most modern phones open from the back glass or the screen — go slowly and evenly.</p></div>
+            <div class="step-card"><p class="font-bold text-white text-sm" style="margin-bottom:4px">3. Disconnect the battery first</p><p class="text-xs text-slate-300" style="margin-bottom:0">Always unplug the battery connector before touching anything else. This is the single most important safety step inside any phone.</p></div>
+            <div class="step-card"><p class="font-bold text-white text-sm" style="margin-bottom:4px">4. Locate and free the port</p><p class="text-xs text-slate-300" style="margin-bottom:0">On many Samsung Galaxy models the USB-C port lives on a separate <strong>charging sub-board</strong> joined by a ribbon cable — unclip it and lift it straight out. On most iPhones and some others it's a flex cable running into the phone. Either way, note the routing before you remove it.</p></div>
+            <div class="step-card"><p class="font-bold text-white text-sm" style="margin-bottom:4px">5. Fit the new port and reconnect</p><p class="text-xs text-slate-300" style="margin-bottom:0">Seat the replacement, clip its ribbon back into place, then reconnect the battery last.</p></div>
+            <div class="step-card" style="margin-bottom:1.5rem"><p class="font-bold text-white text-sm" style="margin-bottom:4px">6. Test before you seal</p><p class="text-xs text-slate-300" style="margin-bottom:0">Power on and confirm it charges and transfers data in <strong>both</strong> cable orientations before you re-adhere the housing. Testing first saves opening it twice.</p></div>
+
+            <div class="warn-box">
+                <p class="text-amber-400 text-sm" style="margin-bottom:0"><i data-lucide="alert-triangle" class="w-4 h-4 inline mr-1"></i><strong>Battery safety:</strong> Lithium batteries can catch fire if bent, punctured, or crushed. Disconnect the battery before working, keep sharp tools away from it, and if your battery is already swollen, stop — don't attempt a DIY repair on a swollen battery. Work on a clean, static-safe surface.</p>
+            </div>
+
+            <h2>Samsung charging-port repairs are the beginner-friendly ones</h2>
+            <p>Because so many Samsung Galaxy phones put the USB-C port on a modular charging sub-board rather than soldering it to the mainboard, swapping it is one of the most approachable internal repairs there is — unclip, replace, reconnect. No microsoldering, no special station.</p>
+
+            <div class="glass-card rounded-[24px] p-8 my-10 text-center" style="border-color:rgba(0,194,168,0.3)">
+                <p class="font-mono text-lab-teal text-xs mb-3 uppercase tracking-widest"><i data-lucide="plug-zap" class="w-4 h-4 inline mr-1"></i>Samsung charging-port kits</p>
+                <h3 class="text-2xl font-bold text-white mb-4" style="margin-top:0">Replacement port + tools, matched to your Galaxy</h3>
+                <p class="text-slate-300 text-sm mb-6">Charging-port kits for Galaxy S-series and A-series, with the precision tools you need included. Pick your exact model to see live pricing. Same-day dispatch from Newcastle, 90-day warranty.</p>
+                <a href="../shop.html?brand=samsung" class="inline-block bg-lab-teal text-lab-dark px-8 py-3 rounded-xl font-bold text-sm hover:scale-105 transition-transform">Shop Samsung Kits →</a>
+            </div>
+
+            <p>Turns out it's the battery, not the port? See <a href="safely-replace-samsung-battery.html">how to safely replace a Samsung battery</a> or <a href="change-iphone-battery-yourself.html">change an iPhone battery yourself</a>. And if your phone <em>does</em> charge but painfully slowly, that's a separate set of causes — read <a href="why-is-my-phone-charging-slowly-fixes.html">why your phone is charging slowly and how to fix it</a>. Want to compare a DIY fix against a shop quote first? Check the <a href="https://repairrange.io/calculator.html">RepairRange cost calculator</a>.</p>
+        </div>
+    </article>
+
+    <footer class="py-20 border-t border-white/5 bg-[#212629] text-center">
+        <img src="https://sc04.alicdn.com/kf/A8f37323522424136aed4c8f39c13d07dV.png?v=2" class="h-32 mx-auto mb-8 opacity-50" alt="SelfRepairKit">
+        <div class="flex justify-center gap-10 text-[10px] font-bold uppercase tracking-[0.3em] text-slate-300 mb-6"><a href="../index.html" class="hover:text-lab-teal">Home</a><a href="../shop.html" class="hover:text-lab-teal">Shop</a><a href="../blog.html" class="text-lab-teal">Blog</a><a href="../guides.html" class="hover:text-lab-teal">Guides</a></div>
+        <div class="flex justify-center gap-8 text-[10px] uppercase tracking-[0.15em] text-slate-300"><a href="https://repairrange.io" class="hover:text-lab-teal">RepairRange</a><a href="https://www.mayfieldphonerepair.com.au" class="hover:text-lab-teal">Mayfield Phone Repair</a></div>
+    </footer>
+    <script>window.addEventListener('load',function(){if(window.lucide)lucide.createIcons();});</script>
+</body>
+</html>

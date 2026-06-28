@@ -1,0 +1,7 @@
+Brand,Model,Repair_Type,Quality_Tier,Price_AUD,Warranty,Stock_Status,Description
+Apple,iPhone 15 Pro,Screen Replacement,Elite (Original),289,90 Days,In Stock,"OEM Service Pack with full True Tone support."
+Apple,iPhone 15 Pro,Screen Replacement,Pro (Soft OLED),189,90 Days,In Stock,"Premium aftermarket OLED with vivid colors."
+Samsung,Galaxy S24 Ultra,Screen Replacement,Elite (Original),349,90 Days,In Stock,"Factory original service pack."
+Samsung,Galaxy S24 Ultra,Charging Port,Elite (Original),99,90 Days,In Stock,"Includes original flex cable and precision tools."
+Oppo,A98,Battery Replacement,Standard,79,90 Days,In Stock,"High-capacity replacement battery."
+Accessories,USB-C Cable (1m),Cable,N/A,15,90 Days,In Stock,"Durable braided fast-charge cable."
