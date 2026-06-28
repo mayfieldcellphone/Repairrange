@@ -73,6 +73,9 @@
         font-size: 0.7rem; 
         border-bottom: 1px solid var(--rr-line); 
     }
+    .guide-badge { font-size: 0.75rem; font-weight: 700; color: var(--rr-teal-700); background: #f0fdfa; padding: 0.25rem 0.625rem; border-radius: 99px; border: 1px solid #ccfbf1; }
+    .guide-badge:hover { background: var(--rr-teal-700); color: white; }
+    .est-badge { font-size: 0.75rem; color: var(--rr-muted); }
     .mobile-menu { transition:all 300ms ease-in-out; }
     @media (max-width: 768px) { 
         .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} 
@@ -136,6 +139,7 @@
         <span class="text-right">Guide</span>
     </div>
     <div id="model-list"></div>
+    <div id="no-results" style="display:none; padding:3rem; text-align:center; color:var(--rr-muted);">No models found matching your search.</div>
 </div>
 <p class="text-xs text-muted py-4 max-w-3xl">All prices are 2026 AUD independent-shop ranges. <a href="../blog/samsung-fingerprint-sensor-screen-replacement-guide.html" class="ed-link text-teal">Samsung fingerprint sensor warning →</a></p>
 </div>
@@ -148,11 +152,15 @@
 </footer>
 
 <script>
-const MODELS=[{b:'apple',n:'iPhone 17 Pro Max',scr:'$349–$549',bat:'$89–$149',g:'iphone-17-pro-max'},{b:'apple',n:'iPhone 17 Pro',scr:'$319–$489',bat:'$89–$139',g:'iphone-17-pro'},{b:'apple',n:'iPhone 17',scr:'$259–$389',bat:'$79–$119',g:'iphone-17'},{b:'apple',n:'iPhone 16 Pro Max',scr:'$329–$499',bat:'$89–$149',g:null},{b:'apple',n:'iPhone 16',scr:'$239–$359',bat:'$79–$119',g:null},{b:'apple',n:'iPhone 15 Pro Max',scr:'$329–$479',bat:'$99–$149',g:'iphone-15-pro-max'},{b:'apple',n:'iPhone 15 Pro',scr:'$289–$419',bat:'$99–$139',g:'iphone-15-pro'},{b:'apple',n:'iPhone 15 Plus',scr:'$239–$349',bat:'$89–$129',g:'iphone-15-plus'},{b:'apple',n:'iPhone 15',scr:'$219–$339',bat:'$89–$119',g:'iphone-15'},{b:'apple',n:'iPhone 14 Pro Max',scr:'$309–$449',bat:'$99–$139',g:'iphone-14-pro-max'},{b:'apple',n:'iPhone 13 Pro Max',scr:'$249–$379',bat:'$89–$129',g:'iphone-13-pro-max'},{b:'samsung',n:'Galaxy S26 Ultra',scr:'$489–$619',bat:'$99–$149',g:'samsung-galaxy-s26-ultra'},{b:'samsung',n:'Galaxy S25 Ultra',scr:'$449–$589',bat:'$99–$139',g:'samsung-galaxy-s25-ultra'},{b:'google',n:'Pixel 9 Pro XL',scr:'$329–$479',bat:'$99–$139',g:'pixel-9-pro-xl'},{b:'google',n:'Pixel 8 Pro',scr:'$289–$429',bat:'$89–$129',g:'pixel-8-pro'}];
+const MODELS=[{b:'apple',n:'iPhone 17 Pro Max',scr:'$349–$549',bat:'$89–$149',g:'iphone-17-pro-max'},{b:'apple',n:'iPhone 17 Pro',scr:'$319–$489',bat:'$89–$139',g:'iphone-17-pro'},{b:'apple',n:'iPhone 17',scr:'$259–$389',bat:'$79–$119',g:'iphone-17'},{b:'apple',n:'iPhone 17 Air',scr:'$289–$429',bat:'$89–$139',g:null},{b:'apple',n:'iPhone 17e',scr:'$179–$269',bat:'$79–$109',g:null},{b:'apple',n:'iPhone 16 Pro Max',scr:'$329–$499',bat:'$89–$149',g:null},{b:'apple',n:'iPhone 16 Pro',scr:'$299–$449',bat:'$89–$139',g:null},{b:'apple',n:'iPhone 16 Plus',scr:'$259–$379',bat:'$89–$129',g:null},{b:'apple',n:'iPhone 16',scr:'$239–$359',bat:'$79–$119',g:null},{b:'apple',n:'iPhone 15 Pro Max',scr:'$329–$479',bat:'$99–$149',g:'iphone-15-pro-max'},{b:'apple',n:'iPhone 15 Pro',scr:'$289–$419',bat:'$99–$139',g:'iphone-15-pro'},{b:'apple',n:'iPhone 15 Plus',scr:'$239–$349',bat:'$89–$129',g:'iphone-15-plus'},{b:'apple',n:'iPhone 15',scr:'$219–$339',bat:'$89–$119',g:'iphone-15'},{b:'apple',n:'iPhone 14 Pro Max',scr:'$309–$449',bat:'$99–$139',g:'iphone-14-pro-max'},{b:'apple',n:'iPhone 14 Pro',scr:'$269–$389',bat:'$89–$129',g:'iphone-14-pro'},{b:'apple',n:'iPhone 14',scr:'$199–$299',bat:'$79–$119',g:'iphone-14'},{b:'apple',n:'iPhone 13 Pro Max',scr:'$249–$379',bat:'$89–$129',g:'iphone-13-pro-max'},{b:'apple',n:'iPhone 13 Pro',scr:'$229–$349',bat:'$89–$119',g:null},{b:'apple',n:'iPhone 13',scr:'$179–$279',bat:'$79–$109',g:'iphone-13'},{b:'apple',n:'iPhone 13 mini',scr:'$169–$259',bat:'$79–$109',g:null},{b:'apple',n:'iPhone 12 Pro Max',scr:'$219–$329',bat:'$89–$119',g:null},{b:'apple',n:'iPhone 12 Pro',scr:'$199–$299',bat:'$89–$109',g:null},{b:'apple',n:'iPhone 12',scr:'$159–$249',bat:'$79–$109',g:'iphone-12'},{b:'apple',n:'iPhone 12 mini',scr:'$149–$229',bat:'$79–$99',g:null},{b:'apple',n:'iPhone SE (3rd gen)',scr:'$109–$179',bat:'$79–$99',g:'iphone-se-3'},{b:'apple',n:'iPhone 11 Pro Max',scr:'$199–$289',bat:'$79–$109',g:null},{b:'apple',n:'iPhone 11 Pro',scr:'$179–$269',bat:'$79–$99',g:null},{b:'apple',n:'iPhone 11',scr:'$139–$209',bat:'$79–$99',g:'iphone-11'},{b:'samsung',n:'Galaxy S26 Ultra',scr:'$489–$619',bat:'$99–$149',g:'samsung-galaxy-s26-ultra'},{b:'samsung',n:'Galaxy S26+',scr:'$349–$469',bat:'$99–$139',g:null},{b:'samsung',n:'Galaxy S26',scr:'$299–$399',bat:'$89–$129',g:null},{b:'samsung',n:'Galaxy S25 Ultra',scr:'$449–$589',bat:'$99–$139',g:'samsung-galaxy-s25-ultra'},{b:'samsung',n:'Galaxy S25+',scr:'$319–$429',bat:'$89–$129',g:null},{b:'samsung',n:'Galaxy S25',scr:'$279–$369',bat:'$89–$119',g:null},{b:'samsung',n:'Galaxy S24 Ultra',scr:'$399–$529',bat:'$99–$139',g:'samsung-galaxy-s24-ultra'},{b:'samsung',n:'Galaxy S24+',scr:'$289–$389',bat:'$89–$129',g:null},{b:'samsung',n:'Galaxy S24',scr:'$249–$339',bat:'$89–$119',g:null},{b:'samsung',n:'Galaxy S23 Ultra',scr:'$349–$479',bat:'$99–$139',g:'samsung-galaxy-s23-ultra'},{b:'samsung',n:'Galaxy S23+',scr:'$259–$349',bat:'$89–$129',g:null},{b:'samsung',n:'Galaxy S23',scr:'$219–$309',bat:'$89–$119',g:null},{b:'samsung',n:'Galaxy S22 Ultra',scr:'$309–$419',bat:'$89–$129',g:'samsung-galaxy-s22-ultra'},{b:'samsung',n:'Galaxy S22+',scr:'$219–$309',bat:'$89–$119',g:null},{b:'samsung',n:'Galaxy S22',scr:'$189–$269',bat:'$79–$109',g:null},{b:'samsung',n:'Galaxy Z Fold 6',scr:'$549–$849',bat:'$109–$159',g:null},{b:'samsung',n:'Galaxy Z Flip 6',scr:'$329–$489',bat:'$99–$139',g:null},{b:'google',n:'Pixel 9 Pro XL',scr:'$329–$479',bat:'$99–$139',g:'pixel-9-pro-xl'},{b:'google',n:'Pixel 9 Pro',scr:'$299–$439',bat:'$99–$139',g:null},{b:'google',n:'Pixel 9',scr:'$249–$369',bat:'$89–$119',g:null},{b:'google',n:'Pixel 8 Pro',scr:'$289–$429',bat:'$89–$129',g:'pixel-8-pro'},{b:'google',n:'Pixel 8',scr:'$219–$329',bat:'$89–$119',g:null}];
 
+const brandLabels={apple:'Apple',samsung:'Samsung',google:'Google Pixel'};
 const list=document.getElementById('model-list');
 const searchInput=document.getElementById('search');
+const noResults=document.getElementById('no-results');
 let activeFilter='all';
+
+function slugify(b,n){let s=n.toLowerCase().replace(/[()]/g,'').replace(/\+/g,'plus').replace(/\s+/g,'-').replace(/--+/g,'-').replace(/-$/,'');if(b==='samsung'&&!s.startsWith('samsung'))s='samsung-'+s;return s;}
 
 function render(){
     const q=searchInput.value.toLowerCase().trim();
@@ -162,7 +170,7 @@ function render(){
         return true;
     });
     
-    // UPDATE COUNTS
+    // Update Counts
     const counts={all:0,apple:0,samsung:0,google:0};
     MODELS.forEach(m=>{
         const mq=!q||m.n.toLowerCase().includes(q);
@@ -173,15 +181,26 @@ function render(){
         if(el)el.textContent=counts[k];
     });
 
+    if(filtered.length===0){ list.innerHTML=''; noResults.style.display='block'; return; }
+    noResults.style.display='none';
+
+    const groups={};
+    filtered.forEach(m=>{ if(!groups[m.b])groups[m.b]=[]; groups[m.b].push(m); });
+
     let html='';
-    filtered.forEach(m=>{
-        const link = m.g ? `<a href="${m.g}.html" style="color:var(--rr-teal-700); font-weight:700;">Full guide &rarr;</a>` : `<span style="color:var(--rr-muted); font-size:0.75rem;">Price only</span>`;
-        html+=`<div class="model-row">
-            <span class="font-bold text-ink">${m.n}</span>
-            <span class="font-mono text-right text-ink">${m.scr}</span>
-            <span class="font-mono text-right text-muted">${m.bat}</span>
-            <span class="text-right">${link}</span>
-        </div>`;
+    const brandOrder=['apple','samsung','google'];
+    brandOrder.forEach(b=>{
+        if(!groups[b]) return;
+        html+=`<div class="brand-header">${brandLabels[b]}</div>`;
+        groups[b].forEach(m=>{
+            const link = m.g ? `<a href="${m.g}.html" class="guide-badge">Full guide →</a>` : `<span class="est-badge">Pricing only</span>`;
+            html+=`<div class="model-row">
+                <span class="font-bold text-ink">${m.n}</span>
+                <span class="font-mono text-right text-ink">${m.scr}</span>
+                <span class="font-mono text-right text-muted">${m.bat}</span>
+                <span class="text-right">${link}</span>
+            </div>`;
+        });
     });
     list.innerHTML=html;
 }
