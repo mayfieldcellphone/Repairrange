@@ -13,29 +13,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=DM+Mono&display=swap" rel="stylesheet">
     <script>tailwind.config={theme:{extend:{colors:{'lab-teal':'#00C2A8','lab-dark':'#3a5a78','lab-header': '#212629'},fontFamily:{sans:['Space Grotesk','sans-serif'],mono:['DM Mono','monospace']}}}}</script>
     <style>
-        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
-        html { scroll-behavior: smooth; }
-        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
-        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
-        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
-        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
-        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
-        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
-        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
-        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
-        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
-        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
-        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
-        .ed-link:hover { background-size:100% 1px; }
-        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
-        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
-        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
-        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
-        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
-        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
-        .mobile-menu { transition:all 300ms ease-in-out; }
-        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
-    </style>
+    :root { 
+        --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; 
+        --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; 
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+    .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+    .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+    .eyebrow { font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--rr-teal-700); }
+    
+    .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
+    .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:700; font-size:0.9375rem; transition:all 200ms ease; border-radius:4px; }
+    .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow: 0 4px 0 var(--rr-amber-600); }
+    .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow: 0 6px 0 var(--rr-amber-600); }
+    .btn-outline { border: 2px solid var(--rr-teal-700); color: var(--rr-teal-700); }
+    
+    .card, .post-card, .sidebar-card, .shadow-box { 
+        background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; 
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
+        border-radius: 4px;
+    }
+    .card:hover, .post-card:hover { 
+        border-color:var(--rr-ink); transform:translateY(-2px); 
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15); 
+    }
+    
+    .bg-mesh-hero { 
+        background-color: var(--rr-hero); 
+        background-image: radial-gradient(rgba(15, 118, 110, 0.1) 1.5px, transparent 0); 
+        background-size: 32px 32px; 
+        border-bottom: 1px solid var(--rr-line); 
+    }
+
+    .funnel-table { width: 100%; border-collapse: separate; border-spacing: 0; background: white; border-radius: 4px; overflow: hidden; border: 1px solid var(--rr-line); }
+    .funnel-table th { background: var(--rr-paper-2); padding: 1rem; text-align: left; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: var(--rr-muted); border-bottom: 1px solid var(--rr-line); }
+    .funnel-table td { padding: 1rem; border-bottom: 1px solid var(--rr-line); vertical-align: middle; }
+    
+    .savings-badge { background: #FEF3C7; color: #92400E; font-size: 0.625rem; font-weight: 800; padding: 0.2rem 0.5rem; border-radius: 99px; }
+    
+    .mobile-menu { transition:all 300ms ease-in-out; }
+    @media (max-width: 768px) { 
+        .hero-title { font-size: 2.5rem !important; }
+        .hide-mobile { display: none; }
+    }
+</style>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How to Fix a Cracked Phone Screen at Home — Step by Step DIY Guide","description":"Complete guide to DIY phone screen replacement for iPhone, Samsung, and OPPO. Tools needed, quality tiers explained, step-by-step process.","author":{"@type":"Organization","name":"SelfRepairKit Australia"},"datePublished":"2026-06-20","mainEntityOfPage":"https://selfrepairkit.com.au/blog/how-to-fix-cracked-phone-screen-at-home.html"}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I fix a cracked phone screen myself?","acceptedAnswer":{"@type":"Answer","text":"Yes. Most iPhone, Samsung, and OPPO screens can be replaced at home in 30-60 minutes with a DIY screen replacement kit that includes the correct screen, tools, and adhesive. iPhones are rated 5-6/10 difficulty, Samsung 6-7/10 (due to fingerprint sensor pairing), and OPPO 5-6/10. The main risk is damaging Face ID (iPhone) or fingerprint sensors (Samsung) if you disconnect the wrong cable."}},{"@type":"Question","name":"What tools do I need to replace a phone screen?","acceptedAnswer":{"@type":"Answer","text":"You need: a pentalobe screwdriver (iPhone) or tri-wing screwdriver (Samsung), a suction cup for screen separation, plastic spudgers/pry tools, ESD-safe tweezers, replacement adhesive strips, and a heat source (hair dryer works). A complete phone repair tool kit typically costs $15-40 standalone, or is included free with screen replacement kits from suppliers like SelfRepairKit."}},{"@type":"Question","name":"Will I lose Face ID or fingerprint if I replace the screen myself?","acceptedAnswer":{"@type":"Answer","text":"Face ID (iPhone): You must carefully transfer the Face ID flex cable from the old screen to the new one. If the cable is damaged, Face ID is permanently lost. On iPhone 15 and newer, Apple's software pairing also applies. Fingerprint (Samsung): The ultrasonic fingerprint sensor is embedded in the screen. Budget INCELL screens don't support it — only OLED and OEM screens preserve fingerprint. Always choose the right quality tier."}},{"@type":"Question","name":"How much does DIY screen replacement cost vs a repair shop?","acceptedAnswer":{"@type":"Answer","text":"DIY screen kits cost $22-$349 AUD depending on model and quality tier. Professional repair shops charge $109-$619 AUD for the same repair. Average saving is 50-70%. For example, an iPhone 15 Pro Max screen costs $85-$269 as a DIY kit vs $329-$479 at a shop. Check RepairRange.io for current shop pricing to compare."}}]}</script>
 </head>

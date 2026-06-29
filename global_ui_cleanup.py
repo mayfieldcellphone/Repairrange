@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="en-AU">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guides & Insights | SelfRepairKit™</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
+import os
+import re
+
+# Master Configuration for a "Clean, Professional, Technician-Led" Look
+TARGET_DIR = r"C:\Users\dell lattitude\.accio\accounts\1728917364\agents\MID-29917364U1780312-3FBB0C-8987-5BD472\project"
+
+MASTER_STYLE = """<style>
     :root { 
         --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; 
         --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; 
@@ -54,34 +49,52 @@
         .hero-title { font-size: 2.5rem !important; }
         .hide-mobile { display: none; }
     }
-</style>
-</head>
-<body class="antialiased bg-black text-slate-100">
-    
-    <article class="max-w-4xl mx-auto px-6 py-20">
-        <header class="text-center mb-16">
-            <p class="text-[#00C2A8] font-mono text-xs uppercase tracking-widest mb-4">// DIY_SERIES_002</p>
-            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">iPhone 15 Pro Max Screen Replacement: Australia’s DIY Guide</h1>
-            <p class="text-slate-200 text-sm">Published by SRK Engineering Team • June 21, 2026</p>
-        </header>
+</style>"""
 
-        <section class="prose prose-invert max-w-none space-y-8 text-lg text-slate-300 leading-relaxed text-left">
-            <p>The iPhone 15 Pro Max represents the peak of smartphone engineering, but even its titanium frame cannot defy gravity. If your screen is shattered, you likely face a $600+ repair bill. Today, we show you the professional alternative.</p>
+def global_cleanup():
+    count = 0
+    for root, dirs, files in os.walk(TARGET_DIR):
+        if "node_modules" in root or ".git" in root or "repairrange-final-push" in root:
+            continue
             
-            <h2 class="text-2xl font-bold text-white mt-12">Why Fix It Yourself?</h2>
-            <p>In Australia, waiting times for official repair slots can be weeks. With a SelfRepairKit, you get high-quality hardware and professional tools delivered to your door in Newcastle or nationwide, allowing you to restore your device in under 60 minutes.</p>
+        for file in files:
+            if file.endswith(".html"):
+                path = os.path.join(root, file)
+                with open(path, 'r', encoding='utf-8') as f:
+                    content = f.read()
 
-            <div class="bg-gradient-to-br from-[#00C2A8]/20 to-transparent border border-[#00C2A8]/30 p-10 rounded-3xl text-center my-12">
-                <h3 class="text-2xl font-bold text-white mb-4">Engineer-Approved 15 Pro Max Kits</h3>
-                <p class="mb-8">Includes 120Hz Soft OLED, waterproof adhesive, and precision bit set.</p>
-                <a href="../shop.html?brand=apple" class="inline-block bg-black text-black font-bold px-10 py-4 rounded-xl hover:scale-105 transition-transform">Order Your Kit Now</a>
-            </div>
+                # 1. Force Master Style
+                content = re.sub(r'<style>.*?</style>', MASTER_STYLE, content, flags=re.DOTALL)
 
-            <h2 class="text-2xl font-bold text-white mt-12">Strategic Local Support</h2>
-            <p>If you're in the Hunter region and feel overwhelmed, our partners at <a href="https://mayfieldphonerepair.com.au" class="text-lab-teal underline">Mayfield Phone Repair</a> are available for physical assistance. For pricing benchmarks across all models, visit <a href="https://repairrange.io" class="text-lab-teal underline">RepairRange.io</a>.</p>
-        </section>
-    </article>
+                # 2. Hero Section Refinement
+                # Remove decorative skewed divs and big padding
+                content = re.sub(r'<div class="absolute right-0 top-0 w-1/3.*?"></div>', '', content, flags=re.DOTALL)
+                content = re.sub(r'<div class="absolute right-0 top-0 w-1/2.*?"></div>', '', content, flags=re.DOTALL)
+                
+                # Shrink Hero Padding (Surgical replacement for large paddings)
+                content = content.replace("py-16 md:py-24", "py-10 md:py-16")
+                content = content.replace("py-12 md:py-20", "py-8 md:py-12")
 
-    <script>lucide.createIcons();</script>
-</body>
-</html>
+                # 3. Content Hook Cleanup
+                # Identify and delete "Image Pending" or empty smartphone icons
+                content = re.sub(r'<div class="hidden md:block w-48 h-64.*?">.*?</div>\s*</div>', '</div>', content, flags=re.DOTALL)
+                content = content.replace("Image Pending", "")
+                
+                # Replace Body Classes
+                content = content.replace('<body class="bg-mesh">', '<body class="bg-paper">')
+                content = content.replace('<body class="bg-mesh-hero">', '<body class="bg-paper">')
+
+                # 4. Standardize Titles (Remove spanning colors if too messy)
+                # Keep branding teal but ensure titles are grounded
+                if "index.html" in file:
+                    content = re.sub(r'<h1 class="display text-5xl md:text-7xl.*?">.*?</h1>', 
+                                    '<h1 class="display text-5xl md:text-7xl text-ink mb-6 tracking-tighter hero-title">What is the real <span class="text-teal italic font-serif">phone repair cost</span> in Australia?</h1>', content)
+
+                with open(path, 'w', encoding='utf-8') as f:
+                    f.write(content)
+                count += 1
+    
+    print(f"Successfully cleaned and unified {count} files for a high-authority technician look.")
+
+if __name__ == "__main__":
+    global_cleanup()

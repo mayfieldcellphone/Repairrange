@@ -10,29 +10,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=DM+Mono&display=swap" rel="stylesheet">
     <script>tailwind.config={theme:{extend:{colors:{'lab-teal':'#00C2A8','lab-dark':'#3a5a78','lab-header': '#212629'},fontFamily:{sans:['Space Grotesk','sans-serif'],mono:['DM Mono','monospace']}}}}</script>
     <style>
-        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
-        html { scroll-behavior: smooth; }
-        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
-        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
-        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
-        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
-        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
-        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
-        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
-        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
-        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
-        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
-        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
-        .ed-link:hover { background-size:100% 1px; }
-        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
-        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
-        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
-        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
-        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
-        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
-        .mobile-menu { transition:all 300ms ease-in-out; }
-        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
-    </style>
+    :root { 
+        --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; 
+        --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; 
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+    .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+    .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+    .eyebrow { font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--rr-teal-700); }
+    
+    .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
+    .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:700; font-size:0.9375rem; transition:all 200ms ease; border-radius:4px; }
+    .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow: 0 4px 0 var(--rr-amber-600); }
+    .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow: 0 6px 0 var(--rr-amber-600); }
+    .btn-outline { border: 2px solid var(--rr-teal-700); color: var(--rr-teal-700); }
+    
+    .card, .post-card, .sidebar-card, .shadow-box { 
+        background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; 
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
+        border-radius: 4px;
+    }
+    .card:hover, .post-card:hover { 
+        border-color:var(--rr-ink); transform:translateY(-2px); 
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15); 
+    }
+    
+    .bg-mesh-hero { 
+        background-color: var(--rr-hero); 
+        background-image: radial-gradient(rgba(15, 118, 110, 0.1) 1.5px, transparent 0); 
+        background-size: 32px 32px; 
+        border-bottom: 1px solid var(--rr-line); 
+    }
+
+    .funnel-table { width: 100%; border-collapse: separate; border-spacing: 0; background: white; border-radius: 4px; overflow: hidden; border: 1px solid var(--rr-line); }
+    .funnel-table th { background: var(--rr-paper-2); padding: 1rem; text-align: left; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: var(--rr-muted); border-bottom: 1px solid var(--rr-line); }
+    .funnel-table td { padding: 1rem; border-bottom: 1px solid var(--rr-line); vertical-align: middle; }
+    
+    .savings-badge { background: #FEF3C7; color: #92400E; font-size: 0.625rem; font-weight: 800; padding: 0.2rem 0.5rem; border-radius: 99px; }
+    
+    .mobile-menu { transition:all 300ms ease-in-out; }
+    @media (max-width: 768px) { 
+        .hero-title { font-size: 2.5rem !important; }
+        .hide-mobile { display: none; }
+    }
+</style>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to replace a phone charging port yourself","description":"Diagnose a phone that won't charge, clean the port, and replace a worn charging port without specialist tools.","totalTime":"PT40M","supply":[{"@type":"HowToSupply","name":"Replacement charging port or charging sub-board"},{"@type":"HowToSupply","name":"Opening picks and suction cup"},{"@type":"HowToSupply","name":"Precision screwdriver set"},{"@type":"HowToSupply","name":"Spudger and tweezers"},{"@type":"HowToSupply","name":"Replacement adhesive"}],"step":[{"@type":"HowToStep","name":"Rule out the cable and charger","text":"Try a different known-good cable and charger in a different outlet before opening anything. A faulty cable mimics a dead charging port."},{"@type":"HowToStep","name":"Clean the port","text":"Power the phone off and gently remove compacted lint from the port with a wooden toothpick or dry anti-static brush. Never use metal or anything wet."},{"@type":"HowToStep","name":"Power down and open the phone","text":"Switch the phone off, then soften the adhesive with gentle heat and open the housing with picks and a suction cup."},{"@type":"HowToStep","name":"Disconnect the battery first","text":"Always unplug the battery connector before touching any other component to avoid shorts."},{"@type":"HowToStep","name":"Swap the charging port","text":"On many phones the USB-C port sits on a separate charging sub-board joined by a ribbon cable; unclip the old one and fit the new one. Reconnect the battery."},{"@type":"HowToStep","name":"Test before sealing","text":"Power on and confirm the phone charges and transfers data in both cable orientations, then reseal with fresh adhesive."}]}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why does my phone only charge when I hold the cable a certain way?","acceptedAnswer":{"@type":"Answer","text":"That symptom points to the charging port, not the phone. Either lint is packed into the bottom of the port stopping the cable seating fully, or the contacts inside the port are worn or bent so they only touch when the cable is held at an angle. Clean the port first with a wooden toothpick while the phone is off. If it still only charges at an angle, or only in one USB-C orientation, the port is worn and needs replacing. A healthy USB-C port charges the same in both orientations."}},{"@type":"Question","name":"Can I replace a charging port without soldering?","acceptedAnswer":{"@type":"Answer","text":"On many phones, yes. A large number of Samsung Galaxy models and some others put the USB-C port on a separate charging sub-board that connects to the mainboard with a ribbon cable, so you simply unclip the old board and plug in the new one with no soldering. On most iPhones and some other phones the port is a flex cable that runs into the device, which is also a no-solder swap on many models. Ports that are soldered directly to the mainboard do require microsoldering and are best left to a repair shop."}},{"@type":"Question","name":"How do I know if it's the charging port or the battery?","acceptedAnswer":{"@type":"Answer","text":"Look at what the phone does once it is charging. If the cable will not hold a connection, you have to wiggle it, or it only charges in one orientation, that is the charging port. If the phone charges fine but the percentage falls quickly, dies suddenly at 20 to 40 percent, or the back is swelling, that is the battery. If the phone charges wirelessly but not over the cable, the port or cable is the problem, not the battery. If another cable works when yours does not, it was just the cable all along."}},{"@type":"Question","name":"Does cleaning the charging port actually fix it?","acceptedAnswer":{"@type":"Answer","text":"Very often, yes. Lint and pocket fluff compact into a hard plug at the bottom of the port over months of use, stopping the cable from seating against the contacts. Removing that plug restores a solid connection in a large share of phones that suddenly will not charge or only charge intermittently. It costs nothing and should always be your first step before assuming the port is broken."}},{"@type":"Question","name":"Is it safe to clean my own charging port?","acceptedAnswer":{"@type":"Answer","text":"Yes, if you follow three rules. Power the phone off first, use only a non-metal tool such as a wooden toothpick or a dry anti-static brush, and never use water, alcohol inside the port, or compressed air held too close. Metal tools can bridge the contacts and cause a short, and moisture can corrode them. Worked gently with the phone off, cleaning the port is completely safe."}}]}</script>
 </head>

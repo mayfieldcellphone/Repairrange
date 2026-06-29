@@ -10,29 +10,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=DM+Mono&display=swap" rel="stylesheet">
     <script>tailwind.config={theme:{extend:{colors:{'lab-teal':'#00C2A8','lab-dark':'#3a5a78','lab-header': '#212629'},fontFamily:{sans:['Space Grotesk','sans-serif'],mono:['DM Mono','monospace']}}}}</script>
     <style>
-        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
-        html { scroll-behavior: smooth; }
-        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
-        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
-        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
-        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
-        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
-        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
-        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
-        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
-        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
-        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
-        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
-        .ed-link:hover { background-size:100% 1px; }
-        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
-        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
-        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
-        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
-        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
-        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
-        .mobile-menu { transition:all 300ms ease-in-out; }
-        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
-    </style>
+    :root { 
+        --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; 
+        --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; 
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+    .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+    .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+    .eyebrow { font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--rr-teal-700); }
+    
+    .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
+    .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:700; font-size:0.9375rem; transition:all 200ms ease; border-radius:4px; }
+    .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow: 0 4px 0 var(--rr-amber-600); }
+    .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow: 0 6px 0 var(--rr-amber-600); }
+    .btn-outline { border: 2px solid var(--rr-teal-700); color: var(--rr-teal-700); }
+    
+    .card, .post-card, .sidebar-card, .shadow-box { 
+        background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; 
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
+        border-radius: 4px;
+    }
+    .card:hover, .post-card:hover { 
+        border-color:var(--rr-ink); transform:translateY(-2px); 
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15); 
+    }
+    
+    .bg-mesh-hero { 
+        background-color: var(--rr-hero); 
+        background-image: radial-gradient(rgba(15, 118, 110, 0.1) 1.5px, transparent 0); 
+        background-size: 32px 32px; 
+        border-bottom: 1px solid var(--rr-line); 
+    }
+
+    .funnel-table { width: 100%; border-collapse: separate; border-spacing: 0; background: white; border-radius: 4px; overflow: hidden; border: 1px solid var(--rr-line); }
+    .funnel-table th { background: var(--rr-paper-2); padding: 1rem; text-align: left; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: var(--rr-muted); border-bottom: 1px solid var(--rr-line); }
+    .funnel-table td { padding: 1rem; border-bottom: 1px solid var(--rr-line); vertical-align: middle; }
+    
+    .savings-badge { background: #FEF3C7; color: #92400E; font-size: 0.625rem; font-weight: 800; padding: 0.2rem 0.5rem; border-radius: 99px; }
+    
+    .mobile-menu { transition:all 300ms ease-in-out; }
+    @media (max-width: 768px) { 
+        .hero-title { font-size: 2.5rem !important; }
+        .hide-mobile { display: none; }
+    }
+</style>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Why Is My Phone Charging So Slowly? 9 Fixes Before You Replace Anything","description":"A cheapest-first troubleshooting guide for slow phone charging covering dirty ports, worn cables, weak adapters, software and when it is the port or battery.","author":{"@type":"Organization","name":"SelfRepairKit Australia"},"datePublished":"2026-06-24"}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why is my phone suddenly charging so slowly?","acceptedAnswer":{"@type":"Answer","text":"The most common cause of sudden slow charging is a charging port clogged with pocket lint, which physically blocks the cable from seating fully. After that, the usual culprits are a worn or low-quality cable, a low-wattage wall adapter, charging while the phone is hot or in use, and battery wear on older phones. Work through them cheapest-first: clean the port, try a known-good fast cable and a stronger adapter, then check battery health. Most slow-charging problems are solved at the port-and-cable stage for a few dollars."}},{"@type":"Question","name":"How do I clean a charging port safely?","acceptedAnswer":{"@type":"Answer","text":"Power the phone off first. Shine a light into the port and you will usually see a plug of compacted lint at the back. Gently scrape it out with a wooden or plastic toothpick, or a clean SIM-eject tool, working from the back forward. Do not use anything metal, which can short the contacts, and avoid liquids. A short burst of compressed air can help clear loose debris. A clogged port is the single most common cause of slow charging and this fix is free."}},{"@type":"Question","name":"Is it the cable, the charger, or the battery?","acceptedAnswer":{"@type":"Answer","text":"Isolate it by swapping one thing at a time. Try a different known-good cable first; if charging speeds up, the cable was the problem. Then try a different higher-wattage wall adapter. If a clean port, a good cable and a strong adapter still charge slowly, check your battery health in settings. Health below roughly 80 percent, or a phone that charges fine but drains fast, points to a worn battery. A port that is loose, only charges at certain angles, or no longer holds the cable points to a worn charging port."}},{"@type":"Question","name":"Should I replace the charging port or the whole phone?","acceptedAnswer":{"@type":"Answer","text":"A charging port replacement is an inexpensive repair, far cheaper than a new phone, and worth doing on any phone that is otherwise working and still receiving software updates. On many phones the charging port sits on a separate flex cable or daughterboard that can be swapped with a DIY kit. If the phone is several years old, no longer updates, or has multiple faults, then replacement may make more sense, but a single bad port almost never justifies a new phone."}}]}</script>
 </head>
