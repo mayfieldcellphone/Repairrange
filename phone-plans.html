@@ -4,155 +4,20 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
+
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-CWRGPBDWZD');
+    if(window.lucide) window.lucide.createIcons();
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    });
 </script>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<style>
-        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
-        html { scroll-behavior: smooth; }
-        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
-        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
-        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
-        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
-        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
-        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
-        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
-        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
-        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
-        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
-        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
-        .ed-link:hover { background-size:100% 1px; }
-        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
-        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
-        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
-        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
-        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
-        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
-        .mobile-menu { transition:all 300ms ease-in-out; }
-        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
-    </style>
 
-<title>Phone Plans Australia: The Tech-First Guide — RepairRange</title>
-<meta name="description" content="The definitive Australian phone plan comparison guide. Coverage maps, technical frequency specs, and the best plans on the full Telstra, Optus, and Vodafone networks.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://repairrange.io/phone-plans.html">
-</head>
-<body class="bg-mesh">
-    <header class="header-sticky sticky top-0 z-50 border-b border-line">
-        <nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
-            <a href="index.html" class="flex items-center gap-2 group">
-                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" class="flex-shrink-0"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg>
-                <span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span>
-            </a>
-            <div class="hidden md:flex items-center gap-8 text-sm">
-                <a href="repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a>
-                <a href="fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a>
-                <a href="phone-plans.html" class="ed-link font-medium text-teal" style="color: var(--rr-teal-700);">Phone Plans</a>
-                <a href="blog.html" class="ed-link font-medium text-ink hover:text-teal">Blog</a>
-                <a href="calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-            </div>
-        </nav>
-    </header>
 
-    <main class="max-w-6xl mx-auto px-6 md:px-8 py-16">
-        <header class="mb-16 text-center max-w-3xl mx-auto">
-            <p class="eyebrow mb-4">Connectivity Guide</p>
-            <h1 class="display text-4xl md:text-6xl text-ink mb-6">Australian Phone Plans: The Technical Guide</h1>
-            <p class="text-lg text-muted leading-relaxed">Don't just pick a plan by price. Understand the network tech, coverage tiers, and future satellite connectivity before you switch.</p>
-        </header>
-
-        <section class="mb-20">
-            <h2 class="font-serif text-3xl mb-8">The "Three Tiers" of Australian Coverage</h2>
-            <div class="overflow-x-auto">
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Network Provider</th>
-                            <th>Coverage (Pop.)</th>
-                            <th>Best For</th>
-                            <th>The "Catch"</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td><strong>Telstra Retail</strong></td><td>99.6%</td><td>Rural, Remote, High-Speed 5G</td><td>Most expensive plans in AU.</td></tr>
-                        <tr><td><strong>Boost Mobile</strong></td><td>99.6%</td><td>Rural Aussies on a Budget</td><td>The only MVNO with Full Retail access.</td></tr>
-                        <tr><td><strong>Telstra Wholesale</strong></td><td>98.8%</td><td>Metro & Major Regional</td><td>Missing ~1 million sq km of rural signal.</td></tr>
-                        <tr><td><strong>Optus Network</strong></td><td>98.5%</td><td>Value-seeking Metro users</td><td>Network outages in 2023 caused trust issues.</td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- NEWCOMER & STUDENT SECTION -->
-        <section class="mb-20">
-            <h2 class="font-serif text-3xl mb-8">Newcomers, Students & Expats</h2>
-            <div class="bg-amber-50 border border-amber-200 p-10 rounded-sm">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-                    <div class="lg:col-span-8">
-                        <p class="eyebrow text-amber-600 mb-4">First Week Essentials</p>
-                        <h3 class="font-serif text-3xl text-ink mb-4">Just arrived in Australia?</h3>
-                        <p class="text-lg text-muted leading-relaxed mb-6">Getting a phone plan without a local credit score or driver's license can be confusing. We've simplified the process for international students and immigrants.</p>
-                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm font-medium mb-8">
-                            <li class="flex items-center gap-2"><i data-lucide="shield-check" class="w-5 h-5 text-amber-600"></i> No Credit Check Required</li>
-                            <li class="flex items-center gap-2"><i data-lucide="globe" class="w-5 h-5 text-amber-600"></i> Cheap International Calls</li>
-                            <li class="flex items-center gap-2"><i data-lucide="smartphone" class="w-5 h-5 text-amber-600"></i> BYO Phone (Unlock Guides)</li>
-                            <li class="flex items-center gap-2"><i data-lucide="zap" class="w-5 h-5 text-amber-600"></i> Local Charging Solutions</li>
-                        </ul>
-                        <a href="blog/australian-phone-plan-guide-for-immigrants-and-students.html" class="btn btn-primary">Read the Newcomer's Guide</a>
-                    </div>
-                    <div class="lg:col-span-4 bg-white p-6 border border-amber-200 shadow-sm">
-                        <h4 class="font-serif text-xl mb-4">Top Picks for Expats</h4>
-                        <div class="space-y-4">
-                            <div class="p-4 border-b border-line last:border-0"><p class="font-bold text-ink">Amaysim</p><p class="text-xs text-muted">Best for Students (Cheap Data)</p></div>
-                            <div class="p-4 border-b border-line last:border-0"><p class="font-bold text-ink">Lebara</p><p class="text-xs text-muted">Best for International Calls</p></div>
-                            <div class="p-4 border-b border-line last:border-0"><p class="font-bold text-ink">Boost Mobile</p><p class="text-xs text-muted">Best for Regional Coverage</p></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
-            <div class="bg-white border border-line p-10">
-                <p class="eyebrow mb-4">SpaceX Partner</p>
-                <h3 class="font-serif text-2xl mb-4">Starlink Direct to Cell</h3>
-                <p class="text-sm text-muted mb-6">The future of Australian connectivity is in space. Telstra and SpaceX are launching satellite SMS/Voice for standard phones in 2026.</p>
-                <a href="blog/starlink-direct-to-cell-australia-guide.html" class="ed-link text-teal font-medium">Read the technical deep-dive →</a>
-            </div>
-            <div class="bg-teal-900 text-white p-10">
-                <p class="eyebrow text-amber mb-4">Technical Tip</p>
-                <h3 class="font-serif text-2xl mb-4">Antenna Signal Loss</h3>
-                <p class="text-sm text-white/70 mb-6">Paying for a premium plan is useless if your hardware is failing. A cracked frame or loose internal antenna can drop your signal by 3-5 bars.</p>
-                <a href="index.html#starlink-quiz" class="btn btn-primary">Take the Signal Quiz</a>
-            </div>
-        </section>
-
-        <section class="mb-20">
-            <h2 class="font-serif text-3xl mb-8">Latest Connectivity News</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <a href="blog/best-telstra-network-phone-plans.html" class="block p-6 border border-line hover:border-ink transition-colors">
-                    <h4 class="font-serif text-lg mb-2">Best Full-Telstra Plans</h4>
-                    <p class="text-xs text-muted">Stop paying the Telstra Tax. Compare Boost vs. Pre-paid.</p>
-                </a>
-                <a href="blog/spacex-starlink-ipo-investor-guide.html" class="block p-6 border border-line hover:border-ink transition-colors">
-                    <h4 class="font-serif text-lg mb-2">SpaceX Starlink IPO</h4>
-                    <p class="text-xs text-muted">How to invest in the global network of the future from AU.</p>
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-teal-900 text-white py-16 text-center">
-        <p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p>
-    </footer>
-    <script>if (window.lucide) window.lucide.createIcons();</script>
 </body>
 </html>

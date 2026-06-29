@@ -4,143 +4,22 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
+
+
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-CWRGPBDWZD');
+    if(window.lucide) window.lucide.createIcons();
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    });
 </script>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<style>
-        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
-        html { scroll-behavior: smooth; }
-        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
-        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
-        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
-        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
-        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
-        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
-        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
-        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
-        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
-        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
-        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
-        .ed-link:hover { background-size:100% 1px; }
-        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
-        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
-        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
-        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
-        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
-        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
-        .mobile-menu { transition:all 300ms ease-in-out; }
-        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
-    </style>
 
-<title>Should you fix your phone before selling? The math on repair vs sell as-is — RepairRange</title>
-<meta name="description" content="Should you repair a cracked screen or dead battery before selling your phone? The math on when fixing adds value vs when it's a waste of money — with real Australian resale data.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://repairrange.io/blog/should-you-fix-phone-before-selling.html">
-</head>
-<body class="bg-mesh">
-<header class="header-sticky sticky top-0 z-50 border-b border-line"><nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between"><a href="../index.html" class="flex items-center gap-2"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg><span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span></a><div class="hidden md:flex items-center gap-8 text-sm"><a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a><a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a><a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="ed-link font-medium text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote</a></div><button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button></nav><div class="mobile-menu hidden md:hidden border-t border-line bg-paper"><div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1"><a href="../brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="py-2 font-medium text-ink hover:text-teal">Troubleshoot</a><a href="../calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a><a href="../locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="py-2 font-medium text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a></div></div></header>
 
-<article class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-24">
-<div class="max-w-4xl mb-12">
-<nav class="flex items-center gap-2 text-xs text-muted mb-8"><a href="../index.html" class="ed-link hover:text-teal">Home</a><span>/</span><a href="../blog.html" class="ed-link hover:text-teal">Blog</a><span>/</span><span class="text-ink">Fix before selling</span></nav>
-<p class="eyebrow mb-4">Money guide · June 2026</p>
-<h1 class="display text-3xl md:text-5xl lg:text-6xl text-ink mb-6">Should you fix your phone before selling it?</h1>
-<p class="text-lg text-muted leading-relaxed">You're upgrading. Your old phone has a cracked screen, a tired battery, or both. Do you spend $150–$400 fixing it to get more on the sale, or sell it as-is and cut your losses? Here's the maths — repair-by-repair, with real Australian resale data.</p>
-</div>
-
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
-<div class="lg:col-span-8">
-<div class="prose">
-
-<h2>The rule: does the repair pay for itself?</h2>
-<p>Calculate the <strong>ROI per repair</strong>: if the repair cost is less than the resale value it adds, fix it. If it costs more than it adds, sell as-is. Simple in theory — here's how it plays out for each repair type.</p>
-
-<h2>Screen repair: almost always fix it</h2>
-<p>A cracked screen is the single biggest resale killer. Buyers on Facebook Marketplace and Gumtree heavily discount cracked phones because they assume the worst — hidden damage, failed biometrics, ongoing degradation.</p>
-
-<p><strong>Example: iPhone 15 Pro Max</strong></p>
-<p>Resale with cracked screen: ~$700–$900. Resale with perfect screen: ~$1,100–$1,300. Difference: <strong>$300–$400.</strong> Screen repair cost: <a href="../repair/iphone-15-pro-max.html">$329–$459</a>. <strong>ROI: roughly break-even to +$70.</strong> Worth doing on newer phones.</p>
-
-<p><strong>Example: Samsung Galaxy S24 Ultra</strong></p>
-<p>Resale with cracked screen: ~$650–$850. Resale with perfect screen: ~$950–$1,150. Difference: <strong>$300–$350.</strong> Screen repair cost: <a href="../repair/samsung-galaxy-s24-ultra.html">$349–$499</a>. <strong>ROI: break-even.</strong> Worth doing if you can get a quality repair under $350.</p>
-
-<p><strong>Example: iPhone 13 (3 years old)</strong></p>
-<p>Resale with cracked screen: ~$250–$350. Resale with perfect screen: ~$450–$550. Difference: <strong>$150–$200.</strong> Screen repair cost: <a href="../repair/iphone-13.html">$169–$249</a>. <strong>ROI: break-even.</strong> Marginal — only worth it if you can get a cheap repair.</p>
-
-<p><strong>The pattern:</strong> Screen repair before selling is positive ROI on phones under 2 years old, break-even on 2-3 year old phones, and negative ROI on phones 4+ years old (the total resale value is so low that the repair cost eats most of the gain).</p>
-
-<h2>Battery replacement: the highest ROI pre-sale repair</h2>
-
-<p>Buyers check battery health. A listing that says "battery health 95% — replaced 3 months ago" sells significantly faster and for more than "battery health 72%." And battery replacement is cheap.</p>
-
-<p><strong>The math is almost always positive:</strong> Battery replacement costs $69–$149. The resale bump from "worn battery" to "new battery" is $100–$200 on any flagship phone. That's a 30–100% return on investment. This is the single best pre-sale repair you can do.</p>
-
-<p><strong>When NOT to replace the battery before selling:</strong> Only if the phone is 5+ years old and the total resale value is under $200 — at that point, the $69–$149 battery cost is too large a percentage of the phone's total value.</p>
-
-<h2>Back glass: usually skip it</h2>
-
-<p>Cracked back glass looks bad but doesn't affect function. Buyers know this. The resale discount for cracked back glass is typically $100–$150 — but back glass repair costs $89–$259 depending on the model and method. The ROI is negative or break-even on most models.</p>
-
-<p><strong>Exception: iPhone 12–17 at Apple authorised ($119–$159).</strong> Apple's laser removal makes back glass cheaper than independent shops. At $119, the repair often adds $150+ in resale value. This is one of the few cases where Apple authorised is the best pre-sale repair option.</p>
-
-<h2>Charging port and other minor repairs: case by case</h2>
-
-<p><strong>Charging port ($69–$149):</strong> A phone that doesn't charge is nearly unsellable. The repair is cheap and converts "broken phone" to "working phone" — a resale jump of $200+ on any flagship. Always fix before selling.</p>
-
-<p><strong>Camera lens ($49–$149):</strong> A cracked camera lens discounts the phone heavily (buyers assume the camera is damaged even if photos are fine). If only the protective glass is cracked, the repair is cheap and worthwhile.</p>
-
-<p><strong>Water damage (varies):</strong> Don't repair water damage just to sell the phone. The repair is expensive ($49–$499+), unpredictable, and buyers can detect water damage indicators. Sell water-damaged phones as-is to repair shops or "for parts" on eBay.</p>
-
-<h2>Where to sell in Australia</h2>
-
-<p><strong>Facebook Marketplace:</strong> Highest prices (peer-to-peer, no fees). Requires effort — listing, messaging, meeting. Best for phones in good condition. List with clear photos and battery health screenshot.</p>
-
-<p><strong>Gumtree:</strong> Similar to Facebook Marketplace. Slightly older audience. Same peer-to-peer pricing advantage.</p>
-
-<p><strong>eBay Australia:</strong> Widest reach, especially for less common models. 12–13% in fees (eBay + PayPal). Good for damaged phones sold "for parts or repair" — repair shops actively buy on eBay.</p>
-
-<p><strong>Apple Trade In:</strong> Convenient (online or in-store) but pays 20–40% below market. Best for people who value convenience over maximum price. Screen damage dramatically reduces the offer.</p>
-
-<p><strong>Samsung Trade Up:</strong> Similar to Apple Trade In. Convenient, below-market pricing. Available through samsung.com/au.</p>
-
-<p><strong>Phone recyclers (Phonebot, Mazuma, Mobile Monster):</strong> Instant online quotes, free shipping. Wholesale pricing — expect 30–50% below Facebook Marketplace. Good for speed and zero-effort selling.</p>
-
-<h2>The pre-sale checklist</h2>
-
-<p><strong>1. Check repair costs for your model:</strong> Use the <a href="../calculator.html">repair calculator</a> or check your <a href="../repair/phone-repair-costs-australia.html">model page</a> for exact pricing.</p>
-
-<p><strong>2. Check resale value:</strong> Search your model on Facebook Marketplace (filter by "sold" if available) and eBay (filter by "completed listings") to see what it actually sells for — not what people are asking.</p>
-
-<p><strong>3. Do the math:</strong> If repair cost < resale value increase → fix it. If not → sell as-is.</p>
-
-<p><strong>4. Always replace the battery</strong> if health is below 85%. Highest ROI repair.</p>
-
-<p><strong>5. Factory reset before selling:</strong> Settings → General → Transfer or Reset iPhone → Erase All Content and Settings. On Android: Settings → System → Reset → Factory data reset. Sign out of iCloud/Google first.</p>
-
-<p>For repair pricing on your specific model: <a href="../calculator.html">Repair calculator</a> | <a href="../repair/phone-repair-costs-australia.html">All 75+ models compared</a></p>
-
-</div>
-</div>
-<aside class="lg:col-span-4"><div class="lg:sticky lg:top-24 space-y-4">
-<div class="sidebar-card" style="background:var(--rr-teal-900);border-color:var(--rr-teal-900)"><h4 style="color:var(--rr-amber-500)">Get a repair quote</h4><p style="color:rgba(255,255,255,0.7);font-size:0.875rem;line-height:1.6;margin-bottom:1rem">Find exact pricing for your phone model.</p><a href="../calculator.html" class="btn btn-primary w-full justify-center text-sm">Open Repair Calculator</a></div>
-<div class="sidebar-card"><h4>Popular guides</h4><a href="phone-repair-myths-debunked.html" class="sidebar-link">10 repair myths debunked</a><a href="phone-repair-checklist-before-during-after.html" class="sidebar-link">Repair checklist</a><a href="phone-repair-warranty-australia-consumer-rights.html" class="sidebar-link">Your warranty rights</a><a href="how-to-find-trustworthy-phone-repair-shop.html" class="sidebar-link">Finding a good shop</a><a href="iphone-vs-samsung-repair-cost-comparison.html" class="sidebar-link">iPhone vs Samsung costs</a><a href="how-long-does-phone-repair-take.html" class="sidebar-link">How long repairs take</a></div>
-<div class="sidebar-card"><h4>Popular models</h4><a href="../repair/iphone-17-pro-max.html" class="sidebar-link">iPhone 17 Pro Max</a><a href="../repair/iphone-15-pro-max.html" class="sidebar-link">iPhone 15 Pro Max</a><a href="../repair/samsung-galaxy-s26-ultra.html" class="sidebar-link">Galaxy S26 Ultra</a><a href="../repair/samsung-galaxy-s24-ultra.html" class="sidebar-link">Galaxy S24 Ultra</a><a href="../repair/phone-repair-costs-australia.html" class="sidebar-link" style="color:var(--rr-teal-700);font-weight:600">All 75+ models →</a></div>
-<div class="sidebar-card"><h4>Fix it yourself?</h4><a href="../fix/water-damage.html" class="sidebar-link">Water damage</a><a href="../fix/wont-turn-on.html" class="sidebar-link">Won't turn on</a><a href="../fix/cracked-screen-still-works.html" class="sidebar-link">Cracked screen</a><a href="../fix/battery-drains-fast.html" class="sidebar-link">Battery drain</a><a href="../fix.html" class="sidebar-link" style="color:var(--rr-teal-700);font-weight:600">All 10 guides →</a></div>
-<div class="sidebar-card"><h4>Save money</h4><a href="phone-insurance-vs-self-insuring-australia.html" class="sidebar-link">Insurance vs self-insuring</a><a href="esim-phone-repair-what-happens.html" class="sidebar-link">eSIM and repair</a><a href="repair-vs-replace-decision-guide.html" class="sidebar-link">Repair vs replace</a></div>
-</div></aside>
-</div>
-</article> text-white"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10 mt-4"><a href="repair-vs-replace-decision-guide.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Related</p><h3 class="font-serif text-xl text-white mb-3">Repair vs replace</h3><p class="text-white/60 text-sm">The 40% rule.</p></a><a href="battery-health-when-to-replace.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Before selling</p><h3 class="font-serif text-xl text-white mb-3">Battery health guide</h3><p class="text-white/60 text-sm">When 82% means replace.</p></a><a href="how-to-tell-genuine-vs-aftermarket-screen.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">After repair</p><h3 class="font-serif text-xl text-white mb-3">Is your screen genuine?</h3><p class="text-white/60 text-sm">Check before you list.</p></a></div></div></section>
-
-<footer class="bg-teal-900 text-white border-t border-white/10"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12"><div class="md:col-span-5"><div class="flex items-center gap-2 mb-4"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg><span class="font-serif text-2xl font-medium">RepairRange</span></div><p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice.</p></div><div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="../repair/phone-repair-costs-australia.html" class="text-white/80 hover:text-amber">All Models</a></li><li><a href="../calculator.html" class="text-white/80 hover:text-amber">Calculator</a></li><li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="../blog.html" class="text-white/80 hover:text-amber">Blog</a></li></ul></div><div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="../about.html" class="text-white/80 hover:text-amber">About</a></li><li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy</a></li><li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms</a></li></ul></div></div><div class="pt-8 border-t border-white/15"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. Not affiliated with Apple, Samsung, Google, or any manufacturer.</p></div></div></footer>
-<script>if(window.lucide)window.lucide.createIcons();document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.mobile-menu-button'),m=document.querySelector('.mobile-menu');if(b&&m)b.addEventListener('click',()=>m.classList.toggle('hidden'))});</script>
 <script>
 (function(){var g=[{t:'10 repair myths debunked',u:'phone-repair-myths-debunked.html'},{t:'Phone repair checklist',u:'phone-repair-checklist-before-during-after.html'},{t:'Your warranty rights (ACL)',u:'phone-repair-warranty-australia-consumer-rights.html'},{t:'Finding a trustworthy shop',u:'how-to-find-trustworthy-phone-repair-shop.html'},{t:'iPhone vs Samsung costs',u:'iphone-vs-samsung-repair-cost-comparison.html'},{t:'How long repairs take',u:'how-long-does-phone-repair-take.html'},{t:'DIY screen repair?',u:'can-you-diy-phone-screen-repair.html'},{t:'Screen quality tiers',u:'screen-quality-tiers-oem-aftermarket-refurbished-explained.html'},{t:'Samsung fingerprint trap',u:'samsung-fingerprint-sensor-screen-replacement-guide.html'},{t:'Is your screen genuine?',u:'how-to-tell-genuine-vs-aftermarket-screen.html'},{t:'Battery health guide',u:'battery-health-when-to-replace.html'},{t:'eSIM and phone repair',u:'esim-phone-repair-what-happens.html'},{t:'Foldable phone repair',u:'foldable-phone-repair-cost-guide.html'},{t:'iPad repair costs',u:'ipad-repair-cost-guide-australia.html'},{t:'MacBook & laptop costs',u:'macbook-laptop-repair-cost-guide-australia.html'},{t:'Lenovo tablet repair',u:'lenovo-tablet-repair-cost-guide-australia.html'},{t:'S26 Ultra guide',u:'samsung-galaxy-s26-ultra-repair-guide.html'},{t:'iPhone 17 PM guide',u:'iphone-17-pro-max-repair-guide.html'},{t:'Insurance vs self-insuring',u:'phone-insurance-vs-self-insuring-australia.html'},{t:'Fix before selling?',u:'should-you-fix-phone-before-selling.html'},{t:'Repair vs replace',u:'repair-vs-replace-decision-guide.html'}];var m=[{t:'iPhone 17 Pro Max',u:'../repair/iphone-17-pro-max.html'},{t:'iPhone 16 Pro Max',u:'../repair/iphone-16-pro-max.html'},{t:'iPhone 15 Pro Max',u:'../repair/iphone-15-pro-max.html'},{t:'iPhone 15',u:'../repair/iphone-15.html'},{t:'iPhone 14 Pro Max',u:'../repair/iphone-14-pro-max.html'},{t:'iPhone 13',u:'../repair/iphone-13.html'},{t:'iPhone SE 3',u:'../repair/iphone-se-3.html'},{t:'Galaxy S26 Ultra',u:'../repair/samsung-galaxy-s26-ultra.html'},{t:'Galaxy S25 Ultra',u:'../repair/samsung-galaxy-s25-ultra.html'},{t:'Galaxy S24 Ultra',u:'../repair/samsung-galaxy-s24-ultra.html'},{t:'Galaxy S23 Ultra',u:'../repair/samsung-galaxy-s23-ultra.html'},{t:'Pixel 9 Pro',u:'../repair/pixel-9-pro.html'},{t:'Pixel 8 Pro',u:'../repair/pixel-8-pro.html'}];var f=[{t:'Water damage',u:'../fix/water-damage.html'},{t:'Won\'t turn on',u:'../fix/wont-turn-on.html'},{t:'Cracked screen',u:'../fix/cracked-screen-still-works.html'},{t:'Battery drain',u:'../fix/battery-drains-fast.html'},{t:'Ghost touch',u:'../fix/ghost-touch.html'},{t:'Charging issues',u:'../fix/charging-port.html'},{t:'Green lines',u:'../fix/green-lines.html'},{t:'Black screen',u:'../fix/black-screen.html'},{t:'Overheating',u:'../fix/overheating.html'},{t:'Dropped & broken',u:'../fix/dropped-and-broken.html'}];function sh(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}function rl(arr,n,al,at){var items=sh(arr.slice()).slice(0,n);var h='';for(var i=0;i<items.length;i++)h+='<a href="'+items[i].u+'" class="sidebar-link">'+items[i].t+'</a>';if(al)h+='<a href="'+al+'" class="sidebar-link" style="color:var(--rr-teal-700);font-weight:600">'+at+'</a>';return h}var cards=document.querySelectorAll('.sidebar-card');var nc=[];for(var i=0;i<cards.length;i++){if(!cards[i].getAttribute('style'))nc.push(cards[i])}if(nc.length>=4){nc[0].innerHTML='<h4 style="font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--rr-teal-700);margin-bottom:0.75rem">Popular guides</h4>'+rl(g,6,'../blog.html','All guides \u2192');nc[1].innerHTML='<h4 style="font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--rr-teal-700);margin-bottom:0.75rem">Popular models</h4>'+rl(m,5,'../repair/phone-repair-costs-australia.html','All 75+ models \u2192');nc[2].innerHTML='<h4 style="font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--rr-teal-700);margin-bottom:0.75rem">Fix it yourself?</h4>'+rl(f,5,'../fix.html','All 10 guides \u2192');nc[3].innerHTML='<h4 style="font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--rr-teal-700);margin-bottom:0.75rem">Save money</h4>'+rl(g.filter(function(x){return x.u.indexOf('insurance')>-1||x.u.indexOf('selling')>-1||x.u.indexOf('replace')>-1}),3,null,null)}})()
 </script>

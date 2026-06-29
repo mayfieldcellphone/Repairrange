@@ -4,155 +4,22 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
+
+
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-CWRGPBDWZD');
+    if(window.lucide) window.lucide.createIcons();
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    });
 </script>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<style>
-        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
-        html { scroll-behavior: smooth; }
-        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
-        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
-        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
-        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
-        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
-        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
-        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
-        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
-        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
-        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
-        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
-        .ed-link:hover { background-size:100% 1px; }
-        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
-        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
-        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
-        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
-        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
-        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
-        .mobile-menu { transition:all 300ms ease-in-out; }
-        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
-    </style>
 
-<title>Phone insurance vs self-insuring Australia — AppleCare, Samsung Care+, the maths — RepairRange</title>
-<meta name="description" content="Is phone insurance worth it in Australia? AppleCare+, Samsung Care+, Telstra Device Protect, and third-party insurance compared — with the actual maths on when self-insuring wins.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://repairrange.io/blog/phone-insurance-vs-self-insuring-australia.html">
-</head>
-<body class="bg-mesh">
-<header class="header-sticky sticky top-0 z-50 border-b border-line"><nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between"><a href="../index.html" class="flex items-center gap-2"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg><span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span></a><div class="hidden md:flex items-center gap-8 text-sm"><a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a><a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a><a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="ed-link font-medium text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote</a></div><button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button></nav><div class="mobile-menu hidden md:hidden border-t border-line bg-paper"><div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1"><a href="../brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="py-2 font-medium text-ink hover:text-teal">Troubleshoot</a><a href="../calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a><a href="../locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="py-2 font-medium text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a></div></div></header>
 
-<article class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-24">
-<div class="max-w-4xl mb-12">
-<nav class="flex items-center gap-2 text-xs text-muted mb-8"><a href="../index.html" class="ed-link hover:text-teal">Home</a><span>/</span><a href="../blog.html" class="ed-link hover:text-teal">Blog</a><span>/</span><span class="text-ink">Phone insurance vs self-insuring</span></nav>
-<p class="eyebrow mb-4">Money guide · June 2026</p>
-<h1 class="display text-3xl md:text-5xl lg:text-6xl text-ink mb-6">Phone insurance vs self-insuring — the actual maths.</h1>
-<p class="text-lg text-muted leading-relaxed">AppleCare+ costs $279 for 2 years. Samsung Care+ costs $264–$360. Telstra Device Protect costs $360–$480. But a screen repair at an independent shop costs $199–$549 — once. Here's the honest maths on when insurance makes sense and when you're literally paying to feel better.</p>
-</div>
-
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
-<div class="lg:col-span-8">
-<div class="prose">
-
-<h2>The self-insuring concept</h2>
-<p>Self-insuring means skipping insurance entirely and paying for repairs out of pocket when they happen. Instead of $15/month going to an insurer, you put that $15 into a savings account. If nothing breaks, you keep the money. If something breaks, you pay for the repair from your fund. Statistically, most people come out ahead self-insuring because most people don't break their phones often enough for insurance to pay off.</p>
-
-<p>The industry data supports this: phone insurance claim rates average 15–25% per year across all customers. That means 75–85% of insured customers pay premiums and never make a claim. Insurance companies are profitable precisely because most customers don't break their phones.</p>
-
-<h2>AppleCare+ — the best value manufacturer plan</h2>
-
-<div class="step-card">
-<h3>Cost: $279 for 2 years (or $14.49/month)</h3>
-<p class="text-muted" style="margin-bottom:0"><strong>Covers:</strong> 2 incidents of accidental damage per year. Screen repair excess: $45. Other damage excess: $149. Battery replacement: free if below 80% capacity. Also extends manufacturer warranty to 2 years. <strong>Does NOT cover:</strong> Theft or loss.</p>
-</div>
-
-<p><strong>The maths — iPhone 17 Pro Max:</strong></p>
-<p>AppleCare+ total cost for one screen claim: $279 (premium) + $45 (excess) = <strong>$324</strong>.</p>
-<p>Screen repair at indie shop: <a href="../repair/iphone-17-pro-max.html">$349–$549</a>. At Apple without AppleCare+: $379.</p>
-<p><strong>Verdict:</strong> AppleCare+ saves $25–$225 if you crack the screen once. It genuinely pays for itself on Pro Max models. <strong>Worth it for: iPhone 15 Pro/Pro Max and newer.</strong></p>
-
-<p><strong>The maths — iPhone 15 (standard):</strong></p>
-<p>AppleCare+ total cost: $279 + $45 = <strong>$324</strong>.</p>
-<p>Screen repair at indie shop: <a href="../repair/iphone-15.html">$199–$289</a>.</p>
-<p><strong>Verdict:</strong> AppleCare+ costs MORE than the repair. You're paying $324 to avoid a $199–$289 expense. <strong>Not worth it for standard iPhones.</strong></p>
-
-<h2>Samsung Care+ — only worth it on foldables</h2>
-
-<div class="step-card">
-<h3>Cost: $10.99–$14.99/month</h3>
-<p class="text-muted" style="margin-bottom:0"><strong>Covers:</strong> Accidental damage. Screen repair excess: $99. Other damage excess: $199. <strong>Does NOT cover:</strong> Theft or loss (separate Samsung Care+ with Theft & Loss plan available).</p>
-</div>
-
-<p><strong>The maths — Galaxy S26 Ultra:</strong></p>
-<p>Samsung Care+ total cost for one screen claim (24 months): $360 (premiums at $14.99/mo) + $99 (excess) = <strong>$459</strong>.</p>
-<p>Screen repair at indie shop: <a href="../repair/samsung-galaxy-s26-ultra.html">$399–$619</a>. Samsung authorised: ~$449.</p>
-<p><strong>Verdict:</strong> Samsung Care+ costs $459 to cover a repair that costs $399–$619. It barely breaks even if the indie repair is expensive ($619), but it's actually more expensive than Samsung's own authorised price ($449). <strong>Borderline — not clearly worth it.</strong></p>
-
-<p><strong>The maths — Galaxy Z Fold 6 (this is where it changes):</strong></p>
-<p>Samsung Care+ total cost (24 months): $360 + $99 = <strong>$459</strong>.</p>
-<p>Inner screen repair without insurance: <a href="foldable-phone-repair-cost-guide.html">$599–$899</a>.</p>
-<p><strong>Verdict:</strong> Samsung Care+ saves $140–$440 on a single inner screen claim. <strong>Genuinely worth it on foldable phones.</strong></p>
-
-<h2>Carrier insurance — Telstra, Optus, Vodafone</h2>
-
-<div class="step-card">
-<h3>Telstra Device Protect: $15–$20/month | Excess: $99–$199</h3>
-<p class="text-muted" style="margin-bottom:0"><strong>Covers:</strong> Accidental damage, mechanical breakdown, AND theft/loss (the key differentiator). <strong>Total cost for one claim (24 months):</strong> $360–$480 premiums + $99–$199 excess = $459–$679. <strong>Verdict:</strong> Too expensive for accidental damage alone (indie screen repair is cheaper). Only makes sense if theft/loss coverage is important to you.</p>
-</div>
-
-<div class="step-card">
-<h3>Optus Device Protection: $12–$17/month | Excess: $99–$199</h3>
-<p class="text-muted" style="margin-bottom:0">Similar to Telstra. Covers accidental damage + theft/loss. <strong>Total cost:</strong> $288–$408 premiums + excess = $387–$607 for one claim. Slightly cheaper than Telstra but same analysis applies.</p>
-</div>
-
-<p><strong>The problem with carrier insurance:</strong> You're paying $15–$20/month regardless of whether you make a claim, and the excess is high enough that the total cost often matches or exceeds the indie repair price. The only unique value is theft/loss coverage — if your phone is stolen, insurance replaces it (minus the excess). If you've never had a phone stolen, you're paying for coverage you'll statistically never use.</p>
-
-<h2>Self-insuring: the maths that matter</h2>
-
-<p><strong>The self-insurance fund:</strong> Put $15/month into a savings account. After 24 months: <strong>$360 saved.</strong> That's enough to cover any single phone repair — screen, battery, port, or back glass on virtually any model. And if nothing breaks, you keep the $360.</p>
-
-<p><strong>The probability factor:</strong> If you break your phone screen once every 3 years (the average for careful users), self-insuring gives you $540 saved over 3 years — more than enough for a flagship screen repair with money left over. Insurance would have cost you $540 in premiums over the same period, plus the excess when you claim.</p>
-
-<p><strong>When self-insuring loses:</strong> If you break your phone more than once per year (serial dropper), or if you need theft/loss coverage, or if you own a foldable (repair costs are extreme enough to justify insurance).</p>
-
-<h2>The decision framework</h2>
-
-<p><strong>Buy AppleCare+ if:</strong> You own an iPhone 15 Pro or newer (screen repair exceeds AppleCare+ cost), you want the peace of mind, and you value Apple's guaranteed Face ID preservation and genuine parts.</p>
-
-<p><strong>Buy Samsung Care+ if:</strong> You own a foldable (Z Fold, Z Flip). The inner screen repair savings genuinely justify the premiums. Skip it for standard Galaxy S-series — the maths don't work.</p>
-
-<p><strong>Buy carrier insurance if:</strong> You work in an environment where theft/loss is a real risk (construction sites, nightlife, travel). Carrier insurance is the only common plan that covers theft and loss. If accidental damage is your only concern, it's overpriced.</p>
-
-<p><strong>Self-insure if:</strong> You use a case and screen protector, you rarely break phones, you own a standard (non-foldable) phone, and you're comfortable paying for a repair if it happens. Put $15/month aside. Most people will come out ahead over 3–5 years.</p>
-
-<h2>What about home and contents insurance?</h2>
-
-<p>Many Australians don't realise their home and contents insurance may already cover accidental phone damage and theft — both at home and when you're out. Check your policy's "portable contents" or "personal effects" section. Some policies cover phones with no additional premium and an excess of $100–$300. If your contents insurance already covers your phone, any separate phone insurance is redundant.</p>
-
-<p><strong>Tip:</strong> Call your insurer and ask specifically: "Does my home and contents policy cover accidental damage to my phone away from home?" If yes, you may already be covered without paying for AppleCare+, Samsung Care+, or carrier insurance.</p>
-
-<p>For repair pricing on your specific model: <a href="../calculator.html">Repair calculator</a> | <a href="../repair/phone-repair-costs-australia.html">All 75+ models</a></p>
-
-</div>
-</div>
-<aside class="lg:col-span-4"><div class="lg:sticky lg:top-24 space-y-4">
-<div class="sidebar-card" style="background:var(--rr-teal-900);border-color:var(--rr-teal-900)"><h4 style="color:var(--rr-amber-500)">Get a repair quote</h4><p style="color:rgba(255,255,255,0.7);font-size:0.875rem;line-height:1.6;margin-bottom:1rem">Find exact pricing for your phone model.</p><a href="../calculator.html" class="btn btn-primary w-full justify-center text-sm">Open Repair Calculator</a></div>
-<div class="sidebar-card"><h4>Popular guides</h4><a href="phone-repair-myths-debunked.html" class="sidebar-link">10 repair myths debunked</a><a href="phone-repair-checklist-before-during-after.html" class="sidebar-link">Repair checklist</a><a href="phone-repair-warranty-australia-consumer-rights.html" class="sidebar-link">Your warranty rights</a><a href="how-to-find-trustworthy-phone-repair-shop.html" class="sidebar-link">Finding a good shop</a><a href="iphone-vs-samsung-repair-cost-comparison.html" class="sidebar-link">iPhone vs Samsung costs</a><a href="foldable-phone-repair-cost-guide.html" class="sidebar-link">Foldable repair costs</a></div>
-<div class="sidebar-card"><h4>Popular models</h4><a href="../repair/iphone-17-pro-max.html" class="sidebar-link">iPhone 17 Pro Max</a><a href="../repair/iphone-15-pro-max.html" class="sidebar-link">iPhone 15 Pro Max</a><a href="../repair/samsung-galaxy-s26-ultra.html" class="sidebar-link">Galaxy S26 Ultra</a><a href="../repair/samsung-galaxy-s24-ultra.html" class="sidebar-link">Galaxy S24 Ultra</a><a href="../repair/phone-repair-costs-australia.html" class="sidebar-link" style="color:var(--rr-teal-700);font-weight:600">All 75+ models →</a></div>
-<div class="sidebar-card"><h4>Fix it yourself?</h4><a href="../fix/water-damage.html" class="sidebar-link">Water damage</a><a href="../fix/wont-turn-on.html" class="sidebar-link">Won't turn on</a><a href="../fix/cracked-screen-still-works.html" class="sidebar-link">Cracked screen</a><a href="../fix/battery-drains-fast.html" class="sidebar-link">Battery drain</a><a href="../fix.html" class="sidebar-link" style="color:var(--rr-teal-700);font-weight:600">All 10 guides →</a></div>
-<div class="sidebar-card"><h4>Save money</h4><a href="should-you-fix-phone-before-selling.html" class="sidebar-link">Fix before selling?</a><a href="repair-vs-replace-decision-guide.html" class="sidebar-link">Repair vs replace</a><a href="esim-phone-repair-what-happens.html" class="sidebar-link">eSIM and repair</a></div>
-</div></aside>
-</div>
-</article> text-white"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10 mt-4"><a href="foldable-phone-repair-cost-guide.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Why foldables need insurance</p><h3 class="font-serif text-xl text-white mb-3">Foldable repair costs</h3><p class="text-white/60 text-sm">The expensive truth.</p></a><a href="repair-vs-replace-decision-guide.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Decision</p><h3 class="font-serif text-xl text-white mb-3">Repair vs replace</h3><p class="text-white/60 text-sm">The 40% rule.</p></a><a href="phone-repair-warranty-australia-consumer-rights.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Free coverage</p><h3 class="font-serif text-xl text-white mb-3">Your warranty rights</h3><p class="text-white/60 text-sm">What ACL guarantees — no insurance needed.</p></a></div></div></section>
-
-<footer class="bg-teal-900 text-white border-t border-white/10"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12"><div class="md:col-span-5"><div class="flex items-center gap-2 mb-4"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg><span class="font-serif text-2xl font-medium">RepairRange</span></div><p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice.</p></div><div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="../repair/phone-repair-costs-australia.html" class="text-white/80 hover:text-amber">All Models</a></li><li><a href="../calculator.html" class="text-white/80 hover:text-amber">Calculator</a></li><li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="../blog.html" class="text-white/80 hover:text-amber">Blog</a></li></ul></div><div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="../about.html" class="text-white/80 hover:text-amber">About</a></li><li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy</a></li><li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms</a></li></ul></div></div><div class="pt-8 border-t border-white/15"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. Not affiliated with Apple, Samsung, Google, or any manufacturer or insurer.</p></div></div></footer>
-<script>if(window.lucide)window.lucide.createIcons();document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.mobile-menu-button'),m=document.querySelector('.mobile-menu');if(b&&m)b.addEventListener('click',()=>m.classList.toggle('hidden'))});</script>
 <script>
 (function(){var g=[{t:'10 repair myths debunked',u:'phone-repair-myths-debunked.html'},{t:'Phone repair checklist',u:'phone-repair-checklist-before-during-after.html'},{t:'Your warranty rights (ACL)',u:'phone-repair-warranty-australia-consumer-rights.html'},{t:'Finding a trustworthy shop',u:'how-to-find-trustworthy-phone-repair-shop.html'},{t:'iPhone vs Samsung costs',u:'iphone-vs-samsung-repair-cost-comparison.html'},{t:'How long repairs take',u:'how-long-does-phone-repair-take.html'},{t:'DIY screen repair?',u:'can-you-diy-phone-screen-repair.html'},{t:'Screen quality tiers',u:'screen-quality-tiers-oem-aftermarket-refurbished-explained.html'},{t:'Samsung fingerprint trap',u:'samsung-fingerprint-sensor-screen-replacement-guide.html'},{t:'Is your screen genuine?',u:'how-to-tell-genuine-vs-aftermarket-screen.html'},{t:'Battery health guide',u:'battery-health-when-to-replace.html'},{t:'eSIM and phone repair',u:'esim-phone-repair-what-happens.html'},{t:'Foldable phone repair',u:'foldable-phone-repair-cost-guide.html'},{t:'iPad repair costs',u:'ipad-repair-cost-guide-australia.html'},{t:'MacBook & laptop costs',u:'macbook-laptop-repair-cost-guide-australia.html'},{t:'Lenovo tablet repair',u:'lenovo-tablet-repair-cost-guide-australia.html'},{t:'S26 Ultra guide',u:'samsung-galaxy-s26-ultra-repair-guide.html'},{t:'iPhone 17 PM guide',u:'iphone-17-pro-max-repair-guide.html'},{t:'Insurance vs self-insuring',u:'phone-insurance-vs-self-insuring-australia.html'},{t:'Fix before selling?',u:'should-you-fix-phone-before-selling.html'},{t:'Repair vs replace',u:'repair-vs-replace-decision-guide.html'}];var m=[{t:'iPhone 17 Pro Max',u:'../repair/iphone-17-pro-max.html'},{t:'iPhone 16 Pro Max',u:'../repair/iphone-16-pro-max.html'},{t:'iPhone 15 Pro Max',u:'../repair/iphone-15-pro-max.html'},{t:'iPhone 15',u:'../repair/iphone-15.html'},{t:'iPhone 14 Pro Max',u:'../repair/iphone-14-pro-max.html'},{t:'iPhone 13',u:'../repair/iphone-13.html'},{t:'iPhone SE 3',u:'../repair/iphone-se-3.html'},{t:'Galaxy S26 Ultra',u:'../repair/samsung-galaxy-s26-ultra.html'},{t:'Galaxy S25 Ultra',u:'../repair/samsung-galaxy-s25-ultra.html'},{t:'Galaxy S24 Ultra',u:'../repair/samsung-galaxy-s24-ultra.html'},{t:'Galaxy S23 Ultra',u:'../repair/samsung-galaxy-s23-ultra.html'},{t:'Pixel 9 Pro',u:'../repair/pixel-9-pro.html'},{t:'Pixel 8 Pro',u:'../repair/pixel-8-pro.html'}];var f=[{t:'Water damage',u:'../fix/water-damage.html'},{t:'Won\'t turn on',u:'../fix/wont-turn-on.html'},{t:'Cracked screen',u:'../fix/cracked-screen-still-works.html'},{t:'Battery drain',u:'../fix/battery-drains-fast.html'},{t:'Ghost touch',u:'../fix/ghost-touch.html'},{t:'Charging issues',u:'../fix/charging-port.html'},{t:'Green lines',u:'../fix/green-lines.html'},{t:'Black screen',u:'../fix/black-screen.html'},{t:'Overheating',u:'../fix/overheating.html'},{t:'Dropped & broken',u:'../fix/dropped-and-broken.html'}];function sh(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}function rl(arr,n,al,at){var items=sh(arr.slice()).slice(0,n);var h='';for(var i=0;i<items.length;i++)h+='<a href="'+items[i].u+'" class="sidebar-link">'+items[i].t+'</a>';if(al)h+='<a href="'+al+'" class="sidebar-link" style="color:var(--rr-teal-700);font-weight:600">'+at+'</a>';return h}var cards=document.querySelectorAll('.sidebar-card');var nc=[];for(var i=0;i<cards.length;i++){if(!cards[i].getAttribute('style'))nc.push(cards[i])}if(nc.length>=4){nc[0].innerHTML='<h4 style="font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--rr-teal-700);margin-bottom:0.75rem">Popular guides</h4>'+rl(g,6,'../blog.html','All guides \u2192');nc[1].innerHTML='<h4 style="font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--rr-teal-700);margin-bottom:0.75rem">Popular models</h4>'+rl(m,5,'../repair/phone-repair-costs-australia.html','All 75+ models \u2192');nc[2].innerHTML='<h4 style="font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--rr-teal-700);margin-bottom:0.75rem">Fix it yourself?</h4>'+rl(f,5,'../fix.html','All 10 guides \u2192');nc[3].innerHTML='<h4 style="font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--rr-teal-700);margin-bottom:0.75rem">Save money</h4>'+rl(g.filter(function(x){return x.u.indexOf('insurance')>-1||x.u.indexOf('selling')>-1||x.u.indexOf('replace')>-1}),3,null,null)}})()
 </script>

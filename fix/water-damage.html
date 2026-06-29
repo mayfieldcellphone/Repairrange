@@ -4,180 +4,22 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
+
+
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-CWRGPBDWZD');
+    if(window.lucide) window.lucide.createIcons();
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    });
 </script>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<style>
-        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
-        html { scroll-behavior: smooth; }
-        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
-        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
-        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
-        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
-        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
-        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
-        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
-        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
-        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
-        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
-        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
-        .ed-link:hover { background-size:100% 1px; }
-        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
-        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
-        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
-        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
-        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
-        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
-        .mobile-menu { transition:all 300ms ease-in-out; }
-        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
-    </style>
 
-<title>Phone dropped in water — what to do right now — RepairRange</title>
-<meta name="description" content="Phone dropped in water? Here's exactly what to do in the first 60 seconds, what NOT to do (rice doesn't work), and what a water damage repair actually costs in Australia.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://repairrange.io/fix/water-damage.html">
-</head>
-<body class="bg-mesh">
-<header class="header-sticky sticky top-0 z-50 border-b border-line">
-<nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
-<a href="../index.html" class="flex items-center gap-2"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg><span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span></a>
-<div class="hidden md:flex items-center gap-8 text-sm">
-<a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a>
-<a href="../repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a>
-<a href="../fix.html" class="ed-link font-medium text-teal">Troubleshoot</a>
-<a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a>
-                <a href="../unlock/index.html" class="ed-link font-medium text-ink hover:text-teal">Phone Unlock</a>
-<a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a>
-<a href="../blog.html" class="ed-link font-medium text-ink hover:text-teal">Blog</a>
-<a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-</div>
-<button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button>
-</nav>
-<div class="mobile-menu hidden md:hidden border-t border-line bg-paper"><div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1"><a href="../brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="py-2 font-medium text-teal">Troubleshoot</a><a href="../calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a>
-                <a href="../unlock/index.html" class="py-2 font-medium text-ink hover:text-teal">Phone Unlock</a><a href="../locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="py-2 font-medium text-ink hover:text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a></div></div>
-</header>
 
-<article class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-24">
-<div class="max-w-3xl">
-<nav class="flex items-center gap-2 text-xs text-muted mb-8"><a href="../index.html" class="ed-link hover:text-teal">Home</a><span>/</span><a href="../fix.html" class="ed-link hover:text-teal">Troubleshoot</a><span>/</span><span class="text-ink">Water damage</span></nav>
-<p class="eyebrow mb-4">Emergency guide · June 2026</p>
-<h1 class="display text-3xl md:text-5xl lg:text-6xl text-ink mb-6">Phone dropped in water — what to do right now.</h1>
-<p class="text-lg text-muted leading-relaxed mb-12">Your phone just got wet. Maybe it fell in the toilet, the pool, a puddle, or you spilled a drink on it. Here's exactly what to do in the next 60 seconds — and in the next 48 hours — to give it the best chance of surviving. Written by a technician who sees water damage every week.</p>
-</div>
-
-<div class="prose max-w-3xl">
-
-<div class="warning-card">
-<h3 style="margin-top:0;color:#991B1B">Do NOT turn it on. Do NOT charge it. Do NOT plug anything in.</h3>
-<p style="margin-bottom:0;color:#991B1B">If your phone is still on, power it off immediately. If it's already off, leave it off. The single biggest cause of permanent water damage is powering on a wet phone — the residual moisture causes a short circuit on the logic board that turns a $49 cleaning into a $300+ repair. Every minute it stays powered on while wet increases the risk.</p>
-</div>
-
-<h2>The first 60 seconds</h2>
-
-<div class="step-card">
-<h3>Step 1: Get it out of the water and power it off</h3>
-<p class="text-muted" style="margin-bottom:0">Remove the phone from water immediately. If it's still on, hold the power button and slide to power off (iPhone) or hold power for 10 seconds (Samsung/Pixel). If it won't respond, that's OK — just don't try to charge it or plug anything in.</p>
-</div>
-
-<div class="step-card">
-<h3>Step 2: Remove the case and SIM tray</h3>
-<p class="text-muted" style="margin-bottom:0">Take off any case — water gets trapped between the case and the phone body. Use the SIM ejector pin (or a paperclip) to pop out the SIM tray. This opens a small hole that helps water drain from the interior. If you have a microSD card slot, remove that too.</p>
-</div>
-
-<div class="step-card">
-<h3>Step 3: Shake out excess water gently</h3>
-<p class="text-muted" style="margin-bottom:0">Hold the phone with the charging port facing down and gently tap the side against your palm. This helps drain water from the USB-C/Lightning port and speaker grilles. Don't shake it violently — you'll push water deeper into the internals.</p>
-</div>
-
-<div class="step-card">
-<h3>Step 4: Pat dry with a lint-free cloth</h3>
-<p class="text-muted" style="margin-bottom:0">Use a clean, lint-free cloth (microfibre is ideal) to dab the exterior dry. Pay attention to the charging port, speaker grilles, and SIM tray slot. Don't use a hairdryer, heat gun, or any heat source — heat warps internal adhesives and can crack the battery. Don't push anything into the ports (no cotton buds, no tissue paper, no compressed air).</p>
-</div>
-
-<h2>The next 48 hours</h2>
-
-<p><strong>Place the phone in a dry, well-ventilated spot</strong> with the charging port facing down. A warm room (not hot — not direct sunlight, not on a radiator) with good airflow is ideal. If you have silica gel packets (the little "DO NOT EAT" sachets from shoe boxes), put the phone in a sealed container or zip-lock bag with as many packets as you can find. Silica gel actually absorbs moisture; rice does not.</p>
-
-<p><strong>Wait at least 48 hours before turning it on.</strong> 24 hours if using silica gel. This is the hardest part — the temptation to check if it works is strong. Resist it. Powering on a phone with residual internal moisture is the #1 cause of permanent logic board damage. The repair techs who see these phones every day will tell you: the ones that survive are the ones that stayed off long enough.</p>
-
-<h2>What NOT to do — the myths</h2>
-
-<p><strong>Don't put it in rice.</strong> This is the most persistent phone myth and it's simply wrong. Multiple independent studies (including by Gazelle, iFixit, and various electronics repair associations) have shown that rice performs no better than open air at removing moisture. What rice does do is introduce starch dust into your charging port and speakers, creating a new problem. Use silica gel if you have it; otherwise, air drying in a ventilated spot is equally effective and doesn't clog your ports.</p>
-
-<p><strong>Don't use a hairdryer or heat source.</strong> The adhesives holding your screen, battery, and back glass are heat-sensitive. A hairdryer can soften the screen adhesive (causing separation), warp the battery (swelling risk), or crack the back glass seal. Room temperature air is all you need.</p>
-
-<p><strong>Don't put it in the freezer.</strong> This was a viral "hack" that makes no sense. Freezing water inside the phone doesn't remove it — it just freezes it in place and then thaws when you take it out, potentially pushing moisture into new areas. And ice crystals can crack solder joints on the logic board.</p>
-
-<p><strong>Don't charge it.</strong> Plugging a charging cable into a wet USB-C or Lightning port can short-circuit the charging IC (the chip that manages power delivery). iPhone will warn you ("Liquid Detected in Lightning Connector") and refuse to charge — this is a safety feature, not a bug. Samsung phones may not warn you. In either case, don't charge until you're confident the port is completely dry.</p>
-
-<h2>"But my phone is IP68 waterproof?"</h2>
-
-<p>No phone is waterproof. They are <strong>water-resistant</strong> — and there's a critical difference.</p>
-
-<p>IP68 means the phone survived a lab test in clean, still, room-temperature fresh water at a specific depth for a specific time (typically 1.5m for 30 minutes). Your situation is almost certainly different: pool water has chlorine, seawater has salt, toilet water has bacteria, beer has sugar, and dropping the phone from pocket height creates impact force that can compromise seals.</p>
-
-<p>More importantly, <strong>water resistance degrades over time</strong>. The rubber seals that keep water out are compressed every time you press a button, expanded every time the phone heats up, and weakened by normal wear. A 2-year-old IP68 phone has significantly less water resistance than it did on day one. Apple and Samsung both acknowledge this — and neither covers water damage under warranty, even on IP68 phones.</p>
-
-<p>Treat water resistance as a safety net for accidental splashes, not an invitation to take your phone swimming.</p>
-
-<h2>When to take it to a repair shop</h2>
-
-<p><strong>Immediately, if you can.</strong> The best outcome for a water-damaged phone is professional ultrasonic cleaning within 24 hours. An ultrasonic cleaner uses high-frequency sound waves in a specialised cleaning solution to remove all moisture and residue from the logic board — including mineral deposits from non-pure water (tap water, pool water, seawater) that cause corrosion over days and weeks.</p>
-
-<p>If you can get to a repair shop within a few hours of the water exposure, skip the 48-hour home drying and go straight to the shop. Professional cleaning before corrosion sets in has the highest success rate.</p>
-
-<p><strong>After 48 hours, if the phone doesn't work normally.</strong> Common post-water symptoms: speaker sounds muffled or crackly, screen has spots or lines, charging is intermittent, Face ID or fingerprint doesn't work, phone overheats, battery drains unusually fast. Any of these warrants a professional assessment.</p>
-
-<h2>What water damage repair costs</h2>
-
-<p><strong>Ultrasonic cleaning (standard treatment):</strong> $49–$99 AUD at most independent shops. This is the first step for any water-damaged phone. It removes moisture and residue from the logic board and internal components. Success rate is high if done within 48 hours of exposure.</p>
-
-<p><strong>Component replacement (if needed after cleaning):</strong> If specific components are damaged, they need individual repair on top of the cleaning. Screen replacement costs <a href="../repair/phone-repair-costs-australia.html">vary by model ($109–$619)</a>. Battery replacement runs $69–$169. Charging port replacement is $69–$149.</p>
-
-<p><strong>Logic board micro-soldering (worst case):</strong> If corrosion has damaged the logic board itself, micro-soldering repair costs $200–$400+. Not all shops offer this — it requires specialist equipment and training. This is where the cost starts approaching "replace the phone" territory. See our <a href="../blog/repair-vs-replace-decision-guide.html">repair vs replace guide</a> for the decision framework.</p>
-
-<p><strong>Total realistic range:</strong> $49 (cleaning only, phone recovers fully) to $499+ (cleaning + component replacements + board repair). The average water damage repair that walks into an Australian shop in 2026 costs $79–$199, because most phones that get professional treatment within 48 hours recover with cleaning alone or cleaning + one component.</p>
-
-<h2>The bottom line</h2>
-
-<p>Power it off. Don't charge it. Don't rice it. If you can get to a repair shop quickly, do that. If not, air-dry for 48 hours with the port facing down. The phones that survive water damage are the ones that stayed off long enough for the moisture to clear before being powered on. Patience is the cheapest repair you'll ever pay for.</p>
-
-<p>For pricing on any specific repair that might be needed after water damage, use the <a href="../calculator.html">repair calculator</a> or browse <a href="../repair/phone-repair-costs-australia.html">all 75+ models with pricing</a>. For city-specific pricing, see our <a href="../locations.html">city pages</a>.</p>
-
-</div>
-</article>
-
-<section class="bg-teal-900 text-white">
-<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center"><div class="md:col-span-8"><p class="eyebrow text-amber mb-3">Related guides</p><h2 class="display text-3xl md:text-5xl mb-3">More troubleshooting</h2></div></div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10 mt-10">
-<a href="wont-turn-on.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Emergency</p><h3 class="font-serif text-xl text-white mb-3">Phone won't turn on</h3><p class="text-white/60 text-sm">Dead phone troubleshooting — before you assume the worst.</p></a>
-<a href="charging-port.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Common issue</p><h3 class="font-serif text-xl text-white mb-3">Charging port problems</h3><p class="text-white/60 text-sm">Won't charge, loose cable, intermittent connection.</p></a>
-<a href="../blog/battery-health-when-to-replace.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Blog</p><h3 class="font-serif text-xl text-white mb-3">Battery health explained</h3><p class="text-white/60 text-sm">When 82% means it's time to replace.</p></a>
-</div>
-</div>
-</section>
-
-<footer class="bg-teal-900 text-white border-t border-white/10">
-<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
-<div class="md:col-span-5"><div class="flex items-center gap-2 mb-4"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg><span class="font-serif text-2xl font-medium">RepairRange</span></div><p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice. Researched by people who actually do this work.</p></div>
-<div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="../repair/phone-repair-costs-australia.html" class="text-white/80 hover:text-amber">All Models & Pricing</a></li><li><a href="../calculator.html" class="text-white/80 hover:text-amber">Repair Calculator</a></li><li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="../blog.html" class="text-white/80 hover:text-amber">Blog</a></li>
-          <li><a href="../unlock/index.html" class="text-white/80 hover:text-amber">Unlock Guides</a></li></ul></div>
-<div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="../about.html" class="text-white/80 hover:text-amber">About RepairRange</a></li><li><a href="../tools/software-stack-for-repair-shops.html" class="text-white/80 hover:text-amber">Tools we recommend</a></li><li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy Policy</a></li><li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms of Use</a></li></ul></div>
-</div>
-<div class="pt-8 border-t border-white/15"><p class="text-white/50 text-xs leading-relaxed mb-3 max-w-3xl"><strong class="text-white/70">Affiliate disclosure:</strong> RepairRange may earn a commission when you click links to retailers (including Amazon) and complete a purchase. This never affects the price you pay or our editorial recommendations.</p><div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p><p class="text-white/50 text-xs">Not affiliated with Apple, Samsung, Google, or any device manufacturer.</p></div></div>
-</div>
-</footer>
-<script>if(window.lucide)window.lucide.createIcons();document.addEventListener('DOMContentLoaded',()=>{const btn=document.querySelector('.mobile-menu-button');const menu=document.querySelector('.mobile-menu');if(btn&&menu)btn.addEventListener('click',()=>menu.classList.toggle('hidden'))});</script>
     <!-- Chatbot Embedding Code -->
 <script>
   window.chatbotSettings = {

@@ -4,163 +4,22 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
+
+
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-CWRGPBDWZD');
+    if(window.lucide) window.lucide.createIcons();
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    });
 </script>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<style>
-        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
-        html { scroll-behavior: smooth; }
-        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
-        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
-        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
-        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
-        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
-        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
-        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
-        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
-        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
-        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
-        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
-        .ed-link:hover { background-size:100% 1px; }
-        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
-        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
-        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
-        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
-        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
-        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
-        .mobile-menu { transition:all 300ms ease-in-out; }
-        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
-    </style>
 
-<title>Phone not charging — charging port diagnosis and repair cost — RepairRange</title>
-<meta name="description" content="Phone not charging properly? Loose cable, slow charging, or completely dead port — here's how to diagnose the problem and what a charging port repair costs in Australia.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://repairrange.io/fix/charging-port.html">
-</head>
-<body class="bg-mesh">
-<header class="header-sticky sticky top-0 z-50 border-b border-line">
-<nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
-<a href="../index.html" class="flex items-center gap-2"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg><span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span></a>
-<div class="hidden md:flex items-center gap-8 text-sm"><a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="ed-link font-medium text-teal">Troubleshoot</a><a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a>
-                <a href="../unlock/index.html" class="ed-link font-medium text-ink hover:text-teal">Phone Unlock</a><a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="ed-link font-medium text-ink hover:text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a></div>
-<button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button>
-</nav>
-<div class="mobile-menu hidden md:hidden border-t border-line bg-paper"><div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1"><a href="../brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="py-2 font-medium text-teal">Troubleshoot</a><a href="../calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a>
-                <a href="../unlock/index.html" class="py-2 font-medium text-ink hover:text-teal">Phone Unlock</a><a href="../locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="py-2 font-medium text-ink hover:text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a></div></div>
-</header>
 
-<article class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-24">
-<div class="max-w-3xl">
-<nav class="flex items-center gap-2 text-xs text-muted mb-8"><a href="../index.html" class="ed-link hover:text-teal">Home</a><span>/</span><a href="../fix.html" class="ed-link hover:text-teal">Troubleshoot</a><span>/</span><span class="text-ink">Charging port</span></nav>
-<p class="eyebrow mb-4">Common issue · June 2026</p>
-<h1 class="display text-3xl md:text-5xl lg:text-6xl text-ink mb-6">Phone not charging — how to diagnose and fix it.</h1>
-<p class="text-lg text-muted leading-relaxed mb-12">Your phone won't charge, charges intermittently, or the cable feels loose. Before you pay for a port replacement, try these diagnostic steps — because 90% of "broken charging ports" are actually just clogged with lint.</p>
-</div>
-
-<div class="prose max-w-3xl">
-
-<h2>The most common cause (and the cheapest fix)</h2>
-<p><strong>Pocket lint.</strong> That's it. Over months of living in your pocket, tiny fibres of fabric compact into the bottom of the USB-C or Lightning port. Each time you plug in the cable, you push the lint deeper. Eventually there's enough compacted material that the cable connector can't reach the port's contact pins — it sits a millimetre too high, creating a loose feel and an intermittent connection.</p>
-
-<p>This is the #1 charging complaint we see in the shop, and it costs nothing to fix yourself.</p>
-
-<div class="step-card">
-<h3>How to clean your charging port</h3>
-<p class="text-muted" style="margin-bottom:0"><strong>1.</strong> Power off the phone. <strong>2.</strong> Shine a torch into the port and look for compacted material at the bottom. <strong>3.</strong> Use a wooden or plastic toothpick (never metal — it can short-circuit the contacts or scratch the pins) and gently scrape along the bottom of the port. <strong>4.</strong> You'll be surprised how much lint comes out — sometimes a solid plug of compressed fibre. <strong>5.</strong> Try your cable again. It should click in firmly with a satisfying snap. If it does, your port was never broken — it was just dirty.</p>
-</div>
-
-<h2>If cleaning didn't fix it — diagnosis</h2>
-
-<p>Work through these in order to identify whether the problem is the cable, the charger, the port, or the battery:</p>
-
-<p><strong>Try a different cable.</strong> Cables fail far more often than ports do. The connector end wears, internal wires fray, and USB-C cables in particular have very fine internal pins that bend or break. If the phone charges with a different cable, the problem is the cable, not the phone. Buy a new one — don't keep using a failing cable, as a damaged connector can damage the port over time.</p>
-
-<p><strong>Try a different wall charger.</strong> Charger bricks also fail — particularly cheap third-party ones. Try the original charger that came with the phone, or a known-good charger from another device. If the phone charges with a different brick, replace the charger.</p>
-
-<p><strong>Try wireless charging.</strong> If your phone supports wireless charging (iPhone 8+, Samsung S6+, Pixel 3+), place it on a wireless pad. If it charges wirelessly but not via cable, the port is definitely the issue. If it doesn't charge wirelessly either, the problem might be the battery or the charging IC (the chip on the logic board that manages power), not the port.</p>
-
-<p><strong>Check for "Liquid Detected" warnings.</strong> iPhones display a "Liquid Detected in Lightning/USB-C Connector" alert if the port sensors detect moisture. If you see this warning, don't force-charge — let the port air-dry for several hours. If the warning persists with a dry port, the moisture sensor itself may be faulty (a known issue on some iPhone models) — a repair shop can reset it.</p>
-
-<p><strong>Check for physical damage.</strong> Look inside the port with a torch. Are the pins bent, corroded (green or white residue), or visibly broken? Is the port housing itself cracked or loose in the frame? Physical damage requires professional replacement.</p>
-
-<h2>The four types of charging problems</h2>
-
-<div class="step-card">
-<h3>Problem: Cable feels loose, falls out easily</h3>
-<p class="text-muted" style="margin-bottom:0"><strong>Cause:</strong> 90% lint, 10% worn port. Clean the port first. If still loose after thorough cleaning, the port's internal retention clips are worn — this is common on phones 3+ years old. Port replacement: $69–$149.</p>
-</div>
-
-<div class="step-card">
-<h3>Problem: Charges intermittently (connects/disconnects)</h3>
-<p class="text-muted" style="margin-bottom:0"><strong>Cause:</strong> Either a damaged cable (internal wire fraying) or a port with bent/corroded pins. Try a new cable first. If the problem persists with multiple cables, the port pins need replacement. Port replacement: $69–$149.</p>
-</div>
-
-<div class="step-card">
-<h3>Problem: Charges very slowly</h3>
-<p class="text-muted" style="margin-bottom:0"><strong>Cause:</strong> Could be the cable (non-PD cables limit charging speed), the charger (5W charger on a phone that supports 25W+), a degraded battery that charges slowly to protect itself, or a partially damaged port that's limiting current. Check cable and charger specs first. If fast charging worked before and now doesn't, the port may need replacement.</p>
-</div>
-
-<div class="step-card">
-<h3>Problem: Won't charge at all</h3>
-<p class="text-muted" style="margin-bottom:0"><strong>Cause:</strong> Dead battery, completely failed port, or charging IC failure on the logic board. Try wireless charging to isolate the port. If wireless works → port replacement ($69–$149). If wireless also fails → could be battery ($69–$169) or logic board ($149–$399). Professional diagnostic recommended. See our <a href="wont-turn-on.html" style="color:#0F766E">phone won't turn on guide</a> for the full troubleshooting tree.</p>
-</div>
-
-<h2>What port replacement actually involves</h2>
-
-<p>On most phones, the charging port is soldered to a small flex cable assembly that also connects the microphone, vibration motor, and sometimes the loudspeaker. Replacing the port means replacing this entire flex cable — the old one is removed and a new one is soldered or connected in its place.</p>
-
-<p><strong>The repair takes 30–60 minutes</strong> at an independent shop. It's a moderate-difficulty repair — not as simple as a battery swap, but well within the capabilities of any competent technician.</p>
-
-<p><strong>USB-C port replacement:</strong> $69–$149 AUD at independent shops. Samsung and Pixel tend to be at the lower end ($69–$129). iPhones with USB-C (iPhone 15+) are slightly higher ($79–$149) because the flex cable assembly is more complex. Apple does not offer standalone port replacement — they'll offer a full device swap at out-of-warranty pricing.</p>
-
-<p><strong>Lightning port replacement (iPhone 14 and older):</strong> $79–$129 AUD. Lightning ports are well-documented with mature parts supply. This is one of the most common repairs in any iPhone-focused shop.</p>
-
-<p>For specific pricing on your model, use the <a href="../calculator.html">repair calculator</a> or check your model's dedicated page on our <a href="../repair/phone-repair-costs-australia.html">all-models comparison</a>.</p>
-
-<h2>Prevention</h2>
-
-<p><strong>Clean your port every 3-6 months.</strong> A quick check with a toothpick takes 30 seconds and prevents the gradual lint build-up that causes most charging complaints.</p>
-
-<p><strong>Don't force cables in.</strong> If the cable doesn't click in smoothly, check for debris before pushing harder. Forcing a cable into a lint-packed port bends the internal pins.</p>
-
-<p><strong>Use quality cables.</strong> Cheap cables have looser-tolerance connectors that wear the port's retention mechanism faster. Apple MFi-certified or USB-IF certified cables have tighter manufacturing tolerances.</p>
-
-<p><strong>Avoid charging in humid or dusty environments.</strong> Humidity causes corrosion on the port's gold-plated pins. Dust and sand (beach trips, construction sites) clog ports faster than pocket lint. If your phone was exposed to moisture, let the port air-dry completely before plugging in a cable.</p>
-
-</div>
-</article>
-
-<section class="bg-teal-900 text-white">
-<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center"><div class="md:col-span-8"><p class="eyebrow text-amber mb-3">Related guides</p><h2 class="display text-3xl md:text-5xl mb-3">More troubleshooting</h2></div></div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10 mt-10">
-<a href="wont-turn-on.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Emergency</p><h3 class="font-serif text-xl text-white mb-3">Phone won't turn on</h3><p class="text-white/60 text-sm">6 fixes to try before you panic.</p></a>
-<a href="water-damage.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Emergency</p><h3 class="font-serif text-xl text-white mb-3">Water damage guide</h3><p class="text-white/60 text-sm">What to do in the first 60 seconds.</p></a>
-<a href="../blog/battery-health-when-to-replace.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Blog</p><h3 class="font-serif text-xl text-white mb-3">Battery health explained</h3><p class="text-white/60 text-sm">When 82% means it's time to replace.</p></a>
-</div>
-</div>
-</section>
-
-<footer class="bg-teal-900 text-white border-t border-white/10">
-<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
-<div class="md:col-span-5"><div class="flex items-center gap-2 mb-4"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg><span class="font-serif text-2xl font-medium">RepairRange</span></div><p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice. Researched by people who actually do this work.</p></div>
-<div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="../repair/phone-repair-costs-australia.html" class="text-white/80 hover:text-amber">All Models & Pricing</a></li><li><a href="../calculator.html" class="text-white/80 hover:text-amber">Repair Calculator</a></li><li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="../blog.html" class="text-white/80 hover:text-amber">Blog</a></li>
-          <li><a href="../unlock/index.html" class="text-white/80 hover:text-amber">Unlock Guides</a></li></ul></div>
-<div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="../about.html" class="text-white/80 hover:text-amber">About RepairRange</a></li><li><a href="../tools/software-stack-for-repair-shops.html" class="text-white/80 hover:text-amber">Tools we recommend</a></li><li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy Policy</a></li><li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms of Use</a></li></ul></div>
-</div>
-<div class="pt-8 border-t border-white/15"><p class="text-white/50 text-xs leading-relaxed mb-3 max-w-3xl"><strong class="text-white/70">Affiliate disclosure:</strong> RepairRange may earn a commission when you click links to retailers (including Amazon) and complete a purchase. This never affects the price you pay or our editorial recommendations.</p><div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p><p class="text-white/50 text-xs">Not affiliated with Apple, Samsung, Google, or any device manufacturer.</p></div></div>
-</div>
-</footer>
-<script>if(window.lucide)window.lucide.createIcons();document.addEventListener('DOMContentLoaded',()=>{const btn=document.querySelector('.mobile-menu-button');const menu=document.querySelector('.mobile-menu');if(btn&&menu)btn.addEventListener('click',()=>menu.classList.toggle('hidden'))});</script>
     <!-- Chatbot Embedding Code -->
 <script>
   window.chatbotSettings = {

@@ -4,207 +4,21 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
+
+
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-CWRGPBDWZD');
+    if(window.lucide) window.lucide.createIcons();
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    });
 </script>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<style>
-        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
-        html { scroll-behavior: smooth; }
-        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
-        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
-        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
-        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
-        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
-        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
-        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
-        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
-        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
-        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
-        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
-        .ed-link:hover { background-size:100% 1px; }
-        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
-        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
-        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
-        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
-        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
-        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
-        .mobile-menu { transition:all 300ms ease-in-out; }
-        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
-    </style>
-
-<title>How to use AI on your phone — Apple Intelligence, Galaxy AI, Gemini guide — RepairRange</title>
-<meta name="description" content="How to use AI on your phone in 2026 — Apple Intelligence on iPhone, Galaxy AI on Samsung, Google Gemini on Pixel. Practical features you probably don't know you have.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://repairrange.io/blog/how-to-use-ai-on-your-phone.html">
-</head>
-<body class="bg-mesh">
-<header class="header-sticky sticky top-0 z-50 border-b border-line"><nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between"><a href="../index.html" class="flex items-center gap-2"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg><span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span></a><div class="hidden md:flex items-center gap-8 text-sm"><a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a><a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a><a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="ed-link font-medium text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote</a></div><button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button></nav><div class="mobile-menu hidden md:hidden border-t border-line bg-paper"><div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1"><a href="../brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="py-2 font-medium text-ink hover:text-teal">Troubleshoot</a><a href="../calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a><a href="../locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="py-2 font-medium text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a></div></div></header>
 
 
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 max-w-7xl mx-auto px-6 py-12">
-                <div class="lg:col-span-8 prose max-w-none">
-                    
-<div class="max-w-3xl">
-<nav class="flex items-center gap-2 text-xs text-muted mb-8"><a href="../index.html" class="ed-link hover:text-teal">Home</a><span>/</span><a href="../blog.html" class="ed-link hover:text-teal">Blog</a><span>/</span><span class="text-ink">AI on your phone</span></nav>
-<p class="eyebrow mb-4">Tech guide · June 2026</p>
-<h1 class="display text-3xl md:text-5xl lg:text-6xl text-ink mb-6">How to use AI on your phone — the features you're probably not using.</h1>
-<p class="text-lg text-muted leading-relaxed mb-12">Your phone has AI features that can write your emails, translate phone calls in real-time, edit photos like a professional, and answer complex questions. Most people don't know they're there. Here's what Apple Intelligence, Samsung Galaxy AI, and Google Gemini can actually do — and how to turn them on.</p>
-</div>
-
-<div>
-
-<h2>Apple Intelligence (iPhone 15 Pro and newer)</h2>
-
-<p>Apple Intelligence launched with iOS 18 and is available on <a href="../repair/iphone-17-pro-max.html">iPhone 17</a>, <a href="../repair/iphone-15-pro-max.html">iPhone 15 Pro</a>, and iPhone 16 series. It runs on-device using Apple's own neural engine, with more complex tasks processed via Apple's Private Cloud Compute servers. Here are the features worth using daily:</p>
-
-<div class="step-card">
-<h3>Writing Tools — rewrite anything, anywhere</h3>
-<p>Select any text in any app (Messages, Mail, Notes, Safari, even third-party apps) → tap the Writing Tools button. You get: <strong>Rewrite</strong> (rephrase in a different tone — friendly, professional, concise), <strong>Proofread</strong> (fix grammar and spelling with explanations), and <strong>Summarise</strong> (condense long text into key points). This works in every text field on the phone. Most useful in: email drafts, long messages, and meeting notes.</p>
-</div>
-
-<div class="step-card">
-<h3>Siri with ChatGPT — actually useful now</h3>
-<p>Siri can now hand off complex questions to ChatGPT (with your permission per-request). Ask Siri things like "write me a meal plan for the week," "explain this contract clause in simple terms," or "help me plan a weekend trip to the Blue Mountains." Siri handles simple queries locally; complex ones go to ChatGPT. <strong>How to enable:</strong> Settings → Apple Intelligence & Siri → ChatGPT → toggle on. Free tier included; ChatGPT Plus subscribers get enhanced features.</p>
-</div>
-
-<div class="step-card">
-<h3>Photo editing — Clean Up and Memory Movies</h3>
-<p><strong>Clean Up:</strong> Open any photo → Edit → Clean Up → tap or circle an object to remove it. Works for photobombers, power lines, signs, and background clutter. <strong>Memory Movies:</strong> Type a description like "our trip to Sydney last summer" and Apple Intelligence creates a highlight reel with music from your photo library. These are genuinely impressive — the AI selects the best shots, sequences them narratively, and adds transitions.</p>
-</div>
-
-<div class="step-card">
-<h3>Notification Summaries</h3>
-<p>Instead of showing every notification, Apple Intelligence groups and summarises them. A burst of 15 messages in a group chat becomes "Sarah shared photos of the dinner, Mike confirmed he's coming Saturday, 3 people reacted to your message." <strong>How to enable:</strong> Settings → Notifications → Summarise Notifications → toggle on per app. Most useful for: group chats, email, and news apps.</p>
-</div>
-
-<div class="step-card">
-<h3>Visual Intelligence (iPhone 16+ with Camera Control button)</h3>
-<p>Point your camera at anything and press the Camera Control button. Apple Intelligence identifies it: a restaurant shows reviews and hours, a plant shows species information, a product shows pricing, a sign in another language gets translated. This is like Google Lens but integrated into the camera hardware. Works on <a href="../repair/iphone-17.html">iPhone 17</a> and iPhone 16 series.</p>
-</div>
-
-<h2>Samsung Galaxy AI (Galaxy S24 and newer)</h2>
-
-<p>Samsung Galaxy AI runs on Galaxy S24, S25, and <a href="../repair/samsung-galaxy-s26-ultra.html">S26 series</a> (also backported to S23 series via update). Samsung's approach is feature-specific — each AI feature is purpose-built rather than a general assistant. The standout features:</p>
-
-<div class="step-card">
-<h3>Live Translate — real-time phone call translation</h3>
-<p>This is Samsung's killer feature and no other brand matches it. During a phone call, Live Translate listens in both languages and provides real-time translation — you speak English, the other person hears their language, and vice versa. Supports 16+ languages including Japanese, Korean, Mandarin, Spanish, French, German, and Hindi. <strong>How to use:</strong> During a call, tap the Live Translate icon in the call screen. Works with regular phone calls — no app needed. Runs on-device, so it works without internet.</p>
-</div>
-
-<div class="step-card">
-<h3>Circle to Search</h3>
-<p>Long-press the home button or navigation bar anywhere on screen. Draw a circle around anything — a product in an Instagram post, a landmark in a video, text in a screenshot — and Google searches for it instantly. This replaces the awkward process of screenshotting, cropping, and reverse-image-searching. <strong>Also available on Pixel 8+.</strong></p>
-</div>
-
-<div class="step-card">
-<h3>Chat Assist — AI-powered messaging</h3>
-<p>In Samsung Messages or Samsung Keyboard, Chat Assist rewrites your messages in different tones (professional, casual, polite, social media style) and translates in real-time. Useful for: responding to formal emails from your phone, translating messages before sending, and adjusting tone when you're not sure how something reads.</p>
-</div>
-
-<div class="step-card">
-<h3>Generative Edit — AI photo editing</h3>
-<p>Open Gallery → Edit → tap the AI button. You can: move objects to different positions in the photo, remove objects (like Clean Up on iPhone), resize elements, and fill in backgrounds that the AI generates. Samsung's implementation is more flexible than Apple's — you can literally drag a person to a different spot in the photo and the AI fills the original position realistically.</p>
-</div>
-
-<div class="step-card">
-<h3>Note Assist and Transcript Assist</h3>
-<p><strong>Note Assist:</strong> Samsung Notes can auto-format handwritten notes, summarise typed notes, and translate entire notes between languages. <strong>Transcript Assist:</strong> Record a meeting or lecture, and Samsung generates a full transcript with speaker labels and a summary. Both run through Samsung's on-device AI for privacy.</p>
-</div>
-
-<h2>Google Gemini (Pixel 8 and newer)</h2>
-
-<p>Google replaced Google Assistant with Gemini on <a href="../repair/pixel-8-pro.html">Pixel 8</a> and newer. Gemini is the most capable conversational AI on any phone — it can see your screen, understand context across apps, and take multi-step actions. The Pixel-exclusive features:</p>
-
-<div class="step-card">
-<h3>Gemini as your default assistant</h3>
-<p>Long-press the power button or say "Hey Google" to activate Gemini. Unlike old Google Assistant, Gemini can: see what's on your screen and answer questions about it ("summarise this article," "draft a reply to this email"), hold multi-turn conversations with context ("now make it more formal," "add a section about pricing"), and take actions across apps ("book a table at that restaurant for 7pm Saturday"). <strong>Also available on Samsung and other Android phones</strong> via the Gemini app, but Pixel gets the deepest integration.</p>
-</div>
-
-<div class="step-card">
-<h3>Magic Eraser and Best Take</h3>
-<p><strong>Magic Eraser:</strong> Google Photos → Edit → Magic Eraser. Tap or circle any object to remove it. Google's version is slightly better than Apple's for complex removals. <strong>Best Take:</strong> In group photos, AI analyses multiple shots and lets you swap individual faces to give everyone their best expression. Solves the "someone always blinks" problem.</p>
-</div>
-
-<div class="step-card">
-<h3>Call Screen — AI answers your phone</h3>
-<p>Pixel-exclusive. When an unknown number calls, tap "Screen Call." Gemini answers, asks why they're calling, and transcribes the response in real-time on your screen. You decide whether to pick up, send a quick reply, or mark as spam — all without answering. This is the single best spam-call solution on any phone.</p>
-</div>
-
-<div class="step-card">
-<h3>Audio Magic and Photo Unblur</h3>
-<p><strong>Audio Magic:</strong> In Google Photos video editor, AI separates audio into layers (speech, music, wind, crowd noise) and lets you adjust each independently. Turn down wind noise, boost speech. <strong>Photo Unblur:</strong> AI sharpens old blurry photos — even photos taken on other phones years ago that you've uploaded to Google Photos.</p>
-</div>
-
-<h2>AI features on other brands</h2>
-
-<p><strong>OnePlus / OPPO (AI Eraser, AI Summary):</strong> ColorOS includes AI photo erasing (similar to Magic Eraser) and document summarisation. Available on <a href="../repair/model.html?m=oneplus-13">OnePlus 13</a> and OPPO Find X8 series.</p>
-
-<p><strong>Xiaomi (AI Film, AI Subtitles):</strong> HyperOS includes AI-generated short films from photos and real-time AI subtitle translation for videos. Available on Xiaomi 14 series and newer.</p>
-
-<p><strong>Nothing (ChatGPT widget):</strong> Nothing OS has a dedicated ChatGPT home screen widget for quick AI access without opening an app.</p>
-
-<h2>Which AI features need newer hardware?</h2>
-
-<p>Most AI features require recent processors with dedicated neural processing units (NPUs). Here's the minimum hardware for each brand:</p>
-
-<p><strong>Apple Intelligence:</strong> A17 Pro chip or newer (iPhone 15 Pro, 16 series, 17 series). Older iPhones get basic Siri only.</p>
-
-<p><strong>Samsung Galaxy AI:</strong> Snapdragon 8 Gen 3 or Exynos 2400+ (Galaxy S24 and newer). S23 series gets a partial subset via software update.</p>
-
-<p><strong>Google Gemini (full):</strong> Tensor G3 or newer (Pixel 8 and newer). Gemini app works on older Androids but without on-device processing or screen-aware features.</p>
-
-<p><strong>The repair angle:</strong> If your phone is too old for AI features and you're considering upgrading — check the <a href="../blog/repair-vs-replace-decision-guide.html">repair vs replace guide</a> first. If your current phone just needs a <a href="../blog/battery-health-when-to-replace.html">new battery</a> or <a href="../fix/cracked-screen-still-works.html">screen replacement</a>, a $89-$249 repair might give you another 2 years of use while AI features mature on the next generation of phones.</p>
-
-<p>For repair pricing on any model mentioned in this guide, use the <a href="../calculator.html">repair calculator</a> or browse <a href="../repair/phone-repair-costs-australia.html">all 75+ models</a>.</p>
-
-</div>
-
-                </div>
-                
-    <!-- DYNAMIC SIDEBAR -->
-    <aside class="lg:col-span-4">
-        <div class="lg:sticky lg:top-24 space-y-6">
-            <!-- PROMOTION: SELF REPAIR KIT -->
-            <div class="sidebar-card bg-teal-900 text-white border-none shadow-xl" style="background: #0f172a; border-radius: 12px; padding: 1.5rem;">
-                <span style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #f59e0b; margin-bottom: 0.5rem; display: block;">Premium Option</span>
-                <h3 style="font-family: 'Fraunces', serif; font-size: 1.5rem; margin-bottom: 0.75rem;">Self-Repair Kits</h3>
-                <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.5rem;">Fix it yourself with engineer-approved parts and professional toolsets. Save 65% on retail repair costs.</p>
-                <a href="https://selfrepairkit.com.au" style="background: #f59e0b; color: #0f172a; padding: 0.75rem 1.25rem; font-weight: 600; border-radius: 8px; display: inline-flex; align-items: center; gap: 0.5rem; width: 100%; justify-content: center;">Browse Kits</a>
-            </div>
-
-            <!-- PROMOTION: REPAIRBILL -->
-            <div class="sidebar-card" style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 12px; padding: 1.5rem;">
-                <h4 style="font-weight: 700; font-size: 0.875rem; color: #1e293b; margin-bottom: 0.75rem; text-transform: uppercase;">Repair Shop Owner?</h4>
-                <p style="color: #64748b; font-size: 0.75rem; line-height: 1.6; margin-bottom: 1rem;">Manage your shop with **RepairBill SaaS**. Professional invoicing, parts tracking, and tech management.</p>
-                <a href="https://repairbill.shop" style="color: #0d9488; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; display: inline-flex; align-items: center; gap: 0.25rem;">Start Free Trial &rarr;</a>
-            </div>
-
-            <!-- DIRECTORY -->
-            <div class="sidebar-card" style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem;">
-                <h4 style="font-weight: 700; font-size: 0.75rem; color: #0d9488; margin-bottom: 0.75rem; text-transform: uppercase;">Local Repair Hubs</h4>
-                <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.875rem;">
-                    <li style="border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;"><a href="../locations/sydney.html" style="color: #1e293b; text-decoration: none; display: flex; justify-content: space-between;">Sydney <span>&rarr;</span></a></li>
-                    <li style="border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;"><a href="../locations/melbourne.html" style="color: #1e293b; text-decoration: none; display: flex; justify-content: space-between;">Melbourne <span>&rarr;</span></a></li>
-                    <li style="border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;"><a href="../locations/brisbane.html" style="color: #1e293b; text-decoration: none; display: flex; justify-content: space-between;">Brisbane <span>&rarr;</span></a></li>
-                </ul>
-            </div>
-        </div>
-    </aside>
-
-            </div>
-            
-
-<section class="bg-teal-900 text-white"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10 mt-4"><a href="iphone-vs-samsung-repair-cost-comparison.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Comparison</p><h3 class="font-serif text-xl text-white mb-3">iPhone vs Samsung costs</h3><p class="text-white/60 text-sm">Repair pricing compared.</p></a><a href="phone-repair-cost-trends-australia.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Data</p><h3 class="font-serif text-xl text-white mb-3">Repair cost trends</h3><p class="text-white/60 text-sm">2024-2026 pricing data.</p></a><a href="repair-vs-replace-decision-guide.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Decision</p><h3 class="font-serif text-xl text-white mb-3">Repair vs replace</h3><p class="text-white/60 text-sm">Upgrade for AI or repair and wait?</p></a></div></div></section>
-
-<footer class="bg-teal-900 text-white border-t border-white/10"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12"><div class="md:col-span-5"><div class="flex items-center gap-2 mb-4"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg><span class="font-serif text-2xl font-medium">RepairRange</span></div><p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice.</p></div><div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="../repair/phone-repair-costs-australia.html" class="text-white/80 hover:text-amber">All Models</a></li><li><a href="../calculator.html" class="text-white/80 hover:text-amber">Calculator</a></li><li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="../blog.html" class="text-white/80 hover:text-amber">Blog</a></li></ul></div><div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="../about.html" class="text-white/80 hover:text-amber">About</a></li><li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy</a></li><li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms</a></li></ul></div></div><div class="pt-8 border-t border-white/15"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. Not affiliated with Apple, Samsung, Google, or any manufacturer.</p></div></div></footer>
-<script>if(window.lucide)window.lucide.createIcons();document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.mobile-menu-button'),m=document.querySelector('.mobile-menu');if(b&&m)b.addEventListener('click',()=>m.classList.toggle('hidden'))});</script>
 </body>
 </html>

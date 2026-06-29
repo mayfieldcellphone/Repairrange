@@ -1,12 +1,18 @@
 pages:
   stage: deploy
+  image: python:3.9-slim
   script:
     - mkdir -p public
+    # Copy root level assets
     - cp *.html public/ 2>/dev/null || true
     - cp *.txt public/ 2>/dev/null || true
     - cp *.xml public/ 2>/dev/null || true
     - cp _redirects public/ 2>/dev/null || true
+    - cp catalog.json public/ 2>/dev/null || true
+    # Copy all directories that are part of the main site
     - cp -r blog/ brands/ css/ fix/ locations/ news/ repair/ tools/ unlock/ public/ 2>/dev/null || true
+    # List contents for verification in logs
+    - ls -R public
   artifacts:
     paths:
       - public

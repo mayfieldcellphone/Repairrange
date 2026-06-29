@@ -4,178 +4,21 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
+
+
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-CWRGPBDWZD');
+    if(window.lucide) window.lucide.createIcons();
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    });
 </script>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<style>
-        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
-        html { scroll-behavior: smooth; }
-        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
-        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
-        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
-        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
-        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
-        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
-        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
-        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
-        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
-        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
-        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
-        .ed-link:hover { background-size:100% 1px; }
-        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
-        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
-        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
-        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
-        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
-        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
-        .mobile-menu { transition:all 300ms ease-in-out; }
-        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
-    </style>
 
-<title>Phone Unlock Guides — Carrier, Passcode, Activation Lock — RepairRange</title>
-<meta name="description" content="How to unlock your phone in Australia — carrier unlock, forgotten passcode, activation lock, and FRP bypass. Step-by-step guides for iPhone, Samsung, Pixel, and more.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://repairrange.io/unlock.html">
-</head>
-<body class="bg-mesh">
-<header class="header-sticky sticky top-0 z-50 border-b border-line"><nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between"><a href="index.html" class="flex items-center gap-2"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg><span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span></a><div class="hidden md:flex items-center gap-8 text-sm"><a href="brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a><a href="repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a><a href="fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a><a href="calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a><a href="locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a><a href="blog.html" class="ed-link font-medium text-ink hover:text-teal">Blog</a><a href="calculator.html" class="btn btn-primary text-sm">Get a Quote</a></div><button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button></nav><div class="mobile-menu hidden md:hidden border-t border-line bg-paper"><div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1"><a href="brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a><a href="repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a><a href="fix.html" class="py-2 font-medium text-ink hover:text-teal">Troubleshoot</a><a href="calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a><a href="locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a><a href="blog.html" class="py-2 font-medium text-ink hover:text-teal">Blog</a><a href="calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a></div></div></header>
 
-<!-- HERO -->
-<section class="bg-mesh-hero">
-<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-24">
-<nav class="flex items-center gap-2 text-xs text-muted mb-8"><a href="index.html" class="ed-link hover:text-teal">Home</a><span>/</span><span class="text-ink">Unlock Guides</span></nav>
-<p class="eyebrow mb-4">Comprehensive guides</p>
-<h1 class="display text-4xl md:text-6xl lg:text-7xl text-ink mb-6 max-w-4xl">How to unlock your phone. Every method. Every brand.</h1>
-<p class="text-lg md:text-xl text-muted max-w-2xl leading-relaxed mb-8">Carrier locked? Forgotten passcode? Activation Lock from a secondhand purchase? We cover every legitimate unlock method for every major brand — official channels first, third-party tools when official methods don't work. Written by repair technicians who handle unlock requests every day.</p>
-<p class="text-xs text-muted max-w-xl" style="border-left:3px solid var(--rr-amber-500);padding-left:1rem">These guides are for legitimate device owners only. Unlocking a phone you don't own is illegal under Australian law (Criminal Code Act 1995). If you purchased a secondhand phone with a lock, we'll help you resolve it through official channels.</p>
-</div>
-</section>
-
-<!-- UNLOCK TYPES EXPLAINED -->
-<section class="bg-white border-b border-line">
-<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
-<p class="eyebrow mb-3">Understanding unlock types</p>
-<h2 class="display text-3xl md:text-5xl text-ink mb-12">Four types of phone locks — and how to remove each one.</h2>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-<div class="card p-6 md:p-8">
-<div class="flex items-center gap-3 mb-4"><span class="font-mono text-xs bg-teal-700 text-white px-2 py-1 rounded-sm" style="background:var(--rr-teal-700)">TYPE 1</span><h3 class="font-serif text-xl text-ink">Carrier / Network Lock</h3></div>
-<p class="text-sm text-muted leading-relaxed mb-4">Your phone works but only with one carrier (Telstra, Optus, Vodafone). You want to switch carriers or use it overseas with a local SIM. This is the most common and easiest unlock type.</p>
-<p class="text-xs font-medium text-teal">Difficulty: Easy · Cost: Free–$30 · Time: Instant–48 hours</p>
-<p class="text-xs text-muted mt-2">Legal status: <strong>Completely legal</strong> in Australia. You own the phone, you can use it on any network.</p>
-</div>
-
-<div class="card p-6 md:p-8">
-<div class="flex items-center gap-3 mb-4"><span class="font-mono text-xs bg-teal-700 text-white px-2 py-1 rounded-sm" style="background:var(--rr-teal-700)">TYPE 2</span><h3 class="font-serif text-xl text-ink">Forgotten Passcode / Pattern / PIN</h3></div>
-<p class="text-sm text-muted leading-relaxed mb-4">You know the phone is yours but you've forgotten the screen lock. Happens after a long period of not using a phone, or after a child changes the passcode. This usually requires a factory reset (data loss).</p>
-<p class="text-xs font-medium text-teal">Difficulty: Moderate · Cost: Free · Time: 15–60 minutes</p>
-<p class="text-xs text-muted mt-2">Legal status: <strong>Legal</strong> if it's your device. The reset erases all data as a security measure.</p>
-</div>
-
-<div class="card p-6 md:p-8">
-<div class="flex items-center gap-3 mb-4"><span class="font-mono text-xs bg-teal-700 text-white px-2 py-1 rounded-sm" style="background:var(--rr-teal-700)">TYPE 3</span><h3 class="font-serif text-xl text-ink">Activation Lock / iCloud Lock (Apple)</h3></div>
-<p class="text-sm text-muted leading-relaxed mb-4">An iPhone or iPad is linked to a previous owner's Apple ID. Common on secondhand purchases from eBay, Gumtree, or Facebook Marketplace where the seller didn't remove their account. The phone works but asks for an Apple ID you don't have.</p>
-<p class="text-xs font-medium text-teal">Difficulty: Hard · Cost: Free (official) or $20–$80 (third-party) · Time: 1 day–2 weeks</p>
-<p class="text-xs text-muted mt-2">Legal status: <strong>Legal if you're the legitimate purchaser</strong> with proof of purchase. Apple can remove it with documentation.</p>
-</div>
-
-<div class="card p-6 md:p-8">
-<div class="flex items-center gap-3 mb-4"><span class="font-mono text-xs bg-teal-700 text-white px-2 py-1 rounded-sm" style="background:var(--rr-teal-700)">TYPE 4</span><h3 class="font-serif text-xl text-ink">FRP / Google Account Lock (Android)</h3></div>
-<p class="text-sm text-muted leading-relaxed mb-4">Samsung's Factory Reset Protection or Google's account verification after a reset. The phone asks for the previously linked Google account. Same scenario as iCloud Lock but on Android — usually a secondhand purchase issue.</p>
-<p class="text-xs font-medium text-teal">Difficulty: Hard · Cost: Free (official) or $15–$50 (third-party) · Time: 1 day–1 week</p>
-<p class="text-xs text-muted mt-2">Legal status: <strong>Legal if you're the legitimate owner</strong>. Google can help with account recovery.</p>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- BRAND GUIDES -->
-<section class="bg-mesh-2 border-b border-line">
-<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
-<p class="eyebrow mb-3">Guides by brand</p>
-<h2 class="display text-3xl md:text-5xl text-ink mb-4">Choose your phone brand.</h2>
-<p class="text-muted mb-12 max-w-xl">Each guide covers all four unlock types for that brand — carrier unlock, forgotten passcode, activation/account lock, and third-party tools when official methods fail.</p>
-
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-<a href="unlock/iphone.html" class="card p-8 group">
-<div class="flex items-start justify-between mb-6"><p class="font-serif text-3xl text-ink">Apple iPhone</p><i data-lucide="arrow-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors"></i></div>
-<p class="text-sm text-muted leading-relaxed mb-4">Carrier unlock via Telstra/Optus/Vodafone, forgotten passcode recovery, iCloud Activation Lock removal, Find My iPhone disable, MDM profile removal.</p>
-<div class="flex flex-wrap gap-2 text-xs"><span class="bg-mesh-2 border border-line px-2 py-1">Carrier unlock</span><span class="bg-mesh-2 border border-line px-2 py-1">iCloud Lock</span><span class="bg-mesh-2 border border-line px-2 py-1">Passcode</span><span class="bg-mesh-2 border border-line px-2 py-1">MDM</span></div>
-</a>
-
-<a href="unlock/samsung.html" class="card p-8 group">
-<div class="flex items-start justify-between mb-6"><p class="font-serif text-3xl text-ink">Samsung Galaxy</p><i data-lucide="arrow-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors"></i></div>
-<p class="text-sm text-muted leading-relaxed mb-4">Carrier unlock, forgotten pattern/PIN/password, FRP (Factory Reset Protection) bypass, Samsung account lock, Knox removal for corporate phones.</p>
-<div class="flex flex-wrap gap-2 text-xs"><span class="bg-mesh-2 border border-line px-2 py-1">Carrier unlock</span><span class="bg-mesh-2 border border-line px-2 py-1">FRP bypass</span><span class="bg-mesh-2 border border-line px-2 py-1">Pattern/PIN</span><span class="bg-mesh-2 border border-line px-2 py-1">Knox</span></div>
-</a>
-
-<a href="unlock/google-pixel.html" class="card p-8 group opacity-60" style="pointer-events:none">
-<div class="flex items-start justify-between mb-6"><p class="font-serif text-3xl text-ink">Google Pixel</p><span class="text-xs font-mono text-amber uppercase">Coming soon</span></div>
-<p class="text-sm text-muted leading-relaxed mb-4">Carrier unlock, forgotten pattern/PIN, Google account FRP bypass, bootloader unlock for advanced users.</p>
-<div class="flex flex-wrap gap-2 text-xs"><span class="bg-mesh-2 border border-line px-2 py-1">Carrier unlock</span><span class="bg-mesh-2 border border-line px-2 py-1">FRP bypass</span><span class="bg-mesh-2 border border-line px-2 py-1">Pattern/PIN</span></div>
-</a>
-
-<a href="unlock/oppo-vivo-xiaomi.html" class="card p-8 group opacity-60" style="pointer-events:none">
-<div class="flex items-start justify-between mb-6"><p class="font-serif text-3xl text-ink">Oppo / Vivo / Xiaomi</p><span class="text-xs font-mono text-amber uppercase">Coming soon</span></div>
-<p class="text-sm text-muted leading-relaxed mb-4">Carrier unlock, ColorOS/FuntouchOS/MIUI lock screen bypass, Google account FRP, bootloader unlock.</p>
-<div class="flex flex-wrap gap-2 text-xs"><span class="bg-mesh-2 border border-line px-2 py-1">Carrier unlock</span><span class="bg-mesh-2 border border-line px-2 py-1">FRP bypass</span><span class="bg-mesh-2 border border-line px-2 py-1">Brand lock</span></div>
-</a>
-
-<a href="unlock/huawei.html" class="card p-8 group opacity-60" style="pointer-events:none">
-<div class="flex items-start justify-between mb-6"><p class="font-serif text-3xl text-ink">Huawei / Honor</p><span class="text-xs font-mono text-amber uppercase">Coming soon</span></div>
-<p class="text-sm text-muted leading-relaxed mb-4">Carrier unlock, Huawei ID removal, FRP bypass, bootloader unlock (restricted since 2018).</p>
-<div class="flex flex-wrap gap-2 text-xs"><span class="bg-mesh-2 border border-line px-2 py-1">Carrier unlock</span><span class="bg-mesh-2 border border-line px-2 py-1">Huawei ID</span><span class="bg-mesh-2 border border-line px-2 py-1">FRP</span></div>
-</a>
-
-<div class="card p-8 border-dashed" style="border-style:dashed">
-<div class="flex items-start justify-between mb-6"><p class="font-serif text-3xl text-muted">Other brands</p></div>
-<p class="text-sm text-muted leading-relaxed mb-4">Nokia, Motorola, Sony, Nothing, OnePlus — guides coming as the section grows. The carrier unlock process is universal; brand-specific guides cover account locks.</p>
-<p class="text-xs text-muted">Have a specific brand request? <a href="mailto:info@repairrange.io" class="ed-link text-teal">Let us know →</a></p>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- QUICK ANSWERS -->
-<section class="bg-white border-b border-line">
-<div class="max-w-3xl mx-auto px-6 md:px-8 py-16 md:py-20">
-<p class="eyebrow mb-3">Quick answers</p>
-<h2 class="display text-3xl md:text-4xl text-ink mb-10">Common unlock questions</h2>
-<div class="space-y-6 text-sm">
-<div class="bg-mesh border border-line p-5"><p class="font-medium text-ink mb-2">Is it legal to unlock my phone in Australia?</p><p class="text-muted leading-relaxed">Yes — carrier unlocking is completely legal under Australian law. You own the device, you can use it on any network. Removing activation locks (iCloud, FRP) is legal if you're the legitimate owner or purchaser with proof of purchase. It is illegal to unlock a phone you don't own or that has been reported stolen.</p></div>
-<div class="bg-mesh border border-line p-5"><p class="font-medium text-ink mb-2">Will unlocking my phone void the warranty?</p><p class="text-muted leading-relaxed">Carrier unlocking does not void your warranty under Australian Consumer Law. However, some software-based unlocking methods (jailbreaking, bootloader unlocking) may void certain warranty provisions. Always try official methods first.</p></div>
-<div class="bg-mesh border border-line p-5"><p class="font-medium text-ink mb-2">How do I check if my phone is carrier locked?</p><p class="text-muted leading-relaxed">Insert a SIM from a different carrier. If you get a "SIM Not Supported" or "Invalid SIM" message, the phone is carrier locked. On iPhone: Settings → General → About → look for "Carrier Lock" (should say "No SIM restrictions" if unlocked). On Samsung: Settings → Connections → look for "Network lock" status.</p></div>
-<div class="bg-mesh border border-line p-5"><p class="font-medium text-ink mb-2">How do I check if a phone has an activation lock before buying?</p><p class="text-muted leading-relaxed">iPhone: Ask the seller to go to Settings → [their name] → Find My → Find My iPhone. If it's ON, they need to turn it OFF and sign out of their Apple ID before selling. If you're buying online, ask for a screenshot of this screen. Samsung: Check Settings → Biometrics and Security → Find My Mobile. Google: Check Settings → Security → Find My Device.</p></div>
-<div class="bg-mesh border border-line p-5"><p class="font-medium text-ink mb-2">I bought a phone on eBay/Gumtree and it has an activation lock. What do I do?</p><p class="text-muted leading-relaxed">Step 1: Contact the seller — ask them to remove the lock remotely (they can do this from iCloud.com or Google's Find My Device). Step 2: If the seller is unresponsive, contact Apple/Google with your proof of purchase (receipt, payment confirmation, eBay transaction record). Step 3: If all else fails, see our brand-specific guides for third-party removal options. Step 4: If you suspect the phone is stolen, do not attempt to unlock it — report it to police.</p></div>
-</div>
-</div>
-</section>
-
-<!-- CROSS-LINKS -->
-<section class="bg-teal-900 text-white">
-<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
-<p class="eyebrow text-amber mb-3">Also on RepairRange</p>
-<h2 class="display text-3xl md:text-5xl text-white mb-8">Related guides</h2>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10">
-<a href="repair/phone-repair-costs-australia.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Repairs</p><h3 class="font-serif text-xl text-white mb-3">All repair costs</h3><p class="text-white/60 text-sm">75+ models with screen, battery, and port pricing.</p></a>
-<a href="fix.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Troubleshoot</p><h3 class="font-serif text-xl text-white mb-3">Fix guides</h3><p class="text-white/60 text-sm">10 step-by-step troubleshooting guides.</p></a>
-<a href="blog/phone-repair-warranty-australia-consumer-rights.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Consumer rights</p><h3 class="font-serif text-xl text-white mb-3">Your warranty rights</h3><p class="text-white/60 text-sm">What Australian law says about repairs.</p></a>
-</div>
-</div>
-</section>
-
-<footer class="bg-teal-900 text-white border-t border-white/10"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12"><div class="md:col-span-5"><div class="flex items-center gap-2 mb-4"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg><span class="font-serif text-2xl font-medium">RepairRange</span></div><p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice.</p></div><div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="repair/phone-repair-costs-australia.html" class="text-white/80 hover:text-amber">All Models</a></li><li><a href="calculator.html" class="text-white/80 hover:text-amber">Calculator</a></li><li><a href="locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="blog.html" class="text-white/80 hover:text-amber">Blog</a></li><li><a href="unlock.html" class="text-white/80 hover:text-amber">Unlock Guides</a></li></ul></div><div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="about.html" class="text-white/80 hover:text-amber">About</a></li><li><a href="privacy.html" class="text-white/80 hover:text-amber">Privacy</a></li><li><a href="terms.html" class="text-white/80 hover:text-amber">Terms</a></li></ul></div></div><div class="pt-8 border-t border-white/15"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. Not affiliated with Apple, Samsung, Google, or any manufacturer.</p></div></div></footer>
-<script>if(window.lucide)window.lucide.createIcons();document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.mobile-menu-button'),m=document.querySelector('.mobile-menu');if(b&&m)b.addEventListener('click',()=>m.classList.toggle('hidden'))});</script>
 </body>
 </html>

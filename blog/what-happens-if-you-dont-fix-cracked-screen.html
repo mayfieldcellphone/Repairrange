@@ -4,167 +4,21 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
+
+
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-CWRGPBDWZD');
+    if(window.lucide) window.lucide.createIcons();
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    });
 </script>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<style>
-        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
-        html { scroll-behavior: smooth; }
-        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
-        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
-        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
-        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
-        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
-        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
-        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
-        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
-        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
-        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
-        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
-        .ed-link:hover { background-size:100% 1px; }
-        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
-        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
-        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
-        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
-        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
-        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
-        .mobile-menu { transition:all 300ms ease-in-out; }
-        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
-    </style>
-
-<title>What happens if you don't fix a cracked phone screen? — RepairRange</title>
-<meta name="description" content="What actually happens if you keep using a phone with a cracked screen? From minor inconvenience to real safety risks — here's the timeline of what gets worse and when.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://repairrange.io/blog/what-happens-if-you-dont-fix-cracked-screen.html">
-</head>
-<body class="bg-mesh">
-<header class="header-sticky sticky top-0 z-50 border-b border-line"><nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between"><a href="../index.html" class="flex items-center gap-2"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg><span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span></a><div class="hidden md:flex items-center gap-8 text-sm"><a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a><a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a>
-                <a href="../unlock/index.html" class="ed-link font-medium text-ink hover:text-teal">Phone Unlock</a><a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="ed-link font-medium text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote</a></div><button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button></nav><div class="mobile-menu hidden md:hidden border-t border-line bg-paper"><div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1"><a href="../brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="py-2 font-medium text-ink hover:text-teal">Troubleshoot</a><a href="../calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a>
-                <a href="../unlock/index.html" class="py-2 font-medium text-ink hover:text-teal">Phone Unlock</a><a href="../locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="py-2 font-medium text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a></div></div></header>
 
 
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 max-w-7xl mx-auto px-6 py-12">
-                <div class="lg:col-span-8 prose max-w-none">
-                    
-<div class="max-w-3xl">
-<nav class="flex items-center gap-2 text-xs text-muted mb-8"><a href="../index.html" class="ed-link hover:text-teal">Home</a><span>/</span><a href="../blog.html" class="ed-link hover:text-teal">Blog</a><span>/</span><span class="text-ink">Not fixing a cracked screen</span></nav>
-<p class="eyebrow mb-4">Reality check · June 2026</p>
-<h1 class="display text-3xl md:text-5xl lg:text-6xl text-ink mb-6">What actually happens if you don't fix a cracked screen.</h1>
-<p class="text-lg text-muted leading-relaxed mb-12">You cracked your screen. It still works. You're thinking "I'll live with it." Fair enough — but here's what happens over the next days, weeks, and months if you do. Some of it is fine. Some of it costs you money. And some of it is a genuine safety issue.</p>
-</div>
-
-<div>
-
-<h2>Week 1: It seems fine</h2>
-<p>The crack is there. You can see it. But the phone works — touch responds, display looks normal, Face ID or fingerprint still works. You put a screen protector over it (smart move) and carry on. At this stage, living with the crack is genuinely fine. Most people who crack their screens are at this stage right now.</p>
-
-<p><strong>What's actually happening:</strong> The crack has already compromised your phone's water resistance. Any IP68 rating is void the moment the glass breaks. Rain, a spilled drink, or even a sweaty pocket now poses a risk that it didn't before the crack. See our <a href="../fix/water-damage.html">water damage guide</a> for why this matters.</p>
-
-<h2>Weeks 2-4: The crack spreads</h2>
-<p>This is where physics starts working against you. Temperature changes (your pocket is ~35°C, the office desk is ~22°C, the car dashboard in an Australian summer is ~50°C+) expand and contract the glass around the crack tips. Each cycle extends the fracture a tiny amount. Pocket pressure from sitting adds bending stress.</p>
-
-<p><strong>What you'll notice:</strong> The single crack becomes 2-3 cracks. Corner cracks extend toward the centre. A spider web pattern starts forming around the impact point. If the original crack was hairline-thin, it's now visibly wider.</p>
-
-<p><strong>The cost implication:</strong> At this stage, the repair cost is the same as week 1 — a screen replacement is a screen replacement regardless of how many cracks there are. But the spreading cracks increase the chance of the next two problems developing.</p>
-
-<h2>Month 1-2: Touch problems start</h2>
-<p>As cracks propagate through the digitiser layer (the touch-sensing grid embedded in the screen), you may start experiencing <a href="../fix/ghost-touch.html">ghost touch</a> — the phone tapping itself, opening apps, typing random characters. Or you may notice dead zones where touch doesn't register, especially near the crack lines.</p>
-
-<p><strong>Ghost touch is a security risk.</strong> A phone making calls, sending messages, or opening apps without your input can expose personal information, trigger unwanted purchases, and send messages to contacts. If ghost touch develops, repair promptly — see our <a href="../fix/ghost-touch.html">ghost touch guide</a>.</p>
-
-<p><strong>Dead touch zones are a usability problem.</strong> If the bottom of the screen stops responding, you can't access the keyboard properly. If the top stops responding, you can't reach notifications. Unlike ghost touch, dead zones aren't dangerous — just increasingly annoying.</p>
-
-<h2>Month 2-3: Moisture and dust enter</h2>
-<p>Through the cracks, microscopic amounts of moisture and dust enter the space between the glass and the OLED/LCD panel underneath. This is invisible at first but manifests as:</p>
-
-<p><strong>Black spots:</strong> Small dark areas on the display that aren't visible when the screen is off but appear when the screen is on. These are areas where moisture has damaged the OLED material. They don't go away and they slowly grow.</p>
-
-<p><strong>Colour bleeding:</strong> Purple, green, or yellow discolouration around the crack lines. This is moisture interacting with the liquid crystal or OLED organic material.</p>
-
-<p><strong>The cost escalation:</strong> This is where the repair gets more expensive. What was a glass-only issue (the crack) is now a glass + display issue. The repair is the same procedure (full screen replacement), but the urgency increases — the display damage will keep spreading until the screen is replaced. And if you're planning to sell the phone, the visible display damage drops the resale value further.</p>
-
-<h2>Month 3+: Internal corrosion</h2>
-<p>Moisture that entered through the cracks doesn't stay on the display panel. Over time, it migrates to internal components — the logic board, battery connectors, camera module, and earpiece. Corrosion is invisible from outside but causes intermittent failures: speakers crackling, camera fog, charging problems, unexpected shutdowns.</p>
-
-<p><strong>The real cost:</strong> What started as a $249 screen replacement is now a $249 screen + $49-$99 ultrasonic cleaning + potentially $69-$149 for corroded components. The total can easily reach $400-$500 — approaching the cost of a refurbished replacement phone. At this point, the <a href="repair-vs-replace-decision-guide.html">repair vs replace calculation</a> starts tilting toward replacement.</p>
-
-<h2>The physical safety issues</h2>
-
-<p><strong>Cut fingers.</strong> Cracked glass develops sharp edges, especially along the main crack lines. You run your thumb across these cracks hundreds of times a day. The cuts are small — paper-cut level — but persistent and annoying. A screen protector over the crack largely prevents this.</p>
-
-<p><strong>Glass fragments.</strong> As cracks worsen, tiny glass shards can flake off from the edges. These end up in your pocket, your bag, or on your face during phone calls. A screen protector prevents this too — but once glass starts flaking, repair becomes urgent.</p>
-
-<p><strong>Eye strain.</strong> Spider-web cracks scatter and refract light from the display, forcing your eyes to work harder to read text. Over weeks, this contributes to eye fatigue and headaches, especially in low-light conditions when the display provides the primary light source.</p>
-
-<h2>The financial timeline</h2>
-
-<p><strong>Day 1:</strong> Screen replacement: <a href="../repair/phone-repair-costs-australia.html">$109-$619</a> depending on model. Resale value loss: $200-$400.</p>
-
-<p><strong>Week 2-4:</strong> Same repair cost. Resale value loss: same. No additional damage yet. This is the ideal window for repair — same cost as day 1 but before secondary damage develops.</p>
-
-<p><strong>Month 2-3:</strong> Same screen replacement cost + potential display damage has increased urgency. Resale value loss now permanent (display damage is worse than glass-only cracks to a buyer).</p>
-
-<p><strong>Month 3+:</strong> Screen replacement + cleaning + potential component repairs. Total: $300-$600+. Resale value: severely impacted. Repair vs replace calculation may favour replacement.</p>
-
-<p><strong>The lesson:</strong> The repair itself doesn't get more expensive with time — a screen replacement is a screen replacement. But the secondary damage from moisture, dust, and crack propagation adds costs that compound the longer you wait. The cheapest time to fix a cracked screen is always now.</p>
-
-<h2>The exception: when living with it is fine</h2>
-
-<p>If the crack is a single hairline in the corner, the display is perfect, touch works everywhere, and you've applied a screen protector — you can genuinely live with it for months without significant consequences. The key is the screen protector: it prevents cuts, slows crack spreading, holds glass fragments in place, and provides a partial moisture barrier.</p>
-
-<p>See our <a href="../fix/cracked-screen-still-works.html">cracked screen still works guide</a> for the detailed decision framework on when to fix and when to wait.</p>
-
-<p>For pricing on your specific model, use the <a href="../calculator.html">repair calculator</a> or browse <a href="../repair/phone-repair-costs-australia.html">all 75+ models with pricing</a>.</p>
-
-</div>
-
-                </div>
-                
-    <!-- DYNAMIC SIDEBAR -->
-    <aside class="lg:col-span-4">
-        <div class="lg:sticky lg:top-24 space-y-6">
-            <!-- PROMOTION: SELF REPAIR KIT -->
-            <div class="sidebar-card bg-teal-900 text-white border-none shadow-xl" style="background: #0f172a; border-radius: 12px; padding: 1.5rem;">
-                <span style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #f59e0b; margin-bottom: 0.5rem; display: block;">Premium Option</span>
-                <h3 style="font-family: 'Fraunces', serif; font-size: 1.5rem; margin-bottom: 0.75rem;">Self-Repair Kits</h3>
-                <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.5rem;">Fix it yourself with engineer-approved parts and professional toolsets. Save 65% on retail repair costs.</p>
-                <a href="https://selfrepairkit.com.au" style="background: #f59e0b; color: #0f172a; padding: 0.75rem 1.25rem; font-weight: 600; border-radius: 8px; display: inline-flex; align-items: center; gap: 0.5rem; width: 100%; justify-content: center;">Browse Kits</a>
-            </div>
-
-            <!-- PROMOTION: REPAIRBILL -->
-            <div class="sidebar-card" style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 12px; padding: 1.5rem;">
-                <h4 style="font-weight: 700; font-size: 0.875rem; color: #1e293b; margin-bottom: 0.75rem; text-transform: uppercase;">Repair Shop Owner?</h4>
-                <p style="color: #64748b; font-size: 0.75rem; line-height: 1.6; margin-bottom: 1rem;">Manage your shop with **RepairBill SaaS**. Professional invoicing, parts tracking, and tech management.</p>
-                <a href="https://repairbill.shop" style="color: #0d9488; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; display: inline-flex; align-items: center; gap: 0.25rem;">Start Free Trial &rarr;</a>
-            </div>
-
-            <!-- DIRECTORY -->
-            <div class="sidebar-card" style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem;">
-                <h4 style="font-weight: 700; font-size: 0.75rem; color: #0d9488; margin-bottom: 0.75rem; text-transform: uppercase;">Local Repair Hubs</h4>
-                <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.875rem;">
-                    <li style="border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;"><a href="../locations/sydney.html" style="color: #1e293b; text-decoration: none; display: flex; justify-content: space-between;">Sydney <span>&rarr;</span></a></li>
-                    <li style="border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;"><a href="../locations/melbourne.html" style="color: #1e293b; text-decoration: none; display: flex; justify-content: space-between;">Melbourne <span>&rarr;</span></a></li>
-                    <li style="border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;"><a href="../locations/brisbane.html" style="color: #1e293b; text-decoration: none; display: flex; justify-content: space-between;">Brisbane <span>&rarr;</span></a></li>
-                </ul>
-            </div>
-        </div>
-    </aside>
-
-            </div>
-            
-
-<section class="bg-teal-900 text-white"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10 mt-4"><a href="../fix/cracked-screen-still-works.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Related</p><h3 class="font-serif text-xl text-white mb-3">Cracked but working</h3><p class="text-white/60 text-sm">Fix now, wait, or live with it?</p></a><a href="../fix/ghost-touch.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">If it gets worse</p><h3 class="font-serif text-xl text-white mb-3">Ghost touch guide</h3><p class="text-white/60 text-sm">Phone tapping itself — security risk.</p></a><a href="phone-insurance-vs-self-insuring-australia.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Money</p><h3 class="font-serif text-xl text-white mb-3">Insurance vs self-insuring</h3><p class="text-white/60 text-sm">The math on phone insurance.</p></a></div></div></section>
-
-<footer class="bg-teal-900 text-white border-t border-white/10"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12"><div class="md:col-span-5"><div class="flex items-center gap-2 mb-4"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg><span class="font-serif text-2xl font-medium">RepairRange</span></div><p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice.</p></div><div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="../repair/phone-repair-costs-australia.html" class="text-white/80 hover:text-amber">All Models</a></li><li><a href="../calculator.html" class="text-white/80 hover:text-amber">Calculator</a></li>
-          <li><a href="../unlock/index.html" class="text-white/80 hover:text-amber">Unlock Guides</a></li><li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="../blog.html" class="text-white/80 hover:text-amber">Blog</a></li></ul></div><div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="../about.html" class="text-white/80 hover:text-amber">About</a></li><li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy</a></li><li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms</a></li></ul></div></div><div class="pt-8 border-t border-white/15"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. Not affiliated with Apple, Samsung, Google, or any manufacturer.</p></div></div></footer>
-<script>if(window.lucide)window.lucide.createIcons();document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.mobile-menu-button'),m=document.querySelector('.mobile-menu');if(b&&m)b.addEventListener('click',()=>m.classList.toggle('hidden'))});</script>
 </body>
 </html>

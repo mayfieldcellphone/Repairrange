@@ -4,142 +4,22 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
+
+
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-CWRGPBDWZD');
+    if(window.lucide) window.lucide.createIcons();
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    });
 </script>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<style>
-        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
-        html { scroll-behavior: smooth; }
-        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
-        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
-        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
-        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
-        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
-        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
-        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
-        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
-        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
-        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
-        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
-        .ed-link:hover { background-size:100% 1px; }
-        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
-        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
-        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
-        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
-        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
-        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
-        .mobile-menu { transition:all 300ms ease-in-out; }
-        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
-    </style>
 
-<title>What happens to your eSIM when your phone goes for repair? — RepairRange</title>
-<meta name="description" content="Will you lose your phone number if your phone goes for repair? What to do with your eSIM before handing over your phone — Telstra, Optus, Vodafone, and MVNO instructions.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://repairrange.io/blog/esim-phone-repair-what-happens.html">
-</head>
-<body class="bg-mesh">
-<header class="header-sticky sticky top-0 z-50 border-b border-line"><nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between"><a href="../index.html" class="flex items-center gap-2"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg><span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span></a><div class="hidden md:flex items-center gap-8 text-sm"><a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a><a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a><a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="ed-link font-medium text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote</a></div><button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button></nav><div class="mobile-menu hidden md:hidden border-t border-line bg-paper"><div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1"><a href="../brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="py-2 font-medium text-ink hover:text-teal">Troubleshoot</a><a href="../calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a><a href="../locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="py-2 font-medium text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a></div></div></header>
 
-<article class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-24">
-<div class="max-w-4xl mb-12">
-<nav class="flex items-center gap-2 text-xs text-muted mb-8"><a href="../index.html" class="ed-link hover:text-teal">Home</a><span>/</span><a href="../blog.html" class="ed-link hover:text-teal">Blog</a><span>/</span><span class="text-ink">eSIM and phone repair</span></nav>
-<p class="eyebrow mb-4">Practical guide · June 2026</p>
-<h1 class="display text-3xl md:text-5xl lg:text-6xl text-ink mb-6">What happens to your eSIM when your phone goes for repair?</h1>
-<p class="text-lg text-muted leading-relaxed">Your phone needs a repair and you use an eSIM — no physical SIM card to pop out. Will you lose your phone number? Can the repair shop access your carrier account? Should you remove the eSIM first? Here's exactly what to do, with specific instructions for Telstra, Optus, and Vodafone.</p>
-</div>
-
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
-<div class="lg:col-span-8">
-<div class="prose">
-
-<h2>The short answer</h2>
-<p><strong>Your phone number is safe.</strong> It's tied to your carrier account, not to the eSIM chip in your phone. If the eSIM gets deleted during a repair, you simply re-download it from your carrier afterward. No number is lost. No plan is cancelled. The eSIM is just an activation profile — think of it like a key to your account that can be re-issued.</p>
-
-<p>That said, you should still take precautions before handing over your phone. Here's the step-by-step.</p>
-
-<h2>Before the repair: what to do</h2>
-
-<div class="step-card">
-<h3>Step 1: Back up your phone</h3>
-<p class="text-muted" style="margin-bottom:0">This is more important than the eSIM. If the repair goes wrong or requires a factory reset, your photos, messages, and app data could be lost. iPhone: Settings → [your name] → iCloud → iCloud Backup → Back Up Now. Android: Settings → System → Backup → Back up now. Do this before going to the shop.</p>
-</div>
-
-<div class="step-card">
-<h3>Step 2: Remove your eSIM (if you can)</h3>
-<p class="text-muted" style="margin-bottom:0"><strong>iPhone:</strong> Settings → Cellular → tap your eSIM line → Remove eSIM → confirm. <strong>Samsung:</strong> Settings → Connections → SIM Manager → tap your eSIM → Remove. <strong>Pixel:</strong> Settings → Network & internet → SIMs → tap your eSIM → Delete SIM. This prevents the shop from accessing your carrier account and avoids confusion if a factory reset happens.</p>
-</div>
-
-<div class="step-card">
-<h3>Step 3: If your screen is broken and you can't remove the eSIM</h3>
-<p class="text-muted" style="margin-bottom:0">Don't stress. Just tell the repair shop: "I have an eSIM installed — please don't factory reset unless absolutely necessary." Most screen replacements, battery swaps, and port repairs don't require a reset. If a reset is needed (water damage, board repair), contact your carrier after the repair to get a new eSIM profile.</p>
-</div>
-
-<h2>Which repairs affect the eSIM?</h2>
-
-<p><strong>Repairs that do NOT affect eSIM</strong> (no reset needed): Screen replacement, battery replacement, charging port replacement, back glass replacement, camera lens replacement, speaker/microphone repair. The eSIM chip is separate from these components — replacing them doesn't touch it.</p>
-
-<p><strong>Repairs that MAY affect eSIM</strong> (reset sometimes needed): Water damage treatment (ultrasonic cleaning sometimes requires a reset to clear software corruption), logic board repair (if the board is replaced, the eSIM profile is gone — the new board has a different EID), and software repairs (if the technician factory resets to diagnose a software issue).</p>
-
-<h2>Re-activating your eSIM after repair</h2>
-
-<p>If your eSIM was removed or deleted during repair, re-activating it is straightforward:</p>
-
-<div class="step-card">
-<h3>Telstra</h3>
-<p class="text-muted" style="margin-bottom:0"><strong>My Telstra app:</strong> Open the app → Manage Services → SIM → Activate eSIM → scan the QR code or follow the prompts. <strong>Phone:</strong> Call 13 22 00 and ask for an eSIM re-issue. <strong>In-store:</strong> Any Telstra store can re-issue an eSIM in 5-10 minutes. Usually free — Telstra doesn't charge for eSIM re-activation.</p>
-</div>
-
-<div class="step-card">
-<h3>Optus</h3>
-<p class="text-muted" style="margin-bottom:0"><strong>My Optus app:</strong> Manage Account → SIM & Device → Request eSIM. <strong>Phone:</strong> Call 133 937. <strong>In-store:</strong> Any Optus store. Free re-activation for existing accounts. Some MVNOs on the Optus network (Amaysim, Catch Connect) have their own eSIM re-issue process — check their app or support page.</p>
-</div>
-
-<div class="step-card">
-<h3>Vodafone</h3>
-<p class="text-muted" style="margin-bottom:0"><strong>My Vodafone app:</strong> Account → Manage SIM → Replace SIM → choose eSIM. <strong>Phone:</strong> Call 1300 650 410. <strong>In-store:</strong> Any Vodafone store. Free re-activation.</p>
-</div>
-
-<div class="step-card">
-<h3>MVNOs (Boost, Woolworths, Aldi, Felix, Circles.Life, etc.)</h3>
-<p class="text-muted" style="margin-bottom:0">Most MVNOs support eSIM re-activation through their app or website. If not, contact their support. The process is the same — your number and plan are stored on the carrier side, not on your phone. The eSIM profile is just re-issued to your device.</p>
-</div>
-
-<h2>What about eSIM-only phones?</h2>
-
-<p>The iPhone 17 series and some newer models are eSIM-only in certain markets — no physical SIM slot at all. This doesn't change anything about the repair process. The eSIM is stored on a dedicated chip (eUICC) that is separate from the screen, battery, and other repairable components. The repair shop replaces the broken part; your eSIM chip stays untouched.</p>
-
-<p>The only exception is a <strong>logic board replacement</strong>. If the board itself is replaced (rare — usually only for catastrophic board failure), the eUICC chip goes with it and you'll need a new eSIM profile from your carrier. This is no different from losing a physical SIM — your carrier issues a new one.</p>
-
-<h2>Security tip: remove your eSIM for privacy</h2>
-
-<p>Even though most repair shops are trustworthy, removing your eSIM before a repair is good security practice. With an active eSIM installed, someone with access to your phone could potentially receive calls, texts, and two-factor authentication codes meant for you. Removing the eSIM before handing over the phone eliminates this risk entirely.</p>
-
-<p>For the same reason, sign out of sensitive apps (banking, email) and <a href="../fix/wont-turn-on.html">ensure the phone is backed up</a> before any repair. Your data is your responsibility — a good repair shop won't access it, but an extra precaution costs nothing.</p>
-
-<p>Need a repair? Use the <a href="../calculator.html">repair calculator</a> for pricing on your model, or find a shop on your <a href="../locations.html">city page</a>.</p>
-
-</div>
-</div>
-<aside class="lg:col-span-4"><div class="lg:sticky lg:top-24 space-y-4">
-<div class="sidebar-card" style="background:var(--rr-teal-900);border-color:var(--rr-teal-900)"><h4 style="color:var(--rr-amber-500)">Get a repair quote</h4><p style="color:rgba(255,255,255,0.7);font-size:0.875rem;line-height:1.6;margin-bottom:1rem">Find exact pricing for your phone model.</p><a href="../calculator.html" class="btn btn-primary w-full justify-center text-sm">Open Repair Calculator</a></div>
-<div class="sidebar-card"><h4>Popular guides</h4><a href="phone-repair-myths-debunked.html" class="sidebar-link">10 repair myths debunked</a><a href="phone-repair-checklist-before-during-after.html" class="sidebar-link">Repair checklist</a><a href="phone-repair-warranty-australia-consumer-rights.html" class="sidebar-link">Your warranty rights</a><a href="how-to-find-trustworthy-phone-repair-shop.html" class="sidebar-link">Finding a good shop</a><a href="iphone-vs-samsung-repair-cost-comparison.html" class="sidebar-link">iPhone vs Samsung costs</a><a href="how-long-does-phone-repair-take.html" class="sidebar-link">How long repairs take</a></div>
-<div class="sidebar-card"><h4>Popular models</h4><a href="../repair/iphone-17-pro-max.html" class="sidebar-link">iPhone 17 Pro Max</a><a href="../repair/iphone-15-pro-max.html" class="sidebar-link">iPhone 15 Pro Max</a><a href="../repair/samsung-galaxy-s26-ultra.html" class="sidebar-link">Galaxy S26 Ultra</a><a href="../repair/samsung-galaxy-s24-ultra.html" class="sidebar-link">Galaxy S24 Ultra</a><a href="../repair/phone-repair-costs-australia.html" class="sidebar-link" style="color:var(--rr-teal-700);font-weight:600">All 75+ models →</a></div>
-<div class="sidebar-card"><h4>Fix it yourself?</h4><a href="../fix/water-damage.html" class="sidebar-link">Water damage</a><a href="../fix/wont-turn-on.html" class="sidebar-link">Won't turn on</a><a href="../fix/cracked-screen-still-works.html" class="sidebar-link">Cracked screen</a><a href="../fix/battery-drains-fast.html" class="sidebar-link">Battery drain</a><a href="../fix.html" class="sidebar-link" style="color:var(--rr-teal-700);font-weight:600">All 10 guides →</a></div>
-<div class="sidebar-card"><h4>Save money</h4><a href="phone-insurance-vs-self-insuring-australia.html" class="sidebar-link">Insurance vs self-insuring</a><a href="should-you-fix-phone-before-selling.html" class="sidebar-link">Fix before selling?</a><a href="repair-vs-replace-decision-guide.html" class="sidebar-link">Repair vs replace</a></div>
-</div></aside>
-</div>
-</article> text-white"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10 mt-4"><a href="how-to-find-trustworthy-phone-repair-shop.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Before repair</p><h3 class="font-serif text-xl text-white mb-3">Finding a good shop</h3><p class="text-white/60 text-sm">7 green flags, 5 red flags.</p></a><a href="how-long-does-phone-repair-take.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Planning</p><h3 class="font-serif text-xl text-white mb-3">How long does repair take?</h3><p class="text-white/60 text-sm">Real turnaround times.</p></a><a href="phone-repair-warranty-australia-consumer-rights.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Know your rights</p><h3 class="font-serif text-xl text-white mb-3">Warranty rights</h3><p class="text-white/60 text-sm">What Australian law guarantees.</p></a></div></div></section>
-
-<footer class="bg-teal-900 text-white border-t border-white/10"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12"><div class="md:col-span-5"><div class="flex items-center gap-2 mb-4"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg><span class="font-serif text-2xl font-medium">RepairRange</span></div><p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice.</p></div><div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="../repair/phone-repair-costs-australia.html" class="text-white/80 hover:text-amber">All Models</a></li><li><a href="../calculator.html" class="text-white/80 hover:text-amber">Calculator</a></li><li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="../blog.html" class="text-white/80 hover:text-amber">Blog</a></li></ul></div><div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="../about.html" class="text-white/80 hover:text-amber">About</a></li><li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy</a></li><li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms</a></li></ul></div></div><div class="pt-8 border-t border-white/15"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. Not affiliated with Apple, Samsung, Google, or any manufacturer.</p></div></div></footer>
-<script>if(window.lucide)window.lucide.createIcons();document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.mobile-menu-button'),m=document.querySelector('.mobile-menu');if(b&&m)b.addEventListener('click',()=>m.classList.toggle('hidden'))});</script>
 <script>
 (function(){var g=[{t:'10 repair myths debunked',u:'phone-repair-myths-debunked.html'},{t:'Phone repair checklist',u:'phone-repair-checklist-before-during-after.html'},{t:'Your warranty rights (ACL)',u:'phone-repair-warranty-australia-consumer-rights.html'},{t:'Finding a trustworthy shop',u:'how-to-find-trustworthy-phone-repair-shop.html'},{t:'iPhone vs Samsung costs',u:'iphone-vs-samsung-repair-cost-comparison.html'},{t:'How long repairs take',u:'how-long-does-phone-repair-take.html'},{t:'DIY screen repair?',u:'can-you-diy-phone-screen-repair.html'},{t:'Screen quality tiers',u:'screen-quality-tiers-oem-aftermarket-refurbished-explained.html'},{t:'Samsung fingerprint trap',u:'samsung-fingerprint-sensor-screen-replacement-guide.html'},{t:'Is your screen genuine?',u:'how-to-tell-genuine-vs-aftermarket-screen.html'},{t:'Battery health guide',u:'battery-health-when-to-replace.html'},{t:'eSIM and phone repair',u:'esim-phone-repair-what-happens.html'},{t:'Foldable phone repair',u:'foldable-phone-repair-cost-guide.html'},{t:'iPad repair costs',u:'ipad-repair-cost-guide-australia.html'},{t:'MacBook & laptop costs',u:'macbook-laptop-repair-cost-guide-australia.html'},{t:'Lenovo tablet repair',u:'lenovo-tablet-repair-cost-guide-australia.html'},{t:'S26 Ultra guide',u:'samsung-galaxy-s26-ultra-repair-guide.html'},{t:'iPhone 17 PM guide',u:'iphone-17-pro-max-repair-guide.html'},{t:'Insurance vs self-insuring',u:'phone-insurance-vs-self-insuring-australia.html'},{t:'Fix before selling?',u:'should-you-fix-phone-before-selling.html'},{t:'Repair vs replace',u:'repair-vs-replace-decision-guide.html'}];var m=[{t:'iPhone 17 Pro Max',u:'../repair/iphone-17-pro-max.html'},{t:'iPhone 16 Pro Max',u:'../repair/iphone-16-pro-max.html'},{t:'iPhone 15 Pro Max',u:'../repair/iphone-15-pro-max.html'},{t:'iPhone 15',u:'../repair/iphone-15.html'},{t:'iPhone 14 Pro Max',u:'../repair/iphone-14-pro-max.html'},{t:'iPhone 13',u:'../repair/iphone-13.html'},{t:'iPhone SE 3',u:'../repair/iphone-se-3.html'},{t:'Galaxy S26 Ultra',u:'../repair/samsung-galaxy-s26-ultra.html'},{t:'Galaxy S25 Ultra',u:'../repair/samsung-galaxy-s25-ultra.html'},{t:'Galaxy S24 Ultra',u:'../repair/samsung-galaxy-s24-ultra.html'},{t:'Galaxy S23 Ultra',u:'../repair/samsung-galaxy-s23-ultra.html'},{t:'Pixel 9 Pro',u:'../repair/pixel-9-pro.html'},{t:'Pixel 8 Pro',u:'../repair/pixel-8-pro.html'}];var f=[{t:'Water damage',u:'../fix/water-damage.html'},{t:'Won\'t turn on',u:'../fix/wont-turn-on.html'},{t:'Cracked screen',u:'../fix/cracked-screen-still-works.html'},{t:'Battery drain',u:'../fix/battery-drains-fast.html'},{t:'Ghost touch',u:'../fix/ghost-touch.html'},{t:'Charging issues',u:'../fix/charging-port.html'},{t:'Green lines',u:'../fix/green-lines.html'},{t:'Black screen',u:'../fix/black-screen.html'},{t:'Overheating',u:'../fix/overheating.html'},{t:'Dropped & broken',u:'../fix/dropped-and-broken.html'}];function sh(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}function rl(arr,n,al,at){var items=sh(arr.slice()).slice(0,n);var h='';for(var i=0;i<items.length;i++)h+='<a href="'+items[i].u+'" class="sidebar-link">'+items[i].t+'</a>';if(al)h+='<a href="'+al+'" class="sidebar-link" style="color:var(--rr-teal-700);font-weight:600">'+at+'</a>';return h}var cards=document.querySelectorAll('.sidebar-card');var nc=[];for(var i=0;i<cards.length;i++){if(!cards[i].getAttribute('style'))nc.push(cards[i])}if(nc.length>=4){nc[0].innerHTML='<h4 style="font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--rr-teal-700);margin-bottom:0.75rem">Popular guides</h4>'+rl(g,6,'../blog.html','All guides \u2192');nc[1].innerHTML='<h4 style="font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--rr-teal-700);margin-bottom:0.75rem">Popular models</h4>'+rl(m,5,'../repair/phone-repair-costs-australia.html','All 75+ models \u2192');nc[2].innerHTML='<h4 style="font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--rr-teal-700);margin-bottom:0.75rem">Fix it yourself?</h4>'+rl(f,5,'../fix.html','All 10 guides \u2192');nc[3].innerHTML='<h4 style="font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--rr-teal-700);margin-bottom:0.75rem">Save money</h4>'+rl(g.filter(function(x){return x.u.indexOf('insurance')>-1||x.u.indexOf('selling')>-1||x.u.indexOf('replace')>-1}),3,null,null)}})()
 </script>
