@@ -161,71 +161,7 @@
     </div>
   </header>
 
-  <script>
-    // ===== CONFIG: paste your deployed Apps Script Web App URL here =====
-    const ENDPOINT = "https://script.google.com/macros/s/AKfycbz_nludtL5IVFYf89Ti_7YypuaGbUv1IesqXakIO5-_m1zsMBe-Bzo6dMqumTDnVcgmCw/exec";
-    // ===================================================================
-
-    // Pre-fill suburb + capture which city page the lead came from (?city=newcastle)
-    const params = new URLSearchParams(location.search);
-    const cityParam = params.get("city") || "";
-    if (cityParam) {
-      const pretty = cityParam.replace(/[-+]/g, " ").replace(/\b\w/g, c => c.toUpperCase());
-      const suburb = document.getElementById("suburb");
-      if (!suburb.value) suburb.value = pretty;
-    }
-
-    const form = document.getElementById("listingForm");
-    const btn = document.getElementById("submitBtn");
-    const msg = document.getElementById("msg");
-
-    function show(type, text) {
-      msg.className = "msg " + type;
-      msg.textContent = text;
-    }
-
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      msg.className = "msg"; // hide
-
-      // Honeypot: silently stop bots
-      if (form.company_website.value.trim() !== "") return;
-
-      // Basic required-field check
-      const required = ["business", "suburb", "name", "phone", "email"];
-      for (const id of required) {
-        if (!form[id].value.trim()) {
-          show("err", "Please fill in all the required fields marked with *.");
-          form[id].focus();
-          return;
-        }
-      }
-      if (ENDPOINT.startsWith("PASTE_")) {
-        show("err", "Form isn't connected yet — add your Apps Script URL in the page settings.");
-        return;
-      }
-
-      btn.disabled = true;
-      btn.textContent = "Sending…";
-
-      const fd = new FormData(form);
-      fd.append("source_city", cityParam);
-      fd.append("page", location.href);
-
-      try {
-        await fetch(ENDPOINT, { method: "POST", body: fd });
-        // Apps Script redirects on POST, so we treat a completed request as success.
-        form.reset();
-        show("ok", "Thanks — your request is in. We'll be in touch within one business day to get your shop live.");
-        btn.textContent = "Request received ✓";
-      } catch (err) {
-        show("err", "Something went wrong sending that. Please email info@repairrange.io and we'll sort it out.");
-        btn.disabled = false;
-        btn.textContent = "Request my listing";
-      }
-    });
-  </script>
-
+  
 <script>
     if(window.lucide) window.lucide.createIcons();
     document.addEventListener('DOMContentLoaded', () => {
@@ -238,6 +174,7 @@
         }
     });
 </script>
+
 
 </body>
 </html>
