@@ -65,6 +65,17 @@
                 <a href="../calculator.html" class="nav-link">Calculator</a>
             </div>
         </nav>
+
+<div class="mobile-menu hidden md:hidden border-t border-line bg-white shadow-xl">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-4 text-sm font-medium">
+        <a href="../brands.html" class="hover:text-teal-700">Brands</a>
+        <a href="../repair/phone-repair-costs-australia.html" class="hover:text-teal-700">Repairs</a>
+        <a href="../fix.html" class="hover:text-teal-700">Troubleshoot</a>
+        <a href="../blog.html" class="hover:text-teal-700">Blog</a>
+        <a href="../calculator.html" class="text-teal-700 font-bold">Get a Quote</a>
+    </div>
+</div>
+
     </header>
 
     <main class="max-w-3xl mx-auto px-6 py-10 md:py-16">
@@ -121,5 +132,19 @@
     </footer>
 
     <script>lucide.createIcons();</script>
+
+<script>
+    if(window.lucide) window.lucide.createIcons();
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    });
+</script>
+
 </body>
 </html>

@@ -130,6 +130,17 @@
         </div>
     </nav>
 
+<div class="mobile-menu hidden md:hidden border-t border-line bg-white shadow-xl">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-4 text-sm font-medium">
+        <a href="../brands.html" class="hover:text-teal-700">Brands</a>
+        <a href="../repair/phone-repair-costs-australia.html" class="hover:text-teal-700">Repairs</a>
+        <a href="../fix.html" class="hover:text-teal-700">Troubleshoot</a>
+        <a href="../blog.html" class="hover:text-teal-700">Blog</a>
+        <a href="../calculator.html" class="text-teal-700 font-bold">Get a Quote</a>
+    </div>
+</div>
+
+
     <!-- HERO -->
     <section class="relative pt-32 pb-20 overflow-hidden">
         <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-lab-teal/10 via-transparent to-transparent -z-10"></div>
@@ -522,5 +533,19 @@
     style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 2px 2px 3px #999;z-index:1000;" target="_blank">
  <i class="fa fa-whatsapp" style="margin-top:16px;"></i>
  </a>
+
+<script>
+    if(window.lucide) window.lucide.createIcons();
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    });
+</script>
+
 </body>
 </html>

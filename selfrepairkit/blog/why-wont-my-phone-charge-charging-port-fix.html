@@ -61,8 +61,30 @@
 <body class="bg-black text-slate-100 antialiased font-sans">
     <nav class="border-b border-white/10 sticky top-0 z-50 bg-[#212629] backdrop-blur-md shadow-lg"><div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"><a href="../index.html" class="flex flex-col items-center"><img src="https://sc04.alicdn.com/kf/A8f37323522424136aed4c8f39c13d07dV.png?v=2" alt="SelfRepairKit" class="h-16 w-auto"><span class="text-[8px] font-bold uppercase tracking-[0.2em] text-lab-teal mt-1">Repair with confidence</span></a><div class="hidden md:flex items-center gap-6 text-xs font-bold uppercase tracking-widest text-white"><a href="../shop.html?brand=apple" class="px-3 py-2 hover:text-lab-teal">iPhone Kit</a><a href="../shop.html?brand=samsung" class="px-3 py-2 hover:text-lab-teal">Samsung Kit</a><a href="../shop.html?brand=oppo" class="px-3 py-2 hover:text-lab-teal">OPPO Kit</a><a href="../shop.html?brand=google" class="px-3 py-2 rounded-lg hover:bg-lab-teal/10 hover:text-lab-teal transition-all flex items-center gap-1.5"><i data-lucide="chrome" class="w-3.5 h-3.5"></i>Pixel Kit</a><a href="../guides.html" class="px-3 py-2 hover:text-lab-teal">Guides</a><a href="../blog.html" class="px-3 py-2 text-lab-teal">Blog</a><a href="../shop.html?category=accessories" class="px-3 py-2 text-amber-500">Accessories</a></div></div></nav>
 
+<div class="mobile-menu hidden md:hidden border-t border-line bg-white shadow-xl">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-4 text-sm font-medium">
+        <a href="../brands.html" class="hover:text-teal-700">Brands</a>
+        <a href="../repair/phone-repair-costs-australia.html" class="hover:text-teal-700">Repairs</a>
+        <a href="../fix.html" class="hover:text-teal-700">Troubleshoot</a>
+        <a href="../blog.html" class="hover:text-teal-700">Blog</a>
+        <a href="../calculator.html" class="text-teal-700 font-bold">Get a Quote</a>
+    </div>
+</div>
+
+
     <article class="max-w-3xl mx-auto px-6 py-16">
         <nav class="flex items-center gap-2 text-xs text-slate-300 mb-10"><a href="../index.html" class="hover:text-lab-teal">Home</a><span>/</span><a href="../blog.html" class="hover:text-lab-teal">Blog</a><span>/</span><span class="text-white">Why won't my phone charge</span></nav>
+
+<div class="mobile-menu hidden md:hidden border-t border-line bg-white shadow-xl">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-4 text-sm font-medium">
+        <a href="../brands.html" class="hover:text-teal-700">Brands</a>
+        <a href="../repair/phone-repair-costs-australia.html" class="hover:text-teal-700">Repairs</a>
+        <a href="../fix.html" class="hover:text-teal-700">Troubleshoot</a>
+        <a href="../blog.html" class="hover:text-teal-700">Blog</a>
+        <a href="../calculator.html" class="text-teal-700 font-bold">Get a Quote</a>
+    </div>
+</div>
+
         <header class="mb-12">
             <p class="font-mono text-lab-teal text-xs mb-4 uppercase tracking-[0.3em]">// REPAIR_GUIDE · June 2026</p>
             <h1 class="text-4xl md:text-5xl font-bold tracking-tighter text-white mb-6 leading-tight">Why Won't My Phone Charge?</h1>
@@ -144,5 +166,19 @@
         <div class="flex justify-center gap-8 text-[10px] uppercase tracking-[0.15em] text-slate-300"><a href="https://repairrange.io" class="hover:text-lab-teal">RepairRange</a><a href="https://www.mayfieldphonerepair.com.au" class="hover:text-lab-teal">Mayfield Phone Repair</a></div>
     </footer>
     <script>window.addEventListener('load',function(){if(window.lucide)lucide.createIcons();});</script>
+
+<script>
+    if(window.lucide) window.lucide.createIcons();
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    });
+</script>
+
 </body>
 </html>

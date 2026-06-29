@@ -4,197 +4,20 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
+
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-CWRGPBDWZD');
+    if(window.lucide) window.lucide.createIcons();
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    });
 </script>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<style>
-    :root { 
-        --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; 
-        --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; 
-    }
-    html { scroll-behavior: smooth; }
-    body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
-    .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
-    .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
-    .eyebrow { font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--rr-teal-700); }
-    
-    .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
-    .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:700; font-size:0.9375rem; transition:all 200ms ease; border-radius:4px; }
-    .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow: 0 4px 0 var(--rr-amber-600); }
-    .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow: 0 6px 0 var(--rr-amber-600); }
-    .btn-outline { border: 2px solid var(--rr-teal-700); color: var(--rr-teal-700); }
-    
-    .card, .post-card, .sidebar-card, .shadow-box { 
-        background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; 
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
-        border-radius: 4px;
-    }
-    .card:hover, .post-card:hover { 
-        border-color:var(--rr-ink); transform:translateY(-2px); 
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15); 
-    }
-    
-    .bg-mesh-hero { 
-        background-color: var(--rr-hero); 
-        background-image: radial-gradient(rgba(15, 118, 110, 0.1) 1.5px, transparent 0); 
-        background-size: 32px 32px; 
-        border-bottom: 1px solid var(--rr-line); 
-    }
 
-    .funnel-table { width: 100%; border-collapse: separate; border-spacing: 0; background: white; border-radius: 4px; overflow: hidden; border: 1px solid var(--rr-line); }
-    .funnel-table th { background: var(--rr-paper-2); padding: 1rem; text-align: left; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: var(--rr-muted); border-bottom: 1px solid var(--rr-line); }
-    .funnel-table td { padding: 1rem; border-bottom: 1px solid var(--rr-line); vertical-align: middle; }
-    
-    .savings-badge { background: #FEF3C7; color: #92400E; font-size: 0.625rem; font-weight: 800; padding: 0.2rem 0.5rem; border-radius: 99px; }
-    
-    .mobile-menu { transition:all 300ms ease-in-out; }
-    @media (max-width: 768px) { 
-        .hero-title { font-size: 2.5rem !important; }
-        .hide-mobile { display: none; }
-    }
-</style>
-
-<title>Phone battery drains fast — diagnose and fix — RepairRange</title>
-<meta name="description" content="Phone battery dying too fast? Could be a worn battery, a rogue app, or a settings issue. Here's how to diagnose which one — and when it's time for a replacement.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://repairrange.io/fix/battery-drains-fast.html">
-</head>
-<body class="bg-paper">
-<header class="header-sticky sticky top-0 z-50 border-b border-line">
-<nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
-<a href="../index.html" class="flex items-center gap-2"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg><span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span></a>
-<div class="hidden md:flex items-center gap-8 text-sm"><a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="ed-link font-medium text-teal">Troubleshoot</a><a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a>
-                <a href="../unlock/index.html" class="ed-link font-medium text-ink hover:text-teal">Phone Unlock</a><a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="ed-link font-medium text-ink hover:text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a></div>
-<button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button>
-</nav>
-<div class="mobile-menu hidden md:hidden border-t border-line bg-paper"><div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1"><a href="../brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="py-2 font-medium text-teal">Troubleshoot</a><a href="../calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a>
-                <a href="../unlock/index.html" class="py-2 font-medium text-ink hover:text-teal">Phone Unlock</a><a href="../locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="py-2 font-medium text-ink hover:text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a></div></div>
-</header>
-
-<article class="max-w-6xl mx-auto px-6 md:px-8 py-10 md:py-16">
-<div class="max-w-3xl">
-<nav class="flex items-center gap-2 text-xs text-muted mb-8"><a href="../index.html" class="ed-link hover:text-teal">Home</a><span>/</span><a href="../fix.html" class="ed-link hover:text-teal">Troubleshoot</a><span>/</span><span class="text-ink">Battery drains fast</span></nav>
-<p class="eyebrow mb-4">Common issue · June 2026</p>
-<h1 class="display text-3xl md:text-5xl lg:text-6xl text-ink mb-6">Phone battery drains too fast — is it the battery or something else?</h1>
-<p class="text-lg text-muted leading-relaxed mb-12">Your phone used to last all day. Now it barely makes it to 3pm. Before you pay $89–$149 for a new battery, spend 5 minutes diagnosing whether it's actually the battery — because half the time, it isn't.</p>
-</div>
-
-<div class="prose max-w-3xl">
-
-<h2>Step 1: Check battery health (60 seconds)</h2>
-
-<p>Every modern phone tells you the health of your battery as a percentage. This is the single most useful diagnostic number.</p>
-
-<div class="step-card">
-<h3>iPhone</h3>
-<p class="text-muted" style="margin-bottom:0">Settings → Battery → Battery Health & Charging → <strong>Maximum Capacity</strong>. This shows how much charge capacity remains compared to when the battery was new. 100% = new. Below 80% = Apple considers it "degraded" and recommends replacement.</p>
-</div>
-
-<div class="step-card">
-<h3>Samsung Galaxy</h3>
-<p class="text-muted" style="margin-bottom:0">Settings → Battery → Battery Status (or Samsung Members app → Phone diagnostics → Battery Status). Samsung doesn't show a percentage — it shows "Good", "Normal", or "Weak". "Weak" = replacement time. For a more precise reading, dial <strong>*#0228#</strong> in the phone dialer — this opens the battery info screen showing voltage and charge level.</p>
-</div>
-
-<div class="step-card">
-<h3>Google Pixel</h3>
-<p class="text-muted" style="margin-bottom:0">Settings → Battery → Battery Health. Pixel shows a percentage similar to iPhone. Below 80% = consider replacement.</p>
-</div>
-
-<h2>What the numbers mean</h2>
-
-<p><strong>90–100%:</strong> Your battery is fine. If your phone is draining fast, the problem is almost certainly software (a rogue app, a settings issue, or poor cellular signal). Skip to the software fixes below.</p>
-
-<p><strong>80–90%:</strong> Mild degradation. You might notice slightly shorter battery life than when the phone was new, but it shouldn't be dramatic. If you're getting significantly less than a full day, look at software causes first. Battery replacement is optional at this stage.</p>
-
-<p><strong>75–80%:</strong> The replacement sweet spot. You've lost 20–25% of your original capacity. The phone may throttle CPU performance to prevent unexpected shutdowns (Apple does this automatically via "Performance Management"). A $79–$119 battery replacement at this stage gives you 18–24 months of full-day battery life. See our <a href="../blog/battery-health-when-to-replace.html">battery health guide</a> for the full cost-benefit analysis.</p>
-
-<p><strong>Below 75%:</strong> Replace it. The phone may shut down unexpectedly at 20–30% indicated charge, struggle through a half-day of normal use, or become noticeably slow as performance management throttles the CPU to compensate for the weak battery. At this point, a battery replacement is almost always worth the cost.</p>
-
-<h2>Step 2: Find the drain (if battery health is OK)</h2>
-
-<p>If your battery health is above 85% but the phone still dies too fast, the problem is <strong>something consuming power</strong>, not the battery itself. Here's how to find it:</p>
-
-<p><strong>iPhone:</strong> Settings → Battery → scroll down to "Battery Usage by App." Look at the last 24 hours or last 10 days. If any single app is using more than 20% of battery, that's your culprit. Common offenders: Facebook, Instagram, TikTok, Google Maps (background location), email apps (constant push sync).</p>
-
-<p><strong>Samsung:</strong> Settings → Battery → Battery Usage. Same idea — find the app consuming the most. Samsung also shows "Background usage time" vs "Screen usage time" — an app using lots of battery in the background while the screen is off is a red flag.</p>
-
-<p><strong>Pixel:</strong> Settings → Battery → Battery Usage. Pixel's "Adaptive Battery" feature is usually good at limiting background drain, but rogue apps can override it.</p>
-
-<h2>The 7 most common software battery drains</h2>
-
-<div class="step-card">
-<h3>1. Poor cellular signal</h3>
-<p class="text-muted" style="margin-bottom:0">When your phone has weak signal (1-2 bars), the radio amplifier works harder to maintain connection — burning through battery 2-3x faster than normal. If you're consistently in a low-signal area (office basement, rural area, train commute), this alone can halve your battery life. Fix: use Wi-Fi calling when available, or accept the drain as environmental.</p>
-</div>
-
-<div class="step-card">
-<h3>2. Screen brightness too high</h3>
-<p class="text-muted" style="margin-bottom:0">The screen is the #1 power consumer on any phone. Running at maximum brightness consumes 3-4x more power than 50% brightness. Enable auto-brightness (it's more conservative than you'd think) and use dark mode on OLED screens — on OLED, dark pixels are literally off, saving significant power.</p>
-</div>
-
-<div class="step-card">
-<h3>3. Background app refresh</h3>
-<p class="text-muted" style="margin-bottom:0">Apps refreshing content in the background (social media, email, news) consume power even when you're not using them. iPhone: Settings → General → Background App Refresh → turn off for apps you don't need instant updates from. Samsung: Settings → Battery → Background usage limits.</p>
-</div>
-
-<div class="step-card">
-<h3>4. Location services running constantly</h3>
-<p class="text-muted" style="margin-bottom:0">Some apps request "Always" location access when they only need "While Using." Google Maps, weather apps, fitness trackers, and social media are common offenders. iPhone: Settings → Privacy & Security → Location Services → review each app. Change "Always" to "While Using" for anything that doesn't genuinely need constant tracking.</p>
-</div>
-
-<div class="step-card">
-<h3>5. A stuck or crashed background process</h3>
-<p class="text-muted" style="margin-bottom:0">Sometimes an app crashes in the background but keeps running as a stuck process, consuming CPU and battery. Symptoms: the phone feels warm without heavy use, and the "Battery Usage" screen shows an unusual app at the top. Fix: force-close the app, then restart the phone.</p>
-</div>
-
-<div class="step-card">
-<h3>6. Software update issues</h3>
-<p class="text-muted" style="margin-bottom:0">In the 24–72 hours after a major OS update (iOS 19, One UI 7, etc.), the phone re-indexes Spotlight/search databases, re-optimises apps, and recalibrates battery management. This temporarily increases drain by 20–40%. Wait 3 days before assuming the update broke your battery. If drain persists beyond 72 hours, the update may have introduced a bug — check forums for known issues.</p>
-</div>
-
-<div class="step-card">
-<h3>7. Widgets and live activities</h3>
-<p class="text-muted" style="margin-bottom:0">Live wallpapers, weather widgets that update every 15 minutes, sports score widgets, and iPhone Live Activities all consume power continuously. Each one is small, but 5-6 active widgets add up. If you're hunting for the last 10-15% of battery life, reducing widget count helps.</p>
-</div>
-
-<h2>When to replace the battery</h2>
-
-<p>Replace the battery when health is below 80% AND you're experiencing daily drain issues. A battery replacement costs <strong>$69–$169 AUD</strong> at independent shops depending on the model. Apple charges $109–$119. It's one of the highest-value repairs available — $79–$119 buys you essentially a new phone in terms of battery performance for 18–24 months.</p>
-
-<p>For detailed pricing on your model, see our <a href="../blog/battery-health-when-to-replace.html">battery health and replacement guide</a> or use the <a href="../calculator.html">repair calculator</a>.</p>
-
-<h2>The decision tree</h2>
-
-<p><strong>Battery health above 85%?</strong> → Software issue. Check battery usage by app, fix the top drain.</p>
-<p><strong>Battery health 80–85%?</strong> → Borderline. Try software fixes first. If no improvement, replacement is reasonable.</p>
-<p><strong>Battery health below 80%?</strong> → Replace the battery. $69–$169, takes 30–60 minutes at a shop.</p>
-<p><strong>Phone shuts down at 20–30%?</strong> → Definitely replace. The battery can no longer deliver peak current.</p>
-<p><strong>Battery is swelling (phone case feels tight, screen lifting)?</strong> → Replace immediately. Swollen batteries are a safety hazard. See <a href="wont-turn-on.html">phone won't turn on guide</a>.</p>
-
-</div>
-</article>
-
-<section class="bg-teal-900 text-white">
-<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10">
-<a href="../blog/battery-health-when-to-replace.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Blog</p><h3 class="font-serif text-xl text-white mb-3">Battery health deep dive</h3><p class="text-white/60 text-sm">When 82% means replace — the full guide.</p></a>
-<a href="charging-port.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Related</p><h3 class="font-serif text-xl text-white mb-3">Charging port problems</h3><p class="text-white/60 text-sm">Not charging properly? Might be the port.</p></a>
-<a href="../blog/repair-vs-replace-decision-guide.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Blog</p><h3 class="font-serif text-xl text-white mb-3">Repair vs replace</h3><p class="text-white/60 text-sm">The 40% rule for old phones.</p></a>
-</div>
-</div>
-</section>
-
-<footer class="bg-teal-900 text-white border-t border-white/10"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12"><div class="md:col-span-5"><div class="flex items-center gap-2 mb-4"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg><span class="font-serif text-2xl font-medium">RepairRange</span></div><p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice.</p></div><div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="../repair/phone-repair-costs-australia.html" class="text-white/80 hover:text-amber">All Models</a></li><li><a href="../calculator.html" class="text-white/80 hover:text-amber">Calculator</a></li>
-          <li><a href="../unlock/index.html" class="text-white/80 hover:text-amber">Unlock Guides</a></li><li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="../blog.html" class="text-white/80 hover:text-amber">Blog</a></li></ul></div><div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="../about.html" class="text-white/80 hover:text-amber">About</a></li><li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy</a></li><li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms</a></li></ul></div></div><div class="pt-8 border-t border-white/15"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. Not affiliated with Apple, Samsung, Google, or any manufacturer.</p></div></div></footer>
-<script>if(window.lucide)window.lucide.createIcons();document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.mobile-menu-button'),m=document.querySelector('.mobile-menu');if(b&&m)b.addEventListener('click',()=>m.classList.toggle('hidden'))});</script>
     <!-- Chatbot Embedding Code -->
 <script>
   window.chatbotSettings = {

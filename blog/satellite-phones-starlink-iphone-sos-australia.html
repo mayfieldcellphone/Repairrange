@@ -4,178 +4,19 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
+
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-CWRGPBDWZD');
+    if(window.lucide) window.lucide.createIcons();
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    });
 </script>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<style>
-    :root { 
-        --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; 
-        --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; 
-    }
-    html { scroll-behavior: smooth; }
-    body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
-    .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
-    .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
-    .eyebrow { font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--rr-teal-700); }
-    
-    .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
-    .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:700; font-size:0.9375rem; transition:all 200ms ease; border-radius:4px; }
-    .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow: 0 4px 0 var(--rr-amber-600); }
-    .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow: 0 6px 0 var(--rr-amber-600); }
-    .btn-outline { border: 2px solid var(--rr-teal-700); color: var(--rr-teal-700); }
-    
-    .card, .post-card, .sidebar-card, .shadow-box { 
-        background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; 
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
-        border-radius: 4px;
-    }
-    .card:hover, .post-card:hover { 
-        border-color:var(--rr-ink); transform:translateY(-2px); 
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15); 
-    }
-    
-    .bg-mesh-hero { 
-        background-color: var(--rr-hero); 
-        background-image: radial-gradient(rgba(15, 118, 110, 0.1) 1.5px, transparent 0); 
-        background-size: 32px 32px; 
-        border-bottom: 1px solid var(--rr-line); 
-    }
 
-    .funnel-table { width: 100%; border-collapse: separate; border-spacing: 0; background: white; border-radius: 4px; overflow: hidden; border: 1px solid var(--rr-line); }
-    .funnel-table th { background: var(--rr-paper-2); padding: 1rem; text-align: left; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: var(--rr-muted); border-bottom: 1px solid var(--rr-line); }
-    .funnel-table td { padding: 1rem; border-bottom: 1px solid var(--rr-line); vertical-align: middle; }
-    
-    .savings-badge { background: #FEF3C7; color: #92400E; font-size: 0.625rem; font-weight: 800; padding: 0.2rem 0.5rem; border-radius: 99px; }
-    
-    .mobile-menu { transition:all 300ms ease-in-out; }
-    @media (max-width: 768px) { 
-        .hero-title { font-size: 2.5rem !important; }
-        .hide-mobile { display: none; }
-    }
-</style>
-
-<title>Satellite phones in 2026 — Starlink, iPhone SOS, and what's coming for Australia — RepairRange</title>
-<meta name="description" content="Your phone can now connect to satellites. iPhone satellite SOS, Starlink direct-to-cell, Samsung satellite messaging — what works today, what's coming, and what it means for Australians in rural areas.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://repairrange.io/blog/satellite-phones-starlink-iphone-sos-australia.html">
-</head>
-<body class="bg-paper">
-<header class="header-sticky sticky top-0 z-50 border-b border-line"><nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between"><a href="../index.html" class="flex items-center gap-2"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg><span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span></a><div class="hidden md:flex items-center gap-8 text-sm"><a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a><a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a><a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="ed-link font-medium text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote</a></div><button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button></nav><div class="mobile-menu hidden md:hidden border-t border-line bg-paper"><div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1"><a href="../brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="py-2 font-medium text-ink hover:text-teal">Troubleshoot</a><a href="../calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a><a href="../locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="py-2 font-medium text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a></div></div></header>
-
-
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 max-w-7xl mx-auto px-6 py-12">
-                <div class="lg:col-span-8 prose max-w-none">
-                    
-<div class="max-w-3xl">
-<nav class="flex items-center gap-2 text-xs text-muted mb-8"><a href="../index.html" class="ed-link hover:text-teal">Home</a><span>/</span><a href="../blog.html" class="ed-link hover:text-teal">Blog</a><span>/</span><span class="text-ink">Satellite phones</span></nav>
-<p class="eyebrow mb-4">Tech explainer · June 2026</p>
-<h1 class="display text-3xl md:text-5xl lg:text-6xl text-ink mb-6">Satellite connectivity on your phone — what works today and what's coming.</h1>
-<p class="text-lg text-muted leading-relaxed mb-12">Your phone can now talk to satellites. iPhone has emergency SOS via satellite. Samsung has satellite messaging. SpaceX's Starlink is rolling out direct-to-cell that works with any phone. Here's what each one actually does, which phones support it, and what it means for Australians — especially those in regional and rural areas where mobile coverage is patchy at best.</p>
-</div>
-
-<div>
-
-<h2>What's available right now (June 2026)</h2>
-
-<div class="step-card">
-<h3>iPhone Emergency SOS via satellite (iPhone 14+)</h3>
-<p><strong>What it does:</strong> When you have no cellular or Wi-Fi signal, your iPhone connects to Globalstar satellites to send emergency SOS messages to emergency services, or share your location with contacts via Find My. It guides you to point the phone at a satellite with on-screen arrows. <strong>Available in Australia:</strong> Yes, since 2024. <strong>Which models:</strong> <a href="../repair/iphone-14.html" style="color:#0F766E">iPhone 14</a>, <a href="../repair/iphone-15-pro-max.html" style="color:#0F766E">15</a>, <a href="../repair/iphone-17-pro-max.html" style="color:#0F766E">16, 17 series</a>. <strong>Cost:</strong> Free for 2 years after iPhone activation. Apple hasn't announced pricing after that. <strong>Limitations:</strong> Emergency messages and location sharing only — no regular texts, no calls, no internet. Requires clear view of sky (doesn't work indoors, under dense trees, or in narrow valleys). Messages take 15-60 seconds to send.</p>
-</div>
-
-<div class="step-card">
-<h3>Samsung satellite messaging (Galaxy S25 series)</h3>
-<p><strong>What it does:</strong> Samsung partnered with Skylo Technologies for satellite connectivity on the Galaxy S25 series. Supports emergency SOS messaging when out of cellular range. <strong>Available in Australia:</strong> Rolling out in 2026. <strong>Which models:</strong> <a href="../repair/samsung-galaxy-s25.html" style="color:#0F766E">Galaxy S25</a>, S25+, <a href="../repair/samsung-galaxy-s25-ultra.html" style="color:#0F766E">S25 Ultra</a>. <strong>Limitations:</strong> Similar to iPhone — emergency messaging only initially, with regular text messaging planned.</p>
-</div>
-
-<div class="step-card">
-<h3>Google Pixel satellite SOS (Pixel 9 series)</h3>
-<p><strong>What it does:</strong> Emergency SOS via satellite, similar to iPhone's implementation. Uses a satellite network to send emergency messages when cellular is unavailable. <strong>Which models:</strong> <a href="../repair/pixel-8-pro.html" style="color:#0F766E">Pixel 9, 9 Pro, 9 Pro XL</a>. <strong>Available in Australia:</strong> Rolling out in 2026.</p>
-</div>
-
-<h2>What's coming: Starlink direct-to-cell</h2>
-
-<p>This is the big one. SpaceX's Starlink direct-to-cell service is different from everything above because it works with <strong>any LTE-capable phone</strong> — no special hardware, no specific model, no satellite antenna. Your phone's existing cellular radio communicates with Starlink satellites overhead as if they were cell towers in space.</p>
-
-<p><strong>How it works:</strong> SpaceX has launched hundreds of "V2 Mini" satellites with cellular antennas. These satellites act as cell towers in the sky, broadcasting LTE signals that any phone can receive. Your phone thinks it's connecting to a normal cell tower — the satellite connection is invisible to you.</p>
-
-<p><strong>What's live now:</strong> Text messaging on T-Mobile in the US (beta). Voice calls and limited data are in testing. The service works with any T-Mobile phone without any update or modification needed.</p>
-
-<p><strong>Australia outlook:</strong> No Australian carrier has officially announced a Starlink direct-to-cell partnership yet. However, both Optus and Telstra have reportedly been in discussions with SpaceX. Given Australia's massive coverage gaps (only 35% of the land mass has mobile coverage), the business case is strong. The question is which carrier partners first and at what price.</p>
-
-<p><strong>What this means for you:</strong> Eventually, your existing phone — the same <a href="../repair/iphone-15-pro-max.html">iPhone 15 Pro Max</a> or <a href="../repair/samsung-galaxy-s24-ultra.html">Galaxy S24 Ultra</a> sitting in your pocket — will get basic connectivity anywhere in Australia via satellite. No new hardware purchase needed. This is particularly significant for anyone who drives through rural/remote areas, works on farms or mines, or bushwalks in national parks where there's currently zero phone coverage.</p>
-
-<h2>What satellite connectivity means for Australia</h2>
-
-<p><strong>Emergency safety:</strong> This is the most immediate benefit. Australia has vast areas with no mobile coverage. People die every year in the outback and remote areas because they can't call for help. iPhone's satellite SOS has already saved lives in the US and Canada. As more phones get satellite capability and Starlink direct-to-cell rolls out, the "no coverage zone = no help" problem starts to disappear.</p>
-
-<p><strong>Regional connectivity:</strong> For the roughly 7 million Australians in regional and rural areas, reliable phone connectivity has always been patchy. Starlink direct-to-cell won't replace 5G — the bandwidth is too low for streaming or heavy data use. But basic text messaging, location sharing, and eventually voice calls? That's transformative for communities that currently rely on patchy 3G/4G or no coverage at all.</p>
-
-<p><strong>Implications for phone choices:</strong> Satellite connectivity makes modern phones significantly more valuable in Australia than older models. An <a href="../repair/iphone-14.html">iPhone 14</a> with satellite SOS is a fundamentally different safety device than an iPhone 12 without it. This changes the <a href="repair-vs-replace-decision-guide.html">repair vs replace calculation</a> — if safety is a priority and you're in rural areas, upgrading to a satellite-capable phone is worth considering even if your current phone still works.</p>
-
-<h2>Which phones have satellite connectivity?</h2>
-
-<p><strong>iPhone 14, 15, 16, 17 series</strong> — Emergency SOS via satellite (Globalstar). Available now in Australia.</p>
-<p><strong>Samsung Galaxy S25 series</strong> — Satellite messaging (Skylo). Rolling out in Australia 2026.</p>
-<p><strong>Google Pixel 9 series</strong> — Satellite SOS. Rolling out in Australia 2026.</p>
-<p><strong>Any LTE phone</strong> — Starlink direct-to-cell when it launches with an Australian carrier. No hardware upgrade needed.</p>
-<p><strong>Huawei Mate 60 Pro</strong> — Satellite calling and messaging via BeiDou/Tiantong (China only, not available in Australia).</p>
-
-<h2>The repair angle: protecting your satellite-capable phone</h2>
-
-<p>Satellite connectivity adds safety value to your phone that didn't exist before. A cracked screen or dying battery on an <a href="../repair/iphone-15-pro-max.html">iPhone 15 Pro Max</a> isn't just an inconvenience — it's a potential safety device that isn't working. If you regularly travel through areas with no mobile coverage, keeping your phone in good repair becomes a safety priority, not just a convenience.</p>
-
-<p>A $249 screen repair on a satellite-capable phone preserves a feature that could genuinely save your life in an emergency. That's a different value proposition than repairing a phone that only works where cell towers exist.</p>
-
-<p>For current repair pricing on any satellite-capable phone, use the <a href="../calculator.html">repair calculator</a> or browse <a href="../repair/phone-repair-costs-australia.html">all 75+ models with pricing</a>.</p>
-
-</div>
-
-                </div>
-                
-    <!-- DYNAMIC SIDEBAR -->
-    <aside class="lg:col-span-4">
-        <div class="lg:sticky lg:top-24 space-y-6">
-            <!-- PROMOTION: SELF REPAIR KIT -->
-            <div class="sidebar-card bg-teal-900 text-white border-none shadow-xl" style="background: #0f172a; border-radius: 12px; padding: 1.5rem;">
-                <span style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #f59e0b; margin-bottom: 0.5rem; display: block;">Premium Option</span>
-                <h3 style="font-family: 'Fraunces', serif; font-size: 1.5rem; margin-bottom: 0.75rem;">Self-Repair Kits</h3>
-                <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.5rem;">Fix it yourself with engineer-approved parts and professional toolsets. Save 65% on retail repair costs.</p>
-                <a href="https://selfrepairkit.com.au" style="background: #f59e0b; color: #0f172a; padding: 0.75rem 1.25rem; font-weight: 600; border-radius: 8px; display: inline-flex; align-items: center; gap: 0.5rem; width: 100%; justify-content: center;">Browse Kits</a>
-            </div>
-
-            <!-- PROMOTION: REPAIRBILL -->
-            <div class="sidebar-card" style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 12px; padding: 1.5rem;">
-                <h4 style="font-weight: 700; font-size: 0.875rem; color: #1e293b; margin-bottom: 0.75rem; text-transform: uppercase;">Repair Shop Owner?</h4>
-                <p style="color: #64748b; font-size: 0.75rem; line-height: 1.6; margin-bottom: 1rem;">Manage your shop with **RepairBill SaaS**. Professional invoicing, parts tracking, and tech management.</p>
-                <a href="https://repairbill.shop" style="color: #0d9488; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; display: inline-flex; align-items: center; gap: 0.25rem;">Start Free Trial &rarr;</a>
-            </div>
-
-            <!-- DIRECTORY -->
-            <div class="sidebar-card" style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem;">
-                <h4 style="font-weight: 700; font-size: 0.75rem; color: #0d9488; margin-bottom: 0.75rem; text-transform: uppercase;">Local Repair Hubs</h4>
-                <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.875rem;">
-                    <li style="border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;"><a href="../locations/sydney.html" style="color: #1e293b; text-decoration: none; display: flex; justify-content: space-between;">Sydney <span>&rarr;</span></a></li>
-                    <li style="border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;"><a href="../locations/melbourne.html" style="color: #1e293b; text-decoration: none; display: flex; justify-content: space-between;">Melbourne <span>&rarr;</span></a></li>
-                    <li style="border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;"><a href="../locations/brisbane.html" style="color: #1e293b; text-decoration: none; display: flex; justify-content: space-between;">Brisbane <span>&rarr;</span></a></li>
-                </ul>
-            </div>
-        </div>
-    </aside>
-
-            </div>
-            
-
-<section class="bg-teal-900 text-white"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10 mt-4"><a href="best-ai-phones-australia-2026.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Comparison</p><h3 class="font-serif text-xl text-white mb-3">Best phones 2026</h3><p class="text-white/60 text-sm">iPhone vs Samsung vs Pixel compared.</p></a><a href="repair-vs-replace-decision-guide.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Decision</p><h3 class="font-serif text-xl text-white mb-3">Repair vs replace</h3><p class="text-white/60 text-sm">When upgrading for satellite makes sense.</p></a><a href="phone-insurance-vs-self-insuring-australia.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Money</p><h3 class="font-serif text-xl text-white mb-3">Insurance vs self-insuring</h3><p class="text-white/60 text-sm">Protecting your satellite-capable phone.</p></a></div></div></section>
-
-<footer class="bg-teal-900 text-white border-t border-white/10"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12"><div class="md:col-span-5"><div class="flex items-center gap-2 mb-4"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg><span class="font-serif text-2xl font-medium">RepairRange</span></div><p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice.</p></div><div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="../repair/phone-repair-costs-australia.html" class="text-white/80 hover:text-amber">All Models</a></li><li><a href="../calculator.html" class="text-white/80 hover:text-amber">Calculator</a></li><li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="../blog.html" class="text-white/80 hover:text-amber">Blog</a></li></ul></div><div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="../about.html" class="text-white/80 hover:text-amber">About</a></li><li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy</a></li><li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms</a></li></ul></div></div><div class="pt-8 border-t border-white/15"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. Not affiliated with Apple, Samsung, Google, SpaceX, or any manufacturer.</p></div></div></footer>
-<script>if(window.lucide)window.lucide.createIcons();document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.mobile-menu-button'),m=document.querySelector('.mobile-menu');if(b&&m)b.addEventListener('click',()=>m.classList.toggle('hidden'))});</script>
 </body>
 </html>

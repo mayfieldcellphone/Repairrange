@@ -4,165 +4,20 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
+
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-CWRGPBDWZD');
+    if(window.lucide) window.lucide.createIcons();
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    });
 </script>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<style>
-    :root { 
-        --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; 
-        --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; 
-    }
-    html { scroll-behavior: smooth; }
-    body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
-    .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
-    .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
-    .eyebrow { font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--rr-teal-700); }
-    
-    .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
-    .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:700; font-size:0.9375rem; transition:all 200ms ease; border-radius:4px; }
-    .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow: 0 4px 0 var(--rr-amber-600); }
-    .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow: 0 6px 0 var(--rr-amber-600); }
-    .btn-outline { border: 2px solid var(--rr-teal-700); color: var(--rr-teal-700); }
-    
-    .card, .post-card, .sidebar-card, .shadow-box { 
-        background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; 
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
-        border-radius: 4px;
-    }
-    .card:hover, .post-card:hover { 
-        border-color:var(--rr-ink); transform:translateY(-2px); 
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15); 
-    }
-    
-    .bg-mesh-hero { 
-        background-color: var(--rr-hero); 
-        background-image: radial-gradient(rgba(15, 118, 110, 0.1) 1.5px, transparent 0); 
-        background-size: 32px 32px; 
-        border-bottom: 1px solid var(--rr-line); 
-    }
 
-    .funnel-table { width: 100%; border-collapse: separate; border-spacing: 0; background: white; border-radius: 4px; overflow: hidden; border: 1px solid var(--rr-line); }
-    .funnel-table th { background: var(--rr-paper-2); padding: 1rem; text-align: left; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: var(--rr-muted); border-bottom: 1px solid var(--rr-line); }
-    .funnel-table td { padding: 1rem; border-bottom: 1px solid var(--rr-line); vertical-align: middle; }
-    
-    .savings-badge { background: #FEF3C7; color: #92400E; font-size: 0.625rem; font-weight: 800; padding: 0.2rem 0.5rem; border-radius: 99px; }
-    
-    .mobile-menu { transition:all 300ms ease-in-out; }
-    @media (max-width: 768px) { 
-        .hero-title { font-size: 2.5rem !important; }
-        .hide-mobile { display: none; }
-    }
-</style>
-
-<title>Samsung Galaxy S26 Ultra repair guide 2026 — costs, risks, and advice — RepairRange</title>
-<meta name="description" content="Samsung Galaxy S26 Ultra repair costs in Australia 2026 — screen replacement ($399–$619), battery ($99–$169), back glass, charging port. What to watch out for and whether it's worth fixing.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://repairrange.io/blog/samsung-galaxy-s26-ultra-repair-guide.html">
-</head>
-<body class="bg-paper">
-<header class="header-sticky sticky top-0 z-50 border-b border-line"><nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between"><a href="../index.html" class="flex items-center gap-2"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg><span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span></a><div class="hidden md:flex items-center gap-8 text-sm"><a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a><a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a><a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="ed-link font-medium text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote</a></div><button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button></nav><div class="mobile-menu hidden md:hidden border-t border-line bg-paper"><div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1"><a href="../brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="py-2 font-medium text-ink hover:text-teal">Troubleshoot</a><a href="../calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a><a href="../locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="py-2 font-medium text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a></div></div></header>
-
-<article class="max-w-6xl mx-auto px-6 md:px-8 py-10 md:py-16">
-<div class="max-w-4xl mb-12">
-<nav class="flex items-center gap-2 text-xs text-muted mb-8"><a href="../index.html" class="ed-link hover:text-teal">Home</a><span>/</span><a href="../blog.html" class="ed-link hover:text-teal">Blog</a><span>/</span><span class="text-ink">S26 Ultra repair guide</span></nav>
-<p class="eyebrow mb-4">Model guide · June 2026</p>
-<h1 class="display text-3xl md:text-5xl lg:text-6xl text-ink mb-6">Samsung Galaxy S26 Ultra — the complete repair guide.</h1>
-<p class="text-lg text-muted leading-relaxed">Samsung's most expensive phone is also one of the most expensive to repair. Here's every repair cost for the Galaxy S26 Ultra in Australia, the fingerprint sensor trap that catches most people, and when repairing makes sense versus replacing.</p>
-</div>
-
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
-<div class="lg:col-span-8">
-<div class="prose">
-
-<h2>Every repair cost at a glance</h2>
-
-<div class="step-card">
-<h3>Screen replacement: $399–$619</h3>
-<p class="text-muted" style="margin-bottom:0">The S26 Ultra has a 6.8" QHD+ Dynamic AMOLED 2X display with an integrated Qualcomm ultrasonic fingerprint sensor. This is the single most expensive common phone repair in 2026. The price range depends on screen quality: budget LCD ($399–$449, fingerprint will NOT work), hard OLED with fingerprint ($499–$549), genuine Samsung AMOLED ($579–$619). Samsung authorised service: ~$449. <a href="../repair/samsung-galaxy-s26-ultra.html" style="color:#0F766E">Full S26 Ultra pricing →</a></p>
-</div>
-
-<div class="step-card">
-<h3>Battery replacement: $99–$169</h3>
-<p class="text-muted" style="margin-bottom:0">The S26 Ultra's 5,000mAh battery is a standard replacement job. Independent shops charge $99–$169, Samsung authorised ~$129. Replace when battery health reads "Weak" in Samsung Members app or drops below 80%. One of the best-value repairs on any phone. See our <a href="battery-health-when-to-replace.html" style="color:#0F766E">battery health guide</a>.</p>
-</div>
-
-<div class="step-card">
-<h3>Back glass replacement: $179–$299</h3>
-<p class="text-muted" style="margin-bottom:0">Samsung back glass requires heat-gun removal — no laser shortcut like iPhone. The ceramic shield back on the Ultra is more durable than glass but still cracks from concrete drops. Cosmetic only — doesn't affect function but voids water resistance and drops resale by $300+.</p>
-</div>
-
-<div class="step-card">
-<h3>Charging port (USB-C): $89–$149</h3>
-<p class="text-muted" style="margin-bottom:0">Port replacement includes the flex cable with microphone and vibration motor. Before paying for this, try <a href="../fix/charging-port.html" style="color:#0F766E">cleaning the port with a toothpick</a> — pocket lint is the #1 cause of charging issues and costs nothing to fix.</p>
-</div>
-
-<div class="step-card">
-<h3>Water damage: $49–$499+</h3>
-<p class="text-muted" style="margin-bottom:0">Ultrasonic cleaning starts at $49–$99. If components are damaged, add screen ($399–$619), battery ($99–$169), or board repair ($200–$400). The S26 Ultra is IP68-rated but water resistance degrades with age and cracks. See our <a href="../fix/water-damage.html" style="color:#0F766E">water damage emergency guide</a>.</p>
-</div>
-
-<h2>The fingerprint sensor trap</h2>
-
-<p>This is the single most important thing to know before getting your S26 Ultra screen replaced. The Qualcomm 3D Sonic Max ultrasonic fingerprint sensor is <strong>built into the display assembly</strong>. When the screen is replaced, the fingerprint sensor comes with it — but only if you buy a screen that includes a compatible sensor layer.</p>
-
-<p><strong>Budget aftermarket screens ($399–$449)</strong> typically do NOT include the ultrasonic sensor layer. The screen works, touch works, display works — but your fingerprint reader is permanently dead. The shop may not mention this upfront, especially if you're shopping on price.</p>
-
-<p><strong>Quality aftermarket screens ($499–$549)</strong> labelled "hard OLED with fingerprint" include a compatible sensor layer. Fingerprint works, but registration accuracy may be slightly lower than original (85-90% unlock rate vs 95%+ on genuine Samsung).</p>
-
-<p><strong>Genuine Samsung screens ($579–$619)</strong> include the original sensor and full accuracy. This is what Samsung authorised service uses.</p>
-
-<p><strong>The question to ask:</strong> "Will my fingerprint sensor still work after the screen replacement?" If the shop says "yes," follow up with "what grade of screen are you using?" If they can't answer specifically, they're probably using a budget screen that will kill your fingerprint. Read our <a href="samsung-fingerprint-sensor-screen-replacement-guide.html">complete fingerprint sensor guide</a> for the full technical explanation.</p>
-
-<h2>Is it worth repairing?</h2>
-
-<p>The S26 Ultra retails at $2,199 AUD (256GB) to $2,599 AUD (1TB). A 12-month-old S26 Ultra in good condition sells for $1,400–$1,700 on the secondary market. Apply the <a href="repair-vs-replace-decision-guide.html">40% rule</a>:</p>
-
-<p><strong>40% of replacement value = $560–$680</strong></p>
-
-<p>That means virtually every single repair on the S26 Ultra is worth doing — even the most expensive screen replacement ($619) barely exceeds the threshold. And any combination of battery + port ($188–$318) or battery + back glass ($278–$468) is well within the "repair" zone.</p>
-
-<p><strong>The only scenario where replacing beats repairing:</strong> Multiple simultaneous failures (screen + back glass + battery + board damage from a severe drop or water damage). If the total repair bill exceeds $800, compare against buying a good refurbished S26 Ultra for $1,200–$1,500.</p>
-
-<h2>S26 Ultra vs S25 Ultra — repair cost comparison</h2>
-
-<p>If you're deciding between repairing an older S25 Ultra or upgrading to an S26 Ultra:</p>
-
-<p><strong><a href="../repair/samsung-galaxy-s25-ultra.html">Galaxy S25 Ultra</a> screen replacement:</strong> $349–$499 (cheaper because parts have been available longer and aftermarket supply is more mature).</p>
-
-<p><strong><a href="../repair/samsung-galaxy-s26-ultra.html">Galaxy S26 Ultra</a> screen replacement:</strong> $399–$619 (newer phone, premium pricing on parts, limited aftermarket supply in first year).</p>
-
-<p>The S25 Ultra is cheaper to repair across the board — typically $50–$120 less per repair. If your S25 Ultra is otherwise in good condition and you're debating between repairing it or upgrading to the S26 Ultra, repairing the S25 Ultra saves $1,200–$1,800 compared to buying the S26 Ultra new.</p>
-
-<h2>Where to get it repaired</h2>
-
-<p><strong>Samsung authorised service:</strong> Competitive pricing on battery replacement. Screen replacement uses genuine parts with full fingerprint support. Longer wait times (1-5 business days vs same-day at independents). Find Samsung service centres at samsung.com/au.</p>
-
-<p><strong>Independent shops:</strong> Same-day service, often cheaper for screen and back glass. The key is finding a shop that stocks fingerprint-compatible screens — ask before committing. Use our <a href="how-to-find-trustworthy-phone-repair-shop.html">guide to finding a good shop</a> and check your <a href="../locations.html">city page</a> for local pricing.</p>
-
-<p>For the full pricing breakdown: <a href="../repair/samsung-galaxy-s26-ultra.html">S26 Ultra model page</a> | <a href="../calculator.html">Repair calculator</a> | <a href="../repair/phone-repair-costs-australia.html">All 75+ models compared</a></p>
-
-</div>
-</div>
-<aside class="lg:col-span-4"><div class="lg:sticky lg:top-24 space-y-4">
-<div class="sidebar-card" style="background:var(--rr-teal-900);border-color:var(--rr-teal-900)"><h4 style="color:var(--rr-amber-500)">Get a repair quote</h4><p style="color:rgba(255,255,255,0.7);font-size:0.875rem;line-height:1.6;margin-bottom:1rem">Find exact pricing for your phone model.</p><a href="../calculator.html" class="btn btn-primary w-full justify-center text-sm">Open Repair Calculator</a></div>
-<div class="sidebar-card"><h4>Popular guides</h4><a href="phone-repair-myths-debunked.html" class="sidebar-link">10 repair myths debunked</a><a href="phone-repair-checklist-before-during-after.html" class="sidebar-link">Repair checklist</a><a href="phone-repair-warranty-australia-consumer-rights.html" class="sidebar-link">Your warranty rights</a><a href="how-to-find-trustworthy-phone-repair-shop.html" class="sidebar-link">Finding a good shop</a><a href="iphone-vs-samsung-repair-cost-comparison.html" class="sidebar-link">iPhone vs Samsung costs</a><a href="iphone-17-pro-max-repair-guide.html" class="sidebar-link">iPhone 17 PM guide</a></div>
-<div class="sidebar-card"><h4>Popular models</h4><a href="../repair/iphone-17-pro-max.html" class="sidebar-link">iPhone 17 Pro Max</a><a href="../repair/samsung-galaxy-s26-ultra.html" class="sidebar-link">Galaxy S26 Ultra</a><a href="../repair/samsung-galaxy-s25-ultra.html" class="sidebar-link">Galaxy S25 Ultra</a><a href="../repair/samsung-galaxy-s24-ultra.html" class="sidebar-link">Galaxy S24 Ultra</a><a href="../repair/phone-repair-costs-australia.html" class="sidebar-link" style="color:var(--rr-teal-700);font-weight:600">All 75+ models →</a></div>
-<div class="sidebar-card"><h4>Fix it yourself?</h4><a href="../fix/water-damage.html" class="sidebar-link">Water damage</a><a href="../fix/wont-turn-on.html" class="sidebar-link">Won't turn on</a><a href="../fix/cracked-screen-still-works.html" class="sidebar-link">Cracked screen</a><a href="../fix/battery-drains-fast.html" class="sidebar-link">Battery drain</a><a href="../fix.html" class="sidebar-link" style="color:var(--rr-teal-700);font-weight:600">All 10 guides →</a></div>
-<div class="sidebar-card"><h4>Save money</h4><a href="phone-insurance-vs-self-insuring-australia.html" class="sidebar-link">Insurance vs self-insuring</a><a href="should-you-fix-phone-before-selling.html" class="sidebar-link">Fix before selling?</a><a href="repair-vs-replace-decision-guide.html" class="sidebar-link">Repair vs replace</a></div>
-</div></aside>
-</div>
-</article> text-white"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10 mt-4"><a href="samsung-fingerprint-sensor-screen-replacement-guide.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Must read</p><h3 class="font-serif text-xl text-white mb-3">Samsung fingerprint trap</h3><p class="text-white/60 text-sm">Why the sensor dies after screen replacement.</p></a><a href="iphone-vs-samsung-repair-cost-comparison.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Comparison</p><h3 class="font-serif text-xl text-white mb-3">iPhone vs Samsung costs</h3><p class="text-white/60 text-sm">Which is actually cheaper to repair?</p></a><a href="screen-quality-tiers-oem-aftermarket-refurbished-explained.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Before you buy</p><h3 class="font-serif text-xl text-white mb-3">Screen quality tiers</h3><p class="text-white/60 text-sm">OEM vs aftermarket explained.</p></a></div></div></section>
-
-<footer class="bg-teal-900 text-white border-t border-white/10"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12"><div class="md:col-span-5"><div class="flex items-center gap-2 mb-4"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg><span class="font-serif text-2xl font-medium">RepairRange</span></div><p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice.</p></div><div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="../repair/phone-repair-costs-australia.html" class="text-white/80 hover:text-amber">All Models</a></li><li><a href="../calculator.html" class="text-white/80 hover:text-amber">Calculator</a></li><li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="../blog.html" class="text-white/80 hover:text-amber">Blog</a></li></ul></div><div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="../about.html" class="text-white/80 hover:text-amber">About</a></li><li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy</a></li><li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms</a></li></ul></div></div><div class="pt-8 border-t border-white/15"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. Not affiliated with Apple, Samsung, Google, or any manufacturer.</p></div></div></footer>
-<script>if(window.lucide)window.lucide.createIcons();document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.mobile-menu-button'),m=document.querySelector('.mobile-menu');if(b&&m)b.addEventListener('click',()=>m.classList.toggle('hidden'))});</script>
 <script>
 (function(){var g=[{t:'10 repair myths debunked',u:'phone-repair-myths-debunked.html'},{t:'Phone repair checklist',u:'phone-repair-checklist-before-during-after.html'},{t:'Your warranty rights (ACL)',u:'phone-repair-warranty-australia-consumer-rights.html'},{t:'Finding a trustworthy shop',u:'how-to-find-trustworthy-phone-repair-shop.html'},{t:'iPhone vs Samsung costs',u:'iphone-vs-samsung-repair-cost-comparison.html'},{t:'How long repairs take',u:'how-long-does-phone-repair-take.html'},{t:'DIY screen repair?',u:'can-you-diy-phone-screen-repair.html'},{t:'Screen quality tiers',u:'screen-quality-tiers-oem-aftermarket-refurbished-explained.html'},{t:'Samsung fingerprint trap',u:'samsung-fingerprint-sensor-screen-replacement-guide.html'},{t:'Is your screen genuine?',u:'how-to-tell-genuine-vs-aftermarket-screen.html'},{t:'Battery health guide',u:'battery-health-when-to-replace.html'},{t:'eSIM and phone repair',u:'esim-phone-repair-what-happens.html'},{t:'Foldable phone repair',u:'foldable-phone-repair-cost-guide.html'},{t:'iPad repair costs',u:'ipad-repair-cost-guide-australia.html'},{t:'MacBook & laptop costs',u:'macbook-laptop-repair-cost-guide-australia.html'},{t:'Lenovo tablet repair',u:'lenovo-tablet-repair-cost-guide-australia.html'},{t:'S26 Ultra guide',u:'samsung-galaxy-s26-ultra-repair-guide.html'},{t:'iPhone 17 PM guide',u:'iphone-17-pro-max-repair-guide.html'},{t:'Insurance vs self-insuring',u:'phone-insurance-vs-self-insuring-australia.html'},{t:'Fix before selling?',u:'should-you-fix-phone-before-selling.html'},{t:'Repair vs replace',u:'repair-vs-replace-decision-guide.html'}];var m=[{t:'iPhone 17 Pro Max',u:'../repair/iphone-17-pro-max.html'},{t:'iPhone 16 Pro Max',u:'../repair/iphone-16-pro-max.html'},{t:'iPhone 15 Pro Max',u:'../repair/iphone-15-pro-max.html'},{t:'iPhone 15',u:'../repair/iphone-15.html'},{t:'iPhone 14 Pro Max',u:'../repair/iphone-14-pro-max.html'},{t:'iPhone 13',u:'../repair/iphone-13.html'},{t:'iPhone SE 3',u:'../repair/iphone-se-3.html'},{t:'Galaxy S26 Ultra',u:'../repair/samsung-galaxy-s26-ultra.html'},{t:'Galaxy S25 Ultra',u:'../repair/samsung-galaxy-s25-ultra.html'},{t:'Galaxy S24 Ultra',u:'../repair/samsung-galaxy-s24-ultra.html'},{t:'Galaxy S23 Ultra',u:'../repair/samsung-galaxy-s23-ultra.html'},{t:'Pixel 9 Pro',u:'../repair/pixel-9-pro.html'},{t:'Pixel 8 Pro',u:'../repair/pixel-8-pro.html'}];var f=[{t:'Water damage',u:'../fix/water-damage.html'},{t:'Won\'t turn on',u:'../fix/wont-turn-on.html'},{t:'Cracked screen',u:'../fix/cracked-screen-still-works.html'},{t:'Battery drain',u:'../fix/battery-drains-fast.html'},{t:'Ghost touch',u:'../fix/ghost-touch.html'},{t:'Charging issues',u:'../fix/charging-port.html'},{t:'Green lines',u:'../fix/green-lines.html'},{t:'Black screen',u:'../fix/black-screen.html'},{t:'Overheating',u:'../fix/overheating.html'},{t:'Dropped & broken',u:'../fix/dropped-and-broken.html'}];function sh(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}function rl(arr,n,al,at){var items=sh(arr.slice()).slice(0,n);var h='';for(var i=0;i<items.length;i++)h+='<a href="'+items[i].u+'" class="sidebar-link">'+items[i].t+'</a>';if(al)h+='<a href="'+al+'" class="sidebar-link" style="color:var(--rr-teal-700);font-weight:600">'+at+'</a>';return h}var cards=document.querySelectorAll('.sidebar-card');var nc=[];for(var i=0;i<cards.length;i++){if(!cards[i].getAttribute('style'))nc.push(cards[i])}if(nc.length>=4){nc[0].innerHTML='<h4 style="font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--rr-teal-700);margin-bottom:0.75rem">Popular guides</h4>'+rl(g,6,'../blog.html','All guides \u2192');nc[1].innerHTML='<h4 style="font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--rr-teal-700);margin-bottom:0.75rem">Popular models</h4>'+rl(m,5,'../repair/phone-repair-costs-australia.html','All 75+ models \u2192');nc[2].innerHTML='<h4 style="font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--rr-teal-700);margin-bottom:0.75rem">Fix it yourself?</h4>'+rl(f,5,'../fix.html','All 10 guides \u2192');nc[3].innerHTML='<h4 style="font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--rr-teal-700);margin-bottom:0.75rem">Save money</h4>'+rl(g.filter(function(x){return x.u.indexOf('insurance')>-1||x.u.indexOf('selling')>-1||x.u.indexOf('replace')>-1}),3,null,null)}})()
 </script>

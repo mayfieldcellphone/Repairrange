@@ -94,6 +94,17 @@
         </a>
       </div>
     </nav>
+
+<div class="mobile-menu hidden md:hidden border-t border-line bg-white shadow-xl">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-4 text-sm font-medium">
+        <a href="../brands.html" class="hover:text-teal-700">Brands</a>
+        <a href="../repair/phone-repair-costs-australia.html" class="hover:text-teal-700">Repairs</a>
+        <a href="../fix.html" class="hover:text-teal-700">Troubleshoot</a>
+        <a href="../blog.html" class="hover:text-teal-700">Blog</a>
+        <a href="../calculator.html" class="text-teal-700 font-bold">Get a Quote</a>
+    </div>
+</div>
+
   </header>
 
   <main id="home">
@@ -561,79 +572,19 @@
     </div>
   </footer>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Set current year in footer
-      const yearSpan = document.getElementById('year');
-      if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear();
-      }
-
-      // Mobile Menu Toggle (not used in simplified header, but kept for compatibility if extended later)
-      const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
-      const mobileMenu = document.querySelector('header nav .mobile-menu');
-      
-      if (mobileMenuButton && mobileMenu) {
-        mobileMenuButton.addEventListener('click', () => {
-          mobileMenu.classList.toggle('hidden');
-          const icon = mobileMenuButton.querySelector('i');
-          if (icon) {
-            icon.classList.toggle('fa-bars');
-            icon.classList.toggle('fa-times');
-          }
-        });
-
-        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-        mobileMenuLinks.forEach(link => {
-          link.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
-            const icon = mobileMenuButton.querySelector('i');
-            if (icon) {
-              icon.classList.remove('fa-times');
-              icon.classList.add('fa-bars');
-            }
-          });
-        });
-      }
-
-      // FAQ Accordion Toggle (retained for potential FAQ blocks in blog posts)
-      const faqItems = document.querySelectorAll('.faq-item');
-      faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question');
-        if (question) {
-          question.addEventListener('click', () => {
-            const answer = item.querySelector('.faq-answer');
-            const isOpen = !answer.classList.contains('hidden');
-            
-            // Close all other FAQ items
-            faqItems.forEach(otherItem => {
-              if (otherItem !== item) {
-                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
-                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
-              }
+  
+<script>
+    if(window.lucide) window.lucide.createIcons();
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
             });
-            
-            // Toggle current item
-            answer?.classList.toggle('hidden');
-            item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
-          });
         }
-      });
-
-      // Smooth Scroll for Anchor Links
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-          const href = this.getAttribute('href');
-          if (href !== '#' && href.length > 1) {
-            e.preventDefault();
-            const target = document.querySelector(href);
-            if (target) {
-              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-          }
-        });
-      });
     });
-  </script>
+</script>
+
 </body>
 </html>

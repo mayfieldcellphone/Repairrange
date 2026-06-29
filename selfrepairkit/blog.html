@@ -102,6 +102,17 @@
         </div>
     </nav>
 
+<div class="mobile-menu hidden md:hidden border-t border-line bg-white shadow-xl">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-4 text-sm font-medium">
+        <a href="../brands.html" class="hover:text-teal-700">Brands</a>
+        <a href="../repair/phone-repair-costs-australia.html" class="hover:text-teal-700">Repairs</a>
+        <a href="../fix.html" class="hover:text-teal-700">Troubleshoot</a>
+        <a href="../blog.html" class="hover:text-teal-700">Blog</a>
+        <a href="../calculator.html" class="text-teal-700 font-bold">Get a Quote</a>
+    </div>
+</div>
+
+
     <main class="max-w-7xl mx-auto px-6 py-20 lg:py-28 flex flex-col lg:flex-row gap-16">
         <div class="flex-grow">
             <p class="font-mono text-lab-teal text-xs uppercase tracking-[0.4em] mb-4">// REPAIR_DOCUMENTATION</p>
@@ -261,5 +272,19 @@
     function rotateRR(){const c=document.getElementById('rr-links');const s=rrLinks.sort(()=>0.5-Math.random()).slice(0,3);c.innerHTML=s.map(l=>`<a href="${l.u}" target="_blank" class="block text-slate-300 hover:text-lab-teal text-xs transition-colors flex items-center justify-between group">${l.t} <i data-lucide="external-link" class="w-3 h-3 opacity-0 group-hover:opacity-100"></i></a>`).join('');lucide.createIcons()}
     rotateRR();setInterval(rotateRR,12000);
     </script>
+
+<script>
+    if(window.lucide) window.lucide.createIcons();
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    });
+</script>
+
 </body>
 </html>

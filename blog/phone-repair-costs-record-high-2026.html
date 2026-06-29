@@ -4,166 +4,20 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
+
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-CWRGPBDWZD');
+    if(window.lucide) window.lucide.createIcons();
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    });
 </script>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<style>
-    :root { 
-        --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; 
-        --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; 
-    }
-    html { scroll-behavior: smooth; }
-    body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
-    .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
-    .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
-    .eyebrow { font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--rr-teal-700); }
-    
-    .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
-    .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:700; font-size:0.9375rem; transition:all 200ms ease; border-radius:4px; }
-    .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow: 0 4px 0 var(--rr-amber-600); }
-    .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow: 0 6px 0 var(--rr-amber-600); }
-    .btn-outline { border: 2px solid var(--rr-teal-700); color: var(--rr-teal-700); }
-    
-    .card, .post-card, .sidebar-card, .shadow-box { 
-        background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; 
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
-        border-radius: 4px;
-    }
-    .card:hover, .post-card:hover { 
-        border-color:var(--rr-ink); transform:translateY(-2px); 
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15); 
-    }
-    
-    .bg-mesh-hero { 
-        background-color: var(--rr-hero); 
-        background-image: radial-gradient(rgba(15, 118, 110, 0.1) 1.5px, transparent 0); 
-        background-size: 32px 32px; 
-        border-bottom: 1px solid var(--rr-line); 
-    }
 
-    .funnel-table { width: 100%; border-collapse: separate; border-spacing: 0; background: white; border-radius: 4px; overflow: hidden; border: 1px solid var(--rr-line); }
-    .funnel-table th { background: var(--rr-paper-2); padding: 1rem; text-align: left; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: var(--rr-muted); border-bottom: 1px solid var(--rr-line); }
-    .funnel-table td { padding: 1rem; border-bottom: 1px solid var(--rr-line); vertical-align: middle; }
-    
-    .savings-badge { background: #FEF3C7; color: #92400E; font-size: 0.625rem; font-weight: 800; padding: 0.2rem 0.5rem; border-radius: 99px; }
-    
-    .mobile-menu { transition:all 300ms ease-in-out; }
-    @media (max-width: 768px) { 
-        .hero-title { font-size: 2.5rem !important; }
-        .hide-mobile { display: none; }
-    }
-</style>
-
-<title>Phone repair costs 2026 Australia — record highs, what you'll pay — RepairRange</title>
-<meta name="description" content="Phone repair costs in 2026 are at record highs. iPhone screens start at $279, Samsung S26 screens up $20-$35. Here's what every repair actually costs in Australia and how to spend less.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://repairrange.io/blog/phone-repair-costs-record-high-2026.html">
-</head>
-<body class="bg-paper">
-<header class="header-sticky sticky top-0 z-50 border-b border-line"><nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between"><a href="../index.html" class="flex items-center gap-2"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg><span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span></a><div class="hidden md:flex items-center gap-8 text-sm"><a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a><a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a><a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="ed-link font-medium text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote</a></div><button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button></nav><div class="mobile-menu hidden md:hidden border-t border-line bg-paper"><div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1"><a href="../brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="py-2 font-medium text-ink hover:text-teal">Troubleshoot</a><a href="../calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a><a href="../locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="py-2 font-medium text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a></div></div></header>
-
-<article class="max-w-6xl mx-auto px-6 md:px-8 py-10 md:py-16">
-<div class="max-w-4xl mb-12">
-<nav class="flex items-center gap-2 text-xs text-muted mb-8"><a href="../index.html" class="ed-link hover:text-teal">Home</a><span>/</span><a href="../blog.html" class="ed-link hover:text-teal">Blog</a><span>/</span><span class="text-ink">2026 repair costs</span></nav>
-<p class="eyebrow mb-4">Market report · June 2026</p>
-<h1 class="display text-3xl md:text-5xl lg:text-6xl text-ink mb-6">Phone repair costs hit record highs in 2026.</h1>
-<p class="text-lg text-muted leading-relaxed">Samsung S26 screens cost $20–$35 more than the S25 series. iPhone prices held steady — at levels that were already eye-watering. Foldable repairs can exceed $800. Here's what every phone repair actually costs in Australia right now, why prices keep climbing, and how to spend less.</p>
-</div>
-
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
-<div class="lg:col-span-8">
-<div class="prose">
-
-<h2>iPhone repair costs 2026 — Apple's official pricing</h2>
-
-<p>Apple's out-of-warranty pricing for the iPhone 17 series (in AUD, at Apple authorised service):</p>
-
-<div class="step-card">
-<h3>Screen replacement</h3>
-<p class="text-muted" style="margin-bottom:0"><strong><a href="iphone-17-pro-max-repair-guide.html">iPhone 17 Pro Max</a>:</strong> $379. <strong>iPhone 17 Pro:</strong> $329. <strong>iPhone 17:</strong> $329. <strong><a href="iphone-air-repair-cost-guide.html">iPhone Air</a>:</strong> $329. At independent shops: $199–$549 depending on model and screen quality. AppleCare+: $29 flat for any model.</p>
-</div>
-
-<div class="step-card">
-<h3>Battery replacement</h3>
-<p class="text-muted" style="margin-bottom:0"><strong>iPhone 17 Pro Max / Pro:</strong> $119. <strong>iPhone 17 / Air:</strong> $119. At independent shops: $89–$149. This is one repair where Apple's pricing is competitive — the $30 premium gets you a genuine battery with proper health calibration.</p>
-</div>
-
-<div class="step-card">
-<h3>Back glass</h3>
-<p class="text-muted" style="margin-bottom:0"><strong>All iPhone 17 models:</strong> $159. <strong>Apple wins here</strong> — laser removal is cheaper and faster than independent shops ($179–$349). For back glass specifically, always go Apple authorised.</p>
-</div>
-
-<h2>Samsung repair costs 2026 — prices went up</h2>
-
-<p>Samsung's Galaxy S26 series saw price increases of $20–$35 across all models compared to the S25:</p>
-
-<div class="step-card">
-<h3>Screen replacement</h3>
-<p class="text-muted" style="margin-bottom:0"><strong><a href="samsung-galaxy-s26-ultra-repair-guide.html">Galaxy S26 Ultra</a>:</strong> $399–$619 indie | ~$449 Samsung authorised. <strong>Galaxy S26+:</strong> $299–$449. <strong>Galaxy S26:</strong> $249–$399. The fingerprint sensor remains the key cost driver — budget screens without sensor support are cheaper but you lose biometric unlock permanently. See our <a href="samsung-fingerprint-sensor-screen-replacement-guide.html">fingerprint sensor guide</a>.</p>
-</div>
-
-<div class="step-card">
-<h3>Foldable screens — the most expensive repairs</h3>
-<p class="text-muted" style="margin-bottom:0"><strong>Z Fold 6 inner screen:</strong> $599–$899. <strong>Z Flip 6 inner screen:</strong> $449–$699. These are the most expensive common phone repairs in Australia. <a href="foldable-phone-repair-cost-guide.html">Full foldable guide</a>. Samsung Care+ genuinely pays for itself on foldables.</p>
-</div>
-
-<h2>Google Pixel — the best value flagship to repair</h2>
-
-<p>Google Pixel phones remain the most affordable flagships to repair, thanks to iFixit's genuine parts partnership:</p>
-
-<p><strong>Pixel 9 Pro screen:</strong> $249–$399 indie. <strong>Pixel 9 screen:</strong> $199–$329. <strong>Battery:</strong> $89–$139 (all models). iFixit sells genuine Pixel parts with step-by-step video guides. If you're choosing a phone partly based on repair economics, Pixel is the clear winner.</p>
-
-<h2>Why are repairs getting more expensive?</h2>
-
-<p><strong>1. Bigger, better displays cost more.</strong> The iPhone 17 Pro Max has a 6.9-inch Super Retina XDR OLED with ProMotion. That's more glass, more OLED material, more digitiser area. Bigger screens = more expensive to manufacture = more expensive to replace.</p>
-
-<p><strong>2. Component pairing is spreading.</strong> Apple pairs screens, batteries, and cameras to the logic board. Samsung pairs fingerprint sensors. This means genuine or compatible parts cost more (they need pairing capability), and budget parts lose functionality. The days of a $50 eBay screen working perfectly are ending.</p>
-
-<p><strong>3. Thinner phones are harder to repair.</strong> The <a href="iphone-air-repair-cost-guide.html">iPhone Air</a> at 5.5mm thick has components packed so tightly that repair shops report higher risk of collateral damage. More risk = more labour time = higher quotes.</p>
-
-<p><strong>4. Foldables are pulling the average up.</strong> When a single Z Fold 6 inner screen repair costs $899, it dramatically raises the "average" repair cost across all phones. Five years ago, the most expensive screen repair was ~$400. Now it's nearly double.</p>
-
-<h2>How to spend less on repairs in 2026</h2>
-
-<p><strong>1. Prevention is the cheapest repair.</strong> A $40–$60 case + $20 tempered glass screen protector prevents repairs that cost $200–$600. The maths is not subtle. Every phone, every time.</p>
-
-<p><strong>2. Know when Apple/Samsung authorised beats indie.</strong> Back glass: always Apple ($119 laser vs $179+ indie). Battery: comparable pricing, but Apple includes proper calibration. Screen and port: indie is usually 20–40% cheaper.</p>
-
-<p><strong>3. AppleCare+ makes sense on Pro Max models.</strong> $29 screen repair vs $379 out-of-warranty. On Pro Max and iPhone Air, the maths works. On standard iPhones, it's borderline. See our <a href="phone-insurance-vs-self-insuring-australia.html">insurance vs self-insuring breakdown</a>.</p>
-
-<p><strong>4. Self-insure for standard phones.</strong> Put $15/month into a savings account instead of paying for insurance. After 24 months you have $360 — enough for any single repair. If nothing breaks, you keep the money. Most people never claim on phone insurance.</p>
-
-<p><strong>5. Check your home insurance.</strong> Many Australian home and contents policies cover accidental phone damage under "portable contents" — often with no additional premium. Call your insurer and ask before buying separate phone insurance.</p>
-
-<p><strong>6. Time your repairs.</strong> Parts for current-gen phones (iPhone 17, S26) are most expensive in the first 6 months after launch. Aftermarket supply matures and prices drop 10–20% after 6–12 months. If the phone is functional (cracked but usable), waiting 3 months can save $50–$100.</p>
-
-<p>For exact pricing on your model: <a href="../calculator.html">Repair calculator</a> | <a href="../repair/phone-repair-costs-australia.html">All 75+ models compared</a> | <a href="../locations.html">Find a local shop</a></p>
-
-</div>
-</div>
-
-<aside class="lg:col-span-4">
-<div class="lg:sticky lg:top-24 space-y-4">
-<div class="sidebar-card" style="background:var(--rr-teal-900);border-color:var(--rr-teal-900)"><h4 style="color:var(--rr-amber-500)">Get a repair quote</h4><p style="color:rgba(255,255,255,0.7);font-size:0.875rem;line-height:1.6;margin-bottom:1rem">Find exact pricing for your phone model — 54 models, every repair type.</p><a href="../calculator.html" class="btn btn-primary" style="width:100%;justify-content:center;font-size:0.875rem">Open Repair Calculator</a></div>
-<div class="sidebar-card" id="sb-guides"><h4>Popular guides</h4></div>
-<div class="sidebar-card" id="sb-models"><h4>Popular models</h4></div>
-<div class="sidebar-card" id="sb-fix"><h4>Fix it yourself?</h4></div>
-<div class="sidebar-card" id="sb-money"><h4>Save money</h4></div>
-</div>
-</aside>
-</div>
-</article>
-
-<footer class="bg-teal-900 text-white border-t border-white/10"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12"><div class="md:col-span-5"><div class="flex items-center gap-2 mb-4"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg><span class="font-serif text-2xl font-medium">RepairRange</span></div><p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice.</p></div><div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="../repair/phone-repair-costs-australia.html" class="text-white/80 hover:text-amber">All Models</a></li><li><a href="../calculator.html" class="text-white/80 hover:text-amber">Calculator</a></li><li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="../blog.html" class="text-white/80 hover:text-amber">Blog</a></li></ul></div><div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="../about.html" class="text-white/80 hover:text-amber">About</a></li><li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy</a></li><li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms</a></li></ul></div></div><div class="pt-8 border-t border-white/15"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. Not affiliated with Apple, Samsung, Google, or any manufacturer.</p></div></div></footer>
-<script>if(window.lucide)window.lucide.createIcons();document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.mobile-menu-button'),m=document.querySelector('.mobile-menu');if(b&&m)b.addEventListener('click',()=>m.classList.toggle('hidden'))});</script>
 <script>
 (function(){var g=[{t:'10 repair myths debunked',u:'phone-repair-myths-debunked.html'},{t:'Phone repair checklist',u:'phone-repair-checklist-before-during-after.html'},{t:'Your warranty rights (ACL)',u:'phone-repair-warranty-australia-consumer-rights.html'},{t:'Finding a trustworthy shop',u:'how-to-find-trustworthy-phone-repair-shop.html'},{t:'iPhone vs Samsung costs',u:'iphone-vs-samsung-repair-cost-comparison.html'},{t:'How long repairs take',u:'how-long-does-phone-repair-take.html'},{t:'DIY screen repair?',u:'can-you-diy-phone-screen-repair.html'},{t:'Screen quality tiers',u:'screen-quality-tiers-oem-aftermarket-refurbished-explained.html'},{t:'Samsung fingerprint trap',u:'samsung-fingerprint-sensor-screen-replacement-guide.html'},{t:'Battery health guide',u:'battery-health-when-to-replace.html'},{t:'eSIM and phone repair',u:'esim-phone-repair-what-happens.html'},{t:'Foldable phone repair',u:'foldable-phone-repair-cost-guide.html'},{t:'iPad repair costs',u:'ipad-repair-cost-guide-australia.html'},{t:'MacBook & laptop costs',u:'macbook-laptop-repair-cost-guide-australia.html'},{t:'iPhone Air repair',u:'iphone-air-repair-cost-guide.html'},{t:'S26 Ultra guide',u:'samsung-galaxy-s26-ultra-repair-guide.html'},{t:'iPhone 17 PM guide',u:'iphone-17-pro-max-repair-guide.html'},{t:'Insurance vs self-insuring',u:'phone-insurance-vs-self-insuring-australia.html'},{t:'Fix before selling?',u:'should-you-fix-phone-before-selling.html'},{t:'Repair vs replace',u:'repair-vs-replace-decision-guide.html'}];var m=[{t:'iPhone 17 Pro Max',u:'../repair/iphone-17-pro-max.html'},{t:'iPhone 16 Pro Max',u:'../repair/iphone-16-pro-max.html'},{t:'iPhone 15 Pro Max',u:'../repair/iphone-15-pro-max.html'},{t:'iPhone 15',u:'../repair/iphone-15.html'},{t:'Galaxy S26 Ultra',u:'../repair/samsung-galaxy-s26-ultra.html'},{t:'Galaxy S25 Ultra',u:'../repair/samsung-galaxy-s25-ultra.html'},{t:'Galaxy S24 Ultra',u:'../repair/samsung-galaxy-s24-ultra.html'},{t:'Pixel 9 Pro',u:'../repair/pixel-9-pro.html'},{t:'Pixel 8 Pro',u:'../repair/pixel-8-pro.html'}];var f=[{t:'Water damage',u:'../fix/water-damage.html'},{t:'Won\'t turn on',u:'../fix/wont-turn-on.html'},{t:'Cracked screen',u:'../fix/cracked-screen-still-works.html'},{t:'Battery drain',u:'../fix/battery-drains-fast.html'},{t:'Ghost touch',u:'../fix/ghost-touch.html'},{t:'Charging issues',u:'../fix/charging-port.html'}];function sh(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}function rl(arr,n,al,at){var items=sh(arr.slice()).slice(0,n);var h='';for(var i=0;i<items.length;i++)h+='<a href="'+items[i].u+'" class="sidebar-link">'+items[i].t+'</a>';if(al)h+='<a href="'+al+'" class="sidebar-link" style="color:var(--rr-teal-700);font-weight:600">'+at+'</a>';return h}function render(id,arr,n,al,at){var el=document.getElementById(id);if(!el)return;el.innerHTML=el.innerHTML+rl(arr,n,al,at)}render('sb-guides',g,6,'../blog.html','All guides \u2192');render('sb-models',m,5,'../repair/phone-repair-costs-australia.html','All 75+ models \u2192');render('sb-fix',f,5,'../fix.html','All 10 guides \u2192');render('sb-money',g.filter(function(x){return x.u.indexOf('insurance')>-1||x.u.indexOf('selling')>-1||x.u.indexOf('replace')>-1}),3,null,null);})();
 </script>

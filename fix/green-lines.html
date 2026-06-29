@@ -4,153 +4,20 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
+
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-CWRGPBDWZD');
+    if(window.lucide) window.lucide.createIcons();
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    });
 </script>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<style>
-    :root { 
-        --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; 
-        --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; 
-    }
-    html { scroll-behavior: smooth; }
-    body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
-    .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
-    .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
-    .eyebrow { font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--rr-teal-700); }
-    
-    .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
-    .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:700; font-size:0.9375rem; transition:all 200ms ease; border-radius:4px; }
-    .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow: 0 4px 0 var(--rr-amber-600); }
-    .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow: 0 6px 0 var(--rr-amber-600); }
-    .btn-outline { border: 2px solid var(--rr-teal-700); color: var(--rr-teal-700); }
-    
-    .card, .post-card, .sidebar-card, .shadow-box { 
-        background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; 
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
-        border-radius: 4px;
-    }
-    .card:hover, .post-card:hover { 
-        border-color:var(--rr-ink); transform:translateY(-2px); 
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15); 
-    }
-    
-    .bg-mesh-hero { 
-        background-color: var(--rr-hero); 
-        background-image: radial-gradient(rgba(15, 118, 110, 0.1) 1.5px, transparent 0); 
-        background-size: 32px 32px; 
-        border-bottom: 1px solid var(--rr-line); 
-    }
 
-    .funnel-table { width: 100%; border-collapse: separate; border-spacing: 0; background: white; border-radius: 4px; overflow: hidden; border: 1px solid var(--rr-line); }
-    .funnel-table th { background: var(--rr-paper-2); padding: 1rem; text-align: left; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: var(--rr-muted); border-bottom: 1px solid var(--rr-line); }
-    .funnel-table td { padding: 1rem; border-bottom: 1px solid var(--rr-line); vertical-align: middle; }
-    
-    .savings-badge { background: #FEF3C7; color: #92400E; font-size: 0.625rem; font-weight: 800; padding: 0.2rem 0.5rem; border-radius: 99px; }
-    
-    .mobile-menu { transition:all 300ms ease-in-out; }
-    @media (max-width: 768px) { 
-        .hero-title { font-size: 2.5rem !important; }
-        .hide-mobile { display: none; }
-    }
-</style>
-
-<title>Green line on phone screen — what it means and repair cost — RepairRange</title>
-<meta name="description" content="Green line on your phone screen? It's a hardware fault in the OLED panel — here's what causes it, whether it's covered by warranty, and what screen replacement costs.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://repairrange.io/fix/green-lines.html">
-</head>
-<body class="bg-paper">
-<header class="header-sticky sticky top-0 z-50 border-b border-line"><nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between"><a href="../index.html" class="flex items-center gap-2"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg><span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span></a><div class="hidden md:flex items-center gap-8 text-sm"><a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="ed-link font-medium text-teal">Troubleshoot</a><a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a>
-                <a href="../unlock/index.html" class="ed-link font-medium text-ink hover:text-teal">Phone Unlock</a><a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="ed-link font-medium text-ink hover:text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote</a></div><button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button></nav><div class="mobile-menu hidden md:hidden border-t border-line bg-paper"><div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1"><a href="../brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="py-2 font-medium text-teal">Troubleshoot</a><a href="../calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a>
-                <a href="../unlock/index.html" class="py-2 font-medium text-ink hover:text-teal">Phone Unlock</a><a href="../locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="py-2 font-medium text-ink hover:text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a></div></div></header>
-
-<article class="max-w-6xl mx-auto px-6 md:px-8 py-10 md:py-16">
-<div class="max-w-3xl">
-<nav class="flex items-center gap-2 text-xs text-muted mb-8"><a href="../index.html" class="ed-link hover:text-teal">Home</a><span>/</span><a href="../fix.html" class="ed-link hover:text-teal">Troubleshoot</a><span>/</span><span class="text-ink">Green lines</span></nav>
-<p class="eyebrow mb-4">Display issue · June 2026</p>
-<h1 class="display text-3xl md:text-5xl lg:text-6xl text-ink mb-6">Green line on your phone screen — what it means.</h1>
-<p class="text-lg text-muted leading-relaxed mb-12">A bright green vertical line has appeared on your screen — running top to bottom, always in the same place, visible on every screen. This is one of the most recognisable OLED failures, and unfortunately, no software fix exists. Here's what's happening, whether warranty covers it, and what it costs to fix.</p>
-</div>
-
-<div class="prose max-w-3xl">
-
-<h2>What's happening inside the screen</h2>
-<p>Modern phone screens (iPhone, Samsung Galaxy S-series, Google Pixel) use OLED technology where each pixel produces its own light. Each pixel has three sub-pixels: red, green, and blue. A green line means an entire column of pixels has its green sub-pixel stuck permanently on — the driver circuit for that column has failed.</p>
-
-<p>This is a <strong>hardware fault in the OLED panel itself</strong>. No software update, factory reset, or settings change will fix it. The panel needs to be replaced.</p>
-
-<h2>What caused it</h2>
-
-<div class="step-card">
-<h3>Drop impact (most common)</h3>
-<p class="text-muted" style="margin-bottom:0">Even a drop that doesn't crack the glass can damage the delicate OLED driver circuits underneath. The impact creates micro-fractures in the thin-film transistors that drive pixel columns. The line may appear immediately after the drop or develop over days as the damage propagates.</p>
-</div>
-
-<div class="step-card">
-<h3>Manufacturing defect</h3>
-<p class="text-muted" style="margin-bottom:0">Some OLED panels have latent defects that manifest weeks or months after purchase with no external trigger. Samsung has acknowledged this issue on certain Galaxy S20, S21, and S22 models and has extended warranty coverage in some regions. If the line appeared without any drop, damage, or water exposure, this is likely a manufacturing defect.</p>
-</div>
-
-<div class="step-card">
-<h3>Water or moisture exposure</h3>
-<p class="text-muted" style="margin-bottom:0">Moisture reaching the OLED panel corrodes the driver circuits, causing line failures. This can happen from obvious <a href="water-damage.html" style="color:#0F766E">water damage</a> or from gradual humidity penetration through a cracked screen over weeks.</p>
-</div>
-
-<div class="step-card">
-<h3>Pressure or flex damage</h3>
-<p class="text-muted" style="margin-bottom:0">Sitting on the phone, carrying it in a tight back pocket, or placing heavy objects on it can flex the OLED panel enough to crack internal driver circuits. This is more common on larger phones (Pro Max, Ultra models) with larger, more fragile panels.</p>
-</div>
-
-<h2>Is it covered by warranty?</h2>
-
-<p><strong>If it appeared without any drop, damage, or water exposure</strong> — potentially yes. Contact the manufacturer first:</p>
-
-<p><strong>Apple:</strong> If the phone is under 12 months old (or covered by AppleCare+), book a Genius Bar appointment or contact Apple Support online. Apple has covered green line issues as manufacturing defects on some iPhone 12, 13, and 14 models.</p>
-
-<p><strong>Samsung:</strong> Samsung has a history of OLED green line issues across the Galaxy S-series. In some markets, Samsung has offered free screen replacements for green line faults even outside the standard warranty period. Contact Samsung Support or visit a Samsung Experience Store with the phone and proof of purchase.</p>
-
-<p><strong>Google:</strong> Pixel phones are covered under Google's standard warranty. Contact Google Support — they typically offer a replacement device if the issue is a manufacturing defect.</p>
-
-<p><strong>If it appeared after a drop</strong> — it's classified as accidental damage, not a warranty issue. The manufacturer will charge out-of-warranty repair rates, or you can use an independent shop (typically cheaper).</p>
-
-<h2>What the repair costs</h2>
-
-<p>The fix is a <strong>full screen replacement</strong> — you cannot repair individual pixel columns on an OLED panel. The entire screen assembly (glass + digitiser + OLED panel) is replaced as one unit.</p>
-
-<p>Costs at independent shops: <a href="../repair/phone-repair-costs-australia.html"><strong>$109–$619 AUD</strong></a> depending on the model. Flagship phones with larger, higher-resolution OLED panels cost more. Budget models with smaller screens cost less.</p>
-
-<p><strong>Apple authorised:</strong> $259–$579 depending on model. May be free if determined to be a manufacturing defect under warranty.</p>
-
-<p><strong>Samsung authorised:</strong> $249–$549 depending on model. May be free or discounted if Samsung recognises it as a known green-line defect for your model.</p>
-
-<p>For your specific model, use the <a href="../calculator.html">repair calculator</a> or browse <a href="../repair/phone-repair-costs-australia.html">all 75+ models with pricing</a>.</p>
-
-<h2>Can the green line get worse?</h2>
-
-<p><strong>Yes.</strong> A single green line often becomes multiple lines over time. The same failure that caused one column to fail can propagate to adjacent columns, especially if the underlying cause is ongoing (moisture, flex stress). Additionally, the screen may develop other symptoms — flickering, colour distortion, or <a href="black-screen.html">complete blackout</a> — as the damage spreads.</p>
-
-<p>Repairing sooner rather than later prevents the secondary damage that makes diagnosis harder and can sometimes escalate the repair from a screen-only job to a screen + board job.</p>
-
-<h2>The bottom line</h2>
-
-<p>A green line is a confirmed hardware fault that requires screen replacement. Check warranty first — especially Samsung, which has a track record of covering green line issues. If out of warranty, independent shops offer the same repair for 20–40% less than authorised service. Use our <a href="../calculator.html">repair calculator</a> for your model's pricing.</p>
-
-</div>
-</article>
-
-<section class="bg-teal-900 text-white"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10"><a href="black-screen.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Related</p><h3 class="font-serif text-xl text-white mb-3">Black screen</h3><p class="text-white/60 text-sm">Phone on but screen completely dark.</p></a><a href="cracked-screen-still-works.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Related</p><h3 class="font-serif text-xl text-white mb-3">Cracked but working</h3><p class="text-white/60 text-sm">Should you fix it or wait?</p></a><a href="../blog/screen-quality-tiers-oem-aftermarket-refurbished-explained.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Blog</p><h3 class="font-serif text-xl text-white mb-3">Screen quality tiers</h3><p class="text-white/60 text-sm">OEM vs aftermarket explained.</p></a></div></div></section>
-
-<footer class="bg-teal-900 text-white border-t border-white/10"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12"><div class="md:col-span-5"><div class="flex items-center gap-2 mb-4"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg><span class="font-serif text-2xl font-medium">RepairRange</span></div><p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice.</p></div><div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="../repair/phone-repair-costs-australia.html" class="text-white/80 hover:text-amber">All Models</a></li><li><a href="../calculator.html" class="text-white/80 hover:text-amber">Calculator</a></li>
-          <li><a href="../unlock/index.html" class="text-white/80 hover:text-amber">Unlock Guides</a></li><li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="../blog.html" class="text-white/80 hover:text-amber">Blog</a></li></ul></div><div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="../about.html" class="text-white/80 hover:text-amber">About</a></li><li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy</a></li><li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms</a></li></ul></div></div><div class="pt-8 border-t border-white/15"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. Not affiliated with Apple, Samsung, Google, or any manufacturer.</p></div></div></footer>
-<script>if(window.lucide)window.lucide.createIcons();document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.mobile-menu-button'),m=document.querySelector('.mobile-menu');if(b&&m)b.addEventListener('click',()=>m.classList.toggle('hidden'))});</script>
     <!-- Chatbot Embedding Code -->
 <script>
   window.chatbotSettings = {

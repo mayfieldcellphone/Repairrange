@@ -4,169 +4,20 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
+
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-CWRGPBDWZD');
+    if(window.lucide) window.lucide.createIcons();
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    });
 </script>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<style>
-    :root { 
-        --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; 
-        --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; 
-    }
-    html { scroll-behavior: smooth; }
-    body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
-    .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
-    .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
-    .eyebrow { font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--rr-teal-700); }
-    
-    .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
-    .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:700; font-size:0.9375rem; transition:all 200ms ease; border-radius:4px; }
-    .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow: 0 4px 0 var(--rr-amber-600); }
-    .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow: 0 6px 0 var(--rr-amber-600); }
-    .btn-outline { border: 2px solid var(--rr-teal-700); color: var(--rr-teal-700); }
-    
-    .card, .post-card, .sidebar-card, .shadow-box { 
-        background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; 
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
-        border-radius: 4px;
-    }
-    .card:hover, .post-card:hover { 
-        border-color:var(--rr-ink); transform:translateY(-2px); 
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15); 
-    }
-    
-    .bg-mesh-hero { 
-        background-color: var(--rr-hero); 
-        background-image: radial-gradient(rgba(15, 118, 110, 0.1) 1.5px, transparent 0); 
-        background-size: 32px 32px; 
-        border-bottom: 1px solid var(--rr-line); 
-    }
 
-    .funnel-table { width: 100%; border-collapse: separate; border-spacing: 0; background: white; border-radius: 4px; overflow: hidden; border: 1px solid var(--rr-line); }
-    .funnel-table th { background: var(--rr-paper-2); padding: 1rem; text-align: left; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: var(--rr-muted); border-bottom: 1px solid var(--rr-line); }
-    .funnel-table td { padding: 1rem; border-bottom: 1px solid var(--rr-line); vertical-align: middle; }
-    
-    .savings-badge { background: #FEF3C7; color: #92400E; font-size: 0.625rem; font-weight: 800; padding: 0.2rem 0.5rem; border-radius: 99px; }
-    
-    .mobile-menu { transition:all 300ms ease-in-out; }
-    @media (max-width: 768px) { 
-        .hero-title { font-size: 2.5rem !important; }
-        .hide-mobile { display: none; }
-    }
-</style>
-
-<title>Ghost touch — phone screen tapping itself — RepairRange</title>
-<meta name="description" content="Phone screen tapping itself, opening apps, typing random characters? Ghost touch is a hardware fault — here's what causes it, whether it's fixable, and what it costs.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://repairrange.io/fix/ghost-touch.html">
-</head>
-<body class="bg-paper">
-<header class="header-sticky sticky top-0 z-50 border-b border-line">
-<nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
-<a href="../index.html" class="flex items-center gap-2"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg><span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span></a>
-<div class="hidden md:flex items-center gap-8 text-sm"><a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="ed-link font-medium text-teal">Troubleshoot</a><a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a>
-                <a href="../unlock/index.html" class="ed-link font-medium text-ink hover:text-teal">Phone Unlock</a><a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="ed-link font-medium text-ink hover:text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a></div>
-<button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button>
-</nav>
-<div class="mobile-menu hidden md:hidden border-t border-line bg-paper"><div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1"><a href="../brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="py-2 font-medium text-teal">Troubleshoot</a><a href="../calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a>
-                <a href="../unlock/index.html" class="py-2 font-medium text-ink hover:text-teal">Phone Unlock</a><a href="../locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="py-2 font-medium text-ink hover:text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a></div></div>
-</header>
-
-<article class="max-w-6xl mx-auto px-6 md:px-8 py-10 md:py-16">
-<div class="max-w-3xl">
-<nav class="flex items-center gap-2 text-xs text-muted mb-8"><a href="../index.html" class="ed-link hover:text-teal">Home</a><span>/</span><a href="../fix.html" class="ed-link hover:text-teal">Troubleshoot</a><span>/</span><span class="text-ink">Ghost touch</span></nav>
-<p class="eyebrow mb-4">Urgent issue · June 2026</p>
-<h1 class="display text-3xl md:text-5xl lg:text-6xl text-ink mb-6">Ghost touch — your phone is tapping itself.</h1>
-<p class="text-lg text-muted leading-relaxed mb-12">Your phone screen is acting on its own — opening apps, typing random characters, scrolling through menus, or making calls you didn't initiate. This is ghost touch, it's a hardware fault, and it needs attention because it's a genuine security risk.</p>
-</div>
-
-<div class="prose max-w-3xl">
-
-<div class="warning-card">
-<h3 style="margin-top:0;color:#991B1B">Immediate step: enable Airplane Mode</h3>
-<p style="margin-bottom:0;color:#991B1B">Ghost touch can make calls, send messages, and potentially authorise payments without your input. Enable Airplane Mode immediately (swipe down for Control Centre/Quick Settings) to prevent unintended communication while you work out the fix.</p>
-</div>
-
-<h2>What causes ghost touch</h2>
-
-<p>Ghost touch happens when the <strong>digitiser</strong> — the transparent touch-sensing layer built into the screen assembly — sends false touch signals to the processor. The phone genuinely believes someone is touching the screen in locations where no finger exists. There are five common causes:</p>
-
-<div class="step-card">
-<h3>Cause 1: Cracked screen (most common)</h3>
-<p class="text-muted" style="margin-bottom:0">Even a small crack can sever the digitiser's conductive grid, creating false signals where the crack intersects touch-sensing traces. This is by far the most common cause — a phone with a <a href="cracked-screen-still-works.html" style="color:#0F766E">cracked screen that "still works"</a> can develop ghost touch days or weeks after the crack appeared. The fix is screen replacement.</p>
-</div>
-
-<div class="step-card">
-<h3>Cause 2: Budget aftermarket screen (post-repair)</h3>
-<p class="text-muted" style="margin-bottom:0">Ghost touch after a recent screen replacement usually means a low-quality aftermarket digitiser. Budget screens have lower-tolerance touch layers that produce false inputs, especially near the edges and corners. The fix is having the shop replace the screen with a higher-grade panel. Under <a href="../blog/phone-repair-warranty-australia-consumer-rights.html" style="color:#0F766E">Australian Consumer Law</a>, the shop is responsible for this fault regardless of their stated warranty period.</p>
-</div>
-
-<div class="step-card">
-<h3>Cause 3: Water or moisture damage</h3>
-<p class="text-muted" style="margin-bottom:0">Moisture between the screen layers creates false electrical signals that the digitiser interprets as touch input. This can happen from obvious water exposure (<a href="water-damage.html" style="color:#0F766E">water damage</a>) or from humidity gradually penetrating a cracked screen. The fix is ultrasonic cleaning ($49–$99) and screen replacement if the digitiser is permanently damaged.</p>
-</div>
-
-<div class="step-card">
-<h3>Cause 4: Screen protector issues</h3>
-<p class="text-muted" style="margin-bottom:0">Air bubbles or moisture trapped under a screen protector can cause intermittent ghost touch, especially on edge-curved screens (Samsung S-series). This is the easiest to diagnose — remove the screen protector and test. If ghost touch stops, the protector was the cause. Reapply a new protector carefully, or use a flat-edge protector on curved screens.</p>
-</div>
-
-<div class="step-card">
-<h3>Cause 5: Loose display connector</h3>
-<p class="text-muted" style="margin-bottom:0">A drop impact can partially dislodge the display flex cable from the logic board connector. The digitiser still works but sends intermittent false signals. A technician can reseat the connector in 10–15 minutes — often free or $20–$39 diagnostic fee. This is the cheapest possible fix if it applies.</p>
-</div>
-
-<h2>Try these before paying for a repair</h2>
-
-<p><strong>Remove the screen protector.</strong> If you have one, peel it off and use the phone for 10 minutes without it. If ghost touch stops, the protector was trapping moisture or air. This is a free fix.</p>
-
-<p><strong>Clean the screen thoroughly.</strong> Oils, sweat, and moisture on the screen surface can occasionally cause false touches. Clean with a microfibre cloth and test. This rarely fixes true ghost touch but it's worth eliminating.</p>
-
-<p><strong>Restart the phone.</strong> In rare cases, a software glitch can mimic ghost touch (a stuck process sending touch events). A force restart clears this. If ghost touch returns after restart, it's hardware.</p>
-
-<p><strong>Boot into Safe Mode.</strong> On Android: hold Power, long-press "Power Off" to get Safe Mode option. On iPhone: there's no user-accessible safe mode, but a force restart serves a similar purpose. If ghost touch disappears in Safe Mode, a rogue app may be the cause — uninstall recently added apps.</p>
-
-<h2>What the repair costs</h2>
-
-<p>If ghost touch is caused by the screen (causes 1, 2, or 3 above), the fix is a <strong>full screen replacement</strong>. You can't repair just the digitiser — it's fused to the display panel as a single assembly on all modern phones.</p>
-
-<p>Screen replacement costs vary by model — <a href="../repair/phone-repair-costs-australia.html">$109–$619 AUD at independent shops</a>. For your specific model, use the <a href="../calculator.html">repair calculator</a>.</p>
-
-<p>If it's a loose connector (cause 5), the fix is much cheaper — typically $0–$39 for a diagnostic and reseat. A good shop will check the connector before recommending a full screen replacement.</p>
-
-<p><strong>If ghost touch appeared after a recent repair:</strong> The shop that did the repair is responsible under Australian Consumer Law. Go back to them first. If they used a budget screen that's causing the ghost touch, they need to replace it with a working part at no additional cost. See our <a href="../blog/phone-repair-warranty-australia-consumer-rights.html">consumer rights guide</a>.</p>
-
-<h2>Why you shouldn't ignore ghost touch</h2>
-
-<p><strong>Security risk:</strong> A phone making calls, sending messages, or opening apps on its own can expose personal information, trigger unwanted purchases, or send embarrassing messages to contacts. If the phone has banking apps installed, ghost touch could theoretically interact with them.</p>
-
-<p><strong>It gets worse:</strong> Ghost touch from a cracked screen worsens as the crack spreads. Ghost touch from moisture damage worsens as corrosion progresses. The sooner you address it, the cheaper the fix — a screen-only repair today could become a screen + board repair next month.</p>
-
-<p><strong>It drains battery:</strong> Constant false touch inputs keep the screen awake and the processor active, significantly increasing battery drain. If your battery is dying faster than usual AND you have ghost touch, the two are related.</p>
-
-</div>
-</article>
-
-<section class="bg-teal-900 text-white">
-<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10">
-<a href="cracked-screen-still-works.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Related</p><h3 class="font-serif text-xl text-white mb-3">Cracked screen guide</h3><p class="text-white/60 text-sm">Should you fix it or live with it?</p></a>
-<a href="water-damage.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Emergency</p><h3 class="font-serif text-xl text-white mb-3">Water damage guide</h3><p class="text-white/60 text-sm">What to do in the first 60 seconds.</p></a>
-<a href="../blog/how-to-tell-genuine-vs-aftermarket-screen.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Blog</p><h3 class="font-serif text-xl text-white mb-3">Is your screen genuine?</h3><p class="text-white/60 text-sm">Five tests to check screen quality.</p></a>
-</div>
-</div>
-</section>
-
-<footer class="bg-teal-900 text-white border-t border-white/10"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12"><div class="md:col-span-5"><div class="flex items-center gap-2 mb-4"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg><span class="font-serif text-2xl font-medium">RepairRange</span></div><p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice.</p></div><div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="../repair/phone-repair-costs-australia.html" class="text-white/80 hover:text-amber">All Models</a></li><li><a href="../calculator.html" class="text-white/80 hover:text-amber">Calculator</a></li>
-          <li><a href="../unlock/index.html" class="text-white/80 hover:text-amber">Unlock Guides</a></li><li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="../blog.html" class="text-white/80 hover:text-amber">Blog</a></li></ul></div><div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="../about.html" class="text-white/80 hover:text-amber">About</a></li><li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy</a></li><li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms</a></li></ul></div></div><div class="pt-8 border-t border-white/15"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. Not affiliated with Apple, Samsung, Google, or any manufacturer.</p></div></div></footer>
-<script>if(window.lucide)window.lucide.createIcons();document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.mobile-menu-button'),m=document.querySelector('.mobile-menu');if(b&&m)b.addEventListener('click',()=>m.classList.toggle('hidden'))});</script>
     <!-- Chatbot Embedding Code -->
 <script>
   window.chatbotSettings = {

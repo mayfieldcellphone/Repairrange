@@ -4,143 +4,20 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
+
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-CWRGPBDWZD');
+    if(window.lucide) window.lucide.createIcons();
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    });
 </script>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<style>
-    :root { 
-        --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; 
-        --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; 
-    }
-    html { scroll-behavior: smooth; }
-    body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
-    .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
-    .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
-    .eyebrow { font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--rr-teal-700); }
-    
-    .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
-    .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:700; font-size:0.9375rem; transition:all 200ms ease; border-radius:4px; }
-    .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow: 0 4px 0 var(--rr-amber-600); }
-    .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow: 0 6px 0 var(--rr-amber-600); }
-    .btn-outline { border: 2px solid var(--rr-teal-700); color: var(--rr-teal-700); }
-    
-    .card, .post-card, .sidebar-card, .shadow-box { 
-        background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; 
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
-        border-radius: 4px;
-    }
-    .card:hover, .post-card:hover { 
-        border-color:var(--rr-ink); transform:translateY(-2px); 
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15); 
-    }
-    
-    .bg-mesh-hero { 
-        background-color: var(--rr-hero); 
-        background-image: radial-gradient(rgba(15, 118, 110, 0.1) 1.5px, transparent 0); 
-        background-size: 32px 32px; 
-        border-bottom: 1px solid var(--rr-line); 
-    }
 
-    .funnel-table { width: 100%; border-collapse: separate; border-spacing: 0; background: white; border-radius: 4px; overflow: hidden; border: 1px solid var(--rr-line); }
-    .funnel-table th { background: var(--rr-paper-2); padding: 1rem; text-align: left; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: var(--rr-muted); border-bottom: 1px solid var(--rr-line); }
-    .funnel-table td { padding: 1rem; border-bottom: 1px solid var(--rr-line); vertical-align: middle; }
-    
-    .savings-badge { background: #FEF3C7; color: #92400E; font-size: 0.625rem; font-weight: 800; padding: 0.2rem 0.5rem; border-radius: 99px; }
-    
-    .mobile-menu { transition:all 300ms ease-in-out; }
-    @media (max-width: 768px) { 
-        .hero-title { font-size: 2.5rem !important; }
-        .hide-mobile { display: none; }
-    }
-</style>
-
-<title>Phone overheating — causes, fixes, and when to worry — RepairRange</title>
-<meta name="description" content="Phone overheating? Usually it's software, not hardware. Here's how to identify the cause — rogue app, charging issue, or genuine hardware fault — and when to worry.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://repairrange.io/fix/overheating.html">
-</head>
-<body class="bg-paper">
-<header class="header-sticky sticky top-0 z-50 border-b border-line"><nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between"><a href="../index.html" class="flex items-center gap-2"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg><span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span></a><div class="hidden md:flex items-center gap-8 text-sm"><a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="ed-link font-medium text-teal">Troubleshoot</a><a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a>
-                <a href="../unlock/index.html" class="ed-link font-medium text-ink hover:text-teal">Phone Unlock</a><a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="ed-link font-medium text-ink hover:text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote</a></div><button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button></nav><div class="mobile-menu hidden md:hidden border-t border-line bg-paper"><div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1"><a href="../brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="py-2 font-medium text-teal">Troubleshoot</a><a href="../calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a>
-                <a href="../unlock/index.html" class="py-2 font-medium text-ink hover:text-teal">Phone Unlock</a><a href="../locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a><a href="../blog.html" class="py-2 font-medium text-ink hover:text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a></div></div></header>
-
-<article class="max-w-6xl mx-auto px-6 md:px-8 py-10 md:py-16">
-<div class="max-w-3xl">
-<nav class="flex items-center gap-2 text-xs text-muted mb-8"><a href="../index.html" class="ed-link hover:text-teal">Home</a><span>/</span><a href="../fix.html" class="ed-link hover:text-teal">Troubleshoot</a><span>/</span><span class="text-ink">Overheating</span></nav>
-<p class="eyebrow mb-4">Common issue · June 2026</p>
-<h1 class="display text-3xl md:text-5xl lg:text-6xl text-ink mb-6">Phone overheating — when to worry and when it's normal.</h1>
-<p class="text-lg text-muted leading-relaxed mb-12">Your phone feels hot. Maybe uncomfortably hot. Is it about to explode? Almost certainly not. But persistent overheating does damage the battery and can shorten your phone's lifespan. Here's how to tell the difference between normal warmth and a real problem.</p>
-</div>
-
-<div class="prose max-w-3xl">
-
-<h2>When it's completely normal</h2>
-<p>Phones generate heat. That's physics, not a fault. These situations are normal and not a cause for concern:</p>
-<p><strong>Gaming or video recording:</strong> The CPU and GPU are running at maximum. Heat is the byproduct. The phone may throttle performance to manage temperature — this is designed behaviour.</p>
-<p><strong>Fast charging:</strong> 25W+ charging generates noticeable warmth in the battery area. Mild warmth during charging is expected. If the phone becomes uncomfortably hot, switch to a slower charger.</p>
-<p><strong>Direct sunlight:</strong> A phone on a car dashboard in summer can reach 50°C+ externally. The phone will display a temperature warning and shut down. Move it to shade and let it cool — this isn't a hardware fault.</p>
-<p><strong>After a software update:</strong> For 24–72 hours after a major OS update, the phone re-indexes data and re-optimises apps, running the CPU harder than usual. This temporary warmth resolves on its own.</p>
-
-<h2>When it's a problem</h2>
-
-<div class="step-card">
-<h3>Hot while idle (screen off, no apps)</h3>
-<p class="text-muted" style="margin-bottom:0">If the phone is warm or hot when you're not using it, something is running in the background that shouldn't be. Check Settings → Battery → Battery Usage to find the offending app. If no app stands out, a stuck background process may be the cause — restart the phone. If it's still hot after restart with no apps running, this points to a hardware issue (degraded battery or board fault).</p>
-</div>
-
-<div class="step-card">
-<h3>Hot specifically around the charging port</h3>
-<p class="text-muted" style="margin-bottom:0">Localised heat near the USB-C or Lightning port (not the back of the phone) can indicate a faulty charging IC, damaged port, or debris in the port causing resistance. Try a different cable first. If the port area is hot even without a cable plugged in, this is a hardware fault requiring <a href="charging-port.html" style="color:#0F766E">port repair</a> ($69–$149) or board-level repair.</p>
-</div>
-
-<div class="step-card">
-<h3>Phone shuts down from heat repeatedly</h3>
-<p class="text-muted" style="margin-bottom:0">A single thermal shutdown in direct sunlight is normal. Repeated thermal shutdowns during normal indoor use are not. This suggests the phone's thermal management is failing — either the thermal paste between the chip and heat spreader has degraded (common on phones 3+ years old), or the battery is generating excess heat due to internal degradation.</p>
-</div>
-
-<div class="warning-card">
-<h3 style="margin-top:0;color:#991B1B">Battery swelling — stop using it immediately</h3>
-<p style="margin-bottom:0;color:#991B1B">If the phone is hot AND the screen is lifting from the frame or the back glass is bulging, the battery is swelling. This is a safety hazard — a swollen lithium-ion battery can rupture or catch fire. Power off the phone, do not charge it, and take it to a repair shop the same day. Battery replacement: $69–$169. See our <a href="wont-turn-on.html" style="color:#991B1B;text-decoration:underline">dead phone guide</a> for more.</p>
-</div>
-
-<h2>Software fixes to try first</h2>
-
-<p><strong>Close background apps.</strong> On iPhone: swipe up from bottom, swipe away app cards. On Android: tap the square/recent apps button, close all. Then monitor temperature for 10 minutes.</p>
-
-<p><strong>Check battery usage.</strong> Settings → Battery → find the app using the most power. If it's an app you barely use but it's consuming 20%+ of battery, force-stop it and consider uninstalling.</p>
-
-<p><strong>Turn off unnecessary radios.</strong> Bluetooth, Wi-Fi scanning, NFC, and mobile hotspot all generate heat. Turn off what you're not actively using.</p>
-
-<p><strong>Remove the case temporarily.</strong> Phone cases trap heat. A thick case on a phone that's already warm makes it significantly hotter. Remove the case and let the phone's metal or glass body dissipate heat directly.</p>
-
-<p><strong>Factory reset (last resort).</strong> If the phone overheats persistently and no single app is the cause, a factory reset eliminates all software variables. Back up first, then reset. If overheating continues after a clean reset with no apps installed, it's hardware.</p>
-
-<h2>When to take it to a repair shop</h2>
-
-<p><strong>Battery degradation:</strong> If <a href="battery-drains-fast.html">battery health</a> is below 80% AND the phone overheats, the battery is the likely cause. Replacement: $69–$169.</p>
-
-<p><strong>Charging fault:</strong> If heat is localised to the port area, the charging IC or port may need repair. $69–$149 for port, $149–$299 for board-level charging IC repair.</p>
-
-<p><strong>Post-water-damage heat:</strong> If the phone was ever exposed to <a href="water-damage.html">water</a> and now overheats, internal corrosion may be causing short circuits. Ultrasonic cleaning ($49–$99) is the first step.</p>
-
-<p>For pricing on any repair, use the <a href="../calculator.html">repair calculator</a> or browse <a href="../repair/phone-repair-costs-australia.html">all 75+ models with pricing</a>.</p>
-
-</div>
-</article>
-
-<section class="bg-teal-900 text-white"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10"><a href="battery-drains-fast.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Related</p><h3 class="font-serif text-xl text-white mb-3">Battery drains fast</h3><p class="text-white/60 text-sm">Is it the battery or software?</p></a><a href="charging-port.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Related</p><h3 class="font-serif text-xl text-white mb-3">Charging port problems</h3><p class="text-white/60 text-sm">Port heat and charging faults.</p></a><a href="water-damage.html" class="card bg-teal-900 p-6 border-white/10 hover:border-white/30"><p class="eyebrow text-amber mb-2">Emergency</p><h3 class="font-serif text-xl text-white mb-3">Water damage guide</h3><p class="text-white/60 text-sm">Moisture can cause overheating.</p></a></div></div></section>
-
-<footer class="bg-teal-900 text-white border-t border-white/10"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12"><div class="md:col-span-5"><div class="flex items-center gap-2 mb-4"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg><span class="font-serif text-2xl font-medium">RepairRange</span></div><p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice.</p></div><div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="../repair/phone-repair-costs-australia.html" class="text-white/80 hover:text-amber">All Models</a></li><li><a href="../calculator.html" class="text-white/80 hover:text-amber">Calculator</a></li>
-          <li><a href="../unlock/index.html" class="text-white/80 hover:text-amber">Unlock Guides</a></li><li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="../blog.html" class="text-white/80 hover:text-amber">Blog</a></li></ul></div><div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="../about.html" class="text-white/80 hover:text-amber">About</a></li><li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy</a></li><li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms</a></li></ul></div></div><div class="pt-8 border-t border-white/15"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. Not affiliated with Apple, Samsung, Google, or any manufacturer.</p></div></div></footer>
-<script>if(window.lucide)window.lucide.createIcons();document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.mobile-menu-button'),m=document.querySelector('.mobile-menu');if(b&&m)b.addEventListener('click',()=>m.classList.toggle('hidden'))});</script>
     <!-- Chatbot Embedding Code -->
 <script>
   window.chatbotSettings = {
