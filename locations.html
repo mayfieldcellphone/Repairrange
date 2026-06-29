@@ -1,46 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Find a Phone Repair Shop Near You — RepairRange</title>
-<meta name="description" content="Find trusted phone repair shops across Australia. Compare pricing in Sydney, Melbourne, Brisbane, Perth, Adelaide, and Newcastle.">
-<link rel="canonical" href="https://repairrange.io/locations.html">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<style>:root{--rr-teal-900:#0c4a45;--rr-teal-700:#0F766E;--rr-amber-500:#F59E0B;--rr-amber-600:#d97706;--rr-ink:#1C1917;--rr-muted:#78716C;--rr-line:#E7E5E4;--rr-paper:#FAFAF9}html{scroll-behavior:smooth}body{font-family:'Inter',system-ui,sans-serif;color:var(--rr-ink);background:var(--rr-paper);-webkit-font-smoothing:antialiased}.font-serif{font-family:'Fraunces',serif}.display{font-family:'Fraunces',serif;font-weight:400;letter-spacing:-0.025em;line-height:1.05}.eyebrow{font-size:0.75rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--rr-teal-700)}.header-sticky{backdrop-filter:blur(12px);background:rgba(250,250,249,0.85)}.card{background:white;border:1px solid var(--rr-line);border-radius:16px;transition:all 300ms ease;box-shadow:0 1px 3px rgba(0,0,0,0.1)}.card:hover{border-color:var(--rr-teal-700);transform:translateY(-4px);box-shadow:0 20px 25px -5px rgba(0,0,0,0.1)}.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.75rem 1.25rem;font-weight:700;font-size:0.9375rem;border-radius:12px}.btn-primary{background:var(--rr-amber-500);color:var(--rr-ink)}.bg-mesh{background-color:var(--rr-paper);background-image:radial-gradient(var(--rr-line) 1px,transparent 0);background-size:24px 24px}</style>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <style>
+        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
+        html { scroll-behavior: smooth; }
+        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
+        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
+        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
+        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
+        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
+        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
+        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
+        .ed-link:hover { background-size:100% 1px; }
+        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
+        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
+        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
+        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
+        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
+        .mobile-menu { transition:all 300ms ease-in-out; }
+        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
+    </style>
+    <title>Find a Phone Repair Shop Near You — RepairRange</title>
 </head>
-<body class="bg-mesh">
-<header class="header-sticky sticky top-0 z-50 border-b border-line"><nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between"><a href="index.html" class="flex items-center gap-2"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg><span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span></a><div class="hidden md:flex items-center gap-8 text-sm"><a href="brands.html" class="font-medium text-ink hover:text-teal">Brands</a><a href="repair/phone-repair-costs-australia.html" class="font-medium text-ink hover:text-teal">Repairs</a><a href="fix.html" class="font-medium text-ink hover:text-teal">Troubleshoot</a><a href="calculator.html" class="font-medium text-ink hover:text-teal">Calculator</a><a href="locations.html" class="font-medium text-teal font-bold">Locations</a><a href="blog.html" class="font-medium text-ink hover:text-teal">Blog</a><a href="calculator.html" class="btn btn-primary text-sm">Get a Quote</a></div></nav></header>
-
-<section class="bg-mesh border-b border-line"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-24">
-<nav class="flex items-center gap-2 text-xs text-muted mb-8"><a href="index.html" class="hover:text-teal">Home</a><span>/</span><span class="text-ink font-bold">Locations</span></nav>
-<p class="eyebrow mb-4">Find a Shop</p>
-<h1 class="display text-5xl md:text-7xl text-ink mb-6 max-w-3xl">Find a <span class="italic">trusted</span> shop.</h1>
-<p class="text-xl text-muted max-w-2xl leading-relaxed">Verified Australian repairers. Compare local pricing and book same-day service.</p>
-</div></section>
-
-<section class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
-<p class="eyebrow mb-8">Major Cities</p>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<a href="locations/sydney.html" class="card p-8 group"><div class="flex items-start justify-between"><h3 class="font-serif text-2xl text-ink">Sydney</h3><i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal"></i></div><p class="text-muted text-sm mt-2">NSW Metro &middot; 50+ repair shops</p></a>
-<a href="locations/melbourne.html" class="card p-8 group"><div class="flex items-start justify-between"><h3 class="font-serif text-2xl text-ink">Melbourne</h3><i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal"></i></div><p class="text-muted text-sm mt-2">VIC Metro &middot; 45+ repair shops</p></a>
-<a href="locations/brisbane.html" class="card p-8 group"><div class="flex items-start justify-between"><h3 class="font-serif text-2xl text-ink">Brisbane</h3><i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal"></i></div><p class="text-muted text-sm mt-2">QLD Metro &middot; 30+ repair shops</p></a>
-<a href="locations/perth.html" class="card p-8 group"><div class="flex items-start justify-between"><h3 class="font-serif text-2xl text-ink">Perth</h3><i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal"></i></div><p class="text-muted text-sm mt-2">WA Metro &middot; 25+ repair shops</p></a>
-<a href="locations/adelaide.html" class="card p-8 group"><div class="flex items-start justify-between"><h3 class="font-serif text-2xl text-ink">Adelaide</h3><i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal"></i></div><p class="text-muted text-sm mt-2">SA Metro &middot; 20+ repair shops</p></a>
-<a href="locations/newcastle.html" class="card p-8 group"><div class="flex items-start justify-between"><h3 class="font-serif text-2xl text-ink">Newcastle</h3><i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal"></i></div><p class="text-muted text-sm mt-2">Hunter Region &middot; Home of Mayfield Phone Repair</p></a>
-</div>
-
-<div class="mt-16 bg-white border border-line rounded-2xl p-8 text-center">
-<p class="eyebrow mb-3">Are You a Repair Shop?</p>
-<h3 class="font-serif text-2xl text-ink mb-4">List your shop on RepairRange</h3>
-<p class="text-muted text-sm mb-6 max-w-lg mx-auto">Get verified, earn a dofollow backlink, and reach customers searching for phone repair in your area.</p>
-<a href="list-your-shop.html" class="btn btn-primary">Apply for a Listing <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-</div>
-</section>
-
-<footer class="bg-teal-900 text-white border-t border-white/10"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16"><div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12"><div class="md:col-span-5"><div class="flex items-center gap-2 mb-4"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg><span class="font-serif text-2xl font-medium">RepairRange</span></div><p class="text-white/70 text-sm max-w-sm">Plain-English phone repair costs, fixes, and buying advice.</p></div><div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="calculator.html" class="text-white/80 hover:text-amber">Calculator</a></li><li><a href="blog.html" class="text-white/80 hover:text-amber">Blog</a></li></ul></div><div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">Ecosystem</h3><ul class="space-y-2 text-sm"><li><a href="https://selfrepairkit.com.au" class="text-white/80 hover:text-amber">SelfRepairKit — DIY Kits</a></li><li><a href="https://repairbill.shop" class="text-white/80 hover:text-amber">RepairBill</a></li><li><a href="https://www.mayfieldphonerepair.com.au" class="text-white/80 hover:text-amber">Mayfield Phone Repair</a></li></ul></div></div><div class="pt-8 border-t border-white/15"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p></div></div></footer>
-<script>if(window.lucide)window.lucide.createIcons();</script>
+<body class="bg-slate-50">
+    <header class="bg-white border-b border-line sticky top-0 z-50">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg>
+                <span class="font-serif text-2xl font-medium">RepairRange</span>
+            </a>
+            <div class="flex gap-8 text-sm font-medium">
+                <a href="brands.html">Brands</a>
+                <a href="repair/phone-repair-costs-australia.html">Repairs</a>
+                <a href="locations.html" class="text-teal-600">Locations</a>
+            </div>
+        </nav>
+    </header>
+    <main class="max-w-6xl mx-auto px-6 py-20">
+        <h1 class="display text-5xl md:text-7xl mb-6">Find a trusted shop.</h1>
+        <p class="text-xl text-muted mb-12 max-w-2xl">Verified Australian repairers. Compare local pricing and book same-day service.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <a href="locations/sydney.html" class="card p-8"><h3 class="text-2xl font-bold mb-2">Sydney</h3><p class="text-muted">NSW Metro</p></a>
+            <a href="locations/melbourne.html" class="card p-8"><h3 class="text-2xl font-bold mb-2">Melbourne</h3><p class="text-muted">VIC Metro</p></a>
+            <a href="locations/brisbane.html" class="card p-8"><h3 class="text-2xl font-bold mb-2">Brisbane</h3><p class="text-muted">QLD Metro</p></a>
+            <a href="locations/perth.html" class="card p-8"><h3 class="text-2xl font-bold mb-2">Perth</h3><p class="text-muted">WA Metro</p></a>
+            <a href="locations/adelaide.html" class="card p-8"><h3 class="text-2xl font-bold mb-2">Adelaide</h3><p class="text-muted">SA Metro</p></a>
+            <a href="locations/newcastle.html" class="card p-8"><h3 class="text-2xl font-bold mb-2">Newcastle</h3><p class="text-muted">Hunter Region</p></a>
+        </div>
+    </main>
+    <script>if(window.lucide)window.lucide.createIcons();</script>
 </body>
 </html>

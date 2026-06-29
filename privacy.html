@@ -4,22 +4,158 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
-
-
 <script>
-    if(window.lucide) window.lucide.createIcons();
-    document.addEventListener('DOMContentLoaded', () => {
-        const btn = document.querySelector('.mobile-menu-button');
-        const menu = document.querySelector('.mobile-menu');
-        if(btn && menu) {
-            btn.addEventListener('click', () => {
-                menu.classList.toggle('hidden');
-            });
-        }
-    });
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CWRGPBDWZD');
 </script>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
+        html { scroll-behavior: smooth; }
+        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
+        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
+        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
+        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
+        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
+        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
+        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
+        .ed-link:hover { background-size:100% 1px; }
+        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
+        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
+        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
+        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
+        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
+        .mobile-menu { transition:all 300ms ease-in-out; }
+        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
+    </style>
 
+<title>Privacy Policy — RepairRange</title>
+<meta name="description" content="What data RepairRange collects, why, and how to control it.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://repairrange.io/privacy.html">
+</head>
+<body class="bg-mesh">
 
+    <header class="header-sticky sticky top-0 z-50 border-b border-line">
+        <nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" class="flex-shrink-0"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg>
+                <span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm">
+                <a href="brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a>
+                <a href="fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a>
+                <a href="calculator.html" class="ed-link font-medium text-ink hover:text-teal">Calculator</a>
+                <a href="locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a>
+                <a href="blog.html" class="ed-link font-medium text-ink hover:text-teal">Blog</a>
+                <a href="about.html" class="ed-link font-medium text-ink hover:text-teal">About</a>
+                <a href="calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            </div>
+            <button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button>
+        </nav>
+        <div class="mobile-menu hidden md:hidden border-t border-line bg-paper">
+            <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
+                <a href="brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a>
+                <a href="fix.html" class="py-2 font-medium text-ink hover:text-teal">Troubleshoot</a>
+                <a href="calculator.html" class="py-2 font-medium text-ink hover:text-teal">Calculator</a>
+                <a href="locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a>
+                <a href="blog.html" class="py-2 font-medium text-ink hover:text-teal">Blog</a>
+                <a href="about.html" class="py-2 font-medium text-ink hover:text-teal">About</a>
+                <a href="calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-mesh-hero">
+        <div class="max-w-3xl mx-auto px-6 md:px-8 py-16 md:py-20">
+            <p class="eyebrow mb-4">Legal</p>
+            <h1 class="display text-4xl md:text-6xl text-ink mb-6 leading-none">Privacy Policy</h1>
+            <p class="text-muted">Last updated: May 2026</p>
+        </div>
+    </section>
+
+    <section class="bg-white">
+        <div class="max-w-3xl mx-auto px-6 md:px-8 py-16 md:py-20 space-y-10 text-ink leading-relaxed">
+            <p class="text-lg text-muted">This page explains what data RepairRange collects, why, and what you can do about it. We've tried to write it in plain English. If something's unclear, email <a href="mailto:hello@repairrange.com" class="ed-link font-medium text-teal">hello@repairrange.com</a>.</p>
+
+            <div>
+                <h2 class="font-serif text-2xl text-ink mb-4">What we collect</h2>
+                <p class="mb-3"><strong class="text-ink">When you browse:</strong> standard server logs (IP address, browser type, pages visited). We use these for security and traffic analysis. Logs are retained for 30 days then deleted.</p>
+                <p class="mb-3"><strong class="text-ink">Analytics:</strong> we use a privacy-respecting analytics provider that doesn't set cross-site cookies or collect personally identifying information.</p>
+                <p class="mb-3"><strong class="text-ink">When you submit a quote form:</strong> your name, contact details, location, phone model, and description of the issue. This is forwarded to the matched local repair shop and stored by us for 12 months to support follow-up.</p>
+                <p><strong class="text-ink">When you email us:</strong> whatever you put in the email. Retained until the conversation is resolved.</p>
+            </div>
+
+            <div>
+                <h2 class="font-serif text-2xl text-ink mb-4">What we don't collect</h2>
+                <p>We don't collect payment information (we don't sell anything directly). We don't track you across other websites. We don't sell or share your contact details with anyone except the specific repair shop you've been matched with.</p>
+            </div>
+
+            <div>
+                <h2 class="font-serif text-2xl text-ink mb-4">Third-party services</h2>
+                <p class="mb-3"><strong class="text-ink">Affiliate retailers (Amazon, etc):</strong> when you click an affiliate link, the destination site may set its own cookies. We don't control those.</p>
+                <p class="mb-3"><strong class="text-ink">Hosting:</strong> the site is hosted on GitLab Pages, which keeps its own access logs.</p>
+                <p><strong class="text-ink">Display advertising:</strong> if and when we add advertising, we'll update this policy with the provider and what they collect, before enabling it.</p>
+            </div>
+
+            <div>
+                <h2 class="font-serif text-2xl text-ink mb-4">Your rights</h2>
+                <p class="mb-3">You can request a copy of any data we hold about you, request that we delete it, or correct inaccuracies. Email <a href="mailto:hello@repairrange.com" class="ed-link font-medium text-teal">hello@repairrange.com</a> and we'll respond within 30 days.</p>
+                <p>If you're in the EU or UK, you also have rights under GDPR. If you're in California, you have rights under the CCPA. We honour both regardless of where you're contacting us from.</p>
+            </div>
+
+            <div>
+                <h2 class="font-serif text-2xl text-ink mb-4">Cookies</h2>
+                <p>This site uses a small number of strictly necessary cookies (for example, to remember if you've dismissed a banner). We do not use tracking cookies or third-party advertising cookies.</p>
+            </div>
+
+            <div>
+                <h2 class="font-serif text-2xl text-ink mb-4">Changes to this policy</h2>
+                <p>If we change anything material, we'll update the "last updated" date at the top and, for significant changes, post a notice on the homepage for at least 30 days.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-teal-900 text-white mt-24 border-t border-white/10">
+        <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+                <div class="md:col-span-5">
+                    <div class="flex items-center gap-2 mb-4">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg>
+                        <span class="font-serif text-2xl font-medium">RepairRange</span>
+                    </div>
+                    <p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice. Researched by people who actually do this work.</p>
+                </div>
+                <div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="fix.html" class="text-white/80 hover:text-amber">Troubleshooting</a></li><li><a href="calculator.html" class="text-white/80 hover:text-amber">Cost Calculator</a></li><li><a href="locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="blog.html" class="text-white/80 hover:text-amber">Blog</a></li>
+          <li><a href="unlock/index.html" class="text-white/80 hover:text-amber">Unlock Guides</a></li></ul></div>
+                <div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="about.html" class="text-white/80 hover:text-amber">About RepairRange</a></li><li><a href="tools/software-stack-for-repair-shops.html" class="text-white/80 hover:text-amber">Tools we recommend</a></li><li><a href="privacy.html" class="text-white/80 hover:text-amber">Privacy Policy</a></li><li><a href="terms.html" class="text-white/80 hover:text-amber">Terms of Use</a></li></ul></div>
+            </div>
+            <div class="pt-8 border-t border-white/15">
+                <p class="text-white/50 text-xs leading-relaxed mb-3 max-w-3xl"><strong class="text-white/70">Affiliate disclosure:</strong> RepairRange may earn a commission when you click links to retailers (including Amazon) and complete a purchase. This never affects the price you pay or our editorial recommendations.</p>
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p><p class="text-white/50 text-xs">Not affiliated with Apple, Samsung, Google, or any device manufacturer.</p></div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        if (window.lucide) window.lucide.createIcons();
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.querySelector('.mobile-menu-button');
+            const menu = document.querySelector('.mobile-menu');
+            if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+        });
+    </script>
     <!-- Chatbot Embedding Code -->
 <script>
   window.chatbotSettings = {

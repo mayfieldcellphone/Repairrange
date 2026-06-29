@@ -4,22 +4,292 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
-
-
 <script>
-    if(window.lucide) window.lucide.createIcons();
-    document.addEventListener('DOMContentLoaded', () => {
-        const btn = document.querySelector('.mobile-menu-button');
-        const menu = document.querySelector('.mobile-menu');
-        if(btn && menu) {
-            btn.addEventListener('click', () => {
-                menu.classList.toggle('hidden');
-            });
-        }
-    });
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CWRGPBDWZD');
 </script>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
+        html { scroll-behavior: smooth; }
+        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
+        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
+        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
+        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
+        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
+        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
+        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
+        .ed-link:hover { background-size:100% 1px; }
+        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
+        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
+        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
+        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
+        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
+        .mobile-menu { transition:all 300ms ease-in-out; }
+        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
+    </style>
 
+<title>OEM, aftermarket, refurbished: what those screen-quality words actually mean — RepairRange</title>
+<meta name="description" content="Genuine, refurbished, OEM, aftermarket — what those screen-quality words actually mean, what you'll notice day-to-day, and which tier is right for your phone. Plain-English from working repair techs.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.repairrange.io/blog/screen-quality-tiers-oem-aftermarket-refurbished-explained.html">
+</head>
+<body class="bg-mesh">
 
+    <header class="header-sticky sticky top-0 z-50 border-b border-line">
+        <nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
+            <a href="../index.html" class="flex items-center gap-2 group">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" class="flex-shrink-0"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg>
+                <span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm">
+                <a href="../brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a>
+                <a href="../fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a>
+                <a href="../calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a>
+                <a href="../locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a>
+                <a href="../blog.html" class="ed-link font-medium text-teal hover:text-teal">Blog</a>
+                <a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            </div>
+            <button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button>
+        </nav>
+        <div class="mobile-menu hidden md:hidden border-t border-line bg-paper">
+            <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
+                <a href="../brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a>
+                <a href="../fix.html" class="py-2 font-medium text-ink hover:text-teal">Troubleshoot</a>
+                <a href="../calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a>
+                <a href="../locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a>
+                <a href="../blog.html" class="py-2 font-medium text-teal">Blog</a>
+                <a href="../calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <article>
+        <header class="bg-mesh border-b border-line">
+            <div class="max-w-3xl mx-auto px-6 md:px-8 py-12 md:py-20">
+                <nav class="flex items-center gap-2 text-xs text-muted mb-8">
+                    <a href="../index.html" class="ed-link hover:text-teal">Home</a>
+                    <span>/</span>
+                    <a href="../blog.html" class="ed-link hover:text-teal">Blog</a>
+                    <span>/</span>
+                    <span class="text-ink">Screen quality tiers explained</span>
+                </nav>
+                <p class="eyebrow mb-4">Repair guide · 12 min read · May 2026</p>
+                <h1 class="display text-4xl md:text-6xl text-ink mb-6 leading-tight">OEM, aftermarket, refurbished: what those screen-quality words actually mean.</h1>
+                <p class="text-lg md:text-xl text-muted leading-relaxed max-w-2xl">A working-tech's explainer of the four quality tiers, what you'll actually see day-to-day, and which one is the right answer for your phone — not just the most expensive.</p>
+            </div>
+        </header>
+
+        <div class="bg-white border-b border-line">
+            <div class="max-w-6xl mx-auto px-6 md:px-8 py-12 md:py-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
+<div class="lg:col-span-8 prose">
+
+                <p class="lede">A customer walked in last month with a sticker on their phone from a shop down the road: "Premium AAA+ OEM Original Quality." They wanted to know what that meant. The honest answer is, in that order: nothing, marketing, sometimes, and almost certainly not.</p>
+
+                <p>Screen replacement is the most common smartphone repair done in Australia, and it's the one where part-quality language has become almost completely meaningless. "OEM," "original," "premium aftermarket," "refurbished," "genuine" — every shop uses them, very few use them the same way, and almost nothing on a shop's website or shopfront window tells you what you're actually being sold.</p>
+
+                <p>This is the post we've wanted to point customers at for two years. It's the plain version of the conversation we have at the counter every week. By the end you should be able to read a quote, ask one or two specific questions, and know whether you're being told the truth.</p>
+
+                <h2>The four tiers, honestly named</h2>
+
+                <p>Strip away the marketing and there are really four tiers of replacement screen on the Australian market. Different shops use different words for them — that's most of the confusion — but the physical parts are these:</p>
+
+                <h3>1. Genuine (also: "Apple original," "OEM service part," "Samsung genuine")</h3>
+
+                <p>A brand-new part made by the original manufacturer, in the original factory, with the original components, sold through the manufacturer's authorised service channel. For iPhones this is what Apple's own service uses and what Apple Authorised Service Providers can order. For Samsung it comes through Samsung's authorised programme.</p>
+
+                <p>This is the most expensive option by a wide margin — usually 50-100% above a competent independent shop's price — because the supply is restricted and the channel exists specifically to support warranty service. <a href="../repair/iphone-12.html">Apple's own service prices</a> are public; they're the genuine-part price.</p>
+
+                <p>If a non-authorised shop tells you their part is "Apple genuine," they almost certainly mean something else from the list below. Apple doesn't sell genuine parts on the open market to non-authorised shops. The exception is harvested-from-donor-phone genuine parts (see "Refurbished/Pulled" below), but those are not new and shouldn't be called "Apple original."</p>
+
+                <h3>2. Refurbished / Pulled (also: "Original refurbished," "Re-flowed," "Re-glassed")</h3>
+
+                <p>This is where the language gets slippery. A "refurbished" screen is a genuine OEM display assembly — really an Apple or Samsung panel — that has been recovered from another phone (a donor unit or a customer trade-in) and had something repaired on it. Most commonly: the front glass was cracked but the underlying OLED was fine, so the broken glass is laminated off and a new piece of glass is bonded on top. This is "re-glassed."</p>
+
+                <p>A good re-glassed screen is genuinely excellent. It's an actual factory OLED panel with the original Apple or Samsung calibration data baked into the driver chip, which means True Tone, auto-brightness, and (on iPhone) Apple's "Important Display Message" warning all behave correctly. Touch response is the same as new. The only compromise is the bonded glass layer, which in a bad refurb can have slightly different feel under the finger or, very occasionally, a visible bond line under bright sunlight.</p>
+
+                <p>The challenge is that refurb quality varies enormously. A good refurb comes from a reputable workshop that does proper vacuum lamination with fresh OCA adhesive; a bad refurb is glued together in someone's spare room. Both arrive in the same anonymous box from the same wholesaler. This is the tier where shop reputation matters most.</p>
+
+                <h3>3. OEM-quality aftermarket (also: "Premium aftermarket," "Hard OLED," "Soft OLED," "Incell," "Copy")</h3>
+
+                <p>A newly-manufactured screen made by a third-party factory — usually in China — using the same broad technology as the original (OLED for newer phones, LCD for older). These are designed and built to substitute for the genuine part. They're not made by Apple or Samsung, the calibration data is reverse-engineered or generic rather than the original, and the components are similar but not identical.</p>
+
+                <p>For iPhone OLEDs, you'll see two main types: <strong>hard OLED</strong> (also called "rigid OLED"), which is the same display tech as a recent iPhone but on a rigid backing and slightly thicker, and <strong>soft OLED</strong> (or "flexible OLED"), which more closely matches the genuine flexible panel and is more expensive. For older models that used LCDs, you'll see "Incell" panels — competent LCD replacements that look essentially identical to most users.</p>
+
+                <p>This is the tier most independent repair shops in Australia use as their default — it's the price point that lets them charge what the market will bear while still offering a meaningful warranty. The pricing across <a href="../brands.html">all our model pages</a> assumes this tier. When we quote a range like "$179–$269 independent" for an <a href="../repair/iphone-13.html">iPhone 13 screen</a>, we're describing the OEM-quality aftermarket band.</p>
+
+                <h3>4. Budget aftermarket (also: "AA," "Aftermarket basic," "Economy")</h3>
+
+                <p>The cheapest screens on the market, often advertised in shop windows as "$99 iPhone screen replacement" or similar. These are functional — the screen turns on, touch works, you can use the phone — but the panel quality, colour accuracy, brightness, and touch responsiveness are all noticeably worse. Lifespan is also typically shorter; budget panels often start showing dead pixels or dimming within 12-18 months.</p>
+
+                <p>There are real use cases for budget aftermarket: a 6-year-old phone you're keeping going for another year before upgrading, a kid's phone that's been dropped four times already, a device you're prepping for sale where appearance matters more than performance. There are also less honest reasons it gets used — shops that advertise the "from $99" price to pull customers in, then either install the budget part or upsell aggressively once you're in the door. <a href="#red-flags">More on that below.</a></p>
+
+                <h2 id="what-youll-notice">What you'll actually notice day-to-day</h2>
+
+                <p>This is the part most explainers skip. Calling something "premium" or "OEM" tells you nothing about whether you'll notice. The differences that matter to a normal user are these:</p>
+
+                <h3>Touch responsiveness</h3>
+
+                <p>The first thing you'll feel on a low-quality replacement is touch lag — a tiny delay between your finger moving and the cursor following. On a quality panel it's imperceptible. On a budget aftermarket digitiser it's enough that you'll notice typing feels "off" without quite being able to say why. Compare it to the other phone in your pocket and you'll see it immediately.</p>
+
+                <p>This is also where ghost touches come from. A budget aftermarket digitiser with poor shielding can register phantom inputs, especially while charging. If your "new screen" starts opening apps on its own a week after the repair, the part is the most likely cause.</p>
+
+                <h3>True Tone (iPhone) and ambient colour matching</h3>
+
+                <p>True Tone uses calibration data stored on the original display's driver chip to match the screen's colour temperature to the room. Genuine and properly-refurbished screens preserve this. Aftermarket screens, even good ones, mostly don't — Apple has progressively locked this down across iPhone generations. You'll see one of two things: True Tone disappears from Settings entirely, or you get an "Unable to verify this iPhone has a genuine Apple display" warning that lives in Settings for 4 days and then hides itself.</p>
+
+                <p>Day to day, the absence of True Tone is something most people stop noticing within a week. The warning message, similarly. If you're particular about colour accuracy — photo editing, design work — it's a real loss. If you mostly use your phone for messaging and YouTube, you'll never think about it again.</p>
+
+                <h3>Face ID and biometrics</h3>
+
+                <p>This is the most important compatibility issue and the most commonly fumbled. Face ID on iPhones from the X onward uses a dot-projector and infrared camera array built into the top of the original display assembly. <strong>These components must be transferred from the original (broken) screen to the new one.</strong> If they're damaged in the process — or if the new screen's housing for them is slightly off-spec — Face ID stops working. Permanently. There's no software fix; the sensors are paired to the original logic board.</p>
+
+                <p>A good shop will tell you about this risk before they start. A great shop will price the repair assuming the transfer works and discount or refund if it doesn't. A bad shop will hand you back a phone with Face ID broken and tell you "Apple disabled it." That's almost never true.</p>
+
+                <h3>Brightness and longevity</h3>
+
+                <p>Genuine and good OEM-quality panels hit close to the original brightness spec and hold it. Budget aftermarket panels often peak about 20-30% dimmer and dim further over their first year. In a dark room you won't notice; in direct Australian summer sun you absolutely will. This is the single biggest "I'm not happy with the repair" complaint we hear: not that the screen is broken, but that it's noticeably harder to see outside than the old one was.</p>
+
+                <h3>Water resistance</h3>
+
+                <p>Worth a quick note: <strong>no screen replacement, by any shop, on any phone, restores the original water resistance rating.</strong> The original factory seal is destroyed the moment the screen comes off, and the replacement adhesive seal a shop applies — even a good one — is not equivalent. Treat any phone after a screen replacement as splash-resistant at best, even if the shop tells you they "re-sealed" it.</p>
+
+                <h2>Which tier is right for you</h2>
+
+                <p>Most online guides answer this with "buy genuine if you can afford it." That's lazy. The honest answer depends on three things: how old the phone is, how long you plan to keep it, and how much the differences above will actually matter to you.</p>
+
+                <p>Here's the rough decision framework we actually use at the counter:</p>
+
+                <h3>If the phone is 1-2 years old and a daily driver you'll keep for 2+ more years</h3>
+
+                <p>OEM-quality aftermarket from a reputable shop, or genuine if you have AppleCare+ and can use it. Refurbished is also a strong choice if the shop is one you trust. Budget aftermarket is the wrong answer here — you'll be living with the compromises every day for years.</p>
+
+                <h3>If the phone is 3-4 years old and you'll likely upgrade within 18 months</h3>
+
+                <p>OEM-quality aftermarket. Genuine doesn't earn back the premium on a phone you're about to replace, and refurbished is fine but often only slightly cheaper than OEM-quality at this age. This is the sweet spot for most independent repair customers and where our pricing ranges sit.</p>
+
+                <h3>If the phone is 5+ years old or a backup/spare</h3>
+
+                <p>Budget aftermarket is genuinely defensible. You're keeping an old phone functional rather than restoring it to factory condition. As long as the shop is upfront that it's a budget part and the warranty reflects that, this is the right call. Don't pay genuine prices on an iPhone 8.</p>
+
+                <h3>If you make a living with your phone (photography, video, design)</h3>
+
+                <p>Genuine or a confirmed quality refurb. Colour accuracy matters professionally, True Tone matters, and the warranty path matters if something goes wrong. The extra $150-$300 is a business expense.</p>
+
+                <h3>If you have AppleCare+ or are inside the standard warranty</h3>
+
+                <p>Use it. Always. AppleCare+ screen replacement in Australia is a flat $45 fee per incident — cheaper than any aftermarket part and using a genuine panel. There is no scenario where going independent beats using AppleCare+ that you've already paid for.</p>
+
+                <h2 id="red-flags">Red flags when getting a quote</h2>
+
+                <p>Most of the language games shops play happen at the quoting stage. These are the questions that cut through them:</p>
+
+                <ul>
+                    <li><strong>"What grade of screen is this quote for?"</strong> If the answer is vague ("premium quality") or a brand name you don't recognise, ask specifically: is it genuine, refurbished, OEM-equivalent aftermarket, or budget aftermarket? A shop that can't or won't tell you is a shop to walk away from.</li>
+                    <li><strong>"Is the price the same for all four grades?"</strong> No. If a shop quotes a single price and is vague about grade, they're either using their cheapest part and not telling you, or they're upselling on arrival.</li>
+                    <li><strong>"What's the warranty, and does it cover Face ID and True Tone?"</strong> A real warranty covers the part and its function. A weak warranty covers only "the screen turning on." Get it in writing.</li>
+                    <li><strong>"What happens if Face ID stops working after the repair?"</strong> The right answer is some version of "we'll do everything we can to recover it, and if we can't we'll refund or partial-refund the labour." The wrong answer is "Apple disables it, nothing we can do."</li>
+                    <li><strong>The "from $X" trap.</strong> Window pricing and Google Ads pricing are usually the budget aftermarket price. The actual price for the grade you probably want is higher. There's nothing wrong with this if the shop tells you upfront; it's a problem when they don't.</li>
+                </ul>
+
+                <div class="pull-box">
+                    <p class="eyebrow">The short version</p>
+                    <p>The honest read: most people, for most phones, are best served by OEM-quality aftermarket from a reputable shop with a real warranty. Genuine is worth it under AppleCare+ or for professional use. Refurbished is great when the shop is trustworthy. Budget aftermarket has a real role for older phones — just make sure that's what you're being sold.</p>
+                </div>
+
+                <h2>How this maps to RepairRange's prices</h2>
+
+                <p>Every <a href="../brands.html">model page</a> on this site quotes an "Independent" price range. That range covers reputable shops using OEM-quality aftermarket parts — tier 3 above — with a warranty. A shop charging at the low end of our range is usually a leaner workshop with good supplier deals; a shop at the high end is usually in a higher-rent area with same-day turnaround. Both are using broadly the same grade of part.</p>
+
+                <p>Quotes meaningfully below our range almost always mean budget aftermarket (tier 4) — that's fine if you've been told and the price reflects it. Quotes meaningfully above our range usually mean either genuine parts (tier 1) or an authorised-service price, which we list separately on each model page.</p>
+
+                <p>When you're comparing two quotes, ask both shops the questions above and the prices stop being mysterious. A $189 iPhone 13 screen replacement and a $269 one aren't really competing — they're different products, and the right one depends on the calls above.</p>
+
+                <h2>One last honest note</h2>
+
+                <p>This whole post exists because part-quality language in the Australian repair market is genuinely confusing, often deliberately so. We have a commercial interest in you understanding the tiers — informed customers complain less, return less often for warranty issues, and refer more people. We don't have a commercial interest in pushing you to the most expensive option, which is why this post doesn't. The right answer depends on your phone, your budget, and how long you'll keep it, and most of the time the right answer is the middle one.</p>
+
+                <p>If you're trying to work out what your specific repair should cost, the <a href="../calculator.html">cost calculator</a> gives a starting range, and each <a href="../brands.html">model page</a> walks through the four repair types in more detail. If you want to compare quotes against what shops in your city actually charge, the <a href="../locations.html">city guides</a> have the local pricing context.</p>
+
+</div>
+
+<aside class="lg:col-span-4"><div class="lg:sticky lg:top-24 space-y-4">
+<div class="sidebar-card" style="background:var(--rr-teal-900);border-color:var(--rr-teal-900)"><h4 style="color:var(--rr-amber-500)">Get a repair quote</h4><p style="color:rgba(255,255,255,0.7);font-size:0.875rem;line-height:1.6;margin-bottom:1rem">Find exact pricing for your phone model.</p><a href="../calculator.html" class="btn btn-primary w-full justify-center text-sm">Open Repair Calculator</a></div>
+<div class="sidebar-card"><h4>Popular guides</h4><a href="phone-repair-myths-debunked.html" class="sidebar-link">10 repair myths debunked</a><a href="phone-repair-checklist-before-during-after.html" class="sidebar-link">Repair checklist</a><a href="phone-repair-warranty-australia-consumer-rights.html" class="sidebar-link">Your warranty rights</a><a href="how-to-find-trustworthy-phone-repair-shop.html" class="sidebar-link">Finding a good shop</a><a href="how-to-tell-genuine-vs-aftermarket-screen.html" class="sidebar-link">Is your screen genuine?</a><a href="iphone-vs-samsung-repair-cost-comparison.html" class="sidebar-link">iPhone vs Samsung costs</a></div>
+<div class="sidebar-card"><h4>Popular models</h4><a href="../repair/iphone-17-pro-max.html" class="sidebar-link">iPhone 17 Pro Max</a><a href="../repair/iphone-15-pro-max.html" class="sidebar-link">iPhone 15 Pro Max</a><a href="../repair/samsung-galaxy-s26-ultra.html" class="sidebar-link">Galaxy S26 Ultra</a><a href="../repair/samsung-galaxy-s24-ultra.html" class="sidebar-link">Galaxy S24 Ultra</a><a href="../repair/phone-repair-costs-australia.html" class="sidebar-link" style="color:var(--rr-teal-700);font-weight:600">All 75+ models →</a></div>
+<div class="sidebar-card"><h4>Fix it yourself?</h4><a href="../fix/water-damage.html" class="sidebar-link">Water damage</a><a href="../fix/wont-turn-on.html" class="sidebar-link">Won't turn on</a><a href="../fix/cracked-screen-still-works.html" class="sidebar-link">Cracked screen</a><a href="../fix/battery-drains-fast.html" class="sidebar-link">Battery drain</a><a href="../fix.html" class="sidebar-link" style="color:var(--rr-teal-700);font-weight:600">All 10 guides →</a></div>
+<div class="sidebar-card"><h4>Save money</h4><a href="phone-insurance-vs-self-insuring-australia.html" class="sidebar-link">Insurance vs self-insuring</a><a href="should-you-fix-phone-before-selling.html" class="sidebar-link">Fix before selling?</a><a href="repair-vs-replace-decision-guide.html" class="sidebar-link">Repair vs replace</a></div>
+</div></aside>
+</div>
+</div>
+        </div>
+
+        <section class="bg-mesh-hero">
+            <div class="max-w-3xl mx-auto px-6 md:px-8 py-12 md:py-16">
+                <p class="eyebrow mb-3">Keep reading</p>
+                <h2 class="display text-3xl text-ink mb-8">Useful next pages</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <a href="../calculator.html" class="block bg-white border border-line p-6 hover:border-ink transition-colors">
+                        <h3 class="font-serif text-xl text-ink mb-2">Cost calculator</h3>
+                        <p class="text-sm text-muted">Get a price range for your specific phone and repair.</p>
+                    </a>
+                    <a href="../locations.html" class="block bg-white border border-line p-6 hover:border-ink transition-colors">
+                        <h3 class="font-serif text-xl text-ink mb-2">Pricing by city</h3>
+                        <p class="text-sm text-muted">What shops in Sydney, Melbourne, Brisbane, Perth and Newcastle actually charge.</p>
+                    </a>
+                    <a href="../fix.html" class="block bg-white border border-line p-6 hover:border-ink transition-colors">
+                        <h3 class="font-serif text-xl text-ink mb-2">Troubleshooting library</h3>
+                        <p class="text-sm text-muted">Symptom-by-symptom diagnostics before you book a repair.</p>
+                    </a>
+                    <a href="../brands.html" class="block bg-white border border-line p-6 hover:border-ink transition-colors">
+                        <h3 class="font-serif text-xl text-ink mb-2">All model guides</h3>
+                        <p class="text-sm text-muted">Repair pricing for every iPhone, Samsung and Pixel we cover.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <footer class="bg-teal-900 text-white border-t border-white/10">
+        <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+                <div class="md:col-span-5">
+                    <div class="flex items-center gap-2 mb-4">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg>
+                        <span class="font-serif text-2xl font-medium">RepairRange</span>
+                    </div>
+                    <p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice. Researched by people who actually do this work.</p>
+                </div>
+                <div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="../brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="../fix.html" class="text-white/80 hover:text-amber">Troubleshooting</a></li><li><a href="../calculator.html" class="text-white/80 hover:text-amber">Cost Calculator</a></li><li><a href="../locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="../blog.html" class="text-white/80 hover:text-amber">Blog</a></li></ul></div>
+                <div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="../about.html" class="text-white/80 hover:text-amber">About RepairRange</a></li><li><a href="../tools/software-stack-for-repair-shops.html" class="text-white/80 hover:text-amber">Tools we recommend</a></li><li><a href="../privacy.html" class="text-white/80 hover:text-amber">Privacy Policy</a></li><li><a href="../terms.html" class="text-white/80 hover:text-amber">Terms of Use</a></li></ul></div>
+            </div>
+            <div class="pt-8 border-t border-white/15">
+                <p class="text-white/50 text-xs leading-relaxed mb-3 max-w-3xl"><strong class="text-white/70">Affiliate disclosure:</strong> RepairRange may earn a commission when you click links to retailers (including Amazon) and complete a purchase. This never affects the price you pay or our editorial recommendations.</p>
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p><p class="text-white/50 text-xs">Not affiliated with Apple, Samsung, Google, or any device manufacturer.</p></div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        if (window.lucide) window.lucide.createIcons();
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.querySelector('.mobile-menu-button');
+            const menu = document.querySelector('.mobile-menu');
+            if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+        });
+    </script>
 <script>
 (function(){var g=[{t:'10 repair myths debunked',u:'phone-repair-myths-debunked.html'},{t:'Phone repair checklist',u:'phone-repair-checklist-before-during-after.html'},{t:'Your warranty rights (ACL)',u:'phone-repair-warranty-australia-consumer-rights.html'},{t:'Finding a trustworthy shop',u:'how-to-find-trustworthy-phone-repair-shop.html'},{t:'iPhone vs Samsung costs',u:'iphone-vs-samsung-repair-cost-comparison.html'},{t:'How long repairs take',u:'how-long-does-phone-repair-take.html'},{t:'DIY screen repair?',u:'can-you-diy-phone-screen-repair.html'},{t:'Screen quality tiers',u:'screen-quality-tiers-oem-aftermarket-refurbished-explained.html'},{t:'Samsung fingerprint trap',u:'samsung-fingerprint-sensor-screen-replacement-guide.html'},{t:'Is your screen genuine?',u:'how-to-tell-genuine-vs-aftermarket-screen.html'},{t:'Battery health guide',u:'battery-health-when-to-replace.html'},{t:'eSIM and phone repair',u:'esim-phone-repair-what-happens.html'},{t:'Foldable phone repair',u:'foldable-phone-repair-cost-guide.html'},{t:'iPad repair costs',u:'ipad-repair-cost-guide-australia.html'},{t:'MacBook & laptop costs',u:'macbook-laptop-repair-cost-guide-australia.html'},{t:'Lenovo tablet repair',u:'lenovo-tablet-repair-cost-guide-australia.html'},{t:'S26 Ultra guide',u:'samsung-galaxy-s26-ultra-repair-guide.html'},{t:'iPhone 17 PM guide',u:'iphone-17-pro-max-repair-guide.html'},{t:'Insurance vs self-insuring',u:'phone-insurance-vs-self-insuring-australia.html'},{t:'Fix before selling?',u:'should-you-fix-phone-before-selling.html'},{t:'Repair vs replace',u:'repair-vs-replace-decision-guide.html'}];var m=[{t:'iPhone 17 Pro Max',u:'../repair/iphone-17-pro-max.html'},{t:'iPhone 16 Pro Max',u:'../repair/iphone-16-pro-max.html'},{t:'iPhone 15 Pro Max',u:'../repair/iphone-15-pro-max.html'},{t:'iPhone 15',u:'../repair/iphone-15.html'},{t:'iPhone 14 Pro Max',u:'../repair/iphone-14-pro-max.html'},{t:'iPhone 13',u:'../repair/iphone-13.html'},{t:'iPhone SE 3',u:'../repair/iphone-se-3.html'},{t:'Galaxy S26 Ultra',u:'../repair/samsung-galaxy-s26-ultra.html'},{t:'Galaxy S25 Ultra',u:'../repair/samsung-galaxy-s25-ultra.html'},{t:'Galaxy S24 Ultra',u:'../repair/samsung-galaxy-s24-ultra.html'},{t:'Galaxy S23 Ultra',u:'../repair/samsung-galaxy-s23-ultra.html'},{t:'Pixel 9 Pro',u:'../repair/pixel-9-pro.html'},{t:'Pixel 8 Pro',u:'../repair/pixel-8-pro.html'}];var f=[{t:'Water damage',u:'../fix/water-damage.html'},{t:'Won\'t turn on',u:'../fix/wont-turn-on.html'},{t:'Cracked screen',u:'../fix/cracked-screen-still-works.html'},{t:'Battery drain',u:'../fix/battery-drains-fast.html'},{t:'Ghost touch',u:'../fix/ghost-touch.html'},{t:'Charging issues',u:'../fix/charging-port.html'},{t:'Green lines',u:'../fix/green-lines.html'},{t:'Black screen',u:'../fix/black-screen.html'},{t:'Overheating',u:'../fix/overheating.html'},{t:'Dropped & broken',u:'../fix/dropped-and-broken.html'}];function sh(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}function rl(arr,n,al,at){var items=sh(arr.slice()).slice(0,n);var h='';for(var i=0;i<items.length;i++)h+='<a href="'+items[i].u+'" class="sidebar-link">'+items[i].t+'</a>';if(al)h+='<a href="'+al+'" class="sidebar-link" style="color:var(--rr-teal-700);font-weight:600">'+at+'</a>';return h}var cards=document.querySelectorAll('.sidebar-card');var nc=[];for(var i=0;i<cards.length;i++){if(!cards[i].getAttribute('style'))nc.push(cards[i])}if(nc.length>=4){nc[0].innerHTML='<h4 style="font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--rr-teal-700);margin-bottom:0.75rem">Popular guides</h4>'+rl(g,6,'../blog.html','All guides \u2192');nc[1].innerHTML='<h4 style="font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--rr-teal-700);margin-bottom:0.75rem">Popular models</h4>'+rl(m,5,'../repair/phone-repair-costs-australia.html','All 75+ models \u2192');nc[2].innerHTML='<h4 style="font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--rr-teal-700);margin-bottom:0.75rem">Fix it yourself?</h4>'+rl(f,5,'../fix.html','All 10 guides \u2192');nc[3].innerHTML='<h4 style="font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--rr-teal-700);margin-bottom:0.75rem">Save money</h4>'+rl(g.filter(function(x){return x.u.indexOf('insurance')>-1||x.u.indexOf('selling')>-1||x.u.indexOf('replace')>-1}),3,null,null)}})()
 </script>

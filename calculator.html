@@ -4,19 +4,486 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
-
 <script>
-    if(window.lucide) window.lucide.createIcons();
-    document.addEventListener('DOMContentLoaded', () => {
-        const btn = document.querySelector('.mobile-menu-button');
-        const menu = document.querySelector('.mobile-menu');
-        if(btn && menu) {
-            btn.addEventListener('click', () => {
-                menu.classList.toggle('hidden');
-            });
-        }
-    });
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CWRGPBDWZD');
 </script>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
+        html { scroll-behavior: smooth; }
+        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
+        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
+        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
+        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
+        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
+        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
+        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
+        .ed-link:hover { background-size:100% 1px; }
+        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
+        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
+        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
+        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
+        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
+        .mobile-menu { transition:all 300ms ease-in-out; }
+        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
+    </style>
 
+<title>Phone Repair Cost Calculator — RepairRange</title>
+<meta name="description" content="Estimate the cost to fix your phone. Pick brand, model, and issue — get an honest price range for independent shops, authorised service, and DIY.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://repairrange.io/calculator.html">
+</head>
+<body class="bg-mesh">
+
+    <header class="header-sticky sticky top-0 z-50 border-b border-line">
+        <nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" class="flex-shrink-0"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg>
+                <span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm">
+                <a href="brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a>
+                <a href="repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a>
+                <a href="fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a>
+                <a href="calculator.html" class="ed-link font-medium text-teal">Repair Calculator</a>
+                <a href="locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a>
+                <a href="blog.html" class="ed-link font-medium text-ink hover:text-teal">Blog</a>
+                <a href="calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            </div>
+            <button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button>
+        </nav>
+        <div class="mobile-menu hidden md:hidden border-t border-line bg-paper">
+            <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
+                <a href="brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a>
+                <a href="repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a>
+                <a href="fix.html" class="py-2 font-medium text-ink hover:text-teal">Troubleshoot</a>
+                <a href="calculator.html" class="py-2 font-medium text-teal">Repair Calculator</a>
+                <a href="locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a>
+                <a href="blog.html" class="py-2 font-medium text-ink hover:text-teal">Blog</a>
+                <a href="calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-mesh-hero">
+        <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
+            <p class="eyebrow mb-4">Cost Calculator</p>
+            <h1 class="display text-5xl md:text-7xl text-ink mb-6 max-w-3xl">What will it <span class="italic">cost</span> to fix?</h1>
+            <p class="text-lg text-muted max-w-2xl leading-relaxed">Pick your phone and what's wrong. We'll show you a likely price range from independent shops, the authorised service centre, and the DIY route — plus what it's actually worth doing.</p>
+            <p class="text-sm mt-4"><a href="repair/phone-repair-costs-australia.html" class="ed-link font-medium text-teal">Or browse all 75+ models with pricing on one page →</a></p>
+        </div>
+    </section>
+
+    <section class="bg-mesh-2">
+        <div class="max-w-6xl mx-auto px-6 md:px-8 py-12 md:py-16">
+            <div class="bg-white border border-line">
+                <div class="grid grid-cols-3 border-b border-line">
+                    <div class="p-5 md:p-6 border-r border-line" id="step-pill-1"><p class="eyebrow text-teal mb-1">Step 01</p><p class="font-serif text-lg text-ink">Brand</p></div>
+                    <div class="p-5 md:p-6 border-r border-line opacity-50" id="step-pill-2"><p class="eyebrow mb-1">Step 02</p><p class="font-serif text-lg text-ink">Model</p></div>
+                    <div class="p-5 md:p-6 opacity-50" id="step-pill-3"><p class="eyebrow mb-1">Step 03</p><p class="font-serif text-lg text-ink">Issue</p></div>
+                </div>
+
+                <div class="p-6 md:p-10 min-h-[420px]">
+                    <div id="step-1" class="step">
+                        <h2 class="display text-2xl md:text-3xl text-ink mb-3">Which brand is your phone?</h2>
+                        <p class="text-sm text-muted mb-6">Calculator estimates are live for Apple, Samsung, Google, and Other brands (OnePlus, Xiaomi, OPPO, Motorola, Nothing). More brands have pricing on our <a href="repair/phone-repair-costs-australia.html" class="ed-link text-teal">comparison page</a>.</p>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+                            <button onclick="pickBrand('Apple')" class="card p-6 text-left"><p class="font-serif text-xl text-ink">Apple</p><p class="text-xs text-muted mt-1">iPhone</p></button>
+                            <button onclick="pickBrand('Samsung')" class="card p-6 text-left"><p class="font-serif text-xl text-ink">Samsung</p><p class="text-xs text-muted mt-1">Galaxy</p></button>
+                            <button onclick="pickBrand('Google')" class="card p-6 text-left"><p class="font-serif text-xl text-ink">Google</p><p class="text-xs text-muted mt-1">Pixel</p></button>
+                            <button onclick="pickBrand('Other')" class="card p-6 text-left"><p class="font-serif text-xl text-ink">Other</p><p class="text-xs text-muted mt-1">OnePlus, Xiaomi…</p></button>
+                        </div>
+
+                        <p class="eyebrow mt-10 mb-4">More phone brands</p>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+                            <a href="repair/model.html?m=oppo-find-x8-pro" class="card p-6 text-left block group">
+                                <div class="flex items-start justify-between mb-1"><p class="font-serif text-xl text-ink">Oppo</p><i data-lucide="arrow-right" class="w-4 h-4 text-muted group-hover:text-teal flex-shrink-0"></i></div>
+                                <p class="text-xs text-muted">Find X8 Pro / Find X8 · view pricing</p>
+                            </a>
+                            <a href="repair/phone-repair-costs-australia.html" class="card p-6 text-left block group">
+                                <div class="flex items-start justify-between mb-1"><p class="font-serif text-xl text-ink">Huawei</p><i data-lucide="arrow-right" class="w-4 h-4 text-muted group-hover:text-teal flex-shrink-0"></i></div>
+                                <p class="text-xs text-muted">P / Mate / Nova · see comparison page</p>
+                            </a>
+                            <a href="repair/model.html?m=motorola-razr-50-ultra" class="card p-6 text-left block group">
+                                <div class="flex items-start justify-between mb-1"><p class="font-serif text-xl text-ink">Motorola</p><i data-lucide="arrow-right" class="w-4 h-4 text-muted group-hover:text-teal flex-shrink-0"></i></div>
+                                <p class="text-xs text-muted">Edge 50 / Razr 50 Ultra · view pricing</p>
+                            </a>
+                            <a href="repair/phone-repair-costs-australia.html" class="card p-6 text-left block group">
+                                <div class="flex items-start justify-between mb-1"><p class="font-serif text-xl text-ink">Nokia</p><i data-lucide="arrow-right" class="w-4 h-4 text-muted group-hover:text-teal flex-shrink-0"></i></div>
+                                <p class="text-xs text-muted">G-series / classic · see comparison page</p>
+                            </a>
+                            <a href="repair/phone-repair-costs-australia.html" class="card p-6 text-left block group">
+                                <div class="flex items-start justify-between mb-1"><p class="font-serif text-xl text-ink">Vivo</p><i data-lucide="arrow-right" class="w-4 h-4 text-muted group-hover:text-teal flex-shrink-0"></i></div>
+                                <p class="text-xs text-muted">V-series / Y-series · see comparison page</p>
+                            </a>
+                            <a href="repair/phone-repair-costs-australia.html" class="card p-6 text-left block group">
+                                <div class="flex items-start justify-between mb-1"><p class="font-serif text-xl text-ink">Realme</p><i data-lucide="arrow-right" class="w-4 h-4 text-muted group-hover:text-teal flex-shrink-0"></i></div>
+                                <p class="text-xs text-muted">GT / Narzo · see comparison page</p>
+                            </a>
+                            <a href="repair/model.html?m=sony-xperia-1-vi" class="card p-6 text-left block group">
+                                <div class="flex items-start justify-between mb-1"><p class="font-serif text-xl text-ink">Sony</p><i data-lucide="arrow-right" class="w-4 h-4 text-muted group-hover:text-teal flex-shrink-0"></i></div>
+                                <p class="text-xs text-muted">Xperia 1 VI · view pricing</p>
+                            </a>
+                            <a href="repair/phone-repair-costs-australia.html" class="card p-6 text-left block group">
+                                <div class="flex items-start justify-between mb-1"><p class="font-serif text-xl text-ink">Honor</p><i data-lucide="arrow-right" class="w-4 h-4 text-muted group-hover:text-teal flex-shrink-0"></i></div>
+                                <p class="text-xs text-muted">Magic / X-series · see comparison page</p>
+                            </a>
+                        </div>
+                        <p class="text-xs text-muted mt-4">Don't see your model? Browse the <a href="repair/phone-repair-costs-australia.html" class="ed-link text-teal">full comparison page</a> with 75+ models, or find a shop on the <a href="locations.html" class="ed-link text-teal">locations page</a>.</p>
+
+                        <p class="eyebrow mt-10 mb-4">Tablet &amp; laptop repair</p>
+                        <p class="text-sm text-muted mb-6">Tablet and laptop pricing guides are in development. Below are typical Australian repair cost ranges from independent shops — use these as a guide when getting quotes.</p>
+
+                        <p class="text-xs font-semibold text-ink uppercase tracking-wider mb-3">Apple tablets &amp; laptops</p>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-6">
+                            <a href="locations.html" class="card p-6 text-left block group">
+                                <div class="flex items-start justify-between mb-1"><p class="font-serif text-xl text-ink">iPad Pro</p><i data-lucide="arrow-right" class="w-4 h-4 text-muted group-hover:text-teal flex-shrink-0"></i></div>
+                                <p class="text-xs text-muted">M4 / M2 · 11" & 12.9"</p>
+                                <p class="text-xs text-teal mt-2 font-medium">Screen: $249–$549 · Battery: $129–$199</p>
+                            </a>
+                            <a href="locations.html" class="card p-6 text-left block group">
+                                <div class="flex items-start justify-between mb-1"><p class="font-serif text-xl text-ink">iPad Air</p><i data-lucide="arrow-right" class="w-4 h-4 text-muted group-hover:text-teal flex-shrink-0"></i></div>
+                                <p class="text-xs text-muted">M3 / M2 · 11" & 13"</p>
+                                <p class="text-xs text-teal mt-2 font-medium">Screen: $199–$399 · Battery: $119–$179</p>
+                            </a>
+                            <a href="locations.html" class="card p-6 text-left block group">
+                                <div class="flex items-start justify-between mb-1"><p class="font-serif text-xl text-ink">iPad mini</p><i data-lucide="arrow-right" class="w-4 h-4 text-muted group-hover:text-teal flex-shrink-0"></i></div>
+                                <p class="text-xs text-muted">7th gen / 6th gen · 8.3"</p>
+                                <p class="text-xs text-teal mt-2 font-medium">Screen: $179–$329 · Battery: $99–$149</p>
+                            </a>
+                            <a href="locations.html" class="card p-6 text-left block group">
+                                <div class="flex items-start justify-between mb-1"><p class="font-serif text-xl text-ink">iPad 10th gen</p><i data-lucide="arrow-right" class="w-4 h-4 text-muted group-hover:text-teal flex-shrink-0"></i></div>
+                                <p class="text-xs text-muted">Budget iPad · 10.9"</p>
+                                <p class="text-xs text-teal mt-2 font-medium">Screen: $149–$269 · Battery: $89–$129</p>
+                            </a>
+                            <a href="locations.html" class="card p-6 text-left block group">
+                                <div class="flex items-start justify-between mb-1"><p class="font-serif text-xl text-ink">MacBook Air</p><i data-lucide="arrow-right" class="w-4 h-4 text-muted group-hover:text-teal flex-shrink-0"></i></div>
+                                <p class="text-xs text-muted">M3 / M2 / M1 · 13" & 15"</p>
+                                <p class="text-xs text-teal mt-2 font-medium">Screen: $349–$699 · Battery: $179–$279</p>
+                            </a>
+                            <a href="locations.html" class="card p-6 text-left block group">
+                                <div class="flex items-start justify-between mb-1"><p class="font-serif text-xl text-ink">MacBook Pro</p><i data-lucide="arrow-right" class="w-4 h-4 text-muted group-hover:text-teal flex-shrink-0"></i></div>
+                                <p class="text-xs text-muted">M4 Pro / M3 Pro / M2 · 14" & 16"</p>
+                                <p class="text-xs text-teal mt-2 font-medium">Screen: $499–$999 · Battery: $229–$399</p>
+                            </a>
+                        </div>
+
+                        <p class="text-xs font-semibold text-ink uppercase tracking-wider mb-3">Samsung tablets</p>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-6">
+                            <a href="locations.html" class="card p-6 text-left block group">
+                                <div class="flex items-start justify-between mb-1"><p class="font-serif text-xl text-ink">Galaxy Tab S10</p><i data-lucide="arrow-right" class="w-4 h-4 text-muted group-hover:text-teal flex-shrink-0"></i></div>
+                                <p class="text-xs text-muted">Ultra / Plus / FE</p>
+                                <p class="text-xs text-teal mt-2 font-medium">Screen: $249–$549 · Battery: $119–$189</p>
+                            </a>
+                            <a href="locations.html" class="card p-6 text-left block group">
+                                <div class="flex items-start justify-between mb-1"><p class="font-serif text-xl text-ink">Galaxy Tab S9</p><i data-lucide="arrow-right" class="w-4 h-4 text-muted group-hover:text-teal flex-shrink-0"></i></div>
+                                <p class="text-xs text-muted">Ultra / Plus / FE</p>
+                                <p class="text-xs text-teal mt-2 font-medium">Screen: $199–$499 · Battery: $99–$169</p>
+                            </a>
+                            <a href="locations.html" class="card p-6 text-left block group">
+                                <div class="flex items-start justify-between mb-1"><p class="font-serif text-xl text-ink">Galaxy Tab A9</p><i data-lucide="arrow-right" class="w-4 h-4 text-muted group-hover:text-teal flex-shrink-0"></i></div>
+                                <p class="text-xs text-muted">A9+ / A9 · budget range</p>
+                                <p class="text-xs text-teal mt-2 font-medium">Screen: $109–$229 · Battery: $79–$129</p>
+                            </a>
+                        </div>
+
+                        <p class="text-xs font-semibold text-ink uppercase tracking-wider mb-3">Other tablets &amp; laptops</p>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-6">
+                            <a href="locations.html" class="card p-6 text-left block group">
+                                <div class="flex items-start justify-between mb-1"><p class="font-serif text-xl text-ink">Google Pixel Tablet</p><i data-lucide="arrow-right" class="w-4 h-4 text-muted group-hover:text-teal flex-shrink-0"></i></div>
+                                <p class="text-xs text-muted">Tensor G2 · 10.95"</p>
+                                <p class="text-xs text-teal mt-2 font-medium">Screen: $199–$349 · Battery: $99–$149</p>
+                            </a>
+                            <a href="blog/lenovo-tablet-repair-cost-guide-australia.html" class="card p-6 text-left block group">
+                                <div class="flex items-start justify-between mb-1"><p class="font-serif text-xl text-ink">Lenovo Tab</p><i data-lucide="arrow-right" class="w-4 h-4 text-muted group-hover:text-teal flex-shrink-0"></i></div>
+                                <p class="text-xs text-muted">P12 Pro / P11 Pro / M11 / M10 / Yoga</p>
+                                <p class="text-xs text-teal mt-2 font-medium">Screen: $89–$299 · Battery: $59–$139</p>
+                            </a>
+                            <a href="locations.html" class="card p-6 text-left block group">
+                                <div class="flex items-start justify-between mb-1"><p class="font-serif text-xl text-ink">Microsoft Surface</p><i data-lucide="arrow-right" class="w-4 h-4 text-muted group-hover:text-teal flex-shrink-0"></i></div>
+                                <p class="text-xs text-muted">Pro / Go / Laptop</p>
+                                <p class="text-xs text-teal mt-2 font-medium">Screen: $299–$699 · Battery: $179–$349</p>
+                            </a>
+                            <a href="locations.html" class="card p-6 text-left block group">
+                                <div class="flex items-start justify-between mb-1"><p class="font-serif text-xl text-ink">Amazon Fire</p><i data-lucide="arrow-right" class="w-4 h-4 text-muted group-hover:text-teal flex-shrink-0"></i></div>
+                                <p class="text-xs text-muted">HD 10 / HD 8 · budget</p>
+                                <p class="text-xs text-teal mt-2 font-medium">Screen: $69–$149 · Battery: $49–$89</p>
+                            </a>
+                        </div>
+                        <p class="text-xs text-muted mt-4">Tablet and laptop pricing varies more than phone pricing — screen size, display technology (LCD vs OLED), and parts availability all affect cost. <strong>Tip:</strong> For tablets and laptops, always ask if it's worth repairing vs replacing — the repair-to-value ratio is often worse than on phones. <a href="locations.html" class="ed-link text-teal">Find a local shop for a quote</a> or <a href="blog/repair-vs-replace-decision-guide.html" class="ed-link text-teal">read our repair vs replace guide</a>.</p>
+                    </div>
+
+                    <div id="step-2" class="step hidden">
+                        <div class="flex items-center gap-3 mb-8">
+                            <button onclick="goToStep(1)" class="text-sm font-medium text-muted hover:text-ink flex items-center gap-1"><i data-lucide="chevron-left" class="w-4 h-4"></i>Back</button>
+                            <span class="text-sm text-muted">|</span>
+                            <span class="text-sm font-medium text-teal" id="chosen-brand"></span>
+                        </div>
+                        <h2 class="display text-2xl md:text-3xl text-ink mb-8">Which model?</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3" id="model-grid"></div>
+                    </div>
+
+                    <div id="step-3" class="step hidden">
+                        <div class="flex items-center gap-3 mb-8 flex-wrap">
+                            <button onclick="goToStep(2)" class="text-sm font-medium text-muted hover:text-ink flex items-center gap-1"><i data-lucide="chevron-left" class="w-4 h-4"></i>Back</button>
+                            <span class="text-sm text-muted">|</span>
+                            <span class="text-sm font-medium text-teal" id="chosen-summary"></span>
+                        </div>
+                        <h2 class="display text-2xl md:text-3xl text-ink mb-8">What's the problem?</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <button onclick="pickIssue('screen')" class="card p-5 text-left flex items-start gap-4"><i data-lucide="square-dashed" class="w-6 h-6 text-teal mt-1 flex-shrink-0"></i><div><p class="font-serif text-lg text-ink">Cracked or broken screen</p><p class="text-xs text-muted mt-1">Glass, OLED, or both — we'll narrow it down</p></div></button>
+                            <button onclick="pickIssue('battery')" class="card p-5 text-left flex items-start gap-4"><i data-lucide="battery-low" class="w-6 h-6 text-teal mt-1 flex-shrink-0"></i><div><p class="font-serif text-lg text-ink">Battery dies fast</p><p class="text-xs text-muted mt-1">Won't last a day, shuts off above 20%</p></div></button>
+                            <button onclick="pickIssue('back')" class="card p-5 text-left flex items-start gap-4"><i data-lucide="square" class="w-6 h-6 text-teal mt-1 flex-shrink-0"></i><div><p class="font-serif text-lg text-ink">Cracked back glass</p><p class="text-xs text-muted mt-1">Back panel only, front is intact</p></div></button>
+                            <button onclick="pickIssue('charging')" class="card p-5 text-left flex items-start gap-4"><i data-lucide="plug-zap" class="w-6 h-6 text-teal mt-1 flex-shrink-0"></i><div><p class="font-serif text-lg text-ink">Won't charge</p><p class="text-xs text-muted mt-1">Port issue, cable issue, or battery</p></div></button>
+                            <button onclick="pickIssue('water')" class="card p-5 text-left flex items-start gap-4"><i data-lucide="droplets" class="w-6 h-6 text-teal mt-1 flex-shrink-0"></i><div><p class="font-serif text-lg text-ink">Water damage</p><p class="text-xs text-muted mt-1">Dropped in liquid; behaving oddly</p></div></button>
+                            <button onclick="pickIssue('dead')" class="card p-5 text-left flex items-start gap-4"><i data-lucide="circle-off" class="w-6 h-6 text-teal mt-1 flex-shrink-0"></i><div><p class="font-serif text-lg text-ink">Won't turn on</p><p class="text-xs text-muted mt-1">Black screen, no response at all</p></div></button>
+                        </div>
+                    </div>
+
+                    <div id="results" class="hidden">
+                        <div class="flex items-center gap-3 mb-8 flex-wrap">
+                            <button onclick="reset()" class="text-sm font-medium text-muted hover:text-ink flex items-center gap-1"><i data-lucide="rotate-ccw" class="w-4 h-4"></i>Start over</button>
+                            <span class="text-sm text-muted">|</span>
+                            <span class="text-sm font-medium text-teal" id="result-summary"></span>
+                        </div>
+                        <p class="eyebrow mb-3">Estimated cost range</p>
+                        <p class="display text-5xl md:text-7xl text-ink mb-2 tnum" id="result-range">$0–$0</p>
+                        <p class="text-muted mb-10" id="result-note"></p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-line mb-10">
+                            <div class="bg-white p-6"><p class="eyebrow mb-3">Independent shop</p><p class="font-mono text-xl tnum text-ink" id="price-indie">—</p><p class="text-xs text-muted mt-2">Typical local repair shop, OEM-grade or quality aftermarket parts</p></div>
+                            <div class="bg-white p-6"><p class="eyebrow mb-3">Authorised service</p><p class="font-mono text-xl tnum text-ink" id="price-auth">—</p><p class="text-xs text-muted mt-2">Apple / Samsung / Google official repair, OEM parts</p></div>
+                            <div class="bg-white p-6"><p class="eyebrow mb-3">DIY (parts + tools)</p><p class="font-mono text-xl tnum text-ink" id="price-diy">—</p><p class="text-xs text-muted mt-2">Realistic total: part, tools, and a buffer for a second attempt</p></div>
+                        </div>
+                        <div class="bg-mesh-2 border border-line p-6 md:p-8 mb-8">
+                            <p class="eyebrow mb-3">Our take</p>
+                            <p class="text-ink leading-relaxed" id="result-take"></p>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <a href="locations.html" class="btn btn-primary">Find a local shop <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                            <a href="fix.html" class="btn btn-ghost">Read the troubleshooting guide</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-xs text-muted mt-6 max-w-2xl">Ranges are based on 2026 surveyed pricing across Australian metro areas. Your local quote may fall outside the range — repair pricing is highly regional. Use this as a sanity check, not a guarantee. <a href="repair/phone-repair-costs-australia.html" class="ed-link text-teal">See all models with pricing →</a></p>
+        </div>
+    </section>
+
+    <footer class="bg-teal-900 text-white mt-24 border-t border-white/10">
+        <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+                <div class="md:col-span-5">
+                    <div class="flex items-center gap-2 mb-4">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg>
+                        <span class="font-serif text-2xl font-medium">RepairRange</span>
+                    </div>
+                    <p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice. Researched by people who actually do this work.</p>
+                </div>
+                <div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="fix.html" class="text-white/80 hover:text-amber">Troubleshooting</a></li><li><a href="calculator.html" class="text-white/80 hover:text-amber">Cost Calculator</a></li>
+                        <li><a href="repair/phone-repair-costs-australia.html" class="text-white/80 hover:text-amber">All Models &amp; Pricing</a></li><li><a href="locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="blog.html" class="text-white/80 hover:text-amber">Blog</a></li></ul></div>
+                <div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="about.html" class="text-white/80 hover:text-amber">About RepairRange</a></li><li><a href="tools/software-stack-for-repair-shops.html" class="text-white/80 hover:text-amber">Tools we recommend</a></li><li><a href="privacy.html" class="text-white/80 hover:text-amber">Privacy Policy</a></li><li><a href="terms.html" class="text-white/80 hover:text-amber">Terms of Use</a></li></ul></div>
+            </div>
+            <div class="pt-8 border-t border-white/15">
+                <p class="text-white/50 text-xs leading-relaxed mb-3 max-w-3xl"><strong class="text-white/70">Affiliate disclosure:</strong> RepairRange may earn a commission when you click links to retailers (including Amazon) and complete a purchase. This never affects the price you pay or our editorial recommendations.</p>
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p><p class="text-white/50 text-xs">Not affiliated with Apple, Samsung, Google, or any device manufacturer.</p></div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        if (window.lucide) window.lucide.createIcons();
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.querySelector('.mobile-menu-button');
+            const menu = document.querySelector('.mobile-menu');
+            if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+        });
+
+        const MODELS = {
+            Apple: [
+                { slug: 'iphone-17-pro-max', name: 'iPhone 17 Pro Max' },
+                { slug: 'iphone-17-pro', name: 'iPhone 17 Pro' },
+                { slug: 'iphone-17', name: 'iPhone 17' },
+                { slug: 'iphone-17-air', name: 'iPhone 17 Air' },
+                { slug: 'iphone-16-pro-max', name: 'iPhone 16 Pro Max' },
+                { slug: 'iphone-16-pro', name: 'iPhone 16 Pro' },
+                { slug: 'iphone-16-plus', name: 'iPhone 16 Plus' },
+                { slug: 'iphone-16', name: 'iPhone 16' },
+                { slug: 'iphone-15-pro-max', name: 'iPhone 15 Pro Max' },
+                { slug: 'iphone-15-pro', name: 'iPhone 15 Pro' },
+                { slug: 'iphone-15-plus', name: 'iPhone 15 Plus' },
+                { slug: 'iphone-15', name: 'iPhone 15' },
+                { slug: 'iphone-14-pro-max', name: 'iPhone 14 Pro Max' },
+                { slug: 'iphone-14-pro', name: 'iPhone 14 Pro' },
+                { slug: 'iphone-14', name: 'iPhone 14' },
+                { slug: 'iphone-13-pro-max', name: 'iPhone 13 Pro Max' },
+                { slug: 'iphone-13', name: 'iPhone 13' },
+                { slug: 'iphone-12', name: 'iPhone 12' },
+                { slug: 'iphone-se-3', name: 'iPhone SE (3rd gen)' }
+            ],
+            Samsung: [
+                { slug: 'samsung-galaxy-s26-ultra', name: 'Galaxy S26 Ultra' },
+                { slug: 'samsung-galaxy-s26-plus', name: 'Galaxy S26+' },
+                { slug: 'samsung-galaxy-s26', name: 'Galaxy S26' },
+                { slug: 'samsung-galaxy-s25-ultra', name: 'Galaxy S25 Ultra' },
+                { slug: 'samsung-galaxy-s25-plus', name: 'Galaxy S25+' },
+                { slug: 'samsung-galaxy-s25', name: 'Galaxy S25' },
+                { slug: 'samsung-galaxy-s25-edge', name: 'Galaxy S25 Edge' },
+                { slug: 'samsung-galaxy-s24-ultra', name: 'Galaxy S24 Ultra' },
+                { slug: 'samsung-galaxy-s24', name: 'Galaxy S24' },
+                { slug: 'samsung-galaxy-s23-ultra', name: 'Galaxy S23 Ultra' },
+                { slug: 'samsung-galaxy-s23-plus', name: 'Galaxy S23+' },
+                { slug: 'samsung-galaxy-s23', name: 'Galaxy S23' },
+                { slug: 'samsung-galaxy-z-fold-6', name: 'Galaxy Z Fold 6' },
+                { slug: 'samsung-galaxy-z-fold-5', name: 'Galaxy Z Fold 5' },
+                { slug: 'samsung-galaxy-z-flip-6', name: 'Galaxy Z Flip 6' },
+                { slug: 'samsung-galaxy-z-flip-5', name: 'Galaxy Z Flip 5' },
+                { slug: 'samsung-galaxy-a55', name: 'Galaxy A55' },
+                { slug: 'samsung-galaxy-a54', name: 'Galaxy A54' }
+            ],
+            Google: [
+                { slug: 'pixel-9-pro-xl', name: 'Pixel 9 Pro XL' },
+                { slug: 'pixel-9-pro', name: 'Pixel 9 Pro' },
+                { slug: 'pixel-9', name: 'Pixel 9' },
+                { slug: 'pixel-8-pro', name: 'Pixel 8 Pro' },
+                { slug: 'pixel-8', name: 'Pixel 8' },
+                { slug: 'pixel-8a', name: 'Pixel 8a' },
+                { slug: 'pixel-7-pro', name: 'Pixel 7 Pro' },
+                { slug: 'pixel-7', name: 'Pixel 7' },
+                { slug: 'pixel-7a', name: 'Pixel 7a' },
+                { slug: 'pixel-6', name: 'Pixel 6' }
+            ],
+            Other: [
+                { slug: 'oneplus-13', name: 'OnePlus 13' },
+                { slug: 'oneplus-12', name: 'OnePlus 12' },
+                { slug: 'nothing-phone-2', name: 'Nothing Phone (2)' },
+                { slug: 'xiaomi-14-ultra', name: 'Xiaomi 14 Ultra' },
+                { slug: 'xiaomi-14', name: 'Xiaomi 14' },
+                { slug: 'oppo-find-x8-pro', name: 'OPPO Find X8 Pro' },
+                { slug: 'motorola-razr-50-ultra', name: 'Motorola Razr 50 Ultra' }
+            ]
+        };
+
+        const ISSUE_PROFILES = {
+            screen:   { label: 'Screen replacement', basis: [200, 320], note: 'Includes OLED panel and digitiser. Modern phones don\u2019t separate the layers.' },
+            battery:  { label: 'Battery replacement', basis: [79, 129], note: 'Includes new battery and labour. Allow extra if a screen reseal is needed.' },
+            back:     { label: 'Back glass replacement', basis: [149, 249], note: 'On phones with glued backs, this is more labour than parts. iPhone 14/15 are easier.' },
+            charging: { label: 'Charging port', basis: [89, 159], note: 'A quick port clean often solves it for free. Price assumes a real port replacement.' },
+            water:    { label: 'Water damage diagnostic', basis: [60, 90], note: 'Diagnostic only. Actual repair depends on what corroded — could be $0 (clean) or $400+ (board work).' },
+            dead:     { label: 'No-power diagnostic', basis: [50, 80], note: 'Diagnostic only. Could be a cheap battery or expensive board work.' }
+        };
+
+        const MODEL_MULT = {
+            'iphone-17-pro-max': 1.75, 'iphone-17-pro': 1.6, 'iphone-17': 1.3, 'iphone-17-air': 1.45,
+            'iphone-16-pro-max': 1.65, 'iphone-16-pro': 1.5, 'iphone-16-plus': 1.3, 'iphone-16': 1.2,
+            'iphone-15-pro-max': 1.6, 'iphone-15-pro': 1.45, 'iphone-15-plus': 1.25,
+            'iphone-15': 1.15, 'iphone-14-pro-max': 1.5, 'iphone-14-pro': 1.35,
+            'iphone-14': 1.05, 'iphone-13-pro-max': 1.35, 'iphone-13': 0.95,
+            'iphone-12': 0.85, 'iphone-se-3': 0.55,
+            'samsung-galaxy-s26-ultra': 1.8, 'samsung-galaxy-s26-plus': 1.5, 'samsung-galaxy-s26': 1.15,
+            'samsung-galaxy-s25-ultra': 1.7, 'samsung-galaxy-s25-plus': 1.4,
+            'samsung-galaxy-s25': 1.05, 'samsung-galaxy-s25-edge': 1.5,
+            'samsung-galaxy-s24-ultra': 1.65, 'samsung-galaxy-s24': 1.3,
+            'samsung-galaxy-s23-ultra': 1.55, 'samsung-galaxy-s23-plus': 1.35, 'samsung-galaxy-s23': 1.15,
+            'samsung-galaxy-z-fold-6': 2.3, 'samsung-galaxy-z-fold-5': 2.2,
+            'samsung-galaxy-z-flip-6': 1.6, 'samsung-galaxy-z-flip-5': 1.55,
+            'samsung-galaxy-a55': 0.8, 'samsung-galaxy-a54': 0.75,
+            'pixel-9-pro-xl': 1.55, 'pixel-9-pro': 1.4, 'pixel-9': 1.2,
+            'pixel-8-pro': 1.3, 'pixel-8': 1.1, 'pixel-8a': 0.8,
+            'pixel-7-pro': 1.15, 'pixel-7': 0.9, 'pixel-7a': 0.7, 'pixel-6': 0.85,
+            'oneplus-13': 1.3, 'oneplus-12': 1.2, 'xiaomi-14-ultra': 1.5, 'xiaomi-14': 1.1,
+            'nothing-phone-2': 1.0, 'oppo-find-x8-pro': 1.4, 'motorola-razr-50-ultra': 2.0
+        };
+
+        const state = { brand: null, model: null, modelName: null, issue: null };
+
+        function pickBrand(brand) {
+            state.brand = brand;
+            document.getElementById('chosen-brand').textContent = brand;
+            const grid = document.getElementById('model-grid');
+            grid.innerHTML = MODELS[brand].map(m =>
+                '<button onclick="pickModel(\'' + m.slug + '\', \'' + m.name.replace(/'/g, "\\'") + '\')" class="card p-4 text-left"><p class="font-serif text-base text-ink leading-snug">' + m.name + '</p></button>'
+            ).join('');
+            goToStep(2);
+            if (window.lucide) window.lucide.createIcons();
+        }
+
+        function pickModel(slug, name) {
+            state.model = slug;
+            state.modelName = name;
+            document.getElementById('chosen-summary').textContent = state.brand + ' \u00b7 ' + name;
+            goToStep(3);
+            if (window.lucide) window.lucide.createIcons();
+        }
+
+        function pickIssue(key) { state.issue = key; showResults(); }
+
+        function goToStep(n) {
+            for (let i = 1; i <= 3; i++) {
+                const el = document.getElementById('step-' + i);
+                if (el) el.classList.add('hidden');
+                const pill = document.getElementById('step-pill-' + i);
+                if (pill) pill.classList[i <= n ? 'remove' : 'add']('opacity-50');
+                if (pill) {
+                    const eyebrow = pill.querySelector('.eyebrow');
+                    if (eyebrow) eyebrow.classList[i <= n ? 'add' : 'remove']('text-teal');
+                }
+            }
+            document.getElementById('step-' + n).classList.remove('hidden');
+            document.getElementById('results').classList.add('hidden');
+        }
+
+        function showResults() {
+            document.getElementById('step-1').classList.add('hidden');
+            document.getElementById('step-2').classList.add('hidden');
+            document.getElementById('step-3').classList.add('hidden');
+            document.getElementById('results').classList.remove('hidden');
+
+            const prof = ISSUE_PROFILES[state.issue];
+            const mult = MODEL_MULT[state.model] || 1;
+            const indieLow  = Math.round(prof.basis[0] * mult);
+            const indieHigh = Math.round(prof.basis[1] * mult);
+            const authLow   = Math.round(indieLow * 1.4);
+            const authHigh  = Math.round(indieHigh * 1.55);
+            const diyLow    = Math.round(indieLow * 0.45);
+            const diyHigh   = Math.round(indieHigh * 0.55);
+
+            document.getElementById('result-summary').textContent = state.brand + ' \u00b7 ' + state.modelName + ' \u00b7 ' + prof.label;
+            document.getElementById('result-range').textContent = '$' + indieLow + '\u2013$' + indieHigh;
+            document.getElementById('result-note').textContent = prof.note;
+            document.getElementById('price-indie').textContent = '$' + indieLow + '\u2013$' + indieHigh;
+            document.getElementById('price-auth').textContent  = '$' + authLow + '\u2013$' + authHigh;
+            document.getElementById('price-diy').textContent   = '$' + diyLow + '\u2013$' + diyHigh;
+
+            const takes = {
+                screen: 'If the phone is less than 2 years old, get the screen done. If it\u2019s 3+ years old, weigh the cost against trade-in value \u2014 at $' + indieLow + '+ you\u2019re often within $100 of a refurb.',
+                battery: 'Battery replacements are nearly always worth it: cheap, fast, restores hours of daily use. Be wary of any shop charging more than $' + indieHigh + ' for a standard battery swap.',
+                back: 'Cosmetic only. If the phone works and you use a case, this can usually wait. If you plan to trade in or sell, fixing it returns 60\u201380% of the cost in resale value.',
+                charging: 'Try a port clean with a wooden toothpick first \u2014 solves it ~30% of the time, for free. If that fails, the port replacement at $' + indieLow + '\u2013$' + indieHigh + ' is straightforward.',
+                water: 'The diagnostic price is the question, not the answer. Best-case: $0\u2013$100 for a clean and reseal. Worst-case: board-level repair at $300\u2013$600+, or write-off. Get the diagnostic before committing.',
+                dead: 'Diagnostic is essential. Common causes: dead battery, bad charging port, or board damage (often uneconomical). Don\u2019t pay for repair before knowing which.'
+            };
+            document.getElementById('result-take').textContent = takes[state.issue];
+
+            if (window.lucide) window.lucide.createIcons();
+        }
+
+        function reset() {
+            state.brand = null; state.model = null; state.modelName = null; state.issue = null;
+            goToStep(1);
+            if (window.lucide) window.lucide.createIcons();
+        }
+    </script>
 </body>
 </html>

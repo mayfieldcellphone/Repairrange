@@ -4,22 +4,169 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
-
-
 <script>
-    if(window.lucide) window.lucide.createIcons();
-    document.addEventListener('DOMContentLoaded', () => {
-        const btn = document.querySelector('.mobile-menu-button');
-        const menu = document.querySelector('.mobile-menu');
-        if(btn && menu) {
-            btn.addEventListener('click', () => {
-                menu.classList.toggle('hidden');
-            });
-        }
-    });
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CWRGPBDWZD');
 </script>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
+        html { scroll-behavior: smooth; }
+        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
+        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
+        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
+        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
+        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
+        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
+        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
+        .ed-link:hover { background-size:100% 1px; }
+        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
+        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
+        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
+        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
+        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
+        .mobile-menu { transition:all 300ms ease-in-out; }
+        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
+    </style>
 
+<title>About RepairRange — Honest Phone Repair Pricing</title>
+<meta name="description" content="RepairRange is built by working phone repair technicians publishing the honest cost ranges, methodology, and shop-vs-DIY guidance most sites won't.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://repairrange.io/about.html">
+</head>
+<body class="bg-mesh">
 
+    <header class="header-sticky sticky top-0 z-50 border-b border-line">
+        <nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" class="flex-shrink-0"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg>
+                <span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm">
+                <a href="brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a>
+                <a href="fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a>
+                <a href="calculator.html" class="ed-link font-medium text-ink hover:text-teal">Calculator</a>
+                <a href="locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a>
+                <a href="blog.html" class="ed-link font-medium text-ink hover:text-teal">Blog</a>
+                <a href="about.html" class="ed-link font-medium text-teal">About</a>
+                <a href="calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            </div>
+            <button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button>
+        </nav>
+        <div class="mobile-menu hidden md:hidden border-t border-line bg-paper">
+            <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
+                <a href="brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a>
+                <a href="fix.html" class="py-2 font-medium text-ink hover:text-teal">Troubleshoot</a>
+                <a href="calculator.html" class="py-2 font-medium text-ink hover:text-teal">Calculator</a>
+                <a href="locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a>
+                <a href="blog.html" class="py-2 font-medium text-ink hover:text-teal">Blog</a>
+                <a href="about.html" class="py-2 font-medium text-teal">About</a>
+                <a href="calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-mesh-hero">
+        <div class="max-w-4xl mx-auto px-6 md:px-8 py-16 md:py-24">
+            <p class="eyebrow mb-4">About</p>
+            <h1 class="display text-5xl md:text-7xl text-ink mb-8 leading-none">Built by people who actually <span class="italic">do</span> this.</h1>
+            <p class="text-xl text-muted leading-relaxed">RepairRange is run by working phone repair technicians who got tired of telling customers "ignore the $89 screen repair ads — that's not what it costs."</p>
+        </div>
+    </section>
+
+    <section class="bg-white border-b border-line">
+        <div class="max-w-4xl mx-auto px-6 md:px-8 py-16 md:py-20">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+                <div class="md:col-span-4"><p class="eyebrow mb-3">Why this exists</p></div>
+                <div class="md:col-span-8 space-y-5 text-ink leading-relaxed">
+                    <p>Repair pricing on the open web is broken in three ways. Manufacturer service pages give you a "from $X" price that's only true for one part of one issue. Affiliate blogs publish made-up numbers to rank for "iPhone screen repair cost." And local shops won't tell you a price until you walk in the door.</p>
+                    <p>RepairRange is what happens when working techs publish the numbers everyone wants to know: the real range, the real difference between authorised and independent, and the honest take on whether to fix or replace.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-mesh-2 border-b border-line">
+        <div class="max-w-4xl mx-auto px-6 md:px-8 py-16 md:py-20">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+                <div class="md:col-span-4"><p class="eyebrow mb-3">How we make money</p></div>
+                <div class="md:col-span-8 space-y-5 text-ink leading-relaxed">
+                    <p>Three sources, all disclosed:</p>
+                    <p><strong class="text-ink">Affiliate links to repair tools and parts.</strong> If you click through to Amazon or another retailer from our DIY guides and buy something, we earn a small commission. Your price isn't affected. We only recommend tools we'd use ourselves.</p>
+                    <p><strong class="text-ink">Lead-gen forms for repair shops.</strong> When you request a quote, we match you with a verified local shop. Shops pay a small fee per lead. Shops do not pay to be listed and cannot pay for better placement.</p>
+                    <p><strong class="text-ink">Display advertising.</strong> Some pages carry display ads. Ads are clearly marked and never influence editorial content.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white border-b border-line">
+        <div class="max-w-4xl mx-auto px-6 md:px-8 py-16 md:py-20">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+                <div class="md:col-span-4"><p class="eyebrow mb-3">What we won't do</p></div>
+                <div class="md:col-span-8 space-y-4">
+                    <div class="flex gap-4"><i data-lucide="x" class="w-5 h-5 text-teal flex-shrink-0 mt-1"></i><p class="text-ink leading-relaxed">Publish a single price for a repair that has a real range. The range is the point.</p></div>
+                    <div class="flex gap-4"><i data-lucide="x" class="w-5 h-5 text-teal flex-shrink-0 mt-1"></i><p class="text-ink leading-relaxed">Recommend a part or tool we haven't used. Affiliate disclosure cuts both ways — we only link to gear that's actually good.</p></div>
+                    <div class="flex gap-4"><i data-lucide="x" class="w-5 h-5 text-teal flex-shrink-0 mt-1"></i><p class="text-ink leading-relaxed">Sell your contact details. Lead-gen forms route to one matched shop, full stop. No lists, no resale.</p></div>
+                    <div class="flex gap-4"><i data-lucide="x" class="w-5 h-5 text-teal flex-shrink-0 mt-1"></i><p class="text-ink leading-relaxed">Talk down DIY when DIY makes sense. Some repairs are easier than people think; some are much harder than YouTube suggests.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-mesh-2">
+        <div class="max-w-4xl mx-auto px-6 md:px-8 py-16 md:py-20">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+                <div class="md:col-span-4"><p class="eyebrow mb-3">Contact</p></div>
+                <div class="md:col-span-8 space-y-3 text-ink leading-relaxed">
+                    <p>For corrections, methodology questions, or shop listing inquiries:</p>
+                    <p><a href="mailto:hello@repairrange.com" class="ed-link font-medium text-teal">hello@repairrange.com</a></p>
+                    <p class="text-muted text-sm mt-6">We aim to reply within two business days. For repair emergencies, please contact a local shop directly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-teal-900 text-white mt-24 border-t border-white/10">
+        <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+                <div class="md:col-span-5">
+                    <div class="flex items-center gap-2 mb-4">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg>
+                        <span class="font-serif text-2xl font-medium">RepairRange</span>
+                    </div>
+                    <p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice. Researched by people who actually do this work.</p>
+                </div>
+                <div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="fix.html" class="text-white/80 hover:text-amber">Troubleshooting</a></li><li><a href="calculator.html" class="text-white/80 hover:text-amber">Cost Calculator</a></li><li><a href="locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="blog.html" class="text-white/80 hover:text-amber">Blog</a></li>
+          <li><a href="unlock/index.html" class="text-white/80 hover:text-amber">Unlock Guides</a></li></ul></div>
+                <div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="about.html" class="text-white/80 hover:text-amber">About RepairRange</a></li><li><a href="tools/software-stack-for-repair-shops.html" class="text-white/80 hover:text-amber">Tools we recommend</a></li><li><a href="privacy.html" class="text-white/80 hover:text-amber">Privacy Policy</a></li><li><a href="terms.html" class="text-white/80 hover:text-amber">Terms of Use</a></li></ul></div>
+            </div>
+            <div class="pt-8 border-t border-white/15">
+                <p class="text-white/50 text-xs leading-relaxed mb-3 max-w-3xl"><strong class="text-white/70">Affiliate disclosure:</strong> RepairRange may earn a commission when you click links to retailers (including Amazon) and complete a purchase. This never affects the price you pay or our editorial recommendations.</p>
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p><p class="text-white/50 text-xs">Not affiliated with Apple, Samsung, Google, or any device manufacturer.</p></div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        if (window.lucide) window.lucide.createIcons();
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.querySelector('.mobile-menu-button');
+            const menu = document.querySelector('.mobile-menu');
+            if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+        });
+    </script>
     <!-- Chatbot Embedding Code -->
 <script>
   window.chatbotSettings = {

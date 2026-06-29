@@ -4,22 +4,224 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
-
-
 <script>
-    if(window.lucide) window.lucide.createIcons();
-    document.addEventListener('DOMContentLoaded', () => {
-        const btn = document.querySelector('.mobile-menu-button');
-        const menu = document.querySelector('.mobile-menu');
-        if(btn && menu) {
-            btn.addEventListener('click', () => {
-                menu.classList.toggle('hidden');
-            });
-        }
-    });
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CWRGPBDWZD');
 </script>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
+        html { scroll-behavior: smooth; }
+        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
+        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
+        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
+        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
+        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
+        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
+        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
+        .ed-link:hover { background-size:100% 1px; }
+        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
+        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
+        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
+        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
+        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
+        .mobile-menu { transition:all 300ms ease-in-out; }
+        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
+    </style>
 
+<title>Phone Brands & Models — RepairRange</title>
+<meta name="description" content="Browse phone repair costs by brand: Apple iPhone, Samsung Galaxy, Google Pixel, and more. Updated monthly with real shop quotes.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://repairrange.io/brands.html">
+</head>
+<body class="bg-mesh">
 
+    <header class="header-sticky sticky top-0 z-50 border-b border-line">
+        <nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" class="flex-shrink-0"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg>
+                <span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm">
+                <a href="brands.html" class="ed-link font-medium text-teal">Brands</a>
+                <a href="repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a>
+                <a href="fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a>
+                <a href="calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a>
+                <a href="unlock/index.html" class="ed-link font-medium text-ink hover:text-teal">Phone Unlock</a>
+                <a href="locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a>
+                <a href="blog.html" class="ed-link font-medium text-ink hover:text-teal">Blog</a>
+                <a href="calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            </div>
+            <button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button>
+        </nav>
+        <div class="mobile-menu hidden md:hidden border-t border-line bg-paper">
+            <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
+                <a href="brands.html" class="py-2 font-medium text-teal">Brands</a>
+                <a href="repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a>
+                <a href="fix.html" class="py-2 font-medium text-ink hover:text-teal">Troubleshoot</a>
+                <a href="calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a>
+                <a href="unlock/index.html" class="py-2 font-medium text-ink hover:text-teal">Phone Unlock</a>
+                <a href="locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a>
+                <a href="blog.html" class="py-2 font-medium text-ink hover:text-teal">Blog</a>
+                <a href="calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-mesh-hero">
+        <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-24">
+            <p class="eyebrow mb-4">Browse by brand</p>
+            <h1 class="display text-5xl md:text-7xl text-ink mb-6 max-w-3xl">Every <span class="italic">phone</span>, every <span class="italic">repair</span>.</h1>
+            <p class="text-lg text-muted max-w-2xl leading-relaxed">Pick a brand to see model-by-model repair pricing, common failures, and shop-vs-DIY guidance. Or see <a href="repair/phone-repair-costs-australia.html" class="ed-link font-medium text-teal">every model on one page →</a></p>
+        </div>
+    </section>
+
+    <section class="bg-mesh-2">
+        <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-line">
+                <a href="brands/apple.html" class="card bg-white p-8 md:p-10 group flex flex-col justify-between min-h-[260px]">
+                    <div>
+                        <div class="flex items-center justify-between mb-6"><span class="eyebrow">01</span><i data-lucide="arrow-up-right" class="w-6 h-6 text-muted group-hover:text-teal transition-colors"></i></div>
+                        <h2 class="font-serif text-4xl md:text-5xl text-ink mb-3 leading-none">Apple</h2>
+                        <p class="text-muted text-sm leading-relaxed max-w-md">iPhone, iPad, MacBook. Authorised repair is expensive; third-party is half the price but quality varies — we break down which parts matter.</p>
+                    </div>
+                    <div class="flex items-center gap-6 mt-8 pt-6 border-t border-line text-sm"><span class="font-mono tnum text-ink">14 guides live</span><span class="text-muted">more being added</span></div>
+                </a>
+                <a href="brands/samsung.html" class="card bg-white p-8 md:p-10 group flex flex-col justify-between min-h-[260px]">
+                    <div>
+                        <div class="flex items-center justify-between mb-6"><span class="eyebrow">02</span><i data-lucide="arrow-up-right" class="w-6 h-6 text-muted group-hover:text-teal transition-colors"></i></div>
+                        <h2 class="font-serif text-4xl md:text-5xl text-ink mb-3 leading-none">Samsung</h2>
+                        <p class="text-muted text-sm leading-relaxed max-w-md">Galaxy S, Note, A, Z Flip, Z Fold, Tab. Folding hinges are the priciest single component in consumer electronics — know before you pay.</p>
+                    </div>
+                    <div class="flex items-center gap-6 mt-8 pt-6 border-t border-line text-sm"><span class="font-mono tnum text-ink">19 guides live</span><span class="text-muted">more being added</span></div>
+                </a>
+                <a href="brands/google.html" class="card bg-white p-8 md:p-10 group flex flex-col justify-between min-h-[260px]">
+                    <div>
+                        <div class="flex items-center justify-between mb-6"><span class="eyebrow">03</span><i data-lucide="arrow-up-right" class="w-6 h-6 text-muted group-hover:text-teal transition-colors"></i></div>
+                        <h2 class="font-serif text-4xl md:text-5xl text-ink mb-3 leading-none">Google</h2>
+                        <p class="text-muted text-sm leading-relaxed max-w-md">Pixel 6 through Pixel 9. Google's own iFixit partnership makes Pixels unusually DIY-friendly — we'll show you which jobs are worth doing yourself.</p>
+                    </div>
+                    <div class="flex items-center gap-6 mt-8 pt-6 border-t border-line text-sm"><span class="font-mono tnum text-ink">1 guide live</span><span class="text-muted">more being added</span></div>
+                </a>
+                <a href="repair/phone-repair-costs-australia.html" class="card bg-white p-8 md:p-10 group flex flex-col justify-between min-h-[260px]">
+                    <div>
+                        <div class="flex items-center justify-between mb-6"><span class="eyebrow">04</span><i data-lucide="arrow-up-right" class="w-6 h-6 text-muted group-hover:text-teal transition-colors"></i></div>
+                        <h2 class="font-serif text-4xl md:text-5xl text-ink mb-3 leading-none">OnePlus, Xiaomi &amp; more</h2>
+                        <p class="text-muted text-sm leading-relaxed max-w-md">OnePlus, Xiaomi, OPPO, Nothing, Motorola, Sony — all covered with pricing on our comparison page. Searchable, filterable, 75+ models.</p>
+                    </div>
+                    <div class="flex items-center gap-6 mt-8 pt-6 border-t border-line text-sm"><span class="font-mono tnum text-ink">11 models live</span><span class="text-muted">with pricing</span></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white border-t border-line">
+        <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
+            <p class="eyebrow mb-3">Quick jump</p>
+            <h2 class="display text-3xl md:text-4xl text-ink mb-10">Popular models, A–Z</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-3 text-sm">
+                <a href="repair/iphone-17-pro-max.html" class="ed-link text-ink hover:text-teal">iPhone 17 Pro Max</a>
+                <a href="repair/iphone-17-pro.html" class="ed-link text-ink hover:text-teal">iPhone 17 Pro</a>
+                <a href="repair/iphone-17.html" class="ed-link text-ink hover:text-teal">iPhone 17</a>
+                <a href="repair/iphone-15-pro-max.html" class="ed-link text-ink hover:text-teal">iPhone 15 Pro Max</a>
+                <a href="repair/iphone-15-pro.html" class="ed-link text-ink hover:text-teal">iPhone 15 Pro</a>
+                <a href="repair/iphone-15-plus.html" class="ed-link text-ink hover:text-teal">iPhone 15 Plus</a>
+                <a href="repair/iphone-15.html" class="ed-link text-ink hover:text-teal">iPhone 15</a>
+                <a href="repair/iphone-14-pro-max.html" class="ed-link text-ink hover:text-teal">iPhone 14 Pro Max</a>
+                <a href="repair/iphone-14-pro.html" class="ed-link text-ink hover:text-teal">iPhone 14 Pro</a>
+                <a href="repair/iphone-14.html" class="ed-link text-ink hover:text-teal">iPhone 14</a>
+                <a href="repair/iphone-13-pro-max.html" class="ed-link text-ink hover:text-teal">iPhone 13 Pro Max</a>
+                <a href="repair/iphone-13.html" class="ed-link text-ink hover:text-teal">iPhone 13</a>
+                <a href="repair/iphone-12.html" class="ed-link text-ink hover:text-teal">iPhone 12</a>
+                <a href="repair/iphone-se-3.html" class="ed-link text-ink hover:text-teal">iPhone SE (3rd gen)</a>
+                <a href="repair/samsung-galaxy-s26-ultra.html" class="ed-link text-ink hover:text-teal">Galaxy S26 Ultra</a>
+                <a href="repair/samsung-galaxy-s26-plus.html" class="ed-link text-ink hover:text-teal">Galaxy S26+</a>
+                <a href="repair/samsung-galaxy-s26.html" class="ed-link text-ink hover:text-teal">Galaxy S26</a>
+                <a href="repair/samsung-galaxy-s25-ultra.html" class="ed-link text-ink hover:text-teal">Galaxy S25 Ultra</a>
+                <a href="repair/samsung-galaxy-s25-plus.html" class="ed-link text-ink hover:text-teal">Galaxy S25+</a>
+                <a href="repair/samsung-galaxy-s25.html" class="ed-link text-ink hover:text-teal">Galaxy S25</a>
+                <a href="repair/samsung-galaxy-s25-edge.html" class="ed-link text-ink hover:text-teal">Galaxy S25 Edge</a>
+                <a href="repair/samsung-galaxy-s24-ultra.html" class="ed-link text-ink hover:text-teal">Galaxy S24 Ultra</a>
+                <a href="repair/samsung-galaxy-s24.html" class="ed-link text-ink hover:text-teal">Galaxy S24</a>
+                <a href="repair/samsung-galaxy-s23-ultra.html" class="ed-link text-ink hover:text-teal">Galaxy S23 Ultra</a>
+                <a href="repair/samsung-galaxy-s23.html" class="ed-link text-ink hover:text-teal">Galaxy S23</a>
+                <a href="repair/samsung-galaxy-s23-plus.html" class="ed-link text-ink hover:text-teal">Galaxy S23+</a>
+                <a href="repair/model.html?m=samsung-galaxy-z-fold-5" class="ed-link text-ink hover:text-teal">Galaxy Z Fold 5</a>
+                <a href="repair/model.html?m=samsung-galaxy-z-flip-5" class="ed-link text-ink hover:text-teal">Galaxy Z Flip 5</a>
+                <a href="repair/model.html?m=samsung-galaxy-a54" class="ed-link text-ink hover:text-teal">Galaxy A54</a>
+                <a href="repair/pixel-8-pro.html" class="ed-link text-ink hover:text-teal">Pixel 8 Pro</a>
+                <a href="repair/model.html?m=pixel-8" class="ed-link text-ink hover:text-teal">Pixel 8</a>
+                <a href="repair/model.html?m=pixel-7-pro" class="ed-link text-ink hover:text-teal">Pixel 7 Pro</a>
+                <a href="repair/model.html?m=pixel-7" class="ed-link text-ink hover:text-teal">Pixel 7</a>
+                <a href="repair/model.html?m=pixel-7a" class="ed-link text-ink hover:text-teal">Pixel 7a</a>
+                <a href="repair/model.html?m=pixel-6" class="ed-link text-ink hover:text-teal">Pixel 6</a>
+                <a href="repair/model.html?m=oneplus-13" class="ed-link text-ink hover:text-teal">OnePlus 13</a>
+                <a href="repair/model.html?m=xiaomi-14-ultra" class="ed-link text-ink hover:text-teal">Xiaomi 14 Ultra</a>
+                <a href="repair/model.html?m=nothing-phone-2" class="ed-link text-ink hover:text-teal">Nothing Phone (2)</a>
+            </div>
+            <p class="text-xs text-muted mt-10">All links now have pricing pages — full guides (27 models) or pricing overviews (40+ models via template). See <a href="repair/phone-repair-costs-australia.html" class="ed-link font-medium text-teal">all 75+ models on one page →</a></p>
+        </div>
+    </section>
+
+    <footer class="bg-teal-900 text-white mt-24 border-t border-white/10">
+        <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+                <div class="md:col-span-5">
+                    <div class="flex items-center gap-2 mb-4">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg>
+                        <span class="font-serif text-2xl font-medium">RepairRange</span>
+                    </div>
+                    <p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice. Researched by people who actually do this work.</p>
+                </div>
+                <div class="md:col-span-3">
+                    <h3 class="eyebrow text-amber mb-4">Browse</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="brands.html" class="text-white/80 hover:text-amber">Brands</a></li>
+                        <li><a href="fix.html" class="text-white/80 hover:text-amber">Troubleshooting</a></li>
+                        <li><a href="calculator.html" class="text-white/80 hover:text-amber">Cost Calculator</a></li>
+                        <li><a href="locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="blog.html" class="text-white/80 hover:text-amber">Blog</a></li>
+          <li><a href="unlock/index.html" class="text-white/80 hover:text-amber">Unlock Guides</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-4">
+                    <h3 class="eyebrow text-amber mb-4">About</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="text-white/80 hover:text-amber">About RepairRange</a></li>
+                        <li><a href="tools/software-stack-for-repair-shops.html" class="text-white/80 hover:text-amber">Tools we recommend</a></li>
+                        <li><a href="privacy.html" class="text-white/80 hover:text-amber">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-white/80 hover:text-amber">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/15">
+                <p class="text-white/50 text-xs leading-relaxed mb-3 max-w-3xl"><strong class="text-white/70">Affiliate disclosure:</strong> RepairRange may earn a commission when you click links to retailers (including Amazon) and complete a purchase. This never affects the price you pay or our editorial recommendations.</p>
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                    <p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p>
+                    <p class="text-white/50 text-xs">Not affiliated with Apple, Samsung, Google, or any device manufacturer.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        if (window.lucide) window.lucide.createIcons();
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.querySelector('.mobile-menu-button');
+            const menu = document.querySelector('.mobile-menu');
+            if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+        });
+    </script>
     <!-- Chatbot Embedding Code -->
 <script>
   window.chatbotSettings = {
