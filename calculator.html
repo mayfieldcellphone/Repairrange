@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
 <script>
@@ -30,17 +29,13 @@
     .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:700; font-size:0.9375rem; transition:all 200ms ease; border-radius:4px; }
     .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow: 0 4px 0 var(--rr-amber-600); }
     .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow: 0 6px 0 var(--rr-amber-600); }
-    .btn-outline { border: 2px solid var(--rr-teal-700); color: var(--rr-teal-700); }
     
-    .card, .post-card, .sidebar-card, .shadow-box { 
+    .card, .shadow-box { 
         background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; 
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
         border-radius: 4px;
     }
-    .card:hover, .post-card:hover { 
-        border-color:var(--rr-ink); transform:translateY(-2px); 
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15); 
-    }
+    .card:hover { border-color:var(--rr-ink); transform:translateY(-2px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15); }
     
     .bg-mesh-hero { 
         background-color: var(--rr-hero); 
@@ -48,317 +43,130 @@
         background-size: 32px 32px; 
         border-bottom: 1px solid var(--rr-line); 
     }
-
     .mobile-menu { transition:all 300ms ease-in-out; }
-    @media (max-width: 768px) { 
-        .hero-title { font-size: 2.5rem !important; }
-        .hide-mobile { display: none; }
-    }
 </style>
 
 <title>Phone Repair Cost Calculator — RepairRange</title>
-<meta name="description" content="Estimate the cost to fix your phone. Pick brand, model, and issue — get an honest price range for independent shops, authorised service, and DIY.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://repairrange.io/calculator.html">
 </head>
 <body class="bg-paper">
+<header class="header-sticky sticky top-0 z-50 border-b border-line">
+<nav class="w-full max-w-7xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
+<a href="index.html" class="flex items-center gap-2 group">
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" class="flex-shrink-0"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg>
+    <span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span>
+</a>
+<div class="hidden md:flex items-center gap-8 text-sm">
+<a href="brands.html" class="font-medium text-ink hover:text-teal">Brands</a><a href="repair/phone-repair-costs-australia.html" class="font-medium text-ink hover:text-teal">Repairs</a><a href="fix.html" class="font-medium text-ink hover:text-teal">Troubleshoot</a><a href="calculator.html" class="font-medium text-teal" style="color:var(--rr-teal-700)">Calculator</a><a href="blog.html" class="font-medium text-ink hover:text-teal">Blog</a>
+<a href="calculator.html" class="btn btn-primary text-sm">Get a Quote</a>
+</div>
+<button class="mobile-menu-button md:hidden text-ink"><i data-lucide="menu"></i></button>
+</nav>
+<div class="mobile-menu hidden md:hidden border-t border-line bg-white shadow-xl">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-4 text-sm font-medium">
+        <a href="brands.html">Brands</a><a href="repair/phone-repair-costs-australia.html">Repairs</a><a href="fix.html">Troubleshoot</a><a href="blog.html">Blog</a><a href="calculator.html" class="text-teal-700 font-bold">Get a Quote</a>
+    </div>
+</div>
+</header>
 
-    <header class="header-sticky sticky top-0 z-50 border-b border-line">
-        <nav class="w-full max-w-7xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
-            <a href="index.html" class="flex items-center gap-2 group">
-                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" class="flex-shrink-0"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg>
-                <span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span>
-            </a>
-            <div class="hidden md:flex items-center gap-8 text-sm">
-                <a href="brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a>
-                <a href="repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a>
-                <a href="fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a>
-                <a href="calculator.html" class="font-medium text-teal" style="color:var(--rr-teal-700)">Repair Calculator</a>
-                <a href="locations.html" class="font-medium text-ink hover:text-teal">Locations</a>
-                <a href="blog.html" class="font-medium text-ink hover:text-teal">Blog</a>
-                <a href="calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-            </div>
-            <button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button>
-        </nav>
-        <div class="mobile-menu hidden md:hidden border-t border-line bg-white shadow-xl">
-            <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-4 text-sm font-medium">
-                <a href="brands.html" class="hover:text-teal-700">Brands</a>
-                <a href="repair/phone-repair-costs-australia.html" class="hover:text-teal-700">Repairs</a>
-                <a href="fix.html" class="hover:text-teal-700">Troubleshoot</a>
-                <a href="blog.html" class="hover:text-teal-700">Blog</a>
-                <a href="calculator.html" class="text-teal-700 font-bold">Get a Quote</a>
-            </div>
+<section class="bg-mesh-hero">
+<div class="max-w-6xl mx-auto px-6 md:px-8 py-10 md:py-16">
+    <p class="eyebrow mb-4">Cost Calculator</p>
+    <h1 class="display text-5xl md:text-7xl text-ink mb-6">What will it <span class="italic text-teal">cost</span> to fix?</h1>
+    <p class="text-lg text-muted max-w-2xl leading-relaxed">Pick your brand, model, and issue. We'll show you an honest price range from indie shops vs DIY.</p>
+</div>
+</section>
+
+<section class="bg-paper">
+<div class="max-w-6xl mx-auto px-6 md:px-8 py-10 md:py-16">
+    <div class="bg-white border border-line shadow-box">
+        <div class="grid grid-cols-3 border-b border-line">
+            <div class="p-5 md:p-6 border-r border-line" id="step-pill-1"><p class="eyebrow text-teal mb-1">Step 01</p><p class="font-serif text-lg text-ink">Brand</p></div>
+            <div class="p-5 md:p-6 border-r border-line opacity-50" id="step-pill-2"><p class="eyebrow mb-1">Step 02</p><p class="font-serif text-lg text-ink">Model</p></div>
+            <div class="p-5 md:p-6 opacity-50" id="step-pill-3"><p class="eyebrow mb-1">Step 03</p><p class="font-serif text-lg text-ink">Issue</p></div>
         </div>
-    </header>
 
-    <section class="bg-mesh-hero">
-        <div class="max-w-6xl mx-auto px-6 md:px-8 py-10 md:py-16">
-            <p class="eyebrow mb-4">Cost Calculator</p>
-            <h1 class="display text-5xl md:text-7xl text-ink mb-6 max-w-3xl hero-title">What will it <span class="italic text-teal">cost</span> to fix?</h1>
-            <p class="text-lg text-muted max-w-2xl leading-relaxed">Pick your phone and what's wrong. We'll show you a likely price range from independent shops, the authorised service centre, and the DIY route — plus what it's actually worth doing.</p>
-            <p class="text-sm mt-4"><a href="repair/phone-repair-costs-australia.html" class="font-medium text-teal hover:underline">Or browse all 75+ models with pricing on one page →</a></p>
-        </div>
-    </section>
-
-    <section class="bg-paper">
-        <div class="max-w-6xl mx-auto px-6 md:px-8 py-10 md:py-16">
-            <div class="bg-white border border-line shadow-box">
-                <div class="grid grid-cols-3 border-b border-line">
-                    <div class="p-5 md:p-6 border-r border-line" id="step-pill-1"><p class="eyebrow text-teal mb-1">Step 01</p><p class="font-serif text-lg text-ink">Brand</p></div>
-                    <div class="p-5 md:p-6 border-r border-line opacity-50" id="step-pill-2"><p class="eyebrow mb-1">Step 02</p><p class="font-serif text-lg text-ink">Model</p></div>
-                    <div class="p-5 md:p-6 opacity-50" id="step-pill-3"><p class="eyebrow mb-1">Step 03</p><p class="font-serif text-lg text-ink">Issue</p></div>
-                </div>
-
-                <div class="p-6 md:p-10 min-h-[420px]">
-                    <div id="step-1" class="step">
-                        <h2 class="display text-2xl md:text-3xl text-ink mb-3">Which brand is your phone?</h2>
-                        <p class="text-sm text-muted mb-6">Calculator estimates are live for Apple, Samsung, Google, and Other brands (OnePlus, Xiaomi, OPPO, Motorola, Nothing).</p>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-                            <button onclick="pickBrand('Apple')" class="card p-6 text-left"><p class="font-serif text-xl text-ink">Apple</p><p class="text-xs text-muted mt-1">iPhone</p></button>
-                            <button onclick="pickBrand('Samsung')" class="card p-6 text-left"><p class="font-serif text-xl text-ink">Samsung</p><p class="text-xs text-muted mt-1">Galaxy</p></button>
-                            <button onclick="pickBrand('Google')" class="card p-6 text-left"><p class="font-serif text-xl text-ink">Google</p><p class="text-xs text-muted mt-1">Pixel</p></button>
-                            <button onclick="pickBrand('Other')" class="card p-6 text-left"><p class="font-serif text-xl text-ink">Other</p><p class="text-xs text-muted mt-1">OnePlus, Xiaomi…</p></button>
-                        </div>
-                    </div>
-
-                    <div id="step-2" class="step hidden">
-                        <div class="flex items-center gap-3 mb-8">
-                            <button onclick="goToStep(1)" class="text-sm font-medium text-muted hover:text-ink flex items-center gap-1"><i data-lucide="chevron-left" class="w-4 h-4"></i>Back</button>
-                            <span class="text-sm text-muted">|</span>
-                            <span class="text-sm font-medium text-teal" id="chosen-brand"></span>
-                        </div>
-                        <h2 class="display text-2xl md:text-3xl text-ink mb-8">Which model?</h2>
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3" id="model-grid"></div>
-                    </div>
-
-                    <div id="step-3" class="step hidden">
-                        <div class="flex items-center gap-3 mb-8 flex-wrap">
-                            <button onclick="goToStep(2)" class="text-sm font-medium text-muted hover:text-ink flex items-center gap-1"><i data-lucide="chevron-left" class="w-4 h-4"></i>Back</button>
-                            <span class="text-sm text-muted">|</span>
-                            <span class="text-sm font-medium text-teal" id="chosen-summary"></span>
-                        </div>
-                        <h2 class="display text-2xl md:text-3xl text-ink mb-8">What's the problem?</h2>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                            <button onclick="pickIssue('screen')" class="card p-5 text-left flex items-start gap-4"><i data-lucide="square-dashed" class="w-6 h-6 text-teal mt-1 flex-shrink-0"></i><div><p class="font-serif text-lg text-ink">Cracked or broken screen</p><p class="text-xs text-muted mt-1">Glass, OLED, or both</p></div></button>
-                            <button onclick="pickIssue('battery')" class="card p-5 text-left flex items-start gap-4"><i data-lucide="battery-low" class="w-6 h-6 text-teal mt-1 flex-shrink-0"></i><div><p class="font-serif text-lg text-ink">Battery dies fast</p><p class="text-xs text-muted mt-1">Won't last a day</p></div></button>
-                            <button onclick="pickIssue('back')" class="card p-5 text-left flex items-start gap-4"><i data-lucide="square" class="w-6 h-6 text-teal mt-1 flex-shrink-0"></i><div><p class="font-serif text-lg text-ink">Cracked back glass</p><p class="text-xs text-muted mt-1">Back panel only</p></div></button>
-                            <button onclick="pickIssue('charging')" class="card p-5 text-left flex items-start gap-4"><i data-lucide="plug-zap" class="w-6 h-6 text-teal mt-1 flex-shrink-0"></i><div><p class="font-serif text-lg text-ink">Won't charge</p><p class="text-xs text-muted mt-1">Port or battery issue</p></div></button>
-                            <button onclick="pickIssue('water')" class="card p-5 text-left flex items-start gap-4"><i data-lucide="droplets" class="w-6 h-6 text-teal mt-1 flex-shrink-0"></i><div><p class="font-serif text-lg text-ink">Water damage</p><p class="text-xs text-muted mt-1">Dropped in liquid</p></div></button>
-                            <button onclick="pickIssue('dead')" class="card p-5 text-left flex items-start gap-4"><i data-lucide="circle-off" class="w-6 h-6 text-teal mt-1 flex-shrink-0"></i><div><p class="font-serif text-lg text-ink">Won't turn on</p><p class="text-xs text-muted mt-1">Black screen, no response</p></div></button>
-                        </div>
-                    </div>
-
-                    <div id="results" class="hidden">
-                        <div class="flex items-center gap-3 mb-8 flex-wrap">
-                            <button onclick="reset()" class="text-sm font-medium text-muted hover:text-ink flex items-center gap-1"><i data-lucide="rotate-ccw" class="w-4 h-4"></i>Start over</button>
-                            <span class="text-sm text-muted">|</span>
-                            <span class="text-sm font-medium text-teal" id="result-summary"></span>
-                        </div>
-                        <p class="eyebrow mb-3">Estimated cost range</p>
-                        <p class="display text-5xl md:text-7xl text-ink mb-2 tnum" id="result-range">$0–$0</p>
-                        <p class="text-muted mb-10" id="result-note"></p>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-line mb-10">
-                            <div class="bg-white p-6"><p class="eyebrow mb-3">Independent shop</p><p class="font-mono text-xl tnum text-ink" id="price-indie">—</p><p class="text-xs text-muted mt-2">Typical local repair shop</p></div>
-                            <div class="bg-white p-6"><p class="eyebrow mb-3">Authorised service</p><p class="font-mono text-xl tnum text-ink" id="price-auth">—</p><p class="text-xs text-muted mt-2">Official brand repair</p></div>
-                            <div class="bg-white p-6"><p class="eyebrow mb-3">DIY (parts + tools)</p><p class="font-mono text-xl tnum text-ink" id="price-diy">—</p><p class="text-xs text-muted mt-2">Using engineer-approved kits</p></div>
-                        </div>
-                        <div class="bg-hero border border-line p-6 md:p-8 mb-8 shadow-sm">
-                            <p class="eyebrow mb-3">Our take</p>
-                            <p class="text-ink leading-relaxed" id="result-take"></p>
-                        </div>
-                        <div class="flex flex-col sm:flex-row gap-3">
-                            <a href="locations.html" class="btn btn-primary">Find a local shop <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-                            <a href="fix.html" class="btn btn-ghost">Read Troubleshooting</a>
-                        </div>
-                    </div>
+        <div class="p-6 md:p-10 min-h-[420px]">
+            <div id="step-1" class="step">
+                <h2 class="display text-2xl md:text-3xl text-ink mb-8">Which brand is your phone?</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <button onclick="pickBrand('Apple')" class="card p-6 text-left"><p class="font-serif text-xl text-ink">Apple</p></button>
+                    <button onclick="pickBrand('Samsung')" class="card p-6 text-left"><p class="font-serif text-xl text-ink">Samsung</p></button>
+                    <button onclick="pickBrand('Google')" class="card p-6 text-left"><p class="font-serif text-xl text-ink">Google</p></button>
+                    <button onclick="pickBrand('Other')" class="card p-6 text-left"><p class="font-serif text-xl text-ink">Other</p></button>
                 </div>
             </div>
+            <div id="step-2" class="step hidden">
+                <button onclick="goToStep(1)" class="text-sm font-medium text-muted hover:text-teal flex items-center gap-1 mb-8"><i data-lucide="chevron-left" class="w-4 h-4"></i>Back</button>
+                <h2 class="display text-2xl md:text-3xl text-ink mb-8" id="step-2-title">Which model?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-3" id="model-grid"></div>
+            </div>
+            <div id="step-3" class="step hidden">
+                <button onclick="goToStep(2)" class="text-sm font-medium text-muted hover:text-teal flex items-center gap-1 mb-8"><i data-lucide="chevron-left" class="w-4 h-4"></i>Back</button>
+                <h2 class="display text-2xl md:text-3xl text-ink mb-8">What's the problem?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <button onclick="pickIssue('screen')" class="card p-6 text-left flex items-start gap-4"><i data-lucide="square-dashed" class="w-6 h-6 text-teal mt-1 flex-shrink-0"></i><div><p class="font-serif text-lg text-ink">Broken screen</p></div></button>
+                    <button onclick="pickIssue('battery')" class="card p-6 text-left flex items-start gap-4"><i data-lucide="battery-low" class="w-6 h-6 text-teal mt-1 flex-shrink-0"></i><div><p class="font-serif text-lg text-ink">Battery dying</p></div></button>
+                    <button onclick="pickIssue('back')" class="card p-6 text-left flex items-start gap-4"><i data-lucide="square" class="w-6 h-6 text-teal mt-1 flex-shrink-0"></i><div><p class="font-serif text-lg text-ink">Cracked back</p></div></button>
+                    <button onclick="pickIssue('charging')" class="card p-6 text-left flex items-start gap-4"><i data-lucide="plug-zap" class="w-6 h-6 text-teal mt-1 flex-shrink-0"></i><div><p class="font-serif text-lg text-ink">Won't charge</p></div></button>
+                </div>
+            </div>
+            <div id="results" class="hidden">
+                <button onclick="reset()" class="text-sm font-medium text-muted hover:text-teal flex items-center gap-1 mb-8"><i data-lucide="rotate-ccw" class="w-4 h-4"></i>Start over</button>
+                <p class="eyebrow mb-2">Estimated cost range</p>
+                <p class="display text-5xl md:text-7xl text-ink mb-10" id="result-range">$0–$0</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-line mb-10">
+                    <div class="bg-white p-6"><p class="eyebrow mb-2">Independent Shop</p><p class="font-mono text-xl text-ink" id="price-indie">—</p></div>
+                    <div class="bg-white p-6"><p class="eyebrow mb-2">Authorised Service</p><p class="font-mono text-xl text-ink" id="price-auth">—</p></div>
+                    <div class="bg-white p-6"><p class="eyebrow mb-2">DIY Kit</p><p class="font-mono text-xl text-ink" id="price-diy">—</p></div>
+                </div>
+                <a href="locations.html" class="btn btn-primary">Find a local shop <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            </div>
         </div>
-    </section>
+    </div>
+</div>
+</section>
 
-    <footer class="bg-teal-900 text-white mt-24 border-t border-white/10">
-        <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20 text-center">
-            <p class="text-white/50 text-xs">&copy; 2026 RepairRange. Expertly researched for Aussie tech owners.</p>
-        </div>
-    </footer>
+<footer class="bg-teal-900 text-white py-16 text-center border-t border-white/10">
+    <p class="text-white/50 text-xs">&copy; 2026 RepairRange. Expertly researched for Aussie tech owners.</p>
+</footer>
 
-    <script>
-        if (window.lucide) window.lucide.createIcons();
-        document.addEventListener('DOMContentLoaded', () => {
-            const btn = document.querySelector('.mobile-menu-button');
-            const menu = document.querySelector('.mobile-menu');
-            if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
-        });
+<script>
+const MODELS={
+    Apple:[{n:'iPhone 17',s:'iphone-17'},{n:'iPhone 16',s:'iphone-16'},{n:'iPhone 15',s:'iphone-15'},{n:'iPhone 14',s:'iphone-14'},{n:'iPhone 13',s:'iphone-13'}],
+    Samsung:[{n:'Galaxy S26',s:'samsung-galaxy-s26'},{n:'Galaxy S25',s:'samsung-galaxy-s25'},{n:'Galaxy S24',s:'samsung-galaxy-s24'}],
+    Google:[{n:'Pixel 9',s:'pixel-9'},{n:'Pixel 8',s:'pixel-8'},{n:'Pixel 7',s:'pixel-7'}],
+    Other:[{n:'OnePlus 13',s:'oneplus-13'},{n:'Nothing Phone 2',s:'nothing-phone-2'}]
+};
+const ISSUE_PROFILES={
+    screen:{l:'Screen',b:[200,320]},battery:{l:'Battery',b:[79,129]},back:{l:'Back glass',b:[149,249]},charging:{l:'Charging port',b:[89,159]}
+};
+const MODEL_MULT={'iphone-17':1.3,'iphone-16':1.2,'iphone-15':1.15,'samsung-galaxy-s26':1.2};
+const state={brand:null,model:null,issue:null};
 
-        const MODELS = {
-            Apple: [
-                { slug: 'iphone-17-pro-max', name: 'iPhone 17 Pro Max' },
-                { slug: 'iphone-17-pro', name: 'iPhone 17 Pro' },
-                { slug: 'iphone-17', name: 'iPhone 17' },
-                { slug: 'iphone-17-air', name: 'iPhone 17 Air' },
-                { slug: 'iphone-16-pro-max', name: 'iPhone 16 Pro Max' },
-                { slug: 'iphone-16-pro', name: 'iPhone 16 Pro' },
-                { slug: 'iphone-16-plus', name: 'iPhone 16 Plus' },
-                { slug: 'iphone-16', name: 'iPhone 16' },
-                { slug: 'iphone-15-pro-max', name: 'iPhone 15 Pro Max' },
-                { slug: 'iphone-15-pro', name: 'iPhone 15 Pro' },
-                { slug: 'iphone-15-plus', name: 'iPhone 15 Plus' },
-                { slug: 'iphone-15', name: 'iPhone 15' },
-                { slug: 'iphone-14-pro-max', name: 'iPhone 14 Pro Max' },
-                { slug: 'iphone-14-pro', name: 'iPhone 14 Pro' },
-                { slug: 'iphone-14', name: 'iPhone 14' },
-                { slug: 'iphone-13-pro-max', name: 'iPhone 13 Pro Max' },
-                { slug: 'iphone-13', name: 'iPhone 13' },
-                { slug: 'iphone-12', name: 'iPhone 12' },
-                { slug: 'iphone-se-3', name: 'iPhone SE (3rd gen)' }
-            ],
-            Samsung: [
-                { slug: 'samsung-galaxy-s26-ultra', name: 'Galaxy S26 Ultra' },
-                { slug: 'samsung-galaxy-s26-plus', name: 'Galaxy S26+' },
-                { slug: 'samsung-galaxy-s26', name: 'Galaxy S26' },
-                { slug: 'samsung-galaxy-s25-ultra', name: 'Galaxy S25 Ultra' },
-                { slug: 'samsung-galaxy-s25-plus', name: 'Galaxy S25+' },
-                { slug: 'samsung-galaxy-s25', name: 'Galaxy S25' },
-                { slug: 'samsung-galaxy-s25-edge', name: 'Galaxy S25 Edge' },
-                { slug: 'samsung-galaxy-s24-ultra', name: 'Galaxy S24 Ultra' },
-                { slug: 'samsung-galaxy-s24', name: 'Galaxy S24' },
-                { slug: 'samsung-galaxy-s23-ultra', name: 'Galaxy S23 Ultra' },
-                { slug: 'samsung-galaxy-s23-plus', name: 'Galaxy S23+' },
-                { slug: 'samsung-galaxy-s23', name: 'Galaxy S23' },
-                { slug: 'samsung-galaxy-z-fold-6', name: 'Galaxy Z Fold 6' },
-                { slug: 'samsung-galaxy-z-fold-5', name: 'Galaxy Z Fold 5' },
-                { slug: 'samsung-galaxy-z-flip-6', name: 'Galaxy Z Flip 6' },
-                { slug: 'samsung-galaxy-z-flip-5', name: 'Galaxy Z Flip 5' },
-                { slug: 'samsung-galaxy-a55', name: 'Galaxy A55' },
-                { slug: 'samsung-galaxy-a54', name: 'Galaxy A54' }
-            ],
-            Google: [
-                { slug: 'pixel-9-pro-xl', name: 'Pixel 9 Pro XL' },
-                { slug: 'pixel-9-pro', name: 'Pixel 9 Pro' },
-                { slug: 'pixel-9', name: 'Pixel 9' },
-                { slug: 'pixel-8-pro', name: 'Pixel 8 Pro' },
-                { slug: 'pixel-8', name: 'Pixel 8' },
-                { slug: 'pixel-8a', name: 'Pixel 8a' },
-                { slug: 'pixel-7-pro', name: 'Pixel 7 Pro' },
-                { slug: 'pixel-7', name: 'Pixel 7' },
-                { slug: 'pixel-7a', name: 'Pixel 7a' },
-                { slug: 'pixel-6', name: 'Pixel 6' }
-            ],
-            Other: [
-                { slug: 'oneplus-13', name: 'OnePlus 13' },
-                { slug: 'oneplus-12', name: 'OnePlus 12' },
-                { slug: 'nothing-phone-2', name: 'Nothing Phone (2)' },
-                { slug: 'xiaomi-14-ultra', name: 'Xiaomi 14 Ultra' },
-                { slug: 'xiaomi-14', name: 'Xiaomi 14' },
-                { slug: 'oppo-find-x8-pro', name: 'OPPO Find X8 Pro' },
-                { slug: 'motorola-razr-50-ultra', name: 'Motorola Razr 50 Ultra' }
-            ]
-        };
-
-        const ISSUE_PROFILES = {
-            screen:   { label: 'Screen replacement', basis: [200, 320], note: 'Includes OLED panel and digitiser.' },
-            battery:  { label: 'Battery replacement', basis: [79, 129], note: 'Includes new battery and labour.' },
-            back:     { label: 'Back glass replacement', basis: [149, 249], note: 'On phones with glued backs.' },
-            charging: { label: 'Charging port', basis: [89, 159], note: 'Assumes a real port replacement.' },
-            water:    { label: 'Water damage diagnostic', basis: [60, 90], note: 'Diagnostic only. Board work is extra.' },
-            dead:     { label: 'No-power diagnostic', basis: [50, 80], note: 'Diagnostic only.' }
-        };
-
-        const MODEL_MULT = {
-            'iphone-17-pro-max': 1.75, 'iphone-17-pro': 1.6, 'iphone-17': 1.3, 'iphone-17-air': 1.45,
-            'iphone-16-pro-max': 1.65, 'iphone-16-pro': 1.5, 'iphone-16-plus': 1.3, 'iphone-16': 1.2,
-            'iphone-15-pro-max': 1.6, 'iphone-15-pro': 1.45, 'iphone-15-plus': 1.25,
-            'iphone-15': 1.15, 'iphone-14-pro-max': 1.5, 'iphone-14-pro': 1.35,
-            'iphone-14': 1.05, 'iphone-13-pro-max': 1.35, 'iphone-13': 0.95,
-            'iphone-12': 0.85, 'iphone-se-3': 0.55,
-            'samsung-galaxy-s26-ultra': 1.8, 'samsung-galaxy-s26-plus': 1.5, 'samsung-galaxy-s26': 1.15,
-            'samsung-galaxy-s25-ultra': 1.7, 'samsung-galaxy-s25-plus': 1.4,
-            'samsung-galaxy-s25': 1.05, 'samsung-galaxy-s25-edge': 1.5,
-            'samsung-galaxy-s24-ultra': 1.65, 'samsung-galaxy-s24': 1.3,
-            'samsung-galaxy-s23-ultra': 1.55, 'samsung-galaxy-s23-plus': 1.35, 'samsung-galaxy-s23': 1.15,
-            'samsung-galaxy-z-fold-6': 2.3, 'samsung-galaxy-z-fold-5': 2.2,
-            'samsung-galaxy-z-flip-6': 1.6, 'samsung-galaxy-z-flip-5': 1.55,
-            'samsung-galaxy-a55': 0.8, 'samsung-galaxy-a54': 0.75,
-            'pixel-9-pro-xl': 1.55, 'pixel-9-pro': 1.4, 'pixel-9': 1.2,
-            'pixel-8-pro': 1.3, 'pixel-8': 1.1, 'pixel-8a': 0.8,
-            'pixel-7-pro': 1.15, 'pixel-7': 0.9, 'pixel-7a': 0.7, 'pixel-6': 0.85,
-            'oneplus-13': 1.3, 'oneplus-12': 1.2, 'xiaomi-14-ultra': 1.5, 'xiaomi-14': 1.1,
-            'nothing-phone-2': 1.0, 'oppo-find-x8-pro': 1.4, 'motorola-razr-50-ultra': 2.0
-        };
-
-        const state = { brand: null, model: null, modelName: null, issue: null };
-
-        function pickBrand(brand) {
-            state.brand = brand;
-            document.getElementById('chosen-brand').textContent = brand;
-            const grid = document.getElementById('model-grid');
-            grid.innerHTML = MODELS[brand].map(m =>
-                '<button onclick="pickModel(\'' + m.slug + '\', \'' + m.name.replace(/'/g, "\\'") + '\')" class="card p-4 text-left"><p class="font-serif text-base text-ink leading-snug">' + m.name + '</p></button>'
-            ).join('');
-            goToStep(2);
-            if (window.lucide) window.lucide.createIcons();
-        }
-
-        function pickModel(slug, name) {
-            state.model = slug;
-            state.modelName = name;
-            document.getElementById('chosen-summary').textContent = state.brand + ' \u00b7 ' + name;
-            goToStep(3);
-            if (window.lucide) window.lucide.createIcons();
-        }
-
-        function pickIssue(key) { state.issue = key; showResults(); }
-
-        function goToStep(n) {
-            for (let i = 1; i <= 3; i++) {
-                const el = document.getElementById('step-' + i);
-                if (el) el.classList.add('hidden');
-                const pill = document.getElementById('step-pill-' + i);
-                if (pill) pill.classList[i <= n ? 'remove' : 'add']('opacity-50');
-            }
-            document.getElementById('step-' + n).classList.remove('hidden');
-            document.getElementById('results').classList.add('hidden');
-        }
-
-        function showResults() {
-            document.getElementById('step-1').classList.add('hidden');
-            document.getElementById('step-2').classList.add('hidden');
-            document.getElementById('step-3').classList.add('hidden');
-            document.getElementById('results').classList.remove('hidden');
-
-            const prof = ISSUE_PROFILES[state.issue];
-            const mult = MODEL_MULT[state.model] || 1;
-            const indieLow  = Math.round(prof.basis[0] * mult);
-            const indieHigh = Math.round(prof.basis[1] * mult);
-            const authLow   = Math.round(indieLow * 1.4);
-            const authHigh  = Math.round(indieHigh * 1.55);
-            const diyLow    = Math.round(indieLow * 0.45);
-            const diyHigh   = Math.round(indieHigh * 0.55);
-
-            document.getElementById('result-summary').textContent = state.brand + ' \u00b7 ' + state.modelName + ' \u00b7 ' + prof.label;
-            document.getElementById('result-range').textContent = '$' + indieLow + '\u2013$' + indieHigh;
-            document.getElementById('result-note').textContent = prof.note;
-            document.getElementById('price-indie').textContent = '$' + indieLow + '\u2013$' + indieHigh;
-            document.getElementById('price-auth').textContent  = '$' + authLow + '\u2013$' + authHigh;
-            document.getElementById('price-diy').textContent   = '$' + diyLow + '\u2013$' + diyHigh;
-
-            const takes = {
-                screen: 'If the phone is less than 2 years old, get the screen done. If it’s 3+ years old, weigh the cost against trade-in value.',
-                battery: 'Battery replacements are nearly always worth it: cheap, fast, restores hours of daily use.',
-                back: 'Cosmetic only. If the phone works and you use a case, this can usually wait.',
-                charging: 'Try a port clean with a wooden toothpick first — solves it ~30% of the time, for free.',
-                water: 'Diagnostic only. Worst-case: board-level repair at $300–$600+, or write-off.',
-                dead: 'Diagnostic is essential. Could be a cheap battery or expensive board work.'
-            };
-            document.getElementById('result-take').textContent = takes[state.issue];
-
-            if (window.lucide) window.lucide.createIcons();
-        }
-
-        function reset() {
-            state.brand = null; state.model = null; state.modelName = null; state.issue = null;
-            goToStep(1);
-        }
-    </script>
+function pickBrand(b){
+    state.brand=b; document.getElementById('step-2-title').textContent=`Which ${b} model?`;
+    document.getElementById('model-grid').innerHTML=MODELS[b].map(m=>`<button onclick="pickModel('${m.s}','${m.n}')" class="card p-4 text-left font-serif">${m.n}</button>`).join('');
+    goToStep(2);
+}
+function pickModel(s,n){state.model=s; state.modelName=n; goToStep(3);}
+function pickIssue(i){state.issue=i; showResults();}
+function goToStep(n){
+    [1,2,3,'results'].forEach(s=>{const el=document.getElementById('step-'+s)||document.getElementById(s); if(el)el.classList.add('hidden');});
+    document.getElementById(n===4?'results':'step-'+n).classList.remove('hidden');
+    [1,2,3].forEach(p=>{document.getElementById('step-pill-'+p).classList[p<=n?'remove':'add']('opacity-50');});
+}
+function showResults(){
+    const prof=ISSUE_PROFILES[state.issue]; const mult=MODEL_MULT[state.model]||1;
+    const l=Math.round(prof.b[0]*mult); const h=Math.round(prof.b[1]*mult);
+    document.getElementById('result-range').textContent=`$${l}–$${h}`;
+    document.getElementById('price-indie').textContent=`$${l}–$${h}`;
+    document.getElementById('price-auth').textContent=`$${Math.round(l*1.4)}–$${Math.round(h*1.5)}`;
+    document.getElementById('price-diy').textContent=`$${Math.round(l*0.4)}–$${Math.round(h*0.5)}`;
+    goToStep(4);
+}
+function reset(){state.brand=null;goToStep(1);}
+if(window.lucide)window.lucide.createIcons();
+document.querySelector('.mobile-menu-button').addEventListener('click',()=>document.querySelector('.mobile-menu').classList.toggle('hidden'));
+</script>
 </body>
 </html>
