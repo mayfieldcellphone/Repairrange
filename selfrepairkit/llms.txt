@@ -1,0 +1,35 @@
+# SelfRepairKit Australia
+> DIY phone repair kits for iPhone, Samsung, and OPPO. Screen replacement kits and battery replacement kits with tools, video guides, and 90-day warranty. Ships from Newcastle, NSW Australia.
+
+## About
+SelfRepairKit Australia sells DIY phone repair kits. Every kit includes the replacement part (screen or battery), precision tools (pentalobe, tri-point, Phillips screwdrivers, suction cup, spudgers, ESD tweezers), adhesive strips, and a link to a step-by-step video repair guide. 99 products across iPhone (7 to 17 Pro Max), Samsung Galaxy (S21-S26 Ultra, A-series), and OPPO (Find, Reno, A-series). Three screen quality tiers: Budget (INCELL LCD), Pro (Aftermarket Soft OLED), Elite (OEM Service Pack). Diagnosable batteries and screens available for Apple System Configuration pairing. Operated from Newcastle NSW by Mayfield Phone Repair.
+
+## Shop
+- [Browse All Kits](https://selfrepairkit.com.au/shop.html)
+- [iPhone Repair Kits](https://selfrepairkit.com.au/shop.html?brand=apple)
+- [Samsung Repair Kits](https://selfrepairkit.com.au/shop.html?brand=samsung)
+- [OPPO Repair Kits](https://selfrepairkit.com.au/shop.html?brand=oppo)
+- [Accessories & Tools](https://selfrepairkit.com.au/shop.html?category=accessories)
+
+## Guides
+- [Free Video Repair Guides](https://selfrepairkit.com.au/guides.html)
+
+## Blog
+- [How to Fix a Cracked Phone Screen at Home](https://selfrepairkit.com.au/blog/how-to-fix-cracked-phone-screen-at-home.html)
+- [Can I Change My iPhone Battery Myself?](https://selfrepairkit.com.au/blog/change-iphone-battery-yourself.html)
+- [How to Safely Replace Samsung Phone Battery](https://selfrepairkit.com.au/blog/safely-replace-samsung-battery.html)
+- [What Tools Do I Need to Open an iPhone?](https://selfrepairkit.com.au/blog/what-tools-to-open-iphone.html)
+- [Phone Battery Draining Fast — How to Fix It](https://selfrepairkit.com.au/blog/phone-battery-draining-fast-fix.html)
+- [Fix Non-Genuine Part Warning After Screen or Battery Replacement](https://selfrepairkit.com.au/blog/fix-non-genuine-part-warning-iphone.html)
+- [INCELL vs OLED vs OEM Replacement Screens](https://selfrepairkit.com.au/blog/incell-vs-oled-vs-oem-screen-replacement-guide.html)
+- [Can You Replace a Phone Battery? Everything You Need to Know](https://selfrepairkit.com.au/blog/can-you-replace-phone-battery-guide.html)
+
+## Related Sites
+- [RepairRange.io — Phone repair cost database](https://repairrange.io)
+- [Repair Cost Calculator](https://repairrange.io/calculator.html)
+- [Mayfield Phone Repair — Professional repair Newcastle NSW](https://www.mayfieldphonerepair.com.au)
+
+## Contact
+- Email: support@selfrepairkit.com.au
+- Phone: (02) 4049 1735
+- Location: 276 Maitland Rd, Mayfield NSW 2304

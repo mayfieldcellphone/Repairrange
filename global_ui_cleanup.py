@@ -1,0 +1,100 @@
+import os
+import re
+
+# Master Configuration for a "Clean, Professional, Technician-Led" Look
+TARGET_DIR = r"C:\Users\dell lattitude\.accio\accounts\1728917364\agents\MID-29917364U1780312-3FBB0C-8987-5BD472\project"
+
+MASTER_STYLE = """<style>
+    :root { 
+        --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; 
+        --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; 
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+    .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+    .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+    .eyebrow { font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--rr-teal-700); }
+    
+    .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
+    .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:700; font-size:0.9375rem; transition:all 200ms ease; border-radius:4px; }
+    .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow: 0 4px 0 var(--rr-amber-600); }
+    .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow: 0 6px 0 var(--rr-amber-600); }
+    .btn-outline { border: 2px solid var(--rr-teal-700); color: var(--rr-teal-700); }
+    
+    .card, .post-card, .sidebar-card, .shadow-box { 
+        background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; 
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
+        border-radius: 4px;
+    }
+    .card:hover, .post-card:hover { 
+        border-color:var(--rr-ink); transform:translateY(-2px); 
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15); 
+    }
+    
+    .bg-mesh-hero { 
+        background-color: var(--rr-hero); 
+        background-image: radial-gradient(rgba(15, 118, 110, 0.1) 1.5px, transparent 0); 
+        background-size: 32px 32px; 
+        border-bottom: 1px solid var(--rr-line); 
+    }
+
+    .funnel-table { width: 100%; border-collapse: separate; border-spacing: 0; background: white; border-radius: 4px; overflow: hidden; border: 1px solid var(--rr-line); }
+    .funnel-table th { background: var(--rr-paper-2); padding: 1rem; text-align: left; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: var(--rr-muted); border-bottom: 1px solid var(--rr-line); }
+    .funnel-table td { padding: 1rem; border-bottom: 1px solid var(--rr-line); vertical-align: middle; }
+    
+    .savings-badge { background: #FEF3C7; color: #92400E; font-size: 0.625rem; font-weight: 800; padding: 0.2rem 0.5rem; border-radius: 99px; }
+    
+    .mobile-menu { transition:all 300ms ease-in-out; }
+    @media (max-width: 768px) { 
+        .hero-title { font-size: 2.5rem !important; }
+        .hide-mobile { display: none; }
+    }
+</style>"""
+
+def global_cleanup():
+    count = 0
+    for root, dirs, files in os.walk(TARGET_DIR):
+        if "node_modules" in root or ".git" in root or "repairrange-final-push" in root:
+            continue
+            
+        for file in files:
+            if file.endswith(".html"):
+                path = os.path.join(root, file)
+                with open(path, 'r', encoding='utf-8') as f:
+                    content = f.read()
+
+                # 1. Force Master Style
+                content = re.sub(r'<style>.*?</style>', MASTER_STYLE, content, flags=re.DOTALL)
+
+                # 2. Hero Section Refinement
+                # Remove decorative skewed divs and big padding
+                content = re.sub(r'<div class="absolute right-0 top-0 w-1/3.*?"></div>', '', content, flags=re.DOTALL)
+                content = re.sub(r'<div class="absolute right-0 top-0 w-1/2.*?"></div>', '', content, flags=re.DOTALL)
+                
+                # Shrink Hero Padding (Surgical replacement for large paddings)
+                content = content.replace("py-16 md:py-24", "py-10 md:py-16")
+                content = content.replace("py-12 md:py-20", "py-8 md:py-12")
+
+                # 3. Content Hook Cleanup
+                # Identify and delete "Image Pending" or empty smartphone icons
+                content = re.sub(r'<div class="hidden md:block w-48 h-64.*?">.*?</div>\s*</div>', '</div>', content, flags=re.DOTALL)
+                content = content.replace("Image Pending", "")
+                
+                # Replace Body Classes
+                content = content.replace('<body class="bg-mesh">', '<body class="bg-paper">')
+                content = content.replace('<body class="bg-mesh-hero">', '<body class="bg-paper">')
+
+                # 4. Standardize Titles (Remove spanning colors if too messy)
+                # Keep branding teal but ensure titles are grounded
+                if "index.html" in file:
+                    content = re.sub(r'<h1 class="display text-5xl md:text-7xl.*?">.*?</h1>', 
+                                    '<h1 class="display text-5xl md:text-7xl text-ink mb-6 tracking-tighter hero-title">What is the real <span class="text-teal italic font-serif">phone repair cost</span> in Australia?</h1>', content)
+
+                with open(path, 'w', encoding='utf-8') as f:
+                    f.write(content)
+                count += 1
+    
+    print(f"Successfully cleaned and unified {count} files for a high-authority technician look.")
+
+if __name__ == "__main__":
+    global_cleanup()

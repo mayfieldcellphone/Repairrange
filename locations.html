@@ -1,336 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CWRGPBDWZD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-CWRGPBDWZD');
-</script>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<style>
-:root{
-  --rr-teal-900:#0f172a; --rr-teal-700:#14b8a6; --rr-amber-500:#f59e0b; --rr-amber-600:#d97706; 
-  --rr-ink:#1e293b; --rr-muted:#64748b; --rr-line:#e2e8f0; --rr-paper:#f8fafc; --rr-paper-2:#f1f5f9;
-}
-html{scroll-behavior:smooth}
-body{font-family:'Inter',sans-serif;color:var(--rr-ink);background:var(--rr-paper);-webkit-font-smoothing:antialiased}
-.font-serif{font-family:'Fraunces',serif}
-.display{font-family:'Fraunces',serif;font-weight:400;letter-spacing:-0.01em;line-height:1.05}
-.eyebrow{font-size:0.75rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--rr-teal-700)}
-.card{background:white; border:1px solid var(--rr-line); border-radius:16px; transition:all 400ms cubic-bezier(0.4, 0, 0.2, 1); overflow:hidden; box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);}
-.card:hover{border-color:var(--rr-teal-700); transform:translateY(-6px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);}
-.btn{display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.5rem; font-weight:700; font-size:0.9375rem; transition:all 200ms ease; border-radius:12px;}
-.btn-primary{background:var(--rr-amber-500); color:var(--rr-teal-900); box-shadow: 0 4px 14px 0 rgba(245, 158, 11, 0.3); border:none;}
-.btn-primary:hover{background:var(--rr-amber-600); transform:translateY(-1px);}
-.bg-mesh{background-color: var(--rr-paper); background-image: radial-gradient(var(--rr-line) 1px, transparent 0); background-size: 24px 24px;}
-.header-sticky{backdrop-filter:blur(16px); background:rgba(255,255,255,0.8);}
-.price-table{width:100%; border-collapse:separate; border-spacing:0; background:white; border-radius:16px; overflow:hidden; border:1px solid var(--rr-line);}
-.price-table th{background:var(--rr-paper-2); text-align:left; padding:1.25rem 1.5rem; font-size:0.75rem; font-weight:800; text-transform:uppercase; color:var(--rr-muted); border-bottom:1px solid var(--rr-line)}
-.price-table td{padding:1.5rem; border-bottom:1px solid var(--rr-line);}
-.sidebar-card{background:white; border:1px solid var(--rr-line); border-radius:16px; padding:1.75rem; position:relative; overflow:hidden;}
-.sidebar-card::after{content:''; position:absolute; top:0; left:0; width:4px; height:100%; background:var(--rr-teal-700);}
-</style>
-
-<title>Phone Repair Costs by City — RepairRange</title>
-<meta name="description" content="Local phone repair pricing for Sydney, Melbourne, Brisbane, Perth, Newcastle and more. Real quotes from verified shops, updated quarterly.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://repairrange.io/locations.html">
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <style>
+        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
+        html { scroll-behavior: smooth; }
+        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
+        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
+        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
+        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
+        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
+        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
+        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
+        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
+        .ed-link:hover { background-size:100% 1px; }
+        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
+        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
+        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
+        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
+        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
+        .mobile-menu { transition:all 300ms ease-in-out; }
+        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
+    </style>
+    <title>Find a Phone Repair Shop Near You — RepairRange</title>
 </head>
-<body class="bg-mesh">
-
-    <header class="header-sticky sticky top-0 z-50 border-b border-line">
-        <nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
-            <a href="index.html" class="flex items-center gap-2 group">
-                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" class="flex-shrink-0"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg>
-                <span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span>
+<body class="bg-slate-50">
+    <header class="bg-white border-b border-line sticky top-0 z-50">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg>
+                <span class="font-serif text-2xl font-medium">RepairRange</span>
             </a>
-            <div class="hidden md:flex items-center gap-8 text-sm">
-                <a href="brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a>
-                <a href="repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a>
-                <a href="fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a>
-                <a href="calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a>
-                <a href="unlock/index.html" class="ed-link font-medium text-ink hover:text-teal">Phone Unlock</a>
-                <a href="locations.html" class="ed-link font-medium text-teal">Locations</a>
-                <a href="blog.html" class="ed-link font-medium text-ink hover:text-teal">Blog</a>
-                <a href="calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            <div class="flex gap-8 text-sm font-medium">
+                <a href="brands.html">Brands</a>
+                <a href="repair/phone-repair-costs-australia.html">Repairs</a>
+                <a href="locations.html" class="text-teal-600">Locations</a>
             </div>
-            <button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button>
         </nav>
-        <div class="mobile-menu hidden md:hidden border-t border-line bg-paper">
-            <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
-                <a href="brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a>
-                <a href="repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a>
-                <a href="fix.html" class="py-2 font-medium text-ink hover:text-teal">Troubleshoot</a>
-                <a href="calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a>
-                <a href="unlock/index.html" class="py-2 font-medium text-ink hover:text-teal">Phone Unlock</a>
-                <a href="locations.html" class="py-2 font-medium text-teal">Locations</a>
-                <a href="blog.html" class="py-2 font-medium text-ink hover:text-teal">Blog</a>
-                <a href="calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a>
-            </div>
-        </div>
     </header>
-
-    <section class="bg-mesh border-b border-line">
-        <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-24">
-            <p class="eyebrow mb-4">By city</p>
-            <h1 class="display text-5xl md:text-7xl text-ink mb-6 max-w-3xl">Local <span class="italic">prices</span>, local <span class="italic">techs</span>.</h1>
-            <p class="text-lg text-muted max-w-2xl leading-relaxed">Phone repair pricing varies more by city than by phone model — sometimes 30% for the same job. Pick yours for honest 2026 independent-shop ranges and where in the city the same repair costs less.</p>
-            <p class="text-sm mt-4"><a href="repair/phone-repair-costs-australia.html" class="ed-link font-medium text-teal">Or compare pricing across all 75+ models on one page →</a></p>
+    <main class="max-w-6xl mx-auto px-6 py-20">
+        <h1 class="display text-5xl md:text-7xl mb-6">Find a trusted shop.</h1>
+        <p class="text-xl text-muted mb-12 max-w-2xl">Verified Australian repairers. Compare local pricing and book same-day service.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <a href="locations/sydney.html" class="card p-8"><h3 class="text-2xl font-bold mb-2">Sydney</h3><p class="text-muted">NSW Metro</p></a>
+            <a href="locations/melbourne.html" class="card p-8"><h3 class="text-2xl font-bold mb-2">Melbourne</h3><p class="text-muted">VIC Metro</p></a>
+            <a href="locations/brisbane.html" class="card p-8"><h3 class="text-2xl font-bold mb-2">Brisbane</h3><p class="text-muted">QLD Metro</p></a>
+            <a href="locations/perth.html" class="card p-8"><h3 class="text-2xl font-bold mb-2">Perth</h3><p class="text-muted">WA Metro</p></a>
+            <a href="locations/adelaide.html" class="card p-8"><h3 class="text-2xl font-bold mb-2">Adelaide</h3><p class="text-muted">SA Metro</p></a>
+            <a href="locations/newcastle.html" class="card p-8"><h3 class="text-2xl font-bold mb-2">Newcastle</h3><p class="text-muted">Hunter Region</p></a>
         </div>
-    </section>
-
-    <section class="bg-mesh-2 border-b border-line">
-        <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
-            <div class="flex items-end justify-between mb-10">
-                <div><p class="eyebrow mb-3">Region</p><h2 class="display text-3xl md:text-5xl text-ink">Australia</h2></div>
-                <p class="text-sm text-muted hidden md:block">6 cities &middot; AUD</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-line">
-                <a href="locations/sydney.html" class="card bg-white p-7 group">
-                    <div class="flex items-start justify-between mb-5"><div><p class="eyebrow mb-2">New South Wales</p><h3 class="font-serif text-3xl text-ink leading-tight">Sydney</h3></div><i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors"></i></div>
-                    <p class="text-sm text-muted leading-relaxed mb-6">Australia's largest repair market. Wide price range — CBD shops charge a premium; Parramatta and Bankstown sit 25% lower for the same job.</p>
-                    <div class="grid grid-cols-2 gap-4 pt-4 border-t border-line text-sm">
-                        <div><p class="text-xs text-muted">iPhone 14 screen</p><p class="font-mono tnum text-ink mt-0.5">$219–$309</p></div>
-                        <div><p class="text-xs text-muted">Local guide</p><p class="font-mono tnum text-ink mt-0.5">Full</p></div>
-                    </div>
-                </a>
-                <a href="locations/melbourne.html" class="card bg-white p-7 group">
-                    <div class="flex items-start justify-between mb-5"><div><p class="eyebrow mb-2">Victoria</p><h3 class="font-serif text-3xl text-ink leading-tight">Melbourne</h3></div><i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors"></i></div>
-                    <p class="text-sm text-muted leading-relaxed mb-6">Highly competitive market with strong indie scene. Carlton and Brunswick are the value picks; CBD pays for foot traffic.</p>
-                    <div class="grid grid-cols-2 gap-4 pt-4 border-t border-line text-sm">
-                        <div><p class="text-xs text-muted">iPhone 14 screen</p><p class="font-mono tnum text-ink mt-0.5">$209–$299</p></div>
-                        <div><p class="text-xs text-muted">Local guide</p><p class="font-mono tnum text-ink mt-0.5">Full</p></div>
-                    </div>
-                </a>
-                <a href="locations/brisbane.html" class="card bg-white p-7 group">
-                    <div class="flex items-start justify-between mb-5"><div><p class="eyebrow mb-2">Queensland</p><h3 class="font-serif text-3xl text-ink leading-tight">Brisbane</h3></div><i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors"></i></div>
-                    <p class="text-sm text-muted leading-relaxed mb-6">Mid-range pricing across the metro. Fortitude Valley and West End cluster the best independents; suburbs vary widely.</p>
-                    <div class="grid grid-cols-2 gap-4 pt-4 border-t border-line text-sm">
-                        <div><p class="text-xs text-muted">iPhone 14 screen</p><p class="font-mono tnum text-ink mt-0.5">$199–$289</p></div>
-                        <div><p class="text-xs text-muted">Local guide</p><p class="font-mono tnum text-ink mt-0.5">Full</p></div>
-                    </div>
-                </a>
-                <a href="locations/perth.html" class="card bg-white p-7 group">
-                    <div class="flex items-start justify-between mb-5"><div><p class="eyebrow mb-2">Western Australia</p><h3 class="font-serif text-3xl text-ink leading-tight">Perth</h3></div><i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors"></i></div>
-                    <p class="text-sm text-muted leading-relaxed mb-6">Smaller market, narrower pricing band. Parts can take 1–2 extra days to arrive vs. east coast cities.</p>
-                    <div class="grid grid-cols-2 gap-4 pt-4 border-t border-line text-sm">
-                        <div><p class="text-xs text-muted">iPhone 14 screen</p><p class="font-mono tnum text-ink mt-0.5">$219–$309</p></div>
-                        <div><p class="text-xs text-muted">Local guide</p><p class="font-mono tnum text-ink mt-0.5">Full</p></div>
-                    </div>
-                </a>
-                <a href="locations/adelaide.html" class="card bg-white p-7 group">
-                    <div class="flex items-start justify-between mb-5"><div><p class="eyebrow mb-2">South Australia</p><h3 class="font-serif text-3xl text-ink leading-tight">Adelaide</h3></div><i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors"></i></div>
-                    <p class="text-sm text-muted leading-relaxed mb-6">Compact metro with a tight pricing band 5–10% under the east coast. Smaller shop pool means warranty quality matters more than headline price.</p>
-                    <div class="grid grid-cols-2 gap-4 pt-4 border-t border-line text-sm">
-                        <div><p class="text-xs text-muted">iPhone 14 screen</p><p class="font-mono tnum text-ink mt-0.5">$189–$279</p></div>
-                        <div><p class="text-xs text-muted">Local guide</p><p class="font-mono tnum text-ink mt-0.5">Full</p></div>
-                    </div>
-                </a>
-                <a href="locations/newcastle.html" class="card bg-white p-7 group">
-                    <div class="flex items-start justify-between mb-5"><div><p class="eyebrow mb-2">New South Wales &middot; Featured</p><h3 class="font-serif text-3xl text-ink leading-tight">Newcastle</h3></div><i data-lucide="arrow-up-right" class="w-5 h-5 text-muted group-hover:text-teal transition-colors"></i></div>
-                    <p class="text-sm text-muted leading-relaxed mb-6">Hunter region — Mayfield, Hamilton, Islington and out toward Maitland. Roughly 10% under Sydney for the same job. Our most detailed local guide, with a workshop we rate.</p>
-                    <div class="grid grid-cols-2 gap-4 pt-4 border-t border-line text-sm">
-                        <div><p class="text-xs text-muted">iPhone 14 screen</p><p class="font-mono tnum text-ink mt-0.5">$199–$289</p></div>
-                        <div><p class="text-xs text-muted">Local guide</p><p class="font-mono tnum text-ink mt-0.5">Full</p></div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-white border-b border-line">
-        <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
-            <div id="city-spotlight"></div>
-            <div class="flex items-end justify-between mb-10"><h2 class="display text-3xl md:text-5xl text-ink">Regional &amp; suburban</h2></div>
-                <p class="text-sm text-muted hidden md:block">25 cities &middot; estimated from nearest survey</p>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-px bg-line">
-                <a href="locations/city.html?c=gold-coast" class="card bg-white p-5 group"><p class="font-serif text-lg text-ink">Gold Coast</p><p class="text-xs text-muted mt-1">QLD</p></a>
-                <a href="locations/city.html?c=canberra" class="card bg-white p-5 group"><p class="font-serif text-lg text-ink">Canberra</p><p class="text-xs text-muted mt-1">ACT</p></a>
-                <a href="locations/city.html?c=hobart" class="card bg-white p-5 group"><p class="font-serif text-lg text-ink">Hobart</p><p class="text-xs text-muted mt-1">TAS</p></a>
-                <a href="locations/city.html?c=geelong" class="card bg-white p-5 group"><p class="font-serif text-lg text-ink">Geelong</p><p class="text-xs text-muted mt-1">VIC</p></a>
-                <a href="locations/city.html?c=wollongong" class="card bg-white p-5 group"><p class="font-serif text-lg text-ink">Wollongong</p><p class="text-xs text-muted mt-1">NSW</p></a>
-                <a href="locations/city.html?c=townsville" class="card bg-white p-5 group"><p class="font-serif text-lg text-ink">Townsville</p><p class="text-xs text-muted mt-1">QLD</p></a>
-                <a href="locations/city.html?c=cairns" class="card bg-white p-5 group"><p class="font-serif text-lg text-ink">Cairns</p><p class="text-xs text-muted mt-1">QLD</p></a>
-                <a href="locations/city.html?c=darwin" class="card bg-white p-5 group"><p class="font-serif text-lg text-ink">Darwin</p><p class="text-xs text-muted mt-1">NT</p></a>
-                <a href="locations/city.html?c=launceston" class="card bg-white p-5 group"><p class="font-serif text-lg text-ink">Launceston</p><p class="text-xs text-muted mt-1">TAS</p></a>
-                <a href="locations/city.html?c=sunshine-coast" class="card bg-white p-5 group"><p class="font-serif text-lg text-ink">Sunshine Coast</p><p class="text-xs text-muted mt-1">QLD</p></a>
-                <a href="locations/city.html?c=central-coast" class="card bg-white p-5 group"><p class="font-serif text-lg text-ink">Central Coast</p><p class="text-xs text-muted mt-1">NSW</p></a>
-                <a href="locations/city.html?c=toowoomba" class="card bg-white p-5 group"><p class="font-serif text-lg text-ink">Toowoomba</p><p class="text-xs text-muted mt-1">QLD</p></a>
-                <a href="locations/city.html?c=ballarat" class="card bg-white p-5 group"><p class="font-serif text-lg text-ink">Ballarat</p><p class="text-xs text-muted mt-1">VIC</p></a>
-                <a href="locations/city.html?c=bendigo" class="card bg-white p-5 group"><p class="font-serif text-lg text-ink">Bendigo</p><p class="text-xs text-muted mt-1">VIC</p></a>
-                <a href="locations/city.html?c=penrith" class="card bg-white p-5 group"><p class="font-serif text-lg text-ink">Penrith</p><p class="text-xs text-muted mt-1">NSW</p></a>
-                <a href="locations/city.html?c=parramatta" class="card bg-white p-5 group"><p class="font-serif text-lg text-ink">Parramatta</p><p class="text-xs text-muted mt-1">NSW</p></a>
-                <a href="locations/city.html?c=frankston" class="card bg-white p-5 group"><p class="font-serif text-lg text-ink">Frankston</p><p class="text-xs text-muted mt-1">VIC</p></a>
-                <a href="locations/city.html?c=ipswich" class="card bg-white p-5 group"><p class="font-serif text-lg text-ink">Ipswich</p><p class="text-xs text-muted mt-1">QLD</p></a>
-                <a href="locations/city.html?c=logan" class="card bg-white p-5 group"><p class="font-serif text-lg text-ink">Logan</p><p class="text-xs text-muted mt-1">QLD</p></a>
-                <a href="locations/city.html?c=newcastle-surrounds" class="card bg-white p-5 group"><p class="font-serif text-lg text-ink">Lake Macquarie</p><p class="text-xs text-muted mt-1">NSW</p></a>
-            </div>
-            <p class="text-xs text-muted mt-5">Pricing is estimated from the nearest surveyed metro. For exact model pricing, use the <a href="calculator.html" class="ed-link text-teal">calculator</a> or <a href="repair/phone-repair-costs-australia.html" class="ed-link text-teal">all-models comparison</a>.</p>
-        </div>
-    </section>
-
-<script>
-const CITY_SPOTLIGHT=[
-{s:'gold-coast',n:'Gold Coast',st:'QLD',tag:'Tourist premium — shop inland for better rates',scr:'$387–$601',bat:'$91–$142',angle:'Surfers Paradise shops charge 10-15% more than Robina or Nerang'},
-{s:'canberra',n:'Canberra',st:'ACT',tag:'Government town — authorised service is popular',scr:'$387–$600',bat:'$86–$145',angle:'Strong authorised-service culture means independents compete harder on price'},
-{s:'hobart',n:'Hobart',st:'TAS',tag:'Island freight premium — parts from Melbourne',scr:'$419–$650',bat:'$93–$156',angle:'2-3 day parts freight from Melbourne adds 5-10% to repair costs'},
-{s:'geelong',n:'Geelong',st:'VIC',tag:'Victoria\'s second city — Melbourne parts, lower rent',scr:'$362–$557',bat:'$83–$129',angle:'Same Melbourne parts supply but 5-10% lower pricing'},
-{s:'wollongong',n:'Wollongong',st:'NSW',tag:'University town — high student demand',scr:'$379–$588',bat:'$85–$142',angle:'UOW student population drives demand for budget repairs'},
-{s:'townsville',n:'Townsville',st:'QLD',tag:'Tropical climate — more humidity repairs',scr:'$398–$618',bat:'$93–$146',angle:'Humidity and heat drive more charging-port corrosion and water damage'},
-{s:'cairns',n:'Cairns',st:'QLD',tag:'Far North QLD — most remote major city',scr:'$409–$635',bat:'$96–$150',angle:'3-5 day parts freight from Brisbane — highest repair costs in QLD'},
-{s:'darwin',n:'Darwin',st:'NT',tag:'Most remote capital — highest freight costs',scr:'$447–$693',bat:'$100–$167',angle:'Longest parts freight in Australia + tropical climate = highest repair costs nationally'},
-{s:'sunshine-coast',n:'Sunshine Coast',st:'QLD',tag:'Brisbane-competitive pricing',scr:'$379–$571',bat:'$86–$135',angle:'Growing metro with Brisbane-level parts access and competitive pricing'},
-{s:'ballarat',n:'Ballarat',st:'VIC',tag:'Regional Victoria — Melbourne supply chain',scr:'$350–$539',bat:'$80–$125',angle:'10-15% below Melbourne CBD with the same parts quality'},
-{s:'launceston',n:'Launceston',st:'TAS',tag:'Northern Tasmania — smaller market',scr:'$425–$660',bat:'$95–$159',angle:'Even smaller than Hobart — fewer shops, slightly higher pricing'},
-{s:'penrith',n:'Penrith',st:'NSW',tag:'Western Sydney value pricing',scr:'$359–$557',bat:'$80–$134',angle:'10-15% below Sydney CBD with the same parts and expertise'},
-];
-const cityWeek=Math.floor((Date.now()-new Date('2026-01-05').getTime())/(7*24*60*60*1000));
-const cs=CITY_SPOTLIGHT[cityWeek%CITY_SPOTLIGHT.length];
-const cSpot=document.getElementById('city-spotlight');
-if(cSpot){
-cSpot.innerHTML=`
-<div style="border:1px solid var(--rr-line);background:white;padding:1.5rem;display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:center;margin-bottom:2rem">
-<div>
-<div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.75rem;flex-wrap:wrap">
-<span class="eyebrow" style="margin:0">✨ City spotlight</span>
-<span style="font-size:0.6875rem;font-weight:600;color:#0F766E;background:#E0F2F1;padding:0.125rem 0.5rem;border-radius:1px;letter-spacing:0.03em">${cs.tag}</span>
-</div>
-<h2 class="font-serif text-2xl md:text-3xl text-ink" style="margin-bottom:0.5rem">${cs.n}, ${cs.st}</h2>
-<p class="text-sm text-muted" style="margin-bottom:0.75rem">${cs.angle}</p>
-<div style="display:flex;gap:1.5rem;flex-wrap:wrap;font-size:0.8125rem">
-<div><span class="text-muted">Screen (17 PM)</span> <span class="font-mono tnum text-ink" style="font-weight:600">${cs.scr}</span></div>
-<div><span class="text-muted">Battery</span> <span class="font-mono tnum text-ink" style="font-weight:600">${cs.bat}</span></div>
-</div>
-</div>
-<a href="locations/city.html?c=${cs.s}" class="btn btn-primary" style="white-space:nowrap">View ${cs.n} pricing \u2192</a>
-</div>
-<p style="font-size:0.6875rem;color:var(--rr-muted);margin-bottom:1.5rem">Spotlight rotates weekly — highlighting cities across Australia. <a href="locations/city.html?c=${cs.s}" class="ed-link text-teal">Full ${cs.n} pricing \u2192</a></p>`;
-}
-</script>
-
-    <section class="bg-white border-b border-line">
-        <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
-            <div class="flex items-end justify-between mb-10">
-                <div><p class="eyebrow mb-3">Region</p><h2 class="display text-3xl md:text-5xl text-ink">International</h2></div>
-                <p class="text-sm text-muted hidden md:block">Q3 2026</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-line">
-                <div class="bg-white p-6 opacity-60"><p class="eyebrow text-muted mb-2">United Kingdom</p><h3 class="font-serif text-2xl text-ink mb-3">London</h3><p class="text-xs font-mono uppercase tracking-wider text-amber">Coming Q3 2026</p></div>
-                <div class="bg-white p-6 opacity-60"><p class="eyebrow text-muted mb-2">United States</p><h3 class="font-serif text-2xl text-ink mb-3">New York</h3><p class="text-xs font-mono uppercase tracking-wider text-amber">Coming Q3 2026</p></div>
-                <div class="bg-white p-6 opacity-60"><p class="eyebrow text-muted mb-2">United States</p><h3 class="font-serif text-2xl text-ink mb-3">Los Angeles</h3><p class="text-xs font-mono uppercase tracking-wider text-amber">Coming Q3 2026</p></div>
-                <div class="bg-white p-6 opacity-60"><p class="eyebrow text-muted mb-2">Canada</p><h3 class="font-serif text-2xl text-ink mb-3">Toronto</h3><p class="text-xs font-mono uppercase tracking-wider text-amber">Coming Q3 2026</p></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-mesh">
-        <div class="max-w-6xl mx-auto px-6 md:px-8 py-16">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-                <div class="lg:col-span-5">
-                    <p class="eyebrow mb-3">Methodology</p>
-                    <h3 class="display text-2xl md:text-3xl text-ink">How city pricing is gathered</h3>
-                </div>
-                <div class="lg:col-span-7 text-muted leading-relaxed space-y-4">
-                    <p>City pricing ranges are built from our per-model research plus the local-market factors that move price: rent variation across the metro, competition density, part lead times, and climate-driven fault patterns. They reflect what reputable independent shops charge for OEM-grade or quality aftermarket parts.</p>
-                    <p>We exclude promotional "from $X" teaser rates that aren't honoured in store, and quotes for low-grade parts unless explicitly disclosed. Authorised service centres typically run 30–55% above these independent ranges.</p>
-                    <p>RepairRange is editorially independent and doesn't take payment for placement. The Newcastle guide is the exception worth noting: our Hunter-region research draws on hands-on bench experience, and we name a workshop there — disclosed on that page.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="my-10 md:my-14" aria-labelledby="rr-list-heading">
-      <div class="max-w-3xl mx-auto rounded-2xl bg-[#0c4a45] text-[#eaf3f1] px-6 py-8 md:px-8 md:py-9">
-        <p class="text-xs font-semibold tracking-widest uppercase text-[#F59E0B] mb-2">Repair shop owner?</p>
-        <h2 id="rr-list-heading" class="text-2xl md:text-3xl font-semibold leading-tight text-white mb-3" style="font-family:'Fraunces',serif">Get your shop in front of local customers searching for repairs.</h2>
-        <p class="text-[#cfe2df] text-base leading-relaxed mb-6 max-w-[52ch]">People find their local repairer right here. List your shop from $29 and be the one they call.</p>
-        <a href="/list-your-shop.html" class="inline-block bg-[#F59E0B] hover:bg-[#d98908] text-[#1a1205] font-semibold px-6 py-3 rounded-xl transition-colors">List your shop &rarr;</a>
-      </div>
-    </section>
-
-    <footer class="bg-teal-900 text-white mt-24 border-t border-white/10">
-        <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
-                <div class="md:col-span-5">
-                    <div class="flex items-center gap-2 mb-4">
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg>
-                        <span class="font-serif text-2xl font-medium">RepairRange</span>
-                    </div>
-                    <p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice. Researched by people who actually do this work.</p>
-                </div>
-                <div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="fix.html" class="text-white/80 hover:text-amber">Troubleshooting</a></li><li><a href="calculator.html" class="text-white/80 hover:text-amber">Cost Calculator</a></li><li><a href="locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="blog.html" class="text-white/80 hover:text-amber">Blog</a></li>
-          <li><a href="unlock/index.html" class="text-white/80 hover:text-amber">Unlock Guides</a></li></ul></div>
-                <div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="about.html" class="text-white/80 hover:text-amber">About RepairRange</a></li><li><a href="tools/software-stack-for-repair-shops.html" class="text-white/80 hover:text-amber">Tools we recommend</a></li><li><a href="privacy.html" class="text-white/80 hover:text-amber">Privacy Policy</a></li><li><a href="terms.html" class="text-white/80 hover:text-amber">Terms of Use</a></li></ul></div>
-            </div>
-            <div class="pt-8 border-t border-white/15">
-                <p class="text-white/50 text-xs leading-relaxed mb-3 max-w-3xl"><strong class="text-white/70">Affiliate disclosure:</strong> RepairRange may earn a commission when you click links to retailers (including Amazon) and complete a purchase. This never affects the price you pay or our editorial recommendations.</p>
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p><p class="text-white/50 text-xs">Not affiliated with Apple, Samsung, Google, or any device manufacturer.</p></div>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        if (window.lucide) window.lucide.createIcons();
-        document.addEventListener('DOMContentLoaded', () => {
-            const btn = document.querySelector('.mobile-menu-button');
-            const menu = document.querySelector('.mobile-menu');
-            if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
-        });
-    </script>
-    <!-- Chatbot Embedding Code -->
-<script>
-  window.chatbotSettings = {
-  "chatModelId": "cmq83wmfi01qw1yqng73sbw2k",
-  "buttonType": "minimal",
-  "buttonText": "Chat",
-  "lang": "en",
-  "chatSize": "medium",
-  "initialColorMode": "auto",
-  "position": "bottom-right",
-  "enableAttachment": true,
-  "enableFeedback": true,
-  "enableVoiceInput": false,
-  "enableVoiceMode": false,
-  "enableAutoLogin": false,
-  "borderRadius": "rounded",
-  "buttonBorderRadius": "slightly-rounded",
-  "sessionDurationHours": 168,
-  "gdprConsent": {
-    "enabled": true,
-    "privacyPolicyUrl": "https://aismarttalk.tech/api/en/privacy-policy"
-  },
-  "suggestionSettings": {
-    "mode": "auto",
-    "customSuggestionsLang": "en",
-    "customSuggestions": []
-  },
-  "apiUrl": "https://aismarttalk.tech/api",
-  "wsUrl": "https://ws.223.io.aismarttalk.tech",
-  "cdnUrl": "https://cdn.aismarttalk.tech",
-  "avatarName": "Repair Range",
-  "theme": {
-    "colors": {
-      "brand": {
-        "200": "#ECC94B",
-        "500": "#4A5568"
-      },
-      "background": {
-        "light": "#f7fafc",
-        "dark": "#1a202c"
-      }
-    }
-  }
-};
-</script>
-<script src="https://cdn.aismarttalk.tech/universal-chatbot.js"></script>
+    </main>
+    <script>if(window.lucide)window.lucide.createIcons();</script>
 </body>
 </html>

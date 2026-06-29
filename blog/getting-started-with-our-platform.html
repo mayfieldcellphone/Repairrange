@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Self-Repair Phone Kit | Repair with Confidence, Save Money</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Repair your phone yourself with confidence using zero-hassle pro-grade toolsets, engineer-verified parts, and QR-guided tutorials. Save money and eliminate repair anxiety.">
+  <meta name="keywords" content="phone repair kit, self repair kit, DIY phone repair, pro-grade tools, engineer verified parts">
+  <meta name="author" content="Self Repair Kit">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a2c1234567.js" crossorigin="anonymous"></script>
+  <style>
+    :root { 
+        --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; 
+        --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; 
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+    .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+    .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+    .eyebrow { font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--rr-teal-700); }
+    
+    .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
+    .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:700; font-size:0.9375rem; transition:all 200ms ease; border-radius:4px; }
+    .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow: 0 4px 0 var(--rr-amber-600); }
+    .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow: 0 6px 0 var(--rr-amber-600); }
+    .btn-outline { border: 2px solid var(--rr-teal-700); color: var(--rr-teal-700); }
+    
+    .card, .post-card, .sidebar-card, .shadow-box { 
+        background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; 
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
+        border-radius: 4px;
+    }
+    .card:hover, .post-card:hover { 
+        border-color:var(--rr-ink); transform:translateY(-2px); 
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15); 
+    }
+    
+    .bg-mesh-hero { 
+        background-color: var(--rr-hero); 
+        background-image: radial-gradient(rgba(15, 118, 110, 0.1) 1.5px, transparent 0); 
+        background-size: 32px 32px; 
+        border-bottom: 1px solid var(--rr-line); 
+    }
+
+    .funnel-table { width: 100%; border-collapse: separate; border-spacing: 0; background: white; border-radius: 4px; overflow: hidden; border: 1px solid var(--rr-line); }
+    .funnel-table th { background: var(--rr-paper-2); padding: 1rem; text-align: left; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: var(--rr-muted); border-bottom: 1px solid var(--rr-line); }
+    .funnel-table td { padding: 1rem; border-bottom: 1px solid var(--rr-line); vertical-align: middle; }
+    
+    .savings-badge { background: #FEF3C7; color: #92400E; font-size: 0.625rem; font-weight: 800; padding: 0.2rem 0.5rem; border-radius: 99px; }
+    
+    .mobile-menu { transition:all 300ms ease-in-out; }
+    @media (max-width: 768px) { 
+        .hero-title { font-size: 2.5rem !important; }
+        .hide-mobile { display: none; }
+    }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased">
+  <!-- Announcement Bar -->
+  <div class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between gap-4">
+      <p class="flex items-center gap-2">
+        <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/10">
+          <i class="fas fa-shipping-fast text-xs"></i>
+        </span>
+        <span class="font-medium tracking-wide">Fast Worldwide Shipping (5 days delivery)</span>
+      </p>
+      <p class="hidden sm:flex items-center gap-2 text-white/90">
+        <i class="fas fa-undo-alt text-xs"></i>
+        <span>100% Satisfaction Guarantee - Full refund upon return</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-gray-100">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between py-4 gap-4">
+        <a href="https://mayfield276.gitlab.io/selfrepairkit" class="flex items-center gap-2">
+          <div class="w-9 h-9 rounded-2xl bg-gradient-to-tr from-indigo-600 via-purple-600 to-pink-500 flex items-center justify-center shadow-md shadow-indigo-500/30">
+            <i class="fas fa-tools text-white text-lg"></i>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-base sm:text-lg font-bold tracking-tight text-gray-900">Self Repair Kit</span>
+            <span class="text-[11px] sm:text-xs text-gray-500 tracking-wide uppercase">Pro-Grade Phone Repair</span>
+          </div>
+        </a>
+        <a href="https://mayfield276.gitlab.io/selfrepairkit/blog.html" class="hover:text-indigo-600 transition-colors duration-300 text-sm font-medium text-gray-700">
+          ← Back
+        </a>
+      </div>
+    </nav>
+
+
+<div class="mobile-menu hidden md:hidden border-t border-line bg-white shadow-xl">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-4 text-sm font-medium">
+        <a href="../brands.html" class="hover:text-teal-700">Brands</a>
+        <a href="../repair/phone-repair-costs-australia.html" class="hover:text-teal-700">Repairs</a>
+        <a href="../fix.html" class="hover:text-teal-700">Troubleshoot</a>
+        <a href="../blog.html" class="hover:text-teal-700">Blog</a>
+        <a href="../calculator.html" class="text-teal-700 font-bold">Get a Quote</a>
+    </div>
+</div>
+
+
+  </header>
+
+  <main id="home">
+    <article class="bg-white">
+      <section class="border-b border-gray-100 bg-gradient-to-b from-gray-900 via-gray-900 to-gray-950 text-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+          <header class="mb-10">
+            <p class="inline-flex items-center px-3 py-1 rounded-full bg-white/10 border border-white/10 text-[11px] sm:text-xs font-semibold tracking-wide uppercase mb-4">
+              DIY Phone Repair · In‑Depth Guide
+            </p>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight mb-4">
+              DIY Phone Repair 101: How to Safely Fix Your Own Phone and Save Hundreds
+            </h1>
+            <p class="text-sm sm:text-base md:text-lg text-gray-200 max-w-3xl">
+              Learn how to repair your own smartphone with confidence using a self‑repair phone kit. We’ll cover tools, safety, step‑by‑step workflow, and pro tips to avoid costly mistakes—without ever stepping into a repair shop.
+            </p>
+            <div class="mt-5 flex flex-wrap items-center gap-4 text-xs text-gray-300">
+              <div class="flex items-center gap-2">
+                <i class="far fa-clock text-[11px]"></i>
+                <span>12 min read</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fas fa-screwdriver-wrench text-[11px]"></i>
+                <span>Beginner‑friendly · No prior experience required</span>
+              </div>
+            </div>
+          </header>
+
+          <div class="rounded-3xl overflow-hidden shadow-2xl shadow-black/40 border border-white/10 bg-gray-900/60 backdrop-blur">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&h=675&fit=crop" alt="Person using a professional DIY phone repair kit to fix a smartphone on a workbench" class="w-full h-auto object-cover">
+          </div>
+        </div>
+      </section>
+
+      <section class="py-12 sm:py-16 lg:py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-indigo prose-sm sm:prose-base max-w-none">
+          <p class="text-sm sm:text-base text-gray-700">
+            If your phone screen is cracked, your battery barely makes it to lunchtime, or your charging port only works at a “perfect angle,” you’re not alone. Most people assume the only options are an expensive trip to a repair shop or buying a new phone. But with a well‑designed
+            <strong>self‑repair phone kit</strong> and a bit of guidance, <strong>DIY phone repair</strong> is not only possible—it’s safe, repeatable, and can save you hundreds of dollars every year.
+          </p>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            This guide walks you through the complete process of repairing your own phone using a
+            <strong>pro‑grade Self Repair Kit</strong> with engineer‑verified parts and QR‑guided tutorials. We’ll focus on practical, real‑world advice rather than theory so you can confidently decide whether doing it yourself is right for you.
+          </p>
+
+          <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gray-900 mt-10 mb-3">
+            Why DIY phone repair is worth considering
+          </h2>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            Traditional repair shops bundle labour, parts mark‑ups, and overhead into a single price. That’s why a basic screen replacement can easily cost $250–$350, even on mid‑range devices. When you repair your phone yourself with a structured
+            <strong>self repair kit</strong>, you pay for:
+          </p>
+
+          <ul class="list-none space-y-2 text-sm sm:text-base text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-indigo-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>Pro‑grade tools you can reuse for multiple repairs.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-indigo-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>Engineer‑verified replacement parts that match your exact model.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-indigo-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>Step‑by‑step guidance that replaces “trial and error” with a clear plan.</span>
+            </li>
+          </ul>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            Most customers using our Self Repair Kit spend under $100 on a repair that would have cost three times as much at a shop, all while keeping full control of their data and schedule. After two or three repairs—on your own phone or for family and friends—the kit has usually paid for itself several times over.
+          </p>
+
+          <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gray-900 mt-10 mb-3">
+            What you actually need to repair a phone safely
+          </h2>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            A successful DIY repair is less about being “good with tools” and more about having the <em>right</em> tools and a repeatable process. A well‑built phone repair kit typically includes:
+          </p>
+
+          <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mt-6 mb-2">
+            1. Precision tools that won’t damage your phone
+          </h3>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            Modern smartphones use tiny, model‑specific screws and delicate connectors. Using random screwdrivers from a hardware drawer is the fastest path to stripped screws and cracked components. A
+            <strong>pro‑grade tool set</strong> should include:
+          </p>
+
+          <ul class="list-none space-y-2 text-sm sm:text-base text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-emerald-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>Precision screwdrivers with hardened tips (PH000, pentalobe, tri‑point, Torx, etc.).</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-emerald-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>High‑quality plastic opening picks and a suction cup to gently lift the screen without prying metal on glass.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-emerald-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>Anti‑static tweezers for handling small screws and connectors without crushing them.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-emerald-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>A magnetic mat or organised tray so every screw goes back where it came from.</span>
+            </li>
+          </ul>
+
+          <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mt-6 mb-2">
+            2. Engineer‑verified replacement parts
+          </h3>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            Cheap, unverified parts are the main reason DIY repairs get a bad reputation. Screens with poor colour accuracy, batteries that lose capacity quickly, and connectors that don’t quite line up can make even a perfectly performed repair feel like a failure.
+          </p>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            An engineer‑verified part has been:
+          </p>
+
+          <ul class="list-none space-y-2 text-sm sm:text-base text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-emerald-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>Matched against your exact model and revision (not just “iPhone 12‑ish”).</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-emerald-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>Tested for brightness, touch response, and colour (for screens) or capacity and charge cycles (for batteries).</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-emerald-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>Inspected physically so connectors, screw holes, and flex cables align correctly.</span>
+            </li>
+          </ul>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            Buying a random part online might save a few dollars up front, but pairing your repair with
+            <strong>engineer‑verified components</strong> dramatically increases the chance that your phone works exactly as expected on the first try.
+          </p>
+
+          <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mt-6 mb-2">
+            3. Clear, device‑specific instructions
+          </h3>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            The difference between “I think this might work” and “I know what comes next” is usually the quality of the guide you follow. Good
+            <strong>DIY phone repair tutorials</strong> have:
+          </p>
+
+          <ul class="list-none space-y-2 text-sm sm:text-base text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-pink-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>Close‑up visuals of every connector, cable, and screw.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-pink-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>Explicit warnings before any step that can permanently damage the device if done incorrectly.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-pink-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>Checkpoints—moments where you pause and confirm that what you see matches the guide.</span>
+            </li>
+          </ul>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            That’s why modern self‑repair kits increasingly use <strong>QR‑guided video tutorials</strong> instead of static PDFs. You simply scan the QR code in your kit, select your exact model, and follow along at your own pace—pausing, rewinding, and replaying any step as needed.
+          </p>
+
+          <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gray-900 mt-10 mb-3">
+            Step‑by‑step: What a typical phone repair looks like
+          </h2>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            Every device is different, but most common repairs—screen, battery, or charging port—follow a similar flow. Here’s what to expect when using a comprehensive Self Repair Kit.
+          </p>
+
+          <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mt-6 mb-2">
+            Step 1: Prep your workspace (5–10 minutes)
+          </h3>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            Your goal is a clean, static‑free, distraction‑free area. Clear a desk or table, wipe away dust, and make sure you have enough light. Lay out the magnetic mat or organiser from your kit and keep drinks or food well away from your workspace.
+          </p>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            Before you touch a single screw:
+          </p>
+
+          <ul class="list-none space-y-2 text-sm sm:text-base text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-indigo-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>Power the phone off completely.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-indigo-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>Remove any SIM cards or memory cards.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-indigo-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>Back up your data if the phone still turns on—just in case.</span>
+            </li>
+          </ul>
+
+          <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mt-6 mb-2">
+            Step 2: Follow the QR‑guided disassembly
+          </h3>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            Scan the QR code included with your Self Repair Kit and open the guide for your device. Most guides start with removing the first two exterior screws, then using the suction cup and opening pick to lift the display or back cover.
+          </p>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            Move slowly and match what you see on your phone to what appears in the video. If something doesn’t look right—different screw layout, missing bracket—pause and double‑check you selected the correct model. Small differences matter.
+          </p>
+
+          <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mt-6 mb-2">
+            Step 3: Swap the part with care, not force
+          </h3>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            Whether you’re replacing a battery or screen, avoid forcing anything. Connectors should “click” into place with light, even pressure using your finger or the included tools—never a metal screwdriver tip directly on the connector.
+          </p>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            Use the engineer‑verified part from your kit and follow the exact order shown in the tutorial. If adhesive is involved (common with batteries and screens), apply it only where specified. More adhesive does <em>not</em> equal more secure—it just makes future repairs harder.
+          </p>
+
+          <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mt-6 mb-2">
+            Step 4: Test before you fully reassemble
+          </h3>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            One of the most important pro tips: test early. Once the new part is connected but before you replace every screw and adhesive strip, power the phone on and confirm:
+          </p>
+
+          <ul class="list-none space-y-2 text-sm sm:text-base text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-emerald-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>The display turns on and registers touch (for screen repairs).</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-emerald-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>The phone charges and reports a healthy battery level (for battery or port repairs).</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-emerald-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>Buttons, speakers, and cameras still work as expected.</span>
+            </li>
+          </ul>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            If something isn’t right, you can quickly re‑seat a connector or check the troubleshooting section of your QR guide without peeling off fresh adhesive or fully closing the device.
+          </p>
+
+          <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mt-6 mb-2">
+            Step 5: Close the phone and do a final check
+          </h3>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            Once you’re confident everything works, follow the reassembly steps in reverse order. Use the magnetic mat to put each screw back into its original position—phone manufacturers often use different screw lengths that aren’t interchangeable.
+          </p>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            When the last screw is in, do a final test of:
+          </p>
+
+          <ul class="list-none space-y-2 text-sm sm:text-base text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-pink-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>Display brightness and colour (no strange tints or flickering).</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-pink-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>Touch response across the entire screen, especially corners.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-pink-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>Charging, Wi‑Fi, and mobile signal.</span>
+            </li>
+          </ul>
+
+          <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gray-900 mt-10 mb-3">
+            Common fears about DIY phone repair—and how to avoid them
+          </h2>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            Most people don’t avoid DIY repair because they’re lazy; they avoid it because they’re afraid of making the problem worse. Here are the three biggest fears we hear and how a structured
+            <strong>self‑repair phone kit</strong> helps address them.
+          </p>
+
+          <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mt-6 mb-2">
+            “I’ll break something and be stuck without a phone.”
+          </h3>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            This is where pro‑grade tools, clear video guidance, and quality parts matter most. When you’re not forcing screws, prying with the wrong tools, or guessing cable orientation, the risk of damage drops dramatically. In practice, the vast majority of first‑time repairers complete their repair without any major issues—especially when they take their time and follow each step exactly.
+          </p>
+
+          <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mt-6 mb-2">
+            “The parts I buy online won’t fit or will be low quality.”
+          </h3>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            This fear is justified if you buy random parts from unverified sellers. That’s why our Self Repair Kit pairs each device with
+            <strong>engineer‑verified parts</strong> and a
+            <strong>no‑questions‑asked replacement guarantee</strong>. If there’s a defect or compatibility issue, you’re not left arguing with a marketplace listing—you’re simply covered.
+          </p>
+
+          <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mt-6 mb-2">
+            “I’ll get lost halfway and won’t know what to do.”
+          </h3>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            A static text guide can absolutely leave you stuck. QR‑based video guides, on the other hand, are built so you can pause, zoom, and rewind at will. Combined with chapter markers and a troubleshooting checklist in the kit, it’s very hard to truly get “lost”—there’s always a clear previous step you can return to and verify.
+          </p>
+
+          <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gray-900 mt-10 mb-3">
+            When DIY phone repair might not be right for you
+          </h2>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            As powerful as a self‑repair kit is, it’s not always the perfect solution. You might prefer a professional shop if:
+          </p>
+
+          <ul class="list-none space-y-2 text-sm sm:text-base text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-indigo-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>Your phone has extensive liquid damage and corrosion across the motherboard.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-indigo-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>You’re dealing with complex board‑level faults (e.g., no power after impact, not just a broken screen).</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-indigo-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>You are uncomfortable following step‑by‑step instructions, even for simple projects.</span>
+            </li>
+          </ul>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            For everything else—cracked displays, tired batteries, worn charging ports, back glass, and more—a
+            <strong>DIY phone repair kit</strong> paired with a detailed QR guide covers almost all of what a shop would do for you, minus the labour cost and waiting time.
+          </p>
+
+          <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gray-900 mt-10 mb-3">
+            Final thoughts: Repair with confidence, not guesswork
+          </h2>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            Repairing your own phone isn’t about becoming a technician overnight. It’s about using the right tools, parts, and instructions so you can follow a proven process instead of guessing. When those three elements come together in a single self‑repair kit, DIY phone repair becomes a practical way to:
+          </p>
+
+          <ul class="list-none space-y-2 text-sm sm:text-base text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-emerald-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>Save significant money on every screen or battery you replace.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-emerald-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>Keep your data and device in your own hands at all times.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 text-emerald-500"><i class="fas fa-circle text-[6px]"></i></span>
+              <span>Extend the life of the phone you already love and reduce e‑waste.</span>
+            </li>
+          </ul>
+
+          <p class="text-sm sm:text-base text-gray-700">
+            If you’re ready to try your first repair, look for a self‑repair phone kit that combines
+            <strong>pro‑grade tools</strong>, <strong>engineer‑verified parts</strong>, and
+            <strong>QR video repair guides</strong> tailored to your exact model. With those in place, you’re not just “having a go”—you’re following the same structured workflow professional repair engineers use every day, right at your own desk.
+          </p>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 pt-12 md:pt-16 pb-8 md:pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8 lg:gap-12 mb-10 md:mb-12">
+        <!-- Brand -->
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-9 h-9 rounded-2xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center shadow-md shadow-indigo-500/30">
+              <i class="fas fa-tools text-white text-lg"></i>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-base font-bold tracking-tight text-white">Self Repair Kit</span>
+              <span class="text-[11px] text-gray-400 tracking-wide uppercase">Pro-Grade Phone Repair</span>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400 mb-4">
+            Repair it yourself with confidence using pro‑grade tools, engineer‑verified parts, and zero‑guesswork QR video guides. Keep your phone—and your budget—out of the repair shop.
+          </p>
+          <div class="flex items-center gap-3">
+            <a href="mailto:mayfieldphonerepair@gmail.com" class="text-xs text-gray-300 hover:text-white transition-colors duration-300">
+              <i class="fas fa-envelope mr-1.5 text-[11px]"></i>
+              mayfieldphonerepair@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-sm font-semibold text-white mb-4">Quick links</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#home" class="hover:text-white transition-colors duration-300">Home</a></li>
+            <li><a href="#features" class="hover:text-white transition-colors duration-300">Features</a></li>
+            <li><a href="#benefits" class="hover:text-white transition-colors duration-300">Benefits</a></li>
+            <li><a href="#about" class="hover:text-white transition-colors duration-300">About Us</a></li>
+            <li><a href="#testimonials" class="hover:text-white transition-colors duration-300">Testimonials</a></li>
+            <li><a href="#faq" class="hover:text-white transition-colors duration-300">FAQ</a></li>
+            <li><a href="#contact" class="hover:text-white transition-colors duration-300">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div>
+          <h3 class="text-sm font-semibold text-white mb-4">Resources</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="privacy.html" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+            <li><a href="terms.html" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
+            <li><a href="blog.html" class="hover:text-white transition-colors duration-300">Blog</a></li>
+            <li><a href="https://selfrepairkit.com.au" class="hover:text-white transition-colors duration-300">Buy Now</a></li>
+          </ul>
+        </div>
+
+        <!-- Social / CTA -->
+        <div>
+          <h3 class="text-sm font-semibold text-white mb-4">Stay connected</h3>
+          <p class="text-sm text-gray-400 mb-4">
+            Get tips on safe DIY repair, battery care, and extending the life of your devices.
+          </p>
+          <div class="flex items-center gap-3 mb-4">
+            <a href="#" aria-label="Visit our Facebook" class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-gray-300 hover:bg-indigo-500 hover:text-white transition duration-300">
+              <i class="fab fa-facebook-f text-sm"></i>
+            </a>
+            <a href="#" aria-label="Visit our Instagram" class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-gray-300 hover:bg-pink-500 hover:text-white transition duration-300">
+              <i class="fab fa-instagram text-sm"></i>
+            </a>
+            <a href="#" aria-label="Visit our Twitter" class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-gray-300 hover:bg-sky-500 hover:text-white transition duration-300">
+              <i class="fab fa-twitter text-sm"></i>
+            </a>
+            <a href="#" aria-label="Visit our YouTube" class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-gray-300 hover:bg-red-500 hover:text-white transition duration-300">
+              <i class="fab fa-youtube text-sm"></i>
+            </a>
+          </div>
+          <a
+            href="https://selfrepairkit.com.au"
+            class="inline-flex items-center rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-5 py-2 text-xs font-semibold text-white shadow-md hover:shadow-xl transform hover:scale-105 active:scale-100 transition duration-300"
+          >
+            Order your kit
+            <i class="fas fa-arrow-right ml-2 text-[10px]"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 mt-8 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-gray-500">
+        <p>&copy; <span id="year"></span> Self Repair Kit. All rights reserved.</p>
+        <p>Designed for confident DIY phone repair with professional-grade tools and guidance.</p>
+      </div>
+    </div>
+  </footer>
+
+  
+
+<script>
+    if(window.lucide) window.lucide.createIcons();
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    });
+</script>
+
+
+</body>
+</html>

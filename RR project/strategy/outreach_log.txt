@@ -1,0 +1,146 @@
+[2026-06-02 06:59:42] Starting daily outreach email batch processing.
+[2026-06-02 06:59:42] Target schedule date: 2026-06-02
+[2026-06-02 06:59:42] Batch completed: 0 successfully sent, 0 failed.
+[2026-06-02 09:15:01] Starting daily outreach email batch processing.
+[2026-06-02 09:15:01] Target schedule date: 2026-06-02
+[2026-06-02 09:15:01] Batch completed: 0 successfully sent, 0 failed.
+[2026-06-02 09:16:16] Starting daily outreach email batch processing.
+[2026-06-02 09:16:16] Target schedule date: 2026-06-02
+[2026-06-02 09:16:16] Batch completed: 0 successfully sent, 0 failed.
+[2026-06-02 09:16:44] Starting daily outreach email batch processing.
+[2026-06-02 09:16:44] Target schedule date: 2026-06-02
+[2026-06-02 09:16:44] Batch completed: 0 successfully sent, 0 failed.
+[2026-06-03 12:11:51] Starting daily outreach email batch processing via Resend API.
+[2026-06-03 12:11:51] Target schedule date: 2026-06-03
+[2026-06-03 12:11:51] Attempting to send email to Sydney CBD Repair Centre (Ask@SydneyCBDrepairCentre.com.au) in Sydney...
+[2026-06-03 12:11:51] FAILED to send email to Ask@SydneyCBDrepairCentre.com.au. API Response: {"statusCode":403,"message":"The repairrange.io domain is not verified. Please, add and verify your domain on https://resend.com/domains","name":"validation_error"}
+[2026-06-03 12:11:51] Attempting to send email to Phones Repairs 2U (p.repairs2u@gmail.com) in Sydney...
+[2026-06-03 12:11:52] FAILED to send email to p.repairs2u@gmail.com. API Response: {"statusCode":403,"message":"The repairrange.io domain is not verified. Please, add and verify your domain on https://resend.com/domains","name":"validation_error"}
+[2026-06-03 12:11:52] Attempting to send email to Fone Galaxy (info@fonegalaxy.com.au) in Sydney...
+[2026-06-03 12:11:52] FAILED to send email to info@fonegalaxy.com.au. API Response: {"statusCode":403,"message":"The repairrange.io domain is not verified. Please, add and verify your domain on https://resend.com/domains","name":"validation_error"}
+[2026-06-03 12:11:52] Attempting to send email to Cheap Mobile Repair (info@cheapmobilerepair.com.au) in Sydney...
+[2026-06-03 12:11:53] FAILED to send email to info@cheapmobilerepair.com.au. API Response: {"statusCode":403,"message":"The repairrange.io domain is not verified. Please, add and verify your domain on https://resend.com/domains","name":"validation_error"}
+[2026-06-03 12:11:53] Attempting to send email to iExperts (sydney@iexperts.com.au) in Sydney...
+[2026-06-03 12:11:53] FAILED to send email to sydney@iexperts.com.au. API Response: {"statusCode":403,"message":"The repairrange.io domain is not verified. Please, add and verify your domain on https://resend.com/domains","name":"validation_error"}
+[2026-06-03 12:11:53] Batch completed: 0 successfully sent, 5 failed.
+[2026-06-04 09:00:00] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-04 09:00:00] Target schedule date: 2026-06-04
+[2026-06-04 09:00:00] Attempting to send email to FoneLabs (Fonelablakemba@icloud.com) in Sydney...
+[2026-06-04 09:00:00] ERROR: SMTP Password is not configured. Please set the REPAIRRANGE_SMTP_PASSWORD environment variable.
+[2026-06-04 09:00:00] Attempting to send email to Fixpod (repairs@fixpod.com.au) in Sydney...
+[2026-06-04 09:00:00] ERROR: SMTP Password is not configured. Please set the REPAIRRANGE_SMTP_PASSWORD environment variable.
+[2026-06-04 09:00:00] Attempting to send email to Dr Boom (support@drboom.com.au) in Sydney...
+[2026-06-04 09:00:00] ERROR: SMTP Password is not configured. Please set the REPAIRRANGE_SMTP_PASSWORD environment variable.
+[2026-06-04 09:00:00] Attempting to send email to Repair Xperts (info@repairxperts.com.au) in Sydney...
+[2026-06-04 09:00:00] ERROR: SMTP Password is not configured. Please set the REPAIRRANGE_SMTP_PASSWORD environment variable.
+[2026-06-04 09:00:00] Attempting to send email to Fone Fix (info@fonefix.com.au) in Sydney...
+[2026-06-04 09:00:00] ERROR: SMTP Password is not configured. Please set the REPAIRRANGE_SMTP_PASSWORD environment variable.
+[2026-06-04 09:00:00] Batch completed: 0 successfully sent, 5 failed via Hostinger SMTP.
+[2026-06-05 09:23:12] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-05 09:23:12] Target schedule date: 2026-06-05
+[2026-06-05 09:23:12] Attempting to send email to MKC Melbourne (support@mkcmelbourne.com.au) in Melbourne...
+[2026-06-05 09:23:20] Successfully sent email to support@mkcmelbourne.com.au via Hostinger SMTP.
+[2026-06-05 09:23:20] Attempting to send email to Elephone (info@elephone.com.au) in Melbourne...
+[2026-06-05 09:23:23] Successfully sent email to info@elephone.com.au via Hostinger SMTP.
+[2026-06-05 09:23:23] Attempting to send email to Fixspot (Admin@FixSpot.Com.au) in Melbourne...
+[2026-06-05 09:23:35] Successfully sent email to Admin@FixSpot.Com.au via Hostinger SMTP.
+[2026-06-05 09:23:35] Attempting to send email to City Phones (info@cityphones.com.au) in Melbourne...
+[2026-06-05 09:23:38] Successfully sent email to info@cityphones.com.au via Hostinger SMTP.
+[2026-06-05 09:23:38] Attempting to send email to Repair Buddy (services@repairbuddy.com.au) in Melbourne...
+[2026-06-05 09:23:42] Successfully sent email to services@repairbuddy.com.au via Hostinger SMTP.
+[2026-06-05 09:23:42] Batch completed: 5 successfully sent, 0 failed via Hostinger SMTP.
+[2026-06-06 09:00:00] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-06 09:00:00] Target schedule date: 2026-06-06
+[2026-06-06 09:00:00] Attempting to send email to Happytel (info@happytel.com) in Melbourne...
+[2026-06-06 09:00:14] Unexpected SMTP error sending email to info@happytel.com: Connection unexpectedly closed: The read operation timed out
+[2026-06-06 09:00:14] Attempting to send email to PTC (customerservice@ptc.net.au) in Melbourne...
+[2026-06-06 09:00:18] Successfully sent email to customerservice@ptc.net.au via Hostinger SMTP.
+[2026-06-06 09:00:18] Attempting to send email to Mister Click (sales@misterclick.com.au) in Melbourne...
+[2026-06-06 09:00:21] Successfully sent email to sales@misterclick.com.au via Hostinger SMTP.
+[2026-06-06 09:00:21] Attempting to send email to Fix To Go (admin@fixtogo.com.au) in Melbourne...
+[2026-06-06 09:00:25] Successfully sent email to admin@fixtogo.com.au via Hostinger SMTP.
+[2026-06-06 09:00:25] Attempting to send email to SIMSIM Repairs (info@simsim.com.au) in Melbourne...
+[2026-06-06 09:00:29] Successfully sent email to info@simsim.com.au via Hostinger SMTP.
+[2026-06-06 09:00:29] Batch completed: 4 successfully sent, 1 failed via Hostinger SMTP.
+[2026-06-07 09:00:00] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-07 09:00:00] Target schedule date: 2026-06-07
+[2026-06-07 09:00:00] Attempting to send email to DigiCycle (hello@digicycle.com.au) in Melbourne...
+[2026-06-07 09:00:04] Successfully sent email to hello@digicycle.com.au via Hostinger SMTP.
+[2026-06-07 09:00:04] Attempting to send email to MyFone Repairs - Crown (crown@myfonerepairs.com.au) in Melbourne...
+[2026-06-07 09:00:10] Successfully sent email to crown@myfonerepairs.com.au via Hostinger SMTP.
+[2026-06-07 09:00:10] Attempting to send email to Repair Pro Melbourne Central (info@repairpro.com.au) in Melbourne...
+[2026-06-07 09:00:25] Successfully sent email to info@repairpro.com.au via Hostinger SMTP.
+[2026-06-07 09:00:25] Attempting to send email to Victoria Market Comms (info@vicmarketcommunications.com.au) in Melbourne...
+[2026-06-07 09:00:29] Successfully sent email to info@vicmarketcommunications.com.au via Hostinger SMTP.
+[2026-06-07 09:00:29] Attempting to send email to YOUBREAK – WEFIX™ (info@youbreakwefix.com.au) in Melbourne...
+[2026-06-07 09:00:33] Successfully sent email to info@youbreakwefix.com.au via Hostinger SMTP.
+[2026-06-07 09:00:33] Batch completed: 5 successfully sent, 0 failed via Hostinger SMTP.
+[2026-06-08 10:17:04] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-08 10:17:04] Target schedule date: 2026-06-08
+[2026-06-08 10:17:04] Batch completed: 0 successfully sent, 0 failed via Hostinger SMTP.
+[2026-06-09 18:04:02] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-09 18:04:02] Target schedule date: 2026-06-09
+[2026-06-09 18:04:02] Batch completed: 0 successfully sent, 0 failed via Hostinger SMTP.
+[2026-06-10 09:00:00] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-10 09:00:00] Target schedule date: 2026-06-10
+[2026-06-10 09:00:00] Batch completed: 0 successfully sent, 0 failed via Hostinger SMTP.
+[2026-06-11 11:14:33] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-11 11:14:33] Target schedule date: 2026-06-11
+[2026-06-11 11:14:33] Batch completed: 0 successfully sent, 0 failed via Hostinger SMTP.
+[2026-06-11 11:14:37] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-11 11:14:37] Target schedule date: 2026-06-11
+[2026-06-11 11:14:37] Batch completed: 0 successfully sent, 0 failed via Hostinger SMTP.
+[2026-06-12 09:00:31] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-12 09:00:31] Target schedule date: 2026-06-12
+[2026-06-12 09:00:31] Batch completed: 0 successfully sent, 0 failed via Hostinger SMTP.
+[2026-06-13 09:00:00] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-13 09:00:00] Target schedule date: 2026-06-13
+[2026-06-13 09:00:00] Batch completed: 0 successfully sent, 0 failed via Hostinger SMTP.
+[2026-06-14 09:00:01] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-14 09:00:01] Target schedule date: 2026-06-14
+[2026-06-14 09:00:01] Batch completed: 0 successfully sent, 0 failed via Hostinger SMTP.
+[2026-06-15 09:45:39] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-15 09:45:39] Target schedule date: 2026-06-15
+[2026-06-15 09:45:39] Batch completed: 0 successfully sent, 0 failed via Hostinger SMTP.
+[2026-06-16 09:11:26] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-16 09:11:26] Target schedule date: 2026-06-16
+[2026-06-16 09:11:26] Batch completed: 0 successfully sent, 0 failed via Hostinger SMTP.
+[2026-06-17 09:01:16] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-17 09:01:16] Target schedule date: 2026-06-17
+[2026-06-17 09:01:16] Batch completed: 0 successfully sent, 0 failed via Hostinger SMTP.
+[2026-06-18 09:16:36] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-18 09:16:36] Target schedule date: 2026-06-18
+[2026-06-18 09:16:36] Batch completed: 0 successfully sent, 0 failed via Hostinger SMTP.
+[2026-06-19 09:19:05] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-19 09:19:05] Target schedule date: 2026-06-19
+[2026-06-19 09:19:05] Batch completed: 0 successfully sent, 0 failed via Hostinger SMTP.
+[2026-06-20 09:00:00] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-20 09:00:00] Target schedule date: 2026-06-20
+[2026-06-20 09:00:00] Batch completed: 0 successfully sent, 0 failed via Hostinger SMTP.
+[2026-06-21 09:00:00] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-21 09:00:00] Target schedule date: 2026-06-21
+[2026-06-21 09:00:00] Batch completed: 0 successfully sent, 0 failed via Hostinger SMTP.
+[2026-06-22 09:00:00] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-22 09:00:00] Target schedule date: 2026-06-22
+[2026-06-22 09:00:00] Batch completed: 0 successfully sent, 0 failed via Hostinger SMTP.
+[2026-06-23 09:33:06] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-23 09:33:06] Target schedule date: 2026-06-23
+[2026-06-23 09:33:06] Batch completed: 0 successfully sent, 0 failed via Hostinger SMTP.
+[2026-06-24 09:00:40] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-24 09:00:40] Target schedule date: 2026-06-24
+[2026-06-24 09:00:40] Batch completed: 0 successfully sent, 0 failed via Hostinger SMTP.
+[2026-06-25 09:20:00] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-25 09:20:00] Target schedule date: 2026-06-25
+[2026-06-25 09:20:00] Batch completed: 0 successfully sent, 0 failed via Hostinger SMTP.
+[2026-06-26 09:00:00] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-26 09:00:00] Target schedule date: 2026-06-26
+[2026-06-26 09:00:00] Batch completed: 0 successfully sent, 0 failed via Hostinger SMTP.
+[2026-06-27 09:00:00] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-27 09:00:00] Target schedule date: 2026-06-27
+[2026-06-27 09:00:00] Batch completed: 0 successfully sent, 0 failed via Hostinger SMTP.
+[2026-06-28 09:00:01] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-28 09:00:01] Target schedule date: 2026-06-28
+[2026-06-28 09:00:01] Batch completed: 0 successfully sent, 0 failed via Hostinger SMTP.
+[2026-06-29 09:00:01] Starting daily outreach email batch processing via Hostinger SMTP.
+[2026-06-29 09:00:01] Target schedule date: 2026-06-29
+[2026-06-29 09:00:01] Batch completed: 0 successfully sent, 0 failed via Hostinger SMTP.

@@ -1,0 +1,3606 @@
+{
+  "brands": [
+    {
+      "id": "apple",
+      "name": "iPhone Kit",
+      "icon": "smartphone",
+      "models": [
+        {
+          "id": "greencell",
+          "name": "Greencell",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-11-to-16-pro-max",
+          "name": "iPhone 11 to 16 Pro Max",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-12",
+          "name": "iPhone 12",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-13-pro-max-replacement-battery-with-adhesive-strips-4352mah",
+          "name": "iPhone 13 Pro Max Replacement Battery with Adhesive Strips 4352mAh",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-13-pro-max-screen-replacement",
+          "name": "iPhone 13 Pro Max Screen Replacement",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-13-pro-screen-replacement",
+          "name": "iPhone 13 Pro Screen Replacement",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-13-replacement-battery-with-adhesive-strips-3227mah",
+          "name": "iPhone 13 Replacement Battery with Adhesive Strips 3227mAh",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-13-screen-replacement",
+          "name": "iPhone 13 Screen Replacement",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-13-mini-replacement-battery-with-adhesive-strips-2406mah",
+          "name": "iPhone 13 mini Replacement Battery with Adhesive Strips 2406mAh",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-14-plus-replacement-battery-with-adhesive-strips-4325mah",
+          "name": "iPhone 14 Plus Replacement Battery with Adhesive Strips 4325mAh",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-14-plus-screen-replacement",
+          "name": "iPhone 14 Plus Screen Replacement",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-14-pro-max-replacement-battery-with-adhesive-strips-4323mah",
+          "name": "iPhone 14 Pro Max Replacement Battery with Adhesive Strips 4323mAh",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-14-pro-max-screen-replacement",
+          "name": "iPhone 14 Pro Max Screen Replacement",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-14-pro-replacement-battery-with-adhesive-strips-3200mah",
+          "name": "iPhone 14 Pro Replacement Battery with Adhesive Strips 3200mAh",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-14-pro-screen-replacement",
+          "name": "iPhone 14 Pro Screen Replacement",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-14-replacement-battery-with-adhesive-strips-3279mah",
+          "name": "iPhone 14 Replacement Battery with Adhesive Strips 3279mAh",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-14-screen-replacement",
+          "name": "iPhone 14 Screen Replacement",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-15-plus-replacement-battery-with-adhesive-strips-4383mah",
+          "name": "iPhone 15 Plus Replacement Battery with Adhesive Strips 4383mAh",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-15-plus-screen-replacement",
+          "name": "iPhone 15 Plus Screen Replacement",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-15-pro-max-replacement-battery-with-adhesive-strips-4422mah",
+          "name": "iPhone 15 Pro Max Replacement Battery with Adhesive Strips 4422mAh",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-15-pro-max-screen-replacement",
+          "name": "iPhone 15 Pro Max Screen Replacement",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-15-pro-replacement-battery-with-adhesive-strips-3274mah",
+          "name": "iPhone 15 Pro Replacement Battery with Adhesive Strips 3274mAh",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-15-pro-screen-replacement",
+          "name": "iPhone 15 Pro Screen Replacement",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-15-replacement-battery-with-adhesive-strips-3349mah",
+          "name": "iPhone 15 Replacement Battery with Adhesive Strips 3349mAh",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-15-screen-replacement",
+          "name": "iPhone 15 Screen Replacement",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-16",
+          "name": "iPhone 16",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-16-plus-replacement-battery-4674mah-661",
+          "name": "iPhone 16 Plus Replacement Battery 4674mAh 661",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-16-plus-replacement-battery-with-adhesive-strips-4674mah",
+          "name": "iPhone 16 Plus Replacement Battery with Adhesive Strips 4674mAh",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-16-plus-screen-replacement",
+          "name": "iPhone 16 Plus Screen Replacement",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-16-pro",
+          "name": "iPhone 16 Pro",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-16-pro-max",
+          "name": "iPhone 16 Pro Max",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-16-pro-max-replacement-battery-4685mah-661",
+          "name": "iPhone 16 Pro Max Replacement Battery 4685mAh 661",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-16-pro-max-replacement-battery-with-adhesive-strips-4685mah",
+          "name": "iPhone 16 Pro Max Replacement Battery with Adhesive Strips 4685mAh",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-16-pro-max-screen-replacement",
+          "name": "iPhone 16 Pro Max Screen Replacement",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-16-pro-replacement-battery-3582mah-661",
+          "name": "iPhone 16 Pro Replacement Battery 3582mAh 661",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-16-pro-replacement-battery-with-adhesive-strips-3582mah",
+          "name": "iPhone 16 Pro Replacement Battery with Adhesive Strips 3582mAh",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-16-pro-screen-replacement",
+          "name": "iPhone 16 Pro Screen Replacement",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-16-replacement-battery-with-adhesive-strips-3561mah",
+          "name": "iPhone 16 Replacement Battery with Adhesive Strips 3561mAh",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-16-screen-replacement",
+          "name": "iPhone 16 Screen Replacement",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-16e-replacement-battery-4005mah-661",
+          "name": "iPhone 16E Replacement Battery 4005mAh 661",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-16e-screen-replacement",
+          "name": "iPhone 16E Screen Replacement",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-16e",
+          "name": "iPhone 16e",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-17",
+          "name": "iPhone 17",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-17-air",
+          "name": "iPhone 17 Air",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-17-air-replacement-battery-3149mah-661",
+          "name": "iPhone 17 Air Replacement Battery 3149mAh 661",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-17-pro",
+          "name": "iPhone 17 Pro",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-17-pro-max",
+          "name": "iPhone 17 Pro Max",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-17-pro-max-replacement-battery-5088mah-661",
+          "name": "iPhone 17 Pro Max Replacement Battery 5088mAh 661",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-17-pro-max-screen-replacement",
+          "name": "iPhone 17 Pro Max Screen Replacement",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-17-pro-replacement-battery-4252mah-661",
+          "name": "iPhone 17 Pro Replacement Battery 4252mAh 661",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-17-pro-screen-replacement",
+          "name": "iPhone 17 Pro Screen Replacement",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-17-replacement-battery-3692mah-661",
+          "name": "iPhone 17 Replacement Battery 3692mAh 661",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-17-screen-replacement",
+          "name": "iPhone 17 Screen Replacement",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-6",
+          "name": "iPhone 6",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-6-plus",
+          "name": "iPhone 6 Plus",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-7-to-17-pro-max",
+          "name": "iPhone 7 to 17 Pro Max",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "iphone-8-to-16e",
+          "name": "iPhone 8 to 16E",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        }
+      ]
+    },
+    {
+      "id": "samsung",
+      "name": "Samsung Kit",
+      "icon": "tablet",
+      "models": [
+        {
+          "id": "full-coverage",
+          "name": "Full Coverage",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-a35",
+          "name": "Galaxy A35",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-a36",
+          "name": "Galaxy A36",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-amplus-a16",
+          "name": "Galaxy AMPLUS A16",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-amplus-a71",
+          "name": "Galaxy AMPLUS A71",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-as-new",
+          "name": "Galaxy AS NEW",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-fold",
+          "name": "Galaxy Fold",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-s22-ultra",
+          "name": "Galaxy S22 Ultra",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-s23",
+          "name": "Galaxy S23",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-s23-ultra",
+          "name": "Galaxy S23 Ultra",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-s24",
+          "name": "Galaxy S24",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-s24-plus",
+          "name": "Galaxy S24 Plus",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-s24-ultra",
+          "name": "Galaxy S24 Ultra",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-s25",
+          "name": "Galaxy S25",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-s25-edge",
+          "name": "Galaxy S25 Edge",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-s25-fe",
+          "name": "Galaxy S25 FE",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-s25-plus",
+          "name": "Galaxy S25 Plus",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-s25-ultra",
+          "name": "Galaxy S25 Ultra",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-s26",
+          "name": "Galaxy S26",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-s26-plus",
+          "name": "Galaxy S26 Plus",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-s26-ultra",
+          "name": "Galaxy S26 Ultra",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-z-flip",
+          "name": "Galaxy Z Flip",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-z-flip3",
+          "name": "Galaxy Z Flip3",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-z-flip5",
+          "name": "Galaxy Z Flip5",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-z-flip6",
+          "name": "Galaxy Z Flip6",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-z-fold-2",
+          "name": "Galaxy Z Fold 2",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-z-fold-3",
+          "name": "Galaxy Z Fold 3",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-z-fold-5",
+          "name": "Galaxy Z Fold 5",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-z-fold-6",
+          "name": "Galaxy Z Fold 6",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-z-fold2",
+          "name": "Galaxy Z Fold2",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-z-fold3",
+          "name": "Galaxy Z Fold3",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-z-fold4",
+          "name": "Galaxy Z Fold4",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-z-fold5",
+          "name": "Galaxy Z Fold5",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-z-fold6",
+          "name": "Galaxy Z Fold6",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "galaxy-z-fold7",
+          "name": "Galaxy Z Fold7",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "greencell-s22-ultra",
+          "name": "Greencell S22 Ultra",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "greencell-s25",
+          "name": "Greencell S25",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "greencell-s25-plus",
+          "name": "Greencell S25 Plus",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "greencell-s25-ultra",
+          "name": "Greencell S25 Ultra",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "kinglas-privacy-tempered-glass",
+          "name": "Kinglas Privacy Tempered Glass",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "kinglas-tempered-glass",
+          "name": "Kinglas Tempered Glass",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "refurb",
+          "name": "REFURB",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "refurb-outer",
+          "name": "REFURB Outer",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "tab-a11",
+          "name": "Tab A11",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "tab-a11-plus",
+          "name": "Tab A11 Plus",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "tab-active-5",
+          "name": "Tab Active 5",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "tab-s10-ultra",
+          "name": "Tab S10 Ultra",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "tab-s11",
+          "name": "Tab S11",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "tab-s11-ultra",
+          "name": "Tab S11 Ultra",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "tempered-glass",
+          "name": "Tempered Glass",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        }
+      ]
+    },
+    {
+      "id": "oppo",
+      "name": "OPPO Kit",
+      "icon": "activity",
+      "models": [
+        {
+          "id": "a59",
+          "name": "A59",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "a94",
+          "name": "A94",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "f19-pro",
+          "name": "F19 Pro",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "k7",
+          "name": "K7",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "k9",
+          "name": "K9",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "oppo",
+          "name": "OPPO",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "oppo-3d-a9-2020",
+          "name": "OPPO 3D A9 (2020)",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "oppo-3d-curved-uv-tempered-glass",
+          "name": "OPPO 3D Curved UV Tempered Glass",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "oppo-3d-find-x5-lite",
+          "name": "OPPO 3D Find X5 Lite",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "oppo-a53-2015",
+          "name": "OPPO A53 (2015)",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "oppo-a57",
+          "name": "OPPO A57",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "oppo-a76",
+          "name": "OPPO A76",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "oppo-amplus",
+          "name": "OPPO AMPLUS",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "oppo-bq7",
+          "name": "OPPO BQ7",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "oppo-refurb",
+          "name": "OPPO REFURB",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "oppo-reno-10x-zoom",
+          "name": "OPPO Reno 10x zoom",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "oppo-reno-z",
+          "name": "OPPO Reno Z",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "oppo-reno3",
+          "name": "OPPO Reno3",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "oppo-reno4-pro",
+          "name": "OPPO Reno4 Pro",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "oppo-reno4-z",
+          "name": "OPPO Reno4 Z",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "oppo-reno5-k",
+          "name": "OPPO Reno5 K",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "oppo-reno5-lite",
+          "name": "OPPO Reno5 Lite",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "oppo-reno6",
+          "name": "OPPO Reno6",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "oppo-reno6-pro",
+          "name": "OPPO Reno6 Pro",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "oppo-reno6-pro-plus",
+          "name": "OPPO Reno6 Pro Plus",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "oppo-tempered-glass",
+          "name": "OPPO Tempered Glass",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        },
+        {
+          "id": "reno5-f",
+          "name": "Reno5 F",
+          "image": "https://sc02.alicdn.com/kf/Ac8c64183dc2a4b9894fa022cce6d4611U.png"
+        }
+      ]
+    }
+  ],
+  "products": {
+    "iphone-16-pro-max-screen-replacement": [
+      {
+        "id": "SRK-IPHON-BUDGET",
+        "name": "Iphone 16 Pro Max Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 129,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-IPHON-BQ7",
+        "name": "iPhone 16 Pro Max Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 289.0,
+        "description": "Premium BQ7 replacement part."
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 16 Pro Max Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 279,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-BAT",
+        "name": "Iphone 16 Pro Max Screen Replacement Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "iphone-17-pro-max-screen-replacement": [
+      {
+        "id": "SRK-IPHON-BQ7",
+        "name": "iPhone 17 Pro Max Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 179.0,
+        "description": "Premium BQ7 replacement part."
+      },
+      {
+        "id": "SRK-IPHON-AMPLUS",
+        "name": "iPhone 17 Pro Max Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 209.0,
+        "description": "Premium AMPLUS replacement part."
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 17 Pro Max Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 269,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-BAT",
+        "name": "Iphone 17 Pro Max Screen Replacement Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "iphone-16-pro": [
+      {
+        "id": "SRK-IPHON-BUDGET",
+        "name": "Iphone 16 Pro Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 139,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-IPHON-ASSEMBLED",
+        "name": "iPhone 16 Pro Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 199.0,
+        "description": "Premium ASSEMBLED replacement part."
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 16 Pro Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 299,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-STANDARD",
+        "name": "iPhone 16 Pro Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Premium Standard replacement part."
+      }
+    ],
+    "iphone-16-pro-max": [
+      {
+        "id": "SRK-IPHON-BUDGET",
+        "name": "Iphone 16 Pro Max Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 219,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-IPHON-ASSEMBLED",
+        "name": "iPhone 16 Pro Max Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 319.0,
+        "description": "Premium ASSEMBLED replacement part."
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 16 Pro Max Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 479,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-BAT",
+        "name": "Iphone 16 Pro Max Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "iphone-17": [
+      {
+        "id": "SRK-IPHON-BUDGET",
+        "name": "Iphone 17 Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 149,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-IPHON-ASSEMBLED",
+        "name": "iPhone 17 Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 209.0,
+        "description": "Premium ASSEMBLED replacement part."
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 17 Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 309,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-STANDARD",
+        "name": "iPhone 17 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Premium Standard replacement part."
+      }
+    ],
+    "iphone-17-air": [
+      {
+        "id": "SRK-IPHON-BUDGET",
+        "name": "Iphone 17 Air Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 239,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-IPHON-ASSEMBLED",
+        "name": "iPhone 17 Air Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 339.0,
+        "description": "Premium ASSEMBLED replacement part."
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 17 Air Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 509,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-STANDARD",
+        "name": "iPhone 17 Air Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Premium Standard replacement part."
+      }
+    ],
+    "iphone-17-pro": [
+      {
+        "id": "SRK-IPHON-BUDGET",
+        "name": "Iphone 17 Pro Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 149,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-IPHON-ASSEMBLED",
+        "name": "iPhone 17 Pro Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 209.0,
+        "description": "Premium ASSEMBLED replacement part."
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 17 Pro Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 309,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-STANDARD",
+        "name": "iPhone 17 Pro Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Premium Standard replacement part."
+      }
+    ],
+    "iphone-17-pro-max": [
+      {
+        "id": "SRK-IPHON-BUDGET",
+        "name": "Iphone 17 Pro Max Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 249,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-IPHON-ASSEMBLED",
+        "name": "iPhone 17 Pro Max Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 359.0,
+        "description": "Premium ASSEMBLED replacement part."
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 17 Pro Max Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 539,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-STANDARD",
+        "name": "iPhone 17 Pro Max Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Premium Standard replacement part."
+      }
+    ],
+    "iphone-14-pro-max-screen-replacement": [
+      {
+        "id": "SRK-IPHON-SP",
+        "name": "iPhone 14 Pro Max Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 79.0,
+        "description": "Premium SP replacement part."
+      },
+      {
+        "id": "SRK-IPHON-BQ7",
+        "name": "iPhone 14 Pro Max Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 129.0,
+        "description": "Premium BQ7 replacement part."
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 14 Pro Max Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 119,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-BAT",
+        "name": "Iphone 14 Pro Max Screen Replacement Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "iphone-16-pro-screen-replacement": [
+      {
+        "id": "SRK-IPHON-BQ7",
+        "name": "iPhone 16 Pro Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 169.0,
+        "description": "Premium BQ7 replacement part."
+      },
+      {
+        "id": "SRK-IPHON-BQ7",
+        "name": "iPhone 16 Pro Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 219.0,
+        "description": "Premium BQ7 replacement part."
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 16 Pro Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 249,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-BAT",
+        "name": "Iphone 16 Pro Screen Replacement Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "iphone-17-pro-screen-replacement": [
+      {
+        "id": "SRK-IPHON-BQ7",
+        "name": "iPhone 17 Pro Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 179.0,
+        "description": "Premium BQ7 replacement part."
+      },
+      {
+        "id": "SRK-IPHON-BQ7",
+        "name": "iPhone 17 Pro Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 229.0,
+        "description": "Premium BQ7 replacement part."
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 17 Pro Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 269,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-BAT",
+        "name": "Iphone 17 Pro Screen Replacement Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "iphone-13-screen-replacement": [
+      {
+        "id": "SRK-IPHON-BUDGET",
+        "name": "Iphone 13 Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 99,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-IPHON-BQ7",
+        "name": "iPhone 13 Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 139.0,
+        "description": "Premium BQ7 replacement part."
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 13 Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 209,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-BAT",
+        "name": "Iphone 13 Screen Replacement Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "iphone-14-plus-screen-replacement": [
+      {
+        "id": "SRK-IPHON-BUDGET",
+        "name": "Iphone 14 Plus Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 99,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-IPHON-BQ7",
+        "name": "iPhone 14 Plus Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 139.0,
+        "description": "Premium BQ7 replacement part."
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 14 Plus Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 209,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-BAT",
+        "name": "Iphone 14 Plus Screen Replacement Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "iphone-14-pro-screen-replacement": [
+      {
+        "id": "SRK-IPHON-SP",
+        "name": "iPhone 14 Pro Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 79.0,
+        "description": "Premium SP replacement part."
+      },
+      {
+        "id": "SRK-IPHON-BQ7",
+        "name": "iPhone 14 Pro Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 139.0,
+        "description": "Premium BQ7 replacement part."
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 14 Pro Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 119,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-BAT",
+        "name": "Iphone 14 Pro Screen Replacement Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "iphone-14-screen-replacement": [
+      {
+        "id": "SRK-IPHON-BUDGET",
+        "name": "Iphone 14 Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 99,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-IPHON-BQ7",
+        "name": "iPhone 14 Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 139.0,
+        "description": "Premium BQ7 replacement part."
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 14 Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 209,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-BAT",
+        "name": "Iphone 14 Screen Replacement Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "iphone-15-pro-max-screen-replacement": [
+      {
+        "id": "SRK-IPHON-BUDGET",
+        "name": "Iphone 15 Pro Max Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 79,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-IPHON-BQ7",
+        "name": "iPhone 15 Pro Max Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 179.0,
+        "description": "Premium BQ7 replacement part."
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 15 Pro Max Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 179,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-BAT",
+        "name": "Iphone 15 Pro Max Screen Replacement Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "iphone-16-plus-screen-replacement": [
+      {
+        "id": "SRK-IPHON-BUDGET",
+        "name": "Iphone 16 Plus Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 129,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-IPHON-BQ7",
+        "name": "iPhone 16 Plus Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 189.0,
+        "description": "Premium BQ7 replacement part."
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 16 Plus Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 279,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-BAT",
+        "name": "Iphone 16 Plus Screen Replacement Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "iphone-16-screen-replacement": [
+      {
+        "id": "SRK-IPHON-BUDGET",
+        "name": "Iphone 16 Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 119,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-IPHON-BQ7",
+        "name": "iPhone 16 Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 169.0,
+        "description": "Premium BQ7 replacement part."
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 16 Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 249,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-BAT",
+        "name": "Iphone 16 Screen Replacement Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "iphone-16e-screen-replacement": [
+      {
+        "id": "SRK-IPHON-BUDGET",
+        "name": "Iphone 16E Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 189,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-IPHON-BQ7",
+        "name": "iPhone 16E Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 269.0,
+        "description": "Premium BQ7 replacement part."
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 16E Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 399,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-BAT",
+        "name": "Iphone 16E Screen Replacement Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "iphone-17-screen-replacement": [
+      {
+        "id": "SRK-IPHON-BUDGET",
+        "name": "Iphone 17 Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 149,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-IPHON-BQ7",
+        "name": "iPhone 17 Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 219.0,
+        "description": "Premium BQ7 replacement part."
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 17 Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 329,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-BAT",
+        "name": "Iphone 17 Screen Replacement Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "iphone-16e": [
+      {
+        "id": "SRK-IPHON-BUDGET",
+        "name": "Iphone 16E Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 79,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-IPHON-BQ7",
+        "name": "iPhone 16e Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 119.0,
+        "description": "Premium BQ7 replacement part."
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 16E Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 179,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-STANDARD",
+        "name": "iPhone 16E Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 79.0,
+        "description": "Premium Standard replacement part."
+      }
+    ],
+    "iphone-16": [
+      {
+        "id": "SRK-IPHON-STANDARD",
+        "name": "iPhone 16 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Premium Standard replacement part."
+      }
+    ],
+    "iphone-16-plus-replacement-battery-with-adhesive-strips-4674mah": [
+      {
+        "id": "SRK-IPHON-STANDARD",
+        "name": "iPhone 16 Plus Replacement Battery with Adhesive Strips 4674mAh Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 79.0,
+        "description": "Premium Standard replacement part."
+      }
+    ],
+    "iphone-16-pro-max-replacement-battery-with-adhesive-strips-4685mah": [
+      {
+        "id": "SRK-IPHON-STANDARD",
+        "name": "iPhone 16 Pro Max Replacement Battery with Adhesive Strips 4685mAh Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 79.0,
+        "description": "Premium Standard replacement part."
+      }
+    ],
+    "iphone-16-pro-replacement-battery-with-adhesive-strips-3582mah": [
+      {
+        "id": "SRK-IPHON-STANDARD",
+        "name": "iPhone 16 Pro Replacement Battery with Adhesive Strips 3582mAh Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 79.0,
+        "description": "Premium Standard replacement part."
+      }
+    ],
+    "iphone-16-replacement-battery-with-adhesive-strips-3561mah": [
+      {
+        "id": "SRK-IPHON-STANDARD",
+        "name": "iPhone 16 Replacement Battery with Adhesive Strips 3561mAh Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 79.0,
+        "description": "Premium Standard replacement part."
+      }
+    ],
+    "iphone-13-pro-max-replacement-battery-with-adhesive-strips-4352mah": [
+      {
+        "id": "SRK-IPHON-GREENCELL",
+        "name": "iPhone 13 Pro Max Replacement Battery with Adhesive Strips 4352mAh Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 89.0,
+        "description": "Premium Greencell replacement part."
+      }
+    ],
+    "iphone-13-replacement-battery-with-adhesive-strips-3227mah": [
+      {
+        "id": "SRK-IPHON-GREENCELL",
+        "name": "iPhone 13 Replacement Battery with Adhesive Strips 3227mAh Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 79.0,
+        "description": "Premium Greencell replacement part."
+      }
+    ],
+    "iphone-13-mini-replacement-battery-with-adhesive-strips-2406mah": [
+      {
+        "id": "SRK-IPHON-GREENCELL",
+        "name": "iPhone 13 mini Replacement Battery with Adhesive Strips 2406mAh Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 79.0,
+        "description": "Premium Greencell replacement part."
+      }
+    ],
+    "iphone-14-plus-replacement-battery-with-adhesive-strips-4325mah": [
+      {
+        "id": "SRK-IPHON-GREENCELL",
+        "name": "iPhone 14 Plus Replacement Battery with Adhesive Strips 4325mAh Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 89.0,
+        "description": "Premium Greencell replacement part."
+      }
+    ],
+    "iphone-14-pro-max-replacement-battery-with-adhesive-strips-4323mah": [
+      {
+        "id": "SRK-IPHON-GREENCELL",
+        "name": "iPhone 14 Pro Max Replacement Battery with Adhesive Strips 4323mAh Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 89.0,
+        "description": "Premium Greencell replacement part."
+      }
+    ],
+    "iphone-14-pro-replacement-battery-with-adhesive-strips-3200mah": [
+      {
+        "id": "SRK-IPHON-GREENCELL",
+        "name": "iPhone 14 Pro Replacement Battery with Adhesive Strips 3200mAh Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 89.0,
+        "description": "Premium Greencell replacement part."
+      }
+    ],
+    "iphone-14-replacement-battery-with-adhesive-strips-3279mah": [
+      {
+        "id": "SRK-IPHON-GREENCELL",
+        "name": "iPhone 14 Replacement Battery with Adhesive Strips 3279mAh Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 89.0,
+        "description": "Premium Greencell replacement part."
+      }
+    ],
+    "iphone-15-plus-replacement-battery-with-adhesive-strips-4383mah": [
+      {
+        "id": "SRK-IPHON-GREENCELL",
+        "name": "iPhone 15 Plus Replacement Battery with Adhesive Strips 4383mAh Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 89.0,
+        "description": "Premium Greencell replacement part."
+      }
+    ],
+    "iphone-15-pro-max-replacement-battery-with-adhesive-strips-4422mah": [
+      {
+        "id": "SRK-IPHON-GREENCELL",
+        "name": "iPhone 15 Pro Max Replacement Battery with Adhesive Strips 4422mAh Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 89.0,
+        "description": "Premium Greencell replacement part."
+      }
+    ],
+    "iphone-15-pro-replacement-battery-with-adhesive-strips-3274mah": [
+      {
+        "id": "SRK-IPHON-GREENCELL",
+        "name": "iPhone 15 Pro Replacement Battery with Adhesive Strips 3274mAh Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 89.0,
+        "description": "Premium Greencell replacement part."
+      }
+    ],
+    "iphone-15-replacement-battery-with-adhesive-strips-3349mah": [
+      {
+        "id": "SRK-IPHON-GREENCELL",
+        "name": "iPhone 15 Replacement Battery with Adhesive Strips 3349mAh Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 89.0,
+        "description": "Premium Greencell replacement part."
+      }
+    ],
+    "greencell": [
+      {
+        "id": "SRK-GREEN-GREENCELL",
+        "name": "Greencell Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 79.0,
+        "description": "Premium Greencell replacement part."
+      }
+    ],
+    "iphone-13-pro-max-screen-replacement": [
+      {
+        "id": "SRK-IPHON-SP",
+        "name": "iPhone 13 Pro Max Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 79.0,
+        "description": "Premium SP replacement part."
+      },
+      {
+        "id": "SRK-IPHON-PRO",
+        "name": "Iphone 13 Pro Max Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 79,
+        "description": "High-Performance Aftermarket OLED"
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 13 Pro Max Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 119,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-BAT",
+        "name": "Iphone 13 Pro Max Screen Replacement Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "iphone-13-pro-screen-replacement": [
+      {
+        "id": "SRK-IPHON-SP",
+        "name": "iPhone 13 Pro Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 79.0,
+        "description": "Premium SP replacement part."
+      },
+      {
+        "id": "SRK-IPHON-PRO",
+        "name": "Iphone 13 Pro Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 79,
+        "description": "High-Performance Aftermarket OLED"
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 13 Pro Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 119,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-BAT",
+        "name": "Iphone 13 Pro Screen Replacement Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "iphone-15-plus-screen-replacement": [
+      {
+        "id": "SRK-IPHON-SP",
+        "name": "iPhone 15 Plus Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 79.0,
+        "description": "Premium SP replacement part."
+      },
+      {
+        "id": "SRK-IPHON-PRO",
+        "name": "Iphone 15 Plus Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 79,
+        "description": "High-Performance Aftermarket OLED"
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 15 Plus Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 119,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-BAT",
+        "name": "Iphone 15 Plus Screen Replacement Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "iphone-15-pro-screen-replacement": [
+      {
+        "id": "SRK-IPHON-SP",
+        "name": "iPhone 15 Pro Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 79.0,
+        "description": "Premium SP replacement part."
+      },
+      {
+        "id": "SRK-IPHON-PRO",
+        "name": "Iphone 15 Pro Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 79,
+        "description": "High-Performance Aftermarket OLED"
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 15 Pro Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 119,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-BAT",
+        "name": "Iphone 15 Pro Screen Replacement Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "iphone-15-screen-replacement": [
+      {
+        "id": "SRK-IPHON-SP",
+        "name": "iPhone 15 Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 79.0,
+        "description": "Premium SP replacement part."
+      },
+      {
+        "id": "SRK-IPHON-PRO",
+        "name": "Iphone 15 Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 79,
+        "description": "High-Performance Aftermarket OLED"
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 15 Screen Replacement Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 119,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-BAT",
+        "name": "Iphone 15 Screen Replacement Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "iphone-12": [
+      {
+        "id": "SRK-IPHON-STANDARD",
+        "name": "iPhone 12 Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 109.0,
+        "description": "Premium Standard replacement part."
+      },
+      {
+        "id": "SRK-IPHON-PRO",
+        "name": "Iphone 12 Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 109,
+        "description": "High-Performance Aftermarket OLED"
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 12 Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 159,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-BAT",
+        "name": "Iphone 12 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "iphone-8-to-16e": [
+      {
+        "id": "SRK-IPHON-STANDARD",
+        "name": "iPhone 8 to 16E Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 89.0,
+        "description": "Premium Standard replacement part."
+      }
+    ],
+    "iphone-6": [
+      {
+        "id": "SRK-IPHON-STANDARD",
+        "name": "iPhone 6 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 89.0,
+        "description": "Premium Standard replacement part."
+      }
+    ],
+    "iphone-11-to-16-pro-max": [
+      {
+        "id": "SRK-IPHON-STANDARD",
+        "name": "iPhone 11 to 16 Pro Max Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 139.0,
+        "description": "Premium Standard replacement part."
+      }
+    ],
+    "iphone-7-to-17-pro-max": [
+      {
+        "id": "SRK-IPHON-STANDARD",
+        "name": "iPhone 7 to 17 Pro Max Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 69.0,
+        "description": "Premium Standard replacement part."
+      }
+    ],
+    "iphone-6-plus": [
+      {
+        "id": "SRK-IPHON-BUDGET",
+        "name": "Iphone 6 Plus Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 39,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-IPHON-STANDARD",
+        "name": "iPhone 6 Plus Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Premium Standard replacement part."
+      },
+      {
+        "id": "SRK-IPHON-ELITE",
+        "name": "Iphone 6 Plus Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 89,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-IPHON-BAT",
+        "name": "Iphone 6 Plus Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "iphone-16-plus-replacement-battery-4674mah-661": [
+      {
+        "id": "SRK-IPHON-SERVICE-PA",
+        "name": "iPhone 16 Plus Replacement Battery 4674mAh 661 Battery Kit",
+        "type": "Battery",
+        "tier": "Elite",
+        "price": 199.0,
+        "description": "Premium Service Pack replacement part."
+      }
+    ],
+    "iphone-16-pro-max-replacement-battery-4685mah-661": [
+      {
+        "id": "SRK-IPHON-SERVICE-PA",
+        "name": "iPhone 16 Pro Max Replacement Battery 4685mAh 661 Battery Kit",
+        "type": "Battery",
+        "tier": "Elite",
+        "price": 229.0,
+        "description": "Premium Service Pack replacement part."
+      }
+    ],
+    "iphone-16-pro-replacement-battery-3582mah-661": [
+      {
+        "id": "SRK-IPHON-SERVICE-PA",
+        "name": "iPhone 16 Pro Replacement Battery 3582mAh 661 Battery Kit",
+        "type": "Battery",
+        "tier": "Elite",
+        "price": 229.0,
+        "description": "Premium Service Pack replacement part."
+      }
+    ],
+    "iphone-16e-replacement-battery-4005mah-661": [
+      {
+        "id": "SRK-IPHON-SERVICE-PA",
+        "name": "iPhone 16E Replacement Battery 4005mAh 661 Battery Kit",
+        "type": "Battery",
+        "tier": "Elite",
+        "price": 199.0,
+        "description": "Premium Service Pack replacement part."
+      }
+    ],
+    "iphone-17-air-replacement-battery-3149mah-661": [
+      {
+        "id": "SRK-IPHON-SERVICE-PA",
+        "name": "iPhone 17 Air Replacement Battery 3149mAh 661 Battery Kit",
+        "type": "Battery",
+        "tier": "Elite",
+        "price": 239.0,
+        "description": "Premium Service Pack replacement part."
+      }
+    ],
+    "iphone-17-pro-max-replacement-battery-5088mah-661": [
+      {
+        "id": "SRK-IPHON-SERVICE-PA",
+        "name": "iPhone 17 Pro Max Replacement Battery 5088mAh 661 Battery Kit",
+        "type": "Battery",
+        "tier": "Elite",
+        "price": 239.0,
+        "description": "Premium Service Pack replacement part."
+      }
+    ],
+    "iphone-17-pro-replacement-battery-4252mah-661": [
+      {
+        "id": "SRK-IPHON-SERVICE-PA",
+        "name": "iPhone 17 Pro Replacement Battery 4252mAh 661 Battery Kit",
+        "type": "Battery",
+        "tier": "Elite",
+        "price": 239.0,
+        "description": "Premium Service Pack replacement part."
+      }
+    ],
+    "iphone-17-replacement-battery-3692mah-661": [
+      {
+        "id": "SRK-IPHON-SERVICE-PA",
+        "name": "iPhone 17 Replacement Battery 3692mAh 661 Battery Kit",
+        "type": "Battery",
+        "tier": "Elite",
+        "price": 199.0,
+        "description": "Premium Service Pack replacement part."
+      }
+    ],
+    "oppo-3d-curved-uv-tempered-glass": [
+      {
+        "id": "SRK-OPPO--BUDGET",
+        "name": "Oppo 3D Curved Uv Tempered Glass Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 39,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-OPPO--STANDARD",
+        "name": "OPPO 3D Curved UV Tempered Glass Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Premium Standard replacement part."
+      },
+      {
+        "id": "SRK-OPPO--ELITE",
+        "name": "Oppo 3D Curved Uv Tempered Glass Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 89,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-OPPO--BAT",
+        "name": "Oppo 3D Curved Uv Tempered Glass Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "oppo-3d-a9-2020": [
+      {
+        "id": "SRK-OPPO--BUDGET",
+        "name": "Oppo 3D A9 2020 Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 39,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-OPPO--STANDARD",
+        "name": "OPPO 3D A9 (2020) Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Premium Standard replacement part."
+      },
+      {
+        "id": "SRK-OPPO--ELITE",
+        "name": "Oppo 3D A9 2020 Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 89,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-OPPO--BAT",
+        "name": "Oppo 3D A9 2020 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "oppo-3d-find-x5-lite": [
+      {
+        "id": "SRK-OPPO--BUDGET",
+        "name": "Oppo 3D Find X5 Lite Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 39,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-OPPO--STANDARD",
+        "name": "OPPO 3D Find X5 Lite Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Premium Standard replacement part."
+      },
+      {
+        "id": "SRK-OPPO--ELITE",
+        "name": "Oppo 3D Find X5 Lite Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 89,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-OPPO--BAT",
+        "name": "Oppo 3D Find X5 Lite Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "oppo-amplus": [
+      {
+        "id": "SRK-OPPO--AMPLUS",
+        "name": "OPPO AMPLUS Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 89.0,
+        "description": "Premium AMPLUS replacement part."
+      },
+      {
+        "id": "SRK-OPPO--PRO",
+        "name": "Oppo Amplus Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 89,
+        "description": "High-Performance Aftermarket OLED"
+      },
+      {
+        "id": "SRK-OPPO--ELITE",
+        "name": "Oppo Amplus Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 129,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-OPPO--AMPLUS",
+        "name": "OPPO AMPLUS Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 79.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "oppo-bq7": [
+      {
+        "id": "SRK-OPPO--BQ7",
+        "name": "OPPO BQ7 Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 89.0,
+        "description": "Premium BQ7 replacement part."
+      },
+      {
+        "id": "SRK-OPPO--PRO",
+        "name": "Oppo Bq7 Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 89,
+        "description": "High-Performance Aftermarket OLED"
+      },
+      {
+        "id": "SRK-OPPO--BQ7",
+        "name": "OPPO BQ7 Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 179.0,
+        "description": "Premium BQ7 replacement part."
+      },
+      {
+        "id": "SRK-OPPO--BAT",
+        "name": "Oppo Bq7 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "oppo": [
+      {
+        "id": "SRK-OPPO-BUDGET",
+        "name": "Oppo Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 89,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-OPPO-PRO",
+        "name": "Oppo Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 129,
+        "description": "High-Performance Aftermarket OLED"
+      },
+      {
+        "id": "SRK-OPPO-PULL",
+        "name": "OPPO Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 219.0,
+        "description": "Premium PULL replacement part."
+      },
+      {
+        "id": "SRK-OPPO-BAT",
+        "name": "Oppo Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "oppo-a53-2015": [
+      {
+        "id": "SRK-OPPO--AMPLUS",
+        "name": "OPPO A53 (2015) Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "a59": [
+      {
+        "id": "SRK-A59-AMPLUS",
+        "name": "A59 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "oppo-a57": [
+      {
+        "id": "SRK-OPPO--AMPLUS",
+        "name": "OPPO A57 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 69.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "oppo-a76": [
+      {
+        "id": "SRK-OPPO--AMPLUS",
+        "name": "OPPO A76 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 69.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "oppo-reno-10x-zoom": [
+      {
+        "id": "SRK-OPPO--AMPLUS",
+        "name": "OPPO Reno 10x zoom Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 69.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "oppo-reno-z": [
+      {
+        "id": "SRK-OPPO--AMPLUS",
+        "name": "OPPO Reno Z Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 69.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "oppo-reno3": [
+      {
+        "id": "SRK-OPPO--AMPLUS",
+        "name": "OPPO Reno3 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 69.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "k7": [
+      {
+        "id": "SRK-K7-AMPLUS",
+        "name": "K7 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 69.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "oppo-reno4-z": [
+      {
+        "id": "SRK-OPPO--AMPLUS",
+        "name": "OPPO Reno4 Z Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 69.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "oppo-reno5-k": [
+      {
+        "id": "SRK-OPPO--AMPLUS",
+        "name": "OPPO Reno5 K Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 79.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "oppo-reno5-lite": [
+      {
+        "id": "SRK-OPPO--AMPLUS",
+        "name": "OPPO Reno5 Lite Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 69.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "f19-pro": [
+      {
+        "id": "SRK-F19-P-AMPLUS",
+        "name": "F19 Pro Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 69.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "reno5-f": [
+      {
+        "id": "SRK-RENO5-AMPLUS",
+        "name": "Reno5 F Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 69.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "a94": [
+      {
+        "id": "SRK-A94-AMPLUS",
+        "name": "A94 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 69.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "oppo-reno6": [
+      {
+        "id": "SRK-OPPO--AMPLUS",
+        "name": "OPPO Reno6 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 69.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "k9": [
+      {
+        "id": "SRK-K9-AMPLUS",
+        "name": "K9 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 69.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "oppo-reno6-pro": [
+      {
+        "id": "SRK-OPPO--AMPLUS",
+        "name": "OPPO Reno6 Pro Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 79.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "oppo-reno6-pro-plus": [
+      {
+        "id": "SRK-OPPO--AMPLUS",
+        "name": "OPPO Reno6 Pro Plus Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 79.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "oppo-reno4-pro": [
+      {
+        "id": "SRK-OPPO--AMPLUS",
+        "name": "OPPO Reno4 Pro Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 79.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "oppo-refurb": [
+      {
+        "id": "SRK-OPPO--BUDGET",
+        "name": "Oppo Refurb Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 99,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-OPPO--REFURB",
+        "name": "OPPO REFURB Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 259.0,
+        "description": "Premium REFURB replacement part."
+      },
+      {
+        "id": "SRK-OPPO--ELITE",
+        "name": "Oppo Refurb Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 209,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-OPPO--BAT",
+        "name": "Oppo Refurb Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "oppo-tempered-glass": [
+      {
+        "id": "SRK-OPPO--BUDGET",
+        "name": "Oppo Tempered Glass Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 39,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-OPPO--STANDARD",
+        "name": "OPPO Tempered Glass Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Premium Standard replacement part."
+      },
+      {
+        "id": "SRK-OPPO--ELITE",
+        "name": "Oppo Tempered Glass Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 89,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-OPPO--BAT",
+        "name": "Oppo Tempered Glass Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "galaxy-amplus-a16": [
+      {
+        "id": "SRK-GALAX-AMPLUS",
+        "name": "Galaxy AMPLUS A16 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 69.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "galaxy-amplus-a71": [
+      {
+        "id": "SRK-GALAX-AMPLUS",
+        "name": "Galaxy AMPLUS A71 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 69.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "galaxy-as-new": [
+      {
+        "id": "SRK-GALAX-BUDGET",
+        "name": "Galaxy As New Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 119,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-GALAX-PRO",
+        "name": "Galaxy As New Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 169,
+        "description": "High-Performance Aftermarket OLED"
+      },
+      {
+        "id": "SRK-GALAX-AS-NEW",
+        "name": "Galaxy AS NEW Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 229.0,
+        "description": "Premium AS NEW replacement part."
+      },
+      {
+        "id": "SRK-GALAX-BAT",
+        "name": "Galaxy As New Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "galaxy-a35": [
+      {
+        "id": "SRK-GALAX-BUDGET",
+        "name": "Galaxy A35 Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 119,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-GALAX-PRO",
+        "name": "Galaxy A35 Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 169,
+        "description": "High-Performance Aftermarket OLED"
+      },
+      {
+        "id": "SRK-GALAX-ASSEMBLED",
+        "name": "Galaxy A35 Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 169.0,
+        "description": "Premium ASSEMBLED replacement part."
+      },
+      {
+        "id": "SRK-GALAX-BAT",
+        "name": "Galaxy A35 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "galaxy-s25-fe": [
+      {
+        "id": "SRK-GALAX-BUDGET",
+        "name": "Galaxy S25 Fe Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 189,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-GALAX-PRO",
+        "name": "Galaxy S25 Fe Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 269,
+        "description": "High-Performance Aftermarket OLED"
+      },
+      {
+        "id": "SRK-GALAX-ASSEMBLED",
+        "name": "Galaxy S25 FE Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 269.0,
+        "description": "Premium ASSEMBLED replacement part."
+      },
+      {
+        "id": "SRK-GALAX-BAT",
+        "name": "Galaxy S25 Fe Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "galaxy-s25": [
+      {
+        "id": "SRK-GALAX-BUDGET",
+        "name": "Galaxy S25 Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 199,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-GALAX-PRO",
+        "name": "Galaxy S25 Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 289,
+        "description": "High-Performance Aftermarket OLED"
+      },
+      {
+        "id": "SRK-GALAX-ASSEMBLED",
+        "name": "Galaxy S25 Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 289.0,
+        "description": "Premium ASSEMBLED replacement part."
+      },
+      {
+        "id": "SRK-GALAX-AMPLUS",
+        "name": "Galaxy S25 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 69.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "galaxy-s25-ultra": [
+      {
+        "id": "SRK-GALAX-BUDGET",
+        "name": "Galaxy S25 Ultra Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 289,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-GALAX-PRO",
+        "name": "Galaxy S25 Ultra Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 409,
+        "description": "High-Performance Aftermarket OLED"
+      },
+      {
+        "id": "SRK-GALAX-ASSEMBLED",
+        "name": "Galaxy S25 Ultra Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 409.0,
+        "description": "Premium ASSEMBLED replacement part."
+      },
+      {
+        "id": "SRK-GALAX-SERVICE-PA",
+        "name": "Galaxy S25 Ultra Battery Kit",
+        "type": "Battery",
+        "tier": "Elite",
+        "price": 109.0,
+        "description": "Premium Service Pack replacement part."
+      }
+    ],
+    "galaxy-s22-ultra": [
+      {
+        "id": "SRK-GALAX-BUDGET",
+        "name": "Galaxy S22 Ultra Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 209,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-GALAX-PRO",
+        "name": "Galaxy S22 Ultra Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 299,
+        "description": "High-Performance Aftermarket OLED"
+      },
+      {
+        "id": "SRK-GALAX-ASSEMBLED",
+        "name": "Galaxy S22 Ultra Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 409.0,
+        "description": "Premium ASSEMBLED replacement part."
+      },
+      {
+        "id": "SRK-GALAX-BAT",
+        "name": "Galaxy S22 Ultra Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "galaxy-s23": [
+      {
+        "id": "SRK-GALAX-BUDGET",
+        "name": "Galaxy S23 Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 209,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-GALAX-PRO",
+        "name": "Galaxy S23 Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 299,
+        "description": "High-Performance Aftermarket OLED"
+      },
+      {
+        "id": "SRK-GALAX-ASSEMBLED",
+        "name": "Galaxy S23 Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 299.0,
+        "description": "Premium ASSEMBLED replacement part."
+      },
+      {
+        "id": "SRK-GALAX-BAT",
+        "name": "Galaxy S23 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "galaxy-s23-ultra": [
+      {
+        "id": "SRK-GALAX-BUDGET",
+        "name": "Galaxy S23 Ultra Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 209,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-GALAX-PRO",
+        "name": "Galaxy S23 Ultra Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 299,
+        "description": "High-Performance Aftermarket OLED"
+      },
+      {
+        "id": "SRK-GALAX-ASSEMBLED",
+        "name": "Galaxy S23 Ultra Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 429.0,
+        "description": "Premium ASSEMBLED replacement part."
+      },
+      {
+        "id": "SRK-GALAX-BAT",
+        "name": "Galaxy S23 Ultra Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "galaxy-s24-plus": [
+      {
+        "id": "SRK-GALAX-BUDGET",
+        "name": "Galaxy S24 Plus Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 219,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-GALAX-PRO",
+        "name": "Galaxy S24 Plus Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 309,
+        "description": "High-Performance Aftermarket OLED"
+      },
+      {
+        "id": "SRK-GALAX-ASSEMBLED",
+        "name": "Galaxy S24 Plus Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 339.0,
+        "description": "Premium ASSEMBLED replacement part."
+      },
+      {
+        "id": "SRK-GALAX-BAT",
+        "name": "Galaxy S24 Plus Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "galaxy-s24": [
+      {
+        "id": "SRK-GALAX-BUDGET",
+        "name": "Galaxy S24 Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 219,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-GALAX-PRO",
+        "name": "Galaxy S24 Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 309,
+        "description": "High-Performance Aftermarket OLED"
+      },
+      {
+        "id": "SRK-GALAX-ASSEMBLED",
+        "name": "Galaxy S24 Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 309.0,
+        "description": "Premium ASSEMBLED replacement part."
+      },
+      {
+        "id": "SRK-GALAX-BAT",
+        "name": "Galaxy S24 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "galaxy-s24-ultra": [
+      {
+        "id": "SRK-GALAX-BUDGET",
+        "name": "Galaxy S24 Ultra Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 279,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-GALAX-PRO",
+        "name": "Galaxy S24 Ultra Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 399,
+        "description": "High-Performance Aftermarket OLED"
+      },
+      {
+        "id": "SRK-GALAX-ASSEMBLED",
+        "name": "Galaxy S24 Ultra Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 399.0,
+        "description": "Premium ASSEMBLED replacement part."
+      },
+      {
+        "id": "SRK-GALAX-BAT",
+        "name": "Galaxy S24 Ultra Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "galaxy-s25-plus": [
+      {
+        "id": "SRK-GALAX-BUDGET",
+        "name": "Galaxy S25 Plus Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 209,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-GALAX-PRO",
+        "name": "Galaxy S25 Plus Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 299,
+        "description": "High-Performance Aftermarket OLED"
+      },
+      {
+        "id": "SRK-GALAX-ASSEMBLED",
+        "name": "Galaxy S25 Plus Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 319.0,
+        "description": "Premium ASSEMBLED replacement part."
+      },
+      {
+        "id": "SRK-GALAX-SERVICE-PA",
+        "name": "Galaxy S25 Plus Battery Kit",
+        "type": "Battery",
+        "tier": "Elite",
+        "price": 109.0,
+        "description": "Premium Service Pack replacement part."
+      }
+    ],
+    "galaxy-s26-plus": [
+      {
+        "id": "SRK-GALAX-BUDGET",
+        "name": "Galaxy S26 Plus Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 279,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-GALAX-PRO",
+        "name": "Galaxy S26 Plus Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 399,
+        "description": "High-Performance Aftermarket OLED"
+      },
+      {
+        "id": "SRK-GALAX-ASSEMBLED",
+        "name": "Galaxy S26 Plus Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 399.0,
+        "description": "Premium ASSEMBLED replacement part."
+      },
+      {
+        "id": "SRK-GALAX-SERVICE-PA",
+        "name": "Galaxy S26 Plus Battery Kit",
+        "type": "Battery",
+        "tier": "Elite",
+        "price": 109.0,
+        "description": "Premium Service Pack replacement part."
+      }
+    ],
+    "galaxy-s26": [
+      {
+        "id": "SRK-GALAX-BUDGET",
+        "name": "Galaxy S26 Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 229,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-GALAX-PRO",
+        "name": "Galaxy S26 Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 329,
+        "description": "High-Performance Aftermarket OLED"
+      },
+      {
+        "id": "SRK-GALAX-ASSEMBLED",
+        "name": "Galaxy S26 Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 329.0,
+        "description": "Premium ASSEMBLED replacement part."
+      },
+      {
+        "id": "SRK-GALAX-SERVICE-PA",
+        "name": "Galaxy S26 Battery Kit",
+        "type": "Battery",
+        "tier": "Elite",
+        "price": 109.0,
+        "description": "Premium Service Pack replacement part."
+      }
+    ],
+    "galaxy-s26-ultra": [
+      {
+        "id": "SRK-GALAX-BUDGET",
+        "name": "Galaxy S26 Ultra Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 339,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-GALAX-PRO",
+        "name": "Galaxy S26 Ultra Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 479,
+        "description": "High-Performance Aftermarket OLED"
+      },
+      {
+        "id": "SRK-GALAX-ASSEMBLED",
+        "name": "Galaxy S26 Ultra Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 479.0,
+        "description": "Premium ASSEMBLED replacement part."
+      },
+      {
+        "id": "SRK-GALAX-SERVICE-PA",
+        "name": "Galaxy S26 Ultra Battery Kit",
+        "type": "Battery",
+        "tier": "Elite",
+        "price": 119.0,
+        "description": "Premium Service Pack replacement part."
+      }
+    ],
+    "galaxy-z-flip5": [
+      {
+        "id": "SRK-GALAX-BUDGET",
+        "name": "Galaxy Z Flip5 Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 349,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-GALAX-ASSEMBLED",
+        "name": "Galaxy Z Flip5 Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 499.0,
+        "description": "Premium ASSEMBLED replacement part."
+      },
+      {
+        "id": "SRK-GALAX-ELITE",
+        "name": "Galaxy Z Flip5 Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 749,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-GALAX-BAT",
+        "name": "Galaxy Z Flip5 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "galaxy-z-fold6": [
+      {
+        "id": "SRK-GALAX-BUDGET",
+        "name": "Galaxy Z Fold6 Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 39,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-GALAX-ASSEMBLED",
+        "name": "Galaxy Z Fold6 Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 1009.0,
+        "description": "Premium ASSEMBLED replacement part."
+      },
+      {
+        "id": "SRK-GALAX-SERVICE-PA",
+        "name": "Galaxy Z Fold6 Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 909.0,
+        "description": "Premium Service Pack replacement part."
+      },
+      {
+        "id": "SRK-GALAX-BAT",
+        "name": "Galaxy Z Fold6 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "galaxy-z-fold-5": [
+      {
+        "id": "SRK-GALAX-BUDGET",
+        "name": "Galaxy Z Fold 5 Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 39,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-GALAX-STANDARD",
+        "name": "Galaxy Z Fold 5 Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Premium Standard replacement part."
+      },
+      {
+        "id": "SRK-GALAX-ELITE",
+        "name": "Galaxy Z Fold 5 Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 89,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-GALAX-BAT",
+        "name": "Galaxy Z Fold 5 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "galaxy-z-fold2": [
+      {
+        "id": "SRK-GALAX-BUDGET",
+        "name": "Galaxy Z Fold2 Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 39,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-GALAX-STANDARD",
+        "name": "Galaxy Z Fold2 Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Premium Standard replacement part."
+      },
+      {
+        "id": "SRK-GALAX-ELITE",
+        "name": "Galaxy Z Fold2 Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 89,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-GALAX-SERVICE-PA",
+        "name": "Galaxy Z Fold2 Battery Kit",
+        "type": "Battery",
+        "tier": "Elite",
+        "price": 459.0,
+        "description": "Premium Service Pack replacement part."
+      }
+    ],
+    "galaxy-z-fold3": [
+      {
+        "id": "SRK-GALAX-BUDGET",
+        "name": "Galaxy Z Fold3 Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 39,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-GALAX-STANDARD",
+        "name": "Galaxy Z Fold3 Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Premium Standard replacement part."
+      },
+      {
+        "id": "SRK-GALAX-ELITE",
+        "name": "Galaxy Z Fold3 Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 89,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-GALAX-BAT",
+        "name": "Galaxy Z Fold3 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "galaxy-z-fold4": [
+      {
+        "id": "SRK-GALAX-BUDGET",
+        "name": "Galaxy Z Fold4 Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 39,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-GALAX-STANDARD",
+        "name": "Galaxy Z Fold4 Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Premium Standard replacement part."
+      },
+      {
+        "id": "SRK-GALAX-SERVICE-PA",
+        "name": "Galaxy Z Fold4 Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 729.0,
+        "description": "Premium Service Pack replacement part."
+      },
+      {
+        "id": "SRK-GALAX-BAT",
+        "name": "Galaxy Z Fold4 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "full-coverage": [
+      {
+        "id": "SRK-FULL--BUDGET",
+        "name": "Full Coverage Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 39,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-FULL--STANDARD",
+        "name": "Full Coverage Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Premium Standard replacement part."
+      },
+      {
+        "id": "SRK-FULL--ELITE",
+        "name": "Full Coverage Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 89,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-FULL--BAT",
+        "name": "Full Coverage Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "galaxy-z-fold5": [
+      {
+        "id": "SRK-GALAX-BUDGET",
+        "name": "Galaxy Z Fold5 Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 39,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-GALAX-STANDARD",
+        "name": "Galaxy Z Fold5 Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Premium Standard replacement part."
+      },
+      {
+        "id": "SRK-GALAX-ELITE",
+        "name": "Galaxy Z Fold5 Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 89,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-GALAX-BAT",
+        "name": "Galaxy Z Fold5 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "greencell-s22-ultra": [
+      {
+        "id": "SRK-GREEN-GREENCELL",
+        "name": "Greencell S22 Ultra Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 79.0,
+        "description": "Premium Greencell replacement part."
+      }
+    ],
+    "greencell-s25": [
+      {
+        "id": "SRK-GREEN-GREENCELL",
+        "name": "Greencell S25 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 79.0,
+        "description": "Premium Greencell replacement part."
+      }
+    ],
+    "greencell-s25-plus": [
+      {
+        "id": "SRK-GREEN-GREENCELL",
+        "name": "Greencell S25 Plus Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 79.0,
+        "description": "Premium Greencell replacement part."
+      }
+    ],
+    "greencell-s25-ultra": [
+      {
+        "id": "SRK-GREEN-GREENCELL",
+        "name": "Greencell S25 Ultra Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 79.0,
+        "description": "Premium Greencell replacement part."
+      }
+    ],
+    "kinglas-privacy-tempered-glass": [
+      {
+        "id": "SRK-KINGL-BUDGET",
+        "name": "Kinglas Privacy Tempered Glass Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 39,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-KINGL-STANDARD",
+        "name": "Kinglas Privacy Tempered Glass Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Premium Standard replacement part."
+      },
+      {
+        "id": "SRK-KINGL-ELITE",
+        "name": "Kinglas Privacy Tempered Glass Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 89,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-KINGL-BAT",
+        "name": "Kinglas Privacy Tempered Glass Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "kinglas-tempered-glass": [
+      {
+        "id": "SRK-KINGL-BUDGET",
+        "name": "Kinglas Tempered Glass Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 39,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-KINGL-STANDARD",
+        "name": "Kinglas Tempered Glass Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Premium Standard replacement part."
+      },
+      {
+        "id": "SRK-KINGL-ELITE",
+        "name": "Kinglas Tempered Glass Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 89,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-KINGL-BAT",
+        "name": "Kinglas Tempered Glass Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "refurb": [
+      {
+        "id": "SRK-REFUR-BUDGET",
+        "name": "Refurb Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 299,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-REFUR-REFURB",
+        "name": "REFURB Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 619.0,
+        "description": "Premium REFURB replacement part."
+      },
+      {
+        "id": "SRK-REFUR-ELITE",
+        "name": "Refurb Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 639,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-REFUR-BAT",
+        "name": "Refurb Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "refurb-outer": [
+      {
+        "id": "SRK-REFUR-BUDGET",
+        "name": "Refurb Outer Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 129,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-REFUR-REFURB",
+        "name": "REFURB Outer Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 209.0,
+        "description": "Premium REFURB replacement part."
+      },
+      {
+        "id": "SRK-REFUR-ELITE",
+        "name": "Refurb Outer Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 269,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-REFUR-BAT",
+        "name": "Refurb Outer Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "galaxy-a36": [
+      {
+        "id": "SRK-GALAX-AMPLUS",
+        "name": "Galaxy A36 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 69.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "galaxy-fold": [
+      {
+        "id": "SRK-GALAX-SERVICE-PA",
+        "name": "Galaxy Fold Battery Kit",
+        "type": "Battery",
+        "tier": "Budget",
+        "price": 929.0,
+        "description": "Premium Service Pack replacement part."
+      }
+    ],
+    "galaxy-s25-edge": [
+      {
+        "id": "SRK-GALAX-AMPLUS",
+        "name": "Galaxy S25 Edge Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 69.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "tab-a11-plus": [
+      {
+        "id": "SRK-TAB-A-SERVICE-PA",
+        "name": "Tab A11 Plus Battery Kit",
+        "type": "Battery",
+        "tier": "Elite",
+        "price": 109.0,
+        "description": "Premium Service Pack replacement part."
+      }
+    ],
+    "tab-a11": [
+      {
+        "id": "SRK-TAB-A-SERVICE-PA",
+        "name": "Tab A11 Battery Kit",
+        "type": "Battery",
+        "tier": "Elite",
+        "price": 119.0,
+        "description": "Premium Service Pack replacement part."
+      }
+    ],
+    "tab-active-5": [
+      {
+        "id": "SRK-TAB-A-SERVICE-PA",
+        "name": "Tab Active 5 Battery Kit",
+        "type": "Battery",
+        "tier": "Elite",
+        "price": 109.0,
+        "description": "Premium Service Pack replacement part."
+      }
+    ],
+    "tab-s10-ultra": [
+      {
+        "id": "SRK-TAB-S-SERVICE-PA",
+        "name": "Tab S10 Ultra Battery Kit",
+        "type": "Battery",
+        "tier": "Elite",
+        "price": 129.0,
+        "description": "Premium Service Pack replacement part."
+      }
+    ],
+    "tab-s11-ultra": [
+      {
+        "id": "SRK-TAB-S-SERVICE-PA",
+        "name": "Tab S11 Ultra Battery Kit",
+        "type": "Battery",
+        "tier": "Elite",
+        "price": 129.0,
+        "description": "Premium Service Pack replacement part."
+      }
+    ],
+    "tab-s11": [
+      {
+        "id": "SRK-TAB-S-SERVICE-PA",
+        "name": "Tab S11 Battery Kit",
+        "type": "Battery",
+        "tier": "Elite",
+        "price": 119.0,
+        "description": "Premium Service Pack replacement part."
+      }
+    ],
+    "galaxy-z-flip": [
+      {
+        "id": "SRK-GALAX-AMPLUS",
+        "name": "Galaxy Z Flip Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 69.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "galaxy-z-flip3": [
+      {
+        "id": "SRK-GALAX-SERVICE-PA",
+        "name": "Galaxy Z Flip3 Battery Kit",
+        "type": "Battery",
+        "tier": "Elite",
+        "price": 89.0,
+        "description": "Premium Service Pack replacement part."
+      }
+    ],
+    "galaxy-z-flip6": [
+      {
+        "id": "SRK-GALAX-AMPLUS",
+        "name": "Galaxy Z Flip6 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 69.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "galaxy-z-fold-2": [
+      {
+        "id": "SRK-GALAX-AMPLUS",
+        "name": "Galaxy Z Fold 2 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 69.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "galaxy-z-fold-3": [
+      {
+        "id": "SRK-GALAX-SERVICE-PA",
+        "name": "Galaxy Z Fold 3 Battery Kit",
+        "type": "Battery",
+        "tier": "Elite",
+        "price": 819.0,
+        "description": "Premium Service Pack replacement part."
+      }
+    ],
+    "galaxy-z-fold-6": [
+      {
+        "id": "SRK-GALAX-AMPLUS",
+        "name": "Galaxy Z Fold 6 Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 69.0,
+        "description": "Premium AMPLUS replacement part."
+      }
+    ],
+    "galaxy-z-fold7": [
+      {
+        "id": "SRK-GALAX-BUDGET",
+        "name": "Galaxy Z Fold7 Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 149,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-GALAX-PRO",
+        "name": "Galaxy Z Fold7 Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 219,
+        "description": "High-Performance Aftermarket OLED"
+      },
+      {
+        "id": "SRK-GALAX-SERVICE-PA",
+        "name": "Galaxy Z Fold7 Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 1069.0,
+        "description": "Premium Service Pack replacement part."
+      },
+      {
+        "id": "SRK-GALAX-SERVICE-PA",
+        "name": "Galaxy Z Fold7 Battery Kit",
+        "type": "Battery",
+        "tier": "Elite",
+        "price": 99.0,
+        "description": "Premium Service Pack replacement part."
+      }
+    ],
+    "tempered-glass": [
+      {
+        "id": "SRK-TEMPE-BUDGET",
+        "name": "Tempered Glass Screen Kit",
+        "type": "Screen",
+        "tier": "Budget",
+        "price": 39,
+        "description": "High-Performance Aftermarket Incell"
+      },
+      {
+        "id": "SRK-TEMPE-STANDARD",
+        "name": "Tempered Glass Screen Kit",
+        "type": "Screen",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Premium Standard replacement part."
+      },
+      {
+        "id": "SRK-TEMPE-ELITE",
+        "name": "Tempered Glass Screen Kit",
+        "type": "Screen",
+        "tier": "Elite",
+        "price": 89,
+        "description": "High-Performance OEM Original"
+      },
+      {
+        "id": "SRK-TEMPE-BAT",
+        "name": "Tempered Glass Battery Kit",
+        "type": "Battery",
+        "tier": "Pro",
+        "price": 59.0,
+        "description": "Long-life cell."
+      }
+    ],
+    "accessories": [
+      {
+        "id": "SRK-ACC-CABLE",
+        "name": "Anker Braided USB-C Cable",
+        "price": 34.18,
+        "description": "Durable Charging",
+        "image": "https://img.crazypos.com/product/c89e20f0-4313-45b9-883a-315a0bb689c9.jpg"
+      }
+    ]
+  }
+}

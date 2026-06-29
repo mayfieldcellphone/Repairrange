@@ -1,0 +1,2443 @@
+{
+  "batteryUpsellPrice": 49,
+  "batteryUpsellNote": "Recommended for devices over 2 years old.",
+  "groups": [
+    {
+      "id": "iphone-7-8-se-series",
+      "name": "iPhone 7 / 8 / SE Series",
+      "brand": "apple",
+      "models": [
+        "iPhone 7",
+        "iPhone 8",
+        "iPhone 8 Plus",
+        "iPhone SE 2020",
+        "iPhone SE 2022"
+      ],
+      "minPrice": 69,
+      "repairs": {
+        "screen": {
+          "iPhone 7": {
+            "budget": {
+              "price": 89,
+              "sku": "SRK-APP-iPhone7-SCR-INCELL"
+            },
+            "pro": {
+              "price": 120,
+              "sku": "SRK-APP-iPhone7-SCR-OLED"
+            },
+            "elite": {
+              "price": 159,
+              "sku": "SRK-APP-iPhone7-SCR-OEM"
+            }
+          },
+          "iPhone 8": {
+            "budget": {
+              "price": 89,
+              "sku": "SRK-APP-iPhone8-SCR-INCELL"
+            },
+            "pro": {
+              "price": 120,
+              "sku": "SRK-APP-iPhone8-SCR-OLED"
+            },
+            "elite": {
+              "price": 159,
+              "sku": "SRK-APP-iPhone8-SCR-OEM"
+            }
+          },
+          "iPhone 8 Plus": {
+            "budget": {
+              "price": 89,
+              "sku": "SRK-APP-iPhone8Plus-SCR-INCELL"
+            },
+            "pro": {
+              "price": 120,
+              "sku": "SRK-APP-iPhone8Plus-SCR-OLED"
+            },
+            "elite": {
+              "price": 159,
+              "sku": "SRK-APP-iPhone8Plus-SCR-OEM"
+            }
+          },
+          "iPhone SE 2020": {
+            "budget": {
+              "price": 89,
+              "sku": "SRK-APP-iPhoneSE2020-SCR-INCELL"
+            },
+            "pro": {
+              "price": 120,
+              "sku": "SRK-APP-iPhoneSE2020-SCR-OLED"
+            },
+            "elite": {
+              "price": 159,
+              "sku": "SRK-APP-iPhoneSE2020-SCR-OEM"
+            }
+          },
+          "iPhone SE 2022": {
+            "budget": {
+              "price": 89,
+              "sku": "SRK-APP-iPhoneSE2022-SCR-INCELL"
+            },
+            "pro": {
+              "price": 120,
+              "sku": "SRK-APP-iPhoneSE2022-SCR-OLED"
+            },
+            "elite": {
+              "price": 159,
+              "sku": "SRK-APP-iPhoneSE2022-SCR-OEM"
+            }
+          }
+        },
+        "battery": {
+          "iPhone 7": {
+            "pro": {
+              "price": 69,
+              "sku": "SRK-APP-iPhone7-BAT-STD"
+            }
+          },
+          "iPhone 8": {
+            "pro": {
+              "price": 69,
+              "sku": "SRK-APP-iPhone8-BAT-STD"
+            }
+          },
+          "iPhone 8 Plus": {
+            "pro": {
+              "price": 69,
+              "sku": "SRK-APP-iPhone8Plus-BAT-STD"
+            }
+          },
+          "iPhone SE 2020": {
+            "pro": {
+              "price": 69,
+              "sku": "SRK-APP-iPhoneSE2020-BAT-STD"
+            }
+          },
+          "iPhone SE 2022": {
+            "pro": {
+              "price": 69,
+              "sku": "SRK-APP-iPhoneSE2022-BAT-STD"
+            }
+          }
+        },
+        "charging_port": {}
+      }
+    },
+    {
+      "id": "iphone-x-xs-xr-11-series",
+      "name": "iPhone X / XS / XR / 11 Series",
+      "brand": "apple",
+      "models": [
+        "iPhone X",
+        "iPhone XS",
+        "iPhone XS Max",
+        "iPhone XR",
+        "iPhone 11",
+        "iPhone 11 Pro",
+        "iPhone 11 Pro Max"
+      ],
+      "minPrice": 69,
+      "repairs": {
+        "screen": {
+          "iPhone X": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-APP-iPhoneX-SCR-INCELL"
+            },
+            "pro": {
+              "price": 120,
+              "sku": "SRK-APP-iPhoneX-SCR-OLED"
+            },
+            "elite": {
+              "price": 180,
+              "sku": "SRK-APP-iPhoneX-SCR-OEM"
+            }
+          },
+          "iPhone XS": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-APP-iPhoneXS-SCR-INCELL"
+            },
+            "pro": {
+              "price": 120,
+              "sku": "SRK-APP-iPhoneXS-SCR-OLED"
+            },
+            "elite": {
+              "price": 180,
+              "sku": "SRK-APP-iPhoneXS-SCR-OEM"
+            }
+          },
+          "iPhone XS Max": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-APP-iPhoneXSMax-SCR-INCELL"
+            },
+            "pro": {
+              "price": 120,
+              "sku": "SRK-APP-iPhoneXSMax-SCR-OLED"
+            },
+            "elite": {
+              "price": 180,
+              "sku": "SRK-APP-iPhoneXSMax-SCR-OEM"
+            }
+          },
+          "iPhone XR": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-APP-iPhoneXR-SCR-INCELL"
+            },
+            "pro": {
+              "price": 120,
+              "sku": "SRK-APP-iPhoneXR-SCR-OLED"
+            },
+            "elite": {
+              "price": 180,
+              "sku": "SRK-APP-iPhoneXR-SCR-OEM"
+            }
+          },
+          "iPhone 11": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone11-SCR-INCELL"
+            },
+            "pro": {
+              "price": 120,
+              "sku": "SRK-APP-iPhone11-SCR-OLED"
+            },
+            "elite": {
+              "price": 180,
+              "sku": "SRK-APP-iPhone11-SCR-OEM"
+            }
+          },
+          "iPhone 11 Pro": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone11Pro-SCR-INCELL"
+            },
+            "pro": {
+              "price": 120,
+              "sku": "SRK-APP-iPhone11Pro-SCR-OLED"
+            },
+            "elite": {
+              "price": 180,
+              "sku": "SRK-APP-iPhone11Pro-SCR-OEM"
+            }
+          },
+          "iPhone 11 Pro Max": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone11ProM-SCR-INCELL"
+            },
+            "pro": {
+              "price": 120,
+              "sku": "SRK-APP-iPhone11ProM-SCR-OLED"
+            },
+            "elite": {
+              "price": 180,
+              "sku": "SRK-APP-iPhone11ProM-SCR-OEM"
+            }
+          }
+        },
+        "battery": {
+          "iPhone X": {
+            "pro": {
+              "price": 99,
+              "sku": "SRK-APP-iPhoneX-BAT-DIAG"
+            }
+          },
+          "iPhone XS": {
+            "pro": {
+              "price": 99,
+              "sku": "SRK-APP-iPhoneXS-BAT-DIAG"
+            }
+          },
+          "iPhone XS Max": {
+            "pro": {
+              "price": 99,
+              "sku": "SRK-APP-iPhoneXSMax-BAT-DIAG"
+            }
+          },
+          "iPhone XR": {
+            "pro": {
+              "price": 99,
+              "sku": "SRK-APP-iPhoneXR-BAT-DIAG"
+            }
+          },
+          "iPhone 11": {
+            "pro": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone11-BAT-DIAG"
+            }
+          },
+          "iPhone 11 Pro": {
+            "pro": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone11Pro-BAT-DIAG"
+            }
+          },
+          "iPhone 11 Pro Max": {
+            "pro": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone11ProM-BAT-DIAG"
+            }
+          }
+        },
+        "charging_port": {}
+      }
+    },
+    {
+      "id": "iphone-12-series",
+      "name": "iPhone 12 Series",
+      "brand": "apple",
+      "models": [
+        "iPhone 12 Mini",
+        "iPhone 12",
+        "iPhone 12 Pro",
+        "iPhone 12 Pro Max"
+      ],
+      "minPrice": 79,
+      "repairs": {
+        "screen": {
+          "iPhone 12 Mini": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone12Mini-SCR-INCELL"
+            },
+            "pro": {
+              "price": 139,
+              "sku": "SRK-APP-iPhone12Mini-SCR-OLED"
+            },
+            "elite": {
+              "price": 180,
+              "sku": "SRK-APP-iPhone12Mini-SCR-OEM"
+            }
+          },
+          "iPhone 12": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone12-SCR-INCELL"
+            },
+            "pro": {
+              "price": 139,
+              "sku": "SRK-APP-iPhone12-SCR-OLED"
+            },
+            "elite": {
+              "price": 180,
+              "sku": "SRK-APP-iPhone12-SCR-OEM"
+            }
+          },
+          "iPhone 12 Pro": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone12Pro-SCR-INCELL"
+            },
+            "pro": {
+              "price": 139,
+              "sku": "SRK-APP-iPhone12Pro-SCR-OLED"
+            },
+            "elite": {
+              "price": 180,
+              "sku": "SRK-APP-iPhone12Pro-SCR-OEM"
+            }
+          },
+          "iPhone 12 Pro Max": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone12ProM-SCR-INCELL"
+            },
+            "pro": {
+              "price": 139,
+              "sku": "SRK-APP-iPhone12ProM-SCR-OLED"
+            },
+            "elite": {
+              "price": 180,
+              "sku": "SRK-APP-iPhone12ProM-SCR-OEM"
+            }
+          }
+        },
+        "battery": {
+          "iPhone 12 Mini": {
+            "pro": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone12Mini-BAT-DIAG"
+            }
+          },
+          "iPhone 12": {
+            "pro": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone12-BAT-DIAG"
+            }
+          },
+          "iPhone 12 Pro": {
+            "pro": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone12Pro-BAT-DIAG"
+            }
+          },
+          "iPhone 12 Pro Max": {
+            "pro": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone12ProM-BAT-DIAG"
+            }
+          }
+        },
+        "charging_port": {}
+      }
+    },
+    {
+      "id": "iphone-13-series",
+      "name": "iPhone 13 Series",
+      "brand": "apple",
+      "models": [
+        "iPhone 13 Mini",
+        "iPhone 13",
+        "iPhone 13 Pro",
+        "iPhone 13 Pro Max"
+      ],
+      "minPrice": 79,
+      "repairs": {
+        "screen": {
+          "iPhone 13 Mini": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone13Mini-SCR-INCELL"
+            },
+            "pro": {
+              "price": 120,
+              "sku": "SRK-APP-iPhone13Mini-SCR-OLED"
+            },
+            "elite": {
+              "price": 180,
+              "sku": "SRK-APP-iPhone13Mini-SCR-OEM"
+            }
+          },
+          "iPhone 13": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone13-SCR-INCELL"
+            },
+            "pro": {
+              "price": 120,
+              "sku": "SRK-APP-iPhone13-SCR-OLED"
+            },
+            "elite": {
+              "price": 180,
+              "sku": "SRK-APP-iPhone13-SCR-OEM"
+            }
+          },
+          "iPhone 13 Pro": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone13Pro-SCR-INCELL"
+            },
+            "pro": {
+              "price": 120,
+              "sku": "SRK-APP-iPhone13Pro-SCR-OLED"
+            },
+            "elite": {
+              "price": 180,
+              "sku": "SRK-APP-iPhone13Pro-SCR-OEM"
+            }
+          },
+          "iPhone 13 Pro Max": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone13ProM-SCR-INCELL"
+            },
+            "pro": {
+              "price": 120,
+              "sku": "SRK-APP-iPhone13ProM-SCR-OLED"
+            },
+            "elite": {
+              "price": 180,
+              "sku": "SRK-APP-iPhone13ProM-SCR-OEM"
+            }
+          }
+        },
+        "battery": {
+          "iPhone 13 Mini": {
+            "pro": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone13Mini-BAT-DIAG"
+            }
+          },
+          "iPhone 13": {
+            "pro": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone13-BAT-DIAG"
+            }
+          },
+          "iPhone 13 Pro": {
+            "pro": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone13Pro-BAT-DIAG"
+            }
+          },
+          "iPhone 13 Pro Max": {
+            "pro": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone13ProM-BAT-DIAG"
+            }
+          }
+        },
+        "charging_port": {}
+      }
+    },
+    {
+      "id": "iphone-14-series",
+      "name": "iPhone 14 Series",
+      "brand": "apple",
+      "models": [
+        "iPhone 14",
+        "iPhone 14 Plus",
+        "iPhone 14 Pro",
+        "iPhone 14 Pro Max"
+      ],
+      "minPrice": 79,
+      "repairs": {
+        "screen": {
+          "iPhone 14": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone14-SCR-INCELL"
+            },
+            "pro": {
+              "price": 149,
+              "sku": "SRK-APP-iPhone14-SCR-OLED"
+            },
+            "elite": {
+              "price": 349,
+              "sku": "SRK-APP-iPhone14-SCR-OEM"
+            }
+          },
+          "iPhone 14 Plus": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone14Plus-SCR-INCELL"
+            },
+            "pro": {
+              "price": 249,
+              "sku": "SRK-APP-iPhone14Plus-SCR-OLED"
+            },
+            "elite": {
+              "price": 349,
+              "sku": "SRK-APP-iPhone14Plus-SCR-OEM"
+            }
+          },
+          "iPhone 14 Pro": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone14Pro-SCR-INCELL"
+            },
+            "pro": {
+              "price": 249,
+              "sku": "SRK-APP-iPhone14Pro-SCR-OLED"
+            },
+            "elite": {
+              "price": 399,
+              "sku": "SRK-APP-iPhone14Pro-SCR-OEM"
+            }
+          },
+          "iPhone 14 Pro Max": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone14ProM-SCR-INCELL"
+            },
+            "pro": {
+              "price": 249,
+              "sku": "SRK-APP-iPhone14ProM-SCR-OLED"
+            },
+            "elite": {
+              "price": 399,
+              "sku": "SRK-APP-iPhone14ProM-SCR-OEM"
+            }
+          }
+        },
+        "battery": {
+          "iPhone 14": {
+            "pro": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone14-BAT-DIAG"
+            }
+          },
+          "iPhone 14 Plus": {
+            "pro": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone14Plus-BAT-DIAG"
+            }
+          },
+          "iPhone 14 Pro": {
+            "pro": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone14Pro-BAT-DIAG"
+            }
+          },
+          "iPhone 14 Pro Max": {
+            "pro": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone14ProM-BAT-DIAG"
+            }
+          }
+        },
+        "charging_port": {}
+      }
+    },
+    {
+      "id": "iphone-15-16-17-series",
+      "name": "iPhone 15 / 16 / 17 Series",
+      "brand": "apple",
+      "models": [
+        "iPhone 15",
+        "iPhone 15 Pro",
+        "iPhone 15 Pro Max",
+        "iPhone 16",
+        "iPhone 16 Pro",
+        "iPhone 16 Pro Max",
+        "iPhone 17",
+        "iPhone 17 Pro",
+        "iPhone 17 Pro Max"
+      ],
+      "minPrice": 79,
+      "repairs": {
+        "screen": {
+          "iPhone 15": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone15-SCR-INCELL"
+            },
+            "pro": {
+              "price": 120,
+              "sku": "SRK-APP-iPhone15-SCR-OLED"
+            },
+            "elite": {
+              "price": 249,
+              "sku": "SRK-APP-iPhone15-SCR-OEM"
+            }
+          },
+          "iPhone 15 Pro": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone15Pro-SCR-INCELL"
+            },
+            "pro": {
+              "price": 120,
+              "sku": "SRK-APP-iPhone15Pro-SCR-OLED"
+            },
+            "elite": {
+              "price": 249,
+              "sku": "SRK-APP-iPhone15Pro-SCR-OEM"
+            }
+          },
+          "iPhone 15 Pro Max": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-APP-iPhone15ProM-SCR-INCELL"
+            },
+            "pro": {
+              "price": 120,
+              "sku": "SRK-APP-iPhone15ProM-SCR-OLED"
+            },
+            "elite": {
+              "price": 249,
+              "sku": "SRK-APP-iPhone15ProM-SCR-OEM"
+            }
+          },
+          "iPhone 16": {
+            "budget": {
+              "price": 110,
+              "sku": "SRK-APP-iPhone16-SCR-INCELL"
+            },
+            "pro": {
+              "price": 150,
+              "sku": "SRK-APP-iPhone16-SCR-OLED"
+            },
+            "elite": {
+              "price": 349,
+              "sku": "SRK-APP-iPhone16-SCR-OEM"
+            }
+          },
+          "iPhone 16 Pro": {
+            "budget": {
+              "price": 110,
+              "sku": "SRK-APP-iPhone16Pro-SCR-INCELL"
+            },
+            "pro": {
+              "price": 150,
+              "sku": "SRK-APP-iPhone16Pro-SCR-OLED"
+            },
+            "elite": {
+              "price": 349,
+              "sku": "SRK-APP-iPhone16Pro-SCR-OEM"
+            }
+          },
+          "iPhone 16 Pro Max": {
+            "budget": {
+              "price": 110,
+              "sku": "SRK-APP-iPhone16ProM-SCR-INCELL"
+            },
+            "pro": {
+              "price": 150,
+              "sku": "SRK-APP-iPhone16ProM-SCR-OLED"
+            },
+            "elite": {
+              "price": 349,
+              "sku": "SRK-APP-iPhone16ProM-SCR-OEM"
+            }
+          },
+          "iPhone 17": {
+            "budget": {
+              "price": 115,
+              "sku": "SRK-APP-iPhone17-SCR-INCELL"
+            },
+            "pro": {
+              "price": 150,
+              "sku": "SRK-APP-iPhone17-SCR-OLED"
+            },
+            "elite": {
+              "price": 449,
+              "sku": "SRK-APP-iPhone17-SCR-OEM"
+            }
+          },
+          "iPhone 17 Pro": {
+            "budget": {
+              "price": 115,
+              "sku": "SRK-APP-iPhone17Pro-SCR-INCELL"
+            },
+            "pro": {
+              "price": 150,
+              "sku": "SRK-APP-iPhone17Pro-SCR-OLED"
+            },
+            "elite": {
+              "price": 449,
+              "sku": "SRK-APP-iPhone17Pro-SCR-OEM"
+            }
+          },
+          "iPhone 17 Pro Max": {
+            "budget": {
+              "price": 115,
+              "sku": "SRK-APP-iPhone17ProM-SCR-INCELL"
+            },
+            "pro": {
+              "price": 150,
+              "sku": "SRK-APP-iPhone17ProM-SCR-OLED"
+            },
+            "elite": {
+              "price": 449,
+              "sku": "SRK-APP-iPhone17ProM-SCR-OEM"
+            }
+          }
+        },
+        "battery": {
+          "iPhone 15": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-APP-iPhone15-BAT-DIAG"
+            }
+          },
+          "iPhone 15 Pro": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-APP-iPhone15Pro-BAT-DIAG"
+            }
+          },
+          "iPhone 15 Pro Max": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-APP-iPhone15ProM-BAT-DIAG"
+            }
+          },
+          "iPhone 16": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-APP-iPhone16-BAT-DIAG"
+            }
+          },
+          "iPhone 16 Pro": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-APP-iPhone16Pro-BAT-DIAG"
+            }
+          },
+          "iPhone 16 Pro Max": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-APP-iPhone16ProM-BAT-DIAG"
+            }
+          },
+          "iPhone 17": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-APP-iPhone17-BAT-DIAG"
+            }
+          },
+          "iPhone 17 Pro": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-APP-iPhone17Pro-BAT-DIAG"
+            }
+          },
+          "iPhone 17 Pro Max": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-APP-iPhone17ProM-BAT-DIAG"
+            }
+          }
+        },
+        "charging_port": {}
+      }
+    },
+    {
+      "id": "galaxy-s-series-s21-s26",
+      "name": "Galaxy S-Series (S21\u2013S26)",
+      "brand": "samsung",
+      "models": [
+        "Galaxy S21",
+        "Galaxy S21 Ultra",
+        "Galaxy S22",
+        "Galaxy S22 Plus",
+        "Galaxy S22 FE",
+        "Galaxy S22 Ultra",
+        "Galaxy S23",
+        "Galaxy S23 FE",
+        "Galaxy S23 Plus",
+        "Galaxy S23 Ultra",
+        "Galaxy S24",
+        "Galaxy S24 Plus",
+        "Galaxy S24 FE",
+        "Galaxy S24 Ultra",
+        "Galaxy S25 FE",
+        "Galaxy S25",
+        "Galaxy S25 Plus",
+        "Galaxy S25 Ultra",
+        "Galaxy S26",
+        "Galaxy S26 FE",
+        "Galaxy S26 Plus",
+        "Galaxy S26 Ultra"
+      ],
+      "minPrice": 79,
+      "repairs": {
+        "screen": {
+          "Galaxy S21": {
+            "budget": {
+              "price": 189,
+              "sku": "SRK-SAM-GalaxyS21-SCR-INCELL"
+            },
+            "elite": {
+              "price": 249,
+              "sku": "SRK-SAM-GalaxyS21-SCR-OEM"
+            }
+          },
+          "Galaxy S21 Ultra": {
+            "budget": {
+              "price": 189,
+              "sku": "SRK-SAM-GalaxyS21Ult-SCR-INCELL"
+            },
+            "elite": {
+              "price": 359,
+              "sku": "SRK-SAM-GalaxyS21Ult-SCR-OEM"
+            }
+          },
+          "Galaxy S22": {
+            "budget": {
+              "price": 249,
+              "sku": "SRK-SAM-GalaxyS22-SCR-INCELL"
+            },
+            "elite": {
+              "price": 359,
+              "sku": "SRK-SAM-GalaxyS22-SCR-OEM"
+            }
+          },
+          "Galaxy S22 Plus": {
+            "budget": {
+              "price": 249,
+              "sku": "SRK-SAM-GalaxyS22Plu-SCR-INCELL"
+            },
+            "elite": {
+              "price": 359,
+              "sku": "SRK-SAM-GalaxyS22Plu-SCR-OEM"
+            }
+          },
+          "Galaxy S22 FE": {
+            "budget": {
+              "price": 249,
+              "sku": "SRK-SAM-GalaxyS22FE-SCR-INCELL"
+            },
+            "elite": {
+              "price": 359,
+              "sku": "SRK-SAM-GalaxyS22FE-SCR-OEM"
+            }
+          },
+          "Galaxy S22 Ultra": {
+            "budget": {
+              "price": 249,
+              "sku": "SRK-SAM-GalaxyS22Ult-SCR-INCELL"
+            },
+            "elite": {
+              "price": 359,
+              "sku": "SRK-SAM-GalaxyS22Ult-SCR-OEM"
+            }
+          },
+          "Galaxy S23": {
+            "budget": {
+              "price": 259,
+              "sku": "SRK-SAM-GalaxyS23-SCR-INCELL"
+            },
+            "elite": {
+              "price": 359,
+              "sku": "SRK-SAM-GalaxyS23-SCR-OEM"
+            }
+          },
+          "Galaxy S23 FE": {
+            "budget": {
+              "price": 259,
+              "sku": "SRK-SAM-GalaxyS23FE-SCR-INCELL"
+            },
+            "elite": {
+              "price": 359,
+              "sku": "SRK-SAM-GalaxyS23FE-SCR-OEM"
+            }
+          },
+          "Galaxy S23 Plus": {
+            "budget": {
+              "price": 259,
+              "sku": "SRK-SAM-GalaxyS23Plu-SCR-INCELL"
+            },
+            "elite": {
+              "price": 359,
+              "sku": "SRK-SAM-GalaxyS23Plu-SCR-OEM"
+            }
+          },
+          "Galaxy S23 Ultra": {
+            "budget": {
+              "price": 259,
+              "sku": "SRK-SAM-GalaxyS23Ult-SCR-INCELL"
+            },
+            "elite": {
+              "price": 359,
+              "sku": "SRK-SAM-GalaxyS23Ult-SCR-OEM"
+            }
+          },
+          "Galaxy S24": {
+            "budget": {
+              "price": 259,
+              "sku": "SRK-SAM-GalaxyS24-SCR-INCELL"
+            },
+            "elite": {
+              "price": 359,
+              "sku": "SRK-SAM-GalaxyS24-SCR-OEM"
+            }
+          },
+          "Galaxy S24 Plus": {
+            "budget": {
+              "price": 259,
+              "sku": "SRK-SAM-GalaxyS24Plu-SCR-INCELL"
+            },
+            "elite": {
+              "price": 359,
+              "sku": "SRK-SAM-GalaxyS24Plu-SCR-OEM"
+            }
+          },
+          "Galaxy S24 FE": {
+            "budget": {
+              "price": 259,
+              "sku": "SRK-SAM-GalaxyS24FE-SCR-INCELL"
+            },
+            "elite": {
+              "price": 359,
+              "sku": "SRK-SAM-GalaxyS24FE-SCR-OEM"
+            }
+          },
+          "Galaxy S24 Ultra": {
+            "budget": {
+              "price": 259,
+              "sku": "SRK-SAM-GalaxyS24Ult-SCR-INCELL"
+            },
+            "elite": {
+              "price": 359,
+              "sku": "SRK-SAM-GalaxyS24Ult-SCR-OEM"
+            }
+          },
+          "Galaxy S25 FE": {
+            "budget": {
+              "price": 259,
+              "sku": "SRK-SAM-GalaxyS25FE-SCR-INCELL"
+            },
+            "elite": {
+              "price": 359,
+              "sku": "SRK-SAM-GalaxyS25FE-SCR-OEM"
+            }
+          },
+          "Galaxy S25": {
+            "budget": {
+              "price": 259,
+              "sku": "SRK-SAM-GalaxyS25-SCR-INCELL"
+            },
+            "elite": {
+              "price": 359,
+              "sku": "SRK-SAM-GalaxyS25-SCR-OEM"
+            }
+          },
+          "Galaxy S25 Plus": {
+            "budget": {
+              "price": 259,
+              "sku": "SRK-SAM-GalaxyS25Plu-SCR-INCELL"
+            },
+            "elite": {
+              "price": 359,
+              "sku": "SRK-SAM-GalaxyS25Plu-SCR-OEM"
+            }
+          },
+          "Galaxy S25 Ultra": {
+            "budget": {
+              "price": 259,
+              "sku": "SRK-SAM-GalaxyS25Ult-SCR-INCELL"
+            },
+            "elite": {
+              "price": 359,
+              "sku": "SRK-SAM-GalaxyS25Ult-SCR-OEM"
+            }
+          },
+          "Galaxy S26": {
+            "budget": {
+              "price": 259,
+              "sku": "SRK-SAM-GalaxyS26-SCR-INCELL"
+            },
+            "elite": {
+              "price": 359,
+              "sku": "SRK-SAM-GalaxyS26-SCR-OEM"
+            }
+          },
+          "Galaxy S26 FE": {
+            "budget": {
+              "price": 259,
+              "sku": "SRK-SAM-GalaxyS26FE-SCR-INCELL"
+            },
+            "elite": {
+              "price": 359,
+              "sku": "SRK-SAM-GalaxyS26FE-SCR-OEM"
+            }
+          },
+          "Galaxy S26 Plus": {
+            "budget": {
+              "price": 259,
+              "sku": "SRK-SAM-GalaxyS26Plu-SCR-INCELL"
+            },
+            "elite": {
+              "price": 359,
+              "sku": "SRK-SAM-GalaxyS26Plu-SCR-OEM"
+            }
+          },
+          "Galaxy S26 Ultra": {
+            "budget": {
+              "price": 259,
+              "sku": "SRK-SAM-GalaxyS26Ult-SCR-INCELL"
+            },
+            "elite": {
+              "price": 359,
+              "sku": "SRK-SAM-GalaxyS26Ult-SCR-OEM"
+            }
+          }
+        },
+        "battery": {
+          "Galaxy S21": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyS21-BAT-DIAG"
+            }
+          },
+          "Galaxy S21 Ultra": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyS21Ult-BAT-DIAG"
+            }
+          },
+          "Galaxy S22": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyS22-BAT-DIAG"
+            }
+          },
+          "Galaxy S22 Plus": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyS22Plu-BAT-DIAG"
+            }
+          },
+          "Galaxy S22 FE": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyS22FE-BAT-DIAG"
+            }
+          },
+          "Galaxy S22 Ultra": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyS22Ult-BAT-DIAG"
+            }
+          },
+          "Galaxy S23": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyS23-BAT-DIAG"
+            }
+          },
+          "Galaxy S23 FE": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyS23FE-BAT-DIAG"
+            }
+          },
+          "Galaxy S23 Plus": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyS23Plu-BAT-DIAG"
+            }
+          },
+          "Galaxy S23 Ultra": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyS23Ult-BAT-DIAG"
+            }
+          },
+          "Galaxy S24": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyS24-BAT-DIAG"
+            }
+          },
+          "Galaxy S24 Plus": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyS24Plu-BAT-DIAG"
+            }
+          },
+          "Galaxy S24 FE": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyS24FE-BAT-DIAG"
+            }
+          },
+          "Galaxy S24 Ultra": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyS24Ult-BAT-DIAG"
+            }
+          },
+          "Galaxy S25 FE": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyS25FE-BAT-DIAG"
+            }
+          },
+          "Galaxy S25": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyS25-BAT-DIAG"
+            }
+          },
+          "Galaxy S25 Plus": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyS25Plu-BAT-DIAG"
+            }
+          },
+          "Galaxy S25 Ultra": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyS25Ult-BAT-DIAG"
+            }
+          },
+          "Galaxy S26": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyS26-BAT-DIAG"
+            }
+          },
+          "Galaxy S26 FE": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyS26FE-BAT-DIAG"
+            }
+          },
+          "Galaxy S26 Plus": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyS26Plu-BAT-DIAG"
+            }
+          },
+          "Galaxy S26 Ultra": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyS26Ult-BAT-DIAG"
+            }
+          }
+        },
+        "charging_port": {
+          "Galaxy S21": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-SAM-GalaxyS21-CHA-STD"
+            }
+          },
+          "Galaxy S21 Ultra": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-SAM-GalaxyS21Ult-CHA-STD"
+            }
+          },
+          "Galaxy S22": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-SAM-GalaxyS22-CHA-STD"
+            }
+          },
+          "Galaxy S22 Plus": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-SAM-GalaxyS22Plu-CHA-STD"
+            }
+          },
+          "Galaxy S22 FE": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-SAM-GalaxyS22FE-CHA-STD"
+            }
+          },
+          "Galaxy S22 Ultra": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-SAM-GalaxyS22Ult-CHA-STD"
+            }
+          },
+          "Galaxy S23": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-SAM-GalaxyS23-CHA-STD"
+            }
+          },
+          "Galaxy S23 FE": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-SAM-GalaxyS23FE-CHA-STD"
+            }
+          },
+          "Galaxy S23 Plus": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-SAM-GalaxyS23Plu-CHA-STD"
+            }
+          },
+          "Galaxy S23 Ultra": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-SAM-GalaxyS23Ult-CHA-STD"
+            }
+          },
+          "Galaxy S24": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-SAM-GalaxyS24-CHA-STD"
+            }
+          },
+          "Galaxy S24 Plus": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-SAM-GalaxyS24Plu-CHA-STD"
+            }
+          },
+          "Galaxy S24 FE": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-SAM-GalaxyS24FE-CHA-STD"
+            }
+          },
+          "Galaxy S24 Ultra": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-SAM-GalaxyS24Ult-CHA-STD"
+            }
+          },
+          "Galaxy S25 FE": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-SAM-GalaxyS25FE-CHA-STD"
+            }
+          },
+          "Galaxy S25": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-SAM-GalaxyS25-CHA-STD"
+            }
+          },
+          "Galaxy S25 Plus": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-SAM-GalaxyS25Plu-CHA-STD"
+            }
+          },
+          "Galaxy S25 Ultra": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-SAM-GalaxyS25Ult-CHA-STD"
+            }
+          },
+          "Galaxy S26": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-SAM-GalaxyS26-CHA-STD"
+            }
+          },
+          "Galaxy S26 FE": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-SAM-GalaxyS26FE-CHA-STD"
+            }
+          },
+          "Galaxy S26 Plus": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-SAM-GalaxyS26Plu-CHA-STD"
+            }
+          },
+          "Galaxy S26 Ultra": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-SAM-GalaxyS26Ult-CHA-STD"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "galaxy-a-series",
+      "name": "Galaxy A-Series",
+      "brand": "samsung",
+      "models": [
+        "Galaxy A04",
+        "Galaxy A05s",
+        "Galaxy A12",
+        "Galaxy A13 4G",
+        "Galaxy A14",
+        "Galaxy A15 5G",
+        "Galaxy A16 5G",
+        "Galaxy A17 5G",
+        "Galaxy A20",
+        "Galaxy A30",
+        "Galaxy A31",
+        "Galaxy A32",
+        "Galaxy A33 5G",
+        "Galaxy A34 5G",
+        "Galaxy A35 5G",
+        "Galaxy A36 5G",
+        "Galaxy A37 5G",
+        "Galaxy A50",
+        "Galaxy A51",
+        "Galaxy A52",
+        "Galaxy A52s 5G",
+        "Galaxy A53 5G",
+        "Galaxy A54 5G",
+        "Galaxy A55 5G",
+        "Galaxy A56 5G",
+        "Galaxy A57 5G",
+        "Galaxy A70",
+        "Galaxy A71",
+        "Galaxy A72 5G",
+        "Galaxy A73 5G",
+        "Galaxy A74 5G"
+      ],
+      "minPrice": 79,
+      "repairs": {
+        "screen": {
+          "Galaxy A04": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA04-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA04-SCR-OLED"
+            },
+            "elite": {
+              "price": 149,
+              "sku": "SRK-SAM-GalaxyA04-SCR-OEM"
+            }
+          },
+          "Galaxy A05s": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA05s-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA05s-SCR-OLED"
+            },
+            "elite": {
+              "price": 149,
+              "sku": "SRK-SAM-GalaxyA05s-SCR-OEM"
+            }
+          },
+          "Galaxy A12": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA12-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA12-SCR-OLED"
+            },
+            "elite": {
+              "price": 149,
+              "sku": "SRK-SAM-GalaxyA12-SCR-OEM"
+            }
+          },
+          "Galaxy A13 4G": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA134G-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA134G-SCR-OLED"
+            },
+            "elite": {
+              "price": 149,
+              "sku": "SRK-SAM-GalaxyA134G-SCR-OEM"
+            }
+          },
+          "Galaxy A14": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA14-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA14-SCR-OLED"
+            },
+            "elite": {
+              "price": 149,
+              "sku": "SRK-SAM-GalaxyA14-SCR-OEM"
+            }
+          },
+          "Galaxy A15 5G": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA155G-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA155G-SCR-OLED"
+            },
+            "elite": {
+              "price": 169,
+              "sku": "SRK-SAM-GalaxyA155G-SCR-OEM"
+            }
+          },
+          "Galaxy A16 5G": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA165G-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA165G-SCR-OLED"
+            },
+            "elite": {
+              "price": 169,
+              "sku": "SRK-SAM-GalaxyA165G-SCR-OEM"
+            }
+          },
+          "Galaxy A17 5G": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA175G-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA175G-SCR-OLED"
+            },
+            "elite": {
+              "price": 169,
+              "sku": "SRK-SAM-GalaxyA175G-SCR-OEM"
+            }
+          },
+          "Galaxy A20": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA20-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA20-SCR-OLED"
+            },
+            "elite": {
+              "price": 149,
+              "sku": "SRK-SAM-GalaxyA20-SCR-OEM"
+            }
+          },
+          "Galaxy A30": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA30-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA30-SCR-OLED"
+            },
+            "elite": {
+              "price": 149,
+              "sku": "SRK-SAM-GalaxyA30-SCR-OEM"
+            }
+          },
+          "Galaxy A31": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA31-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA31-SCR-OLED"
+            },
+            "elite": {
+              "price": 149,
+              "sku": "SRK-SAM-GalaxyA31-SCR-OEM"
+            }
+          },
+          "Galaxy A32": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA32-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA32-SCR-OLED"
+            },
+            "elite": {
+              "price": 149,
+              "sku": "SRK-SAM-GalaxyA32-SCR-OEM"
+            }
+          },
+          "Galaxy A33 5G": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA335G-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA335G-SCR-OLED"
+            },
+            "elite": {
+              "price": 149,
+              "sku": "SRK-SAM-GalaxyA335G-SCR-OEM"
+            }
+          },
+          "Galaxy A34 5G": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA345G-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA345G-SCR-OLED"
+            },
+            "elite": {
+              "price": 149,
+              "sku": "SRK-SAM-GalaxyA345G-SCR-OEM"
+            }
+          },
+          "Galaxy A35 5G": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA355G-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA355G-SCR-OLED"
+            },
+            "elite": {
+              "price": 149,
+              "sku": "SRK-SAM-GalaxyA355G-SCR-OEM"
+            }
+          },
+          "Galaxy A36 5G": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA365G-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA365G-SCR-OLED"
+            },
+            "elite": {
+              "price": 149,
+              "sku": "SRK-SAM-GalaxyA365G-SCR-OEM"
+            }
+          },
+          "Galaxy A37 5G": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA375G-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA375G-SCR-OLED"
+            },
+            "elite": {
+              "price": 149,
+              "sku": "SRK-SAM-GalaxyA375G-SCR-OEM"
+            }
+          },
+          "Galaxy A50": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA50-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA50-SCR-OLED"
+            },
+            "elite": {
+              "price": 149,
+              "sku": "SRK-SAM-GalaxyA50-SCR-OEM"
+            }
+          },
+          "Galaxy A51": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA51-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA51-SCR-OLED"
+            },
+            "elite": {
+              "price": 139,
+              "sku": "SRK-SAM-GalaxyA51-SCR-OEM"
+            }
+          },
+          "Galaxy A52": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA52-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA52-SCR-OLED"
+            },
+            "elite": {
+              "price": 149,
+              "sku": "SRK-SAM-GalaxyA52-SCR-OEM"
+            }
+          },
+          "Galaxy A52s 5G": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA52s5G-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA52s5G-SCR-OLED"
+            },
+            "elite": {
+              "price": 149,
+              "sku": "SRK-SAM-GalaxyA52s5G-SCR-OEM"
+            }
+          },
+          "Galaxy A53 5G": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA535G-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA535G-SCR-OLED"
+            },
+            "elite": {
+              "price": 149,
+              "sku": "SRK-SAM-GalaxyA535G-SCR-OEM"
+            }
+          },
+          "Galaxy A54 5G": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA545G-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA545G-SCR-OLED"
+            },
+            "elite": {
+              "price": 179,
+              "sku": "SRK-SAM-GalaxyA545G-SCR-OEM"
+            }
+          },
+          "Galaxy A55 5G": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA555G-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA555G-SCR-OLED"
+            },
+            "elite": {
+              "price": 179,
+              "sku": "SRK-SAM-GalaxyA555G-SCR-OEM"
+            }
+          },
+          "Galaxy A56 5G": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA565G-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA565G-SCR-OLED"
+            },
+            "elite": {
+              "price": 179,
+              "sku": "SRK-SAM-GalaxyA565G-SCR-OEM"
+            }
+          },
+          "Galaxy A57 5G": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA575G-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA575G-SCR-OLED"
+            },
+            "elite": {
+              "price": 179,
+              "sku": "SRK-SAM-GalaxyA575G-SCR-OEM"
+            }
+          },
+          "Galaxy A70": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA70-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA70-SCR-OLED"
+            },
+            "elite": {
+              "price": 149,
+              "sku": "SRK-SAM-GalaxyA70-SCR-OEM"
+            }
+          },
+          "Galaxy A71": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA71-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA71-SCR-OLED"
+            },
+            "elite": {
+              "price": 149,
+              "sku": "SRK-SAM-GalaxyA71-SCR-OEM"
+            }
+          },
+          "Galaxy A72 5G": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA725G-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA725G-SCR-OLED"
+            },
+            "elite": {
+              "price": 149,
+              "sku": "SRK-SAM-GalaxyA725G-SCR-OEM"
+            }
+          },
+          "Galaxy A73 5G": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA735G-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA735G-SCR-OLED"
+            },
+            "elite": {
+              "price": 149,
+              "sku": "SRK-SAM-GalaxyA735G-SCR-OEM"
+            }
+          },
+          "Galaxy A74 5G": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-SAM-GalaxyA745G-SCR-INCELL"
+            },
+            "pro": {
+              "price": 110,
+              "sku": "SRK-SAM-GalaxyA745G-SCR-OLED"
+            },
+            "elite": {
+              "price": 149,
+              "sku": "SRK-SAM-GalaxyA745G-SCR-OEM"
+            }
+          }
+        },
+        "battery": {
+          "Galaxy A04": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA04-BAT-DIAG"
+            }
+          },
+          "Galaxy A05s": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA05s-BAT-DIAG"
+            }
+          },
+          "Galaxy A12": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA12-BAT-DIAG"
+            }
+          },
+          "Galaxy A13 4G": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA134G-BAT-DIAG"
+            }
+          },
+          "Galaxy A14": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA14-BAT-DIAG"
+            }
+          },
+          "Galaxy A15 5G": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA155G-BAT-DIAG"
+            }
+          },
+          "Galaxy A16 5G": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA165G-BAT-DIAG"
+            }
+          },
+          "Galaxy A17 5G": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA175G-BAT-DIAG"
+            }
+          },
+          "Galaxy A20": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA20-BAT-DIAG"
+            }
+          },
+          "Galaxy A30": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA30-BAT-DIAG"
+            }
+          },
+          "Galaxy A31": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA31-BAT-DIAG"
+            }
+          },
+          "Galaxy A32": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA32-BAT-DIAG"
+            }
+          },
+          "Galaxy A33 5G": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA335G-BAT-DIAG"
+            }
+          },
+          "Galaxy A34 5G": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA345G-BAT-DIAG"
+            }
+          },
+          "Galaxy A35 5G": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA355G-BAT-DIAG"
+            }
+          },
+          "Galaxy A36 5G": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA365G-BAT-DIAG"
+            }
+          },
+          "Galaxy A37 5G": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA375G-BAT-DIAG"
+            }
+          },
+          "Galaxy A50": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA50-BAT-DIAG"
+            }
+          },
+          "Galaxy A51": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA51-BAT-DIAG"
+            }
+          },
+          "Galaxy A52": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA52-BAT-DIAG"
+            }
+          },
+          "Galaxy A52s 5G": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA52s5G-BAT-DIAG"
+            }
+          },
+          "Galaxy A53 5G": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA535G-BAT-DIAG"
+            }
+          },
+          "Galaxy A54 5G": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA545G-BAT-DIAG"
+            }
+          },
+          "Galaxy A55 5G": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA555G-BAT-DIAG"
+            }
+          },
+          "Galaxy A56 5G": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA565G-BAT-DIAG"
+            }
+          },
+          "Galaxy A57 5G": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA575G-BAT-DIAG"
+            }
+          },
+          "Galaxy A70": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA70-BAT-DIAG"
+            }
+          },
+          "Galaxy A71": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA71-BAT-DIAG"
+            }
+          },
+          "Galaxy A72 5G": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA725G-BAT-DIAG"
+            }
+          },
+          "Galaxy A73 5G": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA735G-BAT-DIAG"
+            }
+          },
+          "Galaxy A74 5G": {
+            "pro": {
+              "price": 129,
+              "sku": "SRK-SAM-GalaxyA745G-BAT-DIAG"
+            }
+          }
+        },
+        "charging_port": {}
+      }
+    },
+    {
+      "id": "oppo-a-series",
+      "name": "OPPO A-Series",
+      "brand": "oppo",
+      "models": [
+        "OPPO A17",
+        "OPPO A18",
+        "OPPO A38",
+        "OPPO A40",
+        "OPPO A53s",
+        "OPPO A54",
+        "OPPO A57",
+        "OPPO A58",
+        "OPPO A60",
+        "OPPO A77",
+        "OPPO A78",
+        "OPPO A79",
+        "OPPO A80",
+        "OPPO A94",
+        "OPPO A96",
+        "OPPO A98",
+        "OPPO A3",
+        "OPPO A5 Pro"
+      ],
+      "minPrice": 79,
+      "repairs": {
+        "screen": {
+          "OPPO A17": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-OPP-OPPOA17-SCR-INCELL"
+            }
+          },
+          "OPPO A18": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-OPP-OPPOA18-SCR-INCELL"
+            }
+          },
+          "OPPO A38": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-OPP-OPPOA38-SCR-INCELL"
+            }
+          },
+          "OPPO A40": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-OPP-OPPOA40-SCR-INCELL"
+            }
+          },
+          "OPPO A53s": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-OPP-OPPOA53s-SCR-INCELL"
+            }
+          },
+          "OPPO A54": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-OPP-OPPOA54-SCR-INCELL"
+            }
+          },
+          "OPPO A57": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-OPP-OPPOA57-SCR-INCELL"
+            }
+          },
+          "OPPO A58": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-OPP-OPPOA58-SCR-INCELL"
+            }
+          },
+          "OPPO A60": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-OPP-OPPOA60-SCR-INCELL"
+            }
+          },
+          "OPPO A77": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-OPP-OPPOA77-SCR-INCELL"
+            }
+          },
+          "OPPO A78": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-OPP-OPPOA78-SCR-INCELL"
+            }
+          },
+          "OPPO A79": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-OPP-OPPOA79-SCR-INCELL"
+            }
+          },
+          "OPPO A80": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-OPP-OPPOA80-SCR-INCELL"
+            }
+          },
+          "OPPO A94": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-OPP-OPPOA94-SCR-INCELL"
+            }
+          },
+          "OPPO A96": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-OPP-OPPOA96-SCR-INCELL"
+            }
+          },
+          "OPPO A98": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-OPP-OPPOA98-SCR-INCELL"
+            }
+          },
+          "OPPO A3": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-OPP-OPPOA3-SCR-INCELL"
+            }
+          },
+          "OPPO A5 Pro": {
+            "budget": {
+              "price": 99,
+              "sku": "SRK-OPP-OPPOA5Pro-SCR-INCELL"
+            }
+          }
+        },
+        "battery": {
+          "OPPO A17": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-OPP-OPPOA17-BAT-STD"
+            }
+          },
+          "OPPO A18": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-OPP-OPPOA18-BAT-STD"
+            }
+          },
+          "OPPO A38": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-OPP-OPPOA38-BAT-STD"
+            }
+          },
+          "OPPO A40": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-OPP-OPPOA40-BAT-STD"
+            }
+          },
+          "OPPO A53s": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-OPP-OPPOA53s-BAT-STD"
+            }
+          },
+          "OPPO A54": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-OPP-OPPOA54-BAT-STD"
+            }
+          },
+          "OPPO A57": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-OPP-OPPOA57-BAT-STD"
+            }
+          },
+          "OPPO A58": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-OPP-OPPOA58-BAT-STD"
+            }
+          },
+          "OPPO A60": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-OPP-OPPOA60-BAT-STD"
+            }
+          },
+          "OPPO A77": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-OPP-OPPOA77-BAT-STD"
+            }
+          },
+          "OPPO A78": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-OPP-OPPOA78-BAT-STD"
+            }
+          },
+          "OPPO A79": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-OPP-OPPOA79-BAT-STD"
+            }
+          },
+          "OPPO A80": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-OPP-OPPOA80-BAT-STD"
+            }
+          },
+          "OPPO A94": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-OPP-OPPOA94-BAT-STD"
+            }
+          },
+          "OPPO A96": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-OPP-OPPOA96-BAT-STD"
+            }
+          },
+          "OPPO A98": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-OPP-OPPOA98-BAT-STD"
+            }
+          },
+          "OPPO A3": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-OPP-OPPOA3-BAT-STD"
+            }
+          },
+          "OPPO A5 Pro": {
+            "pro": {
+              "price": 79,
+              "sku": "SRK-OPP-OPPOA5Pro-BAT-STD"
+            }
+          }
+        },
+        "charging_port": {}
+      }
+    },
+    {
+      "id": "google-pixel-series",
+      "name": "Google Pixel Series",
+      "brand": "google",
+      "models": [
+        "Pixel 3",
+        "Pixel 3 XL",
+        "Pixel 3a",
+        "Pixel 3a XL",
+        "Pixel 4",
+        "Pixel 4 XL",
+        "Pixel 4a",
+        "Pixel 4a (5G)",
+        "Pixel 5",
+        "Pixel 5a",
+        "Pixel 6",
+        "Pixel 6 Pro",
+        "Pixel 6a",
+        "Pixel 7",
+        "Pixel 7 Pro",
+        "Pixel 7a",
+        "Pixel 8",
+        "Pixel 8 Pro",
+        "Pixel 8a",
+        "Pixel 9",
+        "Pixel 9 Pro",
+        "Pixel 9 Pro XL",
+        "Pixel 9 Pro Fold",
+        "Pixel 9a",
+        "Pixel 10",
+        "Pixel 10 Pro",
+        "Pixel 10 Pro XL",
+        "Pixel 10 Pro Fold",
+        "Pixel 10a"
+      ],
+      "minPrice": 129,
+      "repairs": {
+        "screen": {
+          "Pixel 3": {
+            "elite": {
+              "price": 129,
+              "sku": "SRK-GOO-Pixel3-SCR-OEM"
+            }
+          },
+          "Pixel 3 XL": {
+            "elite": {
+              "price": 149,
+              "sku": "SRK-GOO-Pixel3XL-SCR-OEM"
+            }
+          },
+          "Pixel 3a": {
+            "elite": {
+              "price": 149,
+              "sku": "SRK-GOO-Pixel3a-SCR-OEM"
+            }
+          },
+          "Pixel 3a XL": {
+            "elite": {
+              "price": 159,
+              "sku": "SRK-GOO-Pixel3aXL-SCR-OEM"
+            }
+          },
+          "Pixel 4": {
+            "elite": {
+              "price": 159,
+              "sku": "SRK-GOO-Pixel4-SCR-OEM"
+            }
+          },
+          "Pixel 4 XL": {
+            "elite": {
+              "price": 159,
+              "sku": "SRK-GOO-Pixel4XL-SCR-OEM"
+            }
+          },
+          "Pixel 4a": {
+            "elite": {
+              "price": 179,
+              "sku": "SRK-GOO-Pixel4a-SCR-OEM"
+            }
+          },
+          "Pixel 4a (5G)": {
+            "elite": {
+              "price": 179,
+              "sku": "SRK-GOO-Pixel4a5G-SCR-OEM"
+            }
+          },
+          "Pixel 5": {
+            "elite": {
+              "price": 199,
+              "sku": "SRK-GOO-Pixel5-SCR-OEM"
+            }
+          },
+          "Pixel 5a": {
+            "elite": {
+              "price": 159,
+              "sku": "SRK-GOO-Pixel5a-SCR-OEM"
+            }
+          },
+          "Pixel 6": {
+            "elite": {
+              "price": 199,
+              "sku": "SRK-GOO-Pixel6-SCR-OEM"
+            }
+          },
+          "Pixel 6 Pro": {
+            "elite": {
+              "price": 229,
+              "sku": "SRK-GOO-Pixel6Pro-SCR-OEM"
+            }
+          },
+          "Pixel 6a": {
+            "elite": {
+              "price": 199,
+              "sku": "SRK-GOO-Pixel6a-SCR-OEM"
+            }
+          },
+          "Pixel 7": {
+            "elite": {
+              "price": 259,
+              "sku": "SRK-GOO-Pixel7-SCR-OEM"
+            }
+          },
+          "Pixel 7 Pro": {
+            "elite": {
+              "price": 329,
+              "sku": "SRK-GOO-Pixel7Pro-SCR-OEM"
+            }
+          },
+          "Pixel 7a": {
+            "elite": {
+              "price": 259,
+              "sku": "SRK-GOO-Pixel7a-SCR-OEM"
+            }
+          },
+          "Pixel 8": {
+            "elite": {
+              "price": 259,
+              "sku": "SRK-GOO-Pixel8-SCR-OEM"
+            }
+          },
+          "Pixel 8 Pro": {
+            "elite": {
+              "price": 499,
+              "sku": "SRK-GOO-Pixel8Pro-SCR-OEM"
+            }
+          },
+          "Pixel 8a": {
+            "elite": {
+              "price": 259,
+              "sku": "SRK-GOO-Pixel8a-SCR-OEM"
+            }
+          },
+          "Pixel 9": {
+            "elite": {
+              "price": 269,
+              "sku": "SRK-GOO-Pixel9-SCR-OEM"
+            }
+          },
+          "Pixel 9 Pro": {
+            "elite": {
+              "price": 259,
+              "sku": "SRK-GOO-Pixel9Pro-SCR-OEM"
+            }
+          },
+          "Pixel 9 Pro XL": {
+            "elite": {
+              "price": 399,
+              "sku": "SRK-GOO-Pixel9ProXL-SCR-OEM"
+            }
+          },
+          "Pixel 9 Pro Fold": {
+            "elite": {
+              "price": 699,
+              "sku": "SRK-GOO-Pixel9ProFol-SCR-OEM"
+            }
+          },
+          "Pixel 9a": {
+            "elite": {
+              "price": 259,
+              "sku": "SRK-GOO-Pixel9a-SCR-OEM"
+            }
+          },
+          "Pixel 10": {
+            "elite": {
+              "price": 269,
+              "sku": "SRK-GOO-Pixel10-SCR-OEM"
+            }
+          },
+          "Pixel 10 Pro": {
+            "elite": {
+              "price": 359,
+              "sku": "SRK-GOO-Pixel10Pro-SCR-OEM"
+            }
+          },
+          "Pixel 10 Pro XL": {
+            "elite": {
+              "price": 329,
+              "sku": "SRK-GOO-Pixel10ProXL-SCR-OEM"
+            }
+          },
+          "Pixel 10 Pro Fold": {
+            "elite": {
+              "price": 899,
+              "sku": "SRK-GOO-Pixel10ProFo-SCR-OEM"
+            }
+          },
+          "Pixel 10a": {
+            "elite": {
+              "price": 259,
+              "sku": "SRK-GOO-Pixel10a-SCR-OEM"
+            }
+          }
+        },
+        "battery": {},
+        "charging_port": {}
+      }
+    }
+  ]
+}

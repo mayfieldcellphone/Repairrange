@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Plain-English editorial from the RepairRange team: explainers, decision guides, and bench notes on phone repair. Written by working technicians.">
+<title>Expert Phone Repair Analysis & Bench Notes | RepairRange</title>
+    <meta name="description" content="Read bench notes and repair cost guides from Australian technicians. Expert advice on iPhone, Samsung, and Pixel repairs at RepairRange.">
     <meta name="author" content="RepairRange">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://repairrange.io/blog.html">
@@ -12,14 +13,13 @@
     <meta property="og:title" content="Blog — RepairRange">
     <meta property="og:description" content="Plain-English editorial from working repair technicians: screen quality explainers, decision guides, and honest bench notes.">
     <meta property="og:site_name" content="RepairRange">
-    <title>Blog — RepairRange</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-    <style>
-        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#E7E5E4; --rr-paper:#FAFAF9; --rr-paper-2:#F5F5F4; }
+<style>
+        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
         html { scroll-behavior: smooth; }
         body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
         .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
@@ -30,14 +30,15 @@
         .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
         .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
         .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
-        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(250,250,249,0.85); }
+        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
         .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
         .ed-link:hover { background-size:100% 1px; }
         .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
         .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
         .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
-        .post-card { background:white; border:1px solid var(--rr-line); transition:all 200ms ease; display:block; padding:1.75rem; }
-        .post-card:hover { border-color:var(--rr-ink); transform:translateY(-2px); }
+        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
+        .bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
         .mobile-menu { transition:all 300ms ease-in-out; }
         @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
     </style>
@@ -77,7 +78,7 @@
         </div>
     </header>
 
-    <section class="bg-paper border-b border-line">
+    <section class="bg-mesh-hero">
         <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-24">
             <nav class="flex items-center gap-2 text-xs text-muted mb-8">
                 <a href="index.html" class="ed-link hover:text-teal">Home</a>
@@ -100,6 +101,41 @@
     <section class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
         <p class="eyebrow mb-6">Repair &amp; pricing guides</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <a href="blog/sydney-vs-melbourne-repair-costs.html" class="post-card group">
+                <p class="eyebrow mb-3">Market Analysis &bull; 6 min read &bull; June 2026</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">Sydney vs Melbourne: The Real Cost of Phone Repair</h2>
+                <p class="text-muted leading-relaxed mb-4">Why does a phone repair cost more in Sydney than Melbourne? RepairRange analyzes commercial rent and competition factors.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+            </a>
+
+            <a href="blog/australia-right-to-repair-2026-milestone.html" class="post-card group">
+                <p class="eyebrow mb-3">Regulatory Milestone &bull; 7 min read &bull; June 2026</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">Australia’s Right to Repair 2.0: The 2026 Regulatory Milestone</h2>
+                <p class="text-muted leading-relaxed mb-4">The Australian Treasury is finalizing its formal consultation on Right to Repair laws. Learn how these laws at RepairRange affect your access to genuine parts and <a href="repair/phone-repair-costs-australia.html" class="text-teal hover:underline font-bold">phone repair cost Australia</a>.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+            </a>
+
+            <a href="blog/smartphone-longevity-pivot-2026-repair-trends.html" class="post-card group">
+                <p class="eyebrow mb-3">Consumer Trends &bull; 6 min read &bull; June 2026</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">The Longevity Pivot: Why Australians are Keeping Phones for 5+ Years</h2>
+                <p class="text-muted leading-relaxed mb-4">With smartphone prices hitting record highs, RepairRange reveals why Australians are pivoting to longevity. Learn how battery refreshes can lower your <a href="repair/phone-repair-costs-australia.html" class="text-teal hover:underline font-bold">phone repair cost Australia</a>.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+            </a>
+
+            <a href="blog/robotic-micro-soldering-laser-repair-technology.html" class="post-card group">
+                <p class="eyebrow mb-3">Tech Innovation &bull; 8 min read &bull; June 2026</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">Robotic Micro-Soldering & Laser Precision: The New Frontier of Repair</h2>
+                <p class="text-muted leading-relaxed mb-4">Discover how robotic micro-soldering and laser precision are saving devices at RepairRange while maintaining affordable <a href="repair/phone-repair-costs-australia.html" class="text-teal hover:underline font-bold">phone repair cost Australia</a>.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+            </a>
+
+            <a href="blog/repair-first-economy-e-waste-sustainability.html" class="post-card group">
+                <p class="eyebrow mb-3">Sustainability &bull; 5 min read &bull; June 2026</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">The Repair-First Economy: Choosing Sustainability Over E-Waste</h2>
+                <p class="text-muted leading-relaxed mb-4">Choosing to repair your phone instead of replacing it is the best way to manage <a href="repair/phone-repair-costs-australia.html" class="text-teal hover:underline font-bold">phone repair cost Australia</a>. Join the RepairRange economy.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+            </a>
 
             <a href="blog/australian-phone-plan-guide-for-immigrants-and-students.html" class="post-card group">
                 <p class="eyebrow mb-3">Immigrant & Student Guide &bull; 9 min read &bull; June 2026</p>
