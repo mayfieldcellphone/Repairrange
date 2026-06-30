@@ -1,12 +1,27 @@
+stages:
+  - build
+  - deploy
+
+generate_news:
+  stage: build
+  image: python:3.9-slim
+  script:
+    - python generate_sitemap.py
+    - python generate_tech_news.py
+    - python generate_mayfield_rss.py
+  only:
+    - schedules
+
 pages:
   stage: deploy
+  image: debian:stable-slim
   script:
+    - apt-get update && apt-get install -y curl python3
+    - python3 generate_sitemap.py
     - mkdir -p public
-    - cp *.html public/ 2>/dev/null || true
-    - cp *.txt public/ 2>/dev/null || true
-    - cp *.xml public/ 2>/dev/null || true
+    - cp -r ./*.html ./*.txt ./*.xml public/ 2>/dev/null || true
+    - cp -r fix locations repair brands tools blog unlock css public/ 2>/dev/null || true
     - cp _redirects public/ 2>/dev/null || true
-    - cp -r blog/ brands/ css/ fix/ locations/ news/ repair/ tools/ unlock/ public/ 2>/dev/null || true
   artifacts:
     paths:
       - public
