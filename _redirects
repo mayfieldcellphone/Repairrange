@@ -1,10 +1,32 @@
-# Redirect www.repairrange.io to repairrange.io (HTTP and HTTPS)
+# Domain Consolidation
 http://www.repairrange.io/* https://repairrange.io/:splat 301
 https://www.repairrange.io/* https://repairrange.io/:splat 301
+http://repairrange.io/* https://repairrange.io/:splat 301
 
-# Fix 404s identified in GSC
-/unlock/* /repair/phone-repair-costs-australia.html 301
-/news/* /tech-news.html 301
+# Clean URLs
+/index.html / 301
+
+# Path Fixes & Legacy URLs
 /tools.html /tools/software-stack-for-repair-shops.html 301
 /blog /blog.html 301
 /repair /repair/phone-repair-costs-australia.html 301
+/unlock/google-pixel.html /repair/google-pixel-repair-guide.html 301
+/unlock/iphone.html /brands/apple.html 301
+/unlock/samsung.html /brands/samsung.html 301
+/unlock/huawei.html /brands.html 301
+/unlock/oppo-vivo-xiaomi.html /brands.html 301
+
+# Specific Model Fixes
+/repair/pixel-8.html /repair/pixel-8-pro.html 301
+/repair/iphone-16-pro-max.html /repair/iphone-17-pro-max.html 301
+
+# Brand Page Fixes
+/brands/google-repair-costs.html /brands/google.html 301
+/brands/samsung-repair-costs.html /brands/samsung.html 301
+/brands/oppo-repair-costs.html /brands.html 301
+/brands/ipad-repair-costs.html /brands/apple.html 301
+/brands/watch-repair-costs.html /brands.html 301
+
+# News Migration
+/news/apple-ai-siri-ios27-australia-waitlist.html /blog/unleashing-siri-ai-macos-27-golden-gate-bypass-waitlist.html 301
+/news/* /blog.html 301
