@@ -311,6 +311,3466 @@
             if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
         });
 
+        const PRICE_DATA = {
+    "iphone-7": {
+        "screen": [
+            89,
+            159
+        ],
+        "battery": [
+            69,
+            69
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-8": {
+        "screen": [
+            89,
+            129
+        ],
+        "battery": [
+            69,
+            69
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-8-plus": {
+        "screen": [
+            89,
+            129
+        ],
+        "battery": [
+            69,
+            69
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-se-2020": {
+        "screen": [
+            89,
+            159
+        ],
+        "battery": [
+            69,
+            69
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-se-2022": {
+        "screen": [
+            89,
+            139
+        ],
+        "battery": [
+            69,
+            69
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-x": {
+        "screen": [
+            99,
+            180
+        ],
+        "battery": [
+            69,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-xs": {
+        "screen": [
+            99,
+            180
+        ],
+        "battery": [
+            69,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-xs-max": {
+        "screen": [
+            99,
+            180
+        ],
+        "battery": [
+            69,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-xr": {
+        "screen": [
+            99,
+            180
+        ],
+        "battery": [
+            69,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-11": {
+        "screen": [
+            99,
+            150
+        ],
+        "battery": [
+            69,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-11-pro": {
+        "screen": [
+            99,
+            150
+        ],
+        "battery": [
+            69,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-11-pro-max": {
+        "screen": [
+            99,
+            180
+        ],
+        "battery": [
+            69,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-12-mini": {
+        "screen": [
+            99,
+            180
+        ],
+        "battery": [
+            79,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-12": {
+        "screen": [
+            99,
+            180
+        ],
+        "battery": [
+            79,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-12-pro": {
+        "screen": [
+            99,
+            180
+        ],
+        "battery": [
+            79,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-12-pro-max": {
+        "screen": [
+            99,
+            180
+        ],
+        "battery": [
+            79,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-13-mini": {
+        "screen": [
+            99,
+            180
+        ],
+        "battery": [
+            79,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-13": {
+        "screen": [
+            99,
+            180
+        ],
+        "battery": [
+            79,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-13-pro": {
+        "screen": [
+            99,
+            250
+        ],
+        "battery": [
+            79,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-13-pro-max": {
+        "screen": [
+            99,
+            250
+        ],
+        "battery": [
+            79,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-14": {
+        "screen": [
+            99,
+            349
+        ],
+        "battery": [
+            79,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-14-plus": {
+        "screen": [
+            99,
+            349
+        ],
+        "battery": [
+            79,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-14-pro": {
+        "screen": [
+            99,
+            399
+        ],
+        "battery": [
+            79,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-14-pro-max": {
+        "screen": [
+            99,
+            399
+        ],
+        "battery": [
+            79,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-15": {
+        "screen": [
+            99,
+            349
+        ],
+        "battery": [
+            79,
+            129
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-15-pro": {
+        "screen": [
+            99,
+            399
+        ],
+        "battery": [
+            79,
+            129
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-15-pro-max": {
+        "screen": [
+            99,
+            399
+        ],
+        "battery": [
+            79,
+            129
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-16": {
+        "screen": [
+            110,
+            349
+        ],
+        "battery": [
+            79,
+            129
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-16-pro": {
+        "screen": [
+            110,
+            349
+        ],
+        "battery": [
+            79,
+            129
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-16-pro-max": {
+        "screen": [
+            110,
+            449
+        ],
+        "battery": [
+            79,
+            129
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-17": {
+        "screen": [
+            115,
+            449
+        ],
+        "battery": [
+            79,
+            129
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-17-pro": {
+        "screen": [
+            115,
+            449
+        ],
+        "battery": [
+            79,
+            129
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-17-pro-max": {
+        "screen": [
+            115,
+            449
+        ],
+        "battery": [
+            79,
+            129
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s21": {
+        "screen": [
+            129,
+            249
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            99
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s21-ultra": {
+        "screen": [
+            129,
+            359
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            99,
+            99
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s22": {
+        "screen": [
+            129,
+            359
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            99,
+            99
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s22-plus": {
+        "screen": [
+            129,
+            359
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            99,
+            99
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s22-fe": {
+        "screen": [
+            129,
+            359
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            99,
+            99
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s22-ultra": {
+        "screen": [
+            129,
+            359
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            99,
+            99
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s23": {
+        "screen": [
+            129,
+            359
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            99,
+            99
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s23-fe": {
+        "screen": [
+            129,
+            359
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            99,
+            99
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s23-plus": {
+        "screen": [
+            129,
+            359
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            99,
+            99
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s23-ultra": {
+        "screen": [
+            129,
+            359
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            99,
+            99
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s24": {
+        "screen": [
+            129,
+            359
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            99,
+            99
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s24-plus": {
+        "screen": [
+            129,
+            359
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            99,
+            99
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s24-fe": {
+        "screen": [
+            129,
+            359
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            99,
+            99
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s24-ultra": {
+        "screen": [
+            129,
+            359
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            99,
+            99
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s25-fe": {
+        "screen": [
+            129,
+            359
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            99,
+            99
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s25": {
+        "screen": [
+            129,
+            359
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            99,
+            99
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s25-plus": {
+        "screen": [
+            129,
+            359
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            99,
+            99
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s25-ultra": {
+        "screen": [
+            129,
+            359
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            99,
+            99
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s26": {
+        "screen": [
+            129,
+            359
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            99,
+            99
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s26-fe": {
+        "screen": [
+            129,
+            359
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            99,
+            99
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s26-plus": {
+        "screen": [
+            129,
+            359
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            99,
+            99
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s26-ultra": {
+        "screen": [
+            129,
+            359
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            99,
+            99
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a04": {
+        "screen": [
+            89,
+            119
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a05s": {
+        "screen": [
+            89,
+            119
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a12": {
+        "screen": [
+            89,
+            119
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a13-4g": {
+        "screen": [
+            89,
+            119
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a14": {
+        "screen": [
+            89,
+            119
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a15-5g": {
+        "screen": [
+            89,
+            129
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a16-5g": {
+        "screen": [
+            89,
+            129
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a17-5g": {
+        "screen": [
+            89,
+            129
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a20": {
+        "screen": [
+            89,
+            119
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a30": {
+        "screen": [
+            89,
+            119
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a31": {
+        "screen": [
+            89,
+            119
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a32": {
+        "screen": [
+            89,
+            119
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a33-5g": {
+        "screen": [
+            89,
+            129
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a34-5g": {
+        "screen": [
+            89,
+            129
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a35-5g": {
+        "screen": [
+            89,
+            139
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a36-5g": {
+        "screen": [
+            89,
+            169
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a37-5g": {
+        "screen": [
+            89,
+            169
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a50": {
+        "screen": [
+            89,
+            119
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a51": {
+        "screen": [
+            89,
+            119
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a52": {
+        "screen": [
+            89,
+            159
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a52s-5g": {
+        "screen": [
+            89,
+            159
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a53-5g": {
+        "screen": [
+            89,
+            159
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a54-5g": {
+        "screen": [
+            89,
+            159
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a55-5g": {
+        "screen": [
+            89,
+            159
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a56-5g": {
+        "screen": [
+            89,
+            159
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a57-5g": {
+        "screen": [
+            89,
+            159
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a70": {
+        "screen": [
+            89,
+            119
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a71": {
+        "screen": [
+            89,
+            119
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a72-5g": {
+        "screen": [
+            89,
+            139
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a73-5g": {
+        "screen": [
+            89,
+            159
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-a74-5g": {
+        "screen": [
+            99,
+            159
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            79,
+            79
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "oppo-a17": {
+        "screen": [
+            99,
+            189
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "oppo-a18": {
+        "screen": [
+            99,
+            189
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "oppo-a38": {
+        "screen": [
+            99,
+            189
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "oppo-a40": {
+        "screen": [
+            99,
+            189
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "oppo-a53s": {
+        "screen": [
+            99,
+            189
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "oppo-a54": {
+        "screen": [
+            99,
+            189
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "oppo-a57": {
+        "screen": [
+            99,
+            189
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "oppo-a58": {
+        "screen": [
+            99,
+            189
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "oppo-a60": {
+        "screen": [
+            99,
+            189
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "oppo-a77": {
+        "screen": [
+            99,
+            189
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "oppo-a78": {
+        "screen": [
+            99,
+            189
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "oppo-a79": {
+        "screen": [
+            99,
+            189
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "oppo-a80": {
+        "screen": [
+            99,
+            189
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "oppo-a94": {
+        "screen": [
+            99,
+            189
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "oppo-a96": {
+        "screen": [
+            99,
+            189
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "oppo-a98": {
+        "screen": [
+            99,
+            189
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "oppo-a3": {
+        "screen": [
+            99,
+            189
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "oppo-a5-pro": {
+        "screen": [
+            99,
+            189
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-3": {
+        "screen": [
+            129,
+            129
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-3-xl": {
+        "screen": [
+            149,
+            149
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-3a": {
+        "screen": [
+            149,
+            149
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-3a-xl": {
+        "screen": [
+            159,
+            159
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-4": {
+        "screen": [
+            159,
+            159
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-4-xl": {
+        "screen": [
+            159,
+            159
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-4a": {
+        "screen": [
+            179,
+            179
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-4a-5g": {
+        "screen": [
+            179,
+            179
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-5": {
+        "screen": [
+            199,
+            199
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-5a": {
+        "screen": [
+            159,
+            159
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-6": {
+        "screen": [
+            199,
+            199
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-6-pro": {
+        "screen": [
+            229,
+            229
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-6a": {
+        "screen": [
+            199,
+            199
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-7": {
+        "screen": [
+            259,
+            259
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-7-pro": {
+        "screen": [
+            329,
+            329
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-7a": {
+        "screen": [
+            259,
+            259
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-8": {
+        "screen": [
+            259,
+            259
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-8-pro": {
+        "screen": [
+            499,
+            499
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-8a": {
+        "screen": [
+            259,
+            259
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-9": {
+        "screen": [
+            269,
+            269
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-9-pro": {
+        "screen": [
+            259,
+            259
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-9-pro-xl": {
+        "screen": [
+            399,
+            399
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-9-pro-fold": {
+        "screen": [
+            699,
+            699
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-9a": {
+        "screen": [
+            259,
+            259
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-10": {
+        "screen": [
+            269,
+            269
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-10-pro": {
+        "screen": [
+            359,
+            359
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-10-pro-xl": {
+        "screen": [
+            329,
+            329
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-10-pro-fold": {
+        "screen": [
+            899,
+            899
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "pixel-10a": {
+        "screen": [
+            259,
+            259
+        ],
+        "battery": [
+            99,
+            99
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    }
+};
         const MODELS = {
             Apple: [
                 { slug: 'iphone-17-pro-max', name: 'iPhone 17 Pro Max' },
@@ -452,9 +3912,10 @@
             document.getElementById('results').classList.remove('hidden');
 
             const prof = ISSUE_PROFILES[state.issue];
-            const mult = MODEL_MULT[state.model] || 1;
-            const indieLow  = Math.round(prof.basis[0] * mult);
-            const indieHigh = Math.round(prof.basis[1] * mult);
+            const data = PRICE_DATA[state.model] || { [state.issue]: [0, 0] };
+            const range = data[state.issue] || [0, 0];
+            const indieLow  = range[0] || Math.round(prof.basis[0] * (MODEL_MULT[state.model] || 1));
+            const indieHigh = range[1] || Math.round(prof.basis[1] * (MODEL_MULT[state.model] || 1));
             const authLow   = Math.round(indieLow * 1.4);
             const authHigh  = Math.round(indieHigh * 1.55);
             const diyLow    = Math.round(indieLow * 0.45);
