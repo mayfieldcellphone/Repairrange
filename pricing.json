@@ -1,0 +1,2177 @@
+{
+  "_meta": {
+    "currency": "AUD",
+    "gst_inclusive": true,
+    "verified": "2026-07-10",
+    "source": "AU independent shop retail (bench), Newcastle NSW",
+    "method": "band lookup by panel; Apple OOW is a reference column, never an input",
+    "battery_pricing_model": "Battery price tracks the RISK OF OPENING THE HANDSET, not the cost of the cell. Access is through the display, so a battery job inherits the display's fragility and replacement cost. This is why battery price does not fall with model age the way screen price does.",
+    "genuine_original": {
+      "stocked": false,
+      "indicative_price": [
+        800,
+        850
+      ],
+      "lead_time": "2-5 days, special order",
+      "decays": "price does not fall with model age",
+      "note": "Bought almost exclusively by customers with unrecoverable data on a dead handset who will not accept a factory wipe at authorised service. Renders as an availability note, not a price column."
+    },
+    "bands": {
+      "current": {
+        "label": "Current generation",
+        "screen": {
+          "incell": [
+            250,
+            300
+          ],
+          "aft_oled": [
+            300,
+            400
+          ],
+          "refurb_oem": [
+            450,
+            500
+          ]
+        },
+        "battery": [
+          149,
+          149
+        ]
+      },
+      "mature": {
+        "label": "Settled — 2+ years since launch",
+        "screen": {
+          "incell": [
+            200,
+            250
+          ],
+          "aft_oled": [
+            250,
+            300
+          ],
+          "refurb_oem": [
+            400,
+            450
+          ]
+        },
+        "battery": [
+          149,
+          149
+        ]
+      },
+      "legacy_oled": {
+        "label": "Legacy OLED — X, 11 Pro/Pro Max, 12 series, minis",
+        "screen": {
+          "incell": [
+            130,
+            200
+          ],
+          "aft_oled": [
+            150,
+            200
+          ],
+          "refurb_oem": [
+            250,
+            300
+          ]
+        },
+        "battery": [
+          120,
+          149
+        ]
+      },
+      "legacy_lcd": {
+        "label": "Legacy LCD — no OLED tier has ever existed for these",
+        "screen": {
+          "incell": [
+            130,
+            200
+          ],
+          "oem_lcd": [
+            250,
+            300
+          ]
+        },
+        "battery": [
+          120,
+          149
+        ]
+      },
+      "e_series": {
+        "label": "e-models — 16e and 17e share one panel",
+        "screen": {
+          "incell": [
+            150,
+            200
+          ],
+          "aft_oled": [
+            200,
+            250
+          ],
+          "refurb_oem": [
+            250,
+            300
+          ]
+        },
+        "battery": [
+          120,
+          149
+        ]
+      },
+      "compact_lcd": {
+        "label": "Compact LCD",
+        "screen": {
+          "incell": [
+            120,
+            150
+          ],
+          "oem_lcd": [
+            200,
+            250
+          ]
+        },
+        "battery": [
+          120,
+          120
+        ]
+      }
+    },
+    "known_gaps": {
+      "iphone_15_base": "inherits mature band; not bench-quoted",
+      "uplift_is_an_estimate": "1.34 is one owner's impression from customer remarks, in one suburb, at one shop. It may not hold anywhere else. The single weakest number in this file.",
+      "samsung_note_price": "tier known (OEM), no price supplied",
+      "pixel_6_pro": "curved panel, no price supplied",
+      "fold_inner_range_too_wide": "$550-1140 after uplift. Not a usable price. Split Fold/Flip by generation or publish 'quote required'."
+    },
+    "price_decay": "PRICE only. Refurbished-original screens fall in price for ~2 years post-launch, then flatten. Genuine new original holds its price indefinitely. The $750-850 refurb figure for a 17 Pro Max was true at launch and stale nine months later. Re-verify the 'current' band every 6 months.",
+    "refurb_quality": "A refurbished original IS the original panel. The same OLED is reclaimed and re-laminated with new glass and adhesive. Performance is equivalent to a genuine new part. The saving comes from reclaiming the panel, not from a lesser component. NEVER imply refurbished parts degrade or wear out.",
+    "shop_range_method": "Published screen range = [anchor-shop low, anchor-shop high x 1.34]. LOW END: verified retail from one independent shop in Newcastle NSW. TOP END: ESTIMATE ONLY. Derived from that owner's recollection of customer remarks that his prices run 20-30% below others. Not surveyed, not sampled, not measured. Do NOT present the top of the range as a shopping-centre price, a big-city price, or any other specific kind of shop. Rent and location may explain the spread; that is a hypothesis from one operator, not a finding. Batteries carry no uplift.",
+    "shop_range_uplift": {
+      "all_brands_screens": 1.34,
+      "batteries": 1
+    },
+    "price_advantage": "Independent shops are dramatically cheaper than Apple on the incell and aftermarket-OLED tiers, which is where most customers land. On refurbished-OEM they are at or ABOVE Apple's out-of-warranty price on most models. On that tier the reasons to use a shop are not price: no factory wipe, no booking wait, same-day turnaround, local access.",
+    "tier_availability": {
+      "apple_oled": [
+        "incell",
+        "aft_oled",
+        "refurb_oem",
+        "genuine_special_order"
+      ],
+      "apple_lcd": [
+        "incell",
+        "oem_lcd"
+      ],
+      "samsung_s": [
+        "oem_or_refurb"
+      ],
+      "samsung_a": [
+        "incell",
+        "oem_or_refurb"
+      ],
+      "samsung_z_fold_flip": [
+        "oem_or_refurb"
+      ],
+      "samsung_note": [
+        "oem_or_refurb"
+      ],
+      "pixel": [
+        "oem_or_refurb"
+      ]
+    },
+    "tier_availability_note": "Apple is the only brand with a budget repair market: incell AND aftermarket OLED both exist. Galaxy A has incell only. Galaxy S, Note, foldables and Pixel have neither - one tier, and it's the expensive one. Refurbished originals DO exist for Samsung and Pixel, but sit close enough to new OEM that they are not priced separately. Curved/edge panels are the hardest to refurbish, which is why they carry the smallest refurb discount.",
+    "foldable_note": "Z Fold / Z Flip: inner and outer screens are separate parts and separate prices. Two rows each.",
+    "android_band_key": "For Samsung and Pixel the price driver is PANEL GEOMETRY (flat vs curved/edge) and size, NOT model age. A Pixel 7 Pro costs more than a Pixel 9 because it is curved. An S Ultra costs ~$100 more than an S base for the same reason. Do not sort these bands by year.",
+    "publishing_rules": [
+      "State that the low end comes from one verified AU shop and the top end is an estimate.",
+      "Do not attribute the spread to rent, shop type, or city without evidence.",
+      "Do not describe any tier as lower quality. Refurbished originals ARE the original panel.",
+      "Do not claim independent shops are cheaper than the manufacturer across the board. True on incell and aftermarket OLED. Not true on OEM for most models.",
+      "Date every row. Re-verify current-generation rows every 6 months."
+    ]
+  },
+  "models": {
+    "iPhone 17 Pro Max": {
+      "band": "current",
+      "screen": {
+        "incell": [
+          250,
+          400
+        ],
+        "aft_oled": [
+          300,
+          540
+        ],
+        "refurb_oem": [
+          450,
+          670
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        149,
+        149
+      ],
+      "apple_oow": 649,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          250,
+          300
+        ],
+        "aft_oled": [
+          300,
+          400
+        ],
+        "refurb_oem": [
+          450,
+          500
+        ]
+      },
+      "price_advantage_on_oem": "partial"
+    },
+    "iPhone 17 Pro": {
+      "band": "current",
+      "screen": {
+        "incell": [
+          250,
+          400
+        ],
+        "aft_oled": [
+          300,
+          540
+        ],
+        "refurb_oem": [
+          450,
+          670
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        149,
+        149
+      ],
+      "apple_oow": 549,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          250,
+          300
+        ],
+        "aft_oled": [
+          300,
+          400
+        ],
+        "refurb_oem": [
+          450,
+          500
+        ]
+      },
+      "price_advantage_on_oem": "partial"
+    },
+    "iPhone 17": {
+      "band": "current",
+      "screen": {
+        "incell": [
+          250,
+          400
+        ],
+        "aft_oled": [
+          300,
+          540
+        ],
+        "refurb_oem": [
+          450,
+          670
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        149,
+        149
+      ],
+      "apple_oow": 549,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          250,
+          300
+        ],
+        "aft_oled": [
+          300,
+          400
+        ],
+        "refurb_oem": [
+          450,
+          500
+        ]
+      },
+      "price_advantage_on_oem": "partial"
+    },
+    "iPhone 16 Pro Max": {
+      "band": "current",
+      "screen": {
+        "incell": [
+          250,
+          400
+        ],
+        "aft_oled": [
+          300,
+          540
+        ],
+        "refurb_oem": [
+          450,
+          670
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        149,
+        149
+      ],
+      "apple_oow": 649,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          250,
+          300
+        ],
+        "aft_oled": [
+          300,
+          400
+        ],
+        "refurb_oem": [
+          450,
+          500
+        ]
+      },
+      "price_advantage_on_oem": "partial"
+    },
+    "iPhone 16 Pro": {
+      "band": "current",
+      "screen": {
+        "incell": [
+          250,
+          400
+        ],
+        "aft_oled": [
+          300,
+          540
+        ],
+        "refurb_oem": [
+          450,
+          670
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        149,
+        149
+      ],
+      "apple_oow": 569,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          250,
+          300
+        ],
+        "aft_oled": [
+          300,
+          400
+        ],
+        "refurb_oem": [
+          450,
+          500
+        ]
+      },
+      "price_advantage_on_oem": "partial"
+    },
+    "iPhone 16 Plus": {
+      "band": "current",
+      "screen": {
+        "incell": [
+          250,
+          400
+        ],
+        "aft_oled": [
+          300,
+          540
+        ],
+        "refurb_oem": [
+          450,
+          670
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        149,
+        149
+      ],
+      "apple_oow": 569,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          250,
+          300
+        ],
+        "aft_oled": [
+          300,
+          400
+        ],
+        "refurb_oem": [
+          450,
+          500
+        ]
+      },
+      "price_advantage_on_oem": "partial"
+    },
+    "iPhone 16": {
+      "band": "current",
+      "screen": {
+        "incell": [
+          250,
+          400
+        ],
+        "aft_oled": [
+          300,
+          540
+        ],
+        "refurb_oem": [
+          450,
+          670
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        149,
+        149
+      ],
+      "apple_oow": 499,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          250,
+          300
+        ],
+        "aft_oled": [
+          300,
+          400
+        ],
+        "refurb_oem": [
+          450,
+          500
+        ]
+      },
+      "price_advantage_on_oem": "partial"
+    },
+    "iPhone 15 Pro Max": {
+      "band": "mature",
+      "screen": {
+        "incell": [
+          200,
+          340
+        ],
+        "aft_oled": [
+          250,
+          400
+        ],
+        "refurb_oem": [
+          400,
+          600
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        149,
+        149
+      ],
+      "apple_oow": 649,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          200,
+          250
+        ],
+        "aft_oled": [
+          250,
+          300
+        ],
+        "refurb_oem": [
+          400,
+          450
+        ]
+      },
+      "price_advantage_on_oem": "yes"
+    },
+    "iPhone 15 Pro": {
+      "band": "mature",
+      "screen": {
+        "incell": [
+          200,
+          340
+        ],
+        "aft_oled": [
+          250,
+          400
+        ],
+        "refurb_oem": [
+          400,
+          600
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        149,
+        149
+      ],
+      "apple_oow": 549,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          200,
+          250
+        ],
+        "aft_oled": [
+          250,
+          300
+        ],
+        "refurb_oem": [
+          400,
+          450
+        ]
+      },
+      "price_advantage_on_oem": "partial"
+    },
+    "iPhone 15 Plus": {
+      "band": "mature",
+      "screen": {
+        "incell": [
+          200,
+          340
+        ],
+        "aft_oled": [
+          250,
+          400
+        ],
+        "refurb_oem": [
+          400,
+          600
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        149,
+        149
+      ],
+      "apple_oow": 549,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          200,
+          250
+        ],
+        "aft_oled": [
+          250,
+          300
+        ],
+        "refurb_oem": [
+          400,
+          450
+        ]
+      },
+      "price_advantage_on_oem": "partial"
+    },
+    "iPhone 15": {
+      "band": "mature",
+      "screen": {
+        "incell": [
+          200,
+          340
+        ],
+        "aft_oled": [
+          250,
+          400
+        ],
+        "refurb_oem": [
+          400,
+          600
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        149,
+        149
+      ],
+      "apple_oow": null,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          200,
+          250
+        ],
+        "aft_oled": [
+          250,
+          300
+        ],
+        "refurb_oem": [
+          400,
+          450
+        ]
+      }
+    },
+    "iPhone 14 Pro Max": {
+      "band": "mature",
+      "screen": {
+        "incell": [
+          200,
+          340
+        ],
+        "aft_oled": [
+          250,
+          400
+        ],
+        "refurb_oem": [
+          400,
+          600
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        149,
+        149
+      ],
+      "apple_oow": 649,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          200,
+          250
+        ],
+        "aft_oled": [
+          250,
+          300
+        ],
+        "refurb_oem": [
+          400,
+          450
+        ]
+      },
+      "price_advantage_on_oem": "yes"
+    },
+    "iPhone 14 Pro": {
+      "band": "mature",
+      "screen": {
+        "incell": [
+          200,
+          340
+        ],
+        "aft_oled": [
+          250,
+          400
+        ],
+        "refurb_oem": [
+          400,
+          600
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        149,
+        149
+      ],
+      "apple_oow": 549,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          200,
+          250
+        ],
+        "aft_oled": [
+          250,
+          300
+        ],
+        "refurb_oem": [
+          400,
+          450
+        ]
+      },
+      "price_advantage_on_oem": "partial"
+    },
+    "iPhone 14 Plus": {
+      "band": "mature",
+      "screen": {
+        "incell": [
+          200,
+          340
+        ],
+        "aft_oled": [
+          250,
+          400
+        ],
+        "refurb_oem": [
+          400,
+          600
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        149,
+        149
+      ],
+      "apple_oow": 549,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          200,
+          250
+        ],
+        "aft_oled": [
+          250,
+          300
+        ],
+        "refurb_oem": [
+          400,
+          450
+        ]
+      },
+      "price_advantage_on_oem": "partial"
+    },
+    "iPhone 14": {
+      "band": "mature",
+      "screen": {
+        "incell": [
+          200,
+          340
+        ],
+        "aft_oled": [
+          250,
+          400
+        ],
+        "refurb_oem": [
+          400,
+          600
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        149,
+        149
+      ],
+      "apple_oow": 465,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          200,
+          250
+        ],
+        "aft_oled": [
+          250,
+          300
+        ],
+        "refurb_oem": [
+          400,
+          450
+        ]
+      },
+      "price_advantage_on_oem": "partial"
+    },
+    "iPhone 13 Pro Max": {
+      "band": "mature",
+      "screen": {
+        "incell": [
+          200,
+          340
+        ],
+        "aft_oled": [
+          250,
+          400
+        ],
+        "refurb_oem": [
+          400,
+          600
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        149,
+        149
+      ],
+      "apple_oow": 549,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          200,
+          250
+        ],
+        "aft_oled": [
+          250,
+          300
+        ],
+        "refurb_oem": [
+          400,
+          450
+        ]
+      },
+      "price_advantage_on_oem": "partial"
+    },
+    "iPhone 13 Pro": {
+      "band": "mature",
+      "screen": {
+        "incell": [
+          200,
+          340
+        ],
+        "aft_oled": [
+          250,
+          400
+        ],
+        "refurb_oem": [
+          400,
+          600
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        149,
+        149
+      ],
+      "apple_oow": 465,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          200,
+          250
+        ],
+        "aft_oled": [
+          250,
+          300
+        ],
+        "refurb_oem": [
+          400,
+          450
+        ]
+      },
+      "price_advantage_on_oem": "partial"
+    },
+    "iPhone 13": {
+      "band": "mature",
+      "screen": {
+        "incell": [
+          200,
+          340
+        ],
+        "aft_oled": [
+          250,
+          400
+        ],
+        "refurb_oem": [
+          400,
+          600
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        120,
+        120
+      ],
+      "apple_oow": 465,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          200,
+          250
+        ],
+        "aft_oled": [
+          250,
+          300
+        ],
+        "refurb_oem": [
+          400,
+          450
+        ]
+      },
+      "price_advantage_on_oem": "partial"
+    },
+    "iPhone X": {
+      "band": "legacy_oled",
+      "screen": {
+        "incell": [
+          130,
+          270
+        ],
+        "aft_oled": [
+          150,
+          270
+        ],
+        "refurb_oem": [
+          250,
+          400
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        120,
+        149
+      ],
+      "apple_oow": null,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          130,
+          200
+        ],
+        "aft_oled": [
+          150,
+          200
+        ],
+        "refurb_oem": [
+          250,
+          300
+        ]
+      }
+    },
+    "iPhone 11 Pro Max": {
+      "band": "legacy_oled",
+      "screen": {
+        "incell": [
+          130,
+          270
+        ],
+        "aft_oled": [
+          150,
+          270
+        ],
+        "refurb_oem": [
+          250,
+          400
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        120,
+        149
+      ],
+      "apple_oow": null,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          130,
+          200
+        ],
+        "aft_oled": [
+          150,
+          200
+        ],
+        "refurb_oem": [
+          250,
+          300
+        ]
+      }
+    },
+    "iPhone 11 Pro": {
+      "band": "legacy_oled",
+      "screen": {
+        "incell": [
+          130,
+          270
+        ],
+        "aft_oled": [
+          150,
+          270
+        ],
+        "refurb_oem": [
+          250,
+          400
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        120,
+        149
+      ],
+      "apple_oow": null,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          130,
+          200
+        ],
+        "aft_oled": [
+          150,
+          200
+        ],
+        "refurb_oem": [
+          250,
+          300
+        ]
+      }
+    },
+    "iPhone 12 Pro Max": {
+      "band": "legacy_oled",
+      "screen": {
+        "incell": [
+          130,
+          270
+        ],
+        "aft_oled": [
+          150,
+          270
+        ],
+        "refurb_oem": [
+          250,
+          400
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        120,
+        149
+      ],
+      "apple_oow": null,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          130,
+          200
+        ],
+        "aft_oled": [
+          150,
+          200
+        ],
+        "refurb_oem": [
+          250,
+          300
+        ]
+      }
+    },
+    "iPhone 12 Pro": {
+      "band": "legacy_oled",
+      "screen": {
+        "incell": [
+          130,
+          270
+        ],
+        "aft_oled": [
+          150,
+          270
+        ],
+        "refurb_oem": [
+          250,
+          400
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        120,
+        149
+      ],
+      "apple_oow": null,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          130,
+          200
+        ],
+        "aft_oled": [
+          150,
+          200
+        ],
+        "refurb_oem": [
+          250,
+          300
+        ]
+      }
+    },
+    "iPhone 12": {
+      "band": "legacy_oled",
+      "screen": {
+        "incell": [
+          130,
+          270
+        ],
+        "aft_oled": [
+          150,
+          270
+        ],
+        "refurb_oem": [
+          250,
+          400
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        120,
+        149
+      ],
+      "apple_oow": null,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          130,
+          200
+        ],
+        "aft_oled": [
+          150,
+          200
+        ],
+        "refurb_oem": [
+          250,
+          300
+        ]
+      }
+    },
+    "iPhone 12 mini": {
+      "band": "legacy_oled",
+      "screen": {
+        "incell": [
+          130,
+          270
+        ],
+        "aft_oled": [
+          150,
+          270
+        ],
+        "refurb_oem": [
+          250,
+          400
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        120,
+        149
+      ],
+      "apple_oow": null,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          130,
+          200
+        ],
+        "aft_oled": [
+          150,
+          200
+        ],
+        "refurb_oem": [
+          250,
+          300
+        ]
+      }
+    },
+    "iPhone 13 mini": {
+      "band": "legacy_oled",
+      "screen": {
+        "incell": [
+          130,
+          270
+        ],
+        "aft_oled": [
+          150,
+          270
+        ],
+        "refurb_oem": [
+          250,
+          400
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        120,
+        149
+      ],
+      "apple_oow": 385,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          130,
+          200
+        ],
+        "aft_oled": [
+          150,
+          200
+        ],
+        "refurb_oem": [
+          250,
+          300
+        ]
+      },
+      "price_advantage_on_oem": "partial"
+    },
+    "iPhone 11": {
+      "band": "legacy_lcd",
+      "screen": {
+        "incell": [
+          130,
+          270
+        ],
+        "oem_lcd": [
+          250,
+          400
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        120,
+        149
+      ],
+      "apple_oow": null,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          130,
+          200
+        ],
+        "oem_lcd": [
+          250,
+          300
+        ]
+      }
+    },
+    "iPhone XR": {
+      "band": "legacy_lcd",
+      "screen": {
+        "incell": [
+          130,
+          270
+        ],
+        "oem_lcd": [
+          250,
+          400
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        120,
+        149
+      ],
+      "apple_oow": null,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          130,
+          200
+        ],
+        "oem_lcd": [
+          250,
+          300
+        ]
+      }
+    },
+    "iPhone 16e": {
+      "band": "e_series",
+      "screen": {
+        "incell": [
+          150,
+          270
+        ],
+        "aft_oled": [
+          200,
+          340
+        ],
+        "refurb_oem": [
+          250,
+          400
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        120,
+        149
+      ],
+      "apple_oow": 429,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          150,
+          200
+        ],
+        "aft_oled": [
+          200,
+          250
+        ],
+        "refurb_oem": [
+          250,
+          300
+        ]
+      },
+      "price_advantage_on_oem": "yes"
+    },
+    "iPhone 17e": {
+      "band": "e_series",
+      "screen": {
+        "incell": [
+          150,
+          270
+        ],
+        "aft_oled": [
+          200,
+          340
+        ],
+        "refurb_oem": [
+          250,
+          400
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        120,
+        149
+      ],
+      "apple_oow": 549,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          150,
+          200
+        ],
+        "aft_oled": [
+          200,
+          250
+        ],
+        "refurb_oem": [
+          250,
+          300
+        ]
+      },
+      "price_advantage_on_oem": "yes"
+    },
+    "iPhone SE (3rd gen)": {
+      "band": "compact_lcd",
+      "screen": {
+        "incell": [
+          120,
+          200
+        ],
+        "oem_lcd": [
+          200,
+          340
+        ]
+      },
+      "genuine_original": "special_order",
+      "battery": [
+        120,
+        120
+      ],
+      "apple_oow": null,
+      "verified": "2026-07-10",
+      "screen_anchor_shop": {
+        "incell": [
+          120,
+          150
+        ],
+        "oem_lcd": [
+          200,
+          250
+        ]
+      }
+    },
+    "Galaxy S26 Ultra": {
+      "brand": "samsung",
+      "band": "s_ultra_current",
+      "geometry": "curved",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          450,
+          550
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          450,
+          740
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy S25 Ultra": {
+      "brand": "samsung",
+      "band": "s_ultra_current",
+      "geometry": "curved",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          450,
+          550
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          450,
+          740
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy S24 Ultra": {
+      "brand": "samsung",
+      "band": "s_ultra_prior",
+      "geometry": "curved",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          450,
+          500
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          450,
+          670
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy S23 Ultra": {
+      "brand": "samsung",
+      "band": "s_ultra_prior",
+      "geometry": "curved",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          450,
+          500
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          450,
+          670
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy S26": {
+      "brand": "samsung",
+      "band": "s_flat_current",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          350,
+          400
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          350,
+          540
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy S26+": {
+      "brand": "samsung",
+      "band": "s_flat_current",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          350,
+          400
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          350,
+          540
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy S25": {
+      "brand": "samsung",
+      "band": "s_flat_current",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          350,
+          400
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          350,
+          540
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy S25+": {
+      "brand": "samsung",
+      "band": "s_flat_current",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          350,
+          400
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          350,
+          540
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy S24": {
+      "brand": "samsung",
+      "band": "s_flat_prior",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          350,
+          400
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          350,
+          540
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy S24+": {
+      "brand": "samsung",
+      "band": "s_flat_prior",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          350,
+          400
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          350,
+          540
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy S23": {
+      "brand": "samsung",
+      "band": "s_flat_prior",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          350,
+          400
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          350,
+          540
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy S23+": {
+      "brand": "samsung",
+      "band": "s_flat_prior",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          350,
+          400
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          350,
+          540
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy S22": {
+      "brand": "samsung",
+      "band": "s_flat_s22",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          300,
+          350
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          300,
+          470
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy S22+": {
+      "brand": "samsung",
+      "band": "s_flat_s22",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          300,
+          350
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          300,
+          470
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy S21": {
+      "brand": "samsung",
+      "band": "s_legacy",
+      "geometry": "mixed",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          350,
+          400
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          350,
+          540
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy S20": {
+      "brand": "samsung",
+      "band": "s_legacy",
+      "geometry": "mixed",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          350,
+          400
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          350,
+          540
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy A55": {
+      "brand": "samsung",
+      "band": "a_5x",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "incell": [
+          150,
+          200
+        ],
+        "oem_or_refurb": [
+          200,
+          250
+        ]
+      },
+      "screen": {
+        "incell": [
+          150,
+          270
+        ],
+        "oem_or_refurb": [
+          200,
+          340
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy A54": {
+      "brand": "samsung",
+      "band": "a_5x",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "incell": [
+          150,
+          200
+        ],
+        "oem_or_refurb": [
+          200,
+          250
+        ]
+      },
+      "screen": {
+        "incell": [
+          150,
+          270
+        ],
+        "oem_or_refurb": [
+          200,
+          340
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy A35": {
+      "brand": "samsung",
+      "band": "a_2x_3x",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "incell": [
+          120,
+          180
+        ],
+        "oem_or_refurb": [
+          180,
+          250
+        ]
+      },
+      "screen": {
+        "incell": [
+          120,
+          240
+        ],
+        "oem_or_refurb": [
+          180,
+          340
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy A25": {
+      "brand": "samsung",
+      "band": "a_2x_3x",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "incell": [
+          120,
+          180
+        ],
+        "oem_or_refurb": [
+          180,
+          250
+        ]
+      },
+      "screen": {
+        "incell": [
+          120,
+          240
+        ],
+        "oem_or_refurb": [
+          180,
+          340
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy A15": {
+      "brand": "samsung",
+      "band": "a_15",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "incell": [
+          150,
+          180
+        ],
+        "oem_or_refurb": [
+          200,
+          250
+        ]
+      },
+      "screen": {
+        "incell": [
+          150,
+          240
+        ],
+        "oem_or_refurb": [
+          200,
+          340
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy Z Fold (inner)": {
+      "brand": "samsung",
+      "band": "fold_inner",
+      "geometry": "folding",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          550,
+          850
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          550,
+          1140
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy Z Fold (outer)": {
+      "brand": "samsung",
+      "band": "fold_outer",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          200,
+          300
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          200,
+          400
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy Z Flip (inner)": {
+      "brand": "samsung",
+      "band": "flip_inner",
+      "geometry": "folding",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          400,
+          550
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          400,
+          740
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy Z Flip (outer)": {
+      "brand": "samsung",
+      "band": "flip_outer",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          150,
+          200
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          150,
+          270
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Pixel 9 series": {
+      "brand": "pixel",
+      "band": "pixel_current",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          300,
+          400
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          300,
+          540
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Pixel 8 series": {
+      "brand": "pixel",
+      "band": "pixel_current",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          300,
+          400
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          300,
+          540
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Pixel 7 Pro": {
+      "brand": "pixel",
+      "band": "pixel_curved",
+      "geometry": "curved",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          350,
+          450
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          350,
+          600
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Pixel 7": {
+      "brand": "pixel",
+      "band": "pixel_7_flat",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          300,
+          350
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          300,
+          470
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Pixel 5 series": {
+      "brand": "pixel",
+      "band": "pixel_5",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          250,
+          350
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          250,
+          470
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Pixel 4 series": {
+      "brand": "pixel",
+      "band": "pixel_legacy",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          150,
+          250
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          150,
+          340
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Pixel 3 series": {
+      "brand": "pixel",
+      "band": "pixel_legacy",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          150,
+          250
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          150,
+          340
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    }
+  }
+}
