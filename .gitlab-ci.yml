@@ -19,8 +19,8 @@ pages:
     - apt-get update && apt-get install -y curl python3
     - python3 generate_sitemap.py
     - mkdir -p public
-    - cp -r ./*.html ./*.txt ./*.xml public/ 2>/dev/null || true
-    - cp -r fix locations repair brands tools blog unlock css public/ 2>/dev/null || true
+    - cp -r ./*.html ./*.txt ./*.xml ./*.json public/ 2>/dev/null || true
+    - cp -r fix locations repair brands tools blog unlock css selfrepairkit public/ 2>/dev/null || true
     - cp _redirects public/ 2>/dev/null || true
   artifacts:
     paths:
