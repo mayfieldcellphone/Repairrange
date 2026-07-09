@@ -137,11 +137,7 @@
       }
     },
     "known_gaps": {
-      "iphone_15_base": "inherits mature band; not bench-quoted",
-      "uplift_is_an_estimate": "1.34 is one owner's impression from customer remarks, in one suburb, at one shop. It may not hold anywhere else. The single weakest number in this file.",
-      "samsung_note_price": "tier known (OEM), no price supplied",
-      "pixel_6_pro": "curved panel, no price supplied",
-      "fold_inner_range_too_wide": "$550-1140 after uplift. Not a usable price. Split Fold/Flip by generation or publish 'quote required'."
+      "uplift_is_an_estimate": "1.34 is one owner's impression from customer remarks, in one suburb, at one shop. The low end of every range is verified; the top end is not. This is the single weakest number in this file and the page must say so."
     },
     "price_decay": "PRICE only. Refurbished-original screens fall in price for ~2 years post-launch, then flatten. Genuine new original holds its price indefinitely. The $750-850 refurb figure for a 17 Pro Max was true at launch and stale nine months later. Re-verify the 'current' band every 6 months.",
     "refurb_quality": "A refurbished original IS the original panel. The same OLED is reclaimed and re-laminated with new glass and adhesive. Performance is equivalent to a genuine new part. The saving comes from reclaiming the panel, not from a lesser component. NEVER imply refurbished parts degrade or wear out.",
@@ -188,7 +184,8 @@
       "Do not describe any tier as lower quality. Refurbished originals ARE the original panel.",
       "Do not claim independent shops are cheaper than the manufacturer across the board. True on incell and aftermarket OLED. Not true on OEM for most models.",
       "Date every row. Re-verify current-generation rows every 6 months."
-    ]
+    ],
+    "quote_required_policy": "A row with quote_required MUST still render, with its model name, its available tiers, and a clear 'ask for a quote' call to action. It must never render a price, an estimate, or a dash. These rows exist to be found in search, not to be filled in later."
   },
   "models": {
     "iPhone 17 Pro Max": {
@@ -582,7 +579,7 @@
       "price_advantage_on_oem": "partial"
     },
     "iPhone 15": {
-      "band": "mature",
+      "band": "bench_15_base",
       "screen": {
         "incell": [
           200,
@@ -590,11 +587,11 @@
         ],
         "aft_oled": [
           250,
-          400
+          470
         ],
         "refurb_oem": [
-          400,
-          600
+          350,
+          540
         ]
       },
       "genuine_original": "special_order",
@@ -611,13 +608,14 @@
         ],
         "aft_oled": [
           250,
-          300
+          350
         ],
         "refurb_oem": [
-          400,
-          450
+          350,
+          400
         ]
-      }
+      },
+      "source": "bench"
     },
     "iPhone 14 Pro Max": {
       "band": "mature",
@@ -1915,23 +1913,19 @@
       "geometry": "folding",
       "screen_anchor_shop": {
         "oem_or_refurb": [
-          550,
+          500,
           850
         ]
       },
-      "screen": {
-        "oem_or_refurb": [
-          550,
-          1140
-        ]
-      },
+      "screen": "quote_required",
       "battery": [
         90,
         200
       ],
       "battery_note": "anchor-shop range spans all brands and models",
       "manufacturer_oow": null,
-      "verified": "2026-07-10"
+      "verified": "2026-07-10",
+      "quote_required_reason": "Inner folding displays vary too much by generation to publish a band. Anchor-shop figures retained below for internal reference only."
     },
     "Galaxy Z Fold (outer)": {
       "brand": "samsung",
@@ -1967,19 +1961,15 @@
           550
         ]
       },
-      "screen": {
-        "oem_or_refurb": [
-          400,
-          740
-        ]
-      },
+      "screen": "quote_required",
       "battery": [
         90,
         200
       ],
       "battery_note": "anchor-shop range spans all brands and models",
       "manufacturer_oow": null,
-      "verified": "2026-07-10"
+      "verified": "2026-07-10",
+      "quote_required_reason": "Inner folding displays vary too much by generation to publish a band. Anchor-shop figures retained below for internal reference only."
     },
     "Galaxy Z Flip (outer)": {
       "brand": "samsung",
@@ -2170,6 +2160,86 @@
         200
       ],
       "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Pixel 6 Pro": {
+      "brand": "pixel",
+      "band": "pixel_curved",
+      "geometry": "curved",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          350,
+          450
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          350,
+          600
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy Note 20 Ultra": {
+      "brand": "samsung",
+      "band": "note",
+      "geometry": "curved",
+      "screen": "quote_required",
+      "screen_anchor_shop": null,
+      "battery": [
+        90,
+        200
+      ],
+      "quote_required_reason": "Discontinued line. Tier is OEM/refurb only. No verified price.",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy Note 20": {
+      "brand": "samsung",
+      "band": "note",
+      "geometry": "curved",
+      "screen": "quote_required",
+      "screen_anchor_shop": null,
+      "battery": [
+        90,
+        200
+      ],
+      "quote_required_reason": "Discontinued line. Tier is OEM/refurb only. No verified price.",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy Note 10+": {
+      "brand": "samsung",
+      "band": "note",
+      "geometry": "curved",
+      "screen": "quote_required",
+      "screen_anchor_shop": null,
+      "battery": [
+        90,
+        200
+      ],
+      "quote_required_reason": "Discontinued line. Tier is OEM/refurb only. No verified price.",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy Note 10": {
+      "brand": "samsung",
+      "band": "note",
+      "geometry": "curved",
+      "screen": "quote_required",
+      "screen_anchor_shop": null,
+      "battery": [
+        90,
+        200
+      ],
+      "quote_required_reason": "Discontinued line. Tier is OEM/refurb only. No verified price.",
       "manufacturer_oow": null,
       "verified": "2026-07-10"
     }
