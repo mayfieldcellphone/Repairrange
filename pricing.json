@@ -1995,7 +1995,7 @@
       "manufacturer_oow": null,
       "verified": "2026-07-10"
     },
-    "Pixel 9 series": {
+    "Pixel 9 Pro XL": {
       "brand": "pixel",
       "band": "pixel_current",
       "geometry": "flat",
@@ -2019,7 +2019,79 @@
       "manufacturer_oow": null,
       "verified": "2026-07-10"
     },
-    "Pixel 8 series": {
+    "Pixel 9 Pro": {
+      "brand": "pixel",
+      "band": "pixel_current",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          300,
+          400
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          300,
+          540
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Pixel 9": {
+      "brand": "pixel",
+      "band": "pixel_current",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          300,
+          400
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          300,
+          540
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Pixel 8 Pro": {
+      "brand": "pixel",
+      "band": "pixel_current",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          300,
+          400
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          300,
+          540
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Pixel 8": {
       "brand": "pixel",
       "band": "pixel_current",
       "geometry": "flat",
