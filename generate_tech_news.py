@@ -74,7 +74,7 @@ def ask_gemini_to_generate(article, pricing_data):
     """Asks Gemini to write a repair-first news post grounded in data."""
     print(f"Asking Gemini to generate repair-first post for: '{article['title']}'...")
     
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={GEMINI_API_KEY}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}"
     
     # Extract relevant pricing context
     pricing_context = json.dumps(pricing_data, indent=2) if pricing_data else "Pricing data unavailable."
@@ -204,13 +204,16 @@ def main():
     pricing = get_pricing_data()
     raw_articles = fetch_rss_articles()
     
-    for art in raw_articles[:1]: # Process one story per run
+    published = 0
+    for art in raw_articles[:5]: # Check up to 5 stories
+        if published >= 1: break # Only publish one successful story per run
         news = ask_gemini_to_generate(art, pricing)
         if news and not news.get('reject'):
             html = build_full_html_page(news)
             commit_to_gitlab(news, html)
+            published += 1
         else:
-            print("Story rejected: No repair angle or AI error.")
+            print(f"Story rejected or failed: {art['title']}")
 
 if __name__ == "__main__":
     main()
