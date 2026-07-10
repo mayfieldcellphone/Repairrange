@@ -103,13 +103,16 @@ html{scroll-behavior:smooth}body{font-family:'Inter',system-ui,sans-serif;color:
 <div class="border border-line overflow-hidden mb-2">
 <div class="model-row bg-paper-2" style="font-weight:600;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--rr-muted);padding:0.625rem 1.25rem">
 <span>Model</span>
-<span class="text-right" style="min-width:6rem">Screen (indie)</span>
-<span class="text-right auth-col" style="min-width:5.5rem">Battery (indie)</span>
+<span class="text-right tier-col" style="min-width:5.5rem">Incell</span>
+<span class="text-right tier-col" style="min-width:5.5rem">Aftermkt OLED</span>
+<span class="text-right" style="min-width:5.5rem">OEM</span>
+<span class="text-right auth-col" style="min-width:4.5rem">Battery</span>
+<span class="text-right auth-col" style="min-width:4.5rem">Maker</span>
 <span class="text-right" style="min-width:4.5rem">Guide</span>
 </div>
 <style>
 .tnum{font-variant-numeric:tabular-nums}
-.model-row{display:grid;grid-template-columns:1fr auto auto auto;gap:1rem;align-items:center;padding:.75rem 1.25rem;border-bottom:1px solid var(--rr-line);background:#fff}
+.model-row{display:grid;grid-template-columns:1fr repeat(6,auto);gap:1rem;align-items:center;padding:.75rem 1.25rem;border-bottom:1px solid var(--rr-line);background:#fff}
 .model-row:last-child{border-bottom:none}
 .model-row:hover{background:var(--rr-paper)}
 .model-row.has-guide{border-left:2px solid var(--rr-teal-700)}
@@ -126,6 +129,7 @@ html{scroll-behavior:smooth}body{font-family:'Inter',system-ui,sans-serif;color:
 .search-input{width:100%;padding:.5rem .75rem .5rem 2.25rem;font-size:.875rem;border:1px solid var(--rr-line);background:#fff;color:var(--rr-ink);border-radius:2px}
 .search-input:focus{outline:none;border-color:var(--rr-teal-700)}
 .no-results{padding:3rem 1.25rem;text-align:center;color:var(--rr-muted);background:#fff}
+@media(max-width:900px){.model-row{grid-template-columns:1fr auto auto auto}.tier-col{display:none}}
 @media(max-width:640px){.model-row{grid-template-columns:1fr auto auto;gap:.5rem;padding:.75rem .875rem}.auth-col{display:none}}
 </style>
 <div id="model-list"></div>
@@ -134,7 +138,7 @@ html{scroll-behavior:smooth}body{font-family:'Inter',system-ui,sans-serif;color:
 <p class="text-sm">Try a different search, or use the <a href="../calculator.html" class="ed-link text-teal font-medium">calculator</a> for any phone.</p>
 </div>
 </div>
-<p class="text-xs text-muted py-4 max-w-3xl">All prices are 2026 AUD independent-shop ranges. Models with <span class="guide-badge" style="display:inline">Full guide</span> have detailed repair pages with FAQs, common issues, and DIY difficulty ratings. Models with <span class="est-badge" style="display:inline">View pricing</span> have a pricing overview page with repair costs and key advice. Authorised service typically runs 30–50% higher. <a href="../blog/samsung-fingerprint-sensor-screen-replacement-guide.html" class="ed-link text-teal">Samsung fingerprint sensor warning →</a></p>
+<p class="text-xs text-muted py-4 max-w-3xl"><span id="pricing-status"></span> All prices are 2026 AUD, GST inclusive. The <strong>low end of each range is verified retail</strong> from an independent repair shop in Newcastle, NSW. The top of each range is an <strong>estimate</strong>, not a survey. <strong>Maker</strong> is the manufacturer's published out-of-warranty price. A dash means that part tier does not exist for that phone — most Android handsets have no budget screen option at all. Models with <span class="guide-badge" style="display:inline">Full guide</span> have detailed repair pages with FAQs, common issues, and DIY difficulty ratings. Models with <span class="est-badge" style="display:inline">View pricing</span> have a pricing overview page with repair costs and key advice. Refurbished originals are the original panel, re-laminated — not a lesser part. <a href="../blog/samsung-fingerprint-sensor-screen-replacement-guide.html" class="ed-link text-teal">Samsung fingerprint sensor warning →</a></p>
 </div>
 </section>
 
@@ -186,11 +190,44 @@ const MODELS=[{b:'apple',n:'iPhone 17 Pro Max',scr:'$349–$549',bat:'$89–$149
 const SPOTLIGHT_MODELS=[{s:'samsung-galaxy-a54',n:'Galaxy A54',b:'samsung',scr:'$139–$209',bat:'$69–$99',bk:'$89–$149',tag:'Most searched budget Samsung'},{s:'samsung-galaxy-z-fold-5',n:'Galaxy Z Fold 5',b:'samsung',scr:'$549–$849',bat:'$109–$159',bk:'$169–$269',tag:'Most expensive screen replacement'},{s:'pixel-9-pro-xl',n:'Pixel 9 Pro XL',b:'google',scr:'$329–$479',bat:'$99–$139',bk:'$149–$239',tag:'Most DIY-friendly flagship'},{s:'iphone-17-air',n:'iPhone 17 Air',b:'apple',scr:'$289–$429',bat:'$89–$139',bk:'$119–$199',tag:'Thinnest iPhone ever'},{s:'samsung-galaxy-z-flip-6',n:'Galaxy Z Flip 6',b:'samsung',scr:'$329–$489',bat:'$99–$139',bk:'$149–$229',tag:'Most popular foldable'},{s:'nothing-phone-2',n:'Nothing Phone (2)',b:'other',scr:'$179–$269',bat:'$79–$109',bk:'$99–$159',tag:'Transparent back — unique repair'},{s:'xiaomi-14-ultra',n:'Xiaomi 14 Ultra',b:'other',scr:'$289–$429',bat:'$89–$129',bk:'$129–$199',tag:'Leica optics — camera module warning'},{s:'oneplus-13',n:'OnePlus 13',b:'other',scr:'$249–$379',bat:'$89–$119',bk:'$119–$189',tag:'Flagship killer pricing'},{s:'samsung-galaxy-a55',n:'Galaxy A55',b:'samsung',scr:'$149–$229',bat:'$69–$99',bk:'$99–$159',tag:'Best value mid-range repair'},{s:'pixel-9',n:'Pixel 9',b:'google',scr:'$249–$369',bat:'$89–$119',bk:'$109–$179',tag:'iFixit genuine parts available'},{s:'motorola-razr-50-ultra',n:'Motorola Razr 50 Ultra',b:'other',scr:'$399–$599',bat:'$99–$139',bk:'$149–$229',tag:'Foldable clamshell — niche repair'},{s:'iphone-17e',n:'iPhone 17e',b:'apple',scr:'$179–$269',bat:'$79–$109',bk:'$99–$159',tag:'Most affordable current-gen iPhone'}];
 const weekNum=Math.floor((Date.now()-new Date('2026-01-01').getTime())/(7*24*60*60*1000));const spot=SPOTLIGHT_MODELS[weekNum%SPOTLIGHT_MODELS.length];const spotEl=document.getElementById('spotlight');
 if(spotEl){const brandColors={apple:'#1C1917',samsung:'#0F766E',google:'#d97706',other:'#78716C'};spotEl.innerHTML=`<div style="border:1px solid var(--rr-line);background:white;padding:1.5rem;display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:center"><div><div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.75rem;flex-wrap:wrap"><span class="eyebrow" style="margin:0">✨ Model spotlight</span><span style="font-size:0.6875rem;font-weight:600;color:${brandColors[spot.b]||'#78716C'};background:${spot.b==='samsung'?'#E0F2F1':spot.b==='apple'?'#F5F5F4':spot.b==='google'?'#FEF3C7':'#F5F5F4'};padding:0.125rem 0.5rem;border-radius:1px;letter-spacing:0.03em">${spot.tag}</span></div><h2 class="font-serif text-2xl md:text-3xl text-ink" style="margin-bottom:0.5rem">${spot.n}</h2><div style="display:flex;gap:1.5rem;flex-wrap:wrap;font-size:0.8125rem;margin-top:0.75rem"><div><span class="text-muted">Screen</span> <span class="font-mono tnum text-ink" style="font-weight:600">${spot.scr}</span></div><div><span class="text-muted">Battery</span> <span class="font-mono tnum text-ink" style="font-weight:600">${spot.bat}</span></div><div><span class="text-muted">Back glass</span> <span class="font-mono tnum text-ink" style="font-weight:600">${spot.bk}</span></div></div></div><a href="model.html?m=${spot.s}" class="btn btn-primary" style="white-space:nowrap">View details \u2192</a></div><p style="font-size:0.6875rem;color:var(--rr-muted);margin-top:0.5rem">Spotlight rotates weekly. <a href="model.html?m=${spot.s}" class="ed-link text-teal">Full ${spot.n} pricing \u2192</a></p>`;}
+let PRICING=null,PMETA={};
+const money=r=>Array.isArray(r)?`$${r[0]}\u2013${r[1]}`:'';
+const QR='<span style="font-size:0.6875rem;font-weight:600;color:var(--rr-amber-600)">Ask for a quote</span>';
+function cells(name){
+  if(!PRICING) return {incell:'',oled:'',oem:'',bat:'',maker:''};
+  const p=PRICING[name];
+  if(!p) return {incell:'',oled:'',oem:QR,bat:'',maker:'',missing:true};
+  if(p.screen==='quote_required') return {incell:'',oled:'',oem:QR,bat:money(p.battery),maker:'',missing:true};
+  const s=p.screen||{};
+  const oem=s.refurb_oem||s.oem_lcd||s.oem_or_refurb;
+  const maker=p.apple_oow||p.manufacturer_oow;
+  return {incell:money(s.incell),oled:money(s.aft_oled),oem:money(oem),
+          bat:money(p.battery),maker:maker?`$${maker}`:''};
+}
 let activeFilter='all';function slugify(b,n){let s=n.toLowerCase().replace(/[()]/g,'').replace(/\+/g,'plus').replace(/\s+/g,'-').replace(/--+/g,'-').replace(/-$/,'');if(b==='samsung'&&!s.startsWith('samsung'))s='samsung-'+s;if(b==='apple'&&s==='iphone-se-3rd-gen')s='iphone-se-3';return s;}
 const brandLabels={apple:'Apple',samsung:'Samsung',google:'Google Pixel',other:'Other Brands'};const list=document.getElementById('model-list');const searchInput=document.getElementById('search');const noResults=document.getElementById('no-results');
-function render(){const q=searchInput.value.toLowerCase().trim();const filtered=MODELS.filter(m=>{if(activeFilter!=='all'&&m.b!==activeFilter)return false;if(q&&!m.n.toLowerCase().includes(q))return false;return true;});const counts={all:0,apple:0,samsung:0,google:0,other:0};MODELS.forEach(m=>{const mq=!q||m.n.toLowerCase().includes(q);if(mq){counts.all++;counts[m.b]++;}});Object.keys(counts).forEach(k=>{const el=document.getElementById('count-'+k);if(el)el.textContent=counts[k];});if(filtered.length===0){list.innerHTML='';noResults.style.display='block';return;}noResults.style.display='none';const groups={};filtered.forEach(m=>{if(!groups[m.b])groups[m.b]=[];groups[m.b].push(m);});let html='';const brandOrder=['apple','samsung','google','other'];brandOrder.forEach(b=>{if(!groups[b])return;html+=`<div class="brand-header">${brandLabels[b]} <span style="font-weight:400;color:var(--rr-muted);text-transform:none;letter-spacing:0;font-size:0.75rem">${groups[b].length} model${groups[b].length!==1?'s':''}</span></div>`;groups[b].forEach(m=>{const link=m.g?`<a href="${m.g}.html" class="guide-badge">Full guide \u2192</a>`:`<a href="model.html?m=${slugify(m.b,m.n)}" class="est-badge">View pricing \u2192</a>`;const cls=m.g?'model-row has-guide':'model-row';const est=m.est?' <span style="font-size:0.625rem;color:var(--rr-amber-600);font-weight:600">(est.)</span>':'';html+=`<div class="${cls}"><span class="text-sm"><span class="font-medium text-ink">${m.n}</span>${est}</span><span class="font-mono tnum text-sm text-ink text-right" style="min-width:6rem">${m.scr}</span><span class="font-mono tnum text-sm text-muted text-right auth-col" style="min-width:5.5rem">${m.bat}</span><span class="text-right" style="min-width:4.5rem">${link}</span></div>`;});});list.innerHTML=html;}
+function render(){const q=searchInput.value.toLowerCase().trim();const filtered=MODELS.filter(m=>{if(activeFilter!=='all'&&m.b!==activeFilter)return false;if(q&&!m.n.toLowerCase().includes(q))return false;return true;});const counts={all:0,apple:0,samsung:0,google:0,other:0};MODELS.forEach(m=>{const mq=!q||m.n.toLowerCase().includes(q);if(mq){counts.all++;counts[m.b]++;}});Object.keys(counts).forEach(k=>{const el=document.getElementById('count-'+k);if(el)el.textContent=counts[k];});if(filtered.length===0){list.innerHTML='';noResults.style.display='block';return;}noResults.style.display='none';const groups={};filtered.forEach(m=>{if(!groups[m.b])groups[m.b]=[];groups[m.b].push(m);});let html='';const brandOrder=['apple','samsung','google','other'];brandOrder.forEach(b=>{if(!groups[b])return;html+=`<div class="brand-header">${brandLabels[b]} <span style="font-weight:400;color:var(--rr-muted);text-transform:none;letter-spacing:0;font-size:0.75rem">${groups[b].length} model${groups[b].length!==1?'s':''}</span></div>`;groups[b].forEach(m=>{const link=m.g?`<a href="${m.g}.html" class="guide-badge">Full guide \u2192</a>`:`<a href="model.html?m=${slugify(m.b,m.n)}" class="est-badge">View pricing \u2192</a>`;const cls=m.g?'model-row has-guide':'model-row';const est=m.est?' <span style="font-size:0.625rem;color:var(--rr-amber-600);font-weight:600">(est.)</span>':'';const c=cells(m.n);const dash='<span style="color:var(--rr-line)">\u2014</span>';
+const cell=(v,extra='')=>`<span class="font-mono tnum text-sm text-right ${extra}" style="min-width:5.5rem">${v||dash}</span>`;
+html+=`<div class="${cls}"><span class="text-sm"><span class="font-medium text-ink">${m.n}</span>${est}</span>${cell(c.incell,'text-muted tier-col')}${cell(c.oled,'text-muted tier-col')}${cell(c.oem,'text-ink')}${cell(c.bat,'text-muted auth-col')}${cell(c.maker,'text-muted auth-col')}<span class="text-right" style="min-width:4.5rem">${link}</span></div>`;});});list.innerHTML=html;}
 document.getElementById('filters').addEventListener('click',e=>{const btn=e.target.closest('.filter-btn');if(!btn)return;document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');activeFilter=btn.dataset.filter;render();});
 searchInput.addEventListener('input',render);render();
+function loadPricing(){
+  const paths=['../pricing.json','/pricing.json','https://repairrange.io/pricing.json'];
+  const attempt=i=>{
+    if(i>=paths.length){
+      console.warn('pricing.json unreachable from all paths');
+      const el=document.getElementById('pricing-status');
+      if(el)el.textContent='Pricing data could not be loaded. Please refresh.';
+      return;
+    }
+    fetch(paths[i]).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();})
+      .then(d=>{PRICING=d.models||{};PMETA=d._meta||{};render();
+        console.log('pricing.json loaded from',paths[i],Object.keys(PRICING).length,'models');})
+      .catch(()=>attempt(i+1));
+  };
+  attempt(0);
+}
+loadPricing();
 if(window.lucide)window.lucide.createIcons();document.addEventListener('DOMContentLoaded',()=>{const btn=document.querySelector('.mobile-menu-button');const menu=document.querySelector('.mobile-menu');if(btn&&menu)btn.addEventListener('click',()=>menu.classList.toggle('hidden'));});
 </script>
 </body>
