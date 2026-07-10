@@ -2187,6 +2187,78 @@
       "manufacturer_oow": null,
       "verified": "2026-07-10"
     },
+    "Pixel 8a": {
+      "brand": "pixel",
+      "band": "pixel_a_8",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          275,
+          350
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          275,
+          470
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Pixel 7a": {
+      "brand": "pixel",
+      "band": "pixel_a_7",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          250,
+          300
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          250,
+          400
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Pixel 6": {
+      "brand": "pixel",
+      "band": "pixel_6_base",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          200,
+          300
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          200,
+          400
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "battery_note": "anchor-shop range spans all brands and models",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
     "Galaxy Note 20 Ultra": {
       "brand": "samsung",
       "band": "note",
