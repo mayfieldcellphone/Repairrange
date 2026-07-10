@@ -1,10 +1,51 @@
-# Redirect www.repairrange.io to repairrange.io (HTTP and HTTPS)
+# Domain Canonicalization
 http://www.repairrange.io/* https://repairrange.io/:splat 301
 https://www.repairrange.io/* https://repairrange.io/:splat 301
 
-# Fix 404s identified in GSC
+# Fix 404s
 /unlock/* /repair/phone-repair-costs-australia.html 301
 /news/* /tech-news.html 301
 /tools.html /tools/software-stack-for-repair-shops.html 301
 /blog /blog.html 301
 /repair /repair/phone-repair-costs-australia.html 301
+
+# --- Phase 2: Content Consolidation (Duplicates to Alpha) ---
+
+# Samsung One UI 9 Cluster -> Alpha: aussie-samsung-one-ui-9-testing.html
+/blog/samsung-one-ui-9-expansion-aussie-wallets-phone-longevity.html /blog/aussie-samsung-one-ui-9-testing.html 301
+/blog/one-ui-9-samsung-galaxy-update-australia-repair-range.html /blog/aussie-samsung-one-ui-9-testing.html 301
+/blog/exploring-one-ui-9-samsung-australia.html /blog/aussie-samsung-one-ui-9-testing.html 301
+/blog/aussie-guide-samsung-one-ui-9-testing.html /blog/aussie-samsung-one-ui-9-testing.html 301
+/blog/one-ui-9-galaxy-a25-australia.html /blog/aussie-samsung-one-ui-9-testing.html 301
+
+# Apple Siri / AI Waitlist Cluster -> Alpha: siris-big-brain-upgrade-aussie-ai-waitlist.html
+/blog/ai-siri-australian-waitlist-ios18.html /blog/siris-big-brain-upgrade-aussie-ai-waitlist.html 301
+/blog/apple-ai-siri-google-gemini-waitlist-australia.html /blog/siris-big-brain-upgrade-aussie-ai-waitlist.html 301
+/blog/apple-ai-siri-waitlist-australia-repair-costs.html /blog/siris-big-brain-upgrade-aussie-ai-waitlist.html 301
+/blog/apples-ai-siri-waitlist-aussie-take-repairrange.html /blog/siris-big-brain-upgrade-aussie-ai-waitlist.html 301
+/blog/siri-ai-ios27-australia-waitlist-gemini.html /blog/siris-big-brain-upgrade-aussie-ai-waitlist.html 301
+/blog/unleashing-siri-ai-macos-27-golden-gate-bypass-waitlist.html /blog/siris-big-brain-upgrade-aussie-ai-waitlist.html 301
+/blog/unlock-siri-ai-macos-27-golden-gate-beta-waitlist-bypass.html /blog/siris-big-brain-upgrade-aussie-ai-waitlist.html 301
+
+# iPhone Ultra / Foldable Cluster -> Alpha: foldable-phone-repair-cost-guide.html
+/blog/apple-iphone-ultra-foldable-ios27-leak-repair-range-australia.html /blog/foldable-phone-repair-cost-guide.html 301
+/blog/apple-iphone-ultra-ios27-september-launch.html /blog/foldable-phone-repair-cost-guide.html 301
+/blog/apple-iphone-ultra-launch-september.html /blog/foldable-phone-repair-cost-guide.html 301
+/blog/aussie-insight-iphone-ultra-production-timeline.html /blog/foldable-phone-repair-cost-guide.html 301
+/blog/aussie-scoop-iphone-fold-leak-repairability-debate.html /blog/foldable-phone-repair-cost-guide.html 301
+/blog/foldable-iphone-ultra-australia.html /blog/foldable-phone-repai-cost-guide.html 301
+/blog/ios-27-iphone-ultra-leak-repair-costs.html /blog/foldable-phone-repair-cost-guide.html 301
+/blog/iphone-ultra-australian-guide.html /blog/foldable-phone-repair-cost-guide.html 301
+/blog/iphone-ultra-foldable-ios27-aussie-reveal-repair-cost.html /blog/foldable-phone-repair-cost-guide.html 301
+/blog/iphone-ultra-launch-australia.html /blog/foldable-phone-repair-cost-guide.html 301
+
+# Honor Magic V6 Cluster -> Alpha: honor-magic-v6-australia.html
+/blog/honor-magic-v6-australia-guide.html /blog/honor-magic-v6-australia.html 301
+/blog/honor-magic-v6-australia-launch.html /blog/honor-magic-v6-australia.html 301
+/blog/honor-magic-v6-guide-australia.html /blog/honor-magic-v6-australia.html 301
+
+# Samsung Galaxy Watch 9 Cluster -> Alpha: samsung-galaxy-watch-9-ultra-2-charging-speeds-australia-leak.html
+/blog/samsung-galaxy-watch-ultra-2-guide.html /blog/samsung-galaxy-watch-9-ultra-2-charging-speeds-australia-leak.html 301
+/blog/samsung-galaxy-watch9-watch-ultra-2-australia.html /blog/samsung-galaxy-watch-9-ultra-2-charging-speeds-australia-leak.html 301
+/blog/samsung-galaxy-watch9-watch-ultra-2-details-leaked.html /blog/samsung-galaxy-watch-9-ultra-2-charging-speeds-australia-leak.html 301
+/blog/samsung-galaxy-watch9-watch-ultra-2-leaks.html /blog/samsung-galaxy-watch-9-ultra-2-charging-speeds-australia-leak.html 301
