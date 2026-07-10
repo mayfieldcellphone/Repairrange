@@ -2331,6 +2331,122 @@
       "manufacturer_oow": null,
       "verified": "2026-07-10"
     },
+    "Galaxy S24 FE": {
+      "brand": "samsung",
+      "band": "s_fe",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          350,
+          350
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          350,
+          470
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy S23 FE": {
+      "brand": "samsung",
+      "band": "s_fe",
+      "geometry": "flat",
+      "screen_anchor_shop": {
+        "oem_or_refurb": [
+          300,
+          300
+        ]
+      },
+      "screen": {
+        "oem_or_refurb": [
+          300,
+          400
+        ]
+      },
+      "battery": [
+        90,
+        200
+      ],
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy S25 Edge": {
+      "brand": "samsung",
+      "band": "s_edge",
+      "geometry": "curved",
+      "screen": "quote_required",
+      "screen_anchor_shop": null,
+      "battery": [
+        90,
+        200
+      ],
+      "quote_required_reason": "Supplier has not listed this panel yet. No verified price exists.",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy Z Fold 6": {
+      "brand": "samsung",
+      "band": "fold_inner",
+      "geometry": "folding",
+      "screen": "quote_required",
+      "screen_anchor_shop": null,
+      "battery": [
+        90,
+        200
+      ],
+      "quote_required_reason": "Refers to the inner folding display unless the outer is specified. Inner displays vary too much by generation to publish a band.",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy Z Fold 5": {
+      "brand": "samsung",
+      "band": "fold_inner",
+      "geometry": "folding",
+      "screen": "quote_required",
+      "screen_anchor_shop": null,
+      "battery": [
+        90,
+        200
+      ],
+      "quote_required_reason": "Refers to the inner folding display unless the outer is specified. Inner displays vary too much by generation to publish a band.",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy Z Flip 6": {
+      "brand": "samsung",
+      "band": "flip_inner",
+      "geometry": "folding",
+      "screen": "quote_required",
+      "screen_anchor_shop": null,
+      "battery": [
+        90,
+        200
+      ],
+      "quote_required_reason": "Refers to the inner folding display unless the outer is specified. Inner displays vary too much by generation to publish a band.",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
+    "Galaxy Z Flip 5": {
+      "brand": "samsung",
+      "band": "flip_inner",
+      "geometry": "folding",
+      "screen": "quote_required",
+      "screen_anchor_shop": null,
+      "battery": [
+        90,
+        200
+      ],
+      "quote_required_reason": "Refers to the inner folding display unless the outer is specified. Inner displays vary too much by generation to publish a band.",
+      "manufacturer_oow": null,
+      "verified": "2026-07-10"
+    },
     "Galaxy Note 20 Ultra": {
       "brand": "samsung",
       "band": "note",
