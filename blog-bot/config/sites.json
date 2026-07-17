@@ -1,0 +1,97 @@
+{
+  "repairrange": {
+    "domain": "https://repairrange.io",
+    "adapter": "git",
+    "blog_dir": "blog",
+    "index_file": "blog.html",
+    "sitemap_file": "sitemap.xml",
+    "autopublish": false,
+    "posts_per_run": 1,
+    "schedule": "Tue + Fri 06:00 AEST",
+    "brand": {
+      "primary": "#0c4a45",
+      "accent": "#F59E0B",
+      "serif": "Fraunces",
+      "sans": "Inter",
+      "contact": "info@repairrange.io"
+    },
+    "voice": "Plain, useful, no hype. Australian spelling. Written for someone deciding whether to pay for a repair. Editorial only - never tech news, that lives on tech-news.html.",
+    "internal_links": [
+      "https://repairrange.io/calculator.html",
+      "https://repairrange.io/compare.html",
+      "https://repairrange.io/unlock.html",
+      "https://mayfieldphonerepair.com.au"
+    ],
+    "guardrails": [
+      "NEVER state, estimate, imply or invent a price for any repair, part or service. If cost must be discussed, describe the factors that drive it and link to the calculator. Any dollar figure is an automatic fail.",
+      "Link to mayfieldphonerepair.com.au at most once, only where a Newcastle/Hunter reader would genuinely want a local shop. Must read as editorial, not a plug."
+    ]
+  },
+
+  "selfrepairkit": {
+    "domain": "https://selfrepairkit.com.au",
+    "adapter": "launchmystore",
+    "store_id": "33c5158a-5910-4989-af7d-d5032c798ea8",
+    "autopublish": false,
+    "posts_per_run": 1,
+    "schedule": "Wed 06:00 AEST",
+    "brand": {
+      "voice_note": "Voltly theme. Speaks to a confident DIYer who has already decided to try the repair."
+    },
+    "voice": "Instructional, second person, calm. Australian spelling. Assumes the reader has hands and a screwdriver, not an engineering degree.",
+    "internal_links": [
+      "https://selfrepairkit.com.au/category/iphone-kits-category",
+      "https://selfrepairkit.com.au/category/samsung-kits-category",
+      "https://selfrepairkit.com.au/category/oppo-kits-category"
+    ],
+    "guardrails": [
+      "NEVER state or estimate a price for any kit, part or service. Link to the product page and let the store show the price.",
+      "Always include a safety note for battery and screen work (disconnect battery first, eye protection, no metal tools near the cell).",
+      "Do not claim a repair is easy. State the realistic difficulty and the failure modes."
+    ]
+  },
+
+  "pdfrange": {
+    "domain": "https://pdfrange.com",
+    "adapter": "git",
+    "blog_dir": "blog",
+    "index_file": "blog.html",
+    "sitemap_file": "sitemap.xml",
+    "autopublish": false,
+    "posts_per_run": 1,
+    "schedule": "Thu 06:00 AEST",
+    "brand": {
+      "primary": "#2563EB",
+      "display": "Bricolage Grotesque",
+      "radius": "24-32px"
+    },
+    "voice": "Sharp, privacy-forward, slightly opinionated. Written for someone who just realised their PDF got uploaded to a stranger's server.",
+    "internal_links": [
+      "https://pdfrange.com/library.html",
+      "https://pdfrange.com/"
+    ],
+    "guardrails": [
+      "Do not name a competitor and assert they leak, sell or mishandle data. Describe the architectural difference (browser-side vs server-side) without accusing anyone.",
+      "Every post must end with one contextual link to the lead magnet or library.html - not a hard sell."
+    ]
+  },
+
+  "mayfieldgadgets": {
+    "domain": "https://mayfieldgadgets.com.au",
+    "adapter": "launchmystore",
+    "store_id": "0b0ac950",
+    "autopublish": false,
+    "posts_per_run": 1,
+    "schedule": "Mon 06:00 AEST",
+    "voice": "Warm, local, straight-talking. Australian spelling. Written for a Newcastle buyer weighing refurbished against new.",
+    "internal_links": [
+      "https://mayfieldgadgets.com.au",
+      "https://mayfieldphonerepair.com.au"
+    ],
+    "guardrails": [
+      "NEVER state or estimate a product price. Link to the product page.",
+      "NEVER make a quantified environmental or CO2 claim (e.g. 'saves 80kg of CO2'). No carbon maths, no e-waste tonnage, no sourced-sounding sustainability statistics. You may say refurbished extends a device's life. Nothing numeric.",
+      "Do not claim warranty terms, battery health percentages or grading standards beyond: 90-day warranty, Australia-only shipping."
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+# ============================================================================
+# blog-bot CI — drop this into .gitlab-ci.yml of the RepairRange and PDFRange
+# repos (merge with the existing generate_news / pages stages, don't replace).
+#
+# THE SCHEDULE IS NOT IN THIS FILE. GitLab schedules live in the UI:
+#   Repo > Build > Pipeline schedules > New schedule
+# Set the cron there, tick "Active", and add SITE_KEY as a schedule variable.
+# Without a schedule created in the UI, nothing ever runs.
+# ============================================================================
+
+stages:
+  - generate
+  - deploy
+
+# ---------------------------------------------------------------------------
+# Runs ONLY from a pipeline schedule. Never on push, never on MR.
+# ---------------------------------------------------------------------------
+blog_bot:
+  stage: generate
+  image: python:3.12-slim
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "schedule" && $SITE_KEY'
+  variables:
+    SITE_ROOT: "."
+    LLM_PROVIDER: "gemini"
+  before_script:
+    - apt-get update -qq && apt-get install -y -qq git
+    - git config user.email "bot@repairrange.io"
+    - git config user.name "blog-bot"
+  script:
+    - python blog-bot/generate.py --site "$SITE_KEY"
+    - |
+      if [ -n "$(git status --porcelain)" ]; then
+        git add -A
+        git commit -m "blog-bot: ${SITE_KEY} post [skip ci]"
+        git push "https://oauth2:${GITLAB_PUSH_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" "HEAD:${CI_DEFAULT_BRANCH}"
+      else
+        echo "nothing generated — check job log above"
+        exit 1
+      fi
+  artifacts:
+    when: always
+    paths:
+      - blog-bot/topics/*_used.txt
+    expire_in: 30 days
+
+# ---------------------------------------------------------------------------
+# Manual dry run. Use this first. No writes, no push, no email.
+# Build > Run pipeline > set SITE_KEY, then hit play on this job.
+# ---------------------------------------------------------------------------
+blog_bot_dryrun:
+  stage: generate
+  image: python:3.12-slim
+  when: manual
+  allow_failure: true
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "web"'
+  variables:
+    LLM_PROVIDER: "gemini"
+  script:
+    - python blog-bot/generate.py --site "${SITE_KEY:-repairrange}" --dry-run
+
+# ============================================================================
+# CI/CD VARIABLES  (Settings > CI/CD > Variables)
+# Tick "Masked" and "Protected" on every secret.
+#
+#   GEMINI_API_KEY      already exists on RepairRange
+#   SMTP_USER           the gmail address that sends
+#   SMTP_PASS           gmail APP PASSWORD — masked
+#   NOTIFY_TO           engrkhalil77@gmail.com
+#   GITLAB_PUSH_TOKEN   project access token, scope: write_repository — masked
+#
+# ============================================================================
+# PIPELINE SCHEDULES to create in the UI:
+#
+#   RepairRange repo (blank-site-2026-05-06-6rrng)
+#     "RepairRange Tue"   cron: 0 20 * * 1   TZ: UTC   var SITE_KEY=repairrange
+#     "RepairRange Fri"   cron: 0 20 * * 4   TZ: UTC   var SITE_KEY=repairrange
+#     (20:00 UTC Mon = 06:00 AEST Tue. GitLab schedules are UTC — do the maths once.)
+#
+#   PDFRange repo
+#     "PDFRange Thu"      cron: 0 20 * * 3   TZ: UTC   var SITE_KEY=pdfrange
+#
+# ============================================================================
+# GITPAGE WARNING
+# These repos are Gitpage-synced. Direct GitLab pushes have caused sync
+# conflicts before. After the FIRST scheduled run on each site, open Gitpage
+# and confirm the post rendered live before trusting the schedule.
+# Also: Gitpage's generate_sitemap / robots_txt / llms_txt tools OVERWRITE
+# whatever CI wrote. Do not run them casually. If you do, re-check sitemap.xml.
+# ============================================================================

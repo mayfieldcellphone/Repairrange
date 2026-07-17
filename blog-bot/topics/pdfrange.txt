@@ -1,0 +1,16 @@
+# One topic per line.
+Where your PDF actually goes when you use a free online converter
+Browser-side vs server-side PDF tools: the difference that matters
+Merging a contract PDF without uploading it anywhere
+How to redact a PDF so the text is actually gone
+Why "we delete your file after an hour" isn't a privacy policy
+PDF metadata: what your document says about you
+Compressing a PDF without wrecking the scan quality
+Filling a PDF form on a device you don't own
+The Australian Privacy Act and third-party document tools
+Why your accountant should stop emailing PDFs
+Splitting a bank statement PDF safely
+Password-protecting a PDF: what it does and doesn't stop
+Local-first software: the idea behind PDFRange
+Scanned vs searchable PDFs and why OCR matters
+What a PDF tool can see when you upload a file
