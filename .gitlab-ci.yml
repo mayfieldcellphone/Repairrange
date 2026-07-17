@@ -1,72 +1,166 @@
-stages:
-  - generate
-  - deploy
+ # =============================================================================
+ # RepairRange .gitlab-ci.yml — corrected
+ #
+ # DO NOT write this file via Gitpage edit_site_file. It corrupts YAML.
+ # Commit through Accio or directly in GitLab's web IDE.
+ #
+ # Changes from the version currently live:
+ #   1. [skip ci] removed      -> posts now actually deploy
+ #   2. pdfrange removed       -> this repo only ever builds repairrange
+ #   3. generate_news restored -> tech-news pipeline was silently dropped
+ #   4. *.json glob killed     -> it was serving whatsapp_credentials.json publicly
+ #   5. secret_scan added      -> build fails if a credential reaches public/
+ #   6. schedules keyed on explicit variables, not schedule-name string matching
+ # =============================================================================
 
-blog_bot:
-  stage: generate
-  image: python:3.12-slim
-  rules:
-    - if: '$CI_PIPELINE_SOURCE == "schedule"'
-  variables:
-    SITE_ROOT: "."
-    LLM_PROVIDER: "gemini"
-  before_script:
-    - apt-get update -qq && apt-get install -y -qq git
-    - git config user.email "bot@repairrange.io"
-    - git config user.name "blog-bot"
-  script:
-    - |
-      if [ -n "$SITE_KEY" ]; then
-        TARGET_SITE="$SITE_KEY"
-      elif [[ "$CI_PIPELINE_SCHEDULE_DESCRIPTION" == *"RepairRange"* ]]; then
-        TARGET_SITE="repairrange"
-      elif [[ "$CI_PIPELINE_SCHEDULE_DESCRIPTION" == *"PDFRange"* ]]; then
-        TARGET_SITE="pdfrange"
-      else
-        echo "Error: Cannot determine site. Name your schedule with 'RepairRange' or 'PDFRange'."
-        exit 1
-      fi
-      python blog-bot/generate.py --site "$TARGET_SITE"
-    - |
-      PUSH_TOKEN="${GITLAB_PUSH_TOKEN:-$git_write}"
-      if [ -n "$(git status --porcelain)" ]; then
-        git add -A
-        git commit -m "blog-bot: automated post [skip ci]"
-        git push "https://oauth2:${PUSH_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" "HEAD:${CI_DEFAULT_BRANCH}"
-      else
-        echo "nothing generated — check job log above"
-        exit 1
-      fi
-  artifacts:
-    when: always
-    paths:
-      - blog-bot/topics/*_used.txt
-    expire_in: 30 days
+ stages:
+   - generate
+   - deploy
 
-blog_bot_dryrun:
-  stage: generate
-  image: python:3.12-slim
-  when: manual
-  allow_failure: true
-  rules:
-    - if: '$CI_PIPELINE_SOURCE == "web"'
-  variables:
-    LLM_PROVIDER: "gemini"
-  script:
-    - python blog-bot/generate.py --site "${SITE_KEY:-repairrange}" --dry-run
+ # -----------------------------------------------------------------------------
+ # Blog bot. Fires ONLY on a schedule that sets SITE_KEY.
+ # The && $SITE_KEY guard matters: without it this job also fires on the news
+ # schedule and exits 1 every time.
+ # -----------------------------------------------------------------------------
+ blog_bot:
+   stage: generate
+   image: python:3.12-slim
+   rules:
+     - if: '$CI_PIPELINE_SOURCE == "schedule" && $SITE_KEY'
+   variables:
+     SITE_ROOT: "."
+     LLM_PROVIDER: "gemini"
+   before_script:
+     - apt-get update -qq && apt-get install -y -qq git
+     - git config user.email "bot@repairrange.io"
+     - git config user.name "blog-bot"
+   script:
+     # This repo builds repairrange and nothing else. blog-bot/ does not live in
+     # the PDFRange repo, so SITE_ROOT="." would write a PDFRange post into
+     # RepairRange's blog/ and canonical it to a pdfrange.com URL that 404s.
+     - |
+       if [ "$SITE_KEY" != "repairrange" ]; then
+         echo "This repo only builds 'repairrange'. Got SITE_KEY='$SITE_KEY'."
+         echo "To run PDFRange, copy blog-bot/ into the PDFRange repo and schedule it there."
+         exit 1
+       fi
+     # Fail before generating, not after. Generating a post and then failing to
+     # push burns an API call and leaves the repo dirty.
+     - |
+       if [ -z "$GITLAB_PUSH_TOKEN" ]; then
+         echo "GITLAB_PUSH_TOKEN is not set. Settings > CI/CD > Variables."
+         exit 1
+       fi
+     - python blog-bot/generate.py --site "$SITE_KEY"
+     # NOTE: no [skip ci]. The push must trigger the pages job or nothing deploys.
+     # This cannot loop: blog_bot requires CI_PIPELINE_SOURCE == "schedule",
+     # and this push is source == "push".
+     - |
+       if [ -n "$(git status --porcelain)" ]; then
+         git add -A
+         git commit -m "blog-bot: ${SITE_KEY} post"
+         git push "https://oauth2:${GITLAB_PUSH_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" "HEAD:${CI_DEFAULT_BRANCH}"
+       else
+         echo "nothing generated — check the job log above"
+         exit 1
+       fi
+   artifacts:
+     when: always
+     paths:
+       - blog-bot/topics/*_used.txt
+     expire_in: 30 days
 
-pages:
-  stage: deploy
-  image: debian:stable-slim
-  script:
-    - apt-get update && apt-get install -y curl python3
-    - python3 generate_sitemap.py
-    - mkdir -p public
-    - cp -r ./*.html ./*.txt ./*.xml ./*.json public/ 2>/dev/null || true
-    - cp -r fix locations repair brands tools blog unlock css selfrepairkit public/ 2>/dev/null || true
-    - cp _redirects public/ 2>/dev/null || true
-  artifacts:
-    paths:
-      - public
-  only:
-    - main
+ # -----------------------------------------------------------------------------
+ # Tech news. This was dropped when blog-bot went in. Restored.
+ # generate_tech_news.py commits to GitLab directly via the API, so this job
+ # does not push — it just runs the script.
+ # -----------------------------------------------------------------------------
+ generate_news:
+   stage: generate
+   image: python:3.12-slim
+   rules:
+     - if: '$CI_PIPELINE_SOURCE == "schedule" && $JOB == "news"'
+   script:
+     # Hard fail if the script is relying on its hardcoded fallback secrets.
+     - |
+       if [ -z "$GEMINI_API_KEY" ] || [ -z "$GITLAB_TOKEN" ]; then
+         echo "GEMINI_API_KEY and GITLAB_TOKEN must both be set as CI variables."
+         echo "generate_tech_news.py has hardcoded fallbacks. Those are burned. Never let it reach them."
+         exit 1
+       fi
+     - python generate_tech_news.py
+
+ # -----------------------------------------------------------------------------
+ # Manual dry run. when: manual lives INSIDE the rule — a job-level `when` is
+ # overridden when rules are present, which would have made this run automatically.
+ # -----------------------------------------------------------------------------
+ blog_bot_dryrun:
+   stage: generate
+   image: python:3.12-slim
+   rules:
+     - if: '$CI_PIPELINE_SOURCE == "web"'
+       when: manual
+       allow_failure: true
+   variables:
+     LLM_PROVIDER: "gemini"
+   script:
+     - python blog-bot/generate.py --site "${SITE_KEY:-repairrange}" --dry-run
+
+ # -----------------------------------------------------------------------------
+ # Deploy.
+ # -----------------------------------------------------------------------------
+ pages:
+   stage: deploy
+   image: debian:stable-slim
+   script:
+     - apt-get update -qq && apt-get install -y -qq curl python3
+     - python3 generate_sitemap.py
+     - mkdir -p public
+ 
+     - cp ./*.html public/ 2>/dev/null || true
+     - cp ./*.txt public/ 2>/dev/null || true
+     - cp ./*.xml public/ 2>/dev/null || true
+ 
+     # WAS: cp -r ./*.json public/
+     # That glob published EVERY root .json, including whatsapp_credentials.json,
+     # read_google_sheet.json, sheet_data.json. Allowlist only.
+     # VERIFY: if the calculator or comparison page breaks, a json it needs is
+     # missing from this list. Add it by name. Never restore the glob.
+     - cp catalog.json public/ 2>/dev/null || true
+     - cp pricing.json public/ 2>/dev/null || true
+ 
+     - cp -r fix locations repair brands tools blog unlock css selfrepairkit public/ 2>/dev/null || true
+     - cp _redirects public/ 2>/dev/null || true
+ 
+     # Canary. If a secret ever reaches public/ again, the deploy dies here
+     # instead of going live and staying live until someone notices.
+     - |
+       if grep -rlE 'glpat-[A-Za-z0-9_-]{20}|AIza[A-Za-z0-9_-]{35}|"private_key"|BEGIN [A-Z ]*PRIVATE KEY' public/ 2>/dev/null; then
+         echo "SECRET DETECTED IN public/ — deploy aborted. Files listed above."
+         exit 1
+       fi
+       echo "secret scan clean"
+ 
+     - ls -R public
+   artifacts:
+     paths:
+       - public
+   only:
+     - main
+
+ # =============================================================================
+ # PIPELINE SCHEDULES (Build > Pipeline schedules). Cron is UTC. AEST = UTC+10.
+ #
+ #   "RepairRange Tue"   0 20 * * 1   variable: SITE_KEY = repairrange
+ #   "RepairRange Fri"   0 20 * * 4   variable: SITE_KEY = repairrange
+ #   "Tech news"         <your existing cron>   variable: JOB = news
+ #
+ # Schedules are now matched on variables, not on the schedule's name. Renaming a
+ # schedule can no longer silently change which job runs.
+ #
+ # CI VARIABLES (masked + protected):
+ #   GEMINI_API_KEY      rotate it, the old one is in generate_tech_news.py
+ #   GITLAB_TOKEN        rotate it, ditto
+ #   GITLAB_PUSH_TOKEN   project access token, scope write_repository
+ #   SMTP_USER / SMTP_PASS / NOTIFY_TO
+ # =============================================================================

@@ -9,8 +9,8 @@ from datetime import datetime
 # ==========================================
 # CONFIGURATION & CREDENTIALS
 # ==========================================
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "AIzaSyAhSJXdqCwOGd0o5laOQkU1Yl_QLWf_cXQ")
-GITLAB_TOKEN = os.environ.get("GITLAB_TOKEN", "glpat-hRoTs91bL94GiUsNmHljCmM6MQpvOjEKdTpsdG44dQ8.01.1709y1suj")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+GITLAB_TOKEN = os.environ.get("GITLAB_TOKEN")
 PROJECT_PATH = "mayfield276%2Fblank-site-2026-05-06-6rrng"
 
 RSS_FEEDS = [
