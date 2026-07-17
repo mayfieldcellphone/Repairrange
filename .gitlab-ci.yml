@@ -1,16 +1,58 @@
 stages:
-  - build
+  - generate
   - deploy
 
-generate_news:
-  stage: build
-  image: python:3.9-slim
+blog_bot:
+  stage: generate
+  image: python:3.12-slim
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "schedule"'
+  variables:
+    SITE_ROOT: "."
+    LLM_PROVIDER: "gemini"
+  before_script:
+    - apt-get update -qq && apt-get install -y -qq git
+    - git config user.email "bot@repairrange.io"
+    - git config user.name "blog-bot"
   script:
-    - python generate_sitemap.py
-    - python generate_tech_news.py
-    - python generate_mayfield_rss.py
-  only:
-    - schedules
+    - |
+      if [ -n "$SITE_KEY" ]; then
+        TARGET_SITE="$SITE_KEY"
+      elif [[ "$CI_PIPELINE_SCHEDULE_DESCRIPTION" == *"RepairRange"* ]]; then
+        TARGET_SITE="repairrange"
+      elif [[ "$CI_PIPELINE_SCHEDULE_DESCRIPTION" == *"PDFRange"* ]]; then
+        TARGET_SITE="pdfrange"
+      else
+        echo "Error: Cannot determine site. Name your schedule with 'RepairRange' or 'PDFRange'."
+        exit 1
+      fi
+      python blog-bot/generate.py --site "$TARGET_SITE"
+    - |
+      if [ -n "$(git status --porcelain)" ]; then
+        git add -A
+        git commit -m "blog-bot: automated post [skip ci]"
+        git push "https://oauth2:${GITLAB_PUSH_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" "HEAD:${CI_DEFAULT_BRANCH}"
+      else
+        echo "nothing generated — check job log above"
+        exit 1
+      fi
+  artifacts:
+    when: always
+    paths:
+      - blog-bot/topics/*_used.txt
+    expire_in: 30 days
+
+blog_bot_dryrun:
+  stage: generate
+  image: python:3.12-slim
+  when: manual
+  allow_failure: true
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "web"'
+  variables:
+    LLM_PROVIDER: "gemini"
+  script:
+    - python blog-bot/generate.py --site "${SITE_KEY:-repairrange}" --dry-run
 
 pages:
   stage: deploy
