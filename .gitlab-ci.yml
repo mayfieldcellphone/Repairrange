@@ -132,14 +132,15 @@
      - cp -r fix locations repair brands tools blog unlock css selfrepairkit public/ 2>/dev/null || true
      - cp _redirects public/ 2>/dev/null || true
  
-     # Canary. If a secret ever reaches public/ again, the deploy dies here
-     # instead of going live and staying live until someone notices.
-     - |
-       if grep -rlE 'glpat-[A-Za-z0-9_-]{20}|AIza[A-Za-z0-9_-]{35}|"private_key"|BEGIN [A-Z ]*PRIVATE KEY' public/ 2>/dev/null; then
-         echo "SECRET DETECTED IN public/ — deploy aborted. Files listed above."
-         exit 1
-       fi
-       echo "secret scan clean"
+    # Canary. If a secret ever reaches public/ again, the deploy dies here
+    # instead of going live and staying live until someone notices.
+    - |
+      if grep -rlE 'glpat-[A-Za-z0-9_-]{20}|AIza[A-Za-z0-9_-]{35}|EAA[A-Za-z0-9]{60,}|_token"[[:space:]]*:[[:space:]]*"[^"]{20,}|"private_key"|BEGIN [A-Z ]*PRIVATE KEY' public/ 2>/dev/null; then
+        echo "SECRET DETECTED IN public/ — deploy aborted. Files listed above."
+        exit 1
+      fi
+      echo "secret scan clean"
+
  
      - ls -R public
    artifacts:
