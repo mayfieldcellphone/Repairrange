@@ -35,7 +35,12 @@ def generate_sitemap():
     xml_content += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     
     for url in urls:
-        priority = "1.0" if url.endswith("index.html") or url == BASE_URL + "/" else "0.5"
+        if url.endswith("index.html") or url == BASE_URL + "/":
+            priority = "1.0"
+        elif "/blog/" in url or "/news/" in url:
+            priority = "0.8"
+        else:
+            priority = "0.5"
         xml_content += "  <url>\n"
         xml_content += f"    <loc>{url}</loc>\n"
         xml_content += f"    <lastmod>{today}</lastmod>\n"
