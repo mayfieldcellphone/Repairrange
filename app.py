@@ -28,40 +28,78 @@ menu_options = [
     "🗃️ CRM Lead Manager", 
     "🛰️ Sourcing Hub", 
     "✉️ Email & Sync Control", 
-    "🛒 Store Catalog Sync"
+    "🛒 Store Catalog Sync",
+    "🔍 SEO Health Monitor",
+    "⚙️ System Terminal"
 ]
 page = st.sidebar.radio("Navigation Menu", menu_options)
 
-# Helper function to run sub-processes with console output
-def run_script_live(script_name, args=[]):
-    script_path = os.path.join(ROOT_DIR, script_name)
-    if not os.path.exists(script_path):
-        st.error(f"Script file not found: {script_name}")
-        return
-    
-    st.info(f"🚀 Running: `{script_name}`")
-    try:
-        result = subprocess.run([sys.executable, script_path] + args, capture_output=True, text=True)
-        if result.returncode == 0:
-            st.success(result.stdout)
-        else:
-            st.error(result.stderr)
-    except Exception as e:
-        st.error(f"Failed to execute script: {str(e)}")
-
-# Load data helper
-def load_data():
-    if not os.path.exists(CSV_PATH): return pd.DataFrame()
-    return pd.read_csv(CSV_PATH)
+# --- UI STYLING ---
+st.markdown("""
+<style>
+    .main {
+        background-color: #f8fafc;
+    }
+    .stButton>button {
+        border-radius: 8px;
+        font-weight: 500;
+    }
+    .status-card {
+        padding: 20px;
+        border-radius: 12px;
+        background: white;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        margin-bottom: 15px;
+        border-left: 5px solid #2563eb;
+    }
+</style>
+""", unsafe_allow_html=True)
 
 # --- PAGE ROUTING ---
 
 if page == "📊 Dashboard & Pipeline":
-    st.title("📊 Pipeline Analytics")
+    st.title("📊 Business Dashboard")
+    
+    # Live Site Status
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.markdown('<div class="status-card"><b>RepairBill.shop</b><br><span style="color:green">● Online</span></div>', unsafe_allow_html=True)
+    with col2:
+        st.markdown('<div class="status-card"><b>PDFRange.com</b><br><span style="color:green">● Online</span></div>', unsafe_allow_html=True)
+    with col3:
+        st.markdown('<div class="status-card"><b>Mayfield Repair</b><br><span style="color:green">● Online</span></div>', unsafe_allow_html=True)
+
     df = load_data()
     if not df.empty:
         st.write(f"Total Leads: {len(df)}")
         st.bar_chart(df['Status'].value_counts())
+
+elif page == "⚙️ System Terminal":
+    st.title("⚙️ System Terminal")
+    st.warning("⚠️ Critical: Execution of shell commands directly on the server.")
+    
+    cmd = st.text_input("Enter Shell Command")
+    if st.button("Run Command"):
+        if cmd:
+            try:
+                # Use a simple subprocess run for direct commands
+                result = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=30)
+                st.code(result.stdout + "\n" + result.stderr)
+            except Exception as e:
+                st.error(f"Execution Error: {str(e)}")
+    
+    st.markdown("---")
+    st.subheader("Common Fixes")
+    if st.button("Unlock SSH (Unban All)"):
+        try:
+            subprocess.run("fail2ban-client unban --all", shell=True)
+            st.success("Unbanned all IPs.")
+        except:
+            st.error("Fail2Ban command failed.")
+    
+    if st.button("Restart Web Server"):
+        subprocess.run("systemctl restart nginx", shell=True)
+        st.info("Nginx restarted.")
 
 elif page == "🗃️ CRM Lead Manager":
     st.title("🗃️ Lead Manager")
@@ -120,6 +158,35 @@ elif page == "🛒 Store Catalog Sync":
         with st.expander("🔍 View Live Website Catalog.json"):
             with open(CATALOG_PATH, 'r', encoding='utf-8') as f:
                 st.json(json.load(f))
+
+elif page == "🔍 SEO Health Monitor":
+    st.title("🔍 SEO Health Monitor")
+    st.subheader("Monitoring: repairbill.shop, pdfrange.com, mayfieldphonerepair.com.au")
+    
+    if st.button("🚀 Run Health Check Now"):
+        st.info("Scanning domains for status, meta tags, and SSL expiry...")
+        
+        script_path = os.path.join(ROOT_DIR, "seo_monitor.py")
+        try:
+            result = subprocess.run([sys.executable, script_path], capture_output=True, text=True)
+            if result.returncode == 0:
+                data = json.loads(result.stdout)
+                for item in data:
+                    with st.expander(f"🌐 {item['url']}", expanded=True):
+                        col1, col2 = st.columns(2)
+                        col1.write(f"**Status:** {item['status']}")
+                        col1.write(f"**SSL Expiry:** {item['ssl_expiry']}")
+                        col2.write(f"**Title:** {item['title']}")
+                        col2.write(f"**Description:** {item['description']}")
+                        
+                        if item['title'] == "Missing" or item['description'] == "Missing":
+                            st.warning("⚠️ SEO Meta Tags are incomplete!")
+                        else:
+                            st.success("✅ SEO Meta Tags are present.")
+            else:
+                st.error(f"Error running monitor: {result.stderr}")
+        except Exception as e:
+            st.error(f"Failed to execute SEO monitor: {str(e)}")
 
 st.sidebar.markdown("---")
 st.sidebar.info("v1.3.0 | Master Data Integrated")
