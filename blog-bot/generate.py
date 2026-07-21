@@ -21,6 +21,8 @@ Env vars required:
 Exit codes: 0 ok, 1 config/topic error, 2 generation failed validation, 3 publish failed.
 """
 
+import time
+import random
 import argparse
 import datetime as dt
 import json
@@ -29,6 +31,9 @@ import pathlib
 import re
 import sys
 import urllib.request
+import urllib.error
+
+# ... (rest of imports remains similar)
 
 ROOT = pathlib.Path(__file__).parent
 CONFIG = json.loads((ROOT / "config" / "sites.json").read_text())
@@ -169,7 +174,7 @@ Return ONLY a JSON object, no markdown fences, no preamble:
 def call_gemini(prompt):
     key = os.environ["GEMINI_API_KEY"]
     url = ("https://generativelanguage.googleapis.com/v1beta/models/"
-           f"gemini-2.0-flash:generateContent?key={key}")
+           f"gemini-1.5-flash:generateContent?key={key}")
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {"temperature": 0.85, "maxOutputTokens": 4096,
@@ -178,9 +183,21 @@ def call_gemini(prompt):
     req = urllib.request.Request(
         url, data=json.dumps(payload).encode(),
         headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=180) as r:
-        data = json.loads(r.read())
-    return data["candidates"][0]["content"]["parts"][0]["text"]
+    
+    max_attempts = 6
+    for attempt in range(max_attempts):
+        try:
+            with urllib.request.urlopen(req, timeout=180) as r:
+                data = json.loads(r.read())
+                return data["candidates"][0]["content"]["parts"][0]["text"]
+        except urllib.error.HTTPError as e:
+            if e.code == 429 and attempt < max_attempts - 1:
+                ra = e.headers.get("Retry-After")
+                wait = int(ra) if (ra and ra.isdigit()) else min(60, 2 ** attempt) + random.uniform(0, 1)
+                print(f"  [429] rate-limited, retry {attempt+1}/{max_attempts} in {wait:.1f}s")
+                time.sleep(wait)
+                continue
+            raise
 
 
 def call_anthropic(prompt):
@@ -309,6 +326,8 @@ def run_site(site_key, dry):
     print(f"[{site_key}] {cfg['domain']}")
     results = []
     for i in range(cfg.get("posts_per_run", 1)):
+        if i > 0:
+            time.sleep(4)  # respect RPM limits
         topic = peek_topic(site_key, offset=i)
         print(f"  topic: {topic}")
         post = generate(site_key, cfg, topic)
