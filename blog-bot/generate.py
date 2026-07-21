@@ -15,7 +15,7 @@ Env vars required:
     ANTHROPIC_API_KEY   if provider=anthropic
     SMTP_USER           gmail address used to send
     SMTP_PASS           gmail APP PASSWORD (not your account password)
-    NOTIFY_TO           notification recipient
+    NOTIFY_TO           engrkhalil77@gmail.com
     LMS_API_TOKEN       LaunchMyStore API token (only for launchmystore sites)
 
 Exit codes: 0 ok, 1 config/topic error, 2 generation failed validation, 3 publish failed.
