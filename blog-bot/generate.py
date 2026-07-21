@@ -15,7 +15,7 @@ Env vars required:
     ANTHROPIC_API_KEY   if provider=anthropic
     SMTP_USER           gmail address used to send
     SMTP_PASS           gmail APP PASSWORD (not your account password)
-    NOTIFY_TO           engrkhalil77@gmail.com
+    NOTIFY_TO           notification recipient
     LMS_API_TOKEN       LaunchMyStore API token (only for launchmystore sites)
 
 Exit codes: 0 ok, 1 config/topic error, 2 generation failed validation, 3 publish failed.
@@ -32,8 +32,6 @@ import re
 import sys
 import urllib.request
 import urllib.error
-
-# ... (rest of imports remains similar)
 
 ROOT = pathlib.Path(__file__).parent
 CONFIG = json.loads((ROOT / "config" / "sites.json").read_text())
@@ -171,7 +169,39 @@ Return ONLY a JSON object, no markdown fences, no preamble:
 }}"""
 
 
-MODEL = "gemini-3.1-flash-lite"`nURL = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"`n`ndef call_gemini(prompt):`n    payload = {`n        "contents": [{"parts": [{"text": prompt}]}],`n        "generationConfig": {"temperature": 0.85, "maxOutputTokens": 4096,`n                             "responseMimeType": "application/json"},`n    }`n    req = urllib.request.Request(`n        f"{URL}?key={os.environ['GEMINI_API_KEY']}", `n        data=json.dumps(payload).encode(),`n        headers={"Content-Type": "application/json"},`n        method="POST"`n    )`n    `n    max_attempts = 6`n    for attempt in range(max_attempts):`n        try:`n            with urllib.request.urlopen(req, timeout=180) as r:`n                data = json.loads(r.read().decode())`n                return data["candidates"][0]["content"]["parts"][0]["text"]`n        except urllib.error.HTTPError as e:`n            detail = e.read().decode()[:500]`n            if e.code == 429 and attempt < max_attempts - 1:`n                ra = e.headers.get("Retry-After")`n                wait = int(ra) if (ra and ra.isdigit()) else min(60, 2 ** attempt) + random.uniform(0, 1)`n                print(f"  [429] rate-limited, retry {attempt+1}/{max_attempts} in {wait:.1f}s")`n                time.sleep(wait)`n                continue`n            print(f"[gemini {e.code}] {detail}")`n            raise
+MODEL = "gemini-3.1-flash-lite"
+URL = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
+
+
+def call_gemini(prompt):
+    payload = {
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {"temperature": 0.85, "maxOutputTokens": 4096,
+                             "responseMimeType": "application/json"},
+    }
+    req = urllib.request.Request(
+        f"{URL}?key={os.environ['GEMINI_API_KEY']}",
+        data=json.dumps(payload).encode(),
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+
+    max_attempts = 6
+    for attempt in range(max_attempts):
+        try:
+            with urllib.request.urlopen(req, timeout=180) as r:
+                data = json.loads(r.read().decode())
+                return data["candidates"][0]["content"]["parts"][0]["text"]
+        except urllib.error.HTTPError as e:
+            detail = e.read().decode()[:500]
+            if e.code == 429 and attempt < max_attempts - 1:
+                ra = e.headers.get("Retry-After")
+                wait = int(ra) if (ra and ra.isdigit()) else min(60, 2 ** attempt) + random.uniform(0, 1)
+                print(f"  [429] rate-limited, retry {attempt+1}/{max_attempts} in {wait:.1f}s")
+                time.sleep(wait)
+                continue
+            print(f"[gemini {e.code}] {detail}")
+            raise
 
 
 def call_anthropic(prompt):
@@ -344,6 +374,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
