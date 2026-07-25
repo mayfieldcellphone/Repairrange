@@ -36,7 +36,7 @@ blog_bot:
     - |
       if [ -n "$(git status --porcelain)" ]; then
         git add -A
-        git commit -m "blog-bot: automated post [skip ci]"
+        git commit -m "blog-bot: automated post"
         git push "https://oauth2:${GITLAB_PUSH_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" "HEAD:${CI_DEFAULT_BRANCH}"
       else
         echo "nothing generated — check job log above"
@@ -86,3 +86,4 @@ pages:
       - public
   only:
     - main
+
