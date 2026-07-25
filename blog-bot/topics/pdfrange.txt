@@ -1,5 +1,4 @@
 # One topic per line.
-Where your PDF actually goes when you use a free online converter
 Browser-side vs server-side PDF tools: the difference that matters
 Merging a contract PDF without uploading it anywhere
 How to redact a PDF so the text is actually gone
