@@ -1,5 +1,4 @@
 # One topic per line.
-Browser-side vs server-side PDF tools: the difference that matters
 Merging a contract PDF without uploading it anywhere
 How to redact a PDF so the text is actually gone
 Why "we delete your file after an hour" isn't a privacy policy
