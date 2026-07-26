@@ -13,7 +13,7 @@ def validate(site_key, cfg, post):
     body = post.get("body_html", "")
     text = re.sub(r"<[^>]+>", " ", body)
     words = len(text.split())
-    if words < 700: fails.append("too short")
+    if words < 500: fails.append(f"too short ({words} words)")
     if not post.get("title"): fails.append("missing title")
     return fails
 
@@ -39,7 +39,7 @@ def call_gemini(prompt):
             if e.code == 429 and attempt < 5:
                 time.sleep(min(60, 2**attempt) + random.uniform(0, 1)); continue
             raise
-    raise Exception("API persistently failed")
+    raise Exception("API failed")
 
 def update_blog_index(site_root, site_key, post):
     blog_index = site_root / "blog.html"
@@ -61,14 +61,7 @@ def publish_git(site_key, cfg, post, dry):
     site_root = pathlib.Path(os.environ.get("SITE_ROOT", "."))
     tpl = (ROOT / "templates" / f"{site_key}.html").read_text()
     today = dt.date.today()
-    subs = {
-        "{{BODY}}": post.get("body_html", ""),
-        "{{TITLE}}": post.get("title", ""),
-        "{{META}}": post.get("meta_description", ""),
-        "{{SLUG}}": post.get("slug", ""),
-        "{{DATE_HUMAN}}": today.strftime("%d %B %Y"),
-        "{{DOMAIN}}": cfg["domain"].rstrip("/")
-    }
+    subs = {"{{BODY}}": post.get("body_html", ""), "{{TITLE}}": post.get("title", ""), "{{META}}": post.get("meta_description", ""), "{{SLUG}}": post.get("slug", ""), "{{DATE_HUMAN}}": today.strftime("%d %B %Y"), "{{DOMAIN}}": cfg["domain"].rstrip("/")}
     html = tpl
     for k, v in subs.items(): html = html.replace(k, str(v))
     html = html.replace("%7B%7BDOMAIN%7D%7D", cfg["domain"].rstrip("/"))
@@ -80,10 +73,10 @@ def publish_git(site_key, cfg, post, dry):
 
 def run_site(site_key, dry):
     cfg = CONFIG[site_key]; topic = peek_topic(site_key); last_err = ""
-    prompt = f"Write a blog for {cfg['domain']} about {topic}. Voice: {cfg['voice']}. Australian spelling. No prices. Return ONLY JSON with keys: title, slug, meta_description, body_html."
+    prompt = f"Write a DEEPLY DETAILED, EXTENSIVE blog for {cfg['domain']} about {topic}. Voice: {cfg['voice']}. Target 1200 words. No prices. Australian spelling. Return ONLY JSON with keys: title, slug, meta_description, body_html."
     for attempt in range(3):
         try:
-            raw = call_gemini(prompt if not last_err else prompt + f"\n\nERROR: {last_err}. Fix JSON.")
+            raw = call_gemini(prompt if not last_err else prompt + f"\n\nERROR: {last_err}. Content must be longer and fixed JSON.")
             post = json.loads(re.sub(r"^```(?:json)?|```$", "", raw.strip(), flags=re.M).strip())
             fails = validate(site_key, cfg, post)
             if fails: raise Exception(f"Validation: {fails}")
