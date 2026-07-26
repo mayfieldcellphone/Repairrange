@@ -20,8 +20,8 @@ body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.8 Inter,syst
 header{background:#fff;border-bottom:1px solid var(--line);padding:20px 24px;position:sticky;top:0;z-index:100}
 header .wrap{max-width:800px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
 header a{color:var(--blue);text-decoration:none;font:700 22px/1 "Bricolage Grotesque",sans-serif;letter-spacing:-0.02em}
-main{max-width:800px;margin:0 auto;padding:60px 24px 80px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.05);min-height:100vh}
-.date{font-size:14px;color:var(--muted);font-weight:500;margin-bottom:12px;display:block}
+main{max-width:800px;margin:32px auto;padding:60px 48px 80px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.05);border-radius:12px;min-height:100vh}
+.date{font-size:14px;color:var(--muted);font-weight:500;margin-bottom:12px;display:block;text-transform:uppercase;letter-spacing:0.05em}
 h1{font:800 clamp(32px,6vw,48px)/1.1 "Bricolage Grotesque",sans-serif;color:var(--ink);margin:0 0 40px;letter-spacing:-0.03em}
 h2{font:700 28px/1.3 "Bricolage Grotesque",sans-serif;color:var(--ink);margin:48px 0 16px;letter-spacing:-0.02em}
 h3{font:600 22px/1.4 "Bricolage Grotesque",sans-serif;margin:32px 0 12px}
@@ -32,13 +32,13 @@ ul,ol{padding-left:24px;margin-bottom:32px}
 li{margin-bottom:12px}
 hr{border:0;border-top:1px solid var(--line);margin:48px 0}
 .cta-box{background:var(--sky);border-radius:16px;padding:32px;margin:56px 0;text-align:center}
-.cta-box h3{margin-top:0;color:var(--blue)}
-.cta-box p{font-size:16px;color:var(--ink)}
+.cta-box h3{margin-top:0;color:var(--blue);font-size:24px}
+.cta-box p{font-size:16px;color:var(--ink);margin-bottom:24px}
 .btn-cta{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;padding:14px 28px;border-radius:8px;font-weight:600;transition:transform 0.2s}
-.btn-cta:hover{transform:translateY(-2px);color:#fff}
-footer{background:var(--ink);color:#94A3B8;padding:48px 24px;text-align:center;font-size:15px}
-footer a{color:#F1F5F9;text-decoration:none}
-@media (max-width:600px){ main{padding:40px 20px} h1{margin-bottom:24px} }
+.btn-cta:hover{transform:translateY(-2px);color:#fff;text-decoration:none}
+footer{background:var(--ink);color:#94A3B8;padding:48px 24px;text-align:center;font-size:15px;line-height:2}
+footer a{color:#F1F5F9;text-decoration:none;margin:0 8px}
+@media (max-width:600px){ main{padding:40px 24px;margin:0} h1{margin-bottom:24px} }
 </style>
 </head>
 <body>
@@ -60,7 +60,7 @@ footer a{color:#F1F5F9;text-decoration:none}
 </main>
 <footer>
   &copy; 2026 PDFRange &middot; Secure, Browser-Side PDF Tools<br>
-  <a href="mailto:hello@pdfrange.com">Support</a> &middot; <a href="{{DOMAIN}}/privacy.html">Privacy</a>
+  <a href="mailto:hello@pdfrange.com">Support</a> &middot; <a href="{{DOMAIN}}/privacy.html">Privacy Policy</a> &middot; <a href="{{DOMAIN}}/terms.html">Terms</a>
 </footer>
 </body>
 </html>

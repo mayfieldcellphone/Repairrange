@@ -83,14 +83,16 @@ def update_blog_index(site_root, site_key, post):
     blog_index = site_root / "blog.html"
     if not blog_index.exists(): return
     content = blog_index.read_text()
-    today = dt.date.today().strftime("%d %b %Y")
+    today = dt.date.today()
+    month_year = today.strftime("%B %Y")
+    
     card = f'''
-        <a href="blog/{post['slug']}.html" class="post-card p-6 rounded-xl bg-white border border-line hover:border-teal transition-all group">
-            <p class="eyebrow text-[10px] mb-2">{today}</p>
-            <h3 class="font-serif text-xl text-ink mb-3 group-hover:text-teal transition-colors">{post['title']}</h3>
-            <p class="text-muted text-xs leading-relaxed line-clamp-3">{post['meta_description']}</p>
-            <span class="inline-flex items-center gap-1 text-teal text-[10px] font-bold uppercase tracking-wider mt-4">Read Article <i data-lucide="arrow-right" class="w-3 h-3"></i></span>
-        </a>
+            <a href="blog/{post['slug']}.html" class="post-card group">
+                <p class="eyebrow mb-3">Expert Insight &bull; 6 min read &bull; {month_year}</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">{post['title']}</h2>
+                <p class="text-muted leading-relaxed mb-4">{post['meta_description']}</p>
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-teal">Read the post <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+            </a>
     '''
     marker = '<!-- BLOG_GRID_START -->'
     if marker in content:
@@ -102,24 +104,17 @@ def publish_git(site_key, cfg, post, dry):
     tpl = tpl_path.read_text()
     today = dt.date.today()
     
-    # Layer 1: Body first
+    # Precise replacements
     html = tpl.replace("{{BODY}}", post.get("body_html", ""))
-    
-    # Layer 2: Global replacements
-    subs = {
-        "{{TITLE}}": post.get("title", ""),
-        "{{META}}": post.get("meta_description", ""),
-        "{{SLUG}}": post.get("slug", ""),
-        "{{DATE_HUMAN}}": today.strftime("%d %b %Y"),
-        "{{DATE_ISO}}": today.isoformat(),
-        "{{DOMAIN}}": cfg["domain"].rstrip("/")
-    }
-    for k, v in subs.items():
-        html = html.replace(k, str(v))
-        
-    # Layer 3: Cleanup placeholders
-    html = html.replace("%7B%7BDOMAIN%7D%7D", cfg["domain"].rstrip("/"))
+    html = html.replace("{{TITLE}}", post.get("title", ""))
+    html = html.replace("{{META}}", post.get("meta_description", ""))
+    html = html.replace("{{SLUG}}", post.get("slug", ""))
+    html = html.replace("{{DATE_HUMAN}}", today.strftime("%d %B %Y"))
+    html = html.replace("{{DATE_ISO}}", today.isoformat())
     html = html.replace("{{DOMAIN}}", cfg["domain"].rstrip("/"))
+    
+    # URL-encoded safety
+    html = html.replace("%7B%7BDOMAIN%7D%7D", cfg["domain"].rstrip("/"))
     
     out = site_root / cfg["blog_dir"] / f"{post['slug']}.html"
     if not dry:
