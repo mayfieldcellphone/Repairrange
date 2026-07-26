@@ -12,48 +12,55 @@
 <meta property="og:type" content="article">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting",
-"headline":"{{TITLE}}","description":"{{META}}",
-"datePublished":"{{DATE_ISO}}","dateModified":"{{DATE_ISO}}",
-"mainEntityOfPage":{"@type":"WebPage","@id":"{{DOMAIN}}/blog/{{SLUG}}.html"},
-"publisher":{"@type":"Organization","name":"PDFRange","url":"{{DOMAIN}}"},
-"author":{"@type":"Organization","name":"PDFRange"}}
-</script>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--teal:#2563EB;--amber:#93c5fd;--ink:#1a1a1a;--muted:#5c6a68;--line:#e4e9e8}
+:root{--blue:#2563EB;--sky:#DBEAFE;--ink:#0F172A;--muted:#64748B;--line:#E2E8F0;--bg:#F8FAFC}
 *{box-sizing:border-box}
-body{margin:0;background:#fdfdfc;color:var(--ink);font:400 17px/1.7 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-header,footer{background:var(--teal);color:#fff}
-header{padding:18px 24px}
-header a{color:#fff;text-decoration:none;font:700 19px/1 "Bricolage Grotesque",Georgia,serif}
-main{max-width:720px;margin:0 auto;padding:48px 24px 64px}
-.date{font-size:13px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
-h1{font:700 clamp(30px,5vw,42px)/1.2 "Bricolage Grotesque",Georgia,serif;color:var(--teal);margin:10px 0 28px;letter-spacing:-.01em}
-h2{font:600 26px/1.3 "Bricolage Grotesque",Georgia,serif;color:var(--teal);margin:44px 0 12px}
-h3{font:600 20px/1.35 Inter,sans-serif;margin:28px 0 8px}
-p,li{color:#2c3533}
-a{color:var(--teal);text-decoration:underline;text-decoration-color:var(--amber);text-decoration-thickness:2px;text-underline-offset:3px}
-ul,ol{padding-left:22px}
-li{margin:6px 0}
-hr{border:0;border-top:1px solid var(--line);margin:40px 0}
-.cta{background:#f4f8f7;border-left:3px solid var(--amber);padding:18px 20px;border-radius:0 24px 24px 0;margin:40px 0}
-.cta a{font-weight:600}
-footer{padding:28px 24px;font-size:14px;text-align:center}
-footer a{color:var(--amber)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.8 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+header{background:#fff;border-bottom:1px solid var(--line);padding:20px 24px;position:sticky;top:0;z-index:100}
+header .wrap{max-width:800px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+header a{color:var(--blue);text-decoration:none;font:700 22px/1 "Bricolage Grotesque",sans-serif;letter-spacing:-0.02em}
+main{max-width:800px;margin:0 auto;padding:60px 24px 80px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.05);min-height:100vh}
+.date{font-size:14px;color:var(--muted);font-weight:500;margin-bottom:12px;display:block}
+h1{font:800 clamp(32px,6vw,48px)/1.1 "Bricolage Grotesque",sans-serif;color:var(--ink);margin:0 0 40px;letter-spacing:-0.03em}
+h2{font:700 28px/1.3 "Bricolage Grotesque",sans-serif;color:var(--ink);margin:48px 0 16px;letter-spacing:-0.02em}
+h3{font:600 22px/1.4 "Bricolage Grotesque",sans-serif;margin:32px 0 12px}
+p,li{color:#334155;margin-bottom:24px}
+a{color:var(--blue);text-decoration:underline;text-underline-offset:4px;font-weight:500}
+a:hover{color:#1D4ED8}
+ul,ol{padding-left:24px;margin-bottom:32px}
+li{margin-bottom:12px}
+hr{border:0;border-top:1px solid var(--line);margin:48px 0}
+.cta-box{background:var(--sky);border-radius:16px;padding:32px;margin:56px 0;text-align:center}
+.cta-box h3{margin-top:0;color:var(--blue)}
+.cta-box p{font-size:16px;color:var(--ink)}
+.btn-cta{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;padding:14px 28px;border-radius:8px;font-weight:600;transition:transform 0.2s}
+.btn-cta:hover{transform:translateY(-2px);color:#fff}
+footer{background:var(--ink);color:#94A3B8;padding:48px 24px;text-align:center;font-size:15px}
+footer a{color:#F1F5F9;text-decoration:none}
+@media (max-width:600px){ main{padding:40px 20px} h1{margin-bottom:24px} }
 </style>
 </head>
 <body>
-<header><a href="{{DOMAIN}}">PDFRange</a></header>
+<header>
+  <div class="wrap"><a href="{{DOMAIN}}">PDFRange</a></div>
+</header>
 <main>
-  <div class="date">{{DATE_HUMAN}}</div>`n  <h1>{{TITLE}}</h1>`n  {{BODY}}
-  <div class="cta">
-    Want more like this?
-    <a href="{{DOMAIN}}/calculator.html">Use the PDFRange calculator</a> to see the range for your model.
+  <span class="date">{{DATE_HUMAN}}</span>
+  <h1>{{TITLE}}</h1>
+  <article>
+    {{BODY}}
+  </article>
+  
+  <div class="cta-box">
+    <h3>Protect Your PDF Privacy</h3>
+    <p>Stop uploading sensitive files to unknown servers. Use PDFRange to process everything safely in your own browser.</p>
+    <a href="{{DOMAIN}}" class="btn-cta">Try PDFRange for Free</a>
   </div>
 </main>
-<footer>PDFRange &middot; <a href="mailto:hello@pdfrange.com">hello@pdfrange.com</a></footer>
+<footer>
+  &copy; 2026 PDFRange &middot; Secure, Browser-Side PDF Tools<br>
+  <a href="mailto:hello@pdfrange.com">Support</a> &middot; <a href="{{DOMAIN}}/privacy.html">Privacy</a>
+</footer>
 </body>
 </html>
-

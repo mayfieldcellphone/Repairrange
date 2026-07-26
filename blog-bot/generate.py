@@ -44,33 +44,39 @@ def update_blog_index(site_root, site_key, post):
 
 def publish_git(site_key, cfg, post, dry):
     site_root = pathlib.Path(os.environ.get("SITE_ROOT", "."))
-    tpl = (ROOT / "templates" / f"{site_key}.html").read_text()
+    tpl_path = ROOT / "templates" / f"{site_key}.html"
+    tpl = tpl_path.read_text()
     today = dt.date.today()
     
-    # Layer 1: Body first
-    html = tpl.replace("{{BODY}}", post["body_html"])
+    # Layer 1: Global replacements including body
+    subs = {
+        "{{BODY}}": post["body_html"],
+        "{{TITLE}}": post["title"],
+        "{{META}}": post["meta_description"],
+        "{{SLUG}}": post["slug"],
+        "{{DATE_HUMAN}}": today.strftime("%d %B %Y"),
+        "{{DATE_ISO}}": today.isoformat(),
+        "{{DOMAIN}}": cfg["domain"].rstrip("/")
+    }
     
-    # Layer 2: Global replacements (including fixing any {{DOMAIN}} placeholders the AI tried to use)
-    html = (html
-            .replace("{{TITLE}}", post["title"])
-            .replace("{{META}}", post["meta_description"])
-            .replace("{{SLUG}}", post["slug"])
-            .replace("{{DATE_HUMAN}}", today.strftime("%d %B %Y"))
-            .replace("{{DOMAIN}}", cfg["domain"]))
-            
-    # Layer 3: Link Scrubbing (Safety net for relative links)
-    html = html.replace('href="{{DOMAIN}}', f'href="{cfg["domain"]}')
+    html = tpl
+    for k, v in subs.items():
+        html = html.replace(k, str(v))
+        
+    # Layer 2: Cleanup any double-escaped or AI-inserted placeholders in the body
+    html = html.replace("%7B%7BDOMAIN%7D%7D", cfg["domain"].rstrip("/"))
+    html = html.replace("{{DOMAIN}}", cfg["domain"].rstrip("/"))
     
     out = site_root / cfg["blog_dir"] / f"{post['slug']}.html"
     if not dry:
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(html)
-        update_blog_index(site_root, site_key, post)
+        if site_key == "repairrange":
+            update_blog_index(site_root, site_key, post)
     return out
 
 def run_site(site_key, dry):
     cfg = CONFIG[site_key]; topic = peek_topic(site_key)
-    # Stronger prompt for absolute links
     prompt = f"Write a blog for {cfg['domain']} about {topic}. Voice: {cfg['voice']}. Min 900 words. No prices. ALWAYS use absolute URLs for links (starting with https://). Return ONLY JSON."
     post = json.loads(re.sub(r"^```(?:json)?|```$", "", call_gemini(prompt).strip(), flags=re.M).strip())
     url = publish_git(site_key, cfg, post, dry)
