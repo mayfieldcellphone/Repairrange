@@ -15,7 +15,7 @@ def consume_topic(site_key, topic):
 
 def call_gemini(prompt):
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent?key={os.environ['GEMINI_API_KEY']}"
-    payload = {"contents": [{"parts": [{"text": prompt}]}], "generationConfig": {"responseMimeType": "application/json"}}
+    payload = {"contents": [{"parts": [{"text": prompt}]}], "generationConfig": {"temperature": 0.85, "maxOutputTokens": 4096, "responseMimeType": "application/json"}}
     req = urllib.request.Request(url, data=json.dumps(payload).encode(), headers={"Content-Type": "application/json"}, method="POST")
     for attempt in range(6):
         try:
@@ -25,7 +25,6 @@ def call_gemini(prompt):
     raise Exception("API Failed")
 
 def update_blog_index(site_root, site_key, post):
-    """Inserts a new post card at the top of blog.html."""
     blog_index = site_root / "blog.html"
     if not blog_index.exists(): return
     content = blog_index.read_text()
@@ -38,7 +37,6 @@ def update_blog_index(site_root, site_key, post):
             <span class="inline-flex items-center gap-1 text-teal text-[10px] font-bold uppercase tracking-wider mt-4">Read Article <i data-lucide="arrow-right" class="w-3 h-3"></i></span>
         </a>
     '''
-    # Find the insertion point (start of the grid)
     marker = '<!-- BLOG_GRID_START -->'
     if marker in content:
         new_content = content.replace(marker, marker + card)
@@ -48,7 +46,21 @@ def publish_git(site_key, cfg, post, dry):
     site_root = pathlib.Path(os.environ.get("SITE_ROOT", "."))
     tpl = (ROOT / "templates" / f"{site_key}.html").read_text()
     today = dt.date.today()
-    html = tpl.replace("{{TITLE}}", post["title"]).replace("{{BODY}}", post["body_html"]).replace("{{META}}", post["meta_description"]).replace("{{DATE_HUMAN}}", today.strftime("%d %B %Y")).replace("{{DOMAIN}}", cfg["domain"]).replace("{{SLUG}}", post["slug"])
+    
+    # Layer 1: Body first
+    html = tpl.replace("{{BODY}}", post["body_html"])
+    
+    # Layer 2: Global replacements (including fixing any {{DOMAIN}} placeholders the AI tried to use)
+    html = (html
+            .replace("{{TITLE}}", post["title"])
+            .replace("{{META}}", post["meta_description"])
+            .replace("{{SLUG}}", post["slug"])
+            .replace("{{DATE_HUMAN}}", today.strftime("%d %B %Y"))
+            .replace("{{DOMAIN}}", cfg["domain"]))
+            
+    # Layer 3: Link Scrubbing (Safety net for relative links)
+    html = html.replace('href="{{DOMAIN}}', f'href="{cfg["domain"]}')
+    
     out = site_root / cfg["blog_dir"] / f"{post['slug']}.html"
     if not dry:
         out.parent.mkdir(parents=True, exist_ok=True)
@@ -58,7 +70,8 @@ def publish_git(site_key, cfg, post, dry):
 
 def run_site(site_key, dry):
     cfg = CONFIG[site_key]; topic = peek_topic(site_key)
-    prompt = f"Write a blog for {cfg['domain']} about {topic}. Voice: {cfg['voice']}. Min 900 words. Australian spelling. No prices. Return ONLY JSON."
+    # Stronger prompt for absolute links
+    prompt = f"Write a blog for {cfg['domain']} about {topic}. Voice: {cfg['voice']}. Min 900 words. No prices. ALWAYS use absolute URLs for links (starting with https://). Return ONLY JSON."
     post = json.loads(re.sub(r"^```(?:json)?|```$", "", call_gemini(prompt).strip(), flags=re.M).strip())
     url = publish_git(site_key, cfg, post, dry)
     if not dry: consume_topic(site_key, topic)
