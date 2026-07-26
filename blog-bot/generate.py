@@ -98,16 +98,35 @@ def update_blog_index(site_root, site_key, post):
 
 def publish_git(site_key, cfg, post, dry):
     site_root = pathlib.Path(os.environ.get("SITE_ROOT", "."))
-    tpl = (ROOT / "templates" / f"{site_key}.html").read_text()
+    tpl_path = ROOT / "templates" / f"{site_key}.html"
+    tpl = tpl_path.read_text()
     today = dt.date.today()
-    subs = {"{{BODY}}": post.get("body_html", ""), "{{TITLE}}": post.get("title", ""), "{{META}}": post.get("meta_description", ""), "{{SLUG}}": post.get("slug", ""), "{{DATE_HUMAN}}": today.strftime("%d %B %Y"), "{{DATE_ISO}}": today.isoformat(), "{{DOMAIN}}": cfg["domain"].rstrip("/")}
-    html = tpl
-    for k, v in subs.items(): html = html.replace(k, str(v))
-    html = html.replace("%7B%7BDOMAIN%7D%7D", cfg["domain"].rstrip("/")).replace("{{DOMAIN}}", cfg["domain"].rstrip("/"))
+    
+    # Layer 1: Body first
+    html = tpl.replace("{{BODY}}", post.get("body_html", ""))
+    
+    # Layer 2: Global replacements
+    subs = {
+        "{{TITLE}}": post.get("title", ""),
+        "{{META}}": post.get("meta_description", ""),
+        "{{SLUG}}": post.get("slug", ""),
+        "{{DATE_HUMAN}}": today.strftime("%d %b %Y"),
+        "{{DATE_ISO}}": today.isoformat(),
+        "{{DOMAIN}}": cfg["domain"].rstrip("/")
+    }
+    for k, v in subs.items():
+        html = html.replace(k, str(v))
+        
+    # Layer 3: Cleanup placeholders
+    html = html.replace("%7B%7BDOMAIN%7D%7D", cfg["domain"].rstrip("/"))
+    html = html.replace("{{DOMAIN}}", cfg["domain"].rstrip("/"))
+    
     out = site_root / cfg["blog_dir"] / f"{post['slug']}.html"
     if not dry:
-        out.parent.mkdir(parents=True, exist_ok=True); out.write_text(html)
-        if site_key == "repairrange": update_blog_index(site_root, site_key, post)
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(html)
+        if site_key == "repairrange":
+            update_blog_index(site_root, site_key, post)
     return out
 
 def run_site(site_key, dry):
