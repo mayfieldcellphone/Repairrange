@@ -16,20 +16,15 @@ blog_bot:
     - git config user.name "blog-bot"
   script:
     - |
-      echo "--- Checking Token Presence ---"
       if [ -z "$GITLAB_PUSH_TOKEN" ]; then
-        echo "CRITICAL ERROR: GITLAB_PUSH_TOKEN is NOT found in the environment."
-        echo "The robot cannot save files without this key."
+        echo "CRITICAL ERROR: GITLAB_PUSH_TOKEN is missing. Check Settings > CI/CD > Variables."
         exit 1
       fi
-      echo "Token found. Proceeding with generation..."
     - |
       if [[ "$CI_PIPELINE_SCHEDULE_DESCRIPTION" == *"RepairRange"* ]]; then
         TARGET_SITE="repairrange"
-      elif [[ "$CI_PIPELINE_SCHEDULE_DESCRIPTION" == *"PDFRange"* ]]; then
-        TARGET_SITE="pdfrange"
       else
-        echo "Error: Cannot determine site. Name your schedule with 'RepairRange' or 'PDFRange'."
+        echo "Error: This repo only builds 'RepairRange'. Got: $CI_PIPELINE_SCHEDULE_DESCRIPTION"
         exit 1
       fi
       python blog-bot/generate.py --site "$TARGET_SITE"
@@ -37,9 +32,10 @@ blog_bot:
       if [ -n "$(git status --porcelain)" ]; then
         git add -A
         git commit -m "blog-bot: automated post"
-        git pull --rebase https://oauth2:${GITLAB_PUSH_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git ${CI_DEFAULT_BRANCH}; git push https://oauth2:${GITLAB_PUSH_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git "HEAD:${CI_DEFAULT_BRANCH}"
+        git pull --rebase https://oauth2:${GITLAB_PUSH_TOKEN}@{CI_SERVER_HOST}/{CI_PROJECT_PATH}.git {CI_DEFAULT_BRANCH}
+        git push https://oauth2:${GITLAB_PUSH_TOKEN}@{CI_SERVER_HOST}/{CI_PROJECT_PATH}.git "HEAD:{CI_DEFAULT_BRANCH}"
       else
-        echo "nothing generated â€” check job log above"
+        echo "nothing generated — check job log above"
         exit 1
       fi
   artifacts:
@@ -77,7 +73,7 @@ pages:
     - cp _redirects public/ 2>/dev/null || true
     - |
       if grep -rlE 'glpat-[A-Za-z0-9_-]{20}|AIza[A-Za-z0-9_-]{35}|EAA[A-Za-z0-9]{60,}|_token"[[:space:]]*:[[:space:]]*"[^"]{20,}|"private_key"|BEGIN [A-Z ]*PRIVATE KEY' public/ 2>/dev/null; then
-        echo "SECRET DETECTED IN public/ â€” deploy aborted."
+        echo "SECRET DETECTED IN public/ — deploy aborted."
         exit 1
       fi
     - ls -R public
@@ -86,5 +82,3 @@ pages:
       - public
   only:
     - main
-
-
