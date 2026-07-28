@@ -15,6 +15,7 @@ https://www.repairrange.io/* https://repairrange.io/:splat 301
 /brands/google-repair-costs.html /brands/google.html 301
 /brands/watch-repair-costs.html /brands.html 301
 /brands/oppo-repair-costs.html /brands.html 301
+/brands/ipad-repair-costs.html /brands/apple.html 301
 
 # --- Phase 2: Content Consolidation (Duplicates to Alpha) ---
 
