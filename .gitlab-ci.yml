@@ -7,6 +7,13 @@ stages:
 # editor has no free-form CI variables (only Description/cron/branch/Inputs),
 # so routing is done off the schedule Description text instead.
 # Never on push, never on MR. See blog-bot/README.md.
+#
+# NOTE: commit message deliberately has NO "[skip ci]". blog_bot only ever
+# runs on a schedule pipeline, so its own push can't re-trigger itself (the
+# resulting pipeline's source is "push", which doesn't match this rule) --
+# but the push DOES need to trigger a follow-up pipeline so the `pages` job
+# deploys the new commit. With [skip ci] the post got committed but the
+# GitLab Pages deploy kept serving the pre-push SHA forever.
 blog_bot:
   stage: generate
   image: python:3.12-slim
@@ -26,10 +33,11 @@ blog_bot:
         exit 1
       fi
     - python blog-bot/generate.py --site repairrange
+    - find . -name "__pycache__" -type d -prune -exec rm -rf {} +
     - |
       if [ -n "$(git status --porcelain)" ]; then
         git add -A
-        git commit -m "blog-bot: repairrange post [skip ci]"
+        git commit -m "blog-bot: repairrange post"
         git pull --rebase "https://oauth2:${GITLAB_PUSH_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" "${CI_DEFAULT_BRANCH}"
         git push "https://oauth2:${GITLAB_PUSH_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" "HEAD:${CI_DEFAULT_BRANCH}"
       else
