@@ -8,13 +8,42 @@ import time, random, argparse, datetime as dt, json, os, pathlib, re, sys, urlli
 ROOT = pathlib.Path(__file__).parent
 CONFIG = json.loads((ROOT / "config" / "sites.json").read_text())
 
+BANNED_PHRASES = [
+    "delve", "in today's world", "in today's digital", "game-changer", "game changer",
+    "unlock the power", "unlock the potential", "dive into", "landscape", "realm of",
+    "tapestry", "testament to", "in conclusion", "it is important to note",
+    "elevate your", "navigate the", "in the world of", "let's explore",
+]
+
 def validate(site_key, cfg, post):
     fails = []
     body = post.get("body_html", "")
     text = re.sub(r"<[^>]+>", " ", body)
     words = len(text.split())
-    if words < 500: fails.append(f"too short ({words} words)")
-    if not post.get("title"): fails.append("missing title")
+    if words < 700 or words > 1700:
+        fails.append(f"word count out of range ({words} words, need 700-1700)")
+    if not post.get("title"):
+        fails.append("missing title")
+    meta = post.get("meta_description", "")
+    if not (100 <= len(meta) <= 165):
+        fails.append(f"meta description length {len(meta)} chars, need 100-165")
+    low = text.lower()
+    hit = [p for p in BANNED_PHRASES if p in low]
+    if hit:
+        fails.append(f"AI-slop phrases found: {hit}")
+    if cfg.get("no_price_mentions") and re.search(r"\$\s?\d|AUD|\bdollars\b", body, re.I):
+        fails.append("price mention found (guardrail: never state a price)")
+    links = re.findall(r'href="([^"]+)"', body)
+    allowed_domains = [cfg["domain"].replace("https://", "").replace("http://", "")]
+    allowed_domains += [u.replace("https://", "").replace("http://", "") for u in cfg.get("internal_links", [])]
+    if not any(any(dom.split("/")[0] in l for dom in allowed_domains) for l in links):
+        fails.append("no internal link found")
+    if len(links) > 6:
+        fails.append(f"too many links ({len(links)}, max 6)")
+    for domain, limit in cfg.get("link_limits", {}).items():
+        count = sum(1 for l in links if domain in l)
+        if count > limit:
+            fails.append(f"too many links to {domain} ({count}, max {limit})")
     return fails
 
 def peek_topic(site_key):
@@ -61,7 +90,7 @@ def publish_git(site_key, cfg, post, dry):
     site_root = pathlib.Path(os.environ.get("SITE_ROOT", "."))
     tpl = (ROOT / "templates" / f"{site_key}.html").read_text()
     today = dt.date.today()
-    subs = {"{{BODY}}": post.get("body_html", ""), "{{TITLE}}": post.get("title", ""), "{{META}}": post.get("meta_description", ""), "{{SLUG}}": post.get("slug", ""), "{{DATE_HUMAN}}": today.strftime("%d %B %Y"), "{{DOMAIN}}": cfg["domain"].rstrip("/")}
+    subs = {"{{BODY}}": post.get("body_html", ""), "{{TITLE}}": post.get("title", ""), "{{META}}": post.get("meta_description", ""), "{{SLUG}}": post.get("slug", ""), "{{DATE_HUMAN}}": today.strftime("%d %B %Y"), "{{DATE_ISO}}": today.isoformat(), "{{DOMAIN}}": cfg["domain"].rstrip("/")}
     html = tpl
     for k, v in subs.items(): html = html.replace(k, str(v))
     html = html.replace("%7B%7BDOMAIN%7D%7D", cfg["domain"].rstrip("/"))
@@ -71,24 +100,50 @@ def publish_git(site_key, cfg, post, dry):
         update_blog_index(site_root, site_key, post)
     return out
 
+def build_prompt(site_key, cfg, topic):
+    guardrails = "\n".join(f"- {g}" for g in cfg.get("guardrails", []))
+    links = "\n".join(f"- {l}" for l in cfg.get("internal_links", []))
+    return (
+        f"Write a deeply detailed, well-researched blog post for {cfg['domain']} about: {topic}\n\n"
+        f"Voice: {cfg['voice']}\n"
+        f"Target length: 1100-1400 words.\n"
+        f"Australian spelling throughout.\n"
+        f"Write naturally -- avoid AI cliches like 'delve', 'in today's world', 'game-changer', "
+        f"'unlock', 'landscape', 'tapestry', 'in conclusion'.\n"
+        f"Structure: a strong opening paragraph, 3-5 <h2> sections with real substance, and a short "
+        f"closing that does NOT summarise with 'in conclusion'.\n"
+        f"Include at least one <a href> link to one of these pages, worked in naturally where relevant:\n{links}\n\n"
+        f"Hard rules -- breaking any of these fails the post:\n{guardrails if guardrails else '- None beyond the voice and structure above.'}\n\n"
+        f"Return ONLY valid JSON with keys: title, slug, meta_description (100-165 characters), "
+        f"body_html (semantic HTML: <p>, <h2>, <ul>/<ol>, <a href> -- no <html>/<body> wrapper, no markdown)."
+    )
+
 def run_site(site_key, dry):
     cfg = CONFIG[site_key]; topic = peek_topic(site_key); last_err = ""
-    prompt = f"Write a DEEPLY DETAILED, EXTENSIVE blog for {cfg['domain']} about {topic}. Voice: {cfg['voice']}. Target 1200 words. No prices. Australian spelling. Return ONLY JSON with keys: title, slug, meta_description, body_html."
+    prompt = build_prompt(site_key, cfg, topic)
     for attempt in range(3):
         try:
-            raw = call_gemini(prompt if not last_err else prompt + f"\n\nERROR: {last_err}. Content must be longer and fixed JSON.")
+            raw = call_gemini(prompt if not last_err else prompt + f"\n\nPREVIOUS ATTEMPT FAILED: {last_err}. Fix this and return valid JSON only.")
             post = json.loads(re.sub(r"^```(?:json)?|```$", "", raw.strip(), flags=re.M).strip())
             fails = validate(site_key, cfg, post)
             if fails: raise Exception(f"Validation: {fails}")
             url = publish_git(site_key, cfg, post, dry)
             if not dry: consume_topic(site_key, topic)
-            return [{"site": site_key, "url": str(url)}]
+            state = "PUBLISHED (dry-run, not pushed)" if dry else "PUBLISHED"
+            return [{"site": site_key, "url": str(url), "title": post.get("title", ""), "meta": post.get("meta_description", ""), "state": state}]
         except Exception as e:
             last_err = str(e); print(f"  Attempt {attempt+1} failed: {e}")
     raise Exception("Generation failed")
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--site", required=True); ap.add_argument("--dry-run", action="store_true"); a = ap.parse_args()
-    print(json.dumps(run_site(a.site, a.dry_run)))
+    results = run_site(a.site, a.dry_run)
+    print(json.dumps(results))
+    if not a.dry_run:
+        try:
+            import notify
+            notify.send(results)
+        except Exception as e:
+            print(f"  notify failed (non-blocking): {e}")
 
 if __name__ == "__main__": main()
