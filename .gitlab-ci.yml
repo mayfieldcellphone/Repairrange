@@ -2,11 +2,13 @@ stages:
   - generate
   - deploy
 
+# Runs ONLY from a GitLab pipeline schedule with SITE_KEY=repairrange set as a
+# schedule variable. Never on push, never on MR. See blog-bot/README.md.
 blog_bot:
   stage: generate
   image: python:3.12-slim
   rules:
-    - if: '$CI_PIPELINE_SOURCE == "schedule"'
+    - if: '$CI_PIPELINE_SOURCE == "schedule" && $SITE_KEY == "repairrange"'
   variables:
     SITE_ROOT: "."
     LLM_PROVIDER: "gemini"
@@ -20,22 +22,15 @@ blog_bot:
         echo "CRITICAL ERROR: GITLAB_PUSH_TOKEN is missing. Check Settings > CI/CD > Variables."
         exit 1
       fi
-    - |
-      if [[ "$CI_PIPELINE_SCHEDULE_DESCRIPTION" == *"RepairRange"* ]]; then
-        TARGET_SITE="repairrange"
-      else
-        echo "Error: This repo only builds 'RepairRange'. Got: $CI_PIPELINE_SCHEDULE_DESCRIPTION"
-        exit 1
-      fi
-      python blog-bot/generate.py --site "$TARGET_SITE"
+    - python blog-bot/generate.py --site "$SITE_KEY"
     - |
       if [ -n "$(git status --porcelain)" ]; then
         git add -A
-        git commit -m "blog-bot: automated post"
-        git pull --rebase https://oauth2:${GITLAB_PUSH_TOKEN}@{CI_SERVER_HOST}/{CI_PROJECT_PATH}.git {CI_DEFAULT_BRANCH}
-        git push https://oauth2:${GITLAB_PUSH_TOKEN}@{CI_SERVER_HOST}/{CI_PROJECT_PATH}.git "HEAD:{CI_DEFAULT_BRANCH}"
+        git commit -m "blog-bot: ${SITE_KEY} post [skip ci]"
+        git pull --rebase "https://oauth2:${GITLAB_PUSH_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" "${CI_DEFAULT_BRANCH}"
+        git push "https://oauth2:${GITLAB_PUSH_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" "HEAD:${CI_DEFAULT_BRANCH}"
       else
-        echo "nothing generated — check job log above"
+        echo "nothing generated -- check job log above"
         exit 1
       fi
   artifacts:
@@ -43,6 +38,20 @@ blog_bot:
     paths:
       - blog-bot/topics/*_used.txt
     expire_in: 30 days
+
+# Manual dry run: Build > Run pipeline > set SITE_KEY=repairrange > play this job.
+# No writes, no push, no email -- safe to test the prompt/model any time.
+blog_bot_dryrun:
+  stage: generate
+  image: python:3.12-slim
+  when: manual
+  allow_failure: true
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "web"'
+  variables:
+    LLM_PROVIDER: "gemini"
+  script:
+    - python blog-bot/generate.py --site "${SITE_KEY:-repairrange}" --dry-run
 
 generate_news:
   stage: generate
@@ -73,7 +82,7 @@ pages:
     - cp _redirects public/ 2>/dev/null || true
     - |
       if grep -rlE 'glpat-[A-Za-z0-9_-]{20}|AIza[A-Za-z0-9_-]{35}|EAA[A-Za-z0-9]{60,}|_token"[[:space:]]*:[[:space:]]*"[^"]{20,}|"private_key"|BEGIN [A-Z ]*PRIVATE KEY' public/ 2>/dev/null; then
-        echo "SECRET DETECTED IN public/ — deploy aborted."
+        echo "SECRET DETECTED IN public/ -- deploy aborted."
         exit 1
       fi
     - ls -R public
