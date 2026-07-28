@@ -2,13 +2,16 @@ stages:
   - generate
   - deploy
 
-# Runs ONLY from a GitLab pipeline schedule with SITE_KEY=repairrange set as a
-# schedule variable. Never on push, never on MR. See blog-bot/README.md.
+# Runs ONLY from a GitLab pipeline schedule whose Description contains
+# "RepairRange" (e.g. "RepairRange Tue"). This GitLab instance's schedule
+# editor has no free-form CI variables (only Description/cron/branch/Inputs),
+# so routing is done off the schedule Description text instead.
+# Never on push, never on MR. See blog-bot/README.md.
 blog_bot:
   stage: generate
   image: python:3.12-slim
   rules:
-    - if: '$CI_PIPELINE_SOURCE == "schedule" && $SITE_KEY == "repairrange"'
+    - if: '$CI_PIPELINE_SOURCE == "schedule" && $CI_PIPELINE_SCHEDULE_DESCRIPTION =~ /RepairRange/'
   variables:
     SITE_ROOT: "."
     LLM_PROVIDER: "gemini"
@@ -22,11 +25,11 @@ blog_bot:
         echo "CRITICAL ERROR: GITLAB_PUSH_TOKEN is missing. Check Settings > CI/CD > Variables."
         exit 1
       fi
-    - python blog-bot/generate.py --site "$SITE_KEY"
+    - python blog-bot/generate.py --site repairrange
     - |
       if [ -n "$(git status --porcelain)" ]; then
         git add -A
-        git commit -m "blog-bot: ${SITE_KEY} post [skip ci]"
+        git commit -m "blog-bot: repairrange post [skip ci]"
         git pull --rebase "https://oauth2:${GITLAB_PUSH_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" "${CI_DEFAULT_BRANCH}"
         git push "https://oauth2:${GITLAB_PUSH_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" "HEAD:${CI_DEFAULT_BRANCH}"
       else
@@ -39,7 +42,7 @@ blog_bot:
       - blog-bot/topics/*_used.txt
     expire_in: 30 days
 
-# Manual dry run: Build > Run pipeline > set SITE_KEY=repairrange > play this job.
+# Manual dry run: Build > Run pipeline > play this job's Run button.
 # No writes, no push, no email -- safe to test the prompt/model any time.
 blog_bot_dryrun:
   stage: generate
@@ -51,13 +54,16 @@ blog_bot_dryrun:
   variables:
     LLM_PROVIDER: "gemini"
   script:
-    - python blog-bot/generate.py --site "${SITE_KEY:-repairrange}" --dry-run
+    - python blog-bot/generate.py --site repairrange --dry-run
 
+# Runs ONLY from a schedule whose Description contains "News" (create one in
+# Build > Pipeline schedules if/when you want the tech-news job automated;
+# none exists today, so this job simply never fires).
 generate_news:
   stage: generate
   image: python:3.12-slim
   rules:
-    - if: '$CI_PIPELINE_SOURCE == "schedule" && $JOB == "news"'
+    - if: '$CI_PIPELINE_SOURCE == "schedule" && $CI_PIPELINE_SCHEDULE_DESCRIPTION =~ /News/'
   script:
     - |
       if [ -z "$GEMINI_API_KEY" ] || [ -z "$GITLAB_TOKEN" ]; then
