@@ -9,6 +9,13 @@ https://www.repairrange.io/* https://repairrange.io/:splat 301
 /blog /blog.html 301
 /repair /repair/phone-repair-costs-australia.html 301
 
+# Missing model/brand pages -> closest existing equivalent (found via GSC 404 report, 2026-07-28)
+/repair/iphone-16-pro-max.html /repair/iphone-16-pro.html 301
+/repair/pixel-8.html /repair/pixel-8-pro.html 301
+/brands/google-repair-costs.html /brands/google.html 301
+/brands/watch-repair-costs.html /brands.html 301
+/brands/oppo-repair-costs.html /brands.html 301
+
 # --- Phase 2: Content Consolidation (Duplicates to Alpha) ---
 
 # Samsung One UI 9 Cluster -> Alpha: aussie-samsung-one-ui-9-testing.html
