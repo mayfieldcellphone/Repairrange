@@ -962,6 +962,32 @@
             80
         ]
     },
+    "iphone-15-plus": {
+        "screen": [
+            99,
+            349
+        ],
+        "battery": [
+            79,
+            129
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
     "iphone-15-pro": {
         "screen": [
             99,
@@ -1015,6 +1041,32 @@
         ]
     },
     "iphone-16": {
+        "screen": [
+            110,
+            349
+        ],
+        "battery": [
+            79,
+            129
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            0,
+            0
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "iphone-16-plus": {
         "screen": [
             110,
             349
@@ -1170,6 +1222,162 @@
             80
         ]
     },
+    "galaxy-s10e": {
+        "screen": [
+            99,
+            199
+        ],
+        "battery": [
+            69,
+            69
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            69,
+            89
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s10": {
+        "screen": [
+            109,
+            219
+        ],
+        "battery": [
+            69,
+            69
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            69,
+            89
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s10-plus": {
+        "screen": [
+            119,
+            239
+        ],
+        "battery": [
+            69,
+            69
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            69,
+            89
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s20": {
+        "screen": [
+            119,
+            229
+        ],
+        "battery": [
+            75,
+            75
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            75,
+            95
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s20-plus": {
+        "screen": [
+            125,
+            339
+        ],
+        "battery": [
+            75,
+            75
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            75,
+            95
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s20-ultra": {
+        "screen": [
+            125,
+            339
+        ],
+        "battery": [
+            75,
+            75
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            75,
+            95
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
     "galaxy-s21": {
         "screen": [
             129,
@@ -1197,6 +1405,32 @@
         ]
     },
     "galaxy-s21-ultra": {
+        "screen": [
+            129,
+            359
+        ],
+        "battery": [
+            79,
+            79
+        ],
+        "back": [
+            0,
+            0
+        ],
+        "charging": [
+            99,
+            99
+        ],
+        "water": [
+            60,
+            90
+        ],
+        "dead": [
+            50,
+            80
+        ]
+    },
+    "galaxy-s21-plus": {
         "screen": [
             129,
             359
@@ -3837,7 +4071,7 @@
         };
 
         const ISSUE_PROFILES = {
-            screen:   { label: 'Screen replacement', basis: [200, 320], note: 'Includes OLED panel and digitiser. Modern phones don\u2019t separate the layers.' },
+            screen:   { label: 'Screen replacement', basis: [200, 320], note: 'Includes OLED panel and digitiser. Modern phones don’t separate the layers.' },
             battery:  { label: 'Battery replacement', basis: [79, 129], note: 'Includes new battery and labour. Allow extra if a screen reseal is needed.' },
             back:     { label: 'Back glass replacement', basis: [149, 249], note: 'On phones with glued backs, this is more labour than parts. iPhone 14/15 are easier.' },
             charging: { label: 'Charging port', basis: [89, 159], note: 'A quick port clean often solves it for free. Price assumes a real port replacement.' },
@@ -3883,7 +4117,7 @@
         function pickModel(slug, name) {
             state.model = slug;
             state.modelName = name;
-            document.getElementById('chosen-summary').textContent = state.brand + ' \u00b7 ' + name;
+            document.getElementById('chosen-summary').textContent = state.brand + ' · ' + name;
             goToStep(3);
             if (window.lucide) window.lucide.createIcons();
         }
@@ -3921,20 +4155,20 @@
             const diyLow    = Math.round(indieLow * 0.45);
             const diyHigh   = Math.round(indieHigh * 0.55);
 
-            document.getElementById('result-summary').textContent = state.brand + ' \u00b7 ' + state.modelName + ' \u00b7 ' + prof.label;
-            document.getElementById('result-range').textContent = '$' + indieLow + '\u2013$' + indieHigh;
+            document.getElementById('result-summary').textContent = state.brand + ' · ' + state.modelName + ' · ' + prof.label;
+            document.getElementById('result-range').textContent = '$' + indieLow + '–$' + indieHigh;
             document.getElementById('result-note').textContent = prof.note;
-            document.getElementById('price-indie').textContent = '$' + indieLow + '\u2013$' + indieHigh;
-            document.getElementById('price-auth').textContent  = '$' + authLow + '\u2013$' + authHigh;
-            document.getElementById('price-diy').textContent   = '$' + diyLow + '\u2013$' + diyHigh;
+            document.getElementById('price-indie').textContent = '$' + indieLow + '–$' + indieHigh;
+            document.getElementById('price-auth').textContent  = '$' + authLow + '–$' + authHigh;
+            document.getElementById('price-diy').textContent   = '$' + diyLow + '–$' + diyHigh;
 
             const takes = {
-                screen: 'If the phone is less than 2 years old, get the screen done. If it\u2019s 3+ years old, weigh the cost against trade-in value \u2014 at $' + indieLow + '+ you\u2019re often within $100 of a refurb.',
+                screen: 'If the phone is less than 2 years old, get the screen done. If it’s 3+ years old, weigh the cost against trade-in value — at $' + indieLow + '+ you’re often within $100 of a refurb.',
                 battery: 'Battery replacements are nearly always worth it: cheap, fast, restores hours of daily use. Be wary of any shop charging more than $' + indieHigh + ' for a standard battery swap.',
-                back: 'Cosmetic only. If the phone works and you use a case, this can usually wait. If you plan to trade in or sell, fixing it returns 60\u201380% of the cost in resale value.',
-                charging: 'Try a port clean with a wooden toothpick first \u2014 solves it ~30% of the time, for free. If that fails, the port replacement at $' + indieLow + '\u2013$' + indieHigh + ' is straightforward.',
-                water: 'The diagnostic price is the question, not the answer. Best-case: $0\u2013$100 for a clean and reseal. Worst-case: board-level repair at $300\u2013$600+, or write-off. Get the diagnostic before committing.',
-                dead: 'Diagnostic is essential. Common causes: dead battery, bad charging port, or board damage (often uneconomical). Don\u2019t pay for repair before knowing which.'
+                back: 'Cosmetic only. If the phone works and you use a case, this can usually wait. If you plan to trade in or sell, fixing it returns 60–80% of the cost in resale value.',
+                charging: 'Try a port clean with a wooden toothpick first — solves it ~30% of the time, for free. If that fails, the port replacement at $' + indieLow + '–$' + indieHigh + ' is straightforward.',
+                water: 'The diagnostic price is the question, not the answer. Best-case: $0–$100 for a clean and reseal. Worst-case: board-level repair at $300–$600+, or write-off. Get the diagnostic before committing.',
+                dead: 'Diagnostic is essential. Common causes: dead battery, bad charging port, or board damage (often uneconomical). Don’t pay for repair before knowing which.'
             };
             document.getElementById('result-take').textContent = takes[state.issue];
 
