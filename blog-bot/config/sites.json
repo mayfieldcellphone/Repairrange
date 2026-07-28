@@ -5,9 +5,11 @@
     "blog_dir": "blog",
     "index_file": "blog.html",
     "sitemap_file": "sitemap.xml",
-    "autopublish": false,
+    "autopublish": true,
     "posts_per_run": 1,
-    "schedule": "Tue + Fri 06:00 AEST",
+    "schedule": "Tue + Fri + Sat 06:00 AEST (3x/week)",
+    "no_price_mentions": true,
+    "link_limits": { "mayfieldphonerepair.com.au": 1 },
     "brand": {
       "primary": "#0c4a45",
       "accent": "#F59E0B",
@@ -35,6 +37,7 @@
     "autopublish": false,
     "posts_per_run": 1,
     "schedule": "Wed 06:00 AEST",
+    "no_price_mentions": true,
     "brand": {
       "voice_note": "Voltly theme. Speaks to a confident DIYer who has already decided to try the repair."
     },
@@ -57,9 +60,9 @@
     "blog_dir": "blog",
     "index_file": "blog.html",
     "sitemap_file": "sitemap.xml",
-    "autopublish": false,
+    "autopublish": true,
     "posts_per_run": 1,
-    "schedule": "Thu 06:00 AEST",
+    "schedule": "Mon + Wed + Fri 06:00 AEST (3x/week)",
     "brand": {
       "primary": "#2563EB",
       "display": "Bricolage Grotesque",
