@@ -1,4 +1,5 @@
 # One topic per line. '#' lines ignored. Consumed top-down; used topics move to _used.txt.
+Why the same screen repair is quoted differently by two shops on the same street
 Repair or replace: how to decide when your phone is three years old
 What actually happens to your data when you hand your phone to a repair shop
 Aftermarket vs OEM vs refurbished screens: what the words really mean
@@ -13,3 +14,27 @@ What a 90-day repair warranty actually covers
 Third-party repair and your manufacturer warranty in Australia
 Why your phone gets hot after a repair
 Screen protectors, cases and the repairs they actually prevent
+Why phone repair prices vary so much between shops (the factors, not the numbers)
+The difference between a diagnostic fee and a repair quote
+What to back up before any phone repair, and how
+Why some repairs need the phone for days, not hours
+Screen repair vs full unit swap: when shops choose which
+What "no fix, no fee" actually means in the fine print
+Camera glass cracked but the lens still works -- repair or ignore?
+Why some insurance claims cost more than paying out of pocket
+The truth about "same day" repair advertising
+What happens to your old screen after a repair
+Speaker and mic issues: repair, clean, or replace?
+Why two repairs on the same phone in a year isn't unusual
+Volume and power button repairs: the most underrated fix
+What a pre-repair inspection should actually cover
+Trade-in vs repair: the maths shops don't want you doing
+Why some phones are quietly "repair-hostile" by design
+What "genuine parts" means when the manufacturer won't sell them
+The unlock and repair link nobody explains properly
+Bent frame damage: what can and can't be straightened
+Why software issues get misdiagnosed as hardware repairs
+What a repair technician actually checks in five minutes
+The real reason repair shops ask for your passcode
+Refurbished replacement units: what "like new" is hiding
+When a repair voids nothing, and the myths that say otherwise
