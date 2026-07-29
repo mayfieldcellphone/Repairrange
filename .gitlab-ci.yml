@@ -3,9 +3,19 @@ pages:
   script:
     - mkdir -p public
     - cp *.html public/ 2>/dev/null || true
-    - cp -r blog public/ 2>/dev/null || true
     - cp *.txt public/ 2>/dev/null || true
     - cp *.xml public/ 2>/dev/null || true
+    - cp -r blog public/ 2>/dev/null || true
+    - cp -r brands public/ 2>/dev/null || true
+    - cp -r repair public/ 2>/dev/null || true
+    - cp -r unlock public/ 2>/dev/null || true
+    - cp -r locations public/ 2>/dev/null || true
+    - cp -r css public/ 2>/dev/null || true
+    - cp -r fix public/ 2>/dev/null || true
+    - cp -r tools public/ 2>/dev/null || true
+    - cp -r news public/ 2>/dev/null || true
+    - cp -r downloads public/ 2>/dev/null || true
+    - cp -r selfrepairkit public/ 2>/dev/null || true
   artifacts:
     paths:
       - public
