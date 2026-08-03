@@ -11,6 +11,7 @@ pages:
     - cp -r unlock public/ 2>/dev/null || true
     - cp -r locations public/ 2>/dev/null || true
     - cp -r css public/ 2>/dev/null || true
+    - cp -r js public/ 2>/dev/null || true
     - cp -r fix public/ 2>/dev/null || true
     - cp -r tools public/ 2>/dev/null || true
     - cp -r news public/ 2>/dev/null || true
