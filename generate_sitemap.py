@@ -24,6 +24,13 @@ def generate_sitemap():
         if os.path.exists(folder_path):
             for file in os.listdir(folder_path):
                 if file.endswith(".html"):
+                    fp = os.path.join(folder_path, file)
+                    try:
+                        with open(fp, encoding="utf-8", errors="replace") as _f:
+                            if "noindex" in _f.read():
+                                continue
+                    except Exception:
+                        pass
                     urls.append(f"{BASE_URL}/{folder}/{file}")
                     
     # Sort for consistency

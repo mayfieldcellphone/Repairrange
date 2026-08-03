@@ -15,6 +15,7 @@ pages:
     - cp -r tools public/ 2>/dev/null || true
     - cp -r news public/ 2>/dev/null || true
     - cp -r downloads public/ 2>/dev/null || true
+    - cp -r guides public/ 2>/dev/null || true
     - cp -r selfrepairkit public/ 2>/dev/null || true
   artifacts:
     paths:
