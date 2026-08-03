@@ -7,7 +7,7 @@ REPO_ROOT = "."
 SITEMAP_FILE = "sitemap.xml"
 
 # Folders to scan for HTML files
-FOLDERS = ["fix", "locations", "repair", "brands", "tools", "blog", "unlock", "news"]
+FOLDERS = ["fix", "locations", "repair", "brands", "tools", "blog", "unlock", "news", "guides"]
 
 def generate_sitemap():
     print(f"Generating sitemap for {BASE_URL}...")
