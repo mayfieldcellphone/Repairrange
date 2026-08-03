@@ -137,6 +137,7 @@ def build_full_html_page(article_data):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
     <link rel="canonical" href="{canonical_url}">
     <title>{article_data['title']} | RepairRange News</title>
     <script src="https://cdn.tailwindcss.com"></script>
