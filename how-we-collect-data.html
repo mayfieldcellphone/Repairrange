@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="How RepairRange collects, verifies, and updates Australian phone repair pricing — the methodology behind the 74-model repair cost database.">
+<meta name="author" content="RepairRange">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://repairrange.io/how-we-collect-data.html">
+<meta property="og:url" content="https://repairrange.io/how-we-collect-data.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How RepairRange Collects & Verifies Repair Prices">
+<meta property="og:description" content="The methodology behind Australia's independent phone repair cost database.">
+<meta property="og:site_name" content="RepairRange">
+<title>How We Collect & Verify Repair Prices | RepairRange</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://repairrange.io/"},{"@type":"ListItem","position":2,"name":"How We Collect Data","item":"https://repairrange.io/how-we-collect-data.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"How RepairRange Collects & Verifies Repair Prices","description":"The methodology behind Australia's independent phone repair cost database.","publisher":{"@type":"Organization","name":"RepairRange","url":"https://repairrange.io"},"mainEntityOfPage":"https://repairrange.io/how-we-collect-data.html","inLanguage":"en-AU"}
+</script>
+<style>
+:root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
+html { scroll-behavior: smooth; }
+body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
+.font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
+.text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
+.text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
+.text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
+.bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
+.display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+.eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
+.header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
+.ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
+.ed-link:hover { background-size:100% 1px; }
+.btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
+.btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
+.btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
+.card, .post-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+.card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); }
+.bg-mesh-hero { background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
+.prose h2 { font-family:'Fraunces',serif; font-size:1.5rem; font-weight:500; margin-top:2.5rem; margin-bottom:0.75rem; color:var(--rr-ink); }
+.prose h3 { font-size:1.05rem; font-weight:600; margin-top:1.5rem; margin-bottom:0.5rem; }
+.prose p { line-height:1.75; color:var(--rr-ink); margin-bottom:1rem; }
+.prose ul { list-style:disc; padding-left:1.5rem; margin-bottom:1rem; }
+.prose li { line-height:1.7; margin-bottom:0.4rem; }
+.prose a { color:var(--rr-teal-700); font-weight:600; text-decoration:underline; text-underline-offset:3px; }
+.prose strong { font-weight:700; }
+</style>
+</head>
+<body class="bg-paper text-ink antialiased">
+<header class="header-sticky sticky top-0 z-50 border-b border-line">
+<nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
+<a href="/index.html" class="flex items-center gap-2"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="1.5" class="text-teal"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" class="text-teal" fill="none"/></svg><span class="font-serif text-2xl font-medium tracking-tight text-ink">RepairRange</span></a>
+<div class="hidden md:flex items-center gap-8 text-sm">
+<a href="/brands.html" class="ed-link font-medium text-ink hover:text-teal">Brands</a>
+<a href="/repair/phone-repair-costs-australia.html" class="ed-link font-medium text-ink hover:text-teal">Repairs</a>
+<a href="/guides/index.html" class="ed-link font-medium text-ink hover:text-teal">Guides</a>
+<a href="/fix.html" class="ed-link font-medium text-ink hover:text-teal">Troubleshoot</a>
+<a href="/calculator.html" class="ed-link font-medium text-ink hover:text-teal">Repair Calculator</a>
+<a href="/locations.html" class="ed-link font-medium text-ink hover:text-teal">Locations</a>
+<a href="/blog.html" class="ed-link font-medium text-ink hover:text-teal">Blog</a>
+<a href="/calculator.html" class="btn btn-primary text-sm">Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+</div>
+<button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button>
+</nav>
+<div class="mobile-menu hidden md:hidden border-t border-line bg-paper"><div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
+<a href="/brands.html" class="py-2 font-medium text-ink hover:text-teal">Brands</a>
+<a href="/repair/phone-repair-costs-australia.html" class="py-2 font-medium text-ink hover:text-teal">Repairs</a>
+<a href="/guides/index.html" class="py-2 font-medium text-ink hover:text-teal">Guides</a>
+<a href="/fix.html" class="py-2 font-medium text-ink hover:text-teal">Troubleshoot</a>
+<a href="/calculator.html" class="py-2 font-medium text-ink hover:text-teal">Repair Calculator</a>
+<a href="/locations.html" class="py-2 font-medium text-ink hover:text-teal">Locations</a>
+<a href="/blog.html" class="py-2 font-medium text-ink hover:text-teal">Blog</a>
+<a href="/calculator.html" class="btn btn-primary mt-3 self-start">Get a Quote</a>
+</div></div>
+</header>
+
+<main class="bg-mesh-hero">
+<section class="max-w-6xl mx-auto px-6 md:px-8 py-14 md:py-20">
+<nav class="flex items-center gap-2 text-xs text-muted mb-6"><a href="/index.html" class="ed-link hover:text-teal">Home</a><span>/</span><a href="/about.html" class="ed-link hover:text-teal">About</a><span>/</span><span class="text-ink">Data Methodology</span></nav>
+<p class="eyebrow mb-4">Data Methodology</p>
+<h1 class="display text-3xl md:text-5xl text-ink mb-6 max-w-3xl">How We Collect & Verify Repair Prices</h1>
+<p class="text-lg text-muted leading-relaxed mb-4 max-w-3xl">RepairRange publishes independent Australian phone repair prices. This page explains exactly where the numbers come from, what "verified" means, and how often the data is updated — so you can judge the data yourself.</p>
+</section>
+</main>
+
+<section class="max-w-6xl mx-auto px-6 md:px-8 py-12">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+<div class="lg:col-span-2">
+<div class="prose max-w-none">
+<h2>The short version</h2>
+<p>Every repair price on RepairRange is a <strong>range, not a single number</strong>. The low end of each range is a price we have verified from an actual independent repair shop. The top end is a researched estimate of what a premium shop in a capital city would charge. Both figures are 2026 AUD and GST inclusive.</p>
+<p>We publish ranges because a single "the price" number would be a lie — the same screen repair genuinely costs different amounts at a suburban shop, a CBD shop, and a manufacturer. Our job is to narrow the range to the honest one, not to pretend the industry is uniform.</p>
+
+<h2>Where the numbers come from</h2>
+<ul>
+<li><strong>Verified shop pricing (low end).</strong> We maintain a working relationship with independent repair technicians in Newcastle NSW and cross-check their current walk-in price lists. The low end of each range is a price you can actually be quoted today, not a figure we invented.</li>
+<li><strong>Manufacturer pricing (authorised service).</strong> Apple, Samsung, and Google publish official out-of-warranty repair prices. We compare these directly and quote them in the database where they exist.</li>
+<li><strong>Researched estimates (top end).</strong> For the upper bound, we combine parts-supplier pricing, published shop rate cards, and repairer input to estimate what a premium capital-city shop charges.</li>
+<li><strong>Community verification.</strong> When readers share recent quotes that fall outside our published ranges, we investigate and update. Prices that can't be verified are not published.</li>
+</ul>
+
+<h2>What the three screen tiers mean</h2>
+<ul>
+<li><strong>Incell:</strong> budget LCD replacement with the touch layer fused in. Used on older iPhones and entry-level models. Lowest price, visibly different from OLED.</li>
+<li><strong>Aftermarket OLED:</strong> a new third-party OLED panel. Visually close to original — correct blacks and colour. The default choice for most repairs.</li>
+<li><strong>Refurbished OEM:</strong> the original panel, reclaimed from a salvage device and re-laminated with new glass. Equivalent to a genuine new part in every way that matters.</li>
+</ul>
+<p>We list all three tiers for Apple models because all three are available in the Australian market. Most Android flagships only have a single part tier, which is why their price ranges are narrower.</p>
+
+<h2>Update cadence</h2>
+<ul>
+<li><strong>Quarterly review</strong> of the full database against current shop pricing.</li>
+<li><strong>Event-driven updates</strong> when a new flagship launches (the database is typically updated within 2 weeks of a major release) or when a parts supply change shifts prices materially.</li>
+<li>The database footer always shows the last verification date. <em>Current: July 2026.</em></li>
+</ul>
+
+<h2>What we deliberately exclude</h2>
+<ul>
+<li><strong>Extreme outlier quotes</strong> — the "$39 iPhone screen" that exists only as an upsell bait, and the "$1,200 screen" quoted to insurance companies. Neither represents what a normal customer pays.</li>
+<li><strong>Promotional pricing</strong> — a limited-time $89 iPhone screen sale is not a price, it's marketing. We note sales exist but don't bake them into ranges.</li>
+<li><strong>Non-Australian pricing</strong> converted to AUD at retail exchange rates, which misrepresents the local market.</li>
+</ul>
+
+<h2>Why we don't publish single "the price" figures</h2>
+<p>A price range is the honest representation of the Australian repair market. A shop's quote depends on its rent, its parts supplier, its warranty terms, and whether it transfers serial codes for True Tone and Face ID. Two shops on the same street routinely differ by 30–50%. Anyone who promises you one definitive number is selling you something — usually a booking.</p>
+
+<h2>How to correct an error</h2>
+<p>Repairers and consumers alike are welcome to challenge our data. If you have a current quote that falls outside a published range, email the details (model, repair type, shop, date, price) to <a href="mailto:info@repairrange.io">info@repairrange.io</a>. We verify every submission and publish corrections with a note.</p>
+
+<h2>Related reading</h2>
+<ul>
+<li><a href="/repair/phone-repair-costs-australia.html">The repair cost database</a></li>
+<li><a href="/blog/screen-quality-tiers-oem-aftermarket-refurbished-explained.html">Screen quality tiers explained</a></li>
+<li><a href="/blog/why-screen-repair-quotes-differ.html">Why repair quotes differ between shops</a></li>
+<li><a href="/about.html">About RepairRange</a></li>
+</ul>
+</div>
+</div>
+<aside class="lg:col-span-1">
+<div class="card p-6 sticky top-24">
+<h3 class="eyebrow mb-4">Data at a glance</h3>
+<ul class="space-y-3 text-sm text-muted">
+<li><strong class="text-ink">Models covered:</strong> 74+ across Apple, Samsung, Google, OnePlus, Nothing, Xiaomi, OPPO, Motorola, Sony</li>
+<li><strong class="text-ink">Price format:</strong> ranges, GST inclusive, 2026 AUD</li>
+<li><strong class="text-ink">Verified low end:</strong> current walk-in quotes from independent shops</li>
+<li><strong class="text-ink">Last verified:</strong> July 2026</li>
+<li><strong class="text-ink">Update cadence:</strong> quarterly + event-driven</li>
+</ul>
+<div class="mt-6 pt-6 border-t border-line">
+<p class="text-xs text-muted mb-3">Need a precise number for your exact model?</p>
+<a href="/calculator.html" class="btn btn-primary w-full justify-center text-sm">Try the Calculator</a>
+</div>
+</div>
+</aside>
+</div>
+</section>
+
+<footer class="bg-teal-900 text-white border-t border-white/10">
+<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+<div class="md:col-span-5"><div class="flex items-center gap-2 mb-4"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg><span class="font-serif text-2xl font-medium">RepairRange</span></div><p class="text-white/70 text-sm max-w-sm leading-relaxed">Plain-English phone repair costs, fixes, and buying advice. Researched by people who actually do this work.</p></div>
+<div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="/brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="/fix.html" class="text-white/80 hover:text-amber">Troubleshooting</a></li><li><a href="/guides/index.html" class="text-white/80 hover:text-amber">Repair Guides</a></li><li><a href="/calculator.html" class="text-white/80 hover:text-amber">Cost Calculator</a></li><li><a href="/locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="/blog.html" class="text-white/80 hover:text-amber">Blog</a></li></ul></div>
+<div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">Ecosystem</h3><ul class="space-y-2 text-sm"><li><a href="https://selfrepairkit.com.au" class="text-white/80 hover:text-amber">SelfRepairKit — DIY Kits</a></li><li><a href="https://repairbill.shop" class="text-white/80 hover:text-amber">RepairBill — Shop Software</a></li><li><a href="https://www.mayfieldphonerepair.com.au" class="text-white/80 hover:text-amber">Mayfield Phone Repair</a></li><li><a href="/about.html" class="text-white/80 hover:text-amber">About RepairRange</a></li><li><a href="/how-we-collect-data.html" class="text-white/80 hover:text-amber">How We Collect Data</a></li><li><a href="/privacy.html" class="text-white/80 hover:text-amber">Privacy Policy</a></li></ul></div>
+</div>
+<div class="pt-8 border-t border-white/15">
+<p class="text-white/50 text-xs mb-3 max-w-3xl"><strong class="text-white/70">Affiliate disclosure:</strong> RepairRange may earn a commission when you click links to retailers.</p>
+<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. All rights reserved.</p><p class="text-white/50 text-xs">Not affiliated with Apple, Samsung, Google, or any device manufacturer.</p></div>
+</div>
+</div>
+</footer>
+<script>lucide.createIcons();</script>
+</body>
+</html>
