@@ -5,6 +5,8 @@ pages:
     - cp *.html public/ 2>/dev/null || true
     - cp *.txt public/ 2>/dev/null || true
     - cp *.xml public/ 2>/dev/null || true
+    - cp *.json public/ 2>/dev/null || true
+    - cp _redirects public/ 2>/dev/null || true
     - cp -r blog public/ 2>/dev/null || true
     - cp -r brands public/ 2>/dev/null || true
     - cp -r repair public/ 2>/dev/null || true
@@ -18,7 +20,7 @@ pages:
     - cp -r downloads public/ 2>/dev/null || true
     - cp -r guides public/ 2>/dev/null || true
     - cp -r selfrepairkit public/ 2>/dev/null || true
-    - cp -r assets public/
+    - cp -r assets public/ 2>/dev/null || true
   artifacts:
     paths:
       - public
