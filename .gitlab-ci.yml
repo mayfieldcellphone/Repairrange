@@ -18,6 +18,7 @@ pages:
     - cp -r downloads public/ 2>/dev/null || true
     - cp -r guides public/ 2>/dev/null || true
     - cp -r selfrepairkit public/ 2>/dev/null || true
+    - cp -r assets public/
   artifacts:
     paths:
       - public
