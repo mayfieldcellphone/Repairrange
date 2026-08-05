@@ -7,7 +7,7 @@ REPO_ROOT = "."
 SITEMAP_FILE = "sitemap.xml"
 
 # Folders to scan for HTML files
-FOLDERS = ["fix", "locations", "repair", "brands", "tools", "blog", "unlock", "news", "guides"]
+FOLDERS = ["fix", "locations", "repair", "brands", "tools", "blog", "unlock", "news", "guides", "selfrepairkit", "downloads"]
 
 def generate_sitemap():
     print(f"Generating sitemap for {BASE_URL}...")
@@ -16,7 +16,10 @@ def generate_sitemap():
     # 1. Add root HTML files
     for file in os.listdir(REPO_ROOT):
         if file.endswith(".html") and file != "404.html":
-            urls.append(f"{BASE_URL}/{file}")
+            if file == "index.html":
+                urls.append(f"{BASE_URL}/")
+            else:
+                urls.append(f"{BASE_URL}/{file}")
             
     # 2. Add subfolder HTML files
     for folder in FOLDERS:

@@ -15,7 +15,8 @@ pages:
     - cp smart_widget.js u.js public/ 2>/dev/null || true
     - cp *.jpg *.jpeg *.png *.svg *.webp *.ico public/ 2>/dev/null || true
     # All content folders (allowlist keeps internal scripts/docs/data private)
-    - for d in css js blog brands repair unlock locations fix guides news tools downloads; do cp -r "$d" public/ 2>/dev/null || true; done
+    # NOTE: 'assets' restored to deploy the logo + OG image; 'selfrepairkit' restored to fix its 404s
+    - for d in css js assets blog brands repair unlock locations fix guides news tools downloads selfrepairkit; do cp -r "$d" public/ 2>/dev/null || true; done
   artifacts:
     paths:
       - public
