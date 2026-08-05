@@ -1,19 +1,20 @@
+image: python:3.12-slim
+
 pages:
   stage: deploy
   script:
+    # Regenerate sitemap from the real files (stdlib only, no installs)
+    - python generate_sitemap.py || true
+    # Assemble the deploy
     - mkdir -p public
-    # Root pages, feeds, robots/llms
     - cp *.html public/ 2>/dev/null || true
     - cp *.txt public/ 2>/dev/null || true
     - cp *.xml public/ 2>/dev/null || true
-    # Redirects: domain canonicalization + SEO 301s (GitLab Pages _redirects)
     - cp _redirects public/ 2>/dev/null || true
-    # Front-end data + widgets referenced by pages
     - cp catalog.json pricing.json public/ 2>/dev/null || true
     - cp smart_widget.js u.js public/ 2>/dev/null || true
-    # Root images
     - cp *.jpg *.jpeg *.png *.svg *.webp *.ico public/ 2>/dev/null || true
-    # Site content directories (allowlist keeps internal scripts/docs/data private)
+    # All content folders (allowlist keeps internal scripts/docs/data private)
     - for d in css js blog brands repair unlock locations fix guides news tools downloads; do cp -r "$d" public/ 2>/dev/null || true; done
   artifacts:
     paths:
