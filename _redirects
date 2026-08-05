@@ -3,7 +3,6 @@ http://www.repairrange.io/* https://repairrange.io/:splat 301
 https://www.repairrange.io/* https://repairrange.io/:splat 301
 
 # Fix 404s
-/unlock/* /repair/phone-repair-costs-australia.html 301
 /news/* /tech-news.html 301
 /tools.html /tools/software-stack-for-repair-shops.html 301
 /blog /blog.html 301
@@ -41,7 +40,7 @@ https://www.repairrange.io/* https://repairrange.io/:splat 301
 /blog/apple-iphone-ultra-launch-september.html /blog/foldable-phone-repair-cost-guide.html 301
 /blog/aussie-insight-iphone-ultra-production-timeline.html /blog/foldable-phone-repair-cost-guide.html 301
 /blog/aussie-scoop-iphone-fold-leak-repairability-debate.html /blog/foldable-phone-repair-cost-guide.html 301
-/blog/foldable-iphone-ultra-australia.html /blog/foldable-phone-repai-cost-guide.html 301
+/blog/foldable-iphone-ultra-australia.html /blog/foldable-phone-repair-cost-guide.html 301
 /blog/ios-27-iphone-ultra-leak-repair-costs.html /blog/foldable-phone-repair-cost-guide.html 301
 /blog/iphone-ultra-australian-guide.html /blog/foldable-phone-repair-cost-guide.html 301
 /blog/iphone-ultra-foldable-ios27-aussie-reveal-repair-cost.html /blog/foldable-phone-repair-cost-guide.html 301
