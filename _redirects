@@ -1,58 +1,94 @@
-# Domain Canonicalization
-http://www.repairrange.io/* https://repairrange.io/:splat 301
-https://www.repairrange.io/* https://repairrange.io/:splat 301
-
-# Fix 404s
-/news/* /tech-news.html 301
-/tools.html /tools/software-stack-for-repair-shops.html 301
-/blog /blog.html 301
-/repair /repair/phone-repair-costs-australia.html 301
-
-# Missing model/brand pages -> closest existing equivalent (found via GSC 404 report, 2026-07-28)
-/repair/iphone-16-pro-max.html /repair/iphone-16-pro.html 301
-/repair/pixel-8.html /repair/pixel-8-pro.html 301
-/brands/google-repair-costs.html /brands/google.html 301
-/brands/watch-repair-costs.html /brands.html 301
-/brands/oppo-repair-costs.html /brands.html 301
-/brands/ipad-repair-costs.html /brands/apple.html 301
-
-# --- Phase 2: Content Consolidation (Duplicates to Alpha) ---
-
-# Samsung One UI 9 Cluster -> Alpha: aussie-samsung-one-ui-9-testing.html
-/blog/samsung-one-ui-9-expansion-aussie-wallets-phone-longevity.html /blog/aussie-samsung-one-ui-9-testing.html 301
-/blog/one-ui-9-samsung-galaxy-update-australia-repair-range.html /blog/aussie-samsung-one-ui-9-testing.html 301
-/blog/exploring-one-ui-9-samsung-australia.html /blog/aussie-samsung-one-ui-9-testing.html 301
-/blog/aussie-guide-samsung-one-ui-9-testing.html /blog/aussie-samsung-one-ui-9-testing.html 301
-/blog/one-ui-9-galaxy-a25-australia.html /blog/aussie-samsung-one-ui-9-testing.html 301
-
-# Apple Siri / AI Waitlist Cluster -> Alpha: siris-big-brain-upgrade-aussie-ai-waitlist.html
-/blog/ai-siri-australian-waitlist-ios18.html /blog/siris-big-brain-upgrade-aussie-ai-waitlist.html 301
-/blog/apple-ai-siri-google-gemini-waitlist-australia.html /blog/siris-big-brain-upgrade-aussie-ai-waitlist.html 301
-/blog/apple-ai-siri-waitlist-australia-repair-costs.html /blog/siris-big-brain-upgrade-aussie-ai-waitlist.html 301
-/blog/apples-ai-siri-waitlist-aussie-take-repairrange.html /blog/siris-big-brain-upgrade-aussie-ai-waitlist.html 301
-/blog/siri-ai-ios27-australia-waitlist-gemini.html /blog/siris-big-brain-upgrade-aussie-ai-waitlist.html 301
-/blog/unleashing-siri-ai-macos-27-golden-gate-bypass-waitlist.html /blog/siris-big-brain-upgrade-aussie-ai-waitlist.html 301
-/blog/unlock-siri-ai-macos-27-golden-gate-beta-waitlist-bypass.html /blog/siris-big-brain-upgrade-aussie-ai-waitlist.html 301
-
-# iPhone Ultra / Foldable Cluster -> Alpha: foldable-phone-repair-cost-guide.html
-/blog/apple-iphone-ultra-foldable-ios27-leak-repair-range-australia.html /blog/foldable-phone-repair-cost-guide.html 301
-/blog/apple-iphone-ultra-ios27-september-launch.html /blog/foldable-phone-repair-cost-guide.html 301
-/blog/apple-iphone-ultra-launch-september.html /blog/foldable-phone-repair-cost-guide.html 301
-/blog/aussie-insight-iphone-ultra-production-timeline.html /blog/foldable-phone-repair-cost-guide.html 301
-/blog/aussie-scoop-iphone-fold-leak-repairability-debate.html /blog/foldable-phone-repair-cost-guide.html 301
-/blog/foldable-iphone-ultra-australia.html /blog/foldable-phone-repair-cost-guide.html 301
-/blog/ios-27-iphone-ultra-leak-repair-costs.html /blog/foldable-phone-repair-cost-guide.html 301
-/blog/iphone-ultra-australian-guide.html /blog/foldable-phone-repair-cost-guide.html 301
-/blog/iphone-ultra-foldable-ios27-aussie-reveal-repair-cost.html /blog/foldable-phone-repair-cost-guide.html 301
-/blog/iphone-ultra-launch-australia.html /blog/foldable-phone-repair-cost-guide.html 301
-
-# Honor Magic V6 Cluster -> Alpha: honor-magic-v6-australia.html
-/blog/honor-magic-v6-australia-guide.html /blog/honor-magic-v6-australia.html 301
-/blog/honor-magic-v6-australia-launch.html /blog/honor-magic-v6-australia.html 301
-/blog/honor-magic-v6-guide-australia.html /blog/honor-magic-v6-australia.html 301
-
-# Samsung Galaxy Watch 9 Cluster -> Alpha: samsung-galaxy-watch-9-ultra-2-charging-speeds-australia-leak.html
-/blog/samsung-galaxy-watch-ultra-2-guide.html /blog/samsung-galaxy-watch-9-ultra-2-charging-speeds-australia-leak.html 301
-/blog/samsung-galaxy-watch9-watch-ultra-2-australia.html /blog/samsung-galaxy-watch-9-ultra-2-charging-speeds-australia-leak.html 301
-/blog/samsung-galaxy-watch9-watch-ultra-2-details-leaked.html /blog/samsung-galaxy-watch-9-ultra-2-charging-speeds-australia-leak.html 301
-/blog/samsung-galaxy-watch9-watch-ultra-2-leaks.html /blog/samsung-galaxy-watch-9-ultra-2-charging-speeds-australia-leak.html 301
+/news/apple-ai-siri-ios27-australia-waitlist.html  /blog/siris-big-brain-upgrade-aussie-ai-waitlist.html  301
+/news/samsung-galaxy-z-flip8-charging-frustration-australia.html  /blog/samsung-galaxy-z-fold8-flip8-unpacked-guide.html  301
+/blog/aussie-guide-samsung-one-ui-9-testing.html  /blog/samsung-one-ui-9-australia.html  301
+/blog/aussie-samsung-one-ui-9-testing.html  /blog/samsung-one-ui-9-australia.html  301
+/blog/exploring-one-ui-9-samsung-australia.html  /blog/samsung-one-ui-9-australia.html  301
+/blog/one-ui-9-galaxy-a25-australia.html  /blog/samsung-one-ui-9-australia.html  301
+/blog/one-ui-9-samsung-galaxy-update-australia-repair-range.html  /blog/samsung-one-ui-9-australia.html  301
+/blog/samsung-one-ui-9-australia-release-devices-repairrange.html  /blog/samsung-one-ui-9-australia.html  301
+/blog/samsung-one-ui-9-australia-rollout-galaxy-update-repairrange.html  /blog/samsung-one-ui-9-australia.html  301
+/blog/samsung-one-ui-9-beta-australia-repair-range.html  /blog/samsung-one-ui-9-australia.html  301
+/blog/samsung-one-ui-9-expansion-aussie-wallets-phone-longevity.html  /blog/samsung-one-ui-9-australia.html  301
+/blog/samsung-one-ui-9-testing-australia.html  /blog/samsung-one-ui-9-australia.html  301
+/blog/samsung-one-ui-9-testing-galaxy-a-series.html  /blog/samsung-one-ui-9-australia.html  301
+/blog/samsung-one-ui-9-testing-galaxy-a16-5g.html  /blog/samsung-one-ui-9-australia.html  301
+/blog/samsung-tests-one-ui-9-galaxy-a16-5g.html  /blog/samsung-one-ui-9-australia.html  301
+/blog/apple-iphone-ultra-foldable-ios27-leak-repair-range-australia.html  /blog/foldable-phone-repair-cost-guide.html  301
+/blog/apple-iphone-ultra-ios27-september-launch.html  /blog/foldable-phone-repair-cost-guide.html  301
+/blog/apple-iphone-ultra-launch-september.html  /blog/foldable-phone-repair-cost-guide.html  301
+/blog/aussie-insight-iphone-ultra-production-timeline.html  /blog/foldable-phone-repair-cost-guide.html  301
+/blog/aussie-scoop-iphone-fold-leak-repairability-debate.html  /blog/foldable-phone-repair-cost-guide.html  301
+/blog/foldable-iphone-ultra-australia.html  /blog/foldable-phone-repair-cost-guide.html  301
+/blog/ios-27-iphone-ultra-leak-repair-costs.html  /blog/foldable-phone-repair-cost-guide.html  301
+/blog/iphone-ultra-foldable-ios27-aussie-reveal-repair-cost.html  /blog/foldable-phone-repair-cost-guide.html  301
+/blog/iphone-ultra-launch-australia.html  /blog/foldable-phone-repair-cost-guide.html  301
+/blog/ai-siri-australian-waitlist-ios18.html  /blog/siris-big-brain-upgrade-aussie-ai-waitlist.html  301
+/blog/apple-ai-exclusivity-aussie-impact-repair-costs.html  /blog/siris-big-brain-upgrade-aussie-ai-waitlist.html  301
+/blog/apple-ai-siri-google-gemini-waitlist-australia.html  /blog/siris-big-brain-upgrade-aussie-ai-waitlist.html  301
+/blog/apples-ai-siri-waitlist-aussie-take-repairrange.html  /blog/siris-big-brain-upgrade-aussie-ai-waitlist.html  301
+/blog/siri-ai-ios27-australia-waitlist-gemini.html  /blog/siris-big-brain-upgrade-aussie-ai-waitlist.html  301
+/blog/unleashing-siri-ai-macos-27-golden-gate-bypass-waitlist.html  /blog/siris-big-brain-upgrade-aussie-ai-waitlist.html  301
+/blog/unlock-siri-ai-macos-27-golden-gate-beta-waitlist-bypass.html  /blog/siris-big-brain-upgrade-aussie-ai-waitlist.html  301
+/blog/apple-ai-siri-waitlist-australia-repair-costs.html  /blog/siris-big-brain-upgrade-aussie-ai-waitlist.html  301
+/blog/galaxy-z-flip8-chipset-shuffle-australia-repair-range.html  /blog/samsung-galaxy-z-fold8-flip8-unpacked-guide.html  301
+/blog/samsung-galaxy-z-fold8-leaks-australia.html  /blog/samsung-galaxy-z-fold8-flip8-unpacked-guide.html  301
+/blog/samsung-galaxy-z-fold8-pricing-australia.html  /blog/samsung-galaxy-z-fold8-flip8-unpacked-guide.html  301
+/blog/samsung-galaxy-z-fold8-z-flip8-cases-guide.html  /blog/samsung-galaxy-z-fold8-flip8-unpacked-guide.html  301
+/blog/samsung-galaxy-z-foldables-camera-specs-2023.html  /blog/samsung-galaxy-z-fold8-flip8-unpacked-guide.html  301
+/blog/samsung-pre-reservations-galaxy-z-foldables.html  /blog/samsung-galaxy-z-fold8-flip8-unpacked-guide.html  301
+/blog/samsung-wide-zfold8-watch-ultra-2-certified-australia.html  /blog/samsung-galaxy-z-fold8-flip8-unpacked-guide.html  301
+/blog/samsung-galaxy-watch-9-ultra-2-charging-speeds-australia-leak.html  /blog/samsung-galaxy-watch-ultra-2-guide.html  301
+/blog/samsung-galaxy-watch9-watch-ultra-2-australia.html  /blog/samsung-galaxy-watch-ultra-2-guide.html  301
+/blog/samsung-galaxy-watch9-watch-ultra-2-details-leaked.html  /blog/samsung-galaxy-watch-ultra-2-guide.html  301
+/blog/samsung-galaxy-watch9-watch-ultra-2-leaks.html  /blog/samsung-galaxy-watch-ultra-2-guide.html  301
+/blog/nothing-phone-4b-aussie-guide.html  /blog/nothing-phone-4b-australia.html  301
+/blog/nothing-phone-4b-australia-guide.html  /blog/nothing-phone-4b-australia.html  301
+/blog/nothing-phone-4b-ear-3a-launch-australia.html  /blog/nothing-phone-4b-australia.html  301
+/blog/nothing-phone-4b-rcb-edition.html  /blog/nothing-phone-4b-australia.html  301
+/blog/honor-magic-v6-australia-guide.html  /blog/honor-magic-v6-australia.html  301
+/blog/honor-magic-v6-australia-launch.html  /blog/honor-magic-v6-australia.html  301
+/blog/honor-magic-v6-guide-australia.html  /blog/honor-magic-v6-australia.html  301
+/blog/honor-magic-v6-vivo-x-fold6-glomo-awards.html  /blog/honor-magic-v6-australia.html  301
+/blog/new-redmi-note-17-series-overview.html  /blog/redmi-note-17-launch-australia.html  301
+/blog/redmi-note-17-launch-update.html  /blog/redmi-note-17-launch-australia.html  301
+/blog/redmi-k90-ultra-australia-preview.html  /blog/redmi-k90-ultra-launch-guide.html  301
+/blog/redmi-k90-ultra-features.html  /blog/redmi-k90-ultra-launch-guide.html  301
+/blog/trump-mobile-t1-available-australia.html  /blog/trump-mobile-t1-htc-rebrand-teardown-australia.html  301
+/blog/trump-t1-phone-htc-rebrand-aussie-teardown-repair.html  /blog/trump-mobile-t1-htc-rebrand-teardown-australia.html  301
+/blog/apple-merge-sign-in-hide-my-email.html  /blog/apple-unifies-sign-in-with-apple-hide-my-email.html  301
+/blog/apple-unified-private-icloud-email-domain-guide.html  /blog/apple-unifies-sign-in-with-apple-hide-my-email.html  301
+/blog/openai-ai-oversight-australia-tech-implications.html  /blog/openai-trump-ai-review-australia.html  301
+/blog/openai-trump-ai-transparency-australia.html  /blog/openai-trump-ai-review-australia.html  301
+/blog/repair-or-replace-phone-decision-guide.html  /blog/repair-vs-replace-2026-index.html  301
+/blog/repair-vs-replace-decision-guide.html  /blog/repair-vs-replace-2026-index.html  301
+/blog/nothing-ear-3a-launch-date-australia.html  /blog/nothing-ear-3a-australia.html  301
+/blog/gta-vi-pricing-australia-guide.html  /blog/gta-vi-pricing-australia.html  301
+/blog/instagram-edits-bilingual-captions-guide.html  /blog/instagram-edits-bilingual-captions.html  301
+/blog/poco-x8-pro-vs-pro-max.html  /blog/poco-x8-pro-vs-poco-x8-pro-max-comparison.html  301
+/blog/vivo-tws-5-pro-buds.html  /blog/vivo-tws-5-pro-buds-australia.html  301
+/blog/sony-1000x-ten-year-anniversary-australia-repairrange.html  /blog/sony-1000x-decade-australian-audio-legacy.html  301
+/blog/why-screen-repair-quotes-differ.html  /blog/why-do-screen-repair-quotes-vary-so-much.html  301
+/blog/samsung-ufs-5-0-storage-next-device.html  /blog/samsung-ufs-5-0-storage-guide.html  301
+/blog/smartwatch-shipments-growth-2026.html  /blog/smartwatch-shipments-australia-q1-2026.html  301
+/blog/celebrating-26-years-gsmarena-milestone-mobile-tech.html  /blog/26-years-of-gsmarena-aussie-tech.html  301
+/blog/clicks-blackberry-smartphone-hands-on.html  /blog/clicks-communicator-blackberry-style-smartphone-australia.html  301
+/blog/latest-tech-highlights-aquos-r11-osmo-pocket-4p.html  /blog/week-in-tech-sharp-aquos-r11.html  301
+/blog/oppo-reno16-overpriced-australia.html  /blog/oppo-reno16-australia-launch-guide.html  301
+/blog/gemini-smart-home-speaker-australia.html  /blog/google-gemini-smart-home-speakers-australia.html  301
+/blog/honor-x80-pro-max-10000-nit-brightness.html  /blog/honor-x80-pro-max-australia-battery-brightness-repairrange.html  301
+/blog/anticipating-iphone-air-2-2027.html  /blog/get-ready-for-the-iphone-air-2.html  301
+/news/*  /tech-news.html  301
+http://www.repairrange.io/*  https://repairrange.io/:splat  301
+https://www.repairrange.io/*  https://repairrange.io/:splat  301
+/tools.html  /tools/software-stack-for-repair-shops.html  301
+/blog  /blog.html  301
+/repair  /repair/phone-repair-costs-australia.html  301
+/repair/iphone-16-pro-max.html  /repair/iphone-16-pro.html  301
+/repair/pixel-8.html  /repair/pixel-8-pro.html  301
+/brands/google-repair-costs.html  /brands/google.html  301
+/brands/watch-repair-costs.html  /brands.html  301
+/brands/oppo-repair-costs.html  /brands.html  301
+/brands/ipad-repair-costs.html  /brands/apple.html  301
+/blog/iphone-ultra-australian-guide.html  /blog/foldable-phone-repair-cost-guide.html  301
+/blog/sample-post.html  /blog.html  301
+/blog/getting-started-with-our-platform.html  /blog.html  301
