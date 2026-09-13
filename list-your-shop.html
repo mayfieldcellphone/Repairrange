@@ -1,104 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>List Your Repair Shop — RepairRange</title>
+  <title>List Your Repair Shop — Free | RepairRange</title>
 <link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="canonical" href="https://repairrange.io/list-your-shop.html" />
+<meta name="description" content="Free listing for Australian phone and device repair shops. Get your shop in front of local customers searching RepairRange for repairs in your area — no cost, no card, no catch." />
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="RepairRange">
 <meta property="og:locale" content="en_AU">
 <meta property="og:url" content="https://repairrange.io/list-your-shop.html">
-<meta property="og:title" content="List Your Repair Shop">
-<meta property="og:description" content="Get your phone repair shop in front of local customers searching for repairs in your area. List on RepairRange from $29.">
+<meta property="og:title" content="List Your Repair Shop — Free">
+<meta property="og:description" content="Free listing for Australian phone and device repair shops. Get your shop in front of local customers searching RepairRange for repairs in your area — no cost, no card, no catch.">
 <meta property="og:image" content="https://repairrange.io/assets/og-default.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="List Your Repair Shop">
-<meta name="twitter:description" content="Get your phone repair shop in front of local customers searching for repairs in your area. List on RepairRange from $29.">
+<meta name="twitter:title" content="List Your Repair Shop — Free">
+<meta name="twitter:description" content="Free listing for Australian phone and device repair shops. Get your shop in front of local customers searching RepairRange for repairs in your area — no cost, no card, no catch.">
 <meta name="twitter:image" content="https://repairrange.io/assets/og-default.png">
-  <meta name="description" content="Get your phone repair shop in front of local customers searching for repairs in your area. List on RepairRange from $29." />
-  <link rel="canonical" href="https://repairrange.io/list-your-shop.html" />
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-
+    <link rel="stylesheet" href="/css/tw-purged.css">
+    <script src="/js/lucide-icons.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
-        :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
-        html { scroll-behavior: smooth; }
-        body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; }
-        .font-serif { font-family:'Fraunces','Iowan Old Style','Palatino',serif; font-feature-settings:'ss01'; }
-        .font-mono { font-family:'JetBrains Mono',ui-monospace,monospace; }
-        .text-teal{color:var(--rr-teal-700);} .bg-teal-900{background:var(--rr-teal-900);}
-        .text-amber{color:var(--rr-amber-600);} .bg-amber{background:var(--rr-amber-500);}
-        .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
-        .bg-paper{background:var(--rr-paper);} .bg-paper-2{background:var(--rr-paper-2);}
-        .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
-        .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
-        .header-sticky { backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); background:rgba(255,255,255,0.9); }
-        .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
-        .ed-link:hover { background-size:100% 1px; }
-        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; }
-        .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
-        .btn-primary:hover { background:var(--rr-amber-600); color:white; transform:translateY(-1px); box-shadow:0 4px 0 var(--rr-amber-600); }
-        .card, .post-card, .sidebar-card { background:white; border:1px solid var(--rr-line); transition:all 300ms ease; display:block; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
-        .card:hover, .post-card:hover { border-color:var(--rr-ink); transform:translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
-        .bg-mesh-hero { position: relative; overflow-x: clip; background-color: var(--rr-hero); background-image: radial-gradient(rgba(15, 118, 110, 0.15) 1.5px, transparent 0); background-size: 32px 32px; border-bottom: 2px solid var(--rr-line); }
-        .mobile-menu { transition:all 300ms ease-in-out; }
-        @media (max-width: 768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
-    
-.border-line{border-color:#D6D3D1;}
-.text-teal{color:#0F766E;}
-.bg-paper{background:#F3F4F1;}
-.text-ink{color:#1C1917;}
-.text-muted{color:#78716C;}
-.ed-link{background-image:linear-gradient(currentColor,currentColor);background-position:0 100%;background-repeat:no-repeat;background-size:0% 1px;transition:background-size 220ms ease;}
-.ed-link:hover{background-size:100% 1px;}
-.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.75rem 1.25rem;font-weight:600;font-size:0.9375rem;transition:all 200ms ease;border-radius:2px;}
-.btn-primary{background:var(--rr-amber-500,#F59E0B);color:var(--rr-ink,#1C1917);box-shadow:0 1px 0 var(--rr-amber-600,#d97706);}
-.btn-primary:hover{background:var(--rr-amber-600,#d97706);color:#fff;transform:translateY(-1px);}
-.mobile-menu{transition:all 300ms ease-in-out;}
-@media (max-width:768px){.mobile-menu.hidden{display:none;}.mobile-menu:not(.hidden){display:block;}}
+    :root { --rr-teal-900:#0c4a45; --rr-teal-700:#0F766E; --rr-amber-600:#d97706; --rr-amber-500:#F59E0B; --rr-ink:#1C1917; --rr-muted:#78716C; --rr-line:#D6D3D1; --rr-paper:#F3F4F1; --rr-paper-2:#E7E5E4; --rr-hero:#E7E9E2; }
+    html { scroll-behavior:smooth; }
+    body { font-family:'Inter',system-ui,sans-serif; color:var(--rr-ink); background:var(--rr-paper); -webkit-font-smoothing:antialiased; margin:0; }
+    .font-serif { font-family:'Fraunces',serif; font-feature-settings:'ss01'; }
+    .text-teal{color:var(--rr-teal-700);} .text-ink{color:var(--rr-ink);} .text-muted{color:var(--rr-muted);} .border-line{border-color:var(--rr-line);}
+    .bg-paper{background:var(--rr-paper);} .bg-teal-900{background:var(--rr-teal-900);} .text-amber{color:var(--rr-amber-600);}
+    .display { font-family:'Fraunces',serif; font-weight:400; letter-spacing:-0.025em; line-height:1.05; font-variation-settings:'opsz' 144; }
+    .eyebrow { font-size:0.75rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--rr-teal-700); }
+    .ed-link { background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 1px; transition:background-size 220ms ease; }
+    .ed-link:hover { background-size:100% 1px; }
+    .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; font-weight:600; font-size:0.9375rem; transition:all 200ms ease; border-radius:2px; text-decoration:none; }
+    .btn-primary { background:var(--rr-amber-500); color:var(--rr-ink); box-shadow:0 1px 0 var(--rr-amber-600); }
+    .btn-primary:hover { background:var(--rr-amber-600); color:#fff; transform:translateY(-1px); }
+    .mobile-menu { transition:all 300ms ease-in-out; }
+    @media (max-width:768px) { .mobile-menu.hidden{display:none;} .mobile-menu:not(.hidden){display:block;} }
 
-    </style>
+    /* ---- page ---- */
+    .wrap { max-width:56rem; margin:0 auto; padding:0 1.5rem; }
+    .hero { background:var(--rr-hero); background-image:radial-gradient(rgba(15,118,110,0.15) 1.5px, transparent 0); background-size:32px 32px; border-bottom:2px solid var(--rr-line); padding:4rem 0 3.5rem; }
+    .hero h1 { font-family:'Fraunces',serif; font-weight:400; font-size:clamp(2rem,5vw,3.25rem); line-height:1.05; letter-spacing:-0.025em; margin:0.75rem 0 1rem; }
+    .lede { font-size:1.125rem; color:var(--rr-muted); line-height:1.6; max-width:38rem; margin:0; }
+    .free-badge { display:inline-block; background:var(--rr-teal-900); color:#fff; font-size:0.75rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; padding:0.35rem 0.7rem; border-radius:2px; margin-bottom:0.5rem; }
+    .cols { display:grid; grid-template-columns:1fr; gap:1rem; margin-top:2.5rem; }
+    @media (min-width:800px) { .cols { grid-template-columns:repeat(3,1fr); } }
+    .col { background:#fff; border:1px solid var(--rr-line); padding:1.5rem; }
+    .col h3 { font-family:'Fraunces',serif; font-size:1.125rem; margin:0 0 0.5rem; }
+    .col p { margin:0; font-size:0.9375rem; color:var(--rr-muted); line-height:1.55; }
+    .card { background:#fff; border:1px solid var(--rr-line); padding:2rem; margin:3rem 0; box-shadow:0 4px 6px -1px rgba(0,0,0,0.08); }
+    .card h2 { font-family:'Fraunces',serif; font-weight:400; font-size:1.75rem; margin:0 0 0.5rem; }
+    .sub { color:var(--rr-muted); margin:0 0 1.75rem; font-size:0.9375rem; }
+    .grid { display:grid; grid-template-columns:1fr; gap:1rem; }
+    @media (min-width:700px) { .grid { grid-template-columns:1fr 1fr; } .field.full { grid-column:1 / -1; } }
+    .field label { display:block; font-size:0.8125rem; font-weight:600; margin-bottom:0.35rem; }
+    .field input, .field select, .field textarea { width:100%; box-sizing:border-box; padding:0.7rem 0.8rem; border:1px solid var(--rr-line); border-radius:2px; font:inherit; font-size:0.9375rem; background:#fff; color:var(--rr-ink); }
+    .field input:focus, .field select:focus, .field textarea:focus { outline:2px solid var(--rr-teal-700); outline-offset:-1px; border-color:var(--rr-teal-700); }
+    .field textarea { min-height:5.5rem; resize:vertical; }
+    .req { color:var(--rr-amber-600); }
+    /* honeypot MUST be invisible to humans */
+    .hp { position:absolute !important; left:-9999px !important; width:1px; height:1px; overflow:hidden; }
+    .submit { margin-top:1.5rem; background:var(--rr-amber-500); color:var(--rr-ink); border:0; box-shadow:0 1px 0 var(--rr-amber-600); padding:0.85rem 1.5rem; font:inherit; font-weight:600; border-radius:2px; cursor:pointer; }
+    .submit:hover:not(:disabled) { background:var(--rr-amber-600); color:#fff; }
+    .submit:disabled { opacity:0.6; cursor:default; }
+    .note { font-size:0.8125rem; color:var(--rr-muted); margin:0.85rem 0 0; }
+    .msg { display:none; margin-top:1rem; padding:0.9rem 1rem; border-radius:2px; font-size:0.9375rem; line-height:1.5; }
+    .msg.ok { display:block; background:#ecfdf5; border:1px solid #a7f3d0; }
+    .msg.err { display:block; background:#fff7ed; border:1px solid #fed7aa; }
+    .msg a { color:var(--rr-teal-700); font-weight:600; }
+    .faq-q { font-family:'Fraunces',serif; font-size:1.0625rem; margin:1.75rem 0 0.4rem; }
+    .faq-a { margin:0; color:var(--rr-muted); font-size:0.9375rem; line-height:1.6; }
+  </style>
 </head>
 <body>
-  <header class="border-b border-line bg-white/80 backdrop-blur-md sticky top-0 z-50"><nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between"><a href="../index.html" class="flex items-center gap-2"><svg width="24" height="24" viewBox="0 0 28 28" fill="none" class="text-teal"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg><span class="font-serif text-xl font-bold tracking-tight text-ink">RepairRange</span></a><div class="hidden md:flex items-center gap-6 text-sm"><a href="../brands.html" class="ed-link text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="ed-link text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="ed-link text-ink hover:text-teal">Troubleshoot</a><a href="../unlock/index.html" class="ed-link text-ink hover:text-teal">Phone Unlock</a><a href="../calculator.html" class="ed-link text-ink hover:text-teal">Calculator</a><a href="../locations.html" class="ed-link text-ink hover:text-teal">Locations</a><a href="../blog.html" class="ed-link text-teal">Blog</a><a href="../calculator.html" class="btn btn-primary text-sm">Get a Quote</a></div><button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button></nav><div class="mobile-menu hidden md:hidden border-t border-line bg-paper"><div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1"><a href="../brands.html" class="py-2 text-ink hover:text-teal">Brands</a><a href="../repair/phone-repair-costs-australia.html" class="py-2 text-ink hover:text-teal">Repairs</a><a href="../fix.html" class="py-2 text-ink hover:text-teal">Troubleshoot</a><a href="../unlock/index.html" class="py-2 text-ink hover:text-teal">Phone Unlock</a><a href="../calculator.html" class="py-2 text-ink hover:text-teal">Calculator</a><a href="../locations.html" class="py-2 text-ink hover:text-teal">Locations</a><a href="../blog.html" class="py-2 text-teal">Blog</a></div></div></header>
+<header class="border-b border-line bg-white/80 backdrop-blur-md sticky top-0 z-50"><nav class="max-w-6xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between"><a href="index.html" class="flex items-center gap-2"><svg width="24" height="24" viewBox="0 0 28 28" fill="none" class="text-teal"><rect x="1" y="1" width="26" height="26" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg><span class="font-serif text-xl font-bold tracking-tight text-ink">RepairRange</span></a><div class="hidden md:flex items-center gap-6 text-sm"><a href="brands.html" class="ed-link text-ink hover:text-teal">Brands</a><a href="repair/phone-repair-costs-australia.html" class="ed-link text-ink hover:text-teal">Repairs</a><a href="fix.html" class="ed-link text-ink hover:text-teal">Troubleshoot</a><a href="unlock/index.html" class="ed-link text-ink hover:text-teal">Phone Unlock</a><a href="calculator.html" class="ed-link text-ink hover:text-teal">Calculator</a><a href="locations.html" class="ed-link text-ink hover:text-teal">Locations</a><a href="blog.html" class="ed-link text-teal">Blog</a><a href="calculator.html" class="btn btn-primary text-sm">Get a Quote</a></div><button class="mobile-menu-button md:hidden text-ink" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6"></i></button></nav><div class="mobile-menu hidden md:hidden border-t border-line bg-paper"><div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1"><a href="brands.html" class="py-2 text-ink hover:text-teal">Brands</a><a href="repair/phone-repair-costs-australia.html" class="py-2 text-ink hover:text-teal">Repairs</a><a href="fix.html" class="py-2 text-ink hover:text-teal">Troubleshoot</a><a href="unlock/index.html" class="py-2 text-ink hover:text-teal">Phone Unlock</a><a href="calculator.html" class="py-2 text-ink hover:text-teal">Calculator</a><a href="locations.html" class="py-2 text-ink hover:text-teal">Locations</a><a href="blog.html" class="py-2 text-teal">Blog</a></div></div></header>
 
-  <main class="wrap">
-    <section class="hero">
+
+  <section class="hero">
+    <div class="wrap">
       <p class="eyebrow">For repair shop owners</p>
+      <span class="free-badge">Free listing</span>
       <h1>Get your repair shop in front of local customers.</h1>
-      <p class="lede">People search RepairRange for repairs in their area every day. List your shop and be the one they find, call, and book.</p>
+      <p class="lede">People search RepairRange for repair prices in their area every day. Listing your shop is free &mdash; no card, no trial, no catch. We'd rather have a directory worth using than a short list of paid entries.</p>
 
-      <div class="tiers">
-        <div class="tier">
-          <h3>Basic</h3>
-          <div class="price">$29 <small>/ 3 months</small></div>
-          <p>Your shop on the city page with name, area, and contact details.</p>
+      <div class="cols">
+        <div class="col">
+          <h3>What you get</h3>
+          <p>Your shop on its city page with name, suburb, phone, opening hours and a link to your website. Customers see you when they're pricing a repair they've already decided to get done.</p>
         </div>
-        <div class="tier">
-          <h3>Verified</h3>
-          <div class="price">$49 <small>/ 6 months</small></div>
-          <p>Everything in Basic, plus a verified badge and a link to your website.</p>
+        <div class="col">
+          <h3>What it costs</h3>
+          <p>Nothing. Paid placement may come later for shops that want top position, but every listing that goes up now stays free &mdash; we're not charging for a directory until we can show you the traffic.</p>
         </div>
-        <div class="tier">
-          <h3>Featured</h3>
-          <div class="price">$89 <small>/ year</small></div>
-          <p>Top placement on your city page for a full year. Best value.</p>
+        <div class="col">
+          <h3>What we ask</h3>
+          <p>That your prices and details are accurate, and that you tell us when they change. That's it. A "Listed on RepairRange" badge for your own site is yours if you want it &mdash; entirely optional.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
+  <main class="wrap">
     <section class="card">
-      <h2>Request your listing</h2>
-      <p class="sub">Fill this in and we'll be in touch within one business day to get you live. No payment needed yet.</p>
+      <h2>Request your free listing</h2>
+      <p class="sub">Takes a minute. We'll be in touch within one business day to get your shop live.</p>
 
       <form id="listingForm" novalidate>
-        <!-- honeypot: real people never see or fill this -->
         <div class="hp" aria-hidden="true">
           <label>Leave this empty
             <input type="text" name="company_website" tabindex="-1" autocomplete="off" />
@@ -110,7 +120,6 @@
             <label for="business">Shop name <span class="req">*</span></label>
             <input id="business" name="business" type="text" required autocomplete="organization" />
           </div>
-
           <div class="field">
             <label for="suburb">Suburb / town <span class="req">*</span></label>
             <input id="suburb" name="suburb" type="text" required autocomplete="address-level2" />
@@ -119,7 +128,6 @@
             <label for="name">Your name <span class="req">*</span></label>
             <input id="name" name="name" type="text" required autocomplete="name" />
           </div>
-
           <div class="field">
             <label for="phone">Phone <span class="req">*</span></label>
             <input id="phone" name="phone" type="tel" required autocomplete="tel" />
@@ -128,46 +136,59 @@
             <label for="email">Email <span class="req">*</span></label>
             <input id="email" name="email" type="email" required autocomplete="email" />
           </div>
-
           <div class="field">
             <label for="website">Website (optional)</label>
             <input id="website" name="website" type="text" placeholder="yourshop.com.au" />
           </div>
           <div class="field">
-            <label for="tier">Listing you're interested in</label>
-            <select id="tier" name="tier">
-              <option value="Not sure yet">Not sure yet — recommend one</option>
-              <option value="Basic $29/3mo">Basic — $29 / 3 months</option>
-              <option value="Verified $49/6mo">Verified — $49 / 6 months</option>
-              <option value="Featured $89/yr">Featured — $89 / year</option>
-            </select>
+            <label for="hours">Opening hours (optional)</label>
+            <input id="hours" name="hours" type="text" placeholder="Mon-Fri 9-5, Sat 10-2" />
           </div>
-
           <div class="field full">
-            <label for="services">What do you repair / anything to add? (optional)</label>
-            <textarea id="services" name="services" placeholder="e.g. phones, tablets, laptops — same-day screen repairs, 12-month warranty"></textarea>
+            <label for="services">What do you repair? (optional)</label>
+            <textarea id="services" name="services" placeholder="e.g. phones, tablets, laptops &mdash; same-day screen repairs, 12-month warranty"></textarea>
           </div>
         </div>
 
-        <button class="submit" type="submit" id="submitBtn">Request my listing</button>
-        <p class="note">We only use these details to set up your listing and contact you about it.</p>
+        <button class="submit" type="submit" id="submitBtn">Request my free listing</button>
+        <p class="note">We only use these details to set up your listing and contact you about it. Nothing is shared or sold.</p>
         <div class="msg" id="msg" role="status" aria-live="polite"></div>
       </form>
     </section>
+
+    <section style="margin-bottom:4rem;">
+      <h2 class="display" style="font-size:1.75rem; margin-bottom:0.5rem;">Questions shop owners ask</h2>
+
+      <h3 class="faq-q">Is it really free?</h3>
+      <p class="faq-a">Yes. There's no card field on that form because there's nothing to pay. If we introduce paid placement later it will be for premium position only, and listings created now stay free.</p>
+
+      <h3 class="faq-q">What's in it for RepairRange?</h3>
+      <p class="faq-a">A directory with real shops in it is worth more to customers than an empty one, and customers are what make the site useful. That's the whole trade &mdash; we need the coverage more than we need your $29.</p>
+
+      <h3 class="faq-q">Do I have to link back to you?</h3>
+      <p class="faq-a">No. We'll offer you a badge for your own site because some shops like showing they're listed, but your listing doesn't depend on it and never will.</p>
+
+      <h3 class="faq-q">Will you send me leads or just a listing?</h3>
+      <p class="faq-a">A listing, honestly. Customers land on your city page while pricing a repair and contact you directly &mdash; we don't sit in the middle, take a cut, or route the call. Your phone number is your phone number.</p>
+
+      <h3 class="faq-q">Something's wrong with my listing.</h3>
+      <p class="faq-a">Email <a href="mailto:info@repairrange.io" class="ed-link text-teal">info@repairrange.io</a> and we'll fix it. Same for removing it &mdash; no forms, no notice period.</p>
+    </section>
   </main>
 
-  <footer>
-    <div class="wrap">
-      RepairRange &middot; <a href="mailto:info@repairrange.io">info@repairrange.io</a>
-    </div>
-  </header>
+<footer class="bg-teal-900 text-white border-t border-white/10"><div class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12"><div class="md:col-span-5"><div class="flex items-center gap-2 mb-4"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 19 L8 9 L14 9 Q17 9 17 12 Q17 14.5 14.5 14.8 L18 19 M12 14.8 L8 14.8" stroke="white" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg><span class="font-serif text-2xl font-medium">RepairRange</span></div><p class="text-white/70 leading-relaxed max-w-sm text-sm">Plain-English phone repair costs, fixes, and buying advice.</p></div><div class="md:col-span-3"><h3 class="eyebrow text-amber mb-4">Browse</h3><ul class="space-y-2 text-sm"><li><a href="brands.html" class="text-white/80 hover:text-amber">Brands</a></li><li><a href="repair/phone-repair-costs-australia.html" class="text-white/80 hover:text-amber">All Models</a></li><li><a href="calculator.html" class="text-white/80 hover:text-amber">Calculator</a></li><li><a href="locations.html" class="text-white/80 hover:text-amber">Cities</a></li><li><a href="blog.html" class="text-white/80 hover:text-amber">Blog</a></li></ul></div><div class="md:col-span-4"><h3 class="eyebrow text-amber mb-4">About</h3><ul class="space-y-2 text-sm"><li><a href="about.html" class="text-white/80 hover:text-amber">About</a></li><li><a href="privacy.html" class="text-white/80 hover:text-amber">Privacy</a></li><li><a href="terms.html" class="text-white/80 hover:text-amber">Terms</a></li></ul></div></div><div class="pt-8 border-t border-white/15"><p class="text-white/50 text-xs">&copy; 2026 RepairRange. Not affiliated with Apple, Samsung, Google, or any manufacturer.</p></div></div></footer>
 
   <script>
-    // ===== CONFIG: paste your deployed Apps Script Web App URL here =====
-    const ENDPOINT = "https://script.google.com/macros/s/AKfycbz_nludtL5IVFYf89Ti_7YypuaGbUv1IesqXakIO5-_m1zsMBe-Bzo6dMqumTDnVcgmCw/exec";
-    // ===================================================================
+    /* Lead delivery.
+       FORM_EMAIL is where listing requests land. To move them elsewhere later
+       (a shared inbox, a CRM address), change this one line.
+       Submissions POST to FormSubmit's AJAX endpoint, which returns JSON with
+       CORS headers — unlike the old Apps Script endpoint, a failure here is
+       visible rather than silent, and any failure falls back to a pre-filled
+       email so a lead is never lost. */
+    const FORM_EMAIL = "info@repairrange.io";
+    const ENDPOINT = "https://formsubmit.co/ajax/" + FORM_EMAIL;
 
-    // Pre-fill suburb + capture which city page the lead came from (?city=newcastle)
     const params = new URLSearchParams(location.search);
     const cityParam = params.get("city") || "";
     if (cityParam) {
@@ -180,52 +201,62 @@
     const btn = document.getElementById("submitBtn");
     const msg = document.getElementById("msg");
 
-    function show(type, text) {
-      msg.className = "msg " + type;
-      msg.textContent = text;
+    function show(type, html) { msg.className = "msg " + type; msg.innerHTML = html; }
+
+    function mailtoFallback(data) {
+      const body = Object.entries(data)
+        .filter(([k, v]) => v && k !== "company_website" && k !== "_subject" && k !== "_template")
+        .map(([k, v]) => k.replace(/_/g, " ") + ": " + v)
+        .join("\n");
+      return "mailto:" + FORM_EMAIL
+        + "?subject=" + encodeURIComponent("Free listing request — " + (data.business || "repair shop"))
+        + "&body=" + encodeURIComponent(body);
     }
 
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
-      msg.className = "msg"; // hide
+      msg.className = "msg";
 
-      // Honeypot: silently stop bots
-      if (form.company_website.value.trim() !== "") return;
+      if (form.company_website.value.trim() !== "") return; // bot
 
-      // Basic required-field check
       const required = ["business", "suburb", "name", "phone", "email"];
       for (const id of required) {
         if (!form[id].value.trim()) {
-          show("err", "Please fill in all the required fields marked with *.");
+          show("err", "Please fill in the fields marked with *.");
           form[id].focus();
           return;
         }
-      }
-      if (ENDPOINT.startsWith("PASTE_")) {
-        show("err", "Form isn't connected yet — add your Apps Script URL in the page settings.");
-        return;
       }
 
       btn.disabled = true;
       btn.textContent = "Sending…";
 
-      const fd = new FormData(form);
-      fd.append("source_city", cityParam);
-      fd.append("page", location.href);
+      const data = Object.fromEntries(new FormData(form).entries());
+      data.source_city = cityParam;
+      data.page = location.href;
+      data._subject = "New free listing request — " + data.business;
+      data._template = "table";
 
       try {
-        await fetch(ENDPOINT, { method: "POST", body: fd });
-        // Apps Script redirects on POST, so we treat a completed request as success.
+        const res = await fetch(ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "Accept": "application/json" },
+          body: JSON.stringify(data)
+        });
+        const out = await res.json().catch(() => ({}));
+        if (!res.ok || out.success === "false" || out.success === false) throw new Error(out.message || "send failed");
         form.reset();
-        show("ok", "Thanks — your request is in. We'll be in touch within one business day to get your shop live.");
+        show("ok", "Thanks — that's come through. We'll be in touch within one business day to get your shop live.");
         btn.textContent = "Request received ✓";
       } catch (err) {
-        show("err", "Something went wrong sending that. Please email info@repairrange.io and we'll sort it out.");
+        show("err", "That didn't send — our fault, not yours. "
+          + "<a href='" + mailtoFallback(data) + "'>Click here to send the same details by email</a> "
+          + "(it opens a pre-filled message), or call the shop details on your city page.");
         btn.disabled = false;
-        btn.textContent = "Request my listing";
+        btn.textContent = "Request my free listing";
       }
     });
   </script>
-<script>if(window.lucide)window.lucide.createIcons();document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.mobile-menu-button'),m=document.querySelector('.mobile-menu');if(b&&m)b.addEventListener('click',()=>m.classList.toggle('hidden'))});</script>
+  <script>if(window.lucide)window.lucide.createIcons();document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.mobile-menu-button'),m=document.querySelector('.mobile-menu');if(b&&m)b.addEventListener('click',()=>m.classList.toggle('hidden'))});</script>
 </body>
 </html>
