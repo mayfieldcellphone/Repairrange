@@ -20,6 +20,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          # Full history: generate_sitemap.py reads per-file commit dates.
+          # A shallow clone gives every page the same lastmod, which is the
+          # bug this replaced.
           fetch-depth: 0
 
       - uses: actions/setup-python@v5
@@ -38,13 +41,49 @@ jobs:
           cp catalog.json pricing.json public/ 2>/dev/null || true
           cp smart_widget.js u.js public/ 2>/dev/null || true
           cp *.jpg *.jpeg *.png *.svg *.webp *.ico public/ 2>/dev/null || true
+          # Content folders. This allowlist is what keeps internal scripts,
+          # data dumps and handover docs out of the published site.
           for d in css js assets blog brands repair unlock locations fix guides news tools downloads selfrepairkit; do
             cp -r "$d" public/ 2>/dev/null || true
           done
-          echo 'repairrange.io' > public/CNAME
+          # No CNAME file here on purpose. Writing one makes GitHub adopt the
+          # custom domain immediately, which sends the github.io preview URL
+          # to repairrange.io — still served by GitLab — so there would be
+          # nothing to inspect before cutover. Set the custom domain in
+          # Settings > Pages at cutover time instead.
+          # Redirect stubs: GitHub Pages ignores _redirects, so turn each
+          # rule into a real file. Only where no page exists at that path —
+          # a live page must never be shadowed by a stub.
+          python - <<'PYEOF'
+          import pathlib, html as H
+          pub = pathlib.Path('public')
+          made = 0
+          for ln in pathlib.Path('_redirects').read_text(encoding='utf-8').splitlines():
+              parts = ln.split()
+              if len(parts) < 2 or not parts[0].startswith('/') or not parts[1].startswith('/'):
+                  continue
+              src, dst = parts[0].lstrip('/'), parts[1]
+              if pathlib.Path(src).exists():
+                  continue
+              f = pub / src
+              f.parent.mkdir(parents=True, exist_ok=True)
+              t = H.escape(dst, quote=True)
+              f.write_text(
+                  '<!doctype html><html lang="en-AU"><head><meta charset="utf-8">'
+                  '<title>Redirecting</title>'
+                  f'<link rel="canonical" href="https://repairrange.io{t}">'
+                  '<meta name="robots" content="noindex,follow">'
+                  f'<meta http-equiv="refresh" content="0; url={t}">'
+                  f'<script>location.replace("{t}")</script></head>'
+                  f'<body><p>Moved to <a href="{t}">{t}</a></p></body></html>',
+                  encoding='utf-8')
+              made += 1
+          print(f'redirect stubs written: {made}')
+          PYEOF
           touch public/.nojekyll
           echo "--- assembled ---"
           ls public | head -30
+          echo "sitemap urls: $(grep -c '<url>' public/sitemap.xml 2>/dev/null || echo 'NO SITEMAP')"
 
       - uses: actions/upload-pages-artifact@v3
         with:
