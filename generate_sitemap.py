@@ -1,5 +1,6 @@
 import os
 from datetime import datetime
+import subprocess
 
 # Configuration
 BASE_URL = "https://repairrange.io"
@@ -56,6 +57,23 @@ def generate_sitemap():
     
     # Build XML
     today = datetime.now().strftime("%Y-%m-%d")
+
+    # Real per-file dates from git history. Needs full history: a shallow
+    # clone reports one identical date for every file, which is the bug this
+    # replaced. See fetch-depth: 0 in .github/workflows/deploy.yml.
+    _date_cache = {}
+
+    def _lastmod(u):
+        rel = u[len(BASE_URL):].lstrip("/") or "index.html"
+        if rel not in _date_cache:
+            try:
+                out = subprocess.run(
+                    ["git", "log", "-1", "--format=%cs", "--", rel],
+                    capture_output=True, text=True, timeout=20).stdout.strip()
+            except Exception:
+                out = ""
+            _date_cache[rel] = out or today
+        return _date_cache[rel]
     xml_content = "<?xml version='1.0' encoding='utf-8'?>\n"
     xml_content += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     
@@ -68,7 +86,7 @@ def generate_sitemap():
             priority = "0.5"
         xml_content += "  <url>\n"
         xml_content += f"    <loc>{url}</loc>\n"
-        xml_content += f"    <lastmod>{today}</lastmod>\n"
+        xml_content += f"    <lastmod>{_lastmod(url)}</lastmod>\n"
         xml_content += f"    <priority>{priority}</priority>\n"
         xml_content += "  </url>\n"
         
