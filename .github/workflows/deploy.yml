@@ -41,10 +41,10 @@ jobs:
           for d in css js assets blog brands repair unlock locations fix guides news tools downloads selfrepairkit; do
             cp -r "$d" public/ 2>/dev/null || true
           done
+          echo 'repairrange.io' > public/CNAME
           touch public/.nojekyll
           echo "--- assembled ---"
           ls public | head -30
-          echo "sitemap urls: $(grep -c '<url>' public/sitemap.xml 2>/dev/null || echo 'NO SITEMAP')"
 
       - uses: actions/upload-pages-artifact@v3
         with:
