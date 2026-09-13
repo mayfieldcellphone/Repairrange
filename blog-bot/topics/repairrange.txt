@@ -1,5 +1,4 @@
 # One topic per line. '#' lines ignored. Consumed top-down; used topics move to _used.txt.
-The hidden cost of a cheap screen repair
 How to tell if a phone has been opened before you bought it
 Water damage: what a repair shop can and can't recover
 Why Face ID stops working after a screen replacement
