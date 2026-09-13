@@ -10,3 +10,4 @@ User-agent: Google-Extended
 Allow: /
 User-agent: PerplexityBot
 Allow: /
+Sitemap: https://repairrange.io/sitemap.xml
