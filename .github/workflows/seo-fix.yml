@@ -1,0 +1,32 @@
+name: SEO fix pack (manual)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Pillow
+        run: pip install --quiet Pillow
+      - name: Run the fix pack
+        run: python tools/seo_fix_pack.py
+      - name: Regenerate sitemap
+        run: python generate_sitemap.py || true
+      - name: Commit
+        run: |
+          git config user.email "bot@repairrange.io"
+          git config user.name "seo-fix-pack"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "seo: automated fixes and assets"
+            git push
+          else
+            echo "Nothing to commit — already applied."
+          fi
