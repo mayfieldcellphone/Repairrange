@@ -1,0 +1,40 @@
+name: Blog bot
+
+on:
+  schedule:
+    - cron: '0 */3 * * *' # Every 3 hours
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Generate without committing'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install google-generativeai requests
+      - name: Run generator
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python blog-bot/generate.py
+      - name: Commit and push
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          git config user.name "blog-bot"
+          git config user.email "bot@repairrange.io"
+          git add .
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "blog: automated tech news update"
+            git push
+          fi
