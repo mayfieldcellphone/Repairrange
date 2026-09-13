@@ -27,7 +27,8 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          python blog-bot/generate.py
+          # Added --site argument and optional dry-run flag
+          python blog-bot/generate.py --site repairrange ${{ github.event.inputs.dry_run == 'true' && '--dry-run' || '' }}
       - name: Commit and push
         if: ${{ github.event.inputs.dry_run != 'true' }}
         run: |
