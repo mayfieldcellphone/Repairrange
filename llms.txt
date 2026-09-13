@@ -1,14 +1,34 @@
 # RepairRange
 
-> Australian phone, tablet and smartwatch repair cost guide. Independently researched, transparent pricing for screen, battery, charging port, water damage and software repairs, plus repair-vs-replace guidance, screen quality tiers, and Australian consumer repair rights. Repairs performed by Mayfield Phone Repair, Newcastle NSW.
+> Australian phone, tablet, laptop, console and wearable repair cost guide. Independently researched, transparent pricing for screen, battery, charging port, water damage and software repairs, plus repair-vs-replace guidance, screen quality tiers, and Australian consumer repair rights. Repairs performed by Mayfield Phone Repair, Newcastle NSW.
 
-## Cost guides
+## How our pricing is compiled
+- [How we collect our data](https://repairrange.io/how-we-collect-data.html): methodology behind every price range on this site
+
+## Cost guides — phones and tablets
 - [All repair costs by model](https://repairrange.io/repair/phone-repair-costs-australia.html): screen, battery, port and water damage pricing for iPhone, Samsung, Google Pixel, iPad and Samsung Galaxy Tab models
 - [Apple](https://repairrange.io/brands/apple.html): iPhone, iPad and MacBook repair costs
 - [Samsung](https://repairrange.io/brands/samsung.html): Galaxy S, A, Z-series phones
 - [Samsung Tablets](https://repairrange.io/brands/samsung-tab.html): Galaxy Tab A and S series
 - [Google](https://repairrange.io/brands/google.html): Pixel repair costs
+- [iPhone repair cost in Australia](https://repairrange.io/blog/iphone-repair-cost-australia.html): screens, batteries and back glass by model, Apple vs third-party
+- [Samsung Galaxy repair cost](https://repairrange.io/blog/samsung-galaxy-repair-cost-australia.html): S, A and foldable Z series
+- [Google Pixel repair cost](https://repairrange.io/blog/google-pixel-repair-cost-australia.html): screen and battery by model
+- [iPad repair cost](https://repairrange.io/blog/ipad-repair-cost-guide-australia.html)
 - [Repair calculator](https://repairrange.io/calculator.html): estimate your repair cost
+
+## Cost guides — computers, consoles, wearables and audio
+- [Windows laptop repair cost](https://repairrange.io/blog/windows-laptop-repair-cost-australia.html): Dell, HP, Lenovo, ASUS and Acer screens, batteries, keyboards, hinges and motherboards
+- [MacBook repair cost](https://repairrange.io/blog/macbook-laptop-repair-cost-guide-australia.html)
+- [Nintendo Switch repair cost](https://repairrange.io/blog/nintendo-switch-repair-cost-australia.html): Joy-Con drift, Hall-effect stick upgrades, Switch / Lite / OLED screens and ports
+- [PS5 repair cost](https://repairrange.io/blog/ps5-repair-cost-australia.html): HDMI, disc drive, DualSense charging port and stick drift
+- [Steam Deck and ROG Ally repair cost](https://repairrange.io/blog/steam-deck-rog-ally-repair-cost-australia.html): the handheld market's published prices and quote-only faults
+- [Apple Watch repair cost](https://repairrange.io/blog/apple-watch-repair-cost-australia.html): screen and battery by series
+- [AirPods repair cost](https://repairrange.io/blog/airpods-repair-cost-australia.html): single-bud and case replacement, battery service, AppleCare+ rates
+
+## Local pricing by city
+- [All locations](https://repairrange.io/locations.html)
+- [Sydney](https://repairrange.io/locations/sydney.html) · [Melbourne](https://repairrange.io/locations/melbourne.html) · [Brisbane](https://repairrange.io/locations/brisbane.html) · [Perth](https://repairrange.io/locations/perth.html) · [Adelaide](https://repairrange.io/locations/adelaide.html) · [Newcastle](https://repairrange.io/locations/newcastle.html)
 
 ## Key articles
 - [Apple official vs third-party repair: Australia cost comparison 2026](https://repairrange.io/blog/apple-official-vs-third-party-repair-australia.html)
@@ -16,6 +36,11 @@
 - [Should you repair or replace your phone?](https://repairrange.io/blog/repair-vs-replace-2026-index.html)
 - [2026 phone repair costs at record highs](https://repairrange.io/blog/phone-repair-costs-record-high-2026.html)
 - [Screen quality tiers: OEM, aftermarket and refurbished](https://repairrange.io/blog/screen-quality-tiers-oem-aftermarket-refurbished-explained.html)
+- [How long does a phone repair take?](https://repairrange.io/blog/how-long-does-phone-repair-take.html)
+- [How to find a trustworthy repair shop](https://repairrange.io/blog/how-to-find-trustworthy-phone-repair-shop.html)
+
+## For repair businesses
+- [List your repair shop — free](https://repairrange.io/list-your-shop.html): free directory listing for Australian repair shops
 
 ## Business
 - Mayfield Phone Repair — 276 Maitland Rd, Mayfield NSW 2304, Australia — +61 2 4049 1735 — https://mayfieldphonerepair.com.au/
