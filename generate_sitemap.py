@@ -1,4 +1,4 @@
-import os
+import os, re, json
 from datetime import datetime
 import subprocess
 
@@ -6,6 +6,8 @@ import subprocess
 BASE_URL = "https://repairrange.io"
 REPO_ROOT = "."
 SITEMAP_FILE = "sitemap.xml"
+
+_MAP = json.load(open("lastmod.json", encoding="utf-8")) if os.path.exists("lastmod.json") else {}
 
 # Folders to scan for HTML files
 FOLDERS = ["fix", "locations", "repair", "brands", "tools", "blog", "unlock", "news", "guides", "selfrepairkit", "downloads"]
@@ -46,7 +48,8 @@ def generate_sitemap():
                     fp = os.path.join(folder_path, file)
                     try:
                         with open(fp, encoding="utf-8", errors="replace") as _f:
-                            if "noindex" in _f.read():
+                            _c = _f.read()
+                            if re.search(r'(?is)<meta\s+name=["\']robots["\'][^>]*content=["\'][^"\']*noindex', _c):
                                 continue
                     except Exception:
                         pass
@@ -65,6 +68,8 @@ def generate_sitemap():
 
     def _lastmod(u):
         rel = u[len(BASE_URL):].lstrip("/") or "index.html"
+        if rel in _MAP:
+            return _MAP[rel]
         if rel not in _date_cache:
             try:
                 out = subprocess.run(
