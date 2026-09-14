@@ -22,12 +22,14 @@ def model_name(doc):
 def price_rows(doc):
     """-> [(label, low, high)] parsed from the rendered price table. Empty if none."""
     out = []
-    for tbl in re.findall(r"(?is)<table[^>]*class=\"[^\"]*price-table[^\"]*\"[^>]*>.*?</table>", doc):
+    for tbl in re.findall(r"(?is)<table[^>]*>.*?</table>", doc):
+        if "font-mono tnum" not in tbl and "price-table" not in tbl:
+            continue
         for row in re.findall(r"(?is)<tr[^>]*>(.*?)</tr>", tbl):
             cells = re.findall(r"(?is)<td[^>]*>.*?</td>", row)
             label = price = None
             for c in cells:
-                if label is None and "font-medium text-ink" in c:
+                if label is None and "font-medium" in c:
                     lab = strip_tags(c)
                     lab = re.sub(r"(?i)\s*DIY difficulty:.*$", "", lab).strip()
                     label = lab or None
@@ -121,7 +123,8 @@ def write(fp):
     open(fp, "w", encoding="utf-8").write(doc[:i] + payload + doc[i:])
     return [b["@type"] for b in blocks]
 
-SKIP = {"repair/index.html", "repair/phone-repair-costs-australia.html"}
+SKIP = {"repair/index.html", "repair/phone-repair-costs-australia.html",
+        "repair/model.html", "repair/google-pixel-repair-guide.html"}
 if __name__ == "__main__":
     tally, touched = {}, 0
     for fp in sorted(glob.glob("repair/*.html")) + sorted(glob.glob("locations/*.html")):
