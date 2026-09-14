@@ -1,5 +1,4 @@
 # One topic per line. '#' lines ignored. Consumed top-down; used topics move to _used.txt.
-What a 90-day repair warranty actually covers
 Third-party repair and your manufacturer warranty in Australia
 Why your phone gets hot after a repair
 Screen protectors, cases and the repairs they actually prevent
