@@ -7,6 +7,16 @@ SENTINEL = "<!-- rr-schema:v1 -->"
 BASE = "https://repairrange.io"
 DASH = r"[–—\-]"
 
+MANUFACTURER = [("samsung-","Samsung"), ("galaxy-","Samsung"),
+                ("iphone-","Apple"), ("ipad-","Apple"), ("macbook-","Apple"),
+                ("pixel-","Google"), ("google-","Google")]
+
+def manufacturer(path, name):
+    base = path.split("/")[-1].lower()
+    for pre, brand in MANUFACTURER:
+        if base.startswith(pre): return brand
+    return name.split()[0]
+
 def strip_tags(s):
     s = re.sub(r"(?is)<(script|style)\b.*?</\1>", " ", s)
     s = re.sub(r"(?s)<[^>]+>", " ", s)
@@ -63,6 +73,8 @@ def breadcrumb(path, name):
         trail.append(("Repair costs", f"{BASE}/repair/phone-repair-costs-australia.html"))
     elif seg == "locations":
         trail.append(("Locations", f"{BASE}/locations.html"))
+        # Sydney breadcrumb leaf from filename, not H1
+        name = os.path.basename(path).replace(".html", "").capitalize()
     trail.append((name, f"{BASE}/{path}"))
     return {"@context": "https://schema.org", "@type": "BreadcrumbList",
             "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": n, "item": u}
@@ -82,7 +94,7 @@ def build(path, doc):
             "name": f"{name} repair",
             "description": f"Independent repair pricing for the {name} in Australia.",
             "category": "Mobile device repair",
-            "brand": {"@type": "Brand", "name": name.split()[0]},
+            "brand": {"@type": "Brand", "name": manufacturer(path, name)},
             "offers": {
                 "@type": "AggregateOffer", "priceCurrency": "AUD",
                 "lowPrice": lo, "highPrice": hi, "offerCount": len(rows),
@@ -110,26 +122,39 @@ def build(path, doc):
                                       for q, a in f]})
     return blocks
 
-def write(fp):
+def write(fp, strip_only=False):
     doc = open(fp, encoding="utf-8").read()
-    doc = re.sub(re.escape(SENTINEL) + r".*?" + re.escape("<!-- /rr-schema -->"), "", doc, flags=re.S)
-    blocks = build(fp.replace(os.sep, "/"), doc)
+    new_doc = re.sub(re.escape(SENTINEL) + r".*?" + re.escape("<!-- /rr-schema -->"), "", doc, flags=re.S)
+    
+    if strip_only:
+        if new_doc != doc:
+            open(fp, "w", encoding="utf-8").write(new_doc)
+            return []
+        return None
+
+    blocks = build(fp.replace(os.sep, "/"), new_doc)
     if not blocks: return None
     payload = SENTINEL + "\n" + "\n".join(
         '<script type="application/ld+json">' + json.dumps(b, ensure_ascii=False) + "</script>"
         for b in blocks) + "\n<!-- /rr-schema -->\n"
-    i = doc.lower().rfind("</head>")
+    i = new_doc.lower().rfind("</head>")
     if i < 0: return None
-    open(fp, "w", encoding="utf-8").write(doc[:i] + payload + doc[i:])
+    open(fp, "w", encoding="utf-8").write(new_doc[:i] + payload + new_doc[i:])
     return [b["@type"] for b in blocks]
 
 SKIP = {"repair/index.html", "repair/phone-repair-costs-australia.html",
         "repair/model.html", "repair/google-pixel-repair-guide.html"}
+
 if __name__ == "__main__":
     tally, touched = {}, 0
     for fp in sorted(glob.glob("repair/*.html")) + sorted(glob.glob("locations/*.html")):
         k = fp.replace(os.sep, "/")
-        if k in SKIP: print(f"skip (hub)  {k}"); continue
+        if k in SKIP:
+            r = write(k, strip_only=True)
+            if r == []: print(f"stripped  {k}")
+            else: print(f"skip (hub)  {k}")
+            continue
+            
         r = write(k)
         if r is None: print(f"SKIP (no h1/head)  {k}"); continue
         touched += 1
