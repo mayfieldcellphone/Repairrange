@@ -98,6 +98,115 @@
 
 <p>This number only goes down. It never goes back up. There is no software update, no calibration trick, and no "battery conditioning" technique that reverses chemical degradation. Anyone claiming otherwise is selling something.</p>
 
+
+<figure class="my-8 not-prose">
+  <img src="/assets/img/phone-battery-replacement-guide.jpg" alt="Smartphone battery removal using alcohol softening and stretch release pull-tabs on workbench" class="w-full rounded-xl border border-line shadow-sm" width="1200" height="800" loading="lazy">
+  <figcaption class="text-xs text-muted text-center mt-2">Professional battery replacement: Technicians dissolve industrial adhesive using 99% isopropyl alcohol, rolling pull-tabs flat to avoid puncturing volatile lithium polymer pouches.</figcaption>
+</figure>
+
+
+<div class="card p-6 bg-paper-2 border border-line rounded-xl my-10 not-prose shadow-sm" id="battery-diagnostic-tool">
+  <div class="flex items-center justify-between pb-3 border-b border-line mb-4">
+    <div class="flex items-center gap-2">
+      <i data-lucide="battery-charging" class="w-5 h-5 text-teal"></i>
+      <h3 class="font-serif text-lg text-ink font-bold m-0">Interactive Battery Health Diagnostic</h3>
+    </div>
+    <span class="text-xs font-mono text-amber bg-amber/10 px-2 py-0.5 rounded">Diagnostic Tool</span>
+  </div>
+  <p class="text-xs text-muted mb-4">Select your current battery metrics and symptoms to calculate an immediate bench recommendation:</p>
+
+  <div class="space-y-4 text-xs mb-6">
+    <div>
+      <div class="flex justify-between items-center mb-1">
+        <label class="font-semibold text-ink">Reported Battery Health (%):</label>
+        <span class="font-mono font-bold text-teal text-sm" id="health-val">82%</span>
+      </div>
+      <input type="range" min="50" max="100" value="82" class="w-full accent-teal cursor-pointer" id="health-slider" oninput="calculateBatteryHealth()">
+    </div>
+
+    <div class="bg-white p-4 rounded border border-line space-y-2">
+      <p class="font-semibold text-ink mb-2">Check any symptoms you are currently experiencing:</p>
+      <label class="flex items-center gap-2 cursor-pointer">
+        <input type="checkbox" id="symp-shutdown" onchange="calculateBatteryHealth()" class="accent-teal rounded">
+        <span>Random unexpected shutdown when battery is below 20%</span>
+      </label>
+      <label class="flex items-center gap-2 cursor-pointer">
+        <input type="checkbox" id="symp-drain" onchange="calculateBatteryHealth()" class="accent-teal rounded">
+        <span>Battery drains in under 5–6 hours of normal day-to-day use</span>
+      </label>
+      <label class="flex items-center gap-2 cursor-pointer">
+        <input type="checkbox" id="symp-throttle" onchange="calculateBatteryHealth()" class="accent-teal rounded">
+        <span>Phone feels sluggish / iOS indicates Performance Management active</span>
+      </label>
+      <label class="flex items-center gap-2 cursor-pointer text-red-600 font-medium">
+        <input type="checkbox" id="symp-swell" onchange="calculateBatteryHealth()" class="accent-red-600 rounded">
+        <span>⚠️ Screen lifting, casing gap, or back glass bulging (Swollen battery)</span>
+      </label>
+    </div>
+  </div>
+
+  <div class="bg-white p-5 rounded-lg border border-line shadow-xs" id="battery-result-box">
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-xs font-bold uppercase tracking-wider text-muted">Bench Recommendation:</span>
+      <span class="text-xs font-bold px-2 py-0.5 rounded" id="rec-badge" style="background:#FEF3C7; color:#92400E;">Monitor & Plan</span>
+    </div>
+    <p class="text-sm font-serif font-bold text-ink mb-2" id="rec-heading">Battery in Monitoring Zone (80–85%)</p>
+    <p class="text-xs text-muted leading-relaxed mb-4" id="rec-desc">Your cell is experiencing normal chemical aging. If you are not bothered by topping up during late afternoons, you can safely hold off for 3–6 months. Average replacement runs $79–$119 AUD.</p>
+    <div class="pt-3 border-t border-line flex flex-col sm:flex-row gap-3 items-center justify-between">
+      <span class="text-xs text-muted" id="rec-cost">Estimated Aussie repair: <strong>$79–$129 AUD</strong></span>
+      <a href="../calculator.html" class="btn btn-primary text-xs py-2 px-4 w-full sm:w-auto justify-center">Calculate Exact Cost &rarr;</a>
+    </div>
+  </div>
+</div>
+
+<script>
+function calculateBatteryHealth() {
+  const health = parseInt(document.getElementById('health-slider').value);
+  document.getElementById('health-val').innerText = health + '%';
+  const shutdown = document.getElementById('symp-shutdown').checked;
+  const drain = document.getElementById('symp-drain').checked;
+  const throttle = document.getElementById('symp-throttle').checked;
+  const swell = document.getElementById('symp-swell').checked;
+
+  const badge = document.getElementById('rec-badge');
+  const heading = document.getElementById('rec-heading');
+  const desc = document.getElementById('rec-desc');
+  const cost = document.getElementById('rec-cost');
+
+  if (swell) {
+    badge.innerText = 'CRITICAL HAZARD';
+    badge.setAttribute('style', 'background:#FEE2E2; color:#991B1B;');
+    heading.innerText = 'Immediate Battery Replacement & Cease Charging';
+    desc.innerText = 'A bulging or lifting screen indicates electrolytic gas buildup inside the pouch cell. Stop charging immediately to eliminate thermal runaway fire risks. Bring to a certified shop for safe disposal.';
+    cost.innerHTML = 'Estimated Aussie repair: <strong>$89–$149 AUD</strong>';
+  } else if (health < 75 || shutdown || (health < 80 && drain)) {
+    badge.innerText = 'REPLACEMENT RECOMMENDED';
+    badge.setAttribute('style', 'background:#FEE2E2; color:#991B1B;');
+    heading.innerText = 'Significant Cell Degradation — Replace to Restore Performance';
+    desc.innerText = 'Internal resistance has increased substantially, causing sudden voltage drops under processor load. Replacing the battery will restore full-day stamina and eliminate software CPU throttling.';
+    cost.innerHTML = 'Estimated Aussie repair: <strong>$79–$139 AUD</strong>';
+  } else if (health < 80 || throttle || drain) {
+    badge.innerText = 'SERVICING DUE';
+    badge.setAttribute('style', 'background:#FEF3C7; color:#92400E;');
+    heading.innerText = 'Below 80% Threshold — Prime Replacement Window';
+    desc.innerText = 'Apple and Samsung officially recommend replacement at this stage. Spending $80–$120 now extends your smartphone lifespan by 2+ full years without needing a $1,500 new device.';
+    cost.innerHTML = 'Estimated Aussie repair: <strong>$79–$129 AUD</strong>';
+  } else if (health <= 85) {
+    badge.innerText = 'MONITORING ZONE';
+    badge.setAttribute('style', 'background:#FEF3C7; color:#92400E;');
+    heading.innerText = 'Normal Mid-Life Aging (80–85%)';
+    desc.innerText = 'Your battery is holding satisfactory charge for everyday use. Unless you commute without chargers or do intensive gaming, you do not need replacement yet.';
+    cost.innerHTML = 'Estimated Aussie repair: <strong>$69–$119 AUD</strong>';
+  } else {
+    badge.innerText = 'EXCELLENT HEALTH';
+    badge.setAttribute('style', 'background:#E6F4EA; color:#137333;');
+    heading.innerText = 'Healthy Battery (>85% Capacity)';
+    desc.innerText = 'Your battery is in great shape. No servicing or replacement needed. If your phone feels short on battery, inspect background app refresh and display brightness levels first.';
+    cost.innerHTML = 'Status: <strong>No replacement needed</strong>';
+  }
+}
+</script>
+
 <h2>The degradation curve — it's not linear</h2>
 <p>This is the part most people get wrong. Battery degradation isn't a straight line from 100% to 0%. It follows a curve:</p>
 
@@ -108,6 +217,12 @@
 <p><strong>Year 3 (85% → ~78%):</strong> This is the decision zone. The difference between 85% and 78% is where most people start actually feeling the degradation — charging mid-afternoon instead of making it to bedtime, or the phone dying during a long call.</p>
 
 <p><strong>Year 4+ (below 75%):</strong> Below 75%, the phone becomes actively annoying. Unexpected shutdowns at 15–20% indicated charge (the battery can't deliver the voltage the processor demands under load), aggressive throttling on iPhones (Apple's performance management kicks in), and "all-day battery" becoming "half-day battery."</p>
+
+
+<figure class="my-8 not-prose">
+  <img src="/assets/img/iphone-internal-repair.jpg" alt="Interior motherboard and battery connector flex of high-end smartphone on ESD mat" class="w-full rounded-xl border border-line shadow-sm" width="1200" height="800" loading="lazy">
+  <figcaption class="text-xs text-muted text-center mt-2">Internal battery logic: High-density logic board connectors interface directly with the on-cell Battery Management System (BMS).</figcaption>
+</figure>
 
 <h2>The decision framework — honest and simple</h2>
 
@@ -130,6 +245,12 @@
 <h3>Below 75%: replace it or replace the phone</h3>
 <p class="text-muted" style="margin-bottom:0">Below 75%, the battery is failing. Unexpected shutdowns, aggressive throttling, and half-day battery life are now normal. A battery replacement still makes sense if the rest of the phone is in good shape — screens, cameras, speakers, charging port all working. If the phone has multiple issues (cracked screen AND degraded battery AND slow charging), the total repair cost may approach the price of a good refurbished replacement, and that changes the equation. See our <a href="repair-vs-replace-2026-index.html">repair-vs-replace guide</a> for that calculation.</p>
 </div>
+
+
+<figure class="my-8 not-prose">
+  <img src="/assets/img/macbook-repair-bench.jpg" alt="Electronics diagnostic bench with multimeters and battery testing apparatus" class="w-full rounded-xl border border-line shadow-sm" width="1200" height="800" loading="lazy">
+  <figcaption class="text-xs text-muted text-center mt-2">Bench testing: Real-time cell resistance and milliampere-hour capacity verification on modern portable electronics.</figcaption>
+</figure>
 
 <h2>iPhone vs Samsung: the same chemistry, different transparency</h2>
 

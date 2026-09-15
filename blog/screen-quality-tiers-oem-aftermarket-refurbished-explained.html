@@ -109,7 +109,131 @@
 
                 <p>This is the post we've wanted to point customers at for two years. It's the plain version of the conversation we have at the counter every week. By the end you should be able to read a quote, ask one or two specific questions, and know whether you're being told the truth.</p>
 
-                <h2>The four tiers, honestly named</h2>
+                
+<figure class="my-8 not-prose">
+  <img src="/assets/img/oem-vs-aftermarket-screens.jpg" alt="Side by side macro view comparing OEM OLED screen with aftermarket Incell LCD panel" class="w-full rounded-xl border border-line shadow-sm" width="1200" height="800" loading="lazy">
+  <figcaption class="text-xs text-muted text-center mt-2">Display engineering comparison: Left: Genuine OLED panel featuring true blacks and flush bezel seating. Right: Budget Incell LCD with external LED backlight matrix and thicker profile.</figcaption>
+</figure>
+
+
+<div class="card p-6 bg-paper-2 border border-line rounded-xl my-10 not-prose shadow-sm" id="screen-comparator">
+  <div class="flex items-center justify-between pb-3 border-b border-line mb-4">
+    <div class="flex items-center gap-2">
+      <i data-lucide="layers" class="w-5 h-5 text-teal"></i>
+      <h3 class="font-serif text-lg text-ink font-bold m-0">Interactive Screen Tier Comparison</h3>
+    </div>
+    <span class="text-xs font-mono text-amber bg-amber/10 px-2 py-0.5 rounded">Live Tech Specs</span>
+  </div>
+  <p class="text-xs text-muted mb-4">Select a part quality tier below to inspect technical specifications, power draw, and real-world durability differences:</p>
+  
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-6" id="tier-btn-group">
+    <button type="button" onclick="setScreenTier('oem')" id="btn-oem" class="btn text-xs py-2 px-3 border border-teal text-white bg-teal-900 rounded font-semibold transition">Genuine OEM</button>
+    <button type="button" onclick="setScreenTier('soft-oled')" id="btn-soft-oled" class="btn text-xs py-2 px-3 border border-line bg-white text-ink rounded font-semibold hover:border-teal transition">Soft OLED</button>
+    <button type="button" onclick="setScreenTier('refurb')" id="btn-refurb" class="btn text-xs py-2 px-3 border border-line bg-white text-ink rounded font-semibold hover:border-teal transition">Refurbished</button>
+    <button type="button" onclick="setScreenTier('incell')" id="btn-incell" class="btn text-xs py-2 px-3 border border-line bg-white text-ink rounded font-semibold hover:border-teal transition">Incell LCD</button>
+  </div>
+
+  <div class="bg-white p-5 rounded-lg border border-line shadow-xs">
+    <div class="flex items-center justify-between mb-3 pb-2 border-b border-line/60">
+      <span class="font-serif text-base text-ink font-bold" id="tier-title">1. Genuine OEM (Original Service Pack)</span>
+      <span class="text-xs font-mono px-2 py-0.5 rounded" id="tier-badge" style="background:#E6F4EA; color:#137333;">Factory Original</span>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+      <div>
+        <p class="text-muted mb-1"><strong>Peak Brightness:</strong> <span id="tier-brightness" class="text-ink">100% (Up to 2,000+ nits)</span></p>
+        <p class="text-muted mb-1"><strong>Color Gamut:</strong> <span id="tier-color" class="text-ink">Full DCI-P3 & 100% True Tone</span></p>
+        <p class="text-muted mb-1"><strong>Refresh Rate:</strong> <span id="tier-refresh" class="text-ink">Native 120Hz ProMotion / LTPO</span></p>
+      </div>
+      <div>
+        <p class="text-muted mb-1"><strong>Battery Impact:</strong> <span id="tier-battery" class="text-ink">Optimal (Factory calibrated)</span></p>
+        <p class="text-muted mb-1"><strong>Impact Resistance:</strong> <span id="tier-durability" class="text-ink">Maximum (Corning Ceramic/Victus)</span></p>
+        <p class="text-muted mb-1"><strong>Average Price Index:</strong> <span id="tier-cost" class="font-mono text-teal font-bold">Premium ($280–$490 AUD)</span></p>
+      </div>
+    </div>
+    <div class="mt-4 pt-3 border-t border-line/60 text-xs text-muted" id="tier-verdict">
+      <strong>Technician Bench Advice:</strong> Essential for flagship iPhones and Samsung Ultras if you demand exact factory color grading, outdoor sunlight visibility, and zero iOS notification popups.
+    </div>
+  </div>
+</div>
+
+<script>
+const screenTiers = {
+  'oem': {
+    title: '1. Genuine OEM (Original Service Pack)',
+    badge: 'Factory Original',
+    badgeStyle: 'background:#E6F4EA; color:#137333;',
+    brightness: '100% (Up to 2,000+ nits HDR)',
+    color: 'Full DCI-P3 & 100% True Tone',
+    refresh: 'Native 120Hz ProMotion / LTPO dynamic',
+    battery: 'Optimal (Factory calibrated power draw)',
+    durability: 'Maximum (Corning Ceramic Shield / Victus 2)',
+    cost: 'Premium ($280–$490 AUD)',
+    verdict: '<strong>Technician Bench Advice:</strong> Essential for flagship iPhones and Samsung Ultras if you demand exact factory color grading, high outdoor sunlight visibility, and original touch sampling rate.'
+  },
+  'soft-oled': {
+    title: '2. Premium Soft OLED (Best Independent Value)',
+    badge: 'Recommended Sweet Spot',
+    badgeStyle: 'background:#FEF3C7; color:#92400E;',
+    brightness: '90–95% (1,200–1,600 nits)',
+    color: '98% DCI-P3 & True Tone programmable',
+    refresh: 'Full 120Hz supported on Pro models',
+    battery: 'Within 5% of original battery draw',
+    durability: 'High (Flexible polymer substrate absorbs drops)',
+    cost: 'Moderate ($170–$290 AUD)',
+    verdict: '<strong>Technician Bench Advice:</strong> The #1 pick for value. Uses flexible polymer substrates identical to original panels, making them resilient to frame shock while saving $100–$200.'
+  },
+  'refurb': {
+    title: '3. Refurbished Original (Recycled OEM Panel)',
+    badge: 'Eco-Friendly OEM',
+    badgeStyle: 'background:#E0F2FE; color:#0369A1;',
+    brightness: '100% (Original OLED substrate)',
+    color: '100% Original Apple/Samsung calibration',
+    refresh: 'Native 120Hz ProMotion support',
+    battery: 'Identical to factory original',
+    durability: 'High (New aftermarket outer cover glass)',
+    cost: 'Balanced ($190–$320 AUD)',
+    verdict: '<strong>Technician Bench Advice:</strong> An original OLED panel where cracked outer glass has been re-laminated in a dust-free cleanroom. Genuine display fidelity at aftermarket pricing.'
+  },
+  'incell': {
+    title: '4. Incell LCD (Budget Emergency Tier)',
+    badge: 'Budget Economy',
+    badgeStyle: 'background:#FEE2E2; color:#991B1B;',
+    brightness: '60–75% (Thicker backlight assembly)',
+    color: 'Standard sRGB (Dull contrast, grayish blacks)',
+    refresh: 'Limited to 60Hz (No ProMotion)',
+    battery: '+15% to 20% higher power consumption',
+    durability: 'Rigid glass — cracks easily under impact',
+    cost: 'Cheapest ($89–$149 AUD)',
+    verdict: '<strong>Technician Bench Advice:</strong> Suitable only for trade-ins, data extraction, or phones nearing end-of-life. Creates raised bezel lip on OLED-native phones and drains battery faster.'
+  }
+};
+
+function setScreenTier(tier) {
+  const d = screenTiers[tier];
+  document.getElementById('tier-title').innerText = d.title;
+  const b = document.getElementById('tier-badge');
+  b.innerText = d.badge;
+  b.setAttribute('style', d.badgeStyle);
+  document.getElementById('tier-brightness').innerText = d.brightness;
+  document.getElementById('tier-color').innerText = d.color;
+  document.getElementById('tier-refresh').innerText = d.refresh;
+  document.getElementById('tier-battery').innerText = d.battery;
+  document.getElementById('tier-durability').innerText = d.durability;
+  document.getElementById('tier-cost').innerText = d.cost;
+  document.getElementById('tier-verdict').innerHTML = d.verdict;
+
+  ['oem', 'soft-oled', 'refurb', 'incell'].forEach(t => {
+    const btn = document.getElementById('btn-' + t);
+    if(t === tier) {
+      btn.className = 'btn text-xs py-2 px-3 border border-teal text-white bg-teal-900 rounded font-semibold transition';
+    } else {
+      btn.className = 'btn text-xs py-2 px-3 border border-line bg-white text-ink rounded font-semibold hover:border-teal transition';
+    }
+  });
+}
+</script>
+
+<h2>The four tiers, honestly named</h2>
 
                 <p>Strip away the marketing and there are really four tiers of replacement screen on the Australian market. Different shops use different words for them — that's most of the confusion — but the physical parts are these:</p>
 

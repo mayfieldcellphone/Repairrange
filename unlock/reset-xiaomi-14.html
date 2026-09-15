@@ -63,6 +63,8 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://repairrange.io/"}, {"@type": "ListItem", "position": 2, "name": "Unlock", "item": "https://repairrange.io/unlock/index.html"}, {"@type": "ListItem", "position": 3, "name": "Reset xiaomi 14", "item": "https://repairrange.io/unlock/reset-xiaomi-14.html"}]}</script>
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "How to Factory Reset xiaomi 14", "description": "Step-by-step guide to soft reset, factory reset, and hard reset xiaomi 14. Remove screen locks, bypass FRP, and restore factory settings.", "totalTime": "PT10M", "step": [{"@type": "HowToSection", "name": "Soft Reset (Force Restart)", "itemListElement": [{"@type": "HowToStep", "name": "Step 1Hold Power + Volume Down for 10-15 seconds", "text": "Keep holding until the screen turns off and the device restarts."}, {"@type": "HowToStep", "name": "Step 1Settings -> System -> Reset Options", "text": "Navigate to system options."}, {"@type": "HowToStep", "name": "Step 2Select \"Factory Data Reset\" or \"Erase All Data\"", "text": "Confirm with lock code."}, {"@type": "HowToStep", "name": "Step 1Power off completely", "text": "Wait 30 seconds."}, {"@type": "HowToStep", "name": "Step 2Hold Power + Volume Down (or Volume Up)", "text": "Hold until the brand logo appears. Release."}, {"@type": "HowToStep", "name": "Step 3Select \"Wipe data/factory reset\"", "text": "Use Volume keys to scroll and Power key to select."}, {"@type": "HowToStep", "name": "Step 4Reboot system now", "text": "Restart device."}]}]}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Will a factory reset erase the SIM card or eSIM on my Xiaomi 14?", "acceptedAnswer": {"@type": "Answer", "text": "No. A standard factory reset or recovery mode wipe only erases internal flash storage (user apps, photos, messages, and settings). Physical SIM cards are completely untouched. For eSIM profiles, iOS and Android explicitly prompt you whether to keep or remove eSIM plans during the reset process. Choose 'Keep eSIM' to retain your mobile plan."}}, {"@type": "Question", "name": "Can I recover my photos and files after a hard reset on Xiaomi 14?", "acceptedAnswer": {"@type": "Answer", "text": "On modern smartphones featuring hardware-backed file-based encryption (FBE), performing a factory reset securely destroys the cryptographic master keys stored inside the Secure Enclave / Knox chipset. Without an existing cloud backup (iCloud, Google One, or PC backup), deleted files cannot be retrieved even by professional forensic data recovery tools."}}, {"@type": "Question", "name": "Does a hard recovery reset remove Google FRP or iCloud Activation Lock?", "acceptedAnswer": {"@type": "Answer", "text": "No. Hardware recovery resets do NOT bypass Anti-Theft locks. Factory Reset Protection (FRP) and iCloud Activation Lock are stored in cloud security databases linked to the device hardware IMEI and serial number. The device will mandate entry of the original registered credentials upon booting up."}}, {"@type": "Question", "name": "How do I reset my Xiaomi 14 if the touchscreen is completely unresponsive?", "acceptedAnswer": {"@type": "Answer", "text": "If the screen is cracked or the digitizer does not respond to touch, use the Hardware Button Recovery method detailed in this guide. Because navigation in Recovery Mode relies exclusively on physical Volume and Power keys, you can initiate a full Wipe Data / Factory Reset without needing touch screen input."}}, {"@type": "Question", "name": "What should I do if my Xiaomi 14 is stuck in a bootloop after resetting?", "acceptedAnswer": {"@type": "Answer", "text": "If the device continually restarts or gets stuck on the brand logo after a wipe, force restart it and enter Recovery Mode again. Select 'Wipe cache partition' if available, or perform another 'Wipe data / factory reset'. If the issue persists, the operating system firmware may need to be re-flashed via official PC flashing software, or the motherboard/battery requires technician bench repair."}}]}</script>
 </head>
 <body class="bg-mesh">
 <header class="header-sticky sticky top-0 z-50 border-b border-line">
@@ -129,6 +131,93 @@
       <!-- Steps Rendered Statically -->
       <p class="text-muted text-sm mb-4">This guide covers every reset method for the <strong>xiaomi 14</strong> running Android. Choose Soft Reset to reboot without losing data, Factory Reset to erase everything from Settings, or Hardware Recovery Reset using button combinations. After a hardware reset, Google FRP (Factory Reset Protection) requires your Google account credentials.</p>
 <h2 id="soft-reset" class="font-serif text-2xl text-ink mt-10 mb-4">Soft Reset (Force Restart)</h2><div class="step-box"><h3><span class="font-mono text-teal text-sm mr-2">Step 1</span>Hold Power + Volume Down for 10-15 seconds</h3><p>Keep holding until the screen turns off and the device restarts.</p></div><h2 id="settings-reset" class="font-serif text-2xl text-ink mt-10 mb-4">Factory Reset via Settings</h2><div class="step-box"><h3><span class="font-mono text-teal text-sm mr-2">Step 1</span>Settings -> System -> Reset Options</h3><p>Navigate to system options.</p></div><div class="step-box"><h3><span class="font-mono text-teal text-sm mr-2">Step 2</span>Select "Factory Data Reset" or "Erase All Data"</h3><p>Confirm with lock code.</p></div><h2 id="hard-reset" class="font-serif text-2xl text-ink mt-10 mb-4">Factory Reset via Recovery Mode</h2><div class="warn-box"><p><strong>⚠️ Warning:</strong> Erases all user files. Google Factory Reset Protection (FRP) will trigger. You will need the logged-in Google account.</p></div><div class="step-box"><h3><span class="font-mono text-teal text-sm mr-2">Step 1</span>Power off completely</h3><p>Wait 30 seconds.</p></div><div class="step-box"><h3><span class="font-mono text-teal text-sm mr-2">Step 2</span>Hold Power + Volume Down (or Volume Up)</h3><p>Hold until the brand logo appears. Release.</p></div><div class="step-box"><h3><span class="font-mono text-teal text-sm mr-2">Step 3</span>Select "Wipe data/factory reset"</h3><p>Use Volume keys to scroll and Power key to select.</p></div><div class="step-box"><h3><span class="font-mono text-teal text-sm mr-2">Step 4</span>Reboot system now</h3><p>Restart device.</p></div>
+
+    
+<!-- Enriched Reset Modules -->
+<h2 id="pre-reset-checklist" class="font-serif text-2xl text-ink mt-12 mb-4">Pre-Reset Safety & Data Preservation Checklist</h2>
+<p class="text-sm text-muted leading-relaxed mb-4">Before initiating a factory reset on your Xiaomi 14, taking proactive steps to safeguard your irreplaceable personal data and security authenticators is vital. Once the internal NAND storage is wiped, file-based encryption keys are shredded permanently.</p>
+<div class="card p-6 bg-white border border-line rounded-lg text-xs leading-relaxed text-muted mb-8">
+<ul>
+<li><strong>Google Account Cloud Sync:</strong> Go to <code>Settings &rarr; System &rarr; Backup</code> (or <code>Settings &rarr; Google &rarr; Backup</code>) and verify that Google Drive sync is completed for contacts, call history, and device settings.</li>
+<li><strong>Photo & Video Archival:</strong> Ensure Google Photos or your chosen cloud storage provider has finished synchronising full-resolution images and videos over Wi-Fi.</li>
+<li><strong>2FA & Banking Authenticator Transfer:</strong> Open authenticator apps (Google Authenticator, Microsoft Authenticator) and verify account cloud sync is enabled. Resetting your Xiaomi 14 without migrating 2FA keys can permanently disrupt access to Australian banking apps and myGov accounts.</li>
+<li><strong>SIM & MicroSD Ejection:</strong> Eject your physical SIM tray and any external MicroSD card before running recovery mode to ensure external media remains untouched.</li>
+</ul>
+</div>
+
+<h2 id="anti-theft-frp" class="font-serif text-2xl text-ink mt-12 mb-4">Anti-Theft Lock Avoidance Protocol (Google FRP)</h2>
+<div class="text-sm text-muted leading-relaxed mb-8">
+<p>All modern Android smartphones running Android 5.1 Lollipop through Android 14 and 15 come equipped with <strong>Google Factory Reset Protection (FRP)</strong>. When a hard reset is triggered via hardware button combinations inside Recovery Mode, the phone's bootloader marks the wipe as untrusted. Upon rebooting, the device will strictly require the Google Account username and password previously registered on the Xiaomi 14.</p>
+<div class="card p-5 bg-paper-2 border-line my-4">
+<h4 class="font-serif text-base text-ink font-bold mb-2">How to Avoid FRP Lockout Before Resetting:</h4>
+<ol class="text-xs text-muted space-y-1.5 list-decimal pl-4">
+<li>Open <strong>Settings</strong> and scroll down to <strong>Accounts & Backup</strong> (or <strong>Passwords & Accounts</strong>).</li>
+<li>Tap <strong>Manage Accounts</strong> and select each Google account listed.</li>
+<li>Tap <strong>Remove Account</strong> and confirm with your device PIN or fingerprint.</li>
+<li>If selling or trading in the device, also remove any proprietary manufacturer accounts (such as Samsung Account, Mi Account, or HeyTap/Oppo ID).</li>
+<li>Once all accounts are removed, a factory reset will allow any new user to set up the phone with their own Google credentials without restriction.</li>
+</ol>
+</div>
+</div>
+
+<h2 id="troubleshooting-recovery" class="font-serif text-2xl text-ink mt-12 mb-4">Hardware Button Recovery & Deep Troubleshooting</h2>
+<div class="text-sm text-muted leading-relaxed mb-8">
+<p>Hardware recovery mode bypasses the operating system completely, communicating directly with the bootloader partition. Follow these technician guidelines for your Xiaomi 14:</p>
+<ul>
+<li><strong>The "No Command" Screen Fix:</strong> If you see a fallen Android robot graphic with the words "No Command", do not panic. Hold down the <strong>Power button</strong>, press the <strong>Volume Up button once</strong>, and immediately release both. The full Android Recovery text menu will instantly display.</li>
+<li><strong>Wipe Cache Partition First:</strong> If you are resetting your Xiaomi 14 to resolve freezing, overheating, or battery drain, try selecting <strong>Wipe cache partition</strong> before doing a full factory wipe. Clearing the system cache resolves many software corruption issues without deleting personal photos, apps, or texts.</li>
+<li><strong>Exiting Recovery Safely:</strong> If you enter recovery mode by mistake and do not wish to erase your data, simply use the Volume keys to highlight <strong>Reboot system now</strong> and press the Power key. Your phone will reboot safely into standard Android without losing any files.</li>
+</ul>
+</div>
+
+<h2 id="post-reset" class="font-serif text-2xl text-ink mt-12 mb-4">Post-Reset Setup & Performance Optimization</h2>
+<div class="text-sm text-muted leading-relaxed mb-8">
+<p>Once the wipe process finishes and your Xiaomi 14 restarts to the initial setup screen ("Hello" / "Welcome"), follow these steps for a clean, stable experience:</p>
+<ul>
+<li><strong>Initial Setup Configuration:</strong> Connect to a secure Wi-Fi network and sign in with your primary account. If you plan to sell or donate your phone, stop at the language selection screen and power off the device so the recipient can configure their own profile.</li>
+<li><strong>Fresh Install vs Full Cloud Restore:</strong> If you performed a reset to fix sluggish performance, high system storage usage, or battery drain, consider setting up as a <strong>New Device</strong> and manually downloading essential apps rather than restoring an entire system snapshot. Restoring old system backups often re-imports cached app corruption and rogue background processes.</li>
+<li><strong>Install All System Updates:</strong> After setup, immediately check <code>Settings &rarr; System &rarr; Software Update</code> (or <code>Settings &rarr; General &rarr; Software Update</code>). Installing the latest security patches ensures all operating system libraries are refreshed and patched against known vulnerabilities.</li>
+<li><strong>Hardware Diagnostics:</strong> Verify that touch responsiveness across the entire digitizer, cameras, ear speaker, and charging ports are functioning properly. If your phone still experiences crashes, frozen screens, or overheating after a full factory reset, the root cause is almost certainly physical hardware damage (such as logic board failure, power IC damage, or degraded battery chemistry) that requires bench inspection.</li>
+</ul>
+</div>
+
+<h2 id="faq" class="font-serif text-2xl text-ink mt-12 mb-6">Frequently Asked Questions — Xiaomi 14 Reset</h2>
+<div class="space-y-4 not-prose mb-12">
+<div class="card p-6 bg-white border border-line rounded-lg shadow-xs">
+  <h3 class="font-serif text-lg text-ink font-bold mb-2">Will a factory reset erase the SIM card or eSIM on my Xiaomi 14?</h3>
+  <p class="text-xs text-muted leading-relaxed">No. A standard factory reset or recovery mode wipe only erases internal flash storage (user apps, photos, messages, and settings). Physical SIM cards are completely untouched. For eSIM profiles, iOS and Android explicitly prompt you whether to keep or remove eSIM plans during the reset process. Choose 'Keep eSIM' to retain your mobile plan.</p>
+</div>
+<div class="card p-6 bg-white border border-line rounded-lg shadow-xs">
+  <h3 class="font-serif text-lg text-ink font-bold mb-2">Can I recover my photos and files after a hard reset on Xiaomi 14?</h3>
+  <p class="text-xs text-muted leading-relaxed">On modern smartphones featuring hardware-backed file-based encryption (FBE), performing a factory reset securely destroys the cryptographic master keys stored inside the Secure Enclave / Knox chipset. Without an existing cloud backup (iCloud, Google One, or PC backup), deleted files cannot be retrieved even by professional forensic data recovery tools.</p>
+</div>
+<div class="card p-6 bg-white border border-line rounded-lg shadow-xs">
+  <h3 class="font-serif text-lg text-ink font-bold mb-2">Does a hard recovery reset remove Google FRP or iCloud Activation Lock?</h3>
+  <p class="text-xs text-muted leading-relaxed">No. Hardware recovery resets do NOT bypass Anti-Theft locks. Factory Reset Protection (FRP) and iCloud Activation Lock are stored in cloud security databases linked to the device hardware IMEI and serial number. The device will mandate entry of the original registered credentials upon booting up.</p>
+</div>
+<div class="card p-6 bg-white border border-line rounded-lg shadow-xs">
+  <h3 class="font-serif text-lg text-ink font-bold mb-2">How do I reset my Xiaomi 14 if the touchscreen is completely unresponsive?</h3>
+  <p class="text-xs text-muted leading-relaxed">If the screen is cracked or the digitizer does not respond to touch, use the Hardware Button Recovery method detailed in this guide. Because navigation in Recovery Mode relies exclusively on physical Volume and Power keys, you can initiate a full Wipe Data / Factory Reset without needing touch screen input.</p>
+</div>
+<div class="card p-6 bg-white border border-line rounded-lg shadow-xs">
+  <h3 class="font-serif text-lg text-ink font-bold mb-2">What should I do if my Xiaomi 14 is stuck in a bootloop after resetting?</h3>
+  <p class="text-xs text-muted leading-relaxed">If the device continually restarts or gets stuck on the brand logo after a wipe, force restart it and enter Recovery Mode again. Select 'Wipe cache partition' if available, or perform another 'Wipe data / factory reset'. If the issue persists, the operating system firmware may need to be re-flashed via official PC flashing software, or the motherboard/battery requires technician bench repair.</p>
+</div>
+</div>
+
+<div class="card p-6 bg-teal-900 text-white rounded-xl border border-white/10 my-10 not-prose">
+  <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+    <div>
+      <span class="text-xs font-mono uppercase tracking-wider text-amber">Need Professional Bench Assistance?</span>
+      <h3 class="font-serif text-xl font-bold mt-1 text-white">Still experiencing glitches or hardware lockouts on your Xiaomi 14?</h3>
+      <p class="text-xs text-white/70 max-w-xl mt-2 leading-relaxed">If software resets failed to fix black screens, bootloops, or rapid battery drain, our nationwide network of independent Australian repair workshops provides component-level diagnostics, battery replacements, and screen restorations.</p>
+    </div>
+    <div class="flex-shrink-0 w-full sm:w-auto">
+      <a href="../calculator.html" class="btn btn-primary text-xs py-2.5 px-4 justify-center w-full">Estimate Repair Cost &rarr;</a>
+    </div>
+  </div>
+</div>
+
 
     </main>
 

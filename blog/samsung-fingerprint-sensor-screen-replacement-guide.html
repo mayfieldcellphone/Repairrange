@@ -91,10 +91,80 @@
 <div class="lg:col-span-8">
 <div class="prose">
 
+<figure class="my-8 not-prose">
+  <img src="/assets/img/google-pixel-repair.jpg" alt="Under display fingerprint sensor alignment in precision optical workshop jig" class="w-full rounded-xl border border-line shadow-sm" width="1200" height="800" loading="lazy">
+  <figcaption class="text-xs text-muted text-center mt-2">Precision sensor alignment: Under-display optical and ultrasonic sensors require micrometer-precise seating under the display substrate.</figcaption>
+</figure>
+
+
+<div class="card p-6 bg-paper-2 border border-line rounded-xl my-10 not-prose shadow-sm">
+  <div class="flex items-center justify-between pb-3 border-b border-line mb-4">
+    <div class="flex items-center gap-2">
+      <i data-lucide="fingerprint" class="w-5 h-5 text-teal"></i>
+      <h3 class="font-serif text-lg text-ink font-bold m-0">Biometric Sensor Diagnostic Helper</h3>
+    </div>
+    <span class="text-xs font-mono text-amber bg-amber/10 px-2 py-0.5 rounded">Diagnostic Steps</span>
+  </div>
+  <p class="text-xs text-muted mb-4">Select your device family to view technician test menu codes and sensor calibration protocols:</p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 mb-4">
+    <button type="button" onclick="setSensorModel('samsung-s')" id="sbtn-s" class="btn text-xs py-2 px-3 border border-teal text-white bg-teal-900 rounded font-semibold transition">Galaxy S-Series (Ultrasonic)</button>
+    <button type="button" onclick="setSensorModel('samsung-a')" id="sbtn-a" class="btn text-xs py-2 px-3 border border-line bg-white text-ink rounded font-semibold hover:border-teal transition">Galaxy A-Series (Optical)</button>
+    <button type="button" onclick="setSensorModel('pixel')" id="sbtn-p" class="btn text-xs py-2 px-3 border border-line bg-white text-ink rounded font-semibold hover:border-teal transition">Google Pixel 6–9 (Optical)</button>
+  </div>
+
+  <div class="bg-white p-5 rounded-lg border border-line shadow-xs">
+    <div class="flex items-center justify-between mb-3 pb-2 border-b border-line/60">
+      <span class="font-serif text-base text-ink font-bold" id="sensor-title">Galaxy S21/S22/S23/S24/S25 Ultra (Qualcomm 3D Sonic)</span>
+      <span class="text-xs font-mono bg-teal/10 text-teal px-2 py-0.5 rounded" id="sensor-type">Ultrasonic Sensor</span>
+    </div>
+    <div class="space-y-3 text-xs leading-relaxed text-muted" id="sensor-details">
+      <p><strong>Hardware Type:</strong> Uses high-frequency sound waves to map 3D ridges of your fingertip through the glass. Does NOT light up brightly when touched.</p>
+      <p><strong>Bench Diagnostic Dial Code:</strong> Open phone dialer and enter <code class="font-mono bg-paper-2 px-1.5 py-0.5 rounded text-ink">*#0*#</code> &rarr; Tap <strong>Sensor</strong> &rarr; Select <strong>FingerPrint Normal Scan</strong>.</p>
+      <p><strong>Common Post-Repair Issue:</strong> Thick UV tempered glass screen protectors block ultrasound acoustic waves. Always use official PET film or ultrasonic-certified tempered glass.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+function setSensorModel(m) {
+  const t = document.getElementById('sensor-title');
+  const type = document.getElementById('sensor-type');
+  const d = document.getElementById('sensor-details');
+  ['s', 'a', 'p'].forEach(x => {
+    document.getElementById('sbtn-' + x).className = 'btn text-xs py-2 px-3 border border-line bg-white text-ink rounded font-semibold hover:border-teal transition';
+  });
+
+  if (m === 'samsung-s') {
+    document.getElementById('sbtn-s').className = 'btn text-xs py-2 px-3 border border-teal text-white bg-teal-900 rounded font-semibold transition';
+    t.innerText = 'Galaxy S21/S22/S23/S24/S25 Ultra (Qualcomm 3D Sonic)';
+    type.innerText = 'Ultrasonic Sensor';
+    d.innerHTML = '<p><strong>Hardware Type:</strong> Uses high-frequency sound waves to map 3D ridges through the display. Works with wet or greasy fingers and does not flash bright green/white.</p><p><strong>Diagnostic Dialer:</strong> Enter <code class="font-mono bg-paper-2 px-1.5 py-0.5 rounded text-ink">*#0*#</code> &rarr; Sensor &rarr; FingerPrint Test. All values should return PASS.</p><p><strong>Calibration Requirement:</strong> Pre-calibrated when installing genuine Samsung Service Pack assemblies with integrated frame.</p>';
+  } else if (m === 'samsung-a') {
+    document.getElementById('sbtn-a').className = 'btn text-xs py-2 px-3 border border-teal text-white bg-teal-900 rounded font-semibold transition';
+    t.innerText = 'Galaxy A34/A35/A53/A54/A55 (Optical Sub-Display)';
+    type.innerText = 'Optical CMOS Sensor';
+    d.innerHTML = '<p><strong>Hardware Type:</strong> Uses a micro camera sensor beneath the OLED. Illuminates screen pixels brightly to photograph fingerprint ridges.</p><p><strong>Diagnostic Dialer:</strong> Dial <code class="font-mono bg-paper-2 px-1.5 py-0.5 rounded text-ink">*#0*#</code> &rarr; Optical Sensor Test.</p><p><strong>Key Pitfall:</strong> Budget Incell LCD screens have NO optical window and completely disable fingerprint recognition. Always demand an OLED tier for A-series screen repairs.</p>';
+  } else {
+    document.getElementById('sbtn-p').className = 'btn text-xs py-2 px-3 border border-teal text-white bg-teal-900 rounded font-semibold transition';
+    t.innerText = 'Google Pixel 6, 7, 8, 9 Series (Optical Scanner)';
+    type.innerText = 'Google Web Calibration';
+    d.innerHTML = '<p><strong>Hardware Type:</strong> Sub-display optical scanner that ties directly to Titan M2 security enclave.</p><p><strong>Calibration Tool:</strong> Requires connecting phone via USB to computer in Fastboot mode and running the official <strong>Google Pixel Update and Software Repair Tool</strong> (pixelrepair.withgoogle.com).</p><p><strong>Post-Repair:</strong> After calibration, restart phone and re-register fingerprints from scratch.</p>';
+  }
+}
+</script>
+
+
 <h2>The short version</h2>
 <p>Samsung's ultrasonic fingerprint sensor lives <strong>behind the screen</strong> — it fires sound waves through the display glass, maps the 3D ridges of your finger, and unlocks the phone. The sensor itself doesn't get replaced during a screen swap, but it depends entirely on the acoustic properties of the glass sitting on top of it. Swap in a screen with different glass thickness, different adhesive, or different acoustic transparency, and the sound waves don't reach your finger properly. The sensor either stops responding, becomes unreliable, or vanishes from Settings entirely.</p>
 
 <p>This isn't a software bug. It's physics. The sensor was calibrated at the factory for a specific screen. Put a different screen on top and the calibration is wrong. Some replacement screens are close enough that recalibration fixes it; some are so far off that the sensor is effectively dead.</p>
+
+
+<figure class="my-8 not-prose">
+  <img src="/assets/img/phone-screen-repair-guide.jpg" alt="Separating shattered AMOLED screen assembly with suction tool" class="w-full rounded-xl border border-line shadow-sm" width="1200" height="800" loading="lazy">
+  <figcaption class="text-xs text-muted text-center mt-2">Display separation: Technicians heat the perimeter frame to peel away broken glass without damaging underlying sensor cabling.</figcaption>
+</figure>
 
 <h2>Which Samsung phones are affected?</h2>
 <p>Every Samsung Galaxy with an under-display fingerprint sensor — which, in 2026, means every S-series flagship from the S10 onward. Specifically:</p>
