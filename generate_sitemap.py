@@ -8,7 +8,7 @@ REPO_ROOT = "."
 SITEMAP_FILE = "sitemap.xml"
 
 # Folders to scan for HTML files
-FOLDERS = ["fix", "locations", "repair", "brands", "tools", "blog", "unlock", "news", "guides", "selfrepairkit", "downloads"]
+FOLDERS = ["fix", "locations", "repair", "brands", "tools", "blog", "unlock", "guides"]
 
 # GUARD (added Aug 2026): URLs with a 301 rule in _redirects are pruned/consolidated
 # pages. Keep them out of the sitemap even if their noindex meta is ever stripped
@@ -30,6 +30,13 @@ def generate_sitemap():
         if file.endswith(".html") and file != "404.html":
             if file in REDIRECTED:
                 continue
+            fp = os.path.join(REPO_ROOT, file)
+            try:
+                with open(fp, encoding="utf-8", errors="replace") as _f:
+                    if "noindex" in _f.read():
+                        continue
+            except Exception:
+                pass
             if file == "index.html":
                 urls.append(f"{BASE_URL}/")
             else:
@@ -41,7 +48,7 @@ def generate_sitemap():
         if os.path.exists(folder_path):
             for file in os.listdir(folder_path):
                 if file.endswith(".html"):
-                    if f"{folder}/{file}" in REDIRECTED:
+                    if f"{folder}/{file}" in REDIRECTED or f"{folder}/{file}" == "repair/model.html":
                         continue
                     fp = os.path.join(folder_path, file)
                     try:
