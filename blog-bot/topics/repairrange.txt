@@ -1,5 +1,4 @@
 # One topic per line. '#' lines ignored. Consumed top-down; used topics move to _used.txt.
-Why phone repair prices vary so much between shops (the factors, not the numbers)
 The difference between a diagnostic fee and a repair quote
 What to back up before any phone repair, and how
 Why some repairs need the phone for days, not hours
