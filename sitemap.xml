@@ -71,11 +71,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://repairrange.io/blog/australian-smartphone-repair-cost-index-2026.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://repairrange.io/blog/back-glass-repair-costs.html</loc>
     <lastmod>2026-09-15</lastmod>
     <priority>0.8</priority>
@@ -721,31 +716,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://repairrange.io/locations/canberra.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://repairrange.io/locations/central-coast.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://repairrange.io/locations/geelong.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://repairrange.io/locations/gold-coast.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://repairrange.io/locations/hobart.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://repairrange.io/locations/melbourne.html</loc>
     <lastmod>2026-09-15</lastmod>
     <priority>0.5</priority>
@@ -761,22 +731,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://repairrange.io/locations/sunshine-coast.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://repairrange.io/locations/sydney.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://repairrange.io/locations/townsville.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://repairrange.io/locations/wollongong.html</loc>
     <lastmod>2026-09-15</lastmod>
     <priority>0.5</priority>
   </url>
