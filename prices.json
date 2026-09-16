@@ -1,0 +1,382 @@
+{
+ "samsung-galaxy-a35": [
+  {
+   "repair": "Screen replacement",
+   "ind": [
+    135,
+    195
+   ],
+   "diy": 85,
+   "difficulty": "Moderate"
+  },
+  {
+   "repair": "Battery replacement",
+   "ind": [
+    95,
+    155
+   ],
+   "diy": 45,
+   "difficulty": "Easy"
+  },
+  {
+   "repair": "Back glass replacement",
+   "ind": [
+    65,
+    125
+   ],
+   "diy": 15,
+   "difficulty": "Moderate"
+  },
+  {
+   "repair": "Charging port replacement",
+   "ind": [
+    125,
+    185
+   ],
+   "diy": 75,
+   "difficulty": "Moderate"
+  }
+ ],
+ "samsung-galaxy-a25": [
+  {
+   "repair": "Screen replacement",
+   "ind": [
+    135,
+    195
+   ],
+   "diy": 85,
+   "difficulty": "Moderate"
+  },
+  {
+   "repair": "Battery replacement",
+   "ind": [
+    95,
+    155
+   ],
+   "diy": 45,
+   "difficulty": "Easy"
+  },
+  {
+   "repair": "Back cover replacement",
+   "ind": [
+    65,
+    125
+   ],
+   "diy": 15,
+   "difficulty": "Easy"
+  },
+  {
+   "repair": "Charging port replacement",
+   "ind": [
+    125,
+    185
+   ],
+   "diy": 75,
+   "difficulty": "Moderate"
+  }
+ ],
+ "samsung-galaxy-a15": [
+  {
+   "repair": "Screen replacement",
+   "ind": [
+    135,
+    195
+   ],
+   "diy": 85,
+   "difficulty": "Moderate"
+  },
+  {
+   "repair": "Battery replacement",
+   "ind": [
+    95,
+    155
+   ],
+   "diy": 45,
+   "difficulty": "Easy"
+  },
+  {
+   "repair": "Back cover replacement",
+   "ind": [
+    65,
+    125
+   ],
+   "diy": 15,
+   "difficulty": "Easy"
+  },
+  {
+   "repair": "Charging port replacement",
+   "ind": [
+    125,
+    185
+   ],
+   "diy": 75,
+   "difficulty": "Moderate"
+  }
+ ],
+ "pixel-7": [
+  {
+   "repair": "Screen replacement",
+   "ind": [
+    350,
+    410
+   ],
+   "diy": 300,
+   "difficulty": "Hard"
+  },
+  {
+   "repair": "Battery replacement",
+   "ind": [
+    150,
+    210
+   ],
+   "diy": 100,
+   "difficulty": "Moderate"
+  },
+  {
+   "repair": "Back glass replacement",
+   "ind": [
+    120,
+    180
+   ],
+   "diy": 70,
+   "difficulty": "Hard"
+  },
+  {
+   "repair": "Charging port replacement",
+   "ind": [
+    150,
+    210
+   ],
+   "diy": 100,
+   "difficulty": "Moderate"
+  }
+ ],
+ "pixel-7-pro": [
+  {
+   "repair": "Screen replacement",
+   "ind": [
+    450,
+    510
+   ],
+   "diy": 400,
+   "difficulty": "Hard"
+  },
+  {
+   "repair": "Battery replacement",
+   "ind": [
+    150,
+    210
+   ],
+   "diy": 100,
+   "difficulty": "Moderate"
+  },
+  {
+   "repair": "Back glass replacement",
+   "ind": [
+    150,
+    210
+   ],
+   "diy": 100,
+   "difficulty": "Hard"
+  },
+  {
+   "repair": "Camera bar glass",
+   "ind": [
+    60,
+    120
+   ],
+   "diy": 10,
+   "difficulty": "Moderate"
+  }
+ ],
+ "xiaomi-14": [
+  {
+   "repair": "Screen replacement",
+   "ind": [
+    180,
+    240
+   ],
+   "diy": 130,
+   "difficulty": "Hard"
+  },
+  {
+   "repair": "Battery replacement",
+   "ind": [
+    120,
+    180
+   ],
+   "diy": 70,
+   "difficulty": "Moderate"
+  },
+  {
+   "repair": "Back glass replacement",
+   "ind": [
+    90,
+    150
+   ],
+   "diy": 40,
+   "difficulty": "Hard"
+  },
+  {
+   "repair": "Charging port replacement",
+   "ind": [
+    120,
+    180
+   ],
+   "diy": 70,
+   "difficulty": "Moderate"
+  }
+ ],
+ "oneplus-12": [
+  {
+   "repair": "Screen replacement",
+   "ind": [
+    450,
+    510
+   ],
+   "diy": 400,
+   "difficulty": "Hard"
+  },
+  {
+   "repair": "Battery replacement",
+   "ind": [
+    150,
+    210
+   ],
+   "diy": 100,
+   "difficulty": "Moderate"
+  },
+  {
+   "repair": "Back glass replacement",
+   "ind": [
+    90,
+    150
+   ],
+   "diy": 40,
+   "difficulty": "Hard"
+  },
+  {
+   "repair": "Charging port replacement",
+   "ind": [
+    150,
+    210
+   ],
+   "diy": 100,
+   "difficulty": "Moderate"
+  }
+ ],
+ "nothing-phone-2": [
+  {
+   "repair": "Screen replacement",
+   "ind": [
+    250,
+    310
+   ],
+   "diy": 200,
+   "difficulty": "Moderate"
+  },
+  {
+   "repair": "Battery replacement",
+   "ind": [
+    150,
+    210
+   ],
+   "diy": 100,
+   "difficulty": "Moderate"
+  },
+  {
+   "repair": "Rear glass / Glyph assembly",
+   "ind": [
+    120,
+    180
+   ],
+   "diy": 70,
+   "difficulty": "Hard"
+  },
+  {
+   "repair": "Charging port replacement",
+   "ind": [
+    150,
+    210
+   ],
+   "diy": 100,
+   "difficulty": "Moderate"
+  }
+ ],
+ "sony-xperia-1-vi": [
+  {
+   "repair": "Screen replacement",
+   "ind": [
+    450,
+    510
+   ],
+   "diy": 400,
+   "difficulty": "Hard"
+  },
+  {
+   "repair": "Battery replacement",
+   "ind": [
+    150,
+    210
+   ],
+   "diy": 100,
+   "difficulty": "Hard"
+  },
+  {
+   "repair": "Back glass replacement",
+   "ind": [
+    150,
+    210
+   ],
+   "diy": 100,
+   "difficulty": "Hard"
+  },
+  {
+   "repair": "Charging port replacement",
+   "ind": [
+    150,
+    210
+   ],
+   "diy": 100,
+   "difficulty": "Moderate"
+  }
+ ],
+ "motorola-razr-50-ultra": [
+  {
+   "repair": "Inner folding display",
+   "ind": [
+    550,
+    610
+   ],
+   "diy": 500,
+   "difficulty": "Specialist"
+  },
+  {
+   "repair": "Outer cover display",
+   "ind": [
+    99,
+    159
+   ],
+   "diy": 49,
+   "difficulty": "Hard"
+  },
+  {
+   "repair": "Battery replacement",
+   "ind": [
+    150,
+    210
+   ],
+   "diy": 100,
+   "difficulty": "Hard"
+  },
+  {
+   "repair": "Hinge service",
+   "ind": [
+    250,
+    310
+   ],
+   "diy": 200,
+   "difficulty": "Hard"
+  }
+ ]
+}

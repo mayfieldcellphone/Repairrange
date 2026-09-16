@@ -9,6 +9,8 @@ until Khalil supplies verified bench ranges.
 import re, json, os, sys, html as H
 
 SRC = 'repair/samsung-galaxy-a54.html'
+PRICES_PATH = 'prices.json' if os.path.exists('prices.json') else '../gen/prices.json'
+PRICES = json.load(open(PRICES_PATH, encoding='utf-8'))
 OUT = 'repair'
 BASE = 'https://repairrange.io'
 
@@ -67,8 +69,8 @@ MODELS = {
  'xiaomi-14': dict(
    name='Xiaomi 14', full='Xiaomi 14', brand='Xiaomi',
    brandslug='xiaomi', brandpage='brands.html',
-   build="Flat OLED, aluminium frame, glass back. Parts availability in Australia is the constraint here rather than the repair itself — Xiaomi does not run a broad authorised network locally.",
-   wrong="Screens first. The bigger practical issue is sourcing: genuine Xiaomi panels are harder to get in Australia than Samsung or Apple equivalents, so turnaround is often longer.",
+   build="Flat OLED, aluminium frame, glass back. Xiaomi runs an official Australian support channel, but the independent parts supply is thinner than for Samsung or Apple, so lead time is the usual constraint.",
+   wrong="Screens first. The practical issue is sourcing — genuine Xiaomi panels are harder to get through independent channels in Australia than Samsung or Apple equivalents, so turnaround is often longer.",
    diy="Mechanically similar to any modern glass-sandwich phone, but parts are the problem. Confirm you can actually source a panel before opening the device.",
    difficulty=dict(screen='Hard', battery='Moderate', back='Hard', port='Moderate'),
    repairs=['Screen replacement','Battery replacement','Back glass replacement','Charging port replacement'],
@@ -103,7 +105,7 @@ MODELS = {
  'motorola-razr-50-ultra': dict(
    name='Razr 50 Ultra', full='Motorola Razr 50 Ultra', brand='Motorola',
    brandslug='motorola', brandpage='brands.html',
-   build="A foldable. Inner flexible OLED, external cover display, and a hinge — three assemblies that fail independently and price independently. Nothing about this device repairs like a conventional phone.",
+   build="This is a foldable, with an inner flexible OLED, an external cover display and a hinge — three assemblies that fail independently and price independently. Nothing about this device repairs like a conventional phone.",
    wrong="The inner folding display and the hinge. Crease-line failures, dead pixel bands along the fold, and debris in the hinge are the characteristic faults. The outer cover display cracks like any normal screen.",
    diy="No. Folding displays are bonded to the hinge assembly and cannot be replaced independently on a kitchen table. This is a specialist repair and attempting it generally writes the device off.",
    difficulty=dict(screen='Specialist', battery='Hard', back='Hard', port='Hard'),
@@ -113,38 +115,69 @@ MODELS = {
 
 def esc(t): return H.escape(t, quote=True)
 
-def price_table(m):
-    rows = []
-    dk = list(m['difficulty'].values())
-    for i, r in enumerate(m['repairs']):
-        diff = dk[i] if i < len(dk) else 'Moderate'
+def price_table(m, slug):
+    """Independent = Khalil's quoted range. DIY = part-cost estimate.
+    No Authorised column: there is no sourced manufacturer figure for these
+    models, and deriving one from our own price would be inventing it."""
+    rows, P = [], PRICES.get(slug, [])
+    for p in P:
+        lo, hi = p['ind']
+        diy = f"from ${p['diy']}" if p.get('diy') else 'By quote'
         rows.append(
           '<tr class="border-t border-line">'
-          f'<td class="px-5 py-4"><p class="font-medium text-ink">{esc(r)}</p>'
-          f'<p class="text-xs text-muted mt-1">DIY difficulty: {esc(diff)}</p></td>'
-          '<td class="px-5 py-4 font-mono tnum text-ink text-right">By quote</td>'
-          '<td class="px-5 py-4 font-mono tnum text-muted text-right hidden md:table-cell">By quote</td>'
-          '<td class="px-5 py-4 font-mono tnum text-muted text-right hidden md:table-cell">By quote</td></tr>')
+          f'<td class="px-5 py-4"><p class="font-medium text-ink">{esc(p["repair"])}</p>'
+          f'<p class="text-xs text-muted mt-1">DIY difficulty: {esc(p.get("difficulty") or "Moderate")}</p></td>'
+          f'<td class="px-5 py-4 font-mono tnum text-ink text-right">${lo}\u2013${hi}</td>'
+          f'<td class="px-5 py-4 font-mono tnum text-muted text-right hidden md:table-cell">{esc(diy)}</td></tr>')
     return ('<table class="w-full text-sm">\n<thead class="bg-mesh-2 text-left">\n'
       '<tr><th class="px-5 py-3.5 eyebrow font-semibold text-muted">Repair</th>'
       '<th class="px-5 py-3.5 eyebrow font-semibold text-muted text-right">Independent</th>'
-      '<th class="px-5 py-3.5 eyebrow font-semibold text-muted text-right hidden md:table-cell">Authorised</th>'
-      '<th class="px-5 py-3.5 eyebrow font-semibold text-muted text-right hidden md:table-cell">DIY (est.)</th></tr>\n'
+      '<th class="px-5 py-3.5 eyebrow font-semibold text-muted text-right hidden md:table-cell">DIY part (est.)</th></tr>\n'
       '</thead>\n<tbody>\n' + '\n'.join(rows) + '\n</tbody>\n</table>')
 
-def faqs(m):
-    n, f = m['name'], m['full']
+def _screen(slug):
+    for p in PRICES.get(slug, []):
+        if 'screen' in p['repair'].lower() or 'display' in p['repair'].lower():
+            return p['ind']
+    return None
+
+def faqs(m, slug):
+    n, P = m['name'], PRICES.get(slug, [])
+    scr = _screen(slug)
+    # build[] often opens with a fragment ("A foldable.") — take the clause that
+    # actually describes construction rather than splicing the fragment inline.
+    frag = m['build'].split('\u2014')[0].strip().rstrip('.')
+    lead = frag[0].lower() + frag[1:] if frag and frag[0].isupper() and ' ' in frag else frag
+
+    if scr:
+        a1 = (f"At an independent shop a {n} screen replacement typically runs "
+              f"${scr[0]}\u2013${scr[1]} AUD, depending on the panel tier fitted \u2014 {lead}.")
+    else:
+        a1 = (f"We quote {n} screen replacement individually rather than publishing a range "
+              f"we cannot stand behind \u2014 {lead}.")
+
+    # "Worth repairing" has to actually weigh cost against the device, and the
+    # honest answer differs when the headline repair is $550+.
+    if P:
+        cheap = min(p['ind'][0] for p in P); dear = max(p['ind'][1] for p in P)
+        if dear >= 450:
+            a2 = (f"It depends which repair. The common faults on this model are covered below, and "
+                  f"they range from ${cheap} at the low end to ${dear} for the most involved job. "
+                  f"At the top of that range you are close to the cost of a replacement handset, so "
+                  f"it is worth getting the fault diagnosed before committing. {m['wrong']}")
+        else:
+            a2 = (f"Usually yes \u2014 every repair listed here falls between ${cheap} and ${dear}, "
+                  f"well under the cost of replacing the handset. {m['wrong']}")
+    else:
+        a2 = f"Usually yes, though it depends on the fault. {m['wrong']}"
+
     return [
-      (f"How much does a {n} screen replacement cost in Australia?",
-       f"We quote {n} screen replacement individually rather than publishing a range we cannot stand behind. "
-       f"{m['build'].split('—')[0].strip()} Send us the model and the fault and you will get a real number, not an estimate."),
-      (f"Is the {n} worth repairing?",
-       f"In most cases yes. {m['wrong']}"),
-      (f"Can I repair the {n} myself?",
-       m['diy']),
+      (f"How much does a {n} screen replacement cost in Australia?", a1),
+      (f"Is the {n} worth repairing?", a2),
+      (f"Can I repair the {n} myself?", m['diy']),
       (f"How long does a {n} repair take?",
-       "Independent shops typically turn a screen or battery around same day or next day when the part is in stock. "
-       "Where a part has to be ordered in, allow three to five business days."),
+       "Independent shops typically turn a screen or battery around same day or next day when the part "
+       "is in stock. Where a part has to be ordered in, allow three to five business days."),
     ]
 
 def build(slug, m, tpl):
@@ -171,14 +204,33 @@ def build(slug, m, tpl):
     s = re.sub(r'(?is)<script type="application/ld\+json">\{"@context": "https://schema\.org", "@type": "BreadcrumbList".*?</script>',
                '<script type="application/ld+json">'+json.dumps(crumb,ensure_ascii=False)+'</script>', s, count=1)
 
-    svc = {"@context":"https://schema.org","@type":"Service","name":f"{m['name']} repair",
-           "serviceType":"Mobile device repair","description":f"Independent repair service for the {m['full']} in Australia.",
-           "areaServed":{"@type":"Country","name":"Australia"},
-           "provider":{"@type":"Organization","name":"RepairRange","url":BASE+"/"}}
-    s = re.sub(r'(?is)<script type="application/ld\+json">\{"@context": "https://schema\.org", "@type": "Product".*?</script>',
-               '<script type="application/ld+json">'+json.dumps(svc,ensure_ascii=False)+'</script>', s, count=1)
+    P = PRICES.get(slug, [])
+    if P:
+        lo = min(p['ind'][0] for p in P); hi = max(p['ind'][1] for p in P)
+        # AggregateOffer spans the Independent column ONLY — that is the range
+        # shown on the page. DIY is a part-cost estimate, not our offer.
+        svc = {"@context":"https://schema.org","@type":"Product",
+               "name":f"{m['name']} repair",
+               "description":f"Independent repair pricing for the {m['full']} in Australia.",
+               "category":"Mobile device repair",
+               "brand":{"@type":"Brand","name":m['brand']},
+               "offers":{"@type":"AggregateOffer","priceCurrency":"AUD",
+                         "lowPrice":lo,"highPrice":hi,"offerCount":len(P),
+                         "availability":"https://schema.org/InStock",
+                         "offers":[{"@type":"Offer","name":p['repair'],"priceCurrency":"AUD",
+                                    "priceSpecification":{"@type":"PriceSpecification",
+                                      "priceCurrency":"AUD","minPrice":p['ind'][0],"maxPrice":p['ind'][1]}}
+                                   for p in P]}}
+    else:
+        svc = {"@context":"https://schema.org","@type":"Service","name":f"{m['name']} repair",
+               "serviceType":"Mobile device repair",
+               "description":f"Independent repair service for the {m['full']} in Australia.",
+               "areaServed":{"@type":"Country","name":"Australia"},
+               "provider":{"@type":"Organization","name":"RepairRange","url":BASE+"/"}}
+    s = re.sub(r'(?is)<script type="application/ld\+json">\{"@context": "https://schema\.org", "@type": "(?:Product|Service)".*?</script>',
+               lambda _: '<script type="application/ld+json">'+json.dumps(svc,ensure_ascii=False)+'</script>', s, count=1)
 
-    F = faqs(m)
+    F = faqs(m, slug)
     fp = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
       {"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in F]}
     s = re.sub(r'(?is)<script type="application/ld\+json">\{"@context": "https://schema\.org", "@type": "FAQPage".*?</script>',
@@ -193,7 +245,7 @@ def build(slug, m, tpl):
                rf'\g<1>Ready to fix your {esc(m["name"])}?\g<2>', s, count=1)
 
     # --- body: table, footnote, what-goes-wrong, DIY note ---
-    s = re.sub(r'(?is)<table class="w-full text-sm">.*?</table>', lambda _: price_table(m), s, count=1)
+    s = re.sub(r'(?is)<table class="w-full text-sm">.*?</table>', lambda _: price_table(m, slug), s, count=1)
     s = re.sub(r'(?is)<p class="text-xs text-muted mt-5 max-w-2xl">.*?</p>',
                f'<p class="text-xs text-muted mt-5 max-w-2xl">{esc(m["build"])} '
                'Every repair on this page is quoted individually — we do not publish a range we have not verified on the bench.</p>', s, count=1)
@@ -202,11 +254,15 @@ def build(slug, m, tpl):
     s = re.sub(r'(?is)(<p class="eyebrow mb-3">DIY note</p><p class="text-ink leading-relaxed">).*?(</p>)',
                rf'\g<1>{esc(m["diy"])}\g<2>', s, count=1)
 
-    # --- hero "Starting from $X" card: the template hard-codes the A54's battery
-    #     price. Leaving it would assert a number we have not verified for this
-    #     device, so it becomes an explicit quote prompt instead. ---
-    s = re.sub(r'(?is)(<p class="eyebrow mb-3 text-teal">)Starting from(</p>\s*<p class="display text-5xl text-ink mb-2">)[^<]*(</p>\s*<p class="text-sm text-muted">)[^<]*(</p>)',
-               rf'\g<1>Pricing\g<2>By quote\g<3>Quoted per device — send us the model and fault.\g<4>', s)
+    # --- hero "Starting from $X" card ---
+    if P:
+        lo = min(p['ind'][0] for p in P)
+        rep = [p for p in P if p['ind'][0] == lo][0]['repair']
+        s = re.sub(r'(?is)(<p class="eyebrow mb-3 text-teal">)Starting from(</p>\s*<p class="display text-5xl text-ink mb-2">)[^<]*(</p>\s*<p class="text-sm text-muted">)[^<]*(</p>)',
+                   rf'\g<1>Starting from\g<2>${lo}\g<3>{esc(rep)}\g<4>', s)
+    else:
+        s = re.sub(r'(?is)(<p class="eyebrow mb-3 text-teal">)Starting from(</p>\s*<p class="display text-5xl text-ink mb-2">)[^<]*(</p>\s*<p class="text-sm text-muted">)[^<]*(</p>)',
+                   rf'\g<1>Pricing\g<2>By quote\g<3>Quoted per device — send us the model and fault.\g<4>', s)
 
     # --- FAQ accordion: rebuild all five from F (template has 5, we author 4) ---
     blocks = re.findall(r'(?is)<details class="border border-line.*?</details>', s)
@@ -228,9 +284,9 @@ def build(slug, m, tpl):
 if __name__ == '__main__':
     tpl = open(SRC, encoding='utf-8').read()
     only = sys.argv[1:] or list(MODELS)
-    os.makedirs('../gen/repair', exist_ok=True)
+    os.makedirs(OUT, exist_ok=True)
     for slug in only:
         out = build(slug, MODELS[slug], tpl)
-        p = f'../gen/repair/{slug}.html'
+        p = f'{OUT}/{slug}.html'
         open(p, 'w', encoding='utf-8').write(out)
         print(f'wrote {p}  {len(out)} chars')
