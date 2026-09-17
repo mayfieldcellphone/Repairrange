@@ -1,5 +1,4 @@
 # One topic per line. '#' lines ignored. Consumed top-down; used topics move to _used.txt.
-Why some repairs need the phone for days, not hours
 Screen repair vs full unit swap: when shops choose which
 What "no fix, no fee" actually means in the fine print
 Camera glass cracked but the lens still works -- repair or ignore?
