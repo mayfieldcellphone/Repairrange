@@ -1,5 +1,4 @@
 # One topic per line. '#' lines ignored. Consumed top-down; used topics move to _used.txt.
-Camera glass cracked but the lens still works -- repair or ignore?
 Why some insurance claims cost more than paying out of pocket
 The truth about "same day" repair advertising
 What happens to your old screen after a repair
