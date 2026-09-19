@@ -30,7 +30,7 @@ Submitting consistent Name, Address, Phone, and Website (NAP) details across Aus
 Use these exact details to ensure 100% NAP consistency across all platforms:
 
 - **Business Name**: Mayfield Phone Repair
-- **Address**: 143 Maitland Rd, Mayfield NSW 2304
+- **Address**: 276 Maitland Rd, Mayfield NSW 2304
 - **Phone Number**: (02) 4044 1999 *(or your active workshop phone)*
 - **Primary Website**: `https://www.mayfieldphonerepair.com.au`
 - **Partner Research Site**: `https://repairrange.io`
