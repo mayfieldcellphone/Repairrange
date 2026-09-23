@@ -1,9 +1,6 @@
 # One topic per line. '#' lines ignored. Consumed top-down; used topics move to _used.txt.
-Speaker and mic issues: repair, clean, or replace?
 Why two repairs on the same phone in a year isn't unusual
-Volume and power button repairs: the most underrated fix
 What a pre-repair inspection should actually cover
-Trade-in vs repair: the maths shops don't want you doing
 Why some phones are quietly "repair-hostile" by design
 What "genuine parts" means when the manufacturer won't sell them
 The unlock and repair link nobody explains properly
