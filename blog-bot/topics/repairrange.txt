@@ -1,8 +1,13 @@
 # One topic per line. '#' lines ignored. Consumed top-down; used topics move to _used.txt.
-Why two repairs on the same phone in a year isn't unusual
-The unlock and repair link nobody explains properly
-Why software issues get misdiagnosed as hardware repairs
-What a repair technician actually checks in five minutes
-The real reason repair shops ask for your passcode
-Refurbished replacement units: what "like new" is hiding
-When a repair voids nothing, and the myths that say otherwise
+The True Cost of Delaying a Phone Battery Replacement
+Why Ultrasonic Cleaning Saves Water Damaged Motherboards
+Face ID Dot Projector Repair: Micro-soldering Prism Crystals
+OLED Burn-In vs Image Retention: What Warranties Cover
+Thermal Throttling After Drops: Broken Heatpipe Vapour Chambers
+Why Wireless Fast Charging Degrades Batteries Quicker
+Back Glass Laser Removal Machines: Health, Safety, and Chassis Damage
+Camera Lens Scratches vs Broken Sensors: What Needs Replacing
+The Truth About Waterproof Phone Cases and Condensation
+Why Phone Microphones Sound Muffled in Loud Environments
+Solder Interposer Separation on Foldable and Flip Phones
+How to Test a Phone Screen Before Paying at the Repair Counter

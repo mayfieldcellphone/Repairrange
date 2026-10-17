@@ -38,5 +38,65 @@
     "read_time": "7 min read",
     "published": false,
     "published_at": null
+  },
+  {
+    "slug": "software-issues-misdiagnosed-as-hardware-phone-repairs",
+    "publish_date": "2026-11-18",
+    "title": "Why Software Issues Get Misdiagnosed as Hardware Repairs (and How to Avoid Paying Twice)",
+    "meta_description": "Boot-loops, ghost touches, and phantom battery drops: Australian bench technicians explain how software corruption mimics hardware failure and how to test first.",
+    "category": "Diagnostics",
+    "read_time": "7 min read",
+    "published": false,
+    "published_at": null
+  },
+  {
+    "slug": "why-repair-shops-ask-for-phone-passcode-privacy",
+    "publish_date": "2026-11-25",
+    "title": "The Real Reason Repair Shops Ask for Your Passcode (and Safe Privacy Alternatives)",
+    "meta_description": "Why do phone technicians ask for your PIN? Australian bench technicians explain quality assurance testing, data liability, and how to protect your privacy.",
+    "category": "Privacy & Security",
+    "read_time": "7 min read",
+    "published": false,
+    "published_at": null
+  },
+  {
+    "slug": "two-phone-repairs-same-year-cascading-impact-failures",
+    "publish_date": "2026-12-02",
+    "title": "Why Two Repairs on the Same Phone in a Year Isn't Unusual (The Cascading Failure Effect)",
+    "meta_description": "Fixed a cracked screen only to have the battery or speaker die months later? Australian technicians explain cascading impact trauma and repair thresholds.",
+    "category": "Repair Economics",
+    "read_time": "8 min read",
+    "published": false,
+    "published_at": null
+  },
+  {
+    "slug": "refurbished-phone-replacement-units-like-new-truth",
+    "publish_date": "2026-12-09",
+    "title": "Refurbished Replacement Units: What 'Like New' Claims Are Actually Hiding",
+    "meta_description": "Buying refurbished or receiving an insurance replacement phone? Australian bench technicians explain what Grade A cosmetics hide under the hood and how to inspect.",
+    "category": "Consumer Insights",
+    "read_time": "8 min read",
+    "published": false,
+    "published_at": null
+  },
+  {
+    "slug": "what-phone-technician-checks-five-minute-bench-test",
+    "publish_date": "2026-12-16",
+    "title": "What a Repair Technician Actually Checks in Five Minutes on the Bench",
+    "meta_description": "Behind the service counter: Australian repair technicians reveal the five-minute diagnostic sequence using USB ammeters, thermal cameras, and diode mode.",
+    "category": "Behind the Bench",
+    "read_time": "7 min read",
+    "published": false,
+    "published_at": null
+  },
+  {
+    "slug": "phone-repair-voids-warranty-australian-consumer-law-myths",
+    "publish_date": "2026-12-23",
+    "title": "When a Phone Repair Voids Nothing: The Australian Warranty Myths Dispelled",
+    "meta_description": "Does getting a third-party phone repair void your manufacturer warranty? Australian bench technicians explain ACL statutory guarantees and ACCC protections.",
+    "category": "Consumer Rights",
+    "read_time": "8 min read",
+    "published": false,
+    "published_at": null
   }
 ]
