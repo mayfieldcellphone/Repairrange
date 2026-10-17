@@ -1,10 +1,6 @@
 # One topic per line. '#' lines ignored. Consumed top-down; used topics move to _used.txt.
 Why two repairs on the same phone in a year isn't unusual
-What a pre-repair inspection should actually cover
-Why some phones are quietly "repair-hostile" by design
-What "genuine parts" means when the manufacturer won't sell them
 The unlock and repair link nobody explains properly
-Bent frame damage: what can and can't be straightened
 Why software issues get misdiagnosed as hardware repairs
 What a repair technician actually checks in five minutes
 The real reason repair shops ask for your passcode

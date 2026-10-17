@@ -1,0 +1,57 @@
+name: Scheduled Blog Auto-Publisher
+
+on:
+  schedule:
+    # Runs daily at 20:00 UTC (06:00 AEST / 07:00 AEDT every morning)
+    - cron: '0 20 * * *'
+  workflow_dispatch:
+    inputs:
+      force_slug:
+        description: 'Force publish a specific post slug immediately (leave blank for automatic date check)'
+        required: false
+        type: string
+      dry_run:
+        description: 'Simulate without committing or publishing'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run Blog Auto-Publisher
+        run: |
+          ARGS=""
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          if [ -n "${{ github.event.inputs.force_slug }}" ]; then
+            ARGS="$ARGS --force ${{ github.event.inputs.force_slug }}"
+          fi
+          python publish_scheduled_blogs.py $ARGS
+
+      - name: Commit and push newly published blog
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "feat(blog): publish scheduled post on auto"
+            git push origin main
+          else
+            echo "No changes to commit. No scheduled post was due today."
+          fi
