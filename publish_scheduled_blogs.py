@@ -82,7 +82,7 @@ def send_email_notification(published_posts):
     Sends an email notification with live links upon publication.
     Uses SMTP_USER and SMTP_PASS from environment (e.g. Gmail App Password).
     """
-    to_addr = os.environ.get("NOTIFY_TO", DEFAULT_NOTIFY_EMAIL)
+    to_addr = os.environ.get("NOTIFY_TO") or DEFAULT_NOTIFY_EMAIL
     smtp_user = os.environ.get("SMTP_USER")
     smtp_pass = os.environ.get("SMTP_PASS")
 
@@ -221,7 +221,7 @@ def send_email_notification(published_posts):
 
 def show_status(manifest):
     today = dt.date.today()
-    to_addr = os.environ.get("NOTIFY_TO", DEFAULT_NOTIFY_EMAIL)
+    to_addr = os.environ.get("NOTIFY_TO") or DEFAULT_NOTIFY_EMAIL
     print("\n=== RepairRange Automated Blog Schedule Status ===")
     print(f"Current Date: {today.isoformat()}")
     print(f"Email Alerts: {to_addr}\n")
@@ -312,7 +312,7 @@ def main():
             send_email_notification(published_now)
         else:
             print(f"\n[DRY-RUN] {len(published_now)} post(s) would be published.")
-            to_addr = os.environ.get("NOTIFY_TO", DEFAULT_NOTIFY_EMAIL)
+            to_addr = os.environ.get("NOTIFY_TO") or DEFAULT_NOTIFY_EMAIL
             print(f"[DRY-RUN] Would send notification email with live links to: {to_addr}")
     else:
         print("No scheduled posts due for publication today.")
