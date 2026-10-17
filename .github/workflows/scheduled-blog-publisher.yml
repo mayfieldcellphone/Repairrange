@@ -33,6 +33,10 @@ jobs:
           python-version: '3.12'
 
       - name: Run Blog Auto-Publisher
+        env:
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          NOTIFY_TO: ${{ secrets.NOTIFY_TO || 'engrkhalil77@gmail.com' }}
         run: |
           ARGS=""
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
