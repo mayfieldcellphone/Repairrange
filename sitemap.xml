@@ -12,7 +12,7 @@
   </url>
   <url>
     <loc>https://repairrange.io/blog.html</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
@@ -693,6 +693,11 @@
   <url>
     <loc>https://repairrange.io/blog/why-repair-shops-ask-for-passcode.html</loc>
     <lastmod>2026-09-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://repairrange.io/blog/why-repair-shops-ask-for-phone-passcode-privacy.html</loc>
+    <lastmod>2026-11-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>

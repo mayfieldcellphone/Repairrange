@@ -56,8 +56,8 @@
     "meta_description": "Why do phone technicians ask for your PIN? Australian bench technicians explain quality assurance testing, data liability, and how to protect your privacy.",
     "category": "Privacy & Security",
     "read_time": "7 min read",
-    "published": false,
-    "published_at": null
+    "published": true,
+    "published_at": "2026-11-25"
   },
   {
     "slug": "two-phone-repairs-same-year-cascading-impact-failures",
